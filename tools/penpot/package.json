@@ -1,0 +1,15 @@
+{
+  "name": "rocksoul-assets-penpot-builder",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "generate": "node generate.mjs",
+    "validate": "node validate.mjs"
+  },
+  "dependencies": {
+    "@penpot/library": "1.2.0-RC2"
+  }
+}

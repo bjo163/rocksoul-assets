@@ -1,0 +1,58 @@
+name: Build Penpot Golden Slice
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tools/penpot/**"
+      - "penpot/tokens/**"
+      - "penpot/golden-cases/mw-0042/**"
+      - ".github/workflows/build-penpot.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tools/penpot/package-lock.json
+
+      - name: Install builder
+        working-directory: tools/penpot
+        run: npm ci
+
+      - name: Generate Penpot file
+        working-directory: tools/penpot
+        run: npm run generate
+
+      - name: Validate package structure
+        working-directory: tools/penpot
+        run: npm run validate
+
+      - name: Commit generated Penpot file
+        run: |
+          git config user.name "moonwitness-design-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add penpot/generated/moonwitness-mw-0042.penpot
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "build: generate MW-0042 Penpot file"
+            git push
+          fi
+
+      - name: Upload Penpot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: moonwitness-mw-0042-penpot
+          path: penpot/generated/moonwitness-mw-0042.penpot
