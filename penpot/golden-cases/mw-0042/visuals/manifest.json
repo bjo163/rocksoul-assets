@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "caseId": "MW-0042",
+  "status": "editable-svg-assembly",
+  "importTarget": "Penpot",
+  "breakpoints": {
+    "desktop": {
+      "width": 1440,
+      "height": 1024
+    },
+    "tablet": {
+      "width": 768,
+      "height": 1024
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "flow": [
+    "01-overview",
+    "02-evidence",
+    "03-correlation",
+    "04-aws-legal",
+    "05-community",
+    "06-platform-review",
+    "07-platform-decision"
+  ],
+  "files": {
+    "desktop": [
+      "penpot/golden-cases/mw-0042/visuals/desktop/01-overview.svg",
+      "penpot/golden-cases/mw-0042/visuals/desktop/02-evidence.svg",
+      "penpot/golden-cases/mw-0042/visuals/desktop/03-correlation.svg",
+      "penpot/golden-cases/mw-0042/visuals/desktop/04-aws-legal.svg",
+      "penpot/golden-cases/mw-0042/visuals/desktop/05-community.svg",
+      "penpot/golden-cases/mw-0042/visuals/desktop/06-platform-review.svg",
+      "penpot/golden-cases/mw-0042/visuals/desktop/07-platform-decision.svg"
+    ],
+    "tablet": [
+      "penpot/golden-cases/mw-0042/visuals/tablet/01-overview.svg",
+      "penpot/golden-cases/mw-0042/visuals/tablet/02-evidence.svg",
+      "penpot/golden-cases/mw-0042/visuals/tablet/03-correlation.svg",
+      "penpot/golden-cases/mw-0042/visuals/tablet/04-aws-legal.svg",
+      "penpot/golden-cases/mw-0042/visuals/tablet/05-community.svg",
+      "penpot/golden-cases/mw-0042/visuals/tablet/06-platform-review.svg",
+      "penpot/golden-cases/mw-0042/visuals/tablet/07-platform-decision.svg"
+    ],
+    "mobile": [
+      "penpot/golden-cases/mw-0042/visuals/mobile/01-overview.svg",
+      "penpot/golden-cases/mw-0042/visuals/mobile/02-evidence.svg",
+      "penpot/golden-cases/mw-0042/visuals/mobile/03-correlation.svg",
+      "penpot/golden-cases/mw-0042/visuals/mobile/04-aws-legal.svg",
+      "penpot/golden-cases/mw-0042/visuals/mobile/05-community.svg",
+      "penpot/golden-cases/mw-0042/visuals/mobile/06-platform-review.svg",
+      "penpot/golden-cases/mw-0042/visuals/mobile/07-platform-decision.svg"
+    ]
+  }
+}
