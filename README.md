@@ -12,6 +12,8 @@ This repository contains visual references and design-system direction only. App
 **Status:** Concept baseline / ready for Figma reconstruction  
 **Primary style:** Gen Z × grunge × editorial research × evidence archive × cinematic title sequence
 
+**Figma production file:** https://www.figma.com/design/OZawflyISNWRFLSpVPaM4N
+
 ### Product surfaces
 
 | Range | Surface | Target app |
