@@ -7,7 +7,9 @@
   },
   "scripts": {
     "generate": "node generate.mjs",
-    "validate": "node validate.mjs"
+    "validate": "node validate.mjs",
+    "validate:sources": "node validate-sources.mjs",
+    "check": "npm run validate:sources && npm run generate && npm run validate"
   },
   "dependencies": {
     "@penpot/library": "1.2.0-RC2"
