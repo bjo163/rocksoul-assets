@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 2,
+  "principle": "Every primitive has an explicit anatomy, size, state, keyboard-focus behavior, and accessibility note before it is used in a product screen.",
+  "density": {
+    "public": "expressive",
+    "community": "balanced",
+    "platform": "compact"
+  },
+  "primitives": [
+    {
+      "name": "Button",
+      "anatomy": [
+        "container",
+        "label",
+        "optional-leading-icon",
+        "optional-trailing-icon"
+      ],
+      "variants": [
+        "primary",
+        "secondary",
+        "ghost",
+        "danger"
+      ],
+      "sizes": {
+        "sm": {
+          "height": 32,
+          "paddingX": 12
+        },
+        "md": {
+          "height": 40,
+          "paddingX": 16
+        },
+        "lg": {
+          "height": 48,
+          "paddingX": 20
+        }
+      },
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus-visible",
+        "loading",
+        "disabled"
+      ],
+      "rules": [
+        "One primary action per visual region where practical.",
+        "Never encode status only by button color.",
+        "Loading preserves button width."
+      ],
+      "accessibility": {
+        "minTouchTarget": 44,
+        "focusVisible": true,
+        "disabledNotFocusable": true
+      }
+    },
+    {
+      "name": "IconButton",
+      "anatomy": [
+        "container",
+        "icon",
+        "accessible-label"
+      ],
+      "variants": [
+        "ghost",
+        "outline",
+        "danger"
+      ],
+      "sizes": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus-visible",
+        "loading",
+        "disabled"
+      ],
+      "accessibility": {
+        "minTouchTarget": 44,
+        "requiresAccessibleName": true
+      }
+    },
+    {
+      "name": "Input",
+      "anatomy": [
+        "label",
+        "field",
+        "value",
+        "optional-leading-icon",
+        "optional-trailing-action",
+        "helper-or-error"
+      ],
+      "variants": [
+        "default",
+        "search"
+      ],
+      "sizes": [
+        "md",
+        "lg"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "filled",
+        "error",
+        "disabled",
+        "read-only"
+      ],
+      "accessibility": {
+        "persistentLabelPreferred": true,
+        "errorLinkedToField": true,
+        "focusVisible": true
+      }
+    },
+    {
+      "name": "Textarea",
+      "anatomy": [
+        "label",
+        "field",
+        "value",
+        "character-count",
+        "helper-or-error"
+      ],
+      "states": [
+        "default",
+        "focus",
+        "filled",
+        "error",
+        "disabled",
+        "read-only"
+      ],
+      "accessibility": {
+        "resizeAllowedByDefault": true,
+        "errorLinkedToField": true
+      }
+    },
+    {
+      "name": "Select",
+      "anatomy": [
+        "label",
+        "trigger",
+        "value",
+        "chevron",
+        "menu",
+        "option"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "open",
+        "error",
+        "disabled"
+      ],
+      "accessibility": {
+        "keyboardNavigation": true,
+        "escapeCloses": true
+      }
+    },
+    {
+      "name": "Checkbox",
+      "anatomy": [
+        "control",
+        "indicator",
+        "label",
+        "optional-description"
+      ],
+      "states": [
+        "unchecked",
+        "checked",
+        "indeterminate",
+        "focus-visible",
+        "disabled"
+      ],
+      "accessibility": {
+        "labelClickActivates": true,
+        "minTouchTarget": 44
+      }
+    },
+    {
+      "name": "Radio",
+      "anatomy": [
+        "control",
+        "indicator",
+        "label",
+        "optional-description"
+      ],
+      "states": [
+        "unchecked",
+        "checked",
+        "focus-visible",
+        "disabled"
+      ],
+      "accessibility": {
+        "arrowKeyGroupNavigation": true,
+        "minTouchTarget": 44
+      }
+    },
+    {
+      "name": "Switch",
+      "anatomy": [
+        "track",
+        "thumb",
+        "label",
+        "optional-description"
+      ],
+      "states": [
+        "off",
+        "on",
+        "focus-visible",
+        "disabled"
+      ],
+      "accessibility": {
+        "binaryOnly": true,
+        "minTouchTarget": 44
+      }
+    },
+    {
+      "name": "Badge",
+      "anatomy": [
+        "container",
+        "optional-icon",
+        "label"
+      ],
+      "variants": [
+        "supported",
+        "verified",
+        "contested",
+        "partial",
+        "unresolved",
+        "restricted",
+        "prohibited",
+        "info",
+        "neutral"
+      ],
+      "sizes": [
+        "sm",
+        "md"
+      ],
+      "accessibility": {
+        "statusNeverColorOnly": true
+      }
+    },
+    {
+      "name": "Tabs",
+      "anatomy": [
+        "tab-list",
+        "tab",
+        "active-indicator",
+        "panel"
+      ],
+      "variants": [
+        "underline",
+        "archive"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "active",
+        "focus-visible",
+        "disabled"
+      ],
+      "accessibility": {
+        "arrowKeyNavigation": true,
+        "activeTabProgrammatic": true
+      }
+    },
+    {
+      "name": "Tooltip",
+      "anatomy": [
+        "trigger",
+        "surface",
+        "content",
+        "optional-shortcut"
+      ],
+      "states": [
+        "hidden",
+        "visible"
+      ],
+      "rules": [
+        "Never place essential information only inside a tooltip."
+      ]
+    },
+    {
+      "name": "Dialog",
+      "anatomy": [
+        "backdrop",
+        "surface",
+        "title",
+        "body",
+        "actions",
+        "close"
+      ],
+      "sizes": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "accessibility": {
+        "focusTrap": true,
+        "escapeCloses": true,
+        "restoresFocus": true
+      }
+    },
+    {
+      "name": "Drawer",
+      "anatomy": [
+        "backdrop",
+        "surface",
+        "header",
+        "body",
+        "footer"
+      ],
+      "positions": [
+        "left",
+        "right",
+        "bottom-mobile"
+      ],
+      "accessibility": {
+        "focusTrap": true,
+        "escapeCloses": true
+      }
+    },
+    {
+      "name": "Avatar",
+      "anatomy": [
+        "image-or-initial",
+        "optional-status"
+      ],
+      "variants": [
+        "image",
+        "initial",
+        "anonymous"
+      ],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    {
+      "name": "Divider",
+      "variants": [
+        "default",
+        "soft",
+        "legal-boundary"
+      ],
+      "rules": [
+        "legal-boundary uses AWS semantic token and must not be used as decoration."
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "variants": [
+        "text",
+        "card",
+        "table-row",
+        "graph-node"
+      ],
+      "rules": [
+        "Respect prefers-reduced-motion."
+      ]
+    }
+  ]
+}

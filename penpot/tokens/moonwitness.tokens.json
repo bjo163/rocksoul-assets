@@ -2,6 +2,10 @@
   "Global": {
     "color": {
       "neutral": {
+        "100": {
+          "$value": "#EEEAE0",
+          "$type": "color"
+        },
         "200": {
           "$value": "#D9D6CE",
           "$type": "color"
@@ -12,6 +16,10 @@
         },
         "600": {
           "$value": "#666666",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#4A4A4A",
           "$type": "color"
         },
         "800": {
@@ -27,21 +35,29 @@
           "$type": "color",
           "$description": "Near-black MoonWitness base."
         },
+        "000": {
+          "$value": "#FFFFFF",
+          "$type": "color"
+        },
         "050": {
           "$value": "#F7F4EC",
           "$type": "color",
           "$description": "Warm paper/off-white."
-        },
-        "000": {
-          "$value": "#FFFFFF",
-          "$type": "color"
         }
       },
       "brand": {
         "crimson": {
           "$value": "#D1132A",
           "$type": "color",
-          "$description": "MoonWitness critical accent and legal boundary."
+          "$description": "MoonWitness critical accent and AWS legal boundary."
+        },
+        "crimson-dark": {
+          "$value": "#9F1022",
+          "$type": "color"
+        },
+        "crimson-soft": {
+          "$value": "#F7DDE2",
+          "$type": "color"
         }
       }
     },
@@ -62,12 +78,20 @@
         "$value": "16px",
         "$type": "dimension"
       },
+      "20": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
       "24": {
         "$value": "24px",
         "$type": "dimension"
       },
       "32": {
         "$value": "32px",
+        "$type": "dimension"
+      },
+      "40": {
+        "$value": "40px",
         "$type": "dimension"
       },
       "48": {
@@ -78,8 +102,16 @@
         "$value": "64px",
         "$type": "dimension"
       },
+      "80": {
+        "$value": "80px",
+        "$type": "dimension"
+      },
       "96": {
         "$value": "96px",
+        "$type": "dimension"
+      },
+      "128": {
+        "$value": "128px",
         "$type": "dimension"
       }
     },
@@ -88,12 +120,20 @@
         "$value": "0px",
         "$type": "dimension"
       },
+      "xs": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
       "sm": {
         "$value": "4px",
         "$type": "dimension"
       },
       "md": {
         "$value": "8px",
+        "$type": "dimension"
+      },
+      "lg": {
+        "$value": "12px",
         "$type": "dimension"
       },
       "pill": {
@@ -109,6 +149,219 @@
       "strong": {
         "$value": "2px",
         "$type": "dimension"
+      },
+      "focus": {
+        "$value": "3px",
+        "$type": "dimension"
+      }
+    },
+    "size": {
+      "control-sm": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "control-md": {
+        "$value": "40px",
+        "$type": "dimension"
+      },
+      "control-lg": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "touch-min": {
+        "$value": "44px",
+        "$type": "dimension"
+      },
+      "sidebar": {
+        "$value": "272px",
+        "$type": "dimension"
+      },
+      "content-reading": {
+        "$value": "720px",
+        "$type": "dimension"
+      },
+      "content-wide": {
+        "$value": "1200px",
+        "$type": "dimension"
+      }
+    }
+  },
+  "Typography": {
+    "font": {
+      "display": {
+        "$value": "Inter Tight",
+        "$type": "string",
+        "$description": "Direction token; confirm availability in Penpot before final production freeze."
+      },
+      "body": {
+        "$value": "Inter",
+        "$type": "string"
+      },
+      "mono": {
+        "$value": "IBM Plex Mono",
+        "$type": "string"
+      }
+    },
+    "size": {
+      "meta": {
+        "$value": "11px",
+        "$type": "dimension"
+      },
+      "caption": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "body-sm": {
+        "$value": "14px",
+        "$type": "dimension"
+      },
+      "body": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "body-lg": {
+        "$value": "18px",
+        "$type": "dimension"
+      },
+      "title-sm": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "title": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "headline": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "display-sm": {
+        "$value": "64px",
+        "$type": "dimension"
+      },
+      "display": {
+        "$value": "96px",
+        "$type": "dimension"
+      },
+      "display-xl": {
+        "$value": "128px",
+        "$type": "dimension"
+      }
+    },
+    "line-height": {
+      "tight": {
+        "$value": "1.0",
+        "$type": "number"
+      },
+      "headline": {
+        "$value": "1.05",
+        "$type": "number"
+      },
+      "body": {
+        "$value": "1.55",
+        "$type": "number"
+      },
+      "relaxed": {
+        "$value": "1.7",
+        "$type": "number"
+      }
+    },
+    "tracking": {
+      "tight": {
+        "$value": "-0.03em",
+        "$type": "string"
+      },
+      "normal": {
+        "$value": "0em",
+        "$type": "string"
+      },
+      "wide": {
+        "$value": "0.08em",
+        "$type": "string"
+      },
+      "archive": {
+        "$value": "0.16em",
+        "$type": "string"
+      }
+    }
+  },
+  "Layout": {
+    "breakpoint": {
+      "mobile": {
+        "$value": "390px",
+        "$type": "dimension"
+      },
+      "tablet": {
+        "$value": "768px",
+        "$type": "dimension"
+      },
+      "desktop": {
+        "$value": "1024px",
+        "$type": "dimension"
+      },
+      "wide": {
+        "$value": "1440px",
+        "$type": "dimension"
+      }
+    },
+    "grid": {
+      "mobile-columns": {
+        "$value": 4,
+        "$type": "number"
+      },
+      "tablet-columns": {
+        "$value": 8,
+        "$type": "number"
+      },
+      "desktop-columns": {
+        "$value": 12,
+        "$type": "number"
+      },
+      "mobile-gutter": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "desktop-gutter": {
+        "$value": "24px",
+        "$type": "dimension"
+      }
+    }
+  },
+  "Motion": {
+    "duration": {
+      "instant": {
+        "$value": "0ms",
+        "$type": "duration"
+      },
+      "fast": {
+        "$value": "120ms",
+        "$type": "duration"
+      },
+      "base": {
+        "$value": "220ms",
+        "$type": "duration"
+      },
+      "slow": {
+        "$value": "420ms",
+        "$type": "duration"
+      },
+      "cinematic": {
+        "$value": "900ms",
+        "$type": "duration"
+      }
+    },
+    "easing": {
+      "standard": {
+        "$value": "cubic-bezier(0.2, 0, 0, 1)",
+        "$type": "string"
+      },
+      "enter": {
+        "$value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "$type": "string"
+      },
+      "exit": {
+        "$value": "cubic-bezier(0.7, 0, 0.84, 0)",
+        "$type": "string"
       }
     }
   },
@@ -125,6 +378,10 @@
       "panel": {
         "$value": "#1B1B1B",
         "$type": "color"
+      },
+      "overlay": {
+        "$value": "#242424",
+        "$type": "color"
       }
     },
     "text": {
@@ -139,6 +396,10 @@
       "muted": {
         "$value": "#666666",
         "$type": "color"
+      },
+      "inverse": {
+        "$value": "#0B0B0B",
+        "$type": "color"
       }
     },
     "border": {
@@ -150,6 +411,10 @@
         "$value": "#4A4A4A",
         "$type": "color"
       }
+    },
+    "focus": {
+      "$value": "#F7F4EC",
+      "$type": "color"
     }
   },
   "Mode/Light": {
@@ -165,6 +430,10 @@
       "panel": {
         "$value": "#EEEAE0",
         "$type": "color"
+      },
+      "overlay": {
+        "$value": "#FFFFFF",
+        "$type": "color"
       }
     },
     "text": {
@@ -179,6 +448,10 @@
       "muted": {
         "$value": "#737373",
         "$type": "color"
+      },
+      "inverse": {
+        "$value": "#FFFFFF",
+        "$type": "color"
       }
     },
     "border": {
@@ -190,6 +463,10 @@
         "$value": "#A6A197",
         "$type": "color"
       }
+    },
+    "focus": {
+      "$value": "#0B0B0B",
+      "$type": "color"
     }
   },
   "Semantic/Status": {
@@ -219,6 +496,10 @@
     },
     "prohibited": {
       "$value": "#B20F23",
+      "$type": "color"
+    },
+    "info": {
+      "$value": "#3B82F6",
       "$type": "color"
     }
   },

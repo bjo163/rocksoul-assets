@@ -1,29 +1,37 @@
 # MoonWitness / Penpot
 
-This directory is the version-controlled design source for reconstructing the MoonWitness product in Penpot.
+Version-controlled design source for MoonWitness.
 
-## What is ready
+## Current stage
 
-- importable Penpot design tokens
-- raw SVG primitives
-- primitive/component inventory
-- pattern inventory
-- 16-screen mapping
-- production page architecture
-- developer handoff rules
+**Design System Foundation v0.2 — READY FOR PENPOT ASSEMBLY**
+
+The repository now defines:
+
+- importable design tokens
+- type / grid / motion direction
+- raw primitive state matrices
+- shared component contracts
+- responsive behavior
+- accessibility rules
+- product patterns
+- 16-screen visual references
 
 ## Import order
 
-1. Create a Penpot file named **MoonWitness Platform — Design System & Product**.
-2. Import `tokens/moonwitness.tokens.json` from the Tokens panel.
-3. Create the page structure below.
-4. Import SVGs from `primitives/` as editable vectors.
-5. Build primitives first, then components, then patterns.
-6. Place the 16 PNG references from `../moonwitness/ui/v1/screens/` on the References page.
-7. Reconstruct product screens using only shared tokens/components.
-8. Treat PNGs as visual references, not literal component geometry.
+1. Create **MoonWitness Platform — Design System & Product** in Penpot.
+2. Import `tokens/moonwitness.tokens.json`.
+3. Create the page structure.
+4. Import SVG primitives.
+5. Build everything listed in `primitives/primitives.json`.
+6. Build `components/components.json` only from those primitives.
+7. Compose `patterns/patterns.json`.
+8. Place all 16 PNGs on References.
+9. Build the MW-0042 vertical slice.
+10. Validate desktop / tablet / mobile.
+11. Only then hand off to code.
 
-## Production page structure
+## Page structure
 
 ```text
 00 — Cover
@@ -41,17 +49,17 @@ This directory is the version-controlled design source for reconstructing the Mo
 12 — Dev Handoff
 ```
 
-## Design grammar
+## Surface personality
 
-**Public / Community**
-
+### Web / Community
 Gen Z × grunge × editorial research × evidence archive × cinematic title sequence.
 
-**Platform / Admin**
+### Platform
+Precise, dense, operational, clean.
 
-Precise, dense, operational, clean. It shares the MoonWitness typography, semantics, RGBL grammar, and AWS crimson boundary but does not force cinematic grunge onto operational workflows.
+Both surfaces share tokens, semantics, typography grammar, RGBL, case language, and AWS boundary semantics.
 
-## Build order
+## Core rule
 
 ```text
 TOKEN
@@ -65,4 +73,4 @@ PATTERN
 SCREEN
 ```
 
-Do not reverse this flow by tracing each generated PNG into one-off frames.
+Never trace each generated screenshot into a separate one-off component tree.

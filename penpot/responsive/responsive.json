@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "frames": {
+    "mobile": {
+      "width": 390,
+      "columns": 4,
+      "gutter": 16,
+      "margin": 16
+    },
+    "tablet": {
+      "width": 768,
+      "columns": 8,
+      "gutter": 20,
+      "margin": 24
+    },
+    "desktop": {
+      "width": 1024,
+      "columns": 12,
+      "gutter": 24,
+      "margin": 32
+    },
+    "wide": {
+      "width": 1440,
+      "columns": 12,
+      "gutter": 24,
+      "margin": 48
+    }
+  },
+  "rules": [
+    "Reading order beats visual symmetry.",
+    "Case ID, status, provenance, and legal state must never disappear at smaller sizes.",
+    "Correlation graph must have a list/table fallback on small screens.",
+    "Platform tables may become stacked record rows on mobile; never horizontal-scroll as the only strategy.",
+    "Public cinematic whitespace may compress on mobile, but hierarchy and narrative pacing remain.",
+    "Touch targets are at least 44×44 CSS px."
+  ],
+  "surfaceBehavior": {
+    "web": {
+      "mobile": "single-column editorial narrative",
+      "desktop": "asymmetric editorial grid"
+    },
+    "community": {
+      "mobile": "feed/thread first",
+      "desktop": "content plus contextual rail"
+    },
+    "platform": {
+      "mobile": "operational stacked cards/drawer nav",
+      "desktop": "dense sidebar + workspace"
+    }
+  }
+}

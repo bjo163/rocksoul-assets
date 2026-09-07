@@ -1,128 +1,23 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "buildOrder": [
+    "token",
     "raw-primitive",
     "component",
     "pattern",
     "screen"
   ],
+  "naming": "MW / <Component> / <Variant> / <State>",
   "typography": {
     "direction": "grotesk display + neutral readable body + mono metadata",
-    "note": "Final font families must be selected in Penpot before code freeze; generated-image lettering is not a font contract."
+    "proposedFamilies": {
+      "display": "Inter Tight",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "status": "direction-not-font-freeze",
+    "note": "Confirm actual Penpot availability and licensing before code freeze."
   },
-  "primitives": [
-    {
-      "name": "Button",
-      "variants": [
-        "primary",
-        "secondary",
-        "ghost",
-        "danger"
-      ],
-      "sizes": [
-        "sm",
-        "md",
-        "lg"
-      ],
-      "states": [
-        "default",
-        "hover",
-        "focus",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Input",
-      "variants": [
-        "default",
-        "search"
-      ],
-      "states": [
-        "default",
-        "focus",
-        "error",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Textarea",
-      "states": [
-        "default",
-        "focus",
-        "error",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Select",
-      "states": [
-        "default",
-        "open",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Checkbox",
-      "states": [
-        "unchecked",
-        "checked",
-        "indeterminate",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Radio",
-      "states": [
-        "unchecked",
-        "checked",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Switch",
-      "states": [
-        "off",
-        "on",
-        "disabled"
-      ]
-    },
-    {
-      "name": "Badge",
-      "variants": [
-        "supported",
-        "verified",
-        "contested",
-        "partial",
-        "unresolved",
-        "restricted",
-        "prohibited"
-      ]
-    },
-    {
-      "name": "Avatar",
-      "variants": [
-        "image",
-        "initial",
-        "anonymous"
-      ]
-    },
-    {
-      "name": "Divider",
-      "variants": [
-        "default",
-        "legal-boundary"
-      ]
-    },
-    {
-      "name": "IconButton",
-      "states": [
-        "default",
-        "hover",
-        "focus",
-        "disabled"
-      ]
-    }
-  ],
   "components": [
     {
       "name": "MW Header",
@@ -130,90 +25,197 @@
         "web",
         "community"
       ],
+      "variants": [
+        "transparent",
+        "solid",
+        "compact-mobile"
+      ],
+      "states": [
+        "default",
+        "scrolled"
+      ],
       "parts": [
         "brand",
         "nav",
         "search",
         "live-status",
         "account"
-      ]
+      ],
+      "responsive": {
+        "mobile": "collapse nav into menu; retain search entry and account"
+      }
     },
     {
       "name": "Platform Sidebar",
       "surface": [
         "platform"
       ],
+      "variants": [
+        "expanded",
+        "collapsed"
+      ],
       "parts": [
         "brand",
-        "navigation",
         "workspace",
+        "navigation",
+        "system-status",
         "account"
-      ]
+      ],
+      "responsive": {
+        "tablet": "collapsible",
+        "mobile": "drawer"
+      }
     },
     {
       "name": "Case Header",
+      "variants": [
+        "public",
+        "community",
+        "platform"
+      ],
       "parts": [
         "case-id",
+        "eyebrow",
         "title",
         "status",
+        "summary",
         "metadata",
         "actions"
-      ]
+      ],
+      "responsive": {
+        "mobile": "stack metadata and move actions below summary"
+      }
     },
     {
       "name": "Case Card",
+      "variants": [
+        "default",
+        "compact",
+        "featured"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "selected"
+      ],
       "parts": [
         "case-id",
         "title",
         "summary",
         "status",
-        "trace-count"
+        "trace-count",
+        "updated-at"
       ]
     },
     {
-      "name": "Evidence Card",
+      "name": "Four Record Summary",
       "parts": [
+        "story",
+        "event",
+        "person",
+        "rgbl"
+      ],
+      "states": [
+        "linked",
+        "partial",
+        "missing"
+      ],
+      "rule": "AWS is downstream legal evaluation and is not counted as one of the four records."
+    },
+    {
+      "name": "Evidence Card",
+      "variants": [
+        "story",
+        "event",
+        "person",
+        "rgbl",
+        "aws"
+      ],
+      "states": [
+        "default",
+        "selected",
+        "flagged"
+      ],
+      "parts": [
+        "domain",
         "source",
         "claim",
         "provenance",
+        "verification",
         "status",
         "actions"
       ]
     },
     {
       "name": "Repository Card",
+      "variants": [
+        "public",
+        "platform"
+      ],
+      "states": [
+        "healthy",
+        "degraded",
+        "offline",
+        "syncing"
+      ],
       "parts": [
         "domain",
         "repo",
         "sync-status",
         "records",
+        "schema-version",
         "last-sync"
       ]
     },
     {
       "name": "Source Block",
+      "variants": [
+        "quote",
+        "record",
+        "legal-instrument"
+      ],
       "parts": [
         "source-id",
+        "title",
         "excerpt",
         "citation",
-        "provenance"
+        "provenance",
+        "verification"
       ]
     },
     {
       "name": "Citation",
+      "variants": [
+        "inline",
+        "block",
+        "legal"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "copied"
+      ],
       "parts": [
         "code",
         "source",
-        "locator"
+        "locator",
+        "copy-action"
       ]
     },
     {
       "name": "Correlation Score",
+      "variants": [
+        "summary",
+        "detailed"
+      ],
       "parts": [
         "score",
         "confidence",
-        "explanation"
-      ]
+        "dimensions",
+        "explanation",
+        "method-link"
+      ],
+      "rule": "Never show a score without a confidence/explanation affordance."
     },
     {
       "name": "Graph Node",
@@ -224,13 +226,60 @@
         "rgbl",
         "aws",
         "case"
-      ]
+      ],
+      "states": [
+        "default",
+        "hover",
+        "selected",
+        "dimmed",
+        "unresolved"
+      ],
+      "parts": [
+        "type",
+        "label",
+        "status",
+        "relation-count"
+      ],
+      "accessibility": {
+        "keyboardSelectable": true,
+        "textEquivalentRequired": true
+      }
+    },
+    {
+      "name": "Graph Edge",
+      "variants": [
+        "supports",
+        "contradicts",
+        "references",
+        "temporal",
+        "identity",
+        "legal"
+      ],
+      "states": [
+        "default",
+        "highlighted",
+        "dimmed"
+      ],
+      "accessibility": {
+        "legendRequired": true
+      }
     },
     {
       "name": "Timeline Entry",
+      "variants": [
+        "event",
+        "source",
+        "decision",
+        "community"
+      ],
+      "states": [
+        "default",
+        "flagged"
+      ],
       "parts": [
         "timestamp",
-        "event",
+        "title",
+        "description",
         "source",
         "status"
       ]
@@ -243,29 +292,87 @@
         "prohibited",
         "disputed",
         "unresolved"
-      ]
+      ],
+      "parts": [
+        "status",
+        "jurisdiction",
+        "basis",
+        "review-state"
+      ],
+      "rule": "Legal status must distinguish source law from MoonWitness interpretation/review."
+    },
+    {
+      "name": "AWS Boundary",
+      "parts": [
+        "boundary-line",
+        "label",
+        "legal-state"
+      ],
+      "rule": "Crimson boundary is semantic; do not use as generic decorative divider."
     },
     {
       "name": "Discussion Item",
+      "variants": [
+        "comment",
+        "question",
+        "community-note",
+        "moderator-note"
+      ],
+      "states": [
+        "default",
+        "edited",
+        "reported",
+        "hidden"
+      ],
       "parts": [
         "author",
+        "role",
         "body",
         "timestamp",
         "replies",
+        "actions",
         "moderation-state"
       ]
     },
     {
       "name": "Submission Card",
+      "states": [
+        "unverified",
+        "in-review",
+        "verified",
+        "rejected",
+        "needs-context"
+      ],
       "parts": [
         "submitter",
         "evidence",
+        "source",
         "verification-state",
+        "reviewer",
         "review-actions"
       ]
     },
     {
+      "name": "Notification Item",
+      "variants": [
+        "case-update",
+        "reply",
+        "review",
+        "system"
+      ],
+      "states": [
+        "unread",
+        "read"
+      ]
+    },
+    {
       "name": "Repository Health Row",
+      "states": [
+        "online",
+        "degraded",
+        "offline",
+        "syncing"
+      ],
       "parts": [
         "repo",
         "status",
@@ -273,7 +380,41 @@
         "schema",
         "records",
         "queue",
-        "errors"
+        "errors",
+        "last-sync",
+        "action"
+      ]
+    },
+    {
+      "name": "Audit Event Row",
+      "parts": [
+        "timestamp",
+        "actor",
+        "action",
+        "resource",
+        "result",
+        "trace-id"
+      ],
+      "surface": [
+        "platform"
+      ]
+    },
+    {
+      "name": "Metric Tile",
+      "variants": [
+        "neutral",
+        "good",
+        "warning",
+        "critical"
+      ],
+      "surface": [
+        "platform"
+      ],
+      "parts": [
+        "label",
+        "value",
+        "delta",
+        "context"
       ]
     }
   ]
