@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "brand": "MoonWitness",
+  "ecosystem": "MoonWitness × Rocksoul",
+  "tagline": "Truth leaves a trace.",
+  "sourceType": "editable-vector",
+  "markMeaning": {
+    "moon": "observation, perspective, long memory",
+    "eye": "witness, evidence, attention",
+    "traceStar": "truth signal, correlation, guidance",
+    "crosshair": "record, archive, accountability"
+  },
+  "palette": {
+    "void": "#0B0B0B",
+    "paper": "#F7F4EC",
+    "signal": "#D1132A",
+    "archive": "#10B981",
+    "research": "#3B82F6",
+    "warning": "#D89B17"
+  },
+  "assets": [
+    {"id":"mark","path":"logo-mark.svg","use":"primary symbol"},
+    {"id":"horizontal","path":"logo-horizontal.svg","use":"navigation and headers"},
+    {"id":"stacked","path":"logo-stacked.svg","use":"cover and campaign"},
+    {"id":"wordmark","path":"wordmark.svg","use":"text-forward brand lockup"},
+    {"id":"monochrome","path":"logo-monochrome.svg","use":"single-color reproduction"},
+    {"id":"ecosystem-lockup","path":"rocksoul-lockup.svg","use":"MoonWitness × Rocksoul ecosystem"},
+    {"id":"favicon","path":"favicon.svg","use":"browser favicon"},
+    {"id":"apple-touch","path":"apple-touch-icon.svg","use":"iOS touch icon vector source"},
+    {"id":"maskable","path":"app-icon-maskable.svg","use":"PWA maskable icon"},
+    {"id":"app-icon","path":"app-icon.svg","use":"application icon vector source"},
+    {"id":"social-avatar","path":"social-avatar.svg","use":"profile/avatar"},
+    {"id":"og-card","path":"og-card.svg","use":"Open Graph/social share"},
+    {"id":"safari-pinned","path":"safari-pinned-tab.svg","use":"Safari pinned tab"}
+  ]
+}
