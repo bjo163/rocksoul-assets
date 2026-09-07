@@ -8,7 +8,10 @@ This directory builds the MoonWitness golden vertical slice with Penpot's offici
 
 ## Source inputs
 
+- `manifest.json`
 - `penpot/tokens/moonwitness.tokens.json`
+- `penpot/screens/screens.json`
+- `penpot/responsive/responsive.json`
 - `penpot/golden-cases/mw-0042/visuals/desktop/*.svg`
 - `penpot/golden-cases/mw-0042/visuals/tablet/*.svg`
 - `penpot/golden-cases/mw-0042/visuals/mobile/*.svg`
@@ -30,9 +33,18 @@ The next Penpot-native step is to rebuild the shared primitives/components from 
 
 ```bash
 cd tools/penpot
-npm ci
+npm install --no-audit --no-fund
+npm run validate:sources
 npm run generate
 npm run validate
 ```
 
-GitHub Actions also builds and validates the package automatically when the relevant source files change.
+Or run the full check:
+
+```bash
+npm run check
+```
+
+The repository currently does not commit an npm lockfile, so `npm ci` is not a valid bootstrap command yet.
+
+GitHub Actions validates design-source consistency, rebuilds the Penpot package, validates its ZIP structure, and checks pull requests for an out-of-date generated artifact.
