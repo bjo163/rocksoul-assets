@@ -47,4 +47,4 @@ npm run check
 
 The repository currently does not commit an npm lockfile, so `npm ci` is not a valid bootstrap command yet.
 
-GitHub Actions validates design-source consistency, rebuilds the Penpot package, validates its ZIP structure, and checks pull requests for an out-of-date generated artifact.
+GitHub Actions validates design-source consistency, rebuilds the Penpot package, validates its ZIP structure, and uploads the generated artifact for inspection. The binary export is treated as generated output; CI relies on semantic/source validation rather than byte-for-byte reproducibility.
