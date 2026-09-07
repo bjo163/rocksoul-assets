@@ -2,16 +2,34 @@ name: Build Penpot Golden Slice
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - "manifest.json"
+      - "tools/penpot/**"
+      - "penpot/tokens/**"
+      - "penpot/primitives/**"
+      - "penpot/components/**"
+      - "penpot/patterns/**"
+      - "penpot/screens/**"
+      - "penpot/responsive/**"
+      - "penpot/golden-cases/mw-0042/**"
+      - ".github/workflows/build-penpot.yml"
   push:
     branches: [main]
     paths:
+      - "manifest.json"
       - "tools/penpot/**"
       - "penpot/tokens/**"
+      - "penpot/primitives/**"
+      - "penpot/components/**"
+      - "penpot/patterns/**"
+      - "penpot/screens/**"
+      - "penpot/responsive/**"
       - "penpot/golden-cases/mw-0042/**"
       - ".github/workflows/build-penpot.yml"
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build:
@@ -29,6 +47,10 @@ jobs:
         working-directory: tools/penpot
         run: npm install --no-audit --no-fund
 
+      - name: Validate design sources
+        working-directory: tools/penpot
+        run: npm run validate:sources
+
       - name: Generate Penpot file
         working-directory: tools/penpot
         run: npm run generate
@@ -36,6 +58,28 @@ jobs:
       - name: Validate package structure
         working-directory: tools/penpot
         run: npm run validate
+
+      - name: Upload Penpot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: moonwitness-mw-0042-penpot
+          path: penpot/generated/moonwitness-mw-0042.penpot
+
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download generated Penpot artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: moonwitness-mw-0042-penpot
+          path: penpot/generated
 
       - name: Commit generated Penpot file
         run: |
@@ -48,9 +92,3 @@ jobs:
             git commit -m "build: generate MW-0042 Penpot file"
             git push
           fi
-
-      - name: Upload Penpot artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: moonwitness-mw-0042-penpot
-          path: penpot/generated/moonwitness-mw-0042.penpot
