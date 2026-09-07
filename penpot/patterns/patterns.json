@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "patterns": [
+    {
+      "name": "Public Case",
+      "composition": [
+        "Case Header",
+        "Four Record Summary",
+        "Correlation Score",
+        "Evidence Grid",
+        "AWS Legal Summary",
+        "Related Cases"
+      ]
+    },
+    {
+      "name": "Evidence Grid",
+      "composition": [
+        "filters",
+        "Evidence Card[]",
+        "pagination"
+      ]
+    },
+    {
+      "name": "Correlation Graph",
+      "composition": [
+        "Graph Node[]",
+        "relations",
+        "score-panel",
+        "legend"
+      ]
+    },
+    {
+      "name": "Case Timeline",
+      "composition": [
+        "filters",
+        "Timeline Entry[]"
+      ]
+    },
+    {
+      "name": "Repository Monitor",
+      "surface": "platform",
+      "composition": [
+        "Repository Health Row[]",
+        "sync-actions",
+        "job-state"
+      ]
+    },
+    {
+      "name": "Moderation Queue",
+      "surface": "platform",
+      "composition": [
+        "filters",
+        "Submission Card[]",
+        "bulk-actions"
+      ]
+    },
+    {
+      "name": "Community Case Thread",
+      "surface": "community",
+      "composition": [
+        "Case Header",
+        "Discussion Item[]",
+        "composer",
+        "follow/save"
+      ]
+    },
+    {
+      "name": "Auth Form",
+      "surface": "community",
+      "composition": [
+        "identity",
+        "credentials",
+        "provider-actions",
+        "legal-copy",
+        "error-state"
+      ]
+    },
+    {
+      "name": "Search + Filters",
+      "composition": [
+        "search-input",
+        "filter-chips",
+        "sort",
+        "result-count"
+      ]
+    },
+    {
+      "name": "Empty / Loading / Error",
+      "composition": [
+        "state-icon",
+        "headline",
+        "supporting-copy",
+        "recovery-action"
+      ]
+    }
+  ]
+}

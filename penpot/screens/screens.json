@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "referenceRoot": "../../moonwitness/ui/v1/screens",
+  "pages": [
+    "00 — Cover",
+    "01 — References",
+    "02 — Foundations",
+    "03 — Primitives",
+    "04 — Components",
+    "05 — Patterns",
+    "06 — Web",
+    "07 — Community",
+    "08 — Platform",
+    "09 — Auth",
+    "10 — Responsive",
+    "11 — Prototype",
+    "12 — Dev Handoff"
+  ],
+  "screens": [
+    {
+      "id": "01",
+      "slug": "landing-hero",
+      "surface": "web",
+      "reference": "../../moonwitness/ui/v1/screens/01-landing-hero.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "02",
+      "slug": "manifesto",
+      "surface": "web",
+      "reference": "../../moonwitness/ui/v1/screens/02-manifesto.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "03",
+      "slug": "rocksoul-character",
+      "surface": "web",
+      "reference": "../../moonwitness/ui/v1/screens/03-rocksoul-character.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "04",
+      "slug": "repositories-overview",
+      "surface": "web",
+      "reference": "../../moonwitness/ui/v1/screens/04-repositories-overview.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "05",
+      "slug": "story",
+      "surface": "web",
+      "domain": "STORY",
+      "reference": "../../moonwitness/ui/v1/screens/05-story.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "06",
+      "slug": "event",
+      "surface": "web",
+      "domain": "EVENT",
+      "reference": "../../moonwitness/ui/v1/screens/06-event.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "07",
+      "slug": "person",
+      "surface": "web",
+      "domain": "PERSON",
+      "reference": "../../moonwitness/ui/v1/screens/07-person.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "08",
+      "slug": "rgbl",
+      "surface": "web",
+      "domain": "RGBL",
+      "reference": "../../moonwitness/ui/v1/screens/08-rgbl.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "09",
+      "slug": "aws",
+      "surface": "web",
+      "domain": "AWS",
+      "reference": "../../moonwitness/ui/v1/screens/09-aws.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "10",
+      "slug": "case-public",
+      "surface": "web",
+      "reference": "../../moonwitness/ui/v1/screens/10-case-public.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "11",
+      "slug": "correlation",
+      "surface": "web",
+      "reference": "../../moonwitness/ui/v1/screens/11-correlation.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "12",
+      "slug": "aws-legal",
+      "surface": "web",
+      "domain": "AWS",
+      "reference": "../../moonwitness/ui/v1/screens/12-aws-legal.png",
+      "targetPage": "06 — Web"
+    },
+    {
+      "id": "13",
+      "slug": "community",
+      "surface": "community",
+      "reference": "../../moonwitness/ui/v1/screens/13-community.png",
+      "targetPage": "07 — Community"
+    },
+    {
+      "id": "14",
+      "slug": "auth",
+      "surface": "community",
+      "reference": "../../moonwitness/ui/v1/screens/14-auth.png",
+      "targetPage": "09 — Auth"
+    },
+    {
+      "id": "15",
+      "slug": "platform-admin",
+      "surface": "platform",
+      "reference": "../../moonwitness/ui/v1/screens/15-platform-admin.png",
+      "targetPage": "08 — Platform"
+    },
+    {
+      "id": "16",
+      "slug": "design-system",
+      "surface": "design-system",
+      "reference": "../../moonwitness/ui/v1/screens/16-design-system.png",
+      "targetPage": "02 — Foundations"
+    }
+  ]
+}

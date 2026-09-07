@@ -1,18 +1,21 @@
 # rocksoul-assets
 
-Visual source of truth for the **MoonWitness × Rocksoul** ecosystem.
+Visual and design-source repository for the **MoonWitness × Rocksoul** ecosystem.
 
 > **MoonWitness watches. Rocksoul follows. The record connects. The law draws the line. The legend stays open.**
 
-This repository contains visual references and design-system direction only. Application source code belongs in the MoonWitness product repositories.
+This repository stores visual baselines, Penpot-ready design tokens, primitives, component contracts, and handoff specifications. Application source code belongs in the MoonWitness product repository.
 
-## Current visual baseline
+## Design source of truth
 
-**Version:** `moonwitness/ui/v1`  
-**Status:** Concept baseline / ready for Figma reconstruction  
-**Primary style:** Gen Z × grunge × editorial research × evidence archive × cinematic title sequence
+**Canonical design tool:** Penpot  
+**Canonical repository layer:** `rocksoul-assets`  
+**Visual baseline:** `moonwitness/ui/v1`  
+**Penpot source:** `penpot/`
 
-**Figma production file:** https://www.figma.com/design/OZawflyISNWRFLSpVPaM4N
+The earlier Figma file is retained as a prototype/reference only:
+
+https://www.figma.com/design/OZawflyISNWRFLSpVPaM4N
 
 ### Product surfaces
 
@@ -21,7 +24,7 @@ This repository contains visual references and design-system direction only. App
 | 01–12 | Public observatory, repositories, cases, correlation, legal | `apps/web` |
 | 13–14 | Community + authentication | `apps/community` |
 | 15 | Internal operations / admin | `apps/platform` |
-| 16 | Raw design-system reference | `packages/tokens` + `packages/ui` |
+| 16 | Design-system reference | `packages/tokens` + `packages/ui` |
 
 ## Repository domains
 
@@ -33,13 +36,34 @@ This repository contains visual references and design-system direction only. App
 | RGBL | `rocksoul-rgbl` | What does the source actually say? |
 | AWS | `rocksoul-aws` | Was it allowed? |
 
+## Design pipeline
+
+```text
+moonwitness/ui/v1/screens
+          ↓
+     penpot/tokens
+          ↓
+  penpot/primitives
+          ↓
+  penpot/components
+          ↓
+    penpot/patterns
+          ↓
+      Penpot file
+          ↓
+packages/tokens + packages/ui
+          ↓
+apps/web + apps/community + apps/platform
+```
+
 ## Asset contract
 
-- Never use generator/default filenames in committed assets.
+- Never commit generator/default filenames.
 - Prefix ordered screens with a two-digit sequence.
-- Existing `v1` files are immutable visual references; revisions go to a new version folder.
-- Generated concept screens are **references**, not pixel-perfect implementation contracts.
-- Figma is the next canonical layer for tokens, primitives, components, patterns, responsive states, and dev handoff.
-- Do not place app source code in this repository.
+- Existing `v1` images are immutable visual references; material revisions go to a new version folder.
+- PNG screens are composition references, not pixel-perfect implementation contracts.
+- Penpot is the canonical interactive design layer.
+- Tokens and component contracts in this repository are version-controlled sources for Penpot and implementation.
+- Do not place application source code in this repository.
 
-See [`manifest.json`](./manifest.json) for machine-readable screen mapping.
+Start with [`penpot/README.md`](./penpot/README.md) and [`docs/PENPOT-HANDOFF.md`](./docs/PENPOT-HANDOFF.md).

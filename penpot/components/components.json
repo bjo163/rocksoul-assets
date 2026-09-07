@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "buildOrder": [
+    "raw-primitive",
+    "component",
+    "pattern",
+    "screen"
+  ],
+  "typography": {
+    "direction": "grotesk display + neutral readable body + mono metadata",
+    "note": "Final font families must be selected in Penpot before code freeze; generated-image lettering is not a font contract."
+  },
+  "primitives": [
+    {
+      "name": "Button",
+      "variants": [
+        "primary",
+        "secondary",
+        "ghost",
+        "danger"
+      ],
+      "sizes": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Input",
+      "variants": [
+        "default",
+        "search"
+      ],
+      "states": [
+        "default",
+        "focus",
+        "error",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Textarea",
+      "states": [
+        "default",
+        "focus",
+        "error",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Select",
+      "states": [
+        "default",
+        "open",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "states": [
+        "unchecked",
+        "checked",
+        "indeterminate",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Radio",
+      "states": [
+        "unchecked",
+        "checked",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Switch",
+      "states": [
+        "off",
+        "on",
+        "disabled"
+      ]
+    },
+    {
+      "name": "Badge",
+      "variants": [
+        "supported",
+        "verified",
+        "contested",
+        "partial",
+        "unresolved",
+        "restricted",
+        "prohibited"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "variants": [
+        "image",
+        "initial",
+        "anonymous"
+      ]
+    },
+    {
+      "name": "Divider",
+      "variants": [
+        "default",
+        "legal-boundary"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "MW Header",
+      "surface": [
+        "web",
+        "community"
+      ],
+      "parts": [
+        "brand",
+        "nav",
+        "search",
+        "live-status",
+        "account"
+      ]
+    },
+    {
+      "name": "Platform Sidebar",
+      "surface": [
+        "platform"
+      ],
+      "parts": [
+        "brand",
+        "navigation",
+        "workspace",
+        "account"
+      ]
+    },
+    {
+      "name": "Case Header",
+      "parts": [
+        "case-id",
+        "title",
+        "status",
+        "metadata",
+        "actions"
+      ]
+    },
+    {
+      "name": "Case Card",
+      "parts": [
+        "case-id",
+        "title",
+        "summary",
+        "status",
+        "trace-count"
+      ]
+    },
+    {
+      "name": "Evidence Card",
+      "parts": [
+        "source",
+        "claim",
+        "provenance",
+        "status",
+        "actions"
+      ]
+    },
+    {
+      "name": "Repository Card",
+      "parts": [
+        "domain",
+        "repo",
+        "sync-status",
+        "records",
+        "last-sync"
+      ]
+    },
+    {
+      "name": "Source Block",
+      "parts": [
+        "source-id",
+        "excerpt",
+        "citation",
+        "provenance"
+      ]
+    },
+    {
+      "name": "Citation",
+      "parts": [
+        "code",
+        "source",
+        "locator"
+      ]
+    },
+    {
+      "name": "Correlation Score",
+      "parts": [
+        "score",
+        "confidence",
+        "explanation"
+      ]
+    },
+    {
+      "name": "Graph Node",
+      "variants": [
+        "story",
+        "event",
+        "person",
+        "rgbl",
+        "aws",
+        "case"
+      ]
+    },
+    {
+      "name": "Timeline Entry",
+      "parts": [
+        "timestamp",
+        "event",
+        "source",
+        "status"
+      ]
+    },
+    {
+      "name": "Legal Status",
+      "variants": [
+        "permitted",
+        "restricted",
+        "prohibited",
+        "disputed",
+        "unresolved"
+      ]
+    },
+    {
+      "name": "Discussion Item",
+      "parts": [
+        "author",
+        "body",
+        "timestamp",
+        "replies",
+        "moderation-state"
+      ]
+    },
+    {
+      "name": "Submission Card",
+      "parts": [
+        "submitter",
+        "evidence",
+        "verification-state",
+        "review-actions"
+      ]
+    },
+    {
+      "name": "Repository Health Row",
+      "parts": [
+        "repo",
+        "status",
+        "commit",
+        "schema",
+        "records",
+        "queue",
+        "errors"
+      ]
+    }
+  ]
+}

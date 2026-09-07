@@ -1,0 +1,261 @@
+{
+  "Global": {
+    "color": {
+      "neutral": {
+        "200": {
+          "$value": "#D9D6CE",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#A3A3A3",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#666666",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#242424",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#151515",
+          "$type": "color"
+        },
+        "950": {
+          "$value": "#0B0B0B",
+          "$type": "color",
+          "$description": "Near-black MoonWitness base."
+        },
+        "050": {
+          "$value": "#F7F4EC",
+          "$type": "color",
+          "$description": "Warm paper/off-white."
+        },
+        "000": {
+          "$value": "#FFFFFF",
+          "$type": "color"
+        }
+      },
+      "brand": {
+        "crimson": {
+          "$value": "#D1132A",
+          "$type": "color",
+          "$description": "MoonWitness critical accent and legal boundary."
+        }
+      }
+    },
+    "space": {
+      "4": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "8": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "12": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "16": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "24": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "32": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "48": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "64": {
+        "$value": "64px",
+        "$type": "dimension"
+      },
+      "96": {
+        "$value": "96px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "none": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "sm": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "md": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "pill": {
+        "$value": "999px",
+        "$type": "dimension"
+      }
+    },
+    "stroke": {
+      "hairline": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "strong": {
+        "$value": "2px",
+        "$type": "dimension"
+      }
+    }
+  },
+  "Mode/Dark": {
+    "surface": {
+      "page": {
+        "$value": "#0B0B0B",
+        "$type": "color"
+      },
+      "raised": {
+        "$value": "#151515",
+        "$type": "color"
+      },
+      "panel": {
+        "$value": "#1B1B1B",
+        "$type": "color"
+      }
+    },
+    "text": {
+      "primary": {
+        "$value": "#F7F4EC",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "#A3A3A3",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "#666666",
+        "$type": "color"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "#2E2E2E",
+        "$type": "color"
+      },
+      "strong": {
+        "$value": "#4A4A4A",
+        "$type": "color"
+      }
+    }
+  },
+  "Mode/Light": {
+    "surface": {
+      "page": {
+        "$value": "#F7F4EC",
+        "$type": "color"
+      },
+      "raised": {
+        "$value": "#FFFFFF",
+        "$type": "color"
+      },
+      "panel": {
+        "$value": "#EEEAE0",
+        "$type": "color"
+      }
+    },
+    "text": {
+      "primary": {
+        "$value": "#0B0B0B",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "#4A4A4A",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "#737373",
+        "$type": "color"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "#D9D6CE",
+        "$type": "color"
+      },
+      "strong": {
+        "$value": "#A6A197",
+        "$type": "color"
+      }
+    }
+  },
+  "Semantic/Status": {
+    "supported": {
+      "$value": "#16A36A",
+      "$type": "color"
+    },
+    "verified": {
+      "$value": "#17A673",
+      "$type": "color"
+    },
+    "contested": {
+      "$value": "#D1132A",
+      "$type": "color"
+    },
+    "partial": {
+      "$value": "#D89B17",
+      "$type": "color"
+    },
+    "unresolved": {
+      "$value": "#767676",
+      "$type": "color"
+    },
+    "restricted": {
+      "$value": "#C46C17",
+      "$type": "color"
+    },
+    "prohibited": {
+      "$value": "#B20F23",
+      "$type": "color"
+    }
+  },
+  "Domain/RGBL": {
+    "red": {
+      "$value": "#E51735",
+      "$type": "color"
+    },
+    "green": {
+      "$value": "#10B981",
+      "$type": "color"
+    },
+    "blue": {
+      "$value": "#3B82F6",
+      "$type": "color"
+    },
+    "light": {
+      "$value": "#F4C542",
+      "$type": "color"
+    }
+  },
+  "Domain/AWS": {
+    "boundary": {
+      "$value": "#D1132A",
+      "$type": "color"
+    },
+    "warning": {
+      "$value": "#C46C17",
+      "$type": "color"
+    },
+    "legal-paper": {
+      "$value": "#F2EFE7",
+      "$type": "color"
+    },
+    "legal-ink": {
+      "$value": "#141414",
+      "$type": "color"
+    }
+  }
+}
