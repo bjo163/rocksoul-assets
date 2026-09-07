@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "version": "v2",
+  "sourceType": "editable-vector",
+  "shell": "application-shell.svg",
+  "requiredShellParts": [
+    "compact-sidebar",
+    "shared-topbar",
+    "theme-control",
+    "breadcrumbs",
+    "backend-status",
+    "notifications",
+    "user-menu",
+    "command-palette-entry"
+  ],
+  "screens": [
+    {"id":"17","slug":"dashboard","path":"17-dashboard.svg","activeNav":"Dashboard"},
+    {"id":"18","slug":"command-palette","path":"18-command-palette.svg","overlay":true,"activeNav":"Dashboard"},
+    {"id":"19","slug":"notifications","path":"19-notifications.svg","overlay":true,"activeNav":"Dashboard"},
+    {"id":"20","slug":"kanban","path":"20-kanban.svg","activeNav":"Kanban"},
+    {"id":"21","slug":"calendar","path":"21-calendar.svg","activeNav":"Calendar"},
+    {"id":"22","slug":"chat","path":"22-chat.svg","activeNav":"Chat"},
+    {"id":"23","slug":"ai-workspace","path":"23-ai-workspace.svg","activeNav":"AI Workspace"},
+    {"id":"24","slug":"resources","path":"24-resources.svg","activeNav":"Resources"},
+    {"id":"25","slug":"profile-settings","path":"25-profile-settings.svg","activeNav":"Settings"},
+    {"id":"26","slug":"authorization","path":"26-authorization.svg","activeNav":"Settings"},
+    {"id":"27","slug":"system-states","path":"27-system-states.svg","activeNav":"Dashboard"}
+  ]
+}
