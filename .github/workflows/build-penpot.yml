@@ -24,12 +24,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: npm
-          cache-dependency-path: tools/penpot/package-lock.json
 
       - name: Install builder
         working-directory: tools/penpot
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       - name: Generate Penpot file
         working-directory: tools/penpot

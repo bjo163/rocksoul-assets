@@ -121,9 +121,4 @@ context.closeFile();
 const output = createWriteStream(outFile);
 await penpot.exportStream(context, Writable.toWeb(output));
 
-await new Promise((resolve, reject) => {
-  output.on("close", resolve);
-  output.on("error", reject);
-});
-
 console.log(outFile);
