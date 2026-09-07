@@ -2,11 +2,29 @@ name: Build Penpot Golden Slice
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - "manifest.json"
+      - "tools/penpot/**"
+      - "penpot/tokens/**"
+      - "penpot/primitives/**"
+      - "penpot/components/**"
+      - "penpot/patterns/**"
+      - "penpot/screens/**"
+      - "penpot/responsive/**"
+      - "penpot/golden-cases/mw-0042/**"
+      - ".github/workflows/build-penpot.yml"
   push:
     branches: [main]
     paths:
+      - "manifest.json"
       - "tools/penpot/**"
       - "penpot/tokens/**"
+      - "penpot/primitives/**"
+      - "penpot/components/**"
+      - "penpot/patterns/**"
+      - "penpot/screens/**"
+      - "penpot/responsive/**"
       - "penpot/golden-cases/mw-0042/**"
       - ".github/workflows/build-penpot.yml"
 
@@ -29,6 +47,10 @@ jobs:
         working-directory: tools/penpot
         run: npm install --no-audit --no-fund
 
+      - name: Validate design sources
+        working-directory: tools/penpot
+        run: npm run validate:sources
+
       - name: Generate Penpot file
         working-directory: tools/penpot
         run: npm run generate
@@ -37,7 +59,12 @@ jobs:
         working-directory: tools/penpot
         run: npm run validate
 
+      - name: Verify generated artifact is committed
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code -- penpot/generated/moonwitness-mw-0042.penpot
+
       - name: Commit generated Penpot file
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "moonwitness-design-bot"
           git config user.email "actions@users.noreply.github.com"
