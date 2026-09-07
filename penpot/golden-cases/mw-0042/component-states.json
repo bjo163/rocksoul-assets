@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "caseId": "MW-0042",
+  "surfaces": {
+    "web": {
+      "MW Header": "transparent→solid-on-scroll",
+      "Case Header": "public",
+      "Four Record Summary": {
+        "story": "linked",
+        "event": "linked",
+        "person": "partial",
+        "rgbl": "linked"
+      },
+      "Evidence Card": {
+        "story": "default",
+        "event": "selected",
+        "person": "flagged",
+        "rgbl": "default"
+      },
+      "Correlation Score": "detailed",
+      "Graph Node": {
+        "story": "default",
+        "event": "selected",
+        "person": "unresolved",
+        "rgbl": "default",
+        "case": "selected",
+        "aws": "dimmed-until-boundary-section"
+      },
+      "Legal Status": "disputed",
+      "AWS Boundary": "active"
+    },
+    "community": {
+      "Case Header": "community",
+      "Discussion Item": [
+        "question/default",
+        "moderator-note/default"
+      ],
+      "Submission Card": "needs-context",
+      "Button": [
+        "follow/secondary",
+        "save/ghost",
+        "submit/primary"
+      ]
+    },
+    "platform": {
+      "Platform Sidebar": "expanded",
+      "Case Header": "platform",
+      "Repository Health Row": {
+        "rocksoul-legend": "online",
+        "rocksoul-event": "online",
+        "rocksoul-superhero": "degraded",
+        "rocksoul-rgbl": "online",
+        "rocksoul-aws": "online"
+      },
+      "Submission Card": "needs-context",
+      "Legal Status": "disputed",
+      "Metric Tile": [
+        "neutral",
+        "warning"
+      ],
+      "Audit Event Row": "default"
+    }
+  }
+}

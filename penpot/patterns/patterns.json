@@ -1,31 +1,40 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "goldenCase": "MW-0042",
   "patterns": [
     {
       "name": "Public Case",
+      "goldenCaseUse": "MW-0042 / overview",
       "composition": [
+        "MW Header",
         "Case Header",
         "Four Record Summary",
         "Correlation Score",
         "Evidence Grid",
-        "AWS Legal Summary",
+        "AWS Boundary",
+        "Legal Status",
         "Related Cases"
       ]
     },
     {
       "name": "Evidence Grid",
+      "goldenCaseUse": "MW-0042 / four records",
       "composition": [
-        "filters",
+        "Search + Filters",
         "Evidence Card[]",
+        "Source Block",
+        "Citation",
         "pagination"
       ]
     },
     {
       "name": "Correlation Graph",
+      "goldenCaseUse": "MW-0042 / correlation",
       "composition": [
         "Graph Node[]",
-        "relations",
-        "score-panel",
+        "Graph Edge[]",
+        "Correlation Score",
+        "text-equivalent",
         "legend"
       ]
     },
@@ -37,8 +46,19 @@
       ]
     },
     {
+      "name": "AWS Legal Summary",
+      "goldenCaseUse": "MW-0042 / legal boundary",
+      "composition": [
+        "AWS Boundary",
+        "Legal Status",
+        "Source Block[]",
+        "review-state"
+      ]
+    },
+    {
       "name": "Repository Monitor",
       "surface": "platform",
+      "goldenCaseUse": "MW-0042 / platform",
       "composition": [
         "Repository Health Row[]",
         "sync-actions",
@@ -48,6 +68,7 @@
     {
       "name": "Moderation Queue",
       "surface": "platform",
+      "goldenCaseUse": "MW-0042 / SUB-0042-01",
       "composition": [
         "filters",
         "Submission Card[]",
@@ -57,9 +78,11 @@
     {
       "name": "Community Case Thread",
       "surface": "community",
+      "goldenCaseUse": "MW-0042 / discussion",
       "composition": [
         "Case Header",
         "Discussion Item[]",
+        "Submission Card",
         "composer",
         "follow/save"
       ]

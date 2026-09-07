@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "fixture": true,
+  "factualClaim": false,
+  "purpose": "Golden design and implementation fixture. All names, records, sources, dates, places, and legal instruments are synthetic unless explicitly marked otherwise.",
+  "case": {
+    "id": "MW-0042",
+    "slug": "the-silent-flight",
+    "title": "The Silent Flight",
+    "eyebrow": "GOLDEN CASE / DESIGN FIXTURE",
+    "summary": "Four separate records appear to line up around one unexplained movement. Enough to investigate. Not enough to close.",
+    "status": "unresolved",
+    "visibility": "public",
+    "updatedAt": "2026-09-08T05:30:00+07:00",
+    "tags": [
+      "movement",
+      "night",
+      "identity",
+      "source-text",
+      "legal-boundary"
+    ]
+  },
+  "records": {
+    "story": {
+      "id": "STORY-0042-A",
+      "repo": "rocksoul-legend",
+      "title": "A route nobody remembers taking",
+      "short": "A recurring account describes a silent departure, a missing interval, and a return before sunrise.",
+      "verification": "source-linked",
+      "status": "supported",
+      "provenance": {
+        "sourceId": "SRC-STORY-0042-A",
+        "sourceType": "synthetic-archive-note",
+        "locator": "fixture/story/0042/a",
+        "independent": true
+      }
+    },
+    "event": {
+      "id": "EVENT-0042-A",
+      "repo": "rocksoul-event",
+      "title": "Movement recorded inside the missing interval",
+      "short": "A timestamped event record places an unidentified movement inside the same time window.",
+      "verification": "verified-fixture",
+      "status": "supported",
+      "temporal": {
+        "start": "02:14",
+        "end": "02:37",
+        "timezone": "LOCAL/FIXTURE"
+      },
+      "provenance": {
+        "sourceId": "SRC-EVENT-0042-A",
+        "sourceType": "synthetic-event-log",
+        "locator": "fixture/event/0042/a",
+        "independent": true
+      }
+    },
+    "person": {
+      "id": "PERSON-0042-A",
+      "repo": "rocksoul-superhero",
+      "title": "Identity match is incomplete",
+      "short": "Two attributes line up with the person record, but one key identity field remains unverified.",
+      "verification": "partial",
+      "status": "partial",
+      "matchDimensions": {
+        "role": true,
+        "movement": true,
+        "identity": false
+      },
+      "provenance": {
+        "sourceId": "SRC-PERSON-0042-A",
+        "sourceType": "synthetic-person-record",
+        "locator": "fixture/person/0042/a",
+        "independent": true
+      }
+    },
+    "rgbl": {
+      "id": "RGBL-0042-A",
+      "repo": "rocksoul-rgbl",
+      "title": "The text preserves the same motif",
+      "short": "A source fragment contains a movement / silence / return motif. Semantic relation is present; causal relation is not established.",
+      "verification": "source-linked",
+      "status": "supported",
+      "channels": {
+        "red": "movement",
+        "green": "return",
+        "blue": "night",
+        "light": "unresolved relation"
+      },
+      "provenance": {
+        "sourceId": "SRC-RGBL-0042-A",
+        "sourceType": "synthetic-text-fragment",
+        "locator": "fixture/rgbl/0042/a",
+        "independent": true
+      }
+    }
+  },
+  "correlation": {
+    "score": 0.87,
+    "confidence": "medium-high",
+    "status": "supported-not-conclusive",
+    "dimensions": {
+      "temporalMatch": 0.94,
+      "motifMatch": 0.89,
+      "sourceIndependence": 0.91,
+      "identityMatch": 0.64
+    },
+    "explanation": "The records converge strongly on time and motif, but the person identity remains incomplete. The score supports continued investigation, not a factual or causal conclusion.",
+    "guardrails": [
+      "correlation-is-not-causation",
+      "score-requires-explanation",
+      "identity-partial-blocks-closure",
+      "unresolved-remains-valid-output"
+    ]
+  },
+  "aws": {
+    "id": "AWS-0042-A",
+    "repo": "rocksoul-aws",
+    "title": "The boundary question",
+    "prompt": "Even if the movement happened as reconstructed, what authority or rule would apply?",
+    "jurisdiction": "UNRESOLVED / FIXTURE",
+    "instruments": [
+      {
+        "id": "LAW-FIX-01",
+        "title": "Synthetic Cross-Border Movement Instrument",
+        "type": "fixture-instrument",
+        "status": "reference-only"
+      },
+      {
+        "id": "LAW-FIX-02",
+        "title": "Synthetic Protected-Passage Rule",
+        "type": "fixture-instrument",
+        "status": "reference-only"
+      }
+    ],
+    "legalStatus": "disputed",
+    "reviewState": "needs-legal-review",
+    "conclusion": "The fixture intentionally does not resolve jurisdiction. The legal layer demonstrates how MoonWitness separates evidence reconstruction from legal interpretation."
+  },
+  "community": {
+    "followingCount": 128,
+    "savedCount": 44,
+    "discussionCount": 17,
+    "submissions": [
+      {
+        "id": "SUB-0042-01",
+        "kind": "source",
+        "state": "needs-context",
+        "title": "Possible second event trace",
+        "body": "Community member submitted an additional timestamp, but provenance is incomplete.",
+        "canonicalEvidence": false
+      }
+    ],
+    "discussions": [
+      {
+        "id": "DISC-0042-01",
+        "kind": "question",
+        "role": "member",
+        "body": "If the person match is partial, why is the overall correlation still high?",
+        "state": "default"
+      },
+      {
+        "id": "DISC-0042-02",
+        "kind": "moderator-note",
+        "role": "moderator",
+        "body": "Because temporal and source-independence dimensions are strong. Identity remains a blocking uncertainty and is shown separately.",
+        "state": "default"
+      }
+    ]
+  },
+  "platform": {
+    "repositoryHealth": [
+      {
+        "repo": "rocksoul-legend",
+        "status": "online",
+        "schema": "v1",
+        "queue": 0,
+        "errors": 0
+      },
+      {
+        "repo": "rocksoul-event",
+        "status": "online",
+        "schema": "v1",
+        "queue": 0,
+        "errors": 0
+      },
+      {
+        "repo": "rocksoul-superhero",
+        "status": "degraded",
+        "schema": "v1",
+        "queue": 1,
+        "errors": 0
+      },
+      {
+        "repo": "rocksoul-rgbl",
+        "status": "online",
+        "schema": "v1",
+        "queue": 0,
+        "errors": 0
+      },
+      {
+        "repo": "rocksoul-aws",
+        "status": "online",
+        "schema": "v1",
+        "queue": 0,
+        "errors": 0
+      }
+    ],
+    "review": {
+      "state": "needs-review",
+      "blockers": [
+        "person-identity-incomplete",
+        "aws-jurisdiction-unresolved"
+      ],
+      "reviewerActions": [
+        "request-context",
+        "flag-record",
+        "accept-fixture-state",
+        "return-to-queue"
+      ]
+    }
+  }
+}

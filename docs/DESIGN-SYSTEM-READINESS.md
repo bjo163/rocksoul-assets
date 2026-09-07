@@ -1,9 +1,8 @@
 # MoonWitness Design System — Ready-for-Code Gate
 
-The design system is allowed to move into `packages/tokens` and `packages/ui` only when every item below is satisfied.
+The design system moves into `packages/tokens` and `packages/ui` only when every required gate passes.
 
 ## Foundations
-
 - [x] Color baseline
 - [x] Dark / light surface semantics
 - [x] RGBL semantics
@@ -18,7 +17,6 @@ The design system is allowed to move into `packages/tokens` and `packages/ui` on
 - [ ] Contrast audit performed on real components
 
 ## Raw primitives
-
 - [x] Primitive inventory
 - [x] Variant inventory
 - [x] State inventory
@@ -28,7 +26,6 @@ The design system is allowed to move into `packages/tokens` and `packages/ui` on
 - [ ] Visual state matrix reviewed
 
 ## Components
-
 - [x] Public header
 - [x] Platform navigation
 - [x] Case grammar
@@ -41,40 +38,31 @@ The design system is allowed to move into `packages/tokens` and `packages/ui` on
 - [ ] Built in Penpot from primitives
 - [ ] Responsive instances validated
 
-## Product proof
+## Golden vertical slice
+- [x] MW-0042 canonical synthetic fixture
+- [x] Exact screen contract
+- [x] Component-state mapping
+- [x] Public → community → platform flow
+- [x] Acceptance criteria
+- [ ] Penpot 1440 design complete
+- [ ] Penpot 768 design complete
+- [ ] Penpot 390 design complete
+- [ ] Interaction prototype complete
+- [ ] Accessibility review complete
 
-Before coding the full product, one vertical slice must be completed in design:
-
-```text
-CASE MW-0042
-  → public case
-  → evidence records
-  → correlation
-  → AWS legal layer
-  → community discussion
-  → platform review
-```
-
-The slice must be validated at:
-
-- 1440 desktop
-- 768 tablet
-- 390 mobile
+Golden fixture: `penpot/golden-cases/mw-0042/`
 
 ## Code handoff
+Only after the golden slice passes:
 
-Only after the vertical slice passes:
-
-```text
-penpot/tokens
-   ↓
-packages/tokens
-   ↓
-packages/ui
-   ↓
-apps/web
-apps/community
-apps/platform
-```
+    penpot/tokens
+       ↓
+    packages/tokens
+       ↓
+    packages/ui
+       ↓
+    apps/web
+    apps/community
+    apps/platform
 
 Do not begin by creating screen-specific CSS copies of the PNG references.

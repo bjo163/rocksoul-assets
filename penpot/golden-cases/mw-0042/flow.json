@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "caseId": "MW-0042",
+  "entrypoints": [
+    {
+      "surface": "web",
+      "route": "/cases/mw-0042",
+      "auth": "none"
+    },
+    {
+      "surface": "community",
+      "route": "/community/cases/mw-0042",
+      "auth": "member"
+    },
+    {
+      "surface": "platform",
+      "route": "/platform/cases/mw-0042",
+      "auth": "researcher-or-higher"
+    }
+  ],
+  "steps": [
+    {
+      "id": "F01",
+      "surface": "web",
+      "screen": "Public Case Overview",
+      "goal": "Understand the case without being forced to accept a conclusion.",
+      "primaryAction": "Explore correlation",
+      "next": "F02"
+    },
+    {
+      "id": "F02",
+      "surface": "web",
+      "screen": "Evidence / Four Records",
+      "goal": "Inspect STORY, EVENT, PERSON, RGBL independently.",
+      "primaryAction": "Open correlation graph",
+      "next": "F03"
+    },
+    {
+      "id": "F03",
+      "surface": "web",
+      "screen": "Correlation",
+      "goal": "See why the score is high and where uncertainty remains.",
+      "primaryAction": "Continue to legal boundary",
+      "next": "F04"
+    },
+    {
+      "id": "F04",
+      "surface": "web",
+      "screen": "AWS Legal Layer",
+      "goal": "Separate evidence reconstruction from legal interpretation.",
+      "primaryAction": "Join discussion",
+      "next": "F05"
+    },
+    {
+      "id": "F05",
+      "surface": "community",
+      "screen": "Community Case Thread",
+      "goal": "Ask, follow, save, and submit context without mutating canonical evidence.",
+      "primaryAction": "Submit context",
+      "next": "F06"
+    },
+    {
+      "id": "F06",
+      "surface": "platform",
+      "screen": "Review Queue / Case",
+      "goal": "Review community submission and unresolved canonical blockers.",
+      "primaryAction": "Request context",
+      "next": "F07"
+    },
+    {
+      "id": "F07",
+      "surface": "platform",
+      "screen": "Case Review Decision",
+      "goal": "Preserve unresolved state until blockers have evidence.",
+      "primaryAction": "Keep case open",
+      "terminal": true
+    }
+  ]
+}
