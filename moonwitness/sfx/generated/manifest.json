@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "sampleRate": 44100,
+  "canonicalGenerator": "tools/assets/generate-sfx.py",
+  "sounds": [
+    {
+      "id": "ui-click-soft",
+      "wav": "generated/ui-click-soft.wav",
+      "ogg": "generated/ui-click-soft.ogg",
+      "durationMs": 80
+    },
+    {
+      "id": "command-open",
+      "wav": "generated/command-open.wav",
+      "ogg": "generated/command-open.ogg",
+      "durationMs": 140
+    },
+    {
+      "id": "notification",
+      "wav": "generated/notification.wav",
+      "ogg": "generated/notification.ogg",
+      "durationMs": 180
+    },
+    {
+      "id": "notification-critical",
+      "wav": "generated/notification-critical.wav",
+      "ogg": "generated/notification-critical.ogg",
+      "durationMs": 280
+    },
+    {
+      "id": "success",
+      "wav": "generated/success.wav",
+      "ogg": "generated/success.ogg",
+      "durationMs": 260
+    },
+    {
+      "id": "warning",
+      "wav": "generated/warning.wav",
+      "ogg": "generated/warning.ogg",
+      "durationMs": 240
+    },
+    {
+      "id": "error",
+      "wav": "generated/error.wav",
+      "ogg": "generated/error.ogg",
+      "durationMs": 260
+    },
+    {
+      "id": "evidence-linked",
+      "wav": "generated/evidence-linked.wav",
+      "ogg": "generated/evidence-linked.ogg",
+      "durationMs": 320
+    },
+    {
+      "id": "trace-found",
+      "wav": "generated/trace-found.wav",
+      "ogg": "generated/trace-found.ogg",
+      "durationMs": 300
+    },
+    {
+      "id": "ai-complete",
+      "wav": "generated/ai-complete.wav",
+      "ogg": "generated/ai-complete.ogg",
+      "durationMs": 280
+    }
+  ]
+}

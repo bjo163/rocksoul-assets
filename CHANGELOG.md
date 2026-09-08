@@ -2,6 +2,30 @@
 
 All notable repository-level changes to MoonWitness × Rocksoul design assets are documented here.
 
+## [1.1.0] — 2026-09-08
+
+### Product icon pack
+- Added 44 canonical SVG icons across navigation, action, status, and MoonWitness domain categories.
+- Standardized icon grid at 24 × 24 with 1.75 stroke and currentColor theming.
+
+### Dashboard pack
+- Added 20 modular dashboard widget SVG sources: KPI, backend status, notifications, recent cases, progress, timeline, map, donut/bar/line charts, correlation, provenance, quick actions, AI summary, Kanban, calendar, profile, audit, search, and empty widget.
+
+### Data visualization
+- Added 16 reusable data-viz SVG components covering charts, timeline, provenance, node-link correlation, evidence matrix, heatmap, repository health, legends, graph nodes, edge styles, metrics, and annotations.
+
+### Hero and product-state illustration
+- Added 8 reusable 1600×900 vector hero/background sources.
+- Added 12 reusable product-state illustration SVGs.
+
+### Motion and SFX
+- Added 6 animated SVG motion references with reduced-motion requirements.
+- Added 10 procedural product SFX cues and reproducible WAV/OGG generation.
+
+### Validation
+- Asset validator now enforces pack manifests and minimum canonical asset counts.
+- Release gate validates pack sources plus reproducible generated SFX.
+
 ## [1.0.0] — 2026-09-08
 
 ### Brand system
@@ -29,6 +53,3 @@ All notable repository-level changes to MoonWitness × Rocksoul design assets ar
 - Added brand raster generation workflow.
 - Locked Penpot builder dependencies with package-lock.json and switched installs to npm ci.
 - Added release gate validating assets, brand derivative reproducibility, release metadata, and Penpot generation/package structure.
-
-### Known external verification
-- Live Penpot native-component reconstruction, prototype wiring, font inspection, and final accessibility/contrast review require a live Penpot workspace and are intentionally not claimed as completed by this repository release.

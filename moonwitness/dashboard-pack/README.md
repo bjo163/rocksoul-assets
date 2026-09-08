@@ -1,0 +1,1 @@
+# MoonWitness Dashboard Pack\n\n20 modular dashboard widgets as editable SVG sources. Use these as Penpot/implementation references, not raster screenshots.\n

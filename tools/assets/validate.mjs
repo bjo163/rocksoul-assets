@@ -136,6 +136,37 @@ async function validateApplicationV2() {
   return screenContract.screens.length;
 }
 
+
+async function validateAssetPacks() {
+  const packs = [
+    { id: "icons", dir: "moonwitness/icons/svg", manifest: "moonwitness/icons/icons.json", ext: ".svg", min: 44 },
+    { id: "dashboard", dir: "moonwitness/dashboard-pack/widgets", manifest: "moonwitness/dashboard-pack/dashboard-pack.json", ext: ".svg", min: 20 },
+    { id: "dataViz", dir: "moonwitness/data-viz/charts", manifest: "moonwitness/data-viz/data-viz.json", ext: ".svg", min: 16 },
+    { id: "heroBackgrounds", dir: "moonwitness/hero-backgrounds/svg", manifest: "moonwitness/hero-backgrounds/backgrounds.json", ext: ".svg", min: 8 },
+    { id: "stateIllustrations", dir: "moonwitness/state-illustrations/svg", manifest: "moonwitness/state-illustrations/states.json", ext: ".svg", min: 12 },
+    { id: "motion", dir: "moonwitness/motion/svg", manifest: "moonwitness/motion/motion.json", ext: ".svg", min: 6 }
+  ];
+  const result = {};
+  for (const pack of packs) {
+    invariant(await exists(pack.manifest), `Missing asset pack manifest: ${pack.manifest}`);
+    const files = (await walk(pack.dir)).filter((name) => name.endsWith(pack.ext)).sort();
+    invariant(files.length >= pack.min, `${pack.id} expected at least ${pack.min} assets, got ${files.length}`);
+    for (const file of files) await assertNativeSvg(file);
+    result[pack.id] = files.length;
+  }
+
+  const sfx = await readJson("moonwitness/sfx/sounds.json");
+  invariant(Object.keys(sfx.usage ?? {}).length >= 10, "SFX pack must define at least 10 sounds");
+  if (await exists("moonwitness/sfx/generated/manifest.json")) {
+    const generated = await readJson("moonwitness/sfx/generated/manifest.json");
+    invariant((generated.sounds ?? []).length >= 10, "Generated SFX manifest must contain at least 10 sounds");
+    result.sfx = generated.sounds.length;
+  } else {
+    result.sfx = Object.keys(sfx.usage ?? {}).length;
+  }
+  return result;
+}
+
 function numeric(value) {
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
@@ -191,6 +222,7 @@ const manifest = await validateManifest();
 const brandAssets = await validateBrand();
 const applicationScreens = await validateApplicationV2();
 const mobileGoldenScreens = await validateGoldenMobileBounds();
+const assetPacks = await validateAssetPacks();
 
 console.log(JSON.stringify({
   validAssets: true,
@@ -198,5 +230,6 @@ console.log(JSON.stringify({
   brandAssets,
   applicationScreens,
   mobileGoldenScreens,
+  assetPacks,
   manifestVersion: manifest.schemaVersion
 }, null, 2));

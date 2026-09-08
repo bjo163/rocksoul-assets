@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Motion Pack",
+  "version": "1.0",
+  "canonicalFormat": "animated-svg",
+  "count": 6,
+  "root": "svg",
+  "reducedMotionRequired": true,
+  "motions": [
+    "logo-reveal",
+    "observatory-ring",
+    "trace-node-pulse",
+    "correlation-edge-draw",
+    "ai-thinking",
+    "backend-reconnect"
+  ]
+}

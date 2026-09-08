@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Product SFX",
+  "usage": {
+    "ui-click-soft": "lightweight UI confirmation",
+    "command-open": "command palette open",
+    "notification": "standard notification",
+    "notification-critical": "critical attention alert",
+    "success": "successful action or review",
+    "warning": "attention / disputed state",
+    "error": "failed action",
+    "evidence-linked": "evidence successfully linked",
+    "trace-found": "trace or correlation discovery",
+    "ai-complete": "AI response finished"
+  },
+  "rules": [
+    "Do not play sounds for every navigation action.",
+    "Respect user sound preferences and reduced-stimulation settings.",
+    "Critical sounds must never be the only alert channel."
+  ]
+}

@@ -1,0 +1,1 @@
+# MoonWitness State Illustration Pack\n\n12 product-state illustrations covering loading, empty, offline, forbidden, success, error, AI, review, and source states.\n

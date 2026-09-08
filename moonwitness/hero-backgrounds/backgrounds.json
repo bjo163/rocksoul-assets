@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Hero Background Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "count": 8,
+  "root": "svg",
+  "backgrounds": [
+    "observatory-grid",
+    "lunar-trace",
+    "evidence-constellation",
+    "signal-field",
+    "archive-texture",
+    "legal-boundary-field",
+    "rgbl-spectrum-field",
+    "correlation-web"
+  ]
+}
