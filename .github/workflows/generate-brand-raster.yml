@@ -41,6 +41,12 @@ jobs:
             echo "No generated raster changes."
           else
             git commit -m "build(brand): generate raster delivery assets"
-            git pull --rebase origin "$GITHUB_REF_NAME"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin "$GITHUB_REF_NAME"
+              if git push; then
+                break
+              fi
+              test "$attempt" -lt 3
+              sleep 2
+            done
           fi
