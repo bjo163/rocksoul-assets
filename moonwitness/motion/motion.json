@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "pack": "MoonWitness Motion Pack",
-  "version": "1.0",
+  "version": "1.2",
   "canonicalFormat": "animated-svg",
-  "count": 6,
+  "count": 12,
   "root": "svg",
   "reducedMotionRequired": true,
   "motions": [
@@ -12,6 +12,12 @@
     "trace-node-pulse",
     "correlation-edge-draw",
     "ai-thinking",
-    "backend-reconnect"
+    "backend-reconnect",
+    "notification-pulse",
+    "upload-complete",
+    "case-resolved",
+    "drawer-open",
+    "loading-trace",
+    "success-check"
   ]
 }
