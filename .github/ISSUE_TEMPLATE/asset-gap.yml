@@ -1,0 +1,42 @@
+name: Asset gap or new visual scope
+description: Report a missing semantic or propose a new production asset.
+title: "[asset] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        v1.3.1 closes the currently defined asset scope. Use this form for a real coverage defect or explicit new scope.
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - Existing asset is missing/broken
+        - New asset in an existing pack
+        - New pack / new visual capability
+        - Naming or semantic correction
+    validations:
+      required: true
+  - type: input
+    id: pack
+    attributes:
+      label: Owning pack or capability
+      placeholder: evidence-media, correlation-semantics, workflow, unknown…
+  - type: textarea
+    id: problem
+    attributes:
+      label: Consumer problem
+      description: Explain the product/design problem, not only the desired filename.
+    validations:
+      required: true
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Semantic / accessibility considerations
+      description: Include verification, uncertainty, causation, legal-status, color-only, or reduced-motion concerns where relevant.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Definition of done
+      description: Expected source, derivative, registry, showcase, and documentation behavior.
