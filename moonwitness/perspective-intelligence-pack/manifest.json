@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Perspective Intelligence Pack",
+  "version": "1.3.1",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 8,
+  "root": "svg",
+  "assets": [
+    "perspective-constellation",
+    "world-perspective-field",
+    "divergence-compass",
+    "zigzag-signal-timeline",
+    "actor-framing-matrix",
+    "provenance-flow",
+    "reaction-spectrum",
+    "coverage-radar"
+  ],
+  "semantics": {
+    "domain": "PERSPECTIVE",
+    "owner": "rocksoul-jizz",
+    "consumer": "rocksoul-ui",
+    "guardrails": [
+      "distance is visual separation, not truth distance",
+      "coverage is not population weight",
+      "divergence is not a truth score",
+      "signal change is not event truth",
+      "reaction is not event status",
+      "coverage quality is not evidence strength"
+    ]
+  }
+}

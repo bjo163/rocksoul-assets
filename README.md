@@ -28,12 +28,12 @@ This repository defines **how the MoonWitness × Rocksoul ecosystem looks and co
 | Signal | Current |
 |---|---:|
 | Release | **v1.3.1** |
-| Asset-pack families | **43** |
-| Showcase collections | **45** |
-| Delivery files indexed in showcase | **1,464 / 1,464** |
+| Asset-pack families | **44** |
+| Showcase collections | **46** |
+| Delivery files indexed in showcase | **1,486 / 1,486** |
 | Showcase coverage | **100%** |
-| Canonical MoonWitness SVG sources | **634** |
-| PNG / APNG delivery files | **777** |
+| Canonical MoonWitness SVG sources | **644** |
+| PNG / APNG delivery files | **789** |
 | Runtime motion | **12 SVG + 12 APNG + 12 WebM + 12 Lottie** |
 | Product SFX | **14 WAV + 14 OGG** |
 | Raster files without vector source | **0** |
@@ -117,10 +117,10 @@ flowchart LR
 
 ## What lives here
 
-The 43 pack families cover:
+The 44 pack families cover:
 
 - **Foundations & core UI** — product icons, dashboard widgets, states, badges, file/source types;
-- **Evidence & investigation** — annotation, correlation semantics, geospatial, privacy/redaction, integrity, jurisdiction, export/seals;
+- **Evidence & investigation** — annotation, correlation semantics, geospatial, perspective intelligence, privacy/redaction, integrity, jurisdiction, export/seals;
 - **Workflow** — Kanban, calendar, chat, AI workspace, authorization/security, data grid, forms, commands;
 - **Identity & character** — personas, Rocksoul character, theme/accessibility, cursors;
 - **Media & communication** — hero backgrounds, cinematic hero, editorial, social, onboarding, notifications, reports, device mockups, texture/material;

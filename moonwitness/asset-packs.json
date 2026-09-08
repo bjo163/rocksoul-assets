@@ -7,7 +7,7 @@
     {
       "id": "product-icons",
       "manifest": "moonwitness/icons/icons.json",
-      "count": 44
+      "count": 45
     },
     {
       "id": "dashboard",
@@ -112,7 +112,7 @@
     {
       "id": "correlation-semantics",
       "manifest": "moonwitness/correlation-semantics-pack/manifest.json",
-      "count": 24
+      "count": 25
     },
     {
       "id": "kanban-workflow",
@@ -218,15 +218,20 @@
       "id": "community-participation",
       "manifest": "moonwitness/community-participation-pack/manifest.json",
       "count": 8
+    },
+    {
+      "id": "perspective-intelligence",
+      "manifest": "moonwitness/perspective-intelligence-pack/manifest.json",
+      "count": 8
     }
   ],
   "coverage": {
     "policy": "Every MoonWitness delivery SVG has at least one PNG derivative; every PNG/JPEG maps to canonical SVG.",
-    "svgSources": 634,
-    "pngDerivatives": 777,
+    "svgSources": 644,
+    "pngDerivatives": 789,
     "vectorWithoutRaster": 0,
     "rasterWithoutVector": 0,
-    "packFamilies": 43,
+    "packFamilies": 44,
     "status": "complete"
   }
 }

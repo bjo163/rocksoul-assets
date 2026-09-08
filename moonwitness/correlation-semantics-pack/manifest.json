@@ -5,7 +5,7 @@
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "renderPng": true,
-  "count": 24,
+  "count": 25,
   "root": "svg",
   "assets": [
     "node-story",
@@ -13,6 +13,7 @@
     "node-person",
     "node-text",
     "node-law",
+    "node-perspective",
     "node-case",
     "node-source",
     "node-location",

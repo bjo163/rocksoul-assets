@@ -9,9 +9,9 @@
     "navigation": 12,
     "actions": 12,
     "status": 12,
-    "domain": 8
+    "domain": 9
   },
-  "count": 44,
+  "count": 45,
   "root": "svg",
   "generatedFormat": "png",
   "renderPng": true,

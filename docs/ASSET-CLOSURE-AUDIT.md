@@ -8,8 +8,8 @@ Date: 2026-09-08
 
 ### Bidirectional coverage
 
-- MoonWitness SVG delivery sources: **634**
-- PNG delivery derivatives: **777**
+- MoonWitness SVG delivery sources: **644**
+- PNG delivery derivatives: **789**
 - PNG/JPEG without canonical SVG: **0**
 - MoonWitness SVG without PNG derivative: **0**
 - JPEG: **0**
@@ -21,7 +21,7 @@ Date: 2026-09-08
 - Brand: **13/13 SVG sources covered**
 - V1 baseline: **16/16 PNG ↔ SVG**
 - V2 application: **12/12 SVG → PNG**
-- Product Icons: **44 SVG → PNG at 24/48/96**
+- Product Icons: **45 SVG → PNG at 24/48/96**
 - Dashboard: **20/20 SVG → PNG**
 - Data-Viz: **16/16 SVG → PNG**
 - Hero Backgrounds: **8/8 SVG → PNG**
@@ -29,7 +29,9 @@ Date: 2026-09-08
 - Motion references: **12/12 animated SVG → static PNG fallback**
 - Runtime Motion: **12 animated SVG + APNG + WebM + Lottie**
 - SFX: **14 WAV + 14 OGG**
-- Global pack index: **42 families**
+- Perspective Intelligence: **8 SVG → PNG visual primitives**
+- Correlation Semantics: **25 SVG → PNG**, including first-class PERSPECTIVE node
+- Global pack index: **44 families**
 
 ## Exceptions
 

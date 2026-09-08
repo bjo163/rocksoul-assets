@@ -63,7 +63,7 @@
       "prefix": "rgbl:",
       "resource": "rgbl",
       "nodeKind": "text",
-      "iconAssetId": "rgbl",
+      "iconAssetId": "source",
       "idKinds": {},
       "defaultKind": "text"
     },
@@ -74,7 +74,7 @@
       "prefix": "aws:",
       "resource": "aws",
       "nodeKind": "law",
-      "iconAssetId": "aws",
+      "iconAssetId": "legal",
       "idKinds": {},
       "defaultKind": "law"
     },
@@ -84,10 +84,10 @@
       "repository": "rocksoul-jizz",
       "prefix": "jizz:",
       "resource": "perspective",
-      "nodeKind": "case",
+      "nodeKind": "perspective",
       "iconAssetId": "perspective",
       "idKinds": {},
-      "defaultKind": "case"
+      "defaultKind": "perspective"
     }
   ],
   "relationshipLayer": {

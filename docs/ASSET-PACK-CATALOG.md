@@ -16,7 +16,7 @@ Canonical global index: `moonwitness/asset-packs.json`.
 
 | Pack | Count | Path |
 |---|---:|---|
-| product-icons | 44 | `moonwitness/icons/` |
+| product-icons | 45 | `moonwitness/icons/` |
 | dashboard | 20 | `moonwitness/dashboard-pack/` |
 | data-viz | 16 | `moonwitness/data-viz/` |
 | hero-backgrounds | 8 | `moonwitness/hero-backgrounds/` |
@@ -37,7 +37,7 @@ Canonical global index: `moonwitness/asset-packs.json`.
 | notification | 8 | `moonwitness/notification-pack/` |
 | editorial | 6 | `moonwitness/editorial-pack/` |
 | evidence-media | 24 | `moonwitness/evidence-media-pack/` |
-| correlation-semantics | 24 | `moonwitness/correlation-semantics-pack/` |
+| correlation-semantics | 25 | `moonwitness/correlation-semantics-pack/` |
 | kanban-workflow | 18 | `moonwitness/kanban-pack/` |
 | calendar-temporal | 16 | `moonwitness/calendar-pack/` |
 | chat-collaboration | 24 | `moonwitness/chat-pack/` |
@@ -59,6 +59,7 @@ Canonical global index: `moonwitness/asset-packs.json`.
 | runtime-motion | 12 | `moonwitness/runtime-motion-pack/` |
 | developer-distribution | 4 | `moonwitness/developer-pack/` |
 | community-participation | 8 | `moonwitness/community-participation-pack/` |
+| perspective-intelligence | 8 | `moonwitness/perspective-intelligence-pack/` |
 
 ## Developer entry points
 

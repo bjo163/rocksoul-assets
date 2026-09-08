@@ -226,6 +226,11 @@
       "label": "Community Participation",
       "category": "Workflow",
       "description": "Source-linked discussion, proposal review, identity bridge, saved case, notification, moderation history and attributed reply visuals."
+    },
+    "perspective-intelligence": {
+      "label": "Perspective Intelligence",
+      "category": "Investigation",
+      "description": "JIZZ visual grammar for perspective constellations, geography coverage, divergence, ZIGZAG signals, actor-framing matrices, reactions, provenance and coverage."
     }
   }
 }

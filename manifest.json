@@ -173,7 +173,7 @@
   "assetPacks": {
     "product-icons": {
       "manifest": "moonwitness/icons/icons.json",
-      "count": 44
+      "count": 45
     },
     "dashboard": {
       "manifest": "moonwitness/dashboard-pack/dashboard-pack.json",
@@ -253,7 +253,7 @@
     },
     "correlation-semantics": {
       "manifest": "moonwitness/correlation-semantics-pack/manifest.json",
-      "count": 24
+      "count": 25
     },
     "kanban-workflow": {
       "manifest": "moonwitness/kanban-pack/manifest.json",
@@ -341,6 +341,10 @@
     },
     "community-participation": {
       "manifest": "moonwitness/community-participation-pack/manifest.json",
+      "count": 8
+    },
+    "perspective-intelligence": {
+      "manifest": "moonwitness/perspective-intelligence-pack/manifest.json",
       "count": 8
     }
   },
