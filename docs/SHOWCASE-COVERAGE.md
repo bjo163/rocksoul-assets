@@ -8,21 +8,21 @@ The Vercel showcase is required to expose every MoonWitness delivery asset, not 
 
 | Delivery format | Indexed |
 |---|---:|
-| SVG | 614 |
-| PNG / APNG | 757 |
+| SVG | 634 |
+| PNG / APNG | 777 |
 | ICO | 1 |
 | WebM | 12 |
 | WAV | 14 |
 | OGG | 14 |
 | Lottie JSON | 12 |
-| **Total** | **1,424** |
+| **Total** | **1,464** |
 
 ## Collections
 
-- 42 indexed asset-pack families
+- 43 indexed asset-pack families
 - Brand System foundation collection — 31 delivery files
 - V1 Baseline foundation collection — 32 delivery files
-- **44 showcase collections total**
+- **45 showcase collections total**
 
 ## Guarantees
 
