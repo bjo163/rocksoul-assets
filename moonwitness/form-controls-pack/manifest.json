@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Form Controls Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 20,
+  "root": "svg",
+  "assets": [
+    "input-default",
+    "input-focus",
+    "input-error",
+    "input-success",
+    "input-disabled",
+    "textarea",
+    "checkbox-off",
+    "checkbox-on",
+    "radio-off",
+    "radio-on",
+    "toggle-off",
+    "toggle-on",
+    "slider",
+    "select",
+    "combobox",
+    "date-input",
+    "file-input",
+    "validation-inline",
+    "readonly",
+    "search-input"
+  ]
+}
