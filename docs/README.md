@@ -88,3 +88,5 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 If a change alters a consumer contract, visual semantic, release rule, generator, or showcase behavior, the related documentation must change in the **same pull request**.
 
 Documentation is part of the asset system, not post-release commentary.
+
+- [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) — canonical TEXT/RGBL visual ownership and consumer guidance.
