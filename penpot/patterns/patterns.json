@@ -115,6 +115,19 @@
         "supporting-copy",
         "recovery-action"
       ]
+    },
+    {
+      "name": "RGBL Canonical Text Trace",
+      "surface": "web",
+      "composition": [
+        "Textual Hierarchy Trace",
+        "Source Rights Summary",
+        "Parallel Text Lanes",
+        "Textual Relation Trace",
+        "Provenance Rail",
+        "Evidence Matrix"
+      ],
+      "rule": "All corpus facts must be data-backed; presentational graphics never substitute for canonical record identity or provenance."
     }
   ]
 }
