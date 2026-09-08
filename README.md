@@ -8,7 +8,7 @@ This repository stores canonical brand vectors, immutable raster baselines, edit
 
 ## Release
 
-**Current repository release:** `v1.0.0` — 2026-09-08
+**Current repository release:** `v1.1.0` — 2026-09-08
 
 Release acceptance covers canonical SVG/raster assets, v1 raster→vector pairing, v2 application surfaces, generated brand delivery formats, Penpot package generation/validation, reproducible dependency installation, and CI source contracts. Live Penpot native-component/prototype inspection is tracked separately as a manual design-workspace verification and is not represented as completed by the repository release.
 
@@ -54,6 +54,22 @@ Every PNG/JPEG visual reference in `moonwitness/` must either:
 2. be a generated delivery asset whose manifest points to a canonical SVG source.
 
 The 16 immutable v1 PNG screens now have 16 same-basename native SVG reconstructions. Canonical vector sources may not embed raster images.
+
+## Asset packs
+
+The repository now includes reusable production asset libraries in addition to screen references:
+
+| Pack | Path | Canonical assets |
+|---|---|---:|
+| Product Icons | `moonwitness/icons/` | 44 SVG icons |
+| Dashboard Pack | `moonwitness/dashboard-pack/` | 20 widget SVGs |
+| Data-Viz Pack | `moonwitness/data-viz/` | 16 SVG components |
+| Hero Backgrounds | `moonwitness/hero-backgrounds/` | 8 vector backgrounds |
+| State Illustrations | `moonwitness/state-illustrations/` | 12 SVG illustrations |
+| Motion Pack | `moonwitness/motion/` | 6 animated SVG references |
+| SFX Pack | `moonwitness/sfx/` | 10 procedural cues + WAV/OGG |
+
+All graphics remain vector-first. SFX is generated reproducibly from `tools/assets/generate-sfx.py`.
 
 ## Product surfaces
 
