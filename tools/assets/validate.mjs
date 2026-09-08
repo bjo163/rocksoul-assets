@@ -30,20 +30,54 @@ async function assertNativeSvg(relativePath) {
   invariant(!/data:image\/(png|jpe?g|webp)/i.test(svg), `Embedded raster data is not allowed: ${relativePath}`);
 }
 
-async function validateRasterVectorPairs() {
-  const dir = path.join(root, "moonwitness/ui/v1/screens");
-  const names = await readdir(dir);
-  const rasters = names.filter((name) => /\.(png|jpe?g)$/i.test(name)).sort();
+async function walk(relativeDir) {
+  const absoluteDir = path.join(root, relativeDir);
+  const entries = await readdir(absoluteDir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    const child = path.posix.join(relativeDir, entry.name);
+    if (entry.isDirectory()) files.push(...await walk(child));
+    else files.push(child);
+  }
+  return files;
+}
 
-  invariant(rasters.length === 16, `Expected 16 raster baseline screens, got ${rasters.length}`);
+async function validateRasterVectorPairs() {
+  const allFiles = await walk("moonwitness");
+  const rasters = allFiles.filter((name) => /\.(png|jpe?g)$/i.test(name)).sort();
+
+  const generatedManifestPath = "moonwitness/brand/generated/manifest.json";
+  const generated = await exists(generatedManifestPath)
+    ? await readJson(generatedManifestPath)
+    : { outputs: [] };
+  const generatedSources = new Map(
+    (generated.outputs ?? [])
+      .filter((item) => /\.(png|jpe?g)$/i.test(item.path ?? ""))
+      .map((item) => [item.path, item.source])
+  );
+
+  let baselinePairs = 0;
+  let generatedPairs = 0;
 
   for (const raster of rasters) {
-    const svgName = raster.replace(/\.(png|jpe?g)$/i, ".svg");
-    const svgPath = `moonwitness/ui/v1/screens/${svgName}`;
-    await assertNativeSvg(svgPath);
+    const sameBase = raster.replace(/\.(png|jpe?g)$/i, ".svg");
+    if (await exists(sameBase)) {
+      await assertNativeSvg(sameBase);
+      baselinePairs += 1;
+      continue;
+    }
+
+    const source = generatedSources.get(raster);
+    invariant(source, `Raster asset has no canonical SVG source: ${raster}`);
+    await assertNativeSvg(source);
+    generatedPairs += 1;
   }
 
-  return rasters.length;
+  const baselineDir = "moonwitness/ui/v1/screens";
+  const baselineRasters = rasters.filter((item) => item.startsWith(`${baselineDir}/`));
+  invariant(baselineRasters.length === 16, `Expected 16 v1 raster baseline screens, got ${baselineRasters.length}`);
+
+  return { total: rasters.length, baselinePairs, generatedPairs };
 }
 
 async function validateManifest() {
