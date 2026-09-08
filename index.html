@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="description" content="MoonWitness × Rocksoul production asset system — browse 41 visual asset packs, canonical SVG sources, PNG derivatives, motion and audio." />
+  <meta property="og:title" content="MoonWitness × Rocksoul Asset System" />
+  <meta property="og:description" content="Production visual language for evidence, correlation, investigation and truth." />
+  <meta property="og:image" content="/moonwitness/brand/og-card.svg" />
+  <title>MoonWitness × Rocksoul — Asset System</title>
+  <link rel="icon" href="/moonwitness/brand/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/moonwitness/brand/site.webmanifest" />
+  <link rel="stylesheet" href="/showcase/showcase.css" />
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Skip to asset catalog</a>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="MoonWitness asset showcase home">
+      <img src="/moonwitness/brand/logo-mark.svg" alt="" width="38" height="38" />
+      <span class="brand-copy">
+        <strong>MoonWitness</strong>
+        <small>Asset System</small>
+      </span>
+    </a>
+    <nav class="header-actions" aria-label="Showcase actions">
+      <a class="ghost-button" href="/dist/assets.json">Registry</a>
+      <a class="ghost-button" href="https://github.com/bjo163/rocksoul-assets" rel="noreferrer">GitHub</a>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> Production asset registry</div>
+        <h1 id="hero-title">Evidence needs a<br/><em>visual language.</em></h1>
+        <p class="hero-lede">MoonWitness × Rocksoul turns investigation semantics into reusable production assets: evidence overlays, correlation edges, workflows, AI states, privacy, integrity, motion, audio and delivery formats.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#catalog">Explore asset packs</a>
+          <a class="text-link" href="/docs/ASSET-CONSUMPTION.md">Consumption contract <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="/moonwitness/cinematic-hero-pack/svg/data-observatory.svg" alt="" />
+        <div class="hero-scanline"></div>
+        <div class="hero-caption">TRUTH LEAVES A TRACE.</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Asset system summary">
+      <div class="stat"><strong id="statPacks">41</strong><span>Pack families</span></div>
+      <div class="stat"><strong id="statAssets">—</strong><span>Indexed assets</span></div>
+      <div class="stat"><strong>SVG</strong><span>Canonical visual source</span></div>
+      <div class="stat"><strong>4×</strong><span>Runtime motion formats</span></div>
+      <div class="stat"><strong id="statVersion">v1.3.0</strong><span>Current release</span></div>
+    </section>
+
+    <section class="catalog-shell" id="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-heading">
+        <div>
+          <span class="section-kicker">Explore the system</span>
+          <h2 id="catalog-title">Asset pack catalog</h2>
+          <p>Every card resolves from the generated production registry. No poster slicing, no duplicated paths.</p>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Catalog view">
+          <button class="view-button active" data-view="grid" type="button">Grid</button>
+          <button class="view-button" data-view="compact" type="button">Compact</button>
+        </div>
+      </div>
+
+      <div class="catalog-toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="Search packs or assets…" aria-label="Search packs or assets" />
+          <kbd>⌘ K</kbd>
+        </label>
+        <div class="filters" id="filters" aria-label="Filter asset packs"></div>
+      </div>
+
+      <div class="result-meta">
+        <span id="resultCount">Loading asset registry…</span>
+        <span class="registry-state" id="registryState"><span class="status-dot"></span> Live registry</span>
+      </div>
+
+      <div class="pack-grid" id="packGrid" aria-live="polite"></div>
+      <div class="empty-results" id="emptyResults" hidden>
+        <strong>No matching assets.</strong>
+        <p>Try a broader term or reset the category filter.</p>
+        <button class="ghost-button" id="resetSearch" type="button">Reset search</button>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div>
+        <span class="section-kicker">Developer delivery</span>
+        <h2>One registry. Every surface.</h2>
+        <p>Applications can consume generated TypeScript, JSON, CSS custom properties or the SVG sprite. Canonical source paths remain inspectable and versioned in Git.</p>
+      </div>
+      <pre class="code-card"><code><span>import</span> { assets } <span>from</span> "./dist/assets";
+
+assets.packs["evidence-media"].svg["bounding-box"];
+assets.packs["correlation-semantics"].svg["edge-supports"];
+assets.packs["badge-status"].svg.verified;
+assets.packs["persona-avatar"].png.researcher["64"];</code></pre>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <span class="section-kicker">Visual contract</span>
+      <h2 id="principles-title">Built for inspectability.</h2>
+      <div class="principle-grid">
+        <article><b>01</b><h3>Source-first</h3><p>SVG is the canonical editable visual source. Raster files are generated derivatives.</p></article>
+        <article><b>02</b><h3>Semantic</h3><p>Status, confidence, privacy and correlation meaning never depend on color alone.</p></article>
+        <article><b>03</b><h3>Traceable</h3><p>Every delivery asset maps back to a manifest and source path that can be reviewed.</p></article>
+        <article><b>04</b><h3>Accessible</h3><p>Graphs require text equivalents; motion requires reduced-motion behavior.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="/moonwitness/brand/logo-mark.svg" alt="" width="30" height="30" />
+      <div><strong>MoonWitness × Rocksoul</strong><span>Open assets. Real context.</span></div>
+    </div>
+    <p>DESIGN ONCE · TRACE EVERYWHERE</p>
+    <a href="https://github.com/bjo163/rocksoul-assets/releases/tag/v1.3.0">Release v1.3.0 ↗</a>
+  </footer>
+
+  <dialog class="asset-dialog" id="assetDialog">
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <div>
+          <span class="section-kicker" id="dialogCategory">Asset pack</span>
+          <h2 id="dialogTitle">Pack details</h2>
+          <p id="dialogMeta"></p>
+        </div>
+        <button class="icon-button" id="dialogClose" type="button" aria-label="Close asset pack">×</button>
+      </header>
+      <div class="dialog-preview" id="dialogPreview"></div>
+      <div class="dialog-toolbar">
+        <input id="dialogSearch" type="search" placeholder="Filter assets in this pack…" aria-label="Filter assets in pack" />
+        <a class="ghost-button" id="dialogManifest" href="#">Manifest ↗</a>
+      </div>
+      <div class="asset-list" id="assetList"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/showcase/showcase.js"></script>
+</body>
+</html>
