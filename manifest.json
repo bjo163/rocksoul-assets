@@ -337,6 +337,10 @@
     "application-screens": {
       "manifest": "moonwitness/ui/v2/manifest.json",
       "count": 20
+    },
+    "community-participation": {
+      "manifest": "moonwitness/community-participation-pack/manifest.json",
+      "count": 8
     }
   },
   "assetPackIndex": "moonwitness/asset-packs.json",
