@@ -145,9 +145,11 @@
     }
   ],
   "rasterVectorContract": {
-    "policy": "Every PNG/JPEG visual reference must have an editable SVG counterpart. Generated raster delivery assets must identify a canonical SVG source.",
+    "policy": "Every MoonWitness delivery SVG must have at least one PNG derivative, and every PNG/JPEG visual must map back to an editable canonical SVG. Penpot-only design sources are exempt from raster delivery coverage.",
     "baseline": "moonwitness/ui/v1/screens",
-    "v2VectorRoot": "moonwitness/ui/v2"
+    "v2VectorRoot": "moonwitness/ui/v2",
+    "deliveryCoverage": "bidirectional-svg-png",
+    "designSourceExemption": "penpot/**"
   },
   "application": {
     "version": "v2",
@@ -158,12 +160,12 @@
     "penpotContract": "penpot/application-shell/application-shell.json"
   },
   "release": {
-    "version": "1.3.0",
-    "name": "MoonWitness Complete Visual Language v1.3.0",
+    "version": "1.3.1",
+    "name": "MoonWitness Final Asset Closure v1.3.1",
     "date": "2026-09-08",
     "status": "released",
     "branch": "main",
-    "repositoryAcceptance": "passed",
+    "repositoryAcceptance": "pending-ci",
     "livePenpotVerification": "manual-follow-up"
   },
   "assetPacks": {
@@ -330,6 +332,10 @@
     "developer-distribution": {
       "manifest": "moonwitness/developer-pack/manifest.json",
       "count": 4
+    },
+    "application-screens": {
+      "manifest": "moonwitness/ui/v2/manifest.json",
+      "count": 12
     }
   },
   "assetPackIndex": "moonwitness/asset-packs.json",

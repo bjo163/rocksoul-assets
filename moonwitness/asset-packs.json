@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.3.0",
+  "version": "1.3.1",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "packs": [
@@ -32,6 +32,11 @@
     {
       "id": "motion",
       "manifest": "moonwitness/motion/motion.json",
+      "count": 12
+    },
+    {
+      "id": "application-screens",
+      "manifest": "moonwitness/ui/v2/manifest.json",
       "count": 12
     },
     {
