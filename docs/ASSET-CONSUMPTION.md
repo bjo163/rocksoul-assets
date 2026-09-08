@@ -1,10 +1,21 @@
-# Asset Consumption Contract — v1.3.0
+# Asset Consumption Contract — v1.3.1
 
 MoonWitness packs are shipped as **individual consumable assets**, never as required runtime poster slices.
 
 ## Preferred entry point
 
-Use `dist/assets.ts` or `dist/assets.json` when application code can consume generated registries. Use `moonwitness/asset-packs.json` for pack discovery.
+Use `dist/assets.ts` or `dist/assets.json` when application code can consume generated registries. Use `moonwitness/asset-packs.json` for pack discovery. Use the [Live Showcase](https://rocksoul-assets-showcase.vercel.app) when discovering assets visually.
+
+## Registry model
+
+`dist/assets.json` schema v2 exposes:
+
+- 42 indexed asset-pack families;
+- 2 foundation collections: Brand System + V1 Baseline Screens;
+- per-format paths for SVG, PNG/APNG, ICO, WebM, WAV, OGG, and Lottie;
+- coverage metadata proving every delivery file is indexed.
+
+Foundation collections are available under `assets.collections`; indexed packs remain under `assets.packs`.
 
 ## Format priority
 
@@ -43,3 +54,7 @@ const researcher64 = assets.packs["persona-avatar"].png.researcher["64"];
 ```
 
 Generated files are reproducible via `tools/assets/render-packs.py`, `tools/assets/generate-runtime-motion.py`, and `tools/assets/build-dist.mjs`.
+
+The showcase is not a curated subset: `tools/assets/validate-showcase-coverage.mjs` requires **100% delivery-file coverage**.
+
+See [Getting Started](GETTING-STARTED.md) for the shortest implementation path.

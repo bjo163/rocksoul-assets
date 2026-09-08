@@ -18,6 +18,9 @@ on:
       - "dist/**"
       - "tools/assets/**"
       - "showcase/**"
+      - "docs/**"
+      - "CONTRIBUTING.md"
+      - "SECURITY.md"
       - "index.html"
       - "vercel.json"
       - ".github/workflows/generate-sfx.yml"
@@ -38,6 +41,9 @@ on:
       - "dist/**"
       - "tools/assets/**"
       - "showcase/**"
+      - "docs/**"
+      - "CONTRIBUTING.md"
+      - "SECURITY.md"
       - "index.html"
       - "vercel.json"
       - ".github/workflows/generate-sfx.yml"
@@ -103,6 +109,9 @@ jobs:
 
       - name: Verify showcase delivery coverage
         run: node tools/assets/validate-showcase-coverage.mjs
+
+      - name: Verify documentation state
+        run: node tools/docs/validate-docs.mjs
 
       - name: Verify runtime motion derivatives
         run: |

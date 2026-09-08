@@ -12,6 +12,10 @@ on:
       - "tools/assets/**"
       - "dist/**"
       - "showcase/**"
+      - "docs/**"
+      - "README.md"
+      - "CONTRIBUTING.md"
+      - "SECURITY.md"
       - "index.html"
       - "vercel.json"
       - ".github/workflows/validate-assets.yml"
@@ -26,6 +30,10 @@ on:
       - "tools/assets/**"
       - "dist/**"
       - "showcase/**"
+      - "docs/**"
+      - "README.md"
+      - "CONTRIBUTING.md"
+      - "SECURITY.md"
       - "index.html"
       - "vercel.json"
       - ".github/workflows/validate-assets.yml"
@@ -61,3 +69,6 @@ jobs:
 
       - name: Validate showcase delivery coverage
         run: node tools/assets/validate-showcase-coverage.mjs
+
+      - name: Validate documentation state
+        run: node tools/docs/validate-docs.mjs

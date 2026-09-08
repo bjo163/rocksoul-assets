@@ -43,3 +43,8 @@ The UI can preview:
 - all raw files through direct source links.
 
 This is the operational closure condition for the showcase.
+
+
+## Operations
+
+Deployment architecture, production acceptance, rollback, security headers, and SEO requirements are documented in [SHOWCASE-OPERATIONS.md](SHOWCASE-OPERATIONS.md).

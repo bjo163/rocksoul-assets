@@ -34,6 +34,8 @@ Navigation remains **AutoMenu-driven** from `moonwitness/ui/v2/navigation.json`.
 - Authorization UX
 - Error / Empty / Loading states
 
+All 12 v2 application surfaces also have generated PNG previews under `moonwitness/ui/v2/png/`. SVG remains canonical; PNG is delivery/reference output.
+
 ## Penpot
 
 Import the v2 SVG references, then rebuild the shell and product surfaces with native reusable components. The shell contract lives in `penpot/application-shell/application-shell.json`.
