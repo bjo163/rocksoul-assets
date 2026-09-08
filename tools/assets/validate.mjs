@@ -71,7 +71,7 @@ async function validateRasterVectorPairs() {
     let source = generatedSources.get(raster);
     if (!source && raster.includes("/png/")) {
       const parts = raster.split("/png/");
-      const candidate = parts[0] + "/svg/" + parts[1].replace(/^\\d+\//, "").replace(/\\.(png|jpe?g)$/i, ".svg");
+      const candidate = parts[0] + "/svg/" + parts[1].replace(/^\\d+\//, "").replace(/\.(png|jpe?g)$/i, ".svg");
       if (await exists(candidate)) source = candidate;
     }
     invariant(source, `Raster asset has no canonical SVG source: ${raster}`);
