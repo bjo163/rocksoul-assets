@@ -58,6 +58,7 @@ Canonical global index: `moonwitness/asset-packs.json`.
 | cinematic-hero | 12 | `moonwitness/cinematic-hero-pack/` |
 | runtime-motion | 12 | `moonwitness/runtime-motion-pack/` |
 | developer-distribution | 4 | `moonwitness/developer-pack/` |
+| community-participation | 8 | `moonwitness/community-participation-pack/` |
 
 ## Developer entry points
 
