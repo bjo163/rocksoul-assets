@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Product Icons",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "grid": 24,
+  "strokeWidth": 1.75,
+  "categories": {
+    "navigation": 12,
+    "actions": 12,
+    "status": 12,
+    "domain": 8
+  },
+  "count": 44,
+  "root": "svg"
+}

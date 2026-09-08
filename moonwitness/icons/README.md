@@ -1,0 +1,1 @@
+# MoonWitness Product Icon Pack\n\n44 canonical SVG icons on a 24px grid with 1.75 stroke and currentColor theming. Categories: navigation, actions, status, and MoonWitness domain semantics.\n

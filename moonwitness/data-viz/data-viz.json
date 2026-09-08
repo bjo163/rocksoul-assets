@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Data-Viz Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "count": 16,
+  "root": "charts",
+  "charts": [
+    "event-frequency",
+    "confidence-trend",
+    "event-type-distribution",
+    "status-ring",
+    "activity-sparkline",
+    "evidence-timeline",
+    "provenance-chain",
+    "node-link-correlation",
+    "evidence-matrix",
+    "geographic-heatmap",
+    "repository-health",
+    "legend-styles",
+    "metric-counters",
+    "graph-nodes",
+    "edge-styles",
+    "annotation-tools"
+  ]
+}

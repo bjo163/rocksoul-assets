@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Dashboard Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "count": 20,
+  "root": "widgets",
+  "widgets": [
+    "kpi-stat",
+    "backend-status",
+    "notifications",
+    "recent-cases",
+    "case-progress",
+    "evidence-timeline",
+    "world-map",
+    "donut-chart",
+    "bar-chart",
+    "line-trend",
+    "correlation-insight",
+    "provenance-chain",
+    "quick-actions",
+    "ai-summary",
+    "mini-kanban",
+    "mini-calendar",
+    "profile-summary",
+    "audit-log",
+    "search-results",
+    "empty-widget"
+  ]
+}
