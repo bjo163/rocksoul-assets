@@ -5,7 +5,7 @@
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "renderPng": true,
-  "count": 15,
+  "count": 16,
   "root": "svg",
   "assets": [
     "pin-primary",
@@ -22,6 +22,7 @@
     "checkpoint",
     "crosshair",
     "heat-cell",
-    "map-grid"
+    "map-grid",
+    "mftl-world-atlas-grid"
   ]
 }
