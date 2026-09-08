@@ -5,9 +5,25 @@ on:
   push:
     branches:
       - main
-      - feat/complete-visual-language-v1.3
+      - fix/final-asset-closure-v1.3.1
     paths:
-      - "moonwitness/*-pack/**"
+      - "moonwitness/asset-packs.json"
+      - "moonwitness/icons/svg/**"
+      - "moonwitness/icons/icons.json"
+      - "moonwitness/dashboard-pack/widgets/**"
+      - "moonwitness/dashboard-pack/dashboard-pack.json"
+      - "moonwitness/data-viz/charts/**"
+      - "moonwitness/data-viz/data-viz.json"
+      - "moonwitness/hero-backgrounds/svg/**"
+      - "moonwitness/hero-backgrounds/backgrounds.json"
+      - "moonwitness/state-illustrations/svg/**"
+      - "moonwitness/state-illustrations/states.json"
+      - "moonwitness/motion/svg/**"
+      - "moonwitness/motion/motion.json"
+      - "moonwitness/*-pack/svg/**"
+      - "moonwitness/*-pack/manifest.json"
+      - "moonwitness/ui/v2/*.svg"
+      - "moonwitness/ui/v2/manifest.json"
       - "tools/assets/render-packs.py"
       - ".github/workflows/generate-secondary-pack-raster.yml"
 
@@ -30,7 +46,7 @@ jobs:
         run: |
           git config user.name "moonwitness-assets-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add moonwitness/*-pack/png
+          git add -A moonwitness
           if git diff --cached --quiet; then
             echo "No raster changes."
           else

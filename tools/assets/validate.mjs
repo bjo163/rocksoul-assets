@@ -43,48 +43,58 @@ async function walk(relativeDir) {
   return files;
 }
 
-async function validateRasterVectorPairs() {
+async function collectRasterSourceMappings() {
   const allFiles = await walk("moonwitness");
-  const rasters = allFiles.filter((name) => /\.(png|jpe?g)$/i.test(name)).sort();
+  const mappings = new Map();
 
-  const generatedManifestPath = "moonwitness/brand/generated/manifest.json";
-  const generated = await exists(generatedManifestPath)
-    ? await readJson(generatedManifestPath)
-    : { outputs: [] };
-  const generatedSources = new Map(
-    (generated.outputs ?? [])
-      .filter((item) => /\.(png|jpe?g)$/i.test(item.path ?? ""))
-      .map((item) => [item.path, item.source])
+  const manifestPaths = allFiles.filter((name) =>
+    name === "moonwitness/brand/generated/manifest.json" ||
+    name.endsWith("/png/manifest.json")
   );
+  for (const manifestPath of manifestPaths) {
+    const data = await readJson(manifestPath);
+    for (const item of data.outputs ?? []) {
+      if (/\.(png|jpe?g)$/i.test(item.path ?? "") && item.source) mappings.set(item.path, item.source);
+    }
+  }
 
+  // Immutable v1 baseline uses same-basename SVG/PNG pairs instead of generated manifests.
+  for (const raster of allFiles.filter((name) => /\.(png|jpe?g)$/i.test(name))) {
+    const sameBase = raster.replace(/\.(png|jpe?g)$/i, ".svg");
+    if (await exists(sameBase)) mappings.set(raster, sameBase);
+  }
+  return { allFiles, mappings };
+}
+
+async function validateRasterVectorPairs() {
+  const { allFiles, mappings } = await collectRasterSourceMappings();
+  const rasters = allFiles.filter((name) => /\.(png|jpe?g)$/i.test(name)).sort();
   let baselinePairs = 0;
   let generatedPairs = 0;
 
   for (const raster of rasters) {
-    const sameBase = raster.replace(/\.(png|jpe?g)$/i, ".svg");
-    if (await exists(sameBase)) {
-      await assertNativeSvg(sameBase);
-      baselinePairs += 1;
-      continue;
-    }
-
-    let source = generatedSources.get(raster);
-    if (!source && raster.includes("/png/")) {
-      const parts = raster.split("/png/");
-      const filename = parts[1].split("/").at(-1);
-      const candidate = parts[0] + "/svg/" + filename.replace(/\.(png|jpe?g)$/i, ".svg");
-      if (await exists(candidate)) source = candidate;
-    }
+    const source = mappings.get(raster);
     invariant(source, `Raster asset has no canonical SVG source: ${raster}`);
     await assertNativeSvg(source);
-    generatedPairs += 1;
+    if (raster.startsWith("moonwitness/ui/v1/screens/")) baselinePairs += 1;
+    else generatedPairs += 1;
   }
 
-  const baselineDir = "moonwitness/ui/v1/screens";
-  const baselineRasters = rasters.filter((item) => item.startsWith(`${baselineDir}/`));
+  const baselineRasters = rasters.filter((item) => item.startsWith("moonwitness/ui/v1/screens/"));
   invariant(baselineRasters.length === 16, `Expected 16 v1 raster baseline screens, got ${baselineRasters.length}`);
-
   return { total: rasters.length, baselinePairs, generatedPairs };
+}
+
+async function validateVectorRasterCoverage() {
+  const { allFiles, mappings } = await collectRasterSourceMappings();
+  const vectors = allFiles.filter((name) => name.endsWith(".svg")).sort();
+  const covered = new Set(mappings.values());
+  const missing = vectors.filter((svg) => !covered.has(svg));
+  invariant(
+    missing.length === 0,
+    `MoonWitness delivery SVGs without PNG derivative: ${missing.join(", ")}`
+  );
+  return { totalVectors: vectors.length, coveredVectors: vectors.length, missing: 0 };
 }
 
 async function validateManifest() {
@@ -115,6 +125,12 @@ async function validateBrand() {
     await assertNativeSvg(path.posix.join("moonwitness/brand", asset.path));
   }
 
+  const generated = await readJson("moonwitness/brand/generated/manifest.json");
+  const covered = new Set((generated.outputs ?? []).map((item) => item.source));
+  for (const asset of brand.assets) {
+    const source = path.posix.join("moonwitness/brand", asset.path);
+    invariant(covered.has(source), `Brand SVG has no generated raster derivative: ${source}`);
+  }
   invariant(await exists("moonwitness/brand/site.webmanifest"), "Missing site.webmanifest");
   return brand.assets.length;
 }
@@ -140,6 +156,10 @@ async function validateApplicationV2() {
     invariant(states.states?.[name], `Missing system state contract: ${name}`);
   }
 
+  const delivery = await readJson("moonwitness/ui/v2/manifest.json");
+  invariant(delivery.count === screenContract.screens.length + 1, "V2 preview manifest must include shell + all screens");
+  const generated = await readJson("moonwitness/ui/v2/png/manifest.json");
+  invariant((generated.outputs ?? []).length === delivery.count, "V2 PNG preview count mismatch");
   return screenContract.screens.length;
 }
 
@@ -202,8 +222,9 @@ async function validateSecondaryAssetPacks() {
 
 async function validateGlobalPackIndex() {
   const index = await readJson("moonwitness/asset-packs.json");
-  invariant(index.version === "1.3.0", "asset-packs.json must be v1.3.0");
-  invariant(index.packs.length >= 40, `Expected at least 40 pack families, got ${index.packs.length}`);
+  const version = (await readFile(path.join(root, "VERSION"), "utf8")).trim();
+  invariant(index.version === version, `asset-packs.json version must match VERSION (${version})`);
+  invariant(index.packs.length >= 42, `Expected at least 42 pack families, got ${index.packs.length}`);
   const ids=index.packs.map((p)=>p.id);
   invariant(new Set(ids).size===ids.length,"Duplicate asset pack ids");
   for(const p of index.packs) invariant(await exists(p.manifest), `Missing indexed pack manifest: ${p.manifest}`);
@@ -215,8 +236,9 @@ async function validateDeveloperDist() {
     invariant(await exists(file), `Missing developer distribution artifact: ${file}`);
   }
   const dist=await readJson("dist/assets.json");
-  invariant(dist.version==="1.3.0","Developer dist version mismatch");
-  invariant(Object.keys(dist.packs??{}).length>=40,"Developer dist missing pack families");
+  const version = (await readFile(path.join(root, "VERSION"), "utf8")).trim();
+  invariant(dist.version===version,"Developer dist version mismatch");
+  invariant(Object.keys(dist.packs??{}).length>=42,"Developer dist missing pack families");
   return Object.keys(dist.packs).length;
 }
 
@@ -287,6 +309,7 @@ async function validateGoldenMobileBounds() {
 }
 
 const rasterPairs = await validateRasterVectorPairs();
+const vectorRasterCoverage = await validateVectorRasterCoverage();
 const manifest = await validateManifest();
 const brandAssets = await validateBrand();
 const applicationScreens = await validateApplicationV2();
@@ -300,6 +323,7 @@ const runtimeMotions = await validateRuntimeMotion();
 console.log(JSON.stringify({
   validAssets: true,
   rasterVectorPairs: rasterPairs,
+  vectorRasterCoverage,
   brandAssets,
   applicationScreens,
   mobileGoldenScreens,

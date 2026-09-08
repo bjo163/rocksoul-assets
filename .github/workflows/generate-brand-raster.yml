@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - main
-      - feat/complete-asset-system
+      - fix/final-asset-closure-v1.3.1
     paths:
       - "moonwitness/brand/*.svg"
       - "tools/assets/render-brand.py"
@@ -41,5 +41,6 @@ jobs:
             echo "No generated raster changes."
           else
             git commit -m "build(brand): generate raster delivery assets"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi
