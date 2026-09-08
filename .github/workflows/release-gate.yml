@@ -1,0 +1,78 @@
+name: Release Gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "VERSION"
+      - "CHANGELOG.md"
+      - "RELEASE.md"
+      - "README.md"
+      - "manifest.json"
+      - "docs/RELEASE-CHECKLIST.md"
+      - "docs/PENPOT-LIVE-VERIFICATION.md"
+      - "docs/DESIGN-SYSTEM-READINESS.md"
+      - ".github/workflows/release-gate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "VERSION"
+      - "CHANGELOG.md"
+      - "RELEASE.md"
+      - "README.md"
+      - "manifest.json"
+      - "docs/RELEASE-CHECKLIST.md"
+      - "docs/PENPOT-LIVE-VERIFICATION.md"
+      - "docs/DESIGN-SYSTEM-READINESS.md"
+      - ".github/workflows/release-gate.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify release metadata
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const version = fs.readFileSync('VERSION', 'utf8').trim();
+          const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+          const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
+          if (version !== '1.0.0') throw new Error('VERSION must be 1.0.0');
+          if (manifest.release?.version !== version) throw new Error('manifest release version mismatch');
+          if (manifest.release?.status !== 'released') throw new Error('manifest release status must be released');
+          if (!changelog.includes('## [1.0.0]')) throw new Error('CHANGELOG missing 1.0.0 entry');
+          console.log({version, status: manifest.release.status});
+          NODE
+
+      - name: Validate asset system
+        run: node tools/assets/validate.mjs
+
+      - name: Verify generated brand derivatives
+        run: |
+          python -m pip install --disable-pip-version-check cairosvg==2.7.1 pillow==10.4.0
+          python tools/assets/render-brand.py
+          git diff --exit-code -- moonwitness/brand/generated
+
+      - name: Install locked Penpot builder
+        working-directory: tools/penpot
+        run: npm ci --no-audit --no-fund
+
+      - name: Validate and generate Penpot package
+        working-directory: tools/penpot
+        run: npm run check

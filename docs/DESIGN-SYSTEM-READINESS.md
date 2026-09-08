@@ -1,4 +1,8 @@
-# MoonWitness Design System — Ready-for-Code Gate
+# MoonWitness Design System — Release & Ready-for-Code Gates
+
+**Repository release:** v1.0.0 — released 2026-09-08  
+**Repository acceptance:** passed  
+**Live Penpot verification:** manual follow-up
 
 ## Foundations
 
@@ -74,9 +78,13 @@ Builder:
 
 `tools/penpot/`
 
+## Release status
+
+The version-controlled repository asset system is released as **v1.0.0**. This release does not falsely mark live Penpot-only checks as completed. Native Penpot reconstruction, interaction wiring, font inspection, and final live accessibility review remain a separate design-workspace verification gate.
+
 ## Code handoff
 
-Repository-side design sources, vectors, assets, contracts, and CI gates are ready. Application implementation remains locked only on the live Penpot gates: native component rebuild, interaction proof, and accessibility review.
+Repository-side design sources, vectors, assets, contracts, and CI gates are ready. Application implementation remains gated only by the explicitly documented live Penpot verification work.
 
 ```text
 version-controlled vector + contract sources
