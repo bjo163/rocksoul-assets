@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Data Grid & Table Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/data-grid-pack/svg/bulk-select.svg",
+      "path": "moonwitness/data-grid-pack/png/bulk-select.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/column-hidden.svg",
+      "path": "moonwitness/data-grid-pack/png/column-hidden.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/column-pin.svg",
+      "path": "moonwitness/data-grid-pack/png/column-pin.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/column-resize.svg",
+      "path": "moonwitness/data-grid-pack/png/column-resize.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/density.svg",
+      "path": "moonwitness/data-grid-pack/png/density.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/filter-active.svg",
+      "path": "moonwitness/data-grid-pack/png/filter-active.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/inline-edit.svg",
+      "path": "moonwitness/data-grid-pack/png/inline-edit.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/pagination.svg",
+      "path": "moonwitness/data-grid-pack/png/pagination.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/row-disabled.svg",
+      "path": "moonwitness/data-grid-pack/png/row-disabled.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/row-hover.svg",
+      "path": "moonwitness/data-grid-pack/png/row-hover.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/row-selected.svg",
+      "path": "moonwitness/data-grid-pack/png/row-selected.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/sort-asc.svg",
+      "path": "moonwitness/data-grid-pack/png/sort-asc.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/sort-desc.svg",
+      "path": "moonwitness/data-grid-pack/png/sort-desc.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/table-compact.svg",
+      "path": "moonwitness/data-grid-pack/png/table-compact.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/table-default.svg",
+      "path": "moonwitness/data-grid-pack/png/table-default.png"
+    },
+    {
+      "source": "moonwitness/data-grid-pack/svg/table-empty.svg",
+      "path": "moonwitness/data-grid-pack/png/table-empty.png"
+    }
+  ]
+}

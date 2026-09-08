@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Export & Evidence Seal Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/export-seal-pack/svg/bundle-export.svg",
+      "path": "moonwitness/export-seal-pack/png/bundle-export.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/json-export.svg",
+      "path": "moonwitness/export-seal-pack/png/json-export.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/legal-stamp.svg",
+      "path": "moonwitness/export-seal-pack/png/legal-stamp.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/pdf-export.svg",
+      "path": "moonwitness/export-seal-pack/png/pdf-export.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/print-crop-marks.svg",
+      "path": "moonwitness/export-seal-pack/png/print-crop-marks.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/qr-citation.svg",
+      "path": "moonwitness/export-seal-pack/png/qr-citation.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/reviewed-stamp.svg",
+      "path": "moonwitness/export-seal-pack/png/reviewed-stamp.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/share-card.svg",
+      "path": "moonwitness/export-seal-pack/png/share-card.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/signed-export.svg",
+      "path": "moonwitness/export-seal-pack/png/signed-export.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/verified-stamp.svg",
+      "path": "moonwitness/export-seal-pack/png/verified-stamp.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/watermark-confidential.svg",
+      "path": "moonwitness/export-seal-pack/png/watermark-confidential.png"
+    },
+    {
+      "source": "moonwitness/export-seal-pack/svg/watermark-public.svg",
+      "path": "moonwitness/export-seal-pack/png/watermark-public.png"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Texture & Material Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/texture-material-pack/svg/archive-paper.svg",
+      "path": "moonwitness/texture-material-pack/png/archive-paper.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/carbon-grid.svg",
+      "path": "moonwitness/texture-material-pack/png/carbon-grid.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/data-matrix.svg",
+      "path": "moonwitness/texture-material-pack/png/data-matrix.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/glass-panel.svg",
+      "path": "moonwitness/texture-material-pack/png/glass-panel.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/legal-paper.svg",
+      "path": "moonwitness/texture-material-pack/png/legal-paper.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/lunar-grain.svg",
+      "path": "moonwitness/texture-material-pack/png/lunar-grain.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/map-grid.svg",
+      "path": "moonwitness/texture-material-pack/png/map-grid.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/microfilm.svg",
+      "path": "moonwitness/texture-material-pack/png/microfilm.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/red-thread.svg",
+      "path": "moonwitness/texture-material-pack/png/red-thread.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/scanner-lines.svg",
+      "path": "moonwitness/texture-material-pack/png/scanner-lines.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/signal-noise.svg",
+      "path": "moonwitness/texture-material-pack/png/signal-noise.png"
+    },
+    {
+      "source": "moonwitness/texture-material-pack/svg/star-field.svg",
+      "path": "moonwitness/texture-material-pack/png/star-field.png"
+    }
+  ]
+}

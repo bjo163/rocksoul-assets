@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Device Mockup Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/device-mockup-pack/svg/browser-dark.svg",
+      "path": "moonwitness/device-mockup-pack/png/browser-dark.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/browser-desktop.svg",
+      "path": "moonwitness/device-mockup-pack/png/browser-desktop.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/desktop-monitor.svg",
+      "path": "moonwitness/device-mockup-pack/png/desktop-monitor.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/laptop.svg",
+      "path": "moonwitness/device-mockup-pack/png/laptop.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/multi-device.svg",
+      "path": "moonwitness/device-mockup-pack/png/multi-device.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/phone-landscape.svg",
+      "path": "moonwitness/device-mockup-pack/png/phone-landscape.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/phone-portrait.svg",
+      "path": "moonwitness/device-mockup-pack/png/phone-portrait.png"
+    },
+    {
+      "source": "moonwitness/device-mockup-pack/svg/tablet.svg",
+      "path": "moonwitness/device-mockup-pack/png/tablet.png"
+    }
+  ]
+}

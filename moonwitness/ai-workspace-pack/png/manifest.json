@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness AI Workspace Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/agent-chip.svg",
+      "path": "moonwitness/ai-workspace-pack/png/agent-chip.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/ai-complete.svg",
+      "path": "moonwitness/ai-workspace-pack/png/ai-complete.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/ai-error.svg",
+      "path": "moonwitness/ai-workspace-pack/png/ai-error.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/ai-idle.svg",
+      "path": "moonwitness/ai-workspace-pack/png/ai-idle.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/ai-streaming.svg",
+      "path": "moonwitness/ai-workspace-pack/png/ai-streaming.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/ai-thinking.svg",
+      "path": "moonwitness/ai-workspace-pack/png/ai-thinking.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/confidence-chip.svg",
+      "path": "moonwitness/ai-workspace-pack/png/confidence-chip.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/context-chip.svg",
+      "path": "moonwitness/ai-workspace-pack/png/context-chip.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/guardrail.svg",
+      "path": "moonwitness/ai-workspace-pack/png/guardrail.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/human-review.svg",
+      "path": "moonwitness/ai-workspace-pack/png/human-review.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/model-selector.svg",
+      "path": "moonwitness/ai-workspace-pack/png/model-selector.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/prompt-template.svg",
+      "path": "moonwitness/ai-workspace-pack/png/prompt-template.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/retrieval-result.svg",
+      "path": "moonwitness/ai-workspace-pack/png/retrieval-result.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/source-citation.svg",
+      "path": "moonwitness/ai-workspace-pack/png/source-citation.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/token-meter.svg",
+      "path": "moonwitness/ai-workspace-pack/png/token-meter.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/tool-call.svg",
+      "path": "moonwitness/ai-workspace-pack/png/tool-call.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/tool-failure.svg",
+      "path": "moonwitness/ai-workspace-pack/png/tool-failure.png"
+    },
+    {
+      "source": "moonwitness/ai-workspace-pack/svg/tool-success.svg",
+      "path": "moonwitness/ai-workspace-pack/png/tool-success.png"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Evidence Media & Annotation Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/evidence-media-pack/svg/annotation-arrow.svg",
+      "path": "moonwitness/evidence-media-pack/png/annotation-arrow.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/bounding-box.svg",
+      "path": "moonwitness/evidence-media-pack/png/bounding-box.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/comment-marker.svg",
+      "path": "moonwitness/evidence-media-pack/png/comment-marker.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/compare-ab.svg",
+      "path": "moonwitness/evidence-media-pack/png/compare-ab.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/confidence-marker.svg",
+      "path": "moonwitness/evidence-media-pack/png/confidence-marker.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/crop-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/crop-region.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/disputed-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/disputed-region.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/evidence-focus.svg",
+      "path": "moonwitness/evidence-media-pack/png/evidence-focus.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/exif-panel.svg",
+      "path": "moonwitness/evidence-media-pack/png/exif-panel.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/frame-marker.svg",
+      "path": "moonwitness/evidence-media-pack/png/frame-marker.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/hash-chip.svg",
+      "path": "moonwitness/evidence-media-pack/png/hash-chip.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/location-overlay.svg",
+      "path": "moonwitness/evidence-media-pack/png/location-overlay.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/measurement.svg",
+      "path": "moonwitness/evidence-media-pack/png/measurement.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/metadata-chip.svg",
+      "path": "moonwitness/evidence-media-pack/png/metadata-chip.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/object-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/object-region.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/ocr-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/ocr-region.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/redacted-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/redacted-region.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/source-origin.svg",
+      "path": "moonwitness/evidence-media-pack/png/source-origin.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/timestamp-marker.svg",
+      "path": "moonwitness/evidence-media-pack/png/timestamp-marker.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/transcript-cue.svg",
+      "path": "moonwitness/evidence-media-pack/png/transcript-cue.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/verified-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/verified-region.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/video-scrub-marker.svg",
+      "path": "moonwitness/evidence-media-pack/png/video-scrub-marker.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/waveform-cue.svg",
+      "path": "moonwitness/evidence-media-pack/png/waveform-cue.png"
+    },
+    {
+      "source": "moonwitness/evidence-media-pack/svg/zoom-region.svg",
+      "path": "moonwitness/evidence-media-pack/png/zoom-region.png"
+    }
+  ]
+}

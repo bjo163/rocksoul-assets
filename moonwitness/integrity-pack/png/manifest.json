@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Evidence Integrity & Chain-of-Custody Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/integrity-pack/svg/checksum-fail.svg",
+      "path": "moonwitness/integrity-pack/png/checksum-fail.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/checksum-ok.svg",
+      "path": "moonwitness/integrity-pack/png/checksum-ok.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/custody-entry.svg",
+      "path": "moonwitness/integrity-pack/png/custody-entry.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/custody-transfer.svg",
+      "path": "moonwitness/integrity-pack/png/custody-transfer.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/digital-signature.svg",
+      "path": "moonwitness/integrity-pack/png/digital-signature.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/evidence-seal.svg",
+      "path": "moonwitness/integrity-pack/png/evidence-seal.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/immutable-record.svg",
+      "path": "moonwitness/integrity-pack/png/immutable-record.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/integrity-score.svg",
+      "path": "moonwitness/integrity-pack/png/integrity-score.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/provenance-broken.svg",
+      "path": "moonwitness/integrity-pack/png/provenance-broken.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/provenance-verified.svg",
+      "path": "moonwitness/integrity-pack/png/provenance-verified.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/sha256.svg",
+      "path": "moonwitness/integrity-pack/png/sha256.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/source-authentic.svg",
+      "path": "moonwitness/integrity-pack/png/source-authentic.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/source-unverified.svg",
+      "path": "moonwitness/integrity-pack/png/source-unverified.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/tamper-alert.svg",
+      "path": "moonwitness/integrity-pack/png/tamper-alert.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/timestamp-seal.svg",
+      "path": "moonwitness/integrity-pack/png/timestamp-seal.png"
+    },
+    {
+      "source": "moonwitness/integrity-pack/svg/version-history.svg",
+      "path": "moonwitness/integrity-pack/png/version-history.png"
+    }
+  ]
+}

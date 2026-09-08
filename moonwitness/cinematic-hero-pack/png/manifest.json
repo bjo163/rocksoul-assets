@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Cinematic Hero Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/archive-room.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/archive-room.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/community-lab.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/community-lab.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/correlation-sky.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/correlation-sky.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/data-observatory.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/data-observatory.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/evidence-desk.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/evidence-desk.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/field-investigation.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/field-investigation.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/legal-archive.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/legal-archive.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/lunar-horizon.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/lunar-horizon.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/map-room.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/map-room.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/observatory-night.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/observatory-night.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/satellite-orbit.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/satellite-orbit.png"
+    },
+    {
+      "source": "moonwitness/cinematic-hero-pack/svg/source-trace.svg",
+      "path": "moonwitness/cinematic-hero-pack/png/source-trace.png"
+    }
+  ]
+}

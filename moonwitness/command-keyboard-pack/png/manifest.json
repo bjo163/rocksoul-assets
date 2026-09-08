@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Command & Keyboard Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/key-command.svg",
+      "path": "moonwitness/command-keyboard-pack/png/key-command.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/key-enter.svg",
+      "path": "moonwitness/command-keyboard-pack/png/key-enter.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/key-escape.svg",
+      "path": "moonwitness/command-keyboard-pack/png/key-escape.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/key-option.svg",
+      "path": "moonwitness/command-keyboard-pack/png/key-option.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/key-shift.svg",
+      "path": "moonwitness/command-keyboard-pack/png/key-shift.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/key-tab.svg",
+      "path": "moonwitness/command-keyboard-pack/png/key-tab.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/keyboard-navigation.svg",
+      "path": "moonwitness/command-keyboard-pack/png/keyboard-navigation.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/sequence-node-link.svg",
+      "path": "moonwitness/command-keyboard-pack/png/sequence-node-link.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/shortcut-command.svg",
+      "path": "moonwitness/command-keyboard-pack/png/shortcut-command.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/shortcut-focus.svg",
+      "path": "moonwitness/command-keyboard-pack/png/shortcut-focus.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/shortcut-help.svg",
+      "path": "moonwitness/command-keyboard-pack/png/shortcut-help.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/shortcut-new-case.svg",
+      "path": "moonwitness/command-keyboard-pack/png/shortcut-new-case.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/shortcut-save.svg",
+      "path": "moonwitness/command-keyboard-pack/png/shortcut-save.png"
+    },
+    {
+      "source": "moonwitness/command-keyboard-pack/svg/shortcut-search.svg",
+      "path": "moonwitness/command-keyboard-pack/png/shortcut-search.png"
+    }
+  ]
+}
