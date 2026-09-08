@@ -7,9 +7,28 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "../..");
 const file = path.join(root, "penpot/generated/moonwitness-mw-0042.penpot");
 
-execFileSync("unzip", ["-t", file], { stdio: "inherit" });
+// `unzip` is standard on Linux CI, while Windows ships `tar` with ZIP support.
+// Keep the archive verification portable so release validation is identical for
+// maintainers on either platform.
+const useUnzip = (() => {
+  try { execFileSync("unzip", ["-v"], { stdio: "ignore" }); return true; }
+  catch { return false; }
+})();
+const archive = {
+  test: () => useUnzip
+    ? execFileSync("unzip", ["-t", file], { stdio: "inherit" })
+    : execFileSync("tar", ["-tf", file], { stdio: "ignore" }),
+  read: (entry) => useUnzip
+    ? execFileSync("unzip", ["-p", file, entry], { encoding: "utf8" })
+    : execFileSync("tar", ["-xOf", file, entry], { encoding: "utf8" }),
+  list: () => useUnzip
+    ? execFileSync("unzip", ["-Z1", file], { encoding: "utf8" })
+    : execFileSync("tar", ["-tf", file], { encoding: "utf8" }),
+};
 
-const manifestText = execFileSync("unzip", ["-p", file, "manifest.json"], { encoding: "utf8" });
+archive.test();
+
+const manifestText = archive.read("manifest.json");
 const manifest = JSON.parse(manifestText);
 
 if (manifest.type !== "penpot/export-files") {
@@ -22,8 +41,9 @@ if (!Array.isArray(manifest.files) || manifest.files.length !== 1) {
   throw new Error("Expected exactly one exported Penpot file");
 }
 
-const listing = execFileSync("unzip", ["-Z1", file], { encoding: "utf8" })
+const listing = archive.list()
   .split("\n")
+  .map((entry) => entry.trim())
   .filter(Boolean);
 
 const pageFiles = listing.filter((p) => /\/pages\/[^/]+\.json$/.test(p));
