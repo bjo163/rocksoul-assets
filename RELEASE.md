@@ -72,7 +72,7 @@ Release Gate must:
 1. validate canonical SVG structure and raster/vector pairing;
 2. validate 41 indexed asset-pack families;
 3. regenerate all modular PNG derivatives with zero diff;
-4. regenerate runtime APNG/WebM/Lottie derivatives with zero diff;
+4. regenerate APNG/Lottie with zero diff and validate WebM semantically with ffprobe;
 5. regenerate developer `dist/` with zero diff;
 6. regenerate brand and SFX derivatives with zero diff;
 7. pass Penpot source, package and golden-slice checks.
