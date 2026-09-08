@@ -23,6 +23,7 @@ on:
       - "SECURITY.md"
       - "index.html"
       - "vercel.json"
+      - ".github/workflows/**"
       - ".github/workflows/generate-sfx.yml"
   push:
     branches: [main]
@@ -46,6 +47,7 @@ on:
       - "SECURITY.md"
       - "index.html"
       - "vercel.json"
+      - ".github/workflows/**"
       - ".github/workflows/generate-sfx.yml"
 
 permissions:
@@ -112,6 +114,9 @@ jobs:
 
       - name: Verify documentation state
         run: node tools/docs/validate-docs.mjs
+
+      - name: Verify workflow branch policy
+        run: node tools/ci/validate-branch-policy.mjs
 
       - name: Verify runtime motion derivatives
         run: |
