@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="MFTL Observatory Clean">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B0B0B"/><stop offset="1" stop-color="#151515"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#D1132A" stop-opacity=".28"/><stop offset="1" stop-color="#0B0B0B" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#2E2E2E" stroke-width="1" opacity=".35"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<rect width="1200" height="675" fill="url(#grid)"/>
+<rect x="0" y="0" width="560" height="675" fill="#0B0B0B" opacity=".82"/>
+<circle cx="930" cy="265" r="280" fill="url(#halo)"/>
+<circle cx="930" cy="265" r="212" fill="none" stroke="#3C3C3C" stroke-width="2"/>
+<circle cx="930" cy="265" r="142" fill="none" stroke="#2E2E2E" stroke-width="1.5"/>
+<ellipse cx="930" cy="265" rx="260" ry="84" fill="none" stroke="#4A4A4A" stroke-width="1" opacity=".7"/>
+<ellipse cx="930" cy="265" rx="84" ry="260" fill="none" stroke="#303030" stroke-width="1" opacity=".7" transform="rotate(28 930 265)"/>
+<path d="M610 540 C760 430 830 520 930 455 S1085 430 1200 500" fill="none" stroke="#2E2E2E" stroke-width="3"/>
+<path d="M610 540 C760 430 830 520 930 455 S1085 430 1200 500 V675H610Z" fill="#101212" opacity=".75"/>
+<g fill="#F7F4EC" opacity=".78">
+  <circle cx="710" cy="92" r="1.7"/><circle cx="786" cy="142" r="1"/><circle cx="850" cy="86" r="1.4"/><circle cx="1012" cy="98" r="1.2"/><circle cx="1115" cy="174" r="1.5"/>
+  <circle cx="744" cy="334" r="1"/><circle cx="817" cy="403" r="1.4"/><circle cx="1054" cy="366" r="1"/><circle cx="1144" cy="318" r="1.7"/>
+</g>
+<g fill="none" stroke="#D1132A">
+  <circle cx="930" cy="265" r="12" stroke-width="2"/><path d="M900 265H960M930 235V295" stroke-width="2"/>
+  <circle cx="1040" cy="205" r="5" fill="#D1132A"/><circle cx="824" cy="330" r="4" fill="#D1132A"/>
+</g>
+<g fill="#3B82F6"><circle cx="1080" cy="315" r="3"/><circle cx="855" cy="187" r="3"/></g>
+<g stroke="#D1132A" stroke-width="1.2" opacity=".55"><path d="M824 330L930 265L1040 205"/><path d="M930 265L1080 315"/></g>
+</svg>
