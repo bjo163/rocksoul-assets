@@ -7,7 +7,6 @@ on:
     paths:
       - "moonwitness/runtime-motion-pack/**"
       - "tools/assets/generate-runtime-motion.py"
-      - ".github/workflows/generate-runtime-motion.yml"
 
 permissions:
   contents: write
