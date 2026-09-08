@@ -23,7 +23,7 @@ Canonical global index: `moonwitness/asset-packs.json`.
 | state-illustrations | 12 | `moonwitness/state-illustrations/` |
 | motion | 12 | `moonwitness/motion/` |
 | sfx | 14 | `moonwitness/sfx/` |
-| application-screens | 12 | `moonwitness/ui/v2/` |
+| application-screens | 20 | `moonwitness/ui/v2/` |
 | graph-vector | 10 | `moonwitness/graph-pack/` |
 | badge-status | 12 | `moonwitness/badge-pack/` |
 | source-file | 15 | `moonwitness/source-file-pack/` |

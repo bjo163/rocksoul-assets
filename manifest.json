@@ -157,7 +157,8 @@
     "navigation": "moonwitness/ui/v2/navigation.json",
     "screens": "moonwitness/ui/v2/screens.json",
     "states": "moonwitness/ui/v2/states.json",
-    "penpotContract": "penpot/application-shell/application-shell.json"
+    "penpotContract": "penpot/application-shell/application-shell.json",
+    "platformAdmin": "moonwitness/ui/v2/platform-admin.json"
   },
   "release": {
     "version": "1.3.1",
@@ -335,7 +336,7 @@
     },
     "application-screens": {
       "manifest": "moonwitness/ui/v2/manifest.json",
-      "count": 12
+      "count": 20
     }
   },
   "assetPackIndex": "moonwitness/asset-packs.json",

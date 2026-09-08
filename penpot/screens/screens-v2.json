@@ -3,17 +3,105 @@
   "page": "13 — Application",
   "referenceRoot": "../../moonwitness/ui/v2",
   "screens": [
-    {"id":"shell","reference":"../../moonwitness/ui/v2/application-shell.svg","targetPage":"13 — Application / Shell"},
-    {"id":"17","reference":"../../moonwitness/ui/v2/17-dashboard.svg","targetPage":"13 — Application / Dashboard"},
-    {"id":"18","reference":"../../moonwitness/ui/v2/18-command-palette.svg","targetPage":"13 — Application / Overlays"},
-    {"id":"19","reference":"../../moonwitness/ui/v2/19-notifications.svg","targetPage":"13 — Application / Overlays"},
-    {"id":"20","reference":"../../moonwitness/ui/v2/20-kanban.svg","targetPage":"13 — Application / Work"},
-    {"id":"21","reference":"../../moonwitness/ui/v2/21-calendar.svg","targetPage":"13 — Application / Work"},
-    {"id":"22","reference":"../../moonwitness/ui/v2/22-chat.svg","targetPage":"13 — Application / Chat"},
-    {"id":"23","reference":"../../moonwitness/ui/v2/23-ai-workspace.svg","targetPage":"13 — Application / AI"},
-    {"id":"24","reference":"../../moonwitness/ui/v2/24-resources.svg","targetPage":"13 — Application / Resources"},
-    {"id":"25","reference":"../../moonwitness/ui/v2/25-profile-settings.svg","targetPage":"13 — Application / Account"},
-    {"id":"26","reference":"../../moonwitness/ui/v2/26-authorization.svg","targetPage":"13 — Application / Access"},
-    {"id":"27","reference":"../../moonwitness/ui/v2/27-system-states.svg","targetPage":"13 — Application / States"}
+    {
+      "id": "shell",
+      "reference": "../../moonwitness/ui/v2/application-shell.svg",
+      "targetPage": "13 — Application / Shell"
+    },
+    {
+      "id": "17",
+      "reference": "../../moonwitness/ui/v2/17-dashboard.svg",
+      "targetPage": "13 — Application / Dashboard"
+    },
+    {
+      "id": "18",
+      "reference": "../../moonwitness/ui/v2/18-command-palette.svg",
+      "targetPage": "13 — Application / Overlays"
+    },
+    {
+      "id": "19",
+      "reference": "../../moonwitness/ui/v2/19-notifications.svg",
+      "targetPage": "13 — Application / Overlays"
+    },
+    {
+      "id": "20",
+      "reference": "../../moonwitness/ui/v2/20-kanban.svg",
+      "targetPage": "13 — Application / Work"
+    },
+    {
+      "id": "21",
+      "reference": "../../moonwitness/ui/v2/21-calendar.svg",
+      "targetPage": "13 — Application / Work"
+    },
+    {
+      "id": "22",
+      "reference": "../../moonwitness/ui/v2/22-chat.svg",
+      "targetPage": "13 — Application / Chat"
+    },
+    {
+      "id": "23",
+      "reference": "../../moonwitness/ui/v2/23-ai-workspace.svg",
+      "targetPage": "13 — Application / AI"
+    },
+    {
+      "id": "24",
+      "reference": "../../moonwitness/ui/v2/24-resources.svg",
+      "targetPage": "13 — Application / Resources"
+    },
+    {
+      "id": "25",
+      "reference": "../../moonwitness/ui/v2/25-profile-settings.svg",
+      "targetPage": "13 — Application / Account"
+    },
+    {
+      "id": "26",
+      "reference": "../../moonwitness/ui/v2/26-authorization.svg",
+      "targetPage": "13 — Application / Access"
+    },
+    {
+      "id": "27",
+      "reference": "../../moonwitness/ui/v2/27-system-states.svg",
+      "targetPage": "13 — Application / States"
+    },
+    {
+      "id": "28",
+      "reference": "../../moonwitness/ui/v2/28-platform-dashboard.svg",
+      "targetPage": "13 — Application / Platform / Platform Dashboard"
+    },
+    {
+      "id": "29",
+      "reference": "../../moonwitness/ui/v2/29-platform-users.svg",
+      "targetPage": "13 — Application / Platform / Users and Roles"
+    },
+    {
+      "id": "30",
+      "reference": "../../moonwitness/ui/v2/30-platform-authorization.svg",
+      "targetPage": "13 — Application / Platform / Authorization"
+    },
+    {
+      "id": "31",
+      "reference": "../../moonwitness/ui/v2/31-platform-moderation.svg",
+      "targetPage": "13 — Application / Platform / Moderation Operations"
+    },
+    {
+      "id": "32",
+      "reference": "../../moonwitness/ui/v2/32-platform-service-status.svg",
+      "targetPage": "13 — Application / Platform / Service Status"
+    },
+    {
+      "id": "33",
+      "reference": "../../moonwitness/ui/v2/33-platform-audit.svg",
+      "targetPage": "13 — Application / Platform / Audit Log"
+    },
+    {
+      "id": "34",
+      "reference": "../../moonwitness/ui/v2/34-platform-settings.svg",
+      "targetPage": "13 — Application / Platform / Platform Settings"
+    },
+    {
+      "id": "35",
+      "reference": "../../moonwitness/ui/v2/35-platform-system-states.svg",
+      "targetPage": "13 — Application / Platform / Platform System States"
+    }
   ]
 }

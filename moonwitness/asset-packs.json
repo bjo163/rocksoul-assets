@@ -37,7 +37,7 @@
     {
       "id": "application-screens",
       "manifest": "moonwitness/ui/v2/manifest.json",
-      "count": 12
+      "count": 20
     },
     {
       "id": "sfx",
