@@ -57,6 +57,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Asset Consumption](ASSET-CONSUMPTION.md) | runtime format and usage rules |
 | [Asset Pack Catalog](ASSET-PACK-CATALOG.md) | complete human-readable pack index |
 | [Asset Structure](ASSET-STRUCTURE.md) | repository paths and raster/vector contracts |
+| [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
 | [Accessibility](ACCESSIBILITY.md) | non-negotiable product accessibility rules |
 | [Governance](GOVERNANCE.md) | ownership, change classes, definition of done |
