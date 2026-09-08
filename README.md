@@ -4,20 +4,50 @@ Visual and design-source repository for the **MoonWitness × Rocksoul** ecosyste
 
 > **MoonWitness watches. Rocksoul follows. The record connects. The law draws the line. The legend stays open.**
 
-This repository stores visual baselines, Penpot-ready design tokens, primitives, component contracts, and handoff specifications. Application source code belongs in the MoonWitness product repository.
+This repository stores canonical brand vectors, immutable raster baselines, editable SVG reconstructions, Penpot-ready design tokens, primitives, component contracts, product-shell references, and handoff specifications. Application source code belongs in the MoonWitness product repository.
 
 ## Design source of truth
 
 **Canonical design tool:** Penpot  
 **Canonical repository layer:** `rocksoul-assets`  
-**Visual baseline:** `moonwitness/ui/v1`  
+**Raster baseline:** `moonwitness/ui/v1`  
+**Application vector surfaces:** `moonwitness/ui/v2`  
+**Brand source:** `moonwitness/brand`  
 **Penpot source:** `penpot/`
 
 The earlier Figma file is retained as a prototype/reference only:
 
 https://www.figma.com/design/OZawflyISNWRFLSpVPaM4N
 
-### Product surfaces
+## Asset system
+
+### Brand
+
+Canonical SVG sources include:
+
+- primary mark
+- horizontal / stacked / monochrome logos
+- wordmark
+- MoonWitness × Rocksoul ecosystem lockup
+- favicon
+- Safari pinned tab
+- Apple touch icon
+- app icon + maskable app icon
+- social avatar
+- Open Graph card
+
+Raster delivery assets are generated from those SVGs under `moonwitness/brand/generated/`.
+
+### Raster → vector contract
+
+Every PNG/JPEG visual reference in `moonwitness/` must either:
+
+1. have a same-basename editable SVG counterpart, or
+2. be a generated delivery asset whose manifest points to a canonical SVG source.
+
+The 16 immutable v1 PNG screens now have 16 same-basename native SVG reconstructions. Canonical vector sources may not embed raster images.
+
+## Product surfaces
 
 | Range | Surface | Target app |
 |---|---|---|
@@ -25,6 +55,9 @@ https://www.figma.com/design/OZawflyISNWRFLSpVPaM4N
 | 13–14 | Community + authentication | `apps/community` |
 | 15 | Internal operations / admin | `apps/platform` |
 | 16 | Design-system reference | `packages/tokens` + `packages/ui` |
+| 17–27 | Authenticated application shell + workspaces | `apps/platform` / shared application UI |
+
+V2 adds a shared application shell, Dashboard, Command Palette, Notifications, Kanban, Calendar, Chat, AI Workspace, AutoMenu Resources, Profile/Settings, Authorization UX, and system states.
 
 ## Repository domains
 
@@ -39,31 +72,34 @@ https://www.figma.com/design/OZawflyISNWRFLSpVPaM4N
 ## Design pipeline
 
 ```text
-moonwitness/ui/v1/screens
-          ↓
-     penpot/tokens
-          ↓
-  penpot/primitives
-          ↓
-  penpot/components
-          ↓
-    penpot/patterns
-          ↓
-      Penpot file
-          ↓
-packages/tokens + packages/ui
-          ↓
-apps/web + apps/community + apps/platform
+brand SVG + v1 raster/vector baseline + v2 vector surfaces
+                         ↓
+                    penpot/tokens
+                         ↓
+                 penpot/primitives
+                         ↓
+                 penpot/components
+                         ↓
+                   penpot/patterns
+                         ↓
+                     Penpot file
+                         ↓
+              packages/tokens + packages/ui
+                         ↓
+          apps/web + apps/community + apps/platform
 ```
 
 ## Asset contract
 
 - Never commit generator/default filenames.
 - Prefix ordered screens with a two-digit sequence.
-- Existing `v1` images are immutable visual references; material revisions go to a new version folder.
+- Existing `v1` PNG images are immutable visual references.
+- Material product expansion goes to a new version layer; v2 is vector-first.
 - PNG screens are composition references, not pixel-perfect implementation contracts.
+- Canonical editable assets are SVG; generated raster delivery files are derivatives.
 - Penpot is the canonical interactive design layer.
 - Tokens and component contracts in this repository are version-controlled sources for Penpot and implementation.
+- Resource navigation remains AutoMenu-driven.
 - Do not place application source code in this repository.
 
-Start with [`penpot/README.md`](./penpot/README.md) and [`docs/PENPOT-HANDOFF.md`](./docs/PENPOT-HANDOFF.md).
+Start with `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
