@@ -28,7 +28,7 @@
 - Added 16 data-driven Jurisdiction / Locale assets.
 
 ### Runtime delivery
-- Added 12 runtime motions with animated-SVG sources plus deterministic APNG, WebM and Lottie derivatives.
+- Added 12 runtime motions with animated-SVG sources; APNG/Lottie are byte-reproducible while WebM is validated semantically with ffprobe because container encoding is not byte-stable.
 - Added generated developer distribution: `dist/assets.json`, `dist/assets.ts`, `dist/assets.css`, and `dist/sprite.svg`.
 - Expanded global asset index to 41 pack families.
 - Added generic v1.3 validation and reproducibility gates for modular packs, runtime motion and developer distribution.
