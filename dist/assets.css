@@ -112,6 +112,18 @@
   --mw-motion-success-check: url("/moonwitness/motion/svg/success-check.svg");
   --mw-motion-trace-node-pulse: url("/moonwitness/motion/svg/trace-node-pulse.svg");
   --mw-motion-upload-complete: url("/moonwitness/motion/svg/upload-complete.svg");
+  --mw-application-screens-17-dashboard: url("/moonwitness/ui/v2/17-dashboard.svg");
+  --mw-application-screens-18-command-palette: url("/moonwitness/ui/v2/18-command-palette.svg");
+  --mw-application-screens-19-notifications: url("/moonwitness/ui/v2/19-notifications.svg");
+  --mw-application-screens-20-kanban: url("/moonwitness/ui/v2/20-kanban.svg");
+  --mw-application-screens-21-calendar: url("/moonwitness/ui/v2/21-calendar.svg");
+  --mw-application-screens-22-chat: url("/moonwitness/ui/v2/22-chat.svg");
+  --mw-application-screens-23-ai-workspace: url("/moonwitness/ui/v2/23-ai-workspace.svg");
+  --mw-application-screens-24-resources: url("/moonwitness/ui/v2/24-resources.svg");
+  --mw-application-screens-25-profile-settings: url("/moonwitness/ui/v2/25-profile-settings.svg");
+  --mw-application-screens-26-authorization: url("/moonwitness/ui/v2/26-authorization.svg");
+  --mw-application-screens-27-system-states: url("/moonwitness/ui/v2/27-system-states.svg");
+  --mw-application-screens-application-shell: url("/moonwitness/ui/v2/application-shell.svg");
   --mw-graph-vector-area-chart: url("/moonwitness/graph-pack/svg/area-chart.svg");
   --mw-graph-vector-bar-chart: url("/moonwitness/graph-pack/svg/bar-chart.svg");
   --mw-graph-vector-correlation-network: url("/moonwitness/graph-pack/svg/correlation-network.svg");

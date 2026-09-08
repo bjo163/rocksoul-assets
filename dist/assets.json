@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.3.0",
+  "version": "1.3.1",
   "canonicalFormat": "svg",
   "packs": {
     "product-icons": {
@@ -154,6 +154,25 @@
         "success-check": "moonwitness/motion/svg/success-check.svg",
         "trace-node-pulse": "moonwitness/motion/svg/trace-node-pulse.svg",
         "upload-complete": "moonwitness/motion/svg/upload-complete.svg"
+      },
+      "png": {}
+    },
+    "application-screens": {
+      "manifest": "moonwitness/ui/v2/manifest.json",
+      "count": 12,
+      "svg": {
+        "17-dashboard": "moonwitness/ui/v2/17-dashboard.svg",
+        "18-command-palette": "moonwitness/ui/v2/18-command-palette.svg",
+        "19-notifications": "moonwitness/ui/v2/19-notifications.svg",
+        "20-kanban": "moonwitness/ui/v2/20-kanban.svg",
+        "21-calendar": "moonwitness/ui/v2/21-calendar.svg",
+        "22-chat": "moonwitness/ui/v2/22-chat.svg",
+        "23-ai-workspace": "moonwitness/ui/v2/23-ai-workspace.svg",
+        "24-resources": "moonwitness/ui/v2/24-resources.svg",
+        "25-profile-settings": "moonwitness/ui/v2/25-profile-settings.svg",
+        "26-authorization": "moonwitness/ui/v2/26-authorization.svg",
+        "27-system-states": "moonwitness/ui/v2/27-system-states.svg",
+        "application-shell": "moonwitness/ui/v2/application-shell.svg"
       },
       "png": {}
     },
