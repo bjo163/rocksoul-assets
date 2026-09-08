@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Persona & Avatar Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/persona-pack/svg/admin.svg",
+      "path": "moonwitness/persona-pack/png/32/admin.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/admin.svg",
+      "path": "moonwitness/persona-pack/png/64/admin.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/admin.svg",
+      "path": "moonwitness/persona-pack/png/128/admin.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/admin.svg",
+      "path": "moonwitness/persona-pack/png/256/admin.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/ai-system.svg",
+      "path": "moonwitness/persona-pack/png/32/ai-system.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/ai-system.svg",
+      "path": "moonwitness/persona-pack/png/64/ai-system.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/ai-system.svg",
+      "path": "moonwitness/persona-pack/png/128/ai-system.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/ai-system.svg",
+      "path": "moonwitness/persona-pack/png/256/ai-system.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/analyst.svg",
+      "path": "moonwitness/persona-pack/png/32/analyst.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/analyst.svg",
+      "path": "moonwitness/persona-pack/png/64/analyst.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/analyst.svg",
+      "path": "moonwitness/persona-pack/png/128/analyst.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/analyst.svg",
+      "path": "moonwitness/persona-pack/png/256/analyst.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/anonymous-source.svg",
+      "path": "moonwitness/persona-pack/png/32/anonymous-source.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/anonymous-source.svg",
+      "path": "moonwitness/persona-pack/png/64/anonymous-source.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/anonymous-source.svg",
+      "path": "moonwitness/persona-pack/png/128/anonymous-source.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/anonymous-source.svg",
+      "path": "moonwitness/persona-pack/png/256/anonymous-source.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/community-member.svg",
+      "path": "moonwitness/persona-pack/png/32/community-member.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/community-member.svg",
+      "path": "moonwitness/persona-pack/png/64/community-member.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/community-member.svg",
+      "path": "moonwitness/persona-pack/png/128/community-member.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/community-member.svg",
+      "path": "moonwitness/persona-pack/png/256/community-member.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/moderator.svg",
+      "path": "moonwitness/persona-pack/png/32/moderator.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/moderator.svg",
+      "path": "moonwitness/persona-pack/png/64/moderator.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/moderator.svg",
+      "path": "moonwitness/persona-pack/png/128/moderator.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/moderator.svg",
+      "path": "moonwitness/persona-pack/png/256/moderator.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/protected-witness.svg",
+      "path": "moonwitness/persona-pack/png/32/protected-witness.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/protected-witness.svg",
+      "path": "moonwitness/persona-pack/png/64/protected-witness.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/protected-witness.svg",
+      "path": "moonwitness/persona-pack/png/128/protected-witness.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/protected-witness.svg",
+      "path": "moonwitness/persona-pack/png/256/protected-witness.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/researcher.svg",
+      "path": "moonwitness/persona-pack/png/32/researcher.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/researcher.svg",
+      "path": "moonwitness/persona-pack/png/64/researcher.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/researcher.svg",
+      "path": "moonwitness/persona-pack/png/128/researcher.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/researcher.svg",
+      "path": "moonwitness/persona-pack/png/256/researcher.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/rocksoul.svg",
+      "path": "moonwitness/persona-pack/png/32/rocksoul.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/rocksoul.svg",
+      "path": "moonwitness/persona-pack/png/64/rocksoul.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/rocksoul.svg",
+      "path": "moonwitness/persona-pack/png/128/rocksoul.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/persona-pack/svg/rocksoul.svg",
+      "path": "moonwitness/persona-pack/png/256/rocksoul.png",
+      "width": 256,
+      "height": 256
+    }
+  ]
+}

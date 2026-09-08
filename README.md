@@ -10,7 +10,7 @@
 
 Canonical brand, product-shell, UI, component, token, data-viz, motion, and design-handoff assets for the **MoonWitness × Rocksoul** ecosystem.
 
-![Release](https://img.shields.io/badge/release-v1.1.0-111111)
+![Release](https://img.shields.io/badge/release-v1.2.0-111111)
 ![Design](https://img.shields.io/badge/design-Penpot-6C63FF)
 ![Source](https://img.shields.io/badge/source-SVG-2E8B57)
 ![Surfaces](https://img.shields.io/badge/UI-v1%20%2B%20v2-B43A32)
@@ -126,8 +126,20 @@ Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome 
 | Data-Viz Pack | `moonwitness/data-viz/` | 16 SVG components |
 | Hero Backgrounds | `moonwitness/hero-backgrounds/` | 8 vector backgrounds |
 | State Illustrations | `moonwitness/state-illustrations/` | 12 SVG illustrations |
-| Motion Pack | `moonwitness/motion/` | 6 animated SVG references |
-| SFX Pack | `moonwitness/sfx/` | 10 procedural cues + WAV/OGG |
+| Motion Pack | `moonwitness/motion/` | 12 animated SVG references |
+| SFX Pack | `moonwitness/sfx/` | 14 procedural cues + WAV/OGG |
+| Graph Vector Pack | `moonwitness/graph-pack/` | 10 graph SVGs + PNG |
+| Badge / Status Pack | `moonwitness/badge-pack/` | 12 badge SVGs + PNG |
+| Source / File-Type Pack | `moonwitness/source-file-pack/` | 15 source icons + PNG |
+| Geospatial Pack | `moonwitness/geospatial-pack/` | 15 map assets + PNG |
+| Cursor / Interaction Pack | `moonwitness/cursor-pack/` | 17 cursor assets + PNG |
+| Persona / Avatar Pack | `moonwitness/persona-pack/` | 9 personas × 4 PNG sizes |
+| Social Campaign Pack | `moonwitness/social-campaign-pack/` | 8 platform templates |
+| Platform Delivery Pack | `moonwitness/platform-delivery-pack/` | 8 install/store assets |
+| Onboarding Pack | `moonwitness/onboarding-pack/` | 8 tutorial illustrations |
+| Document / Report Pack | `moonwitness/document-report-pack/` | 9 report assets |
+| Notification Pack | `moonwitness/notification-pack/` | 8 email/in-app templates |
+| Editorial Pack | `moonwitness/editorial-pack/` | 6 editorial vector images |
 
 Correlation visualizations should preferentially use the existing **node-link, provenance, evidence-matrix, timeline, repository-health, metric, annotation, and edge-style** assets in `moonwitness/data-viz/`.
 
@@ -190,7 +202,7 @@ flowchart TD
 - Resource navigation remains AutoMenu-driven where applicable.
 - Do not place application source code in this repository.
 
-Start with `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
+Start with `moonwitness/asset-packs.json`, `docs/ASSET-CONSUMPTION.md`, `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
 
 ---
 

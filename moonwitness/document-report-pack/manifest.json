@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Document & Report Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 9,
+  "root": "svg",
+  "assets": [
+    "case-report",
+    "evidence-dossier",
+    "legal-review",
+    "community-recap",
+    "investigation-export",
+    "header-footer",
+    "table-of-contents",
+    "citation-card",
+    "appendix-separator"
+  ]
+}

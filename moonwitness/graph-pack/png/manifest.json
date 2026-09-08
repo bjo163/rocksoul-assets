@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Graph Vector Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/graph-pack/svg/area-chart.svg",
+      "path": "moonwitness/graph-pack/png/area-chart.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/bar-chart.svg",
+      "path": "moonwitness/graph-pack/png/bar-chart.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/correlation-network.svg",
+      "path": "moonwitness/graph-pack/png/correlation-network.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/donut-chart.svg",
+      "path": "moonwitness/graph-pack/png/donut-chart.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/evidence-timeline.svg",
+      "path": "moonwitness/graph-pack/png/evidence-timeline.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/heat-strip.svg",
+      "path": "moonwitness/graph-pack/png/heat-strip.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/kpi-cards.svg",
+      "path": "moonwitness/graph-pack/png/kpi-cards.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/line-chart.svg",
+      "path": "moonwitness/graph-pack/png/line-chart.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/radar-chart.svg",
+      "path": "moonwitness/graph-pack/png/radar-chart.png"
+    },
+    {
+      "source": "moonwitness/graph-pack/svg/stacked-bar-chart.svg",
+      "path": "moonwitness/graph-pack/png/stacked-bar-chart.png"
+    }
+  ]
+}

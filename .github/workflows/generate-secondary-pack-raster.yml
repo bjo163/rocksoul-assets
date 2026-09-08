@@ -1,0 +1,51 @@
+name: Generate Secondary Pack Raster
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feat/secondary-asset-packs-v1.1
+    paths:
+      - "moonwitness/graph-pack/**"
+      - "moonwitness/badge-pack/**"
+      - "moonwitness/source-file-pack/**"
+      - "moonwitness/geospatial-pack/**"
+      - "moonwitness/cursor-pack/**"
+      - "moonwitness/persona-pack/**"
+      - "moonwitness/social-campaign-pack/**"
+      - "moonwitness/platform-delivery-pack/**"
+      - "moonwitness/onboarding-pack/**"
+      - "moonwitness/document-report-pack/**"
+      - "moonwitness/notification-pack/**"
+      - "moonwitness/editorial-pack/**"
+      - "tools/assets/render-packs.py"
+      - ".github/workflows/generate-secondary-pack-raster.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install renderer
+        run: python -m pip install --disable-pip-version-check cairosvg==2.7.1
+      - name: Render PNG derivatives
+        run: python tools/assets/render-packs.py
+      - name: Commit derivatives
+        run: |
+          git config user.name "moonwitness-assets-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add moonwitness/*-pack/png
+          if git diff --cached --quiet; then
+            echo "No raster changes."
+          else
+            git commit -m "build(assets): generate secondary pack PNG derivatives"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push
+          fi

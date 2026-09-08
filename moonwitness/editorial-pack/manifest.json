@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Editorial Image Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 6,
+  "root": "svg",
+  "assets": [
+    "lunar-observatory",
+    "field-witness",
+    "archive-dossier",
+    "case-map",
+    "legal-boundary",
+    "source-signal"
+  ]
+}

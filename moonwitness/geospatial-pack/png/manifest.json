@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Geospatial & Map Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/geospatial-pack/svg/boundary-zone.svg",
+      "path": "moonwitness/geospatial-pack/png/boundary-zone.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/checkpoint.svg",
+      "path": "moonwitness/geospatial-pack/png/checkpoint.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/cluster-large.svg",
+      "path": "moonwitness/geospatial-pack/png/cluster-large.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/cluster-small.svg",
+      "path": "moonwitness/geospatial-pack/png/cluster-small.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/crosshair.svg",
+      "path": "moonwitness/geospatial-pack/png/crosshair.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/heat-cell.svg",
+      "path": "moonwitness/geospatial-pack/png/heat-cell.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/jurisdiction-disputed.svg",
+      "path": "moonwitness/geospatial-pack/png/jurisdiction-disputed.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/map-grid.svg",
+      "path": "moonwitness/geospatial-pack/png/map-grid.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/pin-alert.svg",
+      "path": "moonwitness/geospatial-pack/png/pin-alert.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/pin-primary.svg",
+      "path": "moonwitness/geospatial-pack/png/pin-primary.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/pin-verified.svg",
+      "path": "moonwitness/geospatial-pack/png/pin-verified.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/route-dashed.svg",
+      "path": "moonwitness/geospatial-pack/png/route-dashed.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/route-solid.svg",
+      "path": "moonwitness/geospatial-pack/png/route-solid.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/uncertainty-high.svg",
+      "path": "moonwitness/geospatial-pack/png/uncertainty-high.png"
+    },
+    {
+      "source": "moonwitness/geospatial-pack/svg/uncertainty-low.svg",
+      "path": "moonwitness/geospatial-pack/png/uncertainty-low.png"
+    }
+  ]
+}

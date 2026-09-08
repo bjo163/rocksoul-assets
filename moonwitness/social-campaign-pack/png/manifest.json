@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Social Campaign Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/social-campaign-pack/svg/community-announcement.svg",
+      "path": "moonwitness/social-campaign-pack/png/community-announcement.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/discord-banner.svg",
+      "path": "moonwitness/social-campaign-pack/png/discord-banner.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/github-banner.svg",
+      "path": "moonwitness/social-campaign-pack/png/github-banner.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/instagram-square.svg",
+      "path": "moonwitness/social-campaign-pack/png/instagram-square.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/instagram-story.svg",
+      "path": "moonwitness/social-campaign-pack/png/instagram-story.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/linkedin-post.svg",
+      "path": "moonwitness/social-campaign-pack/png/linkedin-post.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/x-post.svg",
+      "path": "moonwitness/social-campaign-pack/png/x-post.png"
+    },
+    {
+      "source": "moonwitness/social-campaign-pack/svg/youtube-thumbnail.svg",
+      "path": "moonwitness/social-campaign-pack/png/youtube-thumbnail.png"
+    }
+  ]
+}

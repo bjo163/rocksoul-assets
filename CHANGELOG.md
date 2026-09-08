@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.2.0] — 2026-09-08
+
+### Secondary production asset packs
+- Added 10 graph/vector UI components with PNG derivatives.
+- Added 12 badge/status assets.
+- Added 15 source/file-type assets.
+- Added 15 geospatial/map assets.
+- Added 17 cursor/interaction assets.
+- Added 9 persona/avatar vectors with 32/64/128/256 PNG sizes.
+- Added 8 social/campaign templates.
+- Added 8 platform delivery/store/install templates.
+- Added 8 onboarding/tutorial illustrations.
+- Added 9 document/report assets.
+- Added 8 notification/email visual templates.
+- Added 6 editorial image vectors.
+
+### Motion and sound
+- Expanded Motion Pack from 6 to 12 animated SVG references.
+- Expanded SFX Pack from 10 to 14 deterministic WAV/OGG cues.
+
+### Tooling
+- Added global `moonwitness/asset-packs.json` index.
+- Added deterministic SVG → PNG renderer for secondary packs.
+- Added CI validation for all secondary pack manifests and generated derivatives.
+- Added developer asset consumption contract.
+
+
 All notable repository-level changes to MoonWitness × Rocksoul design assets are documented here.
 
 ## [1.1.0] — 2026-09-08

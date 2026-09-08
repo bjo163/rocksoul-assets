@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "packs": [
+    {
+      "id": "product-icons",
+      "manifest": "moonwitness/icons/icons.json",
+      "count": 44
+    },
+    {
+      "id": "dashboard",
+      "manifest": "moonwitness/dashboard-pack/dashboard-pack.json",
+      "count": 20
+    },
+    {
+      "id": "data-viz",
+      "manifest": "moonwitness/data-viz/data-viz.json",
+      "count": 16
+    },
+    {
+      "id": "hero-backgrounds",
+      "manifest": "moonwitness/hero-backgrounds/backgrounds.json",
+      "count": 8
+    },
+    {
+      "id": "state-illustrations",
+      "manifest": "moonwitness/state-illustrations/states.json",
+      "count": 12
+    },
+    {
+      "id": "motion",
+      "manifest": "moonwitness/motion/motion.json",
+      "count": 12
+    },
+    {
+      "id": "sfx",
+      "manifest": "moonwitness/sfx/sounds.json",
+      "count": 14
+    },
+    {
+      "id": "graph-vector",
+      "manifest": "moonwitness/graph-pack/manifest.json",
+      "count": 10
+    },
+    {
+      "id": "badge-status",
+      "manifest": "moonwitness/badge-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "source-file",
+      "manifest": "moonwitness/source-file-pack/manifest.json",
+      "count": 15
+    },
+    {
+      "id": "geospatial",
+      "manifest": "moonwitness/geospatial-pack/manifest.json",
+      "count": 15
+    },
+    {
+      "id": "cursor-interaction",
+      "manifest": "moonwitness/cursor-pack/manifest.json",
+      "count": 17
+    },
+    {
+      "id": "persona-avatar",
+      "manifest": "moonwitness/persona-pack/manifest.json",
+      "count": 9
+    },
+    {
+      "id": "social-campaign",
+      "manifest": "moonwitness/social-campaign-pack/manifest.json",
+      "count": 8
+    },
+    {
+      "id": "platform-delivery",
+      "manifest": "moonwitness/platform-delivery-pack/manifest.json",
+      "count": 8
+    },
+    {
+      "id": "onboarding",
+      "manifest": "moonwitness/onboarding-pack/manifest.json",
+      "count": 8
+    },
+    {
+      "id": "document-report",
+      "manifest": "moonwitness/document-report-pack/manifest.json",
+      "count": 9
+    },
+    {
+      "id": "notification",
+      "manifest": "moonwitness/notification-pack/manifest.json",
+      "count": 8
+    },
+    {
+      "id": "editorial",
+      "manifest": "moonwitness/editorial-pack/manifest.json",
+      "count": 6
+    }
+  ]
+}

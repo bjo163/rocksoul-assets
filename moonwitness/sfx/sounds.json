@@ -11,11 +11,17 @@
     "error": "failed action",
     "evidence-linked": "evidence successfully linked",
     "trace-found": "trace or correlation discovery",
-    "ai-complete": "AI response finished"
+    "ai-complete": "AI response finished",
+    "upload-complete": "file or evidence upload finished",
+    "case-open": "case workspace opened",
+    "case-resolved": "case resolution confirmed",
+    "ai-start": "AI workspace begins processing"
   },
   "rules": [
     "Do not play sounds for every navigation action.",
     "Respect user sound preferences and reduced-stimulation settings.",
     "Critical sounds must never be the only alert channel."
-  ]
+  ],
+  "version": "1.2",
+  "count": 14
 }

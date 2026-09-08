@@ -62,6 +62,30 @@
       "wav": "generated/ai-complete.wav",
       "ogg": "generated/ai-complete.ogg",
       "durationMs": 280
+    },
+    {
+      "id": "upload-complete",
+      "wav": "generated/upload-complete.wav",
+      "ogg": "generated/upload-complete.ogg",
+      "durationMs": 240
+    },
+    {
+      "id": "case-open",
+      "wav": "generated/case-open.wav",
+      "ogg": "generated/case-open.ogg",
+      "durationMs": 220
+    },
+    {
+      "id": "case-resolved",
+      "wav": "generated/case-resolved.wav",
+      "ogg": "generated/case-resolved.ogg",
+      "durationMs": 340
+    },
+    {
+      "id": "ai-start",
+      "wav": "generated/ai-start.wav",
+      "ogg": "generated/ai-start.ogg",
+      "durationMs": 240
     }
   ]
 }

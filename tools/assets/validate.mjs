@@ -28,6 +28,7 @@ async function assertNativeSvg(relativePath) {
   invariant(/<svg\b/.test(svg), `Not an SVG document: ${relativePath}`);
   invariant(!/<image\b/i.test(svg), `Raster <image> embedding is not allowed in canonical vector source: ${relativePath}`);
   invariant(!/data:image\/(png|jpe?g|webp)/i.test(svg), `Embedded raster data is not allowed: ${relativePath}`);
+  invariant(!/&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);)/i.test(svg), `Unescaped XML ampersand in SVG: ${relativePath}`);
 }
 
 async function walk(relativeDir) {
@@ -67,7 +68,13 @@ async function validateRasterVectorPairs() {
       continue;
     }
 
-    const source = generatedSources.get(raster);
+    let source = generatedSources.get(raster);
+    if (!source && raster.includes("/png/")) {
+      const parts = raster.split("/png/");
+      const filename = parts[1].split("/").at(-1);
+      const candidate = parts[0] + "/svg/" + filename.replace(/\.(png|jpe?g)$/i, ".svg");
+      if (await exists(candidate)) source = candidate;
+    }
     invariant(source, `Raster asset has no canonical SVG source: ${raster}`);
     await assertNativeSvg(source);
     generatedPairs += 1;
@@ -167,6 +174,23 @@ async function validateAssetPacks() {
   return result;
 }
 
+async function validateSecondaryAssetPacks() {
+  const manifestFiles = (await walk("moonwitness")).filter((name) => name.endsWith("/manifest.json") && !name.includes("/generated/") && !name.includes("/png/"));
+  const packs = {};
+  for (const manifestPath of manifestFiles) {
+    const data = await readJson(manifestPath);
+    if (!data.renderPng) continue;
+    const packRoot = path.posix.dirname(manifestPath);
+    const svgRoot = path.posix.join(packRoot, data.root ?? "svg");
+    const svgs = (await walk(svgRoot)).filter((name) => name.endsWith(".svg"));
+    invariant(svgs.length === data.count, `${data.pack}: manifest count ${data.count} != SVG count ${svgs.length}`);
+    for (const file of svgs) await assertNativeSvg(file);
+    packs[data.pack] = svgs.length;
+  }
+  invariant(Object.keys(packs).length >= 12, `Expected at least 12 secondary asset packs, got ${Object.keys(packs).length}`);
+  return packs;
+}
+
 function numeric(value) {
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
@@ -223,6 +247,7 @@ const brandAssets = await validateBrand();
 const applicationScreens = await validateApplicationV2();
 const mobileGoldenScreens = await validateGoldenMobileBounds();
 const assetPacks = await validateAssetPacks();
+const secondaryAssetPacks = await validateSecondaryAssetPacks();
 
 console.log(JSON.stringify({
   validAssets: true,
@@ -231,5 +256,6 @@ console.log(JSON.stringify({
   applicationScreens,
   mobileGoldenScreens,
   assetPacks,
+  secondaryAssetPacks,
   manifestVersion: manifest.schemaVersion
 }, null, 2));

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Graph Vector Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 10,
+  "root": "svg",
+  "assets": [
+    "line-chart",
+    "area-chart",
+    "bar-chart",
+    "stacked-bar-chart",
+    "donut-chart",
+    "radar-chart",
+    "evidence-timeline",
+    "correlation-network",
+    "heat-strip",
+    "kpi-cards"
+  ]
+}

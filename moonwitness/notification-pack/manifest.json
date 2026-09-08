@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Notification & Email Visual Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 8,
+  "root": "svg",
+  "assets": [
+    {
+      "id": "digest-email",
+      "width": 1200,
+      "height": 520
+    },
+    {
+      "id": "critical-alert-email",
+      "width": 1200,
+      "height": 520
+    },
+    {
+      "id": "review-request-email",
+      "width": 1200,
+      "height": 520
+    },
+    {
+      "id": "evidence-linked-email",
+      "width": 1200,
+      "height": 520
+    },
+    {
+      "id": "case-update-banner",
+      "width": 1200,
+      "height": 150
+    },
+    {
+      "id": "inbox-card",
+      "width": 800,
+      "height": 160
+    },
+    {
+      "id": "push-notification",
+      "width": 700,
+      "height": 280
+    },
+    {
+      "id": "system-notice-strip",
+      "width": 1200,
+      "height": 110
+    }
+  ]
+}

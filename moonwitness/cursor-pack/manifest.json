@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Cursor & Interaction Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 17,
+  "root": "svg",
+  "assets": [
+    "default",
+    "pointer",
+    "grab",
+    "grabbing",
+    "resize-horizontal",
+    "resize-vertical",
+    "resize-all",
+    "zoom-in",
+    "zoom-out",
+    "inspect",
+    "connect",
+    "pan",
+    "timeline-scrub",
+    "region-select",
+    "annotate",
+    "evidence-link",
+    "crosshair"
+  ]
+}

@@ -16,6 +16,10 @@ SOUNDS=[
  ("evidence-linked",[392,523,659,784],0.32,0.14,7),
  ("trace-found",[740,988,1318],0.30,0.13,8),
  ("ai-complete",[466,622,932],0.28,0.13,8),
+ ("upload-complete",[523,784,1046],0.24,0.14,8),
+ ("case-open",[330,494,659],0.22,0.12,7),
+ ("case-resolved",[392,523,659,988],0.34,0.15,7),
+ ("ai-start",[220,330,440,660],0.24,0.12,9),
 ]
 manifest={"schemaVersion":1,"sampleRate":SR,"canonicalGenerator":"tools/assets/generate-sfx.py","sounds":[]}
 for name,freqs,dur,amp,decay in SOUNDS:

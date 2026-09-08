@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Persona & Avatar Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 9,
+  "root": "svg",
+  "sizes": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "assets": [
+    "rocksoul",
+    "researcher",
+    "moderator",
+    "admin",
+    "ai-system",
+    "community-member",
+    "anonymous-source",
+    "protected-witness",
+    "analyst"
+  ]
+}

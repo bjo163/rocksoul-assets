@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Badge & Status Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 12,
+  "root": "svg",
+  "assets": [
+    "verified",
+    "supported",
+    "partial",
+    "disputed",
+    "unresolved",
+    "blocked",
+    "source-linked",
+    "needs-context",
+    "legal-review",
+    "degraded",
+    "archived",
+    "offline"
+  ]
+}
