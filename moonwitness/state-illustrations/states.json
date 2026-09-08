@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "pack": "MoonWitness State Illustration Pack",
-  "version": "1.0",
+  "version": "1.3.1",
   "canonicalFormat": "svg",
   "count": 12,
   "root": "svg",
@@ -18,5 +18,7 @@
     "review-complete",
     "source-missing",
     "keep-investigating"
-  ]
+  ],
+  "generatedFormat": "png",
+  "renderPng": true
 }

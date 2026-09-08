@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "authorization-security",
   "pack": "MoonWitness Authorization & Security Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 18,
   "outputs": [
     {
       "source": "moonwitness/security-pack/svg/access-approved.svg",

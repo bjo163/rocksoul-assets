@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "packId": "data-viz",
+  "pack": "MoonWitness Data-Viz Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 16,
+  "outputs": [
+    {
+      "source": "moonwitness/data-viz/charts/activity-sparkline.svg",
+      "path": "moonwitness/data-viz/png/activity-sparkline.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/annotation-tools.svg",
+      "path": "moonwitness/data-viz/png/annotation-tools.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/confidence-trend.svg",
+      "path": "moonwitness/data-viz/png/confidence-trend.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/edge-styles.svg",
+      "path": "moonwitness/data-viz/png/edge-styles.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/event-frequency.svg",
+      "path": "moonwitness/data-viz/png/event-frequency.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/event-type-distribution.svg",
+      "path": "moonwitness/data-viz/png/event-type-distribution.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/evidence-matrix.svg",
+      "path": "moonwitness/data-viz/png/evidence-matrix.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/evidence-timeline.svg",
+      "path": "moonwitness/data-viz/png/evidence-timeline.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/geographic-heatmap.svg",
+      "path": "moonwitness/data-viz/png/geographic-heatmap.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/graph-nodes.svg",
+      "path": "moonwitness/data-viz/png/graph-nodes.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/legend-styles.svg",
+      "path": "moonwitness/data-viz/png/legend-styles.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/metric-counters.svg",
+      "path": "moonwitness/data-viz/png/metric-counters.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/node-link-correlation.svg",
+      "path": "moonwitness/data-viz/png/node-link-correlation.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/provenance-chain.svg",
+      "path": "moonwitness/data-viz/png/provenance-chain.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/repository-health.svg",
+      "path": "moonwitness/data-viz/png/repository-health.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/status-ring.svg",
+      "path": "moonwitness/data-viz/png/status-ring.png"
+    }
+  ]
+}

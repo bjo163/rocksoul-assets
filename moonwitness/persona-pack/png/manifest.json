@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "persona-avatar",
   "pack": "MoonWitness Persona & Avatar Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 9,
   "outputs": [
     {
       "source": "moonwitness/persona-pack/svg/admin.svg",

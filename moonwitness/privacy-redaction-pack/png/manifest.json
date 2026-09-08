@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "privacy-redaction",
   "pack": "MoonWitness Privacy & Redaction Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 16,
   "outputs": [
     {
       "source": "moonwitness/privacy-redaction-pack/svg/blur-face.svg",

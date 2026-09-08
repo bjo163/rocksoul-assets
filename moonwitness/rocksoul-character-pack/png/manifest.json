@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "rocksoul-character",
   "pack": "MoonWitness Rocksoul Character Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 12,
   "outputs": [
     {
       "source": "moonwitness/rocksoul-character-pack/svg/ai-companion.svg",

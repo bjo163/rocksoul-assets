@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "social-campaign",
   "pack": "MoonWitness Social Campaign Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 8,
   "outputs": [
     {
       "source": "moonwitness/social-campaign-pack/svg/community-announcement.svg",

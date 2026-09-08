@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "generatedFrom": "moonwitness/brand/*.svg",
   "canonicalFormat": "svg",
+  "coveragePolicy": "every canonical brand SVG has at least one generated raster derivative",
   "outputs": [
     {
       "path": "moonwitness/brand/generated/favicon-16.png",
@@ -64,6 +65,48 @@
       "height": 630
     },
     {
+      "path": "moonwitness/brand/generated/logo-mark-512.png",
+      "source": "moonwitness/brand/logo-mark.svg",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "moonwitness/brand/generated/logo-horizontal-1520x320.png",
+      "source": "moonwitness/brand/logo-horizontal.svg",
+      "width": 1520,
+      "height": 320
+    },
+    {
+      "path": "moonwitness/brand/generated/logo-stacked-1120x1040.png",
+      "source": "moonwitness/brand/logo-stacked.svg",
+      "width": 1120,
+      "height": 1040
+    },
+    {
+      "path": "moonwitness/brand/generated/wordmark-1360x240.png",
+      "source": "moonwitness/brand/wordmark.svg",
+      "width": 1360,
+      "height": 240
+    },
+    {
+      "path": "moonwitness/brand/generated/logo-monochrome-1520x320.png",
+      "source": "moonwitness/brand/logo-monochrome.svg",
+      "width": 1520,
+      "height": 320
+    },
+    {
+      "path": "moonwitness/brand/generated/rocksoul-lockup-1800x360.png",
+      "source": "moonwitness/brand/rocksoul-lockup.svg",
+      "width": 1800,
+      "height": 360
+    },
+    {
+      "path": "moonwitness/brand/generated/safari-pinned-tab-512.png",
+      "source": "moonwitness/brand/safari-pinned-tab.svg",
+      "width": 512,
+      "height": 512
+    },
+    {
       "path": "moonwitness/brand/generated/favicon.ico",
       "source": "moonwitness/brand/favicon.svg",
       "sizes": [
@@ -72,5 +115,10 @@
         48
       ]
     }
-  ]
+  ],
+  "coverage": {
+    "canonicalSvgCount": 13,
+    "coveredSvgCount": 13,
+    "complete": true
+  }
 }

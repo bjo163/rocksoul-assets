@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "pack": "MoonWitness Motion Pack",
-  "version": "1.2",
+  "version": "1.3.1",
   "canonicalFormat": "animated-svg",
   "count": 12,
   "root": "svg",
@@ -19,5 +19,8 @@
     "drawer-open",
     "loading-trace",
     "success-check"
-  ]
+  ],
+  "generatedFormat": "png",
+  "renderPng": true,
+  "pngPurpose": "static first-frame preview / reduced-motion fallback"
 }

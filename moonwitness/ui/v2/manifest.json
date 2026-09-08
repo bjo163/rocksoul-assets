@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Application Screen Preview Pack",
+  "version": "1.3.1",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 12,
+  "root": ".",
+  "pngPurpose": "design-reference preview for application surfaces",
+  "assets": [
+    "application-shell",
+    "17-dashboard",
+    "18-command-palette",
+    "19-notifications",
+    "20-kanban",
+    "21-calendar",
+    "22-chat",
+    "23-ai-workspace",
+    "24-resources",
+    "25-profile-settings",
+    "26-authorization",
+    "27-system-states"
+  ]
+}

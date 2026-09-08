@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "packId": "motion",
+  "pack": "MoonWitness Motion Pack",
+  "canonicalFormat": "animated-svg",
+  "generatedFormat": "png",
+  "sourceCount": 12,
+  "outputs": [
+    {
+      "source": "moonwitness/motion/svg/ai-thinking.svg",
+      "path": "moonwitness/motion/png/ai-thinking.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/backend-reconnect.svg",
+      "path": "moonwitness/motion/png/backend-reconnect.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/case-resolved.svg",
+      "path": "moonwitness/motion/png/case-resolved.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/correlation-edge-draw.svg",
+      "path": "moonwitness/motion/png/correlation-edge-draw.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/drawer-open.svg",
+      "path": "moonwitness/motion/png/drawer-open.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/loading-trace.svg",
+      "path": "moonwitness/motion/png/loading-trace.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/logo-reveal.svg",
+      "path": "moonwitness/motion/png/logo-reveal.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/notification-pulse.svg",
+      "path": "moonwitness/motion/png/notification-pulse.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/observatory-ring.svg",
+      "path": "moonwitness/motion/png/observatory-ring.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/success-check.svg",
+      "path": "moonwitness/motion/png/success-check.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/trace-node-pulse.svg",
+      "path": "moonwitness/motion/png/trace-node-pulse.png"
+    },
+    {
+      "source": "moonwitness/motion/svg/upload-complete.svg",
+      "path": "moonwitness/motion/png/upload-complete.png"
+    }
+  ]
+}

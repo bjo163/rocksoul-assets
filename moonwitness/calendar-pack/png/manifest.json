@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "calendar-temporal",
   "pack": "MoonWitness Calendar & Temporal Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 16,
   "outputs": [
     {
       "source": "moonwitness/calendar-pack/svg/agenda-row.svg",

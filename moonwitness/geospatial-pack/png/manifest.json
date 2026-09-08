@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "geospatial",
   "pack": "MoonWitness Geospatial & Map Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 15,
   "outputs": [
     {
       "source": "moonwitness/geospatial-pack/svg/boundary-zone.svg",

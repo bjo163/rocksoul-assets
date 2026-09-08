@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "evidence-integrity",
   "pack": "MoonWitness Evidence Integrity & Chain-of-Custody Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 16,
   "outputs": [
     {
       "source": "moonwitness/integrity-pack/svg/checksum-fail.svg",

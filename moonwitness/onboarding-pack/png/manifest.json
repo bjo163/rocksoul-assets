@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "onboarding",
   "pack": "MoonWitness Onboarding & Tutorial Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 8,
   "outputs": [
     {
       "source": "moonwitness/onboarding-pack/svg/ai-workspace.svg",

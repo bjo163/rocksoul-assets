@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "packId": "hero-backgrounds",
+  "pack": "MoonWitness Hero Background Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 8,
+  "outputs": [
+    {
+      "source": "moonwitness/hero-backgrounds/svg/archive-texture.svg",
+      "path": "moonwitness/hero-backgrounds/png/archive-texture.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/correlation-web.svg",
+      "path": "moonwitness/hero-backgrounds/png/correlation-web.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/evidence-constellation.svg",
+      "path": "moonwitness/hero-backgrounds/png/evidence-constellation.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/legal-boundary-field.svg",
+      "path": "moonwitness/hero-backgrounds/png/legal-boundary-field.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/lunar-trace.svg",
+      "path": "moonwitness/hero-backgrounds/png/lunar-trace.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/observatory-grid.svg",
+      "path": "moonwitness/hero-backgrounds/png/observatory-grid.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/rgbl-spectrum-field.svg",
+      "path": "moonwitness/hero-backgrounds/png/rgbl-spectrum-field.png"
+    },
+    {
+      "source": "moonwitness/hero-backgrounds/svg/signal-field.svg",
+      "path": "moonwitness/hero-backgrounds/png/signal-field.png"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "cinematic-hero",
   "pack": "MoonWitness Cinematic Hero Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 12,
   "outputs": [
     {
       "source": "moonwitness/cinematic-hero-pack/svg/archive-room.svg",

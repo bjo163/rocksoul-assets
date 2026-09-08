@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "device-mockup",
   "pack": "MoonWitness Device Mockup Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 8,
   "outputs": [
     {
       "source": "moonwitness/device-mockup-pack/svg/browser-dark.svg",

@@ -12,9 +12,9 @@
 - [x] Penpot application-shell contract present
 - [x] MW-0042 mobile boards fit fixed 390 × 844
 - [x] Penpot lockfile committed
-- [x] VERSION = 1.0.0
-- [x] manifest release version = 1.0.0
-- [x] CHANGELOG contains 1.0.0 release entry
+- [x] VERSION = 1.3.1
+- [x] manifest release version = 1.3.1
+- [x] CHANGELOG contains 1.3.1 release entry
 
 ## Automated acceptance
 
@@ -54,3 +54,19 @@ They do not indicate missing release assets; they are post-source design-workspa
 - [x] generated SFX WAV/OGG manifest
 - [x] pack manifests registered in root manifest
 - [x] asset validator enforces pack counts and vector-native SVG sources
+
+## v1.3.1 Final Asset Closure
+
+- [x] 614 MoonWitness SVG delivery sources inventoried
+- [x] 757 PNG derivatives generated
+- [x] 0 PNG/JPEG assets without canonical SVG
+- [x] 0 MoonWitness SVG delivery assets without PNG
+- [x] 13/13 brand SVGs have generated raster delivery
+- [x] 12/12 V2 application surfaces have PNG previews
+- [x] product icons have 24/48/96 PNG delivery
+- [x] dashboard, data-viz, hero, states and motion preview PNGs generated
+- [x] 42 asset-pack families indexed
+- [x] malformed mini-kanban SVG repaired
+- [x] all tracked SVG files validated as XML in CI
+- [x] stale raster cleanup is part of generation
+- [x] bidirectional SVG/PNG coverage enforced by validator

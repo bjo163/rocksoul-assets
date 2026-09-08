@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "editorial",
   "pack": "MoonWitness Editorial Image Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 6,
   "outputs": [
     {
       "source": "moonwitness/editorial-pack/svg/archive-dossier.svg",

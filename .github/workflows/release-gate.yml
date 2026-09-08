@@ -14,15 +14,7 @@ on:
       - "docs/DESIGN-SYSTEM-READINESS.md"
       - ".github/workflows/release-gate.yml"
       - ".github/workflows/publish-release.yml"
-      - "moonwitness/icons/**"
-      - "moonwitness/dashboard-pack/**"
-      - "moonwitness/data-viz/**"
-      - "moonwitness/hero-backgrounds/**"
-      - "moonwitness/state-illustrations/**"
-      - "moonwitness/motion/**"
-      - "moonwitness/sfx/**"
-      - "moonwitness/*-pack/**"
-      - "moonwitness/asset-packs.json"
+      - "moonwitness/**"
       - "dist/**"
       - "tools/assets/**"
       - ".github/workflows/generate-sfx.yml"
@@ -39,15 +31,7 @@ on:
       - "docs/DESIGN-SYSTEM-READINESS.md"
       - ".github/workflows/release-gate.yml"
       - ".github/workflows/publish-release.yml"
-      - "moonwitness/icons/**"
-      - "moonwitness/dashboard-pack/**"
-      - "moonwitness/data-viz/**"
-      - "moonwitness/hero-backgrounds/**"
-      - "moonwitness/state-illustrations/**"
-      - "moonwitness/motion/**"
-      - "moonwitness/sfx/**"
-      - "moonwitness/*-pack/**"
-      - "moonwitness/asset-packs.json"
+      - "moonwitness/**"
       - "dist/**"
       - "tools/assets/**"
       - ".github/workflows/generate-sfx.yml"
@@ -85,6 +69,9 @@ jobs:
           if (!changelog.includes(`## [${version}]`)) throw new Error(`CHANGELOG missing ${version} entry`);
           console.log({version, status: manifest.release.status});
           NODE
+
+      - name: Validate all SVG documents as XML
+        run: python tools/assets/validate-svg-xml.py
 
       - name: Validate asset system
         run: node tools/assets/validate.mjs

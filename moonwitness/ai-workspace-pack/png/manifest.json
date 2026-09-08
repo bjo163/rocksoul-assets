@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "ai-workspace",
   "pack": "MoonWitness AI Workspace Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 18,
   "outputs": [
     {
       "source": "moonwitness/ai-workspace-pack/svg/agent-chip.svg",

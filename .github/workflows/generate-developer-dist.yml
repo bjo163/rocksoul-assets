@@ -3,7 +3,7 @@ name: Generate Developer Distribution
 on:
   workflow_dispatch:
   push:
-    branches: [main, feat/complete-visual-language-v1.3]
+    branches: [main, fix/final-asset-closure-v1.3.1]
     paths:
       - "moonwitness/**"
       - "tools/assets/build-dist.mjs"
@@ -32,6 +32,12 @@ jobs:
             echo "No dist changes."
           else
             git commit -m "build(dist): generate developer asset registry"
-            git pull --rebase origin "$GITHUB_REF_NAME"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin "$GITHUB_REF_NAME"
+              if git push; then
+                break
+              fi
+              test "$attempt" -lt 3
+              sleep 2
+            done
           fi

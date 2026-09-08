@@ -10,7 +10,7 @@
 
 Canonical brand, product-shell, UI, component, token, data-viz, motion, and design-handoff assets for the **MoonWitness × Rocksoul** ecosystem.
 
-![Release](https://img.shields.io/badge/release-v1.3.0-111111)
+![Release](https://img.shields.io/badge/release-v1.3.1-111111)
 ![Design](https://img.shields.io/badge/design-Penpot-6C63FF)
 ![Source](https://img.shields.io/badge/source-SVG-2E8B57)
 ![Surfaces](https://img.shields.io/badge/UI-v1%20%2B%20v2-B43A32)
@@ -121,13 +121,14 @@ Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome 
 
 | Pack | Path | Canonical assets |
 |---|---|---:|
-| Product Icons | `moonwitness/icons/` | 44 SVG icons |
-| Dashboard Pack | `moonwitness/dashboard-pack/` | 20 widget SVGs |
-| Data-Viz Pack | `moonwitness/data-viz/` | 16 SVG components |
-| Hero Backgrounds | `moonwitness/hero-backgrounds/` | 8 vector backgrounds |
-| State Illustrations | `moonwitness/state-illustrations/` | 12 SVG illustrations |
-| Motion Pack | `moonwitness/motion/` | 12 animated SVG references |
+| Product Icons | `moonwitness/icons/` | 44 SVG + PNG at 24/48/96 |
+| Dashboard Pack | `moonwitness/dashboard-pack/` | 20 SVG + PNG widgets |
+| Data-Viz Pack | `moonwitness/data-viz/` | 16 SVG + PNG components |
+| Hero Backgrounds | `moonwitness/hero-backgrounds/` | 8 SVG + PNG backgrounds |
+| State Illustrations | `moonwitness/state-illustrations/` | 12 SVG + PNG illustrations |
+| Motion Pack | `moonwitness/motion/` | 12 animated SVG + PNG fallback previews |
 | SFX Pack | `moonwitness/sfx/` | 14 procedural cues + WAV/OGG |
+| Application Screen Previews | `moonwitness/ui/v2/` | 12 SVG + PNG surfaces |
 | Graph Vector Pack | `moonwitness/graph-pack/` | 10 graph SVGs + PNG |
 | Badge / Status Pack | `moonwitness/badge-pack/` | 12 badge SVGs + PNG |
 | Source / File-Type Pack | `moonwitness/source-file-pack/` | 15 source icons + PNG |
@@ -146,9 +147,14 @@ Correlation visualizations should preferentially use the existing **node-link, p
 
 ### v1.3 investigation + runtime expansion
 
-v1.3 adds **22 delivery families** spanning evidence annotation, correlation semantics, workflow modules, AI/security, tables/forms, privacy/integrity/export, Rocksoul character scenes, cinematic heroes, runtime motion and generated developer distribution. The canonical global index now contains **41 pack families**.
+v1.3 adds **22 delivery families** spanning evidence annotation, correlation semantics, workflow modules, AI/security, tables/forms, privacy/integrity/export, Rocksoul character scenes, cinematic heroes, runtime motion and generated developer distribution. The canonical global index now contains **42 pack families**.
 
 Direct developer entry points: `moonwitness/asset-packs.json` and `dist/assets.ts`.
+
+
+### v1.3.1 asset closure
+
+Final two-way audit confirms **614 MoonWitness SVG sources → 757 PNG derivatives**, with **0 raster-without-vector** and **0 delivery-vector-without-raster**. All 13 canonical brand SVGs and all 12 V2 application surfaces have raster delivery. Penpot-only design sources remain intentionally exempt.
 
 ## Surface ownership
 

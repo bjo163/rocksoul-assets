@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "form-controls",
   "pack": "MoonWitness Form Controls Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 20,
   "outputs": [
     {
       "source": "moonwitness/form-controls-pack/svg/checkbox-off.svg",

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "export-seal",
   "pack": "MoonWitness Export & Evidence Seal Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 12,
   "outputs": [
     {
       "source": "moonwitness/export-seal-pack/svg/bundle-export.svg",

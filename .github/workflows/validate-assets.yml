@@ -37,5 +37,13 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate all SVG documents as XML
+        run: python tools/assets/validate-svg-xml.py
+
       - name: Validate raster/vector pairing and asset contracts
         run: node tools/assets/validate.mjs
