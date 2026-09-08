@@ -158,13 +158,42 @@
     "penpotContract": "penpot/application-shell/application-shell.json"
   },
   "release": {
-    "version": "1.0.0",
-    "name": "MoonWitness Asset System v1.0.0",
+    "version": "1.1.0",
+    "name": "MoonWitness Asset Packs v1.1.0",
     "date": "2026-09-08",
     "status": "released",
     "branch": "main",
-    "sourceCommit": "d293b0f1190fee3d0079aada222bcb2a255dcde6",
     "repositoryAcceptance": "passed",
     "livePenpotVerification": "manual-follow-up"
+  },
+  "assetPacks": {
+    "icons": {
+      "manifest": "moonwitness/icons/icons.json",
+      "count": 44
+    },
+    "dashboard": {
+      "manifest": "moonwitness/dashboard-pack/dashboard-pack.json",
+      "count": 20
+    },
+    "dataViz": {
+      "manifest": "moonwitness/data-viz/data-viz.json",
+      "count": 16
+    },
+    "heroBackgrounds": {
+      "manifest": "moonwitness/hero-backgrounds/backgrounds.json",
+      "count": 8
+    },
+    "stateIllustrations": {
+      "manifest": "moonwitness/state-illustrations/states.json",
+      "count": 12
+    },
+    "motion": {
+      "manifest": "moonwitness/motion/motion.json",
+      "count": 6
+    },
+    "sfx": {
+      "manifest": "moonwitness/sfx/sounds.json",
+      "count": 10
+    }
   }
 }
