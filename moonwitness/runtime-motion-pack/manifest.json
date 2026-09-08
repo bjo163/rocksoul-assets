@@ -72,5 +72,11 @@
       "color": "#10B981",
       "kind": "reconnect"
     }
-  ]
+  ],
+  "reproducibility": {
+    "apng": "byte-stable",
+    "lottie": "byte-stable",
+    "webm": "semantic-ffprobe"
+  },
+  "reducedMotionRequired": true
 }
