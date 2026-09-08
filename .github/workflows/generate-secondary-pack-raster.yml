@@ -46,5 +46,6 @@ jobs:
             echo "No raster changes."
           else
             git commit -m "build(assets): generate secondary pack PNG derivatives"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi
