@@ -70,10 +70,10 @@ for motion in manifest["motions"]:
         td=Path(td)
         for i,fr in enumerate(frames): fr.convert("RGB").save(td/f"{i:03d}.png")
         webm=webm_dir/(motion["id"]+".webm")
-        subprocess.run(["ffmpeg","-loglevel","error","-y","-framerate",str(FPS),"-i",str(td/"%03d.png"),"-c:v","libvpx-vp9","-pix_fmt","yuva420p",str(webm)],check=True)
+        subprocess.run(["ffmpeg","-loglevel","error","-y","-fflags","+bitexact","-framerate",str(FPS),"-i",str(td/"%03d.png"),"-map_metadata","-1","-c:v","libvpx-vp9","-flags:v","+bitexact","-pix_fmt","yuva420p",str(webm)],check=True)
     outputs.append({"id":motion["id"],"source":f"moonwitness/runtime-motion-pack/svg/{motion['id']}.svg",
                     "apng":f"moonwitness/runtime-motion-pack/png/{motion['id']}.png",
                     "webm":f"moonwitness/runtime-motion-pack/webm/{motion['id']}.webm",
                     "lottie":f"moonwitness/runtime-motion-pack/lottie/{motion['id']}.json"})
-(PACK/"generated-manifest.json").write_text(json.dumps({"schemaVersion":1,"version":"1.3","outputs":outputs},indent=2)+"\n")
+(PACK/"generated-manifest.json").write_text(json.dumps({"schemaVersion":1,"version":"1.3","reproducibility":{"apng":"byte-stable","lottie":"byte-stable","webm":"semantic-ffprobe"},"outputs":outputs},indent=2)+"\n")
 print(json.dumps({"motions":len(outputs),"formats":["animated-svg","apng","webm","lottie"]},indent=2))
