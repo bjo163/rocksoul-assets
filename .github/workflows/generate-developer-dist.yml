@@ -3,7 +3,7 @@ name: Generate Developer Distribution
 on:
   workflow_dispatch:
   push:
-    branches: [main, dev]
+    branches: [main]
     paths:
       - "moonwitness/**"
       - "tools/assets/build-dist.mjs"
