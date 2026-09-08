@@ -19,11 +19,13 @@ rocksoul-assets
 Research ownership stays outside the experience layer:
 
 ```text
-STORY   → rocksoul-mftl
-EVENT   → rocksoul-legend
-PERSON  → rocksoul-superhero
-TEXT    → rocksoul-rgbl
-LAW     → rocksoul-aws
+STORY        → rocksoul-mftl
+EVENT        → rocksoul-legend
+PERSON       → rocksoul-superhero
+TEXT         → rocksoul-rgbl
+LAW          → rocksoul-aws
+PERSPECTIVE  → rocksoul-jizz
+RELATIONSHIP → rocksoul-correlation
 ```
 
 ## Import
@@ -46,7 +48,7 @@ In Penpot:
 - **Web / `rocksoul-web`:** public MoonWitness observatory, repositories, public cases, correlation, and explainable legal/research views.
 - **Community / `rocksoul-community`:** identity, following, saved cases, discussions, submissions, proposals, and notifications.
 - **Platform / `rocksoul-platform`:** product administration, authorization, moderation operations, configuration, and system health.
-- **Console / `rocksoul-crayon`:** authenticated research/operator workspace across STORY, EVENT, PERSON, TEXT, and LAW.
+- **Console / `rocksoul-crayon`:** authenticated research/operator workspace across STORY, EVENT, PERSON, TEXT, LAW, PERSPECTIVE, and reviewed RELATIONSHIP edges.
 - **UI / `rocksoul-ui`:** reusable production implementation grammar; not an application surface by itself.
 - **API / Worker:** not visual apps; UI contracts must not embed their business logic.
 
@@ -57,8 +59,10 @@ In Penpot:
 - PERSON → `rocksoul-superhero`
 - TEXT / RGBL → `rocksoul-rgbl`
 - LAW / AWS → `rocksoul-aws`
+- PERSPECTIVE / JIZZ → `rocksoul-jizz`
+- RELATIONSHIP → `rocksoul-correlation`
 
-The five domain repositories are canonical intelligence/source layers. They are not five separate MoonWitness frontends.
+The six research-domain repositories are canonical intelligence/source layers. `rocksoul-correlation` owns reviewed relationship edges and explainability metadata. None of them are separate MoonWitness frontends.
 
 ## Required component states
 

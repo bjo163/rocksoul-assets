@@ -164,14 +164,16 @@ flowchart TD
     R --> H["SUPERHERO · PERSON"]
     R --> T["RGBL · TEXT"]
     R --> L["AWS · LAW"]
-    S --> Q["CORRELATION"]
+    R --> J["JIZZ · PERSPECTIVE"]
+    S --> Q["CORRELATION · RELATIONSHIP"]
     E --> Q
     H --> Q
     T --> Q
     L --> Q
+    J --> Q
 ```
 
-Correlation owns cross-domain relationship semantics and explainability metadata. It does **not** duplicate canonical STORY, EVENT, PERSON, TEXT, or LAW records, and correlation must never visually imply causation by default.
+Correlation owns cross-domain RELATIONSHIP semantics and explainability metadata. It does **not** duplicate canonical STORY, EVENT, PERSON, TEXT, LAW, or PERSPECTIVE records, and correlation must never visually imply causation by default.
 
 ## Delivery guarantees
 

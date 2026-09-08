@@ -3,22 +3,113 @@
   "mode": "AutoMenu",
   "rule": "Resource navigation is generated from descriptors and permissions. Do not duplicate resource routes in hand-maintained navigation.",
   "items": [
-    {"id":"dashboard","label":"Dashboard","path":"/","kind":"system","permission":"authenticated"},
-    {"id":"cases","label":"Cases","path":"/cases","kind":"resource","resource":"case","permission":"case:read"},
-    {"id":"kanban","label":"Kanban","path":"/work/kanban","kind":"workspace","permission":"review:read"},
-    {"id":"calendar","label":"Calendar","path":"/work/calendar","kind":"workspace","permission":"review:read"},
-    {"id":"chat","label":"Chat","path":"/chat","kind":"workspace","permission":"community:read"},
-    {"id":"ai","label":"AI Workspace","path":"/ai","kind":"workspace","permission":"ai:use"},
-    {"id":"resources","label":"Resources","path":"/resources","kind":"system","permission":"resource:read"},
-    {"id":"profile","label":"Profile","path":"/profile","kind":"account","permission":"authenticated"},
-    {"id":"settings","label":"Settings","path":"/settings","kind":"account","permission":"authenticated"}
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "path": "/",
+      "kind": "system",
+      "permission": "authenticated"
+    },
+    {
+      "id": "cases",
+      "label": "Cases",
+      "path": "/cases",
+      "kind": "resource",
+      "resource": "case",
+      "permission": "case:read"
+    },
+    {
+      "id": "kanban",
+      "label": "Kanban",
+      "path": "/work/kanban",
+      "kind": "workspace",
+      "permission": "review:read"
+    },
+    {
+      "id": "calendar",
+      "label": "Calendar",
+      "path": "/work/calendar",
+      "kind": "workspace",
+      "permission": "review:read"
+    },
+    {
+      "id": "chat",
+      "label": "Chat",
+      "path": "/chat",
+      "kind": "workspace",
+      "permission": "community:read"
+    },
+    {
+      "id": "ai",
+      "label": "AI Workspace",
+      "path": "/ai",
+      "kind": "workspace",
+      "permission": "ai:use"
+    },
+    {
+      "id": "resources",
+      "label": "Resources",
+      "path": "/resources",
+      "kind": "system",
+      "permission": "resource:read"
+    },
+    {
+      "id": "profile",
+      "label": "Profile",
+      "path": "/profile",
+      "kind": "account",
+      "permission": "authenticated"
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "path": "/settings",
+      "kind": "account",
+      "permission": "authenticated"
+    }
   ],
   "resourceDescriptors": [
-    {"resource":"case","label":"STORY / Cases","path":"/cases","repo":"rocksoul-mftl"},
-    {"resource":"event","label":"EVENT / Events","path":"/events","repo":"rocksoul-legend"},
-    {"resource":"person","label":"PERSON / People","path":"/people","repo":"rocksoul-superhero"},
-    {"resource":"rgbl","label":"TEXT / RGBL","path":"/sources","repo":"rocksoul-rgbl"},
-    {"resource":"aws","label":"LAW / AWS","path":"/aws","repo":"rocksoul-aws"},
-    {"resource":"correlation","label":"CORRELATION / Evidence Graph","path":"/correlation","repo":"rocksoul-correlation"}
+    {
+      "resource": "case",
+      "label": "STORY / Cases",
+      "path": "/cases",
+      "repo": "rocksoul-mftl"
+    },
+    {
+      "resource": "event",
+      "label": "EVENT / Events",
+      "path": "/events",
+      "repo": "rocksoul-legend"
+    },
+    {
+      "resource": "person",
+      "label": "PERSON / People",
+      "path": "/people",
+      "repo": "rocksoul-superhero"
+    },
+    {
+      "resource": "rgbl",
+      "label": "TEXT / RGBL",
+      "path": "/sources",
+      "repo": "rocksoul-rgbl"
+    },
+    {
+      "resource": "aws",
+      "label": "LAW / AWS",
+      "path": "/aws",
+      "repo": "rocksoul-aws"
+    },
+    {
+      "resource": "perspective",
+      "label": "PERSPECTIVE / Perspectives",
+      "path": "/perspectives",
+      "repo": "rocksoul-jizz"
+    },
+    {
+      "resource": "correlation",
+      "label": "CORRELATION / Evidence Graph",
+      "path": "/correlation",
+      "repo": "rocksoul-correlation"
+    }
   ]
 }
