@@ -1,5 +1,7 @@
-const REGISTRY_URL="/dist/assets.json";
-const PACK_INDEX_URL="/moonwitness/asset-packs.json";
+const RAW_BASE="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/";
+const REGISTRY_URL=RAW_BASE+"dist/assets.json";
+const PACK_INDEX_URL=RAW_BASE+"moonwitness/asset-packs.json";
+const assetUrl=(path)=>path.startsWith("http")?path:RAW_BASE+path.replace(/^\//,"");
 const manifestDescriptions={
   "product-icons":"Core navigation, action, domain and status icons.",
   "dashboard":"Modular dashboard widgets for operator and research surfaces.",
@@ -71,8 +73,8 @@ const formatsFor=(id,pack)=>{
 
 function packPreview(id,pack,index){
   const svgs=assetEntries(pack).slice(0,3);
-  if(svgs.length===1)return '<img loading="lazy" src="/'+svgs[0][1]+'" alt="" />';
-  if(svgs.length>1)return '<div class="preview-icon-set">'+svgs.map(([,p])=>'<img loading="lazy" src="/'+p+'" alt="" />').join("")+'</div>';
+  if(svgs.length===1)return '<img loading="lazy" src="'+assetUrl(svgs[0][1])+'" alt="" />';
+  if(svgs.length>1)return '<div class="preview-icon-set">'+svgs.map(([,p])=>'<img loading="lazy" src="'+assetUrl(p)+'" alt="" />').join("")+'</div>';
   if(id==="sfx")return '<div class="preview-fallback">∿</div>';
   if(id==="developer-distribution")return '<div class="preview-fallback">{ }</div>';
   return '<div class="preview-fallback">'+String(index+1).padStart(2,"0")+'</div>';
@@ -118,10 +120,10 @@ function openPack(id){
   $("#dialogCategory").textContent=categoryOf(id)+" / Asset pack";
   $("#dialogTitle").textContent=prettify(id);
   $("#dialogMeta").textContent=pack.count+" canonical assets · "+formatsFor(id,pack).join(" · ");
-  $("#dialogManifest").href="/"+pack.manifest;
+  $("#dialogManifest").href=assetUrl(pack.manifest);
   $("#dialogSearch").value="";
   const firstSvg=assetEntries(pack)[0]?.[1];
-  if(firstSvg)$("#dialogPreview").innerHTML='<img src="/'+firstSvg+'" alt="'+prettify(id)+' preview" />';
+  if(firstSvg)$("#dialogPreview").innerHTML='<img src="'+assetUrl(firstSvg)+'" alt="'+prettify(id)+' preview" />';
   else if(id==="sfx")$("#dialogPreview").innerHTML='<div class="preview-fallback">∿ AUDIO</div>';
   else $("#dialogPreview").innerHTML='<div class="preview-fallback">{ }</div>';
   renderAssetList("");
@@ -141,8 +143,8 @@ function renderAssetList(filter){
 }
 function assetRow(name,path,thumb){
   const row=document.createElement("div");row.className="asset-row";
-  row.innerHTML='<div class="asset-thumb">'+(thumb?'<img loading="lazy" src="/'+thumb+'" alt="" />':'↗')+'</div><div class="asset-name"><strong>'+prettify(name)+'</strong><span>'+path+'</span></div><div class="asset-actions"><button class="tiny-button" data-copy="'+path+'" title="Copy path">⧉</button><a class="tiny-button" href="/'+path+'" target="_blank" rel="noreferrer" title="Open raw asset" style="display:grid;place-items:center">↗</a></div>';
-  if(thumb)row.onclick=()=>{$("#dialogPreview").innerHTML='<img src="/'+thumb+'" alt="'+prettify(name)+' preview" />'};
+  row.innerHTML='<div class="asset-thumb">'+(thumb?'<img loading="lazy" src="'+assetUrl(thumb)+'" alt="" />':'↗')+'</div><div class="asset-name"><strong>'+prettify(name)+'</strong><span>'+path+'</span></div><div class="asset-actions"><button class="tiny-button" data-copy="'+path+'" title="Copy path">⧉</button><a class="tiny-button" href="'+assetUrl(path)+'" target="_blank" rel="noreferrer" title="Open raw asset" style="display:grid;place-items:center">↗</a></div>';
+  if(thumb)row.onclick=()=>{$("#dialogPreview").innerHTML='<img src="'+assetUrl(thumb)+'" alt="'+prettify(name)+' preview" />'};
   return row;
 }
 let toastTimer;function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove("show"),1400)}
