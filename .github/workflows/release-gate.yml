@@ -13,6 +13,7 @@ on:
       - "docs/PENPOT-LIVE-VERIFICATION.md"
       - "docs/DESIGN-SYSTEM-READINESS.md"
       - ".github/workflows/release-gate.yml"
+      - ".github/workflows/publish-release.yml"
   push:
     branches: [main]
     paths:
