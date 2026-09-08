@@ -7,7 +7,6 @@ on:
     paths:
       - "tools/assets/generate-sfx.py"
       - "moonwitness/sfx/sounds.json"
-      - ".github/workflows/generate-sfx.yml"
 
 permissions:
   contents: write
