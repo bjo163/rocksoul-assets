@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - main
-      - feat/secondary-asset-packs-v1.1
+      - feat/complete-visual-language-v1.3
     paths:
       - "moonwitness/*-pack/**"
       - "tools/assets/render-packs.py"
