@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" role="img" aria-label="Research Trace Divider">
+<rect width="1200" height="160" fill="#0B0B0B"/>
+<path d="M0 80H1200" stroke="#242424" stroke-width="1"/>
+<path d="M40 82 C190 18 290 145 430 78 S690 18 820 82 S1040 138 1160 70" fill="none" stroke="#D1132A" stroke-width="2.2" opacity=".8"/>
+<g fill="#D1132A"><circle cx="150" cy="52" r="4"/><circle cx="430" cy="78" r="5"/><circle cx="820" cy="82" r="5"/><circle cx="1085" cy="103" r="4"/></g>
+<g stroke="#4A4A4A" stroke-width="1"><path d="M150 36V68"/><path d="M430 58V98"/><path d="M820 62V102"/><path d="M1085 87V119"/></g>
+</svg>
