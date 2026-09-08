@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.3.1] — 2026-09-08
+
+### Final asset closure audit
+- Enforced bidirectional visual coverage: every MoonWitness delivery SVG now has at least one PNG derivative, and every PNG/JPEG maps back to canonical SVG.
+- Generated missing raster delivery for Product Icons, Dashboard, Data-Viz, Hero Backgrounds, State Illustrations, Motion previews, V2 application screens, and all canonical brand SVGs.
+- Added Application Screen Preview Pack as the 42nd indexed asset family.
+- Repaired malformed legacy `mini-kanban.svg` XML discovered by actual renderer parsing.
+- Added repository-wide XML parsing validation for every SVG, including MoonWitness, Penpot, and generated SVG distribution.
+- Hardened generator pushes against concurrent brand/raster/dist bot updates.
+- Updated raster generation to consume the global asset-pack index, preserve nested source structure, clean stale derivatives, and verify source counts.
+
+### Closure inventory
+- **614 MoonWitness SVG sources**
+- **757 MoonWitness PNG derivatives**
+- **0 raster assets without canonical SVG**
+- **0 MoonWitness SVG delivery assets without PNG**
+- **13/13 brand SVGs covered by raster delivery**
+- **12/12 V2 application surfaces covered by PNG previews**
+- **42 indexed asset-pack families**
+- **12 WebM + 12 Lottie runtime motions**
+- **14 WAV + 14 OGG SFX**
+
+
 ## [1.3.0] — 2026-09-08
 
 ### Investigation visual language

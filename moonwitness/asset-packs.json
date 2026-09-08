@@ -214,5 +214,14 @@
       "manifest": "moonwitness/developer-pack/manifest.json",
       "count": 4
     }
-  ]
+  ],
+  "coverage": {
+    "policy": "Every MoonWitness delivery SVG has at least one PNG derivative; every PNG/JPEG maps to canonical SVG.",
+    "svgSources": 614,
+    "pngDerivatives": 757,
+    "vectorWithoutRaster": 0,
+    "rasterWithoutVector": 0,
+    "packFamilies": 42,
+    "status": "complete"
+  }
 }

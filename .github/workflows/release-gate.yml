@@ -70,6 +70,9 @@ jobs:
           console.log({version, status: manifest.release.status});
           NODE
 
+      - name: Validate all SVG documents as XML
+        run: python tools/assets/validate-svg-xml.py
+
       - name: Validate asset system
         run: node tools/assets/validate.mjs
 

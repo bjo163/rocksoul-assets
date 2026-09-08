@@ -1,17 +1,18 @@
-# MoonWitness Asset Pack Catalog — v1.3.0
+# MoonWitness Asset Pack Catalog — v1.3.1
 
 Canonical global index: `moonwitness/asset-packs.json`.
 
 ## Delivery contract
 
 - SVG is canonical for editable visual assets.
+- Every MoonWitness delivery SVG has at least one generated PNG derivative.
 - PNG is generated for raster consumers.
 - Runtime Motion additionally ships APNG, WebM and Lottie.
 - SFX ships deterministic WAV and OGG.
 - Developer Distribution generates JSON, TypeScript, CSS and SVG sprite registries.
 - Atlas/poster boards are reference-only; runtime consumers use individual assets.
 
-## v1.3 modular packs
+## v1.3.1 complete pack index
 
 | Pack | Count | Path |
 |---|---:|---|
@@ -22,6 +23,7 @@ Canonical global index: `moonwitness/asset-packs.json`.
 | state-illustrations | 12 | `moonwitness/state-illustrations/` |
 | motion | 12 | `moonwitness/motion/` |
 | sfx | 14 | `moonwitness/sfx/` |
+| application-screens | 12 | `moonwitness/ui/v2/` |
 | graph-vector | 10 | `moonwitness/graph-pack/` |
 | badge-status | 12 | `moonwitness/badge-pack/` |
 | source-file | 15 | `moonwitness/source-file-pack/` |

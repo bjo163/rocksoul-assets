@@ -361,5 +361,8 @@
       "lottie": "byte-reproducible",
       "webm": "semantic-ffprobe"
     }
+  },
+  "assetClosureAudit": {
+    "conclusion": "complete-pending-ci"
   }
 }
