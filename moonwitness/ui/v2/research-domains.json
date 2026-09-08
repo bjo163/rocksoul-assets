@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "rule": "Semantic domains are not repository identities. Visual consumers resolve each domain through its canonical owner and preserve qualified references.",
+  "domains": [
+    {"domain":"STORY","repository":"rocksoul-mftl","prefix":"mftl:","resource":"case"},
+    {"domain":"EVENT","repository":"rocksoul-legend","prefix":"legend:","resource":"event"},
+    {"domain":"PERSON","repository":"rocksoul-superhero","prefix":"superhero:","resource":"person"},
+    {"domain":"TEXT","repository":"rocksoul-rgbl","prefix":"rgbl:","resource":"rgbl"},
+    {"domain":"LAW","repository":"rocksoul-aws","prefix":"aws:","resource":"aws"},
+    {"domain":"PERSPECTIVE","repository":"rocksoul-jizz","prefix":"jizz:","resource":"perspective"}
+  ],
+  "relationshipLayer": {"domain":"RELATIONSHIP","repository":"rocksoul-correlation","prefix":"correlation:","resource":"correlation"}
+}
