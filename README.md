@@ -4,14 +4,17 @@
 
 # ROCKSOUL ASSETS
 
-### **VISUAL SOURCE OF TRUTH**
+## **VISUAL SOURCE OF TRUTH**
 
-Canonical brand, product-shell, UI, component, token, and design-handoff assets for the **MoonWitness × Rocksoul** ecosystem.
+### **DESIGN ONCE · TRACE EVERYWHERE**
+
+Canonical brand, product-shell, UI, component, token, data-viz, motion, and design-handoff assets for the **MoonWitness × Rocksoul** ecosystem.
 
 ![Release](https://img.shields.io/badge/release-v1.1.0-111111)
 ![Design](https://img.shields.io/badge/design-Penpot-6C63FF)
 ![Source](https://img.shields.io/badge/source-SVG-2E8B57)
 ![Surfaces](https://img.shields.io/badge/UI-v1%20%2B%20v2-B43A32)
+![Role](https://img.shields.io/badge/role-DESIGN-6F6F6F)
 
 [Brand](moonwitness/brand/README.md) · [Application Shell](docs/APPLICATION-SHELL.md) · [Penpot](penpot/README.md) · [Handoff](docs/PENPOT-HANDOFF.md) · [Release](RELEASE.md)
 
@@ -21,46 +24,67 @@ Canonical brand, product-shell, UI, component, token, and design-handoff assets 
 
 > **MoonWitness watches. Rocksoul follows. The record connects. The law draws the line. The legend stays open.**
 
-This repository stores canonical brand vectors, immutable raster baselines, editable SVG reconstructions, reusable production asset packs, Penpot-ready design tokens, primitives, component contracts, product-shell references, and handoff specifications. **Application source code does not belong here.**
+`rocksoul-assets` defines **how the ecosystem looks and communicates**. Application source code does not belong here.
 
-## Ecosystem contract
+## Canonical ecosystem
 
 ```mermaid
-flowchart LR
-    A["ASSETS\nvisual source"] --> C["CRAYON\nconsole"]
-    C --> S["MFTL\nSTORY"]
-    C --> E["LEGEND\nEVENT"]
-    C --> P["SUPERHERO\nPERSON"]
-    C --> T["RGBL\nTEXT"]
-    C --> L["AWS\nLAW"]
+flowchart TD
+    A["ROCKSOUL-ASSETS\nDESIGN"] --> U["ROCKSOUL-UI\nUI SYSTEM"]
+    U --> W["ROCKSOUL-WEB\nPUBLIC"]
+    U --> C["ROCKSOUL-COMMUNITY\nPARTICIPATION"]
+    U --> P["ROCKSOUL-PLATFORM\nADMIN"]
+    U --> R["ROCKSOUL-CRAYON\nCONSOLE"]
+    R --> S["MFTL\nSTORY"]
+    R --> E["LEGEND\nEVENT"]
+    R --> H["SUPERHERO\nPERSON"]
+    R --> T["RGBL\nTEXT"]
+    R --> L["AWS\nLAW"]
 ```
 
-| Layer | Repository | Ownership |
+### Product and experience layers
+
+| Layer | Repository | Responsibility |
 |---|---|---|
-| **DESIGN** | [`rocksoul-assets`](https://github.com/bjo163/rocksoul-assets) | brand · tokens · primitives · components · screen references |
-| **CONSOLE** | [`rocksoul-crayon`](https://github.com/bjo163/rocksoul-crayon) | operational shell · AutoMenu · dashboard · workspaces |
-| **STORY** | [`rocksoul-mftl`](https://github.com/bjo163/rocksoul-mftl) | narrative / belief intelligence |
-| **EVENT** | [`rocksoul-legend`](https://github.com/bjo163/rocksoul-legend) | historical / event intelligence |
-| **PERSON** | [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | actor / transmission intelligence |
-| **TEXT** | [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | scripture / exact-text intelligence |
-| **LAW** | [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | international-law / applicability intelligence |
+| **DESIGN** | [`rocksoul-assets`](https://github.com/bjo163/rocksoul-assets) | brand · tokens · screens · icons · data-viz · motion |
+| **UI SYSTEM** | [`rocksoul-ui`](https://github.com/bjo163/rocksoul-ui) | reusable production components · patterns · application shell |
+| **PUBLIC WEB** | [`rocksoul-web`](https://github.com/bjo163/rocksoul-web) | landing · observatory · repositories · public cases |
+| **COMMUNITY** | [`rocksoul-community`](https://github.com/bjo163/rocksoul-community) | participation · identity · discussion · proposals |
+| **PLATFORM** | [`rocksoul-platform`](https://github.com/bjo163/rocksoul-platform) | administration · authorization · moderation operations |
+| **CONSOLE** | [`rocksoul-crayon`](https://github.com/bjo163/rocksoul-crayon) | operator workspace · AutoMenu · cross-domain research operations |
 
-`rocksoul-assets` defines **how the ecosystem looks**. `rocksoul-crayon` defines **how operators enter and work across it**. The five intelligence repositories remain authoritative for their own domains.
+### Intelligence ownership
 
-## Release
+| Domain | Repository | Core question |
+|---|---|---|
+| **STORY** | [`rocksoul-mftl`](https://github.com/bjo163/rocksoul-mftl) | What was told? |
+| **EVENT** | [`rocksoul-legend`](https://github.com/bjo163/rocksoul-legend) | What happened? |
+| **PERSON** | [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | Who was involved? |
+| **TEXT** | [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | What does the exact text say? |
+| **LAW** | [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | Was it allowed? |
 
-**Current repository release:** `v1.1.0` — 2026-09-08
+```text
+DESIGN  → ASSETS
+CODE UI → UI
+PUBLIC  → WEB
+PEOPLE  → COMMUNITY
+ADMIN   → PLATFORM
+OPS     → CRAYON
 
-Release acceptance covers canonical SVG/raster assets, v1 raster→vector pairing, v2 application surfaces, generated brand delivery formats, reusable asset packs, Penpot package generation/validation, reproducible dependency installation, and CI source contracts. Live Penpot native-component/prototype inspection remains a manual design-workspace verification.
+STORY   → MFTL
+EVENT   → LEGEND
+PERSON  → SUPERHERO
+TEXT    → RGBL
+LAW     → AWS
+```
 
-See `RELEASE.md`, `CHANGELOG.md`, and `docs/RELEASE-CHECKLIST.md`.
+No experience-layer repository silently becomes canonical ownership for STORY, EVENT, PERSON, TEXT, or LAW.
 
 ## Design source of truth
 
 | Concern | Canonical source |
 |---|---|
 | Design tool | **Penpot** |
-| Repository | **`rocksoul-assets`** |
 | Brand | `moonwitness/brand/` |
 | Immutable visual baseline | `moonwitness/ui/v1/` |
 | Application vector surfaces | `moonwitness/ui/v2/` |
@@ -72,7 +96,7 @@ See `RELEASE.md`, `CHANGELOG.md`, and `docs/RELEASE-CHECKLIST.md`.
 | Motion references | `moonwitness/motion/` |
 | Design-system source | `penpot/` |
 
-The earlier Figma file is retained as prototype/reference only.
+The earlier Figma file remains prototype/reference only.
 
 ## Brand system
 
@@ -82,7 +106,7 @@ The earlier Figma file is retained as prototype/reference only.
 
 </div>
 
-Canonical SVG sources include the primary mark, horizontal / stacked / monochrome logos, wordmark, MoonWitness × Rocksoul ecosystem lockup, favicon, pinned-tab icon, app icons, social avatar, and Open Graph card. Raster delivery assets are generated from these canonical SVGs under `moonwitness/brand/generated/`.
+Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome logos, wordmark, ecosystem lockup, favicon, pinned-tab icon, app icons, social avatar, and Open Graph card. Raster delivery assets are derivatives generated from canonical vectors.
 
 ## Asset packs
 
@@ -96,74 +120,61 @@ Canonical SVG sources include the primary mark, horizontal / stacked / monochrom
 | Motion Pack | `moonwitness/motion/` | 6 animated SVG references |
 | SFX Pack | `moonwitness/sfx/` | 10 procedural cues + WAV/OGG |
 
-All graphics remain vector-first. SFX is generated reproducibly from `tools/assets/generate-sfx.py`.
+## Surface ownership
 
-## Product surfaces
-
-### Public and design baseline
-
-| Range | Surface | Target |
+| Range | Canonical surface | Primary repository |
 |---|---|---|
-| 01–12 | Observatory, repositories, cases, correlation, legal | public web |
-| 13–14 | Community + authentication | community |
-| 15 | Internal operations / admin | console/platform |
-| 16 | Design-system reference | tokens + UI |
+| **01–12** | Public observatory, repositories, cases, correlation, legal | `rocksoul-web` |
+| **13–14** | Community + authentication | `rocksoul-community` |
+| **15** | Internal platform/admin | `rocksoul-platform` |
+| **16** | Design-system reference | `rocksoul-ui` |
+| **17–27** | Authenticated shell + workspaces | `rocksoul-crayon` / shared UI |
 
-### Console application surfaces
-
-V2 is the implementation reference for the authenticated **Rocksoul Crayon Console**:
-
-| Asset | Console surface |
-|---|---|
-| `17-dashboard.svg` | Dashboard |
-| `18-command-palette.svg` | Command Palette |
-| `19-notifications.svg` | Notifications |
-| `20-kanban.svg` | Kanban |
-| `21-calendar.svg` | Calendar |
-| `22-chat.svg` | Chat |
-| `23-ai-workspace.svg` | AI Workspace |
-| `24-resources.svg` | AutoMenu Resources |
-| `25-profile-settings.svg` | Profile / Settings |
-| `26-authorization.svg` | Authorization UX |
-| `27-system-states.svg` | Error / Empty / Loading states |
-| `application-shell.svg` | Shared shell / navigation contract |
+V2 defines Dashboard, Command Palette, Notifications, Kanban, Calendar, Chat, AI Workspace, Resources/AutoMenu, Profile/Settings, Authorization UX, system states, and the shared application shell.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/ui/v2/17-dashboard.svg" alt="Rocksoul Console dashboard reference" width="900" />
+<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/ui/v2/17-dashboard.svg" alt="Rocksoul dashboard reference" width="900" />
 
 </div>
 
-## Raster → vector contract
+## Visual language contract
 
-Every PNG/JPEG visual reference in `moonwitness/` must either have a same-basename editable SVG counterpart or be a generated delivery asset whose manifest points to a canonical SVG source. Canonical vector sources may not embed raster images.
+Across every Rocksoul repository:
 
-The 16 immutable v1 screens have corresponding native SVG reconstructions. Material product expansion belongs in a new version layer; v2 remains vector-first.
+- **MoonWitness** is the product umbrella;
+- **Rocksoul** is the connective character/thread;
+- repository landing pages use the canonical MoonWitness logo and Rocksoul lockup;
+- headings are short, declarative, and domain-specific;
+- badges communicate role, not decoration;
+- evidence/status must remain readable in expressive surfaces;
+- status is never color-only;
+- graphs require a text equivalent;
+- uncertainty is represented, not hidden;
+- application code consumes `@rocksoul/ui` rather than recreating the design system;
+- changes to brand grammar start here before propagating downstream.
 
 ## Design pipeline
 
 ```mermaid
 flowchart TD
-    A["BRAND SVG + V1 BASELINE + V2 SURFACES"] --> B["TOKENS"]
+    A["BRAND + V1 + V2 + ASSET PACKS"] --> B["TOKENS"]
     B --> C["PRIMITIVES"]
     C --> D["COMPONENTS"]
     D --> E["PATTERNS"]
     E --> F["PENPOT"]
-    F --> G["IMPLEMENTATION PACKAGES"]
-    G --> H["ROCKSOUL-CRAYON CONSOLE"]
-    H --> I["STORY · EVENT · PERSON · TEXT · LAW"]
+    F --> U["@ROCKSOUL/UI"]
+    U --> X["WEB · COMMUNITY · PLATFORM · CRAYON"]
+    X --> I["STORY · EVENT · PERSON · TEXT · LAW"]
 ```
 
 ## Asset contract
 
-- Never commit generator/default filenames.
-- Prefix ordered screens with a two-digit sequence.
-- Existing `v1` PNG images are immutable visual references.
-- PNG screens are composition references, not pixel-perfect implementation contracts.
-- Canonical editable assets are SVG; generated raster delivery files are derivatives.
+- Existing `v1` PNG images remain immutable visual references.
+- Canonical editable graphics are SVG; raster delivery files are derivatives.
+- Material visual expansion goes to a new version layer rather than rewriting the baseline.
 - Penpot is the canonical interactive design layer.
-- Tokens and component contracts here are version-controlled implementation sources.
-- Resource navigation remains **AutoMenu-driven** in the console.
+- Resource navigation remains AutoMenu-driven where applicable.
 - Do not place application source code in this repository.
 
 Start with `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
@@ -172,8 +183,10 @@ Start with `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/R
 
 <div align="center">
 
-### **DESIGN ONCE · TRACE EVERYWHERE**
+## **DESIGN ONCE · TRACE EVERYWHERE**
 
-`MoonWitness × Rocksoul · visual source of truth`
+### **ONE LANGUAGE · ELEVEN REPOSITORIES · FIVE INTELLIGENCE DOMAINS**
+
+`ASSETS / MoonWitness × Rocksoul`
 
 </div>
