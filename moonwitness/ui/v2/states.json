@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "states": {
+    "loading": {
+      "rule": "Preserve final layout geometry to prevent content jump.",
+      "required": ["skeleton-or-progress","accessible-busy-state","reduced-motion-safe"]
+    },
+    "empty": {
+      "rule": "Explain why the view is empty and give a relevant next action.",
+      "required": ["headline","supporting-copy","recovery-or-create-action"]
+    },
+    "error": {
+      "rule": "State what failed without implying data loss and offer a safe recovery action.",
+      "required": ["error-summary","system-context","retry-or-back-action","trace-id-when-available"]
+    },
+    "offline": {
+      "rule": "Separate backend connectivity failure from empty records.",
+      "required": ["backend-status","last-known-state","retry"]
+    },
+    "forbidden": {
+      "rule": "Explain required role/capability before the user retries.",
+      "required": ["required-permission","current-role","request-access-when-available"]
+    }
+  }
+}

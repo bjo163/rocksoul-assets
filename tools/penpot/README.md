@@ -33,7 +33,7 @@ The next Penpot-native step is to rebuild the shared primitives/components from 
 
 ```bash
 cd tools/penpot
-npm install --no-audit --no-fund
+npm ci --no-audit --no-fund
 npm run validate:sources
 npm run generate
 npm run validate
@@ -45,6 +45,6 @@ Or run the full check:
 npm run check
 ```
 
-The repository currently does not commit an npm lockfile, so `npm ci` is not a valid bootstrap command yet.
+`tools/penpot/package-lock.json` is committed, so local and CI installs use `npm ci` for a frozen dependency graph.
 
 GitHub Actions validates design-source consistency, rebuilds the Penpot package, validates its ZIP structure, and uploads the generated artifact for inspection. The binary export is treated as generated output; CI relies on semantic/source validation rather than byte-for-byte reproducibility.

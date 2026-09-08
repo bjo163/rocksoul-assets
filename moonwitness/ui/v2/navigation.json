@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "mode": "AutoMenu",
+  "rule": "Resource navigation is generated from descriptors and permissions. Do not duplicate resource routes in hand-maintained navigation.",
+  "items": [
+    {"id":"dashboard","label":"Dashboard","path":"/","kind":"system","permission":"authenticated"},
+    {"id":"cases","label":"Cases","path":"/cases","kind":"resource","resource":"case","permission":"case:read"},
+    {"id":"kanban","label":"Kanban","path":"/work/kanban","kind":"workspace","permission":"review:read"},
+    {"id":"calendar","label":"Calendar","path":"/work/calendar","kind":"workspace","permission":"review:read"},
+    {"id":"chat","label":"Chat","path":"/chat","kind":"workspace","permission":"community:read"},
+    {"id":"ai","label":"AI Workspace","path":"/ai","kind":"workspace","permission":"ai:use"},
+    {"id":"resources","label":"Resources","path":"/resources","kind":"system","permission":"resource:read"},
+    {"id":"profile","label":"Profile","path":"/profile","kind":"account","permission":"authenticated"},
+    {"id":"settings","label":"Settings","path":"/settings","kind":"account","permission":"authenticated"}
+  ],
+  "resourceDescriptors": [
+    {"resource":"case","label":"Cases","path":"/cases","repo":"moonwitness"},
+    {"resource":"event","label":"Events","path":"/events","repo":"rocksoul-event"},
+    {"resource":"person","label":"People","path":"/people","repo":"rocksoul-superhero"},
+    {"resource":"rgbl","label":"RGBL Sources","path":"/sources","repo":"rocksoul-rgbl"},
+    {"resource":"aws","label":"AWS Legal","path":"/aws","repo":"rocksoul-aws"}
+  ]
+}

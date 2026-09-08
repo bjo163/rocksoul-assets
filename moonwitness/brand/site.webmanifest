@@ -1,0 +1,12 @@
+{
+  "name": "MoonWitness",
+  "short_name": "MoonWitness",
+  "description": "Independent observatory for evidence, correlation, provenance, and legal boundaries.",
+  "theme_color": "#0B0B0B",
+  "background_color": "#0B0B0B",
+  "display": "standalone",
+  "icons": [
+    {"src":"./app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"},
+    {"src":"./app-icon-maskable.svg","sizes":"any","type":"image/svg+xml","purpose":"maskable"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "name": "MoonWitness Application Shell",
+  "canonicalVector": "../../moonwitness/ui/v2/application-shell.svg",
+  "navigation": "../../moonwitness/ui/v2/navigation.json",
+  "anatomy": [
+    "compact-sidebar",
+    "shared-topbar",
+    "breadcrumbs",
+    "backend-status",
+    "theme-control",
+    "notification-trigger",
+    "user-menu",
+    "command-palette-trigger",
+    "content-region"
+  ],
+  "responsive": {
+    "desktop": {"width":1440,"sidebar":220,"behavior":"persistent"},
+    "tablet": {"width":768,"sidebar":72,"behavior":"icon-rail"},
+    "mobile": {"width":390,"sidebar":0,"behavior":"drawer"}
+  },
+  "states": {
+    "backend": ["online","degraded","offline"],
+    "theme": ["light","dark","system"],
+    "sidebar": ["expanded","compact","drawer-open","drawer-closed"],
+    "notifications": ["empty","unread","open"],
+    "userMenu": ["closed","open"]
+  },
+  "accessibility": {
+    "skipLink": true,
+    "landmarks": ["navigation","banner","main"],
+    "keyboardCommandPalette": true,
+    "focusVisible": true,
+    "drawerFocusTrap": true
+  }
+}

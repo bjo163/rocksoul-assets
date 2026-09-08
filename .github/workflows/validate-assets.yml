@@ -1,0 +1,41 @@
+name: Validate Asset System
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "manifest.json"
+      - "moonwitness/**"
+      - "penpot/application-shell/**"
+      - "penpot/screens/screens-v2.json"
+      - "penpot/golden-cases/mw-0042/visuals/mobile/**"
+      - "tools/assets/**"
+      - ".github/workflows/validate-assets.yml"
+  push:
+    branches: [main]
+    paths:
+      - "manifest.json"
+      - "moonwitness/**"
+      - "penpot/application-shell/**"
+      - "penpot/screens/screens-v2.json"
+      - "penpot/golden-cases/mw-0042/visuals/mobile/**"
+      - "tools/assets/**"
+      - ".github/workflows/validate-assets.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate raster/vector pairing and asset contracts
+        run: node tools/assets/validate.mjs

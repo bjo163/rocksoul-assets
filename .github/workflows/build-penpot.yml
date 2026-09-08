@@ -45,7 +45,7 @@ jobs:
 
       - name: Install builder
         working-directory: tools/penpot
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
 
       - name: Validate design sources
         working-directory: tools/penpot
