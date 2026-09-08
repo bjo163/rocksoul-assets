@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3",
+  "outputs": [
+    {
+      "id": "pulse-alert",
+      "source": "moonwitness/runtime-motion-pack/svg/pulse-alert.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/pulse-alert.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/pulse-alert.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/pulse-alert.json"
+    },
+    {
+      "id": "evidence-linked",
+      "source": "moonwitness/runtime-motion-pack/svg/evidence-linked.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/evidence-linked.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/evidence-linked.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/evidence-linked.json"
+    },
+    {
+      "id": "case-resolved",
+      "source": "moonwitness/runtime-motion-pack/svg/case-resolved.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/case-resolved.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/case-resolved.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/case-resolved.json"
+    },
+    {
+      "id": "ai-orbit",
+      "source": "moonwitness/runtime-motion-pack/svg/ai-orbit.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/ai-orbit.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/ai-orbit.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/ai-orbit.json"
+    },
+    {
+      "id": "loading-trace",
+      "source": "moonwitness/runtime-motion-pack/svg/loading-trace.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/loading-trace.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/loading-trace.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/loading-trace.json"
+    },
+    {
+      "id": "notification-in",
+      "source": "moonwitness/runtime-motion-pack/svg/notification-in.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/notification-in.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/notification-in.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/notification-in.json"
+    },
+    {
+      "id": "drawer-open",
+      "source": "moonwitness/runtime-motion-pack/svg/drawer-open.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/drawer-open.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/drawer-open.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/drawer-open.json"
+    },
+    {
+      "id": "sync-spin",
+      "source": "moonwitness/runtime-motion-pack/svg/sync-spin.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/sync-spin.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/sync-spin.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/sync-spin.json"
+    },
+    {
+      "id": "focus-ring",
+      "source": "moonwitness/runtime-motion-pack/svg/focus-ring.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/focus-ring.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/focus-ring.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/focus-ring.json"
+    },
+    {
+      "id": "upload-rise",
+      "source": "moonwitness/runtime-motion-pack/svg/upload-rise.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/upload-rise.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/upload-rise.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/upload-rise.json"
+    },
+    {
+      "id": "graph-connect",
+      "source": "moonwitness/runtime-motion-pack/svg/graph-connect.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/graph-connect.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/graph-connect.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/graph-connect.json"
+    },
+    {
+      "id": "backend-reconnect",
+      "source": "moonwitness/runtime-motion-pack/svg/backend-reconnect.svg",
+      "apng": "moonwitness/runtime-motion-pack/png/backend-reconnect.png",
+      "webm": "moonwitness/runtime-motion-pack/webm/backend-reconnect.webm",
+      "lottie": "moonwitness/runtime-motion-pack/lottie/backend-reconnect.json"
+    }
+  ]
+}
