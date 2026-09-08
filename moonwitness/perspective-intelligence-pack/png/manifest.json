@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "packId": "perspective-intelligence",
+  "pack": "MoonWitness Perspective Intelligence Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 8,
+  "outputs": [
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/actor-framing-matrix.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/actor-framing-matrix.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/coverage-radar.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/coverage-radar.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/divergence-compass.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/divergence-compass.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/perspective-constellation.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/perspective-constellation.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/provenance-flow.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/provenance-flow.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/reaction-spectrum.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/reaction-spectrum.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/world-perspective-field.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/world-perspective-field.png"
+    },
+    {
+      "source": "moonwitness/perspective-intelligence-pack/svg/zigzag-signal-timeline.svg",
+      "path": "moonwitness/perspective-intelligence-pack/png/zigzag-signal-timeline.png"
+    }
+  ]
+}

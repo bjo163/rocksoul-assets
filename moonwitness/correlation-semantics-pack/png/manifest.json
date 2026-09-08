@@ -4,7 +4,7 @@
   "pack": "MoonWitness Correlation Semantics Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
-  "sourceCount": 24,
+  "sourceCount": 25,
   "outputs": [
     {
       "source": "moonwitness/correlation-semantics-pack/svg/edge-contradicts.svg",
@@ -89,6 +89,10 @@
     {
       "source": "moonwitness/correlation-semantics-pack/svg/node-person.svg",
       "path": "moonwitness/correlation-semantics-pack/png/node-person.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-perspective.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-perspective.png"
     },
     {
       "source": "moonwitness/correlation-semantics-pack/svg/node-source.svg",
