@@ -17,7 +17,7 @@
     {
       "id": "data-viz",
       "manifest": "moonwitness/data-viz/data-viz.json",
-      "count": 16
+      "count": 20
     },
     {
       "id": "hero-backgrounds",
@@ -217,8 +217,8 @@
   ],
   "coverage": {
     "policy": "Every MoonWitness delivery SVG has at least one PNG derivative; every PNG/JPEG maps to canonical SVG.",
-    "svgSources": 614,
-    "pngDerivatives": 757,
+    "svgSources": 618,
+    "pngDerivatives": 761,
     "vectorWithoutRaster": 0,
     "rasterWithoutVector": 0,
     "packFamilies": 42,
