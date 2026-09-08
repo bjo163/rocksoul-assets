@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "cinematic-web-hero",
+  "name": "MoonWitness Cinematic Web Hero",
+  "version": "1.0.0",
+  "kind": "delivery-profile",
+  "sourcePack": "cinematic-hero",
+  "canonicalRepository": "bjo163/rocksoul-assets",
+  "composition": {
+    "mode": "composite",
+    "headlineSafeArea": "left",
+    "evidenceSafeArea": "right",
+    "desktopAspectRatio": "16:9",
+    "mobileAspectRatio": "3:4",
+    "embeddedUi": false,
+    "embeddedCopy": false,
+    "semanticOverlaysOwnedByConsumer": true
+  },
+  "assets": [
+    {
+      "id": "hero-master-desktop",
+      "role": "hero-master",
+      "breakpoint": "desktop",
+      "path": "moonwitness/cinematic-hero-pack/webp/hero-master-desktop.webp",
+      "format": "webp",
+      "width": 2880,
+      "height": 1620,
+      "objectPosition": "center center"
+    },
+    {
+      "id": "hero-master-mobile",
+      "role": "hero-master",
+      "breakpoint": "mobile",
+      "path": "moonwitness/cinematic-hero-pack/webp/hero-master-mobile.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 1920,
+      "objectPosition": "center center"
+    },
+    {
+      "id": "moon-photographic",
+      "role": "moon-photographic",
+      "path": "moonwitness/cinematic-hero-pack/webp/moon-photographic.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1600,
+      "transparent": true
+    },
+    {
+      "id": "observatory-grid-overlay",
+      "role": "observatory-grid",
+      "path": "moonwitness/hero-backgrounds/svg/observatory-grid.svg",
+      "format": "svg",
+      "transparent": true
+    },
+    {
+      "id": "film-grain-overlay",
+      "role": "film-grain",
+      "path": "moonwitness/texture-material-pack/svg/lunar-grain.svg",
+      "format": "svg",
+      "transparent": true
+    },
+    {
+      "id": "scanline-overlay",
+      "role": "scanline",
+      "path": "moonwitness/texture-material-pack/svg/scanner-lines.svg",
+      "format": "svg",
+      "transparent": true
+    },
+    {
+      "id": "archive-01-lunar-trace",
+      "role": "archive-thumbnail",
+      "path": "moonwitness/hero-backgrounds/png/lunar-trace.png",
+      "format": "png"
+    },
+    {
+      "id": "archive-02-archive-texture",
+      "role": "archive-thumbnail",
+      "path": "moonwitness/hero-backgrounds/png/archive-texture.png",
+      "format": "png"
+    },
+    {
+      "id": "archive-03-evidence-constellation",
+      "role": "archive-thumbnail",
+      "path": "moonwitness/hero-backgrounds/png/evidence-constellation.png",
+      "format": "png"
+    },
+    {
+      "id": "archive-04-correlation-web",
+      "role": "archive-thumbnail",
+      "path": "moonwitness/hero-backgrounds/png/correlation-web.png",
+      "format": "png"
+    }
+  ],
+  "interactionContract": {
+    "headline": "HTML text",
+    "navigation": "HTML controls",
+    "cta": "HTML control",
+    "evidenceGraph": "HTML/SVG with text equivalent",
+    "coordinates": "HTML text",
+    "status": "never color-only",
+    "reducedMotion": "static masters require no animation",
+    "correlation": "does not imply causation"
+  }
+}
