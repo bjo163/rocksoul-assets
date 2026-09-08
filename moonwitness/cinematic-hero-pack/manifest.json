@@ -5,7 +5,7 @@
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "renderPng": true,
-  "count": 12,
+  "count": 13,
   "root": "svg",
   "assets": [
     "observatory-night",
@@ -19,6 +19,7 @@
     "community-lab",
     "data-observatory",
     "source-trace",
-    "correlation-sky"
+    "correlation-sky",
+    "mftl-observatory-clean"
   ]
 }
