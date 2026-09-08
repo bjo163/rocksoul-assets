@@ -13,7 +13,7 @@ on:
       - "docs/PENPOT-LIVE-VERIFICATION.md"
       - "docs/DESIGN-SYSTEM-READINESS.md"
       - ".github/workflows/release-gate.yml"
-      - ".github/workflows/publish-release.yml"
+      - ".github/workflows/publish-release.yml"\n      - "moonwitness/icons/**"\n      - "moonwitness/dashboard-pack/**"\n      - "moonwitness/data-viz/**"\n      - "moonwitness/hero-backgrounds/**"\n      - "moonwitness/state-illustrations/**"\n      - "moonwitness/motion/**"\n      - "moonwitness/sfx/**"\n      - "tools/assets/generate-sfx.py"\n      - ".github/workflows/generate-sfx.yml"
   push:
     branches: [main]
     paths:
@@ -54,10 +54,10 @@ jobs:
           const version = fs.readFileSync('VERSION', 'utf8').trim();
           const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
           const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
-          if (version !== '1.0.0') throw new Error('VERSION must be 1.0.0');
+          if (!/^\\d+\\.\\d+\\.\\d+$/.test(version)) throw new Error('VERSION must be semver');
           if (manifest.release?.version !== version) throw new Error('manifest release version mismatch');
           if (manifest.release?.status !== 'released') throw new Error('manifest release status must be released');
-          if (!changelog.includes('## [1.0.0]')) throw new Error('CHANGELOG missing 1.0.0 entry');
+          if (!changelog.includes(`## [${version}]`)) throw new Error(`CHANGELOG missing ${version} entry`);
           console.log({version, status: manifest.release.status});
           NODE
 
@@ -69,6 +69,12 @@ jobs:
           python -m pip install --disable-pip-version-check cairosvg==2.7.1 pillow==10.4.0
           python tools/assets/render-brand.py
           git diff --exit-code -- moonwitness/brand/generated
+
+      - name: Verify generated SFX derivatives
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          python tools/assets/generate-sfx.py
+          git diff --exit-code -- moonwitness/sfx/generated
 
       - name: Install locked Penpot builder
         working-directory: tools/penpot
