@@ -61,6 +61,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
 | [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
+| [PERSPECTIVE Visual Grammar](PERSPECTIVE-VISUAL-GRAMMAR.md) | JIZZ constellation, geography, divergence, ZIGZAG, matrix, provenance and coverage semantics |
 | [Accessibility](ACCESSIBILITY.md) | non-negotiable product accessibility rules |
 | [Governance](GOVERNANCE.md) | ownership, change classes, definition of done |
 | [Branching Policy](BRANCHING.md) | single-main workflow and temporary PR branch lifecycle |
