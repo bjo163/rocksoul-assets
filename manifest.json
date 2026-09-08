@@ -348,6 +348,12 @@
       "apng",
       "webm",
       "lottie"
-    ]
+    ],
+    "validation": {
+      "animatedSvg": "canonical-source",
+      "apng": "byte-reproducible",
+      "lottie": "byte-reproducible",
+      "webm": "semantic-ffprobe"
+    }
   }
 }
