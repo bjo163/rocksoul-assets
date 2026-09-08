@@ -20,6 +20,7 @@ for manifest_path in MW.rglob("manifest.json"):
     outputs=[]
     sizes=manifest.get("sizes")
     for svg_path in sorted(svg_dir.glob("*.svg")):
+        print(f"rendering {svg_path.relative_to(ROOT)}", flush=True)
         if sizes:
             for size in sizes:
                 out_dir=png_dir/str(size)
