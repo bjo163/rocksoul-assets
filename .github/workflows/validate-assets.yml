@@ -56,5 +56,8 @@ jobs:
       - name: Validate raster/vector pairing and asset contracts
         run: node tools/assets/validate.mjs
 
+      - name: Validate showcase JavaScript syntax
+        run: node --check showcase/showcase.js
+
       - name: Validate showcase delivery coverage
         run: node tools/assets/validate-showcase-coverage.mjs
