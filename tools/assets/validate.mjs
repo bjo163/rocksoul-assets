@@ -27,7 +27,7 @@ async function assertNativeSvg(relativePath) {
   const svg = await readFile(path.join(root, relativePath), "utf8");
   invariant(/<svg\b/.test(svg), `Not an SVG document: ${relativePath}`);
   invariant(!/<image\b/i.test(svg), `Raster <image> embedding is not allowed in canonical vector source: ${relativePath}`);
-  invariant(!/data:image\/(png|jpe?g|webp)/i.test(svg), `Embedded raster data is not allowed: ${relativePath}`);
+  invariant(!/data:image\/(png|jpe?g|webp)/i.test(svg), `Embedded raster data is not allowed: ${relativePath}`);\n  invariant(!/&(?!(?:amp|lt|gt|quot|apos|#\\d+|#x[0-9a-f]+);)/i.test(svg), `Unescaped XML ampersand in SVG: ${relativePath}`);
 }
 
 async function walk(relativeDir) {
