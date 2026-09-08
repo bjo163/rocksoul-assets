@@ -5,7 +5,7 @@
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "renderPng": true,
-  "count": 12,
+  "count": 13,
   "root": "svg",
   "assets": [
     "archive-paper",
@@ -19,6 +19,7 @@
     "legal-paper",
     "red-thread",
     "data-matrix",
-    "lunar-grain"
+    "lunar-grain",
+    "research-trace-divider"
   ]
 }
