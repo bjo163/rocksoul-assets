@@ -1,6 +1,6 @@
 # MoonWitness Design System — Release & Ready-for-Code Gates
 
-**Repository release:** v1.0.0 — released 2026-09-08  
+**Repository release:** v1.3.1 — released 2026-09-08  
 **Repository acceptance:** passed  
 **Live Penpot verification:** manual follow-up
 
@@ -14,6 +14,18 @@
 - [x] Penpot builder dependency graph locked with `package-lock.json`
 - [ ] Final font availability verified inside Penpot
 - [ ] Contrast audit on native assembled components
+
+## Asset-system closure
+
+- [x] 42 pack families indexed
+- [x] 614 MoonWitness SVG delivery sources
+- [x] 757 PNG/APNG derivatives
+- [x] 0 raster-without-vector delivery gaps
+- [x] 0 MoonWitness delivery-vector-without-raster gaps
+- [x] 1,424 / 1,424 delivery files indexed in showcase
+- [x] 100% showcase coverage enforced in CI
+- [x] runtime SVG/APNG/WebM/Lottie delivery validated
+- [x] SFX WAV/OGG delivery validated
 
 ## Brand + delivery assets
 
@@ -80,7 +92,7 @@ Builder:
 
 ## Release status
 
-The version-controlled repository asset system is released as **v1.0.0**. This release does not falsely mark live Penpot-only checks as completed. Native Penpot reconstruction, interaction wiring, font inspection, and final live accessibility review remain a separate design-workspace verification gate.
+The version-controlled repository asset system is released as **v1.3.1** and the currently defined asset-generation scope is closed. This release does not falsely mark live Penpot-only checks as completed. Native Penpot reconstruction, interaction wiring, font inspection, and final live accessibility review remain a separate design-workspace verification gate.
 
 ## Code handoff
 

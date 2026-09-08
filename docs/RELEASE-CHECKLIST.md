@@ -28,6 +28,16 @@
 - [x] Penpot package generation
 - [x] Penpot package-structure validation
 
+## Showcase and documentation
+
+- [x] 42 asset-pack families represented in registry
+- [x] Brand System + V1 Baseline foundation collections represented
+- [x] 1,424 / 1,424 delivery files indexed
+- [x] showcase JavaScript syntax validation
+- [x] showcase catalog/registry version validation
+- [x] documentation current-version validation
+- [x] docs hub indexes every operational docs page
+
 ## External live Penpot verification
 
 These checks are intentionally **not** claimed by repository CI:

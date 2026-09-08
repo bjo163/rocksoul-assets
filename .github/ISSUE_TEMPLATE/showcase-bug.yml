@@ -1,0 +1,47 @@
+name: Showcase defect
+description: Report a problem in the public asset showcase or registry presentation.
+title: "[showcase] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Production: https://rocksoul-assets-showcase.vercel.app
+        The showcase must keep 100% delivery-file coverage.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Asset missing from explorer
+        - Preview does not render
+        - Search/filter/deep link
+        - Audio/video/Lottie delivery
+        - Registry/catalog mismatch
+        - Mobile/responsive/accessibility
+        - SEO/deployment/headers
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: Asset or page path
+      placeholder: moonwitness/... or showcase URL
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / device
+      placeholder: Chrome 140 / macOS, Safari / iPhone…

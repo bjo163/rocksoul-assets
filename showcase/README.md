@@ -1,38 +1,61 @@
 # Asset Showcase
 
-Static production showcase for `rocksoul-assets`.
+Production: **https://rocksoul-assets-showcase.vercel.app**
+
+The showcase is a public documentation and acceptance surface for `rocksoul-assets`.
+
+## Responsibilities
+
+It must:
+
+- explain the MoonWitness × Rocksoul visual system;
+- expose the capability map before forcing users into folder-oriented browsing;
+- index **100% of delivery files**;
+- preview every supported delivery format appropriately;
+- provide direct source paths and raw-source access;
+- link users into canonical repository documentation;
+- communicate current release and closure status accurately.
 
 ## Coverage contract
 
-The showcase is not a curated subset. It must expose **100% of MoonWitness delivery files**.
-
-Current registry model:
-
-- 42 indexed asset-pack families
-- 2 foundation collections: Brand System + V1 Baseline Screens
-- all SVG and PNG delivery files
-- favicon ICO
-- all WAV + OGG SFX
-- all WebM runtime motion
-- all Lottie runtime motion
-- generated developer-distribution artifacts
+- 42 asset-pack families
+- 2 foundation collections
+- 44 showcase collections
+- 1,424 / 1,424 delivery files
+- 100% coverage
 
 `tools/assets/build-dist.mjs` fails if a MoonWitness delivery file is not reachable from `dist/assets.json`.
 
-`tools/assets/validate-showcase-coverage.mjs` additionally ensures every registry collection has showcase metadata in `showcase/catalog.json`.
+`tools/assets/validate-showcase-coverage.mjs` validates registry coverage and presentation metadata.
+
+## Information architecture
+
+1. Overview / system value
+2. Capability map
+3. Evidence-semantic journey
+4. Complete explorer
+5. Developer delivery
+6. Quality / closure evidence
+7. Documentation hub
+8. Release state
 
 ## Runtime
 
-The site intentionally has no application framework or build dependency.
+The site is framework-free static HTML/CSS/JS.
 
-Vercel hosts the lightweight UI, catalog metadata and generated registry. Canonical asset binaries resolve from the GitHub `main` source of truth.
+Vercel serves the UI, `showcase/catalog.json`, and `dist/assets.json`.
 
-## Local preview
+Canonical visual/audio binaries resolve from GitHub `main`.
 
-Any static HTTP server from the repository root is sufficient.
+## Accessibility
 
-## Canonical sources
+- keyboard-search shortcut: Cmd/Ctrl + K;
+- dialog uses native `<dialog>`;
+- visible focus states;
+- status not color-only;
+- reduced-motion disables motion-dependent autoplay;
+- audio is never required to understand product meaning.
 
-- `moonwitness/asset-packs.json` — pack index
-- `dist/assets.json` — complete delivery/showcase registry
-- `showcase/catalog.json` — presentation metadata
+## SEO / security
+
+See [docs/SHOWCASE-OPERATIONS.md](../docs/SHOWCASE-OPERATIONS.md).

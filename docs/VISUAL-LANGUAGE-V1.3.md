@@ -1,4 +1,4 @@
-# MoonWitness Visual Language v1.3
+# MoonWitness Visual Language v1.3.x
 
 v1.3 moves investigation semantics out of monolithic screen references into reusable pack assets.
 
@@ -14,6 +14,10 @@ Evidence inspection → correlation → workflow → collaboration → AI → au
 - Runtime motion requires reduced-motion behavior.
 - Developer distribution is generated, not hand-maintained.
 
+## Delivery completion
+
+The current v1.3.1 closure provides bidirectional SVG/PNG coverage for MoonWitness delivery assets and 100% showcase indexing across 1,424 delivery files.
+
 ## Canonical index
 
-`moonwitness/asset-packs.json` → 41 pack families.
+`moonwitness/asset-packs.json` → **42 pack families**.

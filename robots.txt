@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rocksoul-assets.vercel.app/sitemap.xml
+Sitemap: https://rocksoul-assets-showcase.vercel.app/sitemap.xml

@@ -32,4 +32,4 @@ When performed, record:
 - accessibility/contrast result
 - blocking defects, if any
 
-The v1.0.0 repository release does not fabricate this record.
+The v1.3.1 repository release does not fabricate this record. These live-workspace checks are intentionally outside repository asset closure.

@@ -9,10 +9,11 @@ moonwitness/ui/v1/screens/<NN>-<slug>.png
 moonwitness/ui/v1/screens/<NN>-<slug>.svg
 ```
 
-Vector-first application surfaces:
+Vector-first application surfaces + generated previews:
 
 ```text
 moonwitness/ui/v2/<NN>-<slug>.svg
+moonwitness/ui/v2/png/<NN>-<slug>.png
 ```
 
 Brand source + generated delivery assets:
@@ -24,13 +25,18 @@ moonwitness/brand/generated/*
 
 ## Raster/vector rule
 
-Every PNG/JPEG under `moonwitness/` must have a canonical SVG source.
+The delivery rule is bidirectional:
+
+1. every PNG/JPEG under `moonwitness/` must map to a canonical SVG source;
+2. every MoonWitness delivery SVG must have at least one PNG derivative.
+
+`penpot/**` design-workspace SVG sources are intentionally exempt from raster delivery, but still must parse as valid SVG/XML.
 
 - Immutable v1 raster references use a same-basename SVG counterpart.
 - Generated delivery rasters use `moonwitness/brand/generated/manifest.json` to point back to their SVG source.
 - Canonical SVG sources must not embed raster `<image>` elements or PNG/JPEG/WebP data URIs.
 
-This contract is enforced by `tools/assets/validate.mjs`.
+This contract is enforced by `tools/assets/validate.mjs` and `tools/assets/validate-svg-xml.py`.
 
 ## Versioning rule
 

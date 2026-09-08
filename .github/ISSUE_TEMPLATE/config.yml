@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Live asset showcase
+    url: https://rocksoul-assets-showcase.vercel.app
+    about: Search the complete 100%-coverage asset explorer before filing an asset-gap issue.
+  - name: Documentation hub
+    url: https://github.com/bjo163/rocksoul-assets/blob/main/docs/README.md
+    about: Read the canonical repository documentation and governance rules.
