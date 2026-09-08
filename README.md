@@ -10,7 +10,7 @@
 
 Canonical brand, product-shell, UI, component, token, data-viz, motion, and design-handoff assets for the **MoonWitness × Rocksoul** ecosystem.
 
-![Release](https://img.shields.io/badge/release-v1.2.0-111111)
+![Release](https://img.shields.io/badge/release-v1.3.0-111111)
 ![Design](https://img.shields.io/badge/design-Penpot-6C63FF)
 ![Source](https://img.shields.io/badge/source-SVG-2E8B57)
 ![Surfaces](https://img.shields.io/badge/UI-v1%20%2B%20v2-B43A32)
@@ -142,6 +142,13 @@ Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome 
 | Editorial Pack | `moonwitness/editorial-pack/` | 6 editorial vector images |
 
 Correlation visualizations should preferentially use the existing **node-link, provenance, evidence-matrix, timeline, repository-health, metric, annotation, and edge-style** assets in `moonwitness/data-viz/`.
+
+
+### v1.3 investigation + runtime expansion
+
+v1.3 adds **22 delivery families** spanning evidence annotation, correlation semantics, workflow modules, AI/security, tables/forms, privacy/integrity/export, Rocksoul character scenes, cinematic heroes, runtime motion and generated developer distribution. The canonical global index now contains **41 pack families**.
+
+Direct developer entry points: `moonwitness/asset-packs.json` and `dist/assets.ts`.
 
 ## Surface ownership
 

@@ -203,6 +203,11 @@
       "id": "runtime-motion",
       "manifest": "moonwitness/runtime-motion-pack/manifest.json",
       "count": 12
+    },
+    {
+      "id": "developer-distribution",
+      "manifest": "moonwitness/developer-pack/manifest.json",
+      "count": 4
     }
   ]
 }

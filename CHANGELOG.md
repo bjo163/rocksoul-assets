@@ -1,5 +1,45 @@
 # Changelog
 
+## [1.3.0] — 2026-09-08
+
+### Investigation visual language
+- Added 24 Evidence Media & Annotation assets for bounding regions, OCR, transcript/waveform cues, timestamps, comparisons, measurements, confidence, metadata, EXIF, hashes and source/location overlays.
+- Added 24 Correlation Semantics assets: 10 canonical node types and 14 evidence-relationship edge types.
+- Added 16 Privacy & Redaction assets and 16 Evidence Integrity / Chain-of-Custody assets.
+- Added 12 Export & Evidence Seal assets.
+
+### Authenticated product workflows
+- Added 18 Kanban workflow assets.
+- Added 16 Calendar / Temporal assets.
+- Added 24 Chat / Collaboration assets.
+- Added 18 AI Workspace assets.
+- Added 18 Authorization / Security assets.
+- Added 16 Data Grid / Table assets.
+- Added 20 Form Control assets.
+- Added 12 Theme / Accessibility assets.
+
+### Character, editorial and system communication
+- Added 12 Rocksoul character poses/scenes with 128/256/512 PNG derivatives.
+- Added 12 Cinematic Hero scenes at 1200×675.
+- Added 14 Command / Keyboard assets.
+- Added 12 Texture / Material assets.
+- Added 16 Architecture / Diagram assets.
+- Added 8 Device Mockups.
+- Added 16 data-driven Jurisdiction / Locale assets.
+
+### Runtime delivery
+- Added 12 runtime motions with animated-SVG sources plus deterministic APNG, WebM and Lottie derivatives.
+- Added generated developer distribution: `dist/assets.json`, `dist/assets.ts`, `dist/assets.css`, and `dist/sprite.svg`.
+- Expanded global asset index to 41 pack families.
+- Added generic v1.3 validation and reproducibility gates for modular packs, runtime motion and developer distribution.
+
+### Repository inventory at release-candidate generation
+- 614 SVG files under `moonwitness/`.
+- 538 PNG files under `moonwitness/`.
+- 12 WebM runtime motions and 12 Lottie runtime motions.
+- 14 WAV + 14 OGG SFX derivatives.
+
+
 ## [1.2.0] — 2026-09-08
 
 ### Secondary production asset packs

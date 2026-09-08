@@ -1,47 +1,80 @@
-# MoonWitness × Rocksoul — Repository Release v1.2.0
+# MoonWitness × Rocksoul — Repository Release v1.3.0
 
 **Release date:** 2026-09-08  
 **Release branch:** `main`  
-**Canonical design tool:** Penpot  
-**Canonical editable format:** SVG
+**Canonical editable visual format:** SVG  
+**Canonical design tool:** Penpot
 
 ## Scope
 
-v1.2.0 completes the production asset-pack layer. Every new pack is shipped as individual SVG assets with generated PNG derivatives and machine-readable manifests; developers do not need to crop or slice atlas posters.
+v1.3.0 completes the modular visual language for investigation workflows. Product screens no longer carry the only representation of Kanban, Calendar, Chat, AI, Security, table/form, evidence-inspection, privacy, integrity, export, character, diagram, device, jurisdiction, and runtime-motion semantics.
 
-## New pack families
+Every visual pack is consumable as individual source files. Atlas/poster imagery is reference-only and is never required at runtime.
 
-- Graph Vector Pack — 10
-- Badge / Status Pack — 12
-- Source / File-Type Pack — 15
-- Geospatial / Map Pack — 15
-- Cursor / Interaction Pack — 17
-- Persona / Avatar Pack — 9 SVGs + 36 sized PNGs
-- Social Campaign Pack — 8
-- Platform Delivery Pack — 8
-- Onboarding / Tutorial Pack — 8
-- Document / Report Pack — 9
-- Notification / Email Pack — 8
-- Editorial Image Pack — 6
+## New v1.3 pack families
 
-## Expanded packs
+| Pack | Canonical assets |
+|---|---:|
+| Evidence Media / Annotation | 24 |
+| Correlation Semantics | 24 |
+| Kanban Workflow | 18 |
+| Calendar / Temporal | 16 |
+| Chat / Collaboration | 24 |
+| AI Workspace | 18 |
+| Authorization / Security | 18 |
+| Data Grid / Table | 16 |
+| Form Controls | 20 |
+| Theme / Accessibility | 12 |
+| Privacy / Redaction | 16 |
+| Evidence Integrity / Chain-of-Custody | 16 |
+| Export / Evidence Seal | 12 |
+| Rocksoul Character | 12 |
+| Command / Keyboard | 14 |
+| Texture / Material | 12 |
+| Architecture / Diagram | 16 |
+| Device Mockup | 8 |
+| Jurisdiction / Locale | 16 |
+| Cinematic Hero | 12 |
+| Runtime Motion | 12 |
+| Developer Distribution | 4 generated artifacts |
 
-- Motion Pack — 12 animated SVGs
-- SFX Pack — 14 deterministic cues in WAV + OGG
+## Runtime and developer delivery
 
-## Consumption contract
+Runtime Motion ships:
+- animated SVG canonical source
+- APNG
+- WebM
+- Lottie JSON
+- reduced-motion fallback metadata
 
-Use `moonwitness/asset-packs.json` as the global index. SVG is canonical. PNG is generated. See `docs/ASSET-CONSUMPTION.md`.
+Developer distribution ships:
+- `dist/assets.json`
+- `dist/assets.ts`
+- `dist/assets.css`
+- `dist/sprite.svg`
+
+Use `moonwitness/asset-packs.json` as the canonical 41-family pack index.
+
+## Repository inventory
+
+At release-candidate generation:
+- **614 SVG**
+- **538 PNG**
+- **12 WebM**
+- **12 Lottie JSON**
+- **14 WAV + 14 OGG**
+
+Counts include existing baseline/product assets and generated derivatives under `moonwitness/`.
 
 ## Release acceptance
 
 Release Gate must:
-1. validate every canonical SVG;
-2. validate every pack manifest count;
-3. map every generated PNG back to an SVG source;
-4. regenerate secondary PNG derivatives with zero diff;
-5. regenerate brand derivatives with zero diff;
-6. regenerate SFX with zero diff;
-7. pass Penpot source/package checks.
+1. validate canonical SVG structure and raster/vector pairing;
+2. validate 41 indexed asset-pack families;
+3. regenerate all modular PNG derivatives with zero diff;
+4. regenerate runtime APNG/WebM/Lottie derivatives with zero diff;
+5. regenerate developer `dist/` with zero diff;
+6. regenerate brand and SFX derivatives with zero diff;
+7. pass Penpot source, package and golden-slice checks.
 
-Live Penpot workspace verification remains a separate manual design-workspace gate.
+Live native Penpot reconstruction/prototype/accessibility inspection remains a separate manual workspace verification and is not falsely represented as repository CI.

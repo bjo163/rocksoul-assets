@@ -1,29 +1,66 @@
-# MoonWitness Asset Pack Catalog — v1.2.0
+# MoonWitness Asset Pack Catalog — v1.3.0
 
-Canonical index: `moonwitness/asset-packs.json`.
+Canonical global index: `moonwitness/asset-packs.json`.
 
-All new visual packs use:
-- SVG as canonical editable source
-- PNG as generated derivative
-- per-pack manifest
-- no embedded raster inside canonical SVG
-- deterministic raster generation via `tools/assets/render-packs.py`
+## Delivery contract
 
-## Secondary packs
+- SVG is canonical for editable visual assets.
+- PNG is generated for raster consumers.
+- Runtime Motion additionally ships APNG, WebM and Lottie.
+- SFX ships deterministic WAV and OGG.
+- Developer Distribution generates JSON, TypeScript, CSS and SVG sprite registries.
+- Atlas/poster boards are reference-only; runtime consumers use individual assets.
 
-| Pack | SVG assets | PNG consumption |
+## v1.3 modular packs
+
+| Pack | Count | Path |
 |---|---:|---|
-| Graph Vector | 10 | natural component size |
-| Badge / Status | 12 | 240×64 |
-| Source / File-Type | 15 | 64×64 |
-| Geospatial / Map | 15 | 64×64 |
-| Cursor / Interaction | 17 | 64×64 |
-| Persona / Avatar | 9 | 32/64/128/256 |
-| Social Campaign | 8 | platform-native sizes |
-| Platform Delivery | 8 | store/install-native sizes |
-| Onboarding / Tutorial | 8 | 800×600 |
-| Document / Report | 9 | document/component-native sizes |
-| Notification / Email | 8 | message-native sizes |
-| Editorial | 6 | 1200×675 |
+| product-icons | 44 | `moonwitness/icons/` |
+| dashboard | 20 | `moonwitness/dashboard-pack/` |
+| data-viz | 16 | `moonwitness/data-viz/` |
+| hero-backgrounds | 8 | `moonwitness/hero-backgrounds/` |
+| state-illustrations | 12 | `moonwitness/state-illustrations/` |
+| motion | 12 | `moonwitness/motion/` |
+| sfx | 14 | `moonwitness/sfx/` |
+| graph-vector | 10 | `moonwitness/graph-pack/` |
+| badge-status | 12 | `moonwitness/badge-pack/` |
+| source-file | 15 | `moonwitness/source-file-pack/` |
+| geospatial | 15 | `moonwitness/geospatial-pack/` |
+| cursor-interaction | 17 | `moonwitness/cursor-pack/` |
+| persona-avatar | 9 | `moonwitness/persona-pack/` |
+| social-campaign | 8 | `moonwitness/social-campaign-pack/` |
+| platform-delivery | 8 | `moonwitness/platform-delivery-pack/` |
+| onboarding | 8 | `moonwitness/onboarding-pack/` |
+| document-report | 9 | `moonwitness/document-report-pack/` |
+| notification | 8 | `moonwitness/notification-pack/` |
+| editorial | 6 | `moonwitness/editorial-pack/` |
+| evidence-media | 24 | `moonwitness/evidence-media-pack/` |
+| correlation-semantics | 24 | `moonwitness/correlation-semantics-pack/` |
+| kanban-workflow | 18 | `moonwitness/kanban-pack/` |
+| calendar-temporal | 16 | `moonwitness/calendar-pack/` |
+| chat-collaboration | 24 | `moonwitness/chat-pack/` |
+| ai-workspace | 18 | `moonwitness/ai-workspace-pack/` |
+| authorization-security | 18 | `moonwitness/security-pack/` |
+| data-grid | 16 | `moonwitness/data-grid-pack/` |
+| form-controls | 20 | `moonwitness/form-controls-pack/` |
+| theme-accessibility | 12 | `moonwitness/theme-accessibility-pack/` |
+| privacy-redaction | 16 | `moonwitness/privacy-redaction-pack/` |
+| evidence-integrity | 16 | `moonwitness/integrity-pack/` |
+| export-seal | 12 | `moonwitness/export-seal-pack/` |
+| rocksoul-character | 12 | `moonwitness/rocksoul-character-pack/` |
+| command-keyboard | 14 | `moonwitness/command-keyboard-pack/` |
+| texture-material | 12 | `moonwitness/texture-material-pack/` |
+| architecture-diagram | 16 | `moonwitness/architecture-diagram-pack/` |
+| device-mockup | 8 | `moonwitness/device-mockup-pack/` |
+| jurisdiction-locale | 16 | `moonwitness/jurisdiction-locale-pack/` |
+| cinematic-hero | 12 | `moonwitness/cinematic-hero-pack/` |
+| runtime-motion | 12 | `moonwitness/runtime-motion-pack/` |
+| developer-distribution | 4 | `moonwitness/developer-pack/` |
 
-Developers should consume the smallest adequate PNG derivative when raster is required; otherwise consume SVG directly.
+## Developer entry points
+
+- `moonwitness/asset-packs.json`
+- `dist/assets.json`
+- `dist/assets.ts`
+- `dist/assets.css`
+- `dist/sprite.svg`
