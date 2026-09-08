@@ -24,6 +24,9 @@ function deliveryFile(pathname) {
 
 const dist = JSON.parse(await readFile(path.join(root, "dist/assets.json"), "utf8"));
 const catalog = JSON.parse(await readFile(path.join(root, "showcase/catalog.json"), "utf8"));
+if (catalog.version !== dist.version) {
+  throw new Error(`Showcase catalog version ${catalog.version} does not match registry ${dist.version}`);
+}
 const allFiles = await walk("moonwitness");
 const actual = allFiles.filter(deliveryFile).sort();
 
