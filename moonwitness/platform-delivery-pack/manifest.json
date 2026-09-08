@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Platform Delivery Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 8,
+  "root": "svg",
+  "assets": [
+    {
+      "id": "splash-screen",
+      "width": 1242,
+      "height": 2688
+    },
+    {
+      "id": "app-store-banner",
+      "width": 1024,
+      "height": 512
+    },
+    {
+      "id": "launcher-tile",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "adaptive-foreground",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "adaptive-background",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "windows-tile",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "pwa-install-card",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": "loading-splash",
+      "width": 1080,
+      "height": 1920
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Onboarding & Tutorial Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 8,
+  "root": "svg",
+  "assets": [
+    "welcome",
+    "connect-sources",
+    "create-case",
+    "correlate-evidence",
+    "review-findings",
+    "ai-workspace",
+    "join-community",
+    "responsible-investigation"
+  ]
+}
