@@ -1,13 +1,104 @@
 {
-  "schemaVersion": 1,
-  "rule": "Semantic domains are not repository identities. Visual consumers resolve each domain through its canonical owner and preserve qualified references.",
+  "schemaVersion": 2,
+  "rule": "Semantic domains are not repository identities. Visual consumers resolve qualified references through this canonical owner contract; identifier-kind rules provide graph semantics without consumer-side prefix hardcoding.",
   "domains": [
-    {"domain":"STORY","repository":"rocksoul-mftl","prefix":"mftl:","resource":"case"},
-    {"domain":"EVENT","repository":"rocksoul-legend","prefix":"legend:","resource":"event"},
-    {"domain":"PERSON","repository":"rocksoul-superhero","prefix":"superhero:","resource":"person"},
-    {"domain":"TEXT","repository":"rocksoul-rgbl","prefix":"rgbl:","resource":"rgbl"},
-    {"domain":"LAW","repository":"rocksoul-aws","prefix":"aws:","resource":"aws"},
-    {"domain":"PERSPECTIVE","repository":"rocksoul-jizz","prefix":"jizz:","resource":"perspective"}
+    {
+      "domain": "STORY",
+      "label": "Story",
+      "repository": "rocksoul-mftl",
+      "prefix": "mftl:",
+      "resource": "case",
+      "nodeKind": "story",
+      "iconAssetId": "case",
+      "idKinds": {
+        "SOURCE": "source",
+        "CLAIM": "claim",
+        "EVIDENCE": "evidence",
+        "CAND": "story",
+        "MYTH": "story",
+        "ENTITY": "story"
+      },
+      "defaultKind": "story"
+    },
+    {
+      "domain": "EVENT",
+      "label": "Event",
+      "repository": "rocksoul-legend",
+      "prefix": "legend:",
+      "resource": "event",
+      "nodeKind": "event",
+      "iconAssetId": "event",
+      "idKinds": {
+        "EVT": "event",
+        "PLC": "location",
+        "SRC": "source",
+        "CLM": "claim",
+        "EVD": "evidence",
+        "REL": "event",
+        "ART": "event"
+      },
+      "defaultKind": "event"
+    },
+    {
+      "domain": "PERSON",
+      "label": "Person",
+      "repository": "rocksoul-superhero",
+      "prefix": "superhero:",
+      "resource": "person",
+      "nodeKind": "person",
+      "iconAssetId": "person",
+      "idKinds": {
+        "PER": "person",
+        "SRC": "source",
+        "CLM": "claim",
+        "EVD": "evidence",
+        "REL": "person"
+      },
+      "defaultKind": "person"
+    },
+    {
+      "domain": "TEXT",
+      "label": "Text",
+      "repository": "rocksoul-rgbl",
+      "prefix": "rgbl:",
+      "resource": "rgbl",
+      "nodeKind": "text",
+      "iconAssetId": "rgbl",
+      "idKinds": {},
+      "defaultKind": "text"
+    },
+    {
+      "domain": "LAW",
+      "label": "Law",
+      "repository": "rocksoul-aws",
+      "prefix": "aws:",
+      "resource": "aws",
+      "nodeKind": "law",
+      "iconAssetId": "aws",
+      "idKinds": {},
+      "defaultKind": "law"
+    },
+    {
+      "domain": "PERSPECTIVE",
+      "label": "Perspective",
+      "repository": "rocksoul-jizz",
+      "prefix": "jizz:",
+      "resource": "perspective",
+      "nodeKind": "case",
+      "iconAssetId": "perspective",
+      "idKinds": {},
+      "defaultKind": "case"
+    }
   ],
-  "relationshipLayer": {"domain":"RELATIONSHIP","repository":"rocksoul-correlation","prefix":"correlation:","resource":"correlation"}
+  "relationshipLayer": {
+    "domain": "RELATIONSHIP",
+    "label": "Relationship",
+    "repository": "rocksoul-correlation",
+    "prefix": "correlation:",
+    "resource": "correlation",
+    "nodeKind": "case",
+    "iconAssetId": "correlation",
+    "idKinds": {},
+    "defaultKind": "case"
+  }
 }
