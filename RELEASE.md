@@ -1,27 +1,47 @@
-# MoonWitness × Rocksoul — Asset Packs v1.1.0
+# MoonWitness × Rocksoul — Repository Release v1.2.0
 
 **Release date:** 2026-09-08  
 **Release branch:** `main`  
-**Repository acceptance:** PASSED
+**Canonical design tool:** Penpot  
+**Canonical editable format:** SVG
 
-v1.1.0 expands the v1.0 design-source release into a broader production asset library.
+## Scope
 
-## Included asset packs
+v1.2.0 completes the production asset-pack layer. Every new pack is shipped as individual SVG assets with generated PNG derivatives and machine-readable manifests; developers do not need to crop or slice atlas posters.
 
-- **44** product icon SVGs
-- **20** dashboard widget SVGs
-- **16** data-viz SVG components
-- **8** hero/background vector sources
-- **12** product-state illustration SVGs
-- **6** animated SVG motion references
-- **10** procedural SFX cues with generated WAV + OGG delivery formats
+## New pack families
 
-The existing brand system, v1 raster/vector baseline, authenticated v2 application surfaces, Penpot package, and release automation remain included.
+- Graph Vector Pack — 10
+- Badge / Status Pack — 12
+- Source / File-Type Pack — 15
+- Geospatial / Map Pack — 15
+- Cursor / Interaction Pack — 17
+- Persona / Avatar Pack — 9 SVGs + 36 sized PNGs
+- Social Campaign Pack — 8
+- Platform Delivery Pack — 8
+- Onboarding / Tutorial Pack — 8
+- Document / Report Pack — 9
+- Notification / Email Pack — 8
+- Editorial Image Pack — 6
 
-## Contracts
+## Expanded packs
 
-Canonical graphics remain vector-first. SVG sources may not embed raster payloads. Motion must provide reduced-motion fallbacks. SFX must be optional and never act as the only semantic alert channel.
+- Motion Pack — 12 animated SVGs
+- SFX Pack — 14 deterministic cues in WAV + OGG
 
-## External verification
+## Consumption contract
 
-Live Penpot native-component/prototype/accessibility inspection remains manual design-workspace verification and is not fabricated by repository CI.
+Use `moonwitness/asset-packs.json` as the global index. SVG is canonical. PNG is generated. See `docs/ASSET-CONSUMPTION.md`.
+
+## Release acceptance
+
+Release Gate must:
+1. validate every canonical SVG;
+2. validate every pack manifest count;
+3. map every generated PNG back to an SVG source;
+4. regenerate secondary PNG derivatives with zero diff;
+5. regenerate brand derivatives with zero diff;
+6. regenerate SFX with zero diff;
+7. pass Penpot source/package checks.
+
+Live Penpot workspace verification remains a separate manual design-workspace gate.
