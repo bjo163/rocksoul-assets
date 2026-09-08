@@ -9,6 +9,7 @@ const read=(p)=>readFile(path.join(root,p),"utf8");
 const version=(await read("VERSION")).trim();
 const dist=JSON.parse(await read("dist/assets.json"));
 const catalog=JSON.parse(await read("showcase/catalog.json"));
+const packIndex=JSON.parse(await read("moonwitness/asset-packs.json"));
 
 const deliveryFilesLabel=Number(dist.coverage.deliveryFiles).toLocaleString("en-US");
 
@@ -30,7 +31,7 @@ for(const [label,file,needle] of checks){
 
 if(catalog.version!==version) throw new Error("showcase/catalog.json version mismatch");
 if(dist.version!==version) throw new Error("dist/assets.json version mismatch");
-if(dist.coverage.packFamilies!==42) throw new Error("expected 42 pack families");
+if(dist.coverage.packFamilies!==packIndex.packs.length) throw new Error(`dist pack family count ${dist.coverage.packFamilies} does not match source registry ${packIndex.packs.length}`);
 if(dist.coverage.coveragePercent!==100||dist.coverage.missingDeliveryFiles!==0){
   throw new Error("showcase coverage must be 100%");
 }
