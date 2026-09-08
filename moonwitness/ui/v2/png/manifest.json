@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "packId": "application-screens",
+  "pack": "MoonWitness Application Screen Preview Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 12,
+  "outputs": [
+    {
+      "source": "moonwitness/ui/v2/17-dashboard.svg",
+      "path": "moonwitness/ui/v2/png/17-dashboard.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/18-command-palette.svg",
+      "path": "moonwitness/ui/v2/png/18-command-palette.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/19-notifications.svg",
+      "path": "moonwitness/ui/v2/png/19-notifications.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/20-kanban.svg",
+      "path": "moonwitness/ui/v2/png/20-kanban.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/21-calendar.svg",
+      "path": "moonwitness/ui/v2/png/21-calendar.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/22-chat.svg",
+      "path": "moonwitness/ui/v2/png/22-chat.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/23-ai-workspace.svg",
+      "path": "moonwitness/ui/v2/png/23-ai-workspace.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/24-resources.svg",
+      "path": "moonwitness/ui/v2/png/24-resources.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/25-profile-settings.svg",
+      "path": "moonwitness/ui/v2/png/25-profile-settings.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/26-authorization.svg",
+      "path": "moonwitness/ui/v2/png/26-authorization.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/27-system-states.svg",
+      "path": "moonwitness/ui/v2/png/27-system-states.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/application-shell.svg",
+      "path": "moonwitness/ui/v2/png/application-shell.png"
+    }
+  ]
+}

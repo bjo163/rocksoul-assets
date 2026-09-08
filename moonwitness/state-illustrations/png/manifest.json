@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "packId": "state-illustrations",
+  "pack": "MoonWitness State Illustration Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 12,
+  "outputs": [
+    {
+      "source": "moonwitness/state-illustrations/svg/ai-unavailable.svg",
+      "path": "moonwitness/state-illustrations/png/ai-unavailable.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/empty-search.svg",
+      "path": "moonwitness/state-illustrations/png/empty-search.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/error-state.svg",
+      "path": "moonwitness/state-illustrations/png/error-state.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/forbidden-access.svg",
+      "path": "moonwitness/state-illustrations/png/forbidden-access.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/keep-investigating.svg",
+      "path": "moonwitness/state-illustrations/png/keep-investigating.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/loading.svg",
+      "path": "moonwitness/state-illustrations/png/loading.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/no-cases.svg",
+      "path": "moonwitness/state-illustrations/png/no-cases.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/notification-empty.svg",
+      "path": "moonwitness/state-illustrations/png/notification-empty.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/offline-backend.svg",
+      "path": "moonwitness/state-illustrations/png/offline-backend.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/review-complete.svg",
+      "path": "moonwitness/state-illustrations/png/review-complete.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/source-missing.svg",
+      "path": "moonwitness/state-illustrations/png/source-missing.png"
+    },
+    {
+      "source": "moonwitness/state-illustrations/svg/upload-success.svg",
+      "path": "moonwitness/state-illustrations/png/upload-success.png"
+    }
+  ]
+}

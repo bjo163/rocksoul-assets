@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "jurisdiction-locale",
   "pack": "MoonWitness Jurisdiction & Locale Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 16,
   "outputs": [
     {
       "source": "moonwitness/jurisdiction-locale-pack/svg/consent-region.svg",

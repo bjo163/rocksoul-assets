@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "document-report",
   "pack": "MoonWitness Document & Report Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 9,
   "outputs": [
     {
       "source": "moonwitness/document-report-pack/svg/appendix-separator.svg",

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "cursor-interaction",
   "pack": "MoonWitness Cursor & Interaction Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 17,
   "outputs": [
     {
       "source": "moonwitness/cursor-pack/svg/annotate.svg",

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "data-grid",
   "pack": "MoonWitness Data Grid & Table Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 16,
   "outputs": [
     {
       "source": "moonwitness/data-grid-pack/svg/bulk-select.svg",

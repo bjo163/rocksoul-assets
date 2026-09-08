@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "source-file",
   "pack": "MoonWitness Source & File-Type Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 15,
   "outputs": [
     {
       "source": "moonwitness/source-file-pack/svg/archive.svg",

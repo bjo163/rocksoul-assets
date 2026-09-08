@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "evidence-media",
   "pack": "MoonWitness Evidence Media & Annotation Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 24,
   "outputs": [
     {
       "source": "moonwitness/evidence-media-pack/svg/annotation-arrow.svg",

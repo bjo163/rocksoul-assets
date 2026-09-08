@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "texture-material",
   "pack": "MoonWitness Texture & Material Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 12,
   "outputs": [
     {
       "source": "moonwitness/texture-material-pack/svg/archive-paper.svg",

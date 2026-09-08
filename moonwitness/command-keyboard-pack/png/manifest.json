@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "command-keyboard",
   "pack": "MoonWitness Command & Keyboard Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 14,
   "outputs": [
     {
       "source": "moonwitness/command-keyboard-pack/svg/key-command.svg",

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "packId": "dashboard",
+  "pack": "MoonWitness Dashboard Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 20,
+  "outputs": [
+    {
+      "source": "moonwitness/dashboard-pack/widgets/ai-summary.svg",
+      "path": "moonwitness/dashboard-pack/png/ai-summary.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/audit-log.svg",
+      "path": "moonwitness/dashboard-pack/png/audit-log.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/backend-status.svg",
+      "path": "moonwitness/dashboard-pack/png/backend-status.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/bar-chart.svg",
+      "path": "moonwitness/dashboard-pack/png/bar-chart.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/case-progress.svg",
+      "path": "moonwitness/dashboard-pack/png/case-progress.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/correlation-insight.svg",
+      "path": "moonwitness/dashboard-pack/png/correlation-insight.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/donut-chart.svg",
+      "path": "moonwitness/dashboard-pack/png/donut-chart.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/empty-widget.svg",
+      "path": "moonwitness/dashboard-pack/png/empty-widget.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/evidence-timeline.svg",
+      "path": "moonwitness/dashboard-pack/png/evidence-timeline.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/kpi-stat.svg",
+      "path": "moonwitness/dashboard-pack/png/kpi-stat.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/line-trend.svg",
+      "path": "moonwitness/dashboard-pack/png/line-trend.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/mini-calendar.svg",
+      "path": "moonwitness/dashboard-pack/png/mini-calendar.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/mini-kanban.svg",
+      "path": "moonwitness/dashboard-pack/png/mini-kanban.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/notifications.svg",
+      "path": "moonwitness/dashboard-pack/png/notifications.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/profile-summary.svg",
+      "path": "moonwitness/dashboard-pack/png/profile-summary.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/provenance-chain.svg",
+      "path": "moonwitness/dashboard-pack/png/provenance-chain.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/quick-actions.svg",
+      "path": "moonwitness/dashboard-pack/png/quick-actions.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/recent-cases.svg",
+      "path": "moonwitness/dashboard-pack/png/recent-cases.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/search-results.svg",
+      "path": "moonwitness/dashboard-pack/png/search-results.png"
+    },
+    {
+      "source": "moonwitness/dashboard-pack/widgets/world-map.svg",
+      "path": "moonwitness/dashboard-pack/png/world-map.png"
+    }
+  ]
+}

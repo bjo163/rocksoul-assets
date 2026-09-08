@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "graph-vector",
   "pack": "MoonWitness Graph Vector Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 10,
   "outputs": [
     {
       "source": "moonwitness/graph-pack/svg/area-chart.svg",

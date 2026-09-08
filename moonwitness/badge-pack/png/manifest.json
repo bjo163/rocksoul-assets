@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "badge-status",
   "pack": "MoonWitness Badge & Status Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 12,
   "outputs": [
     {
       "source": "moonwitness/badge-pack/svg/archived.svg",

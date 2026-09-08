@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "architecture-diagram",
   "pack": "MoonWitness Architecture & Diagram Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 16,
   "outputs": [
     {
       "source": "moonwitness/architecture-diagram-pack/svg/api-node.svg",

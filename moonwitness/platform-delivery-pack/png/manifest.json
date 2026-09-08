@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "platform-delivery",
   "pack": "MoonWitness Platform Delivery Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 8,
   "outputs": [
     {
       "source": "moonwitness/platform-delivery-pack/svg/adaptive-background.svg",

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "kanban-workflow",
   "pack": "MoonWitness Kanban Workflow Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 18,
   "outputs": [
     {
       "source": "moonwitness/kanban-pack/svg/assignee-chip.svg",

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "chat-collaboration",
   "pack": "MoonWitness Chat & Collaboration Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 24,
   "outputs": [
     {
       "source": "moonwitness/chat-pack/svg/attachment-audio.svg",

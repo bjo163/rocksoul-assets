@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "theme-accessibility",
   "pack": "MoonWitness Theme & Accessibility Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 12,
   "outputs": [
     {
       "source": "moonwitness/theme-accessibility-pack/svg/color-safe-error.svg",

@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
+  "packId": "notification",
   "pack": "MoonWitness Notification & Email Visual Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
+  "sourceCount": 8,
   "outputs": [
     {
       "source": "moonwitness/notification-pack/svg/case-update-banner.svg",
