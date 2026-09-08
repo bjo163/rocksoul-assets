@@ -1,4 +1,4 @@
-# v1.0.0 Release Checklist
+# Release Checklist
 
 ## Repository sources
 
@@ -40,3 +40,17 @@ These checks are intentionally **not** claimed by repository CI:
 - [ ] live contrast/accessibility review
 
 They do not indicate missing release assets; they are post-source design-workspace verification.
+
+
+## v1.1.0 Asset Packs
+
+- [x] 44 product icon SVGs
+- [x] 20 dashboard widget SVGs
+- [x] 16 data-viz SVG components
+- [x] 8 hero/background vector sources
+- [x] 12 state illustration SVGs
+- [x] 6 animated SVG motion references
+- [x] 10 procedural SFX cues
+- [x] generated SFX WAV/OGG manifest
+- [x] pack manifests registered in root manifest
+- [x] asset validator enforces pack counts and vector-native SVG sources
