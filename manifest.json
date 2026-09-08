@@ -156,5 +156,15 @@
     "screens": "moonwitness/ui/v2/screens.json",
     "states": "moonwitness/ui/v2/states.json",
     "penpotContract": "penpot/application-shell/application-shell.json"
+  },
+  "release": {
+    "version": "1.0.0",
+    "name": "MoonWitness Asset System v1.0.0",
+    "date": "2026-09-08",
+    "status": "released",
+    "branch": "main",
+    "sourceCommit": "d293b0f1190fee3d0079aada222bcb2a255dcde6",
+    "repositoryAcceptance": "passed",
+    "livePenpotVerification": "manual-follow-up"
   }
 }

@@ -6,6 +6,14 @@ Visual and design-source repository for the **MoonWitness × Rocksoul** ecosyste
 
 This repository stores canonical brand vectors, immutable raster baselines, editable SVG reconstructions, Penpot-ready design tokens, primitives, component contracts, product-shell references, and handoff specifications. Application source code belongs in the MoonWitness product repository.
 
+## Release
+
+**Current repository release:** `v1.0.0` — 2026-09-08
+
+Release acceptance covers canonical SVG/raster assets, v1 raster→vector pairing, v2 application surfaces, generated brand delivery formats, Penpot package generation/validation, reproducible dependency installation, and CI source contracts. Live Penpot native-component/prototype inspection is tracked separately as a manual design-workspace verification and is not represented as completed by the repository release.
+
+See `RELEASE.md`, `CHANGELOG.md`, and `docs/RELEASE-CHECKLIST.md`.
+
 ## Design source of truth
 
 **Canonical design tool:** Penpot  
