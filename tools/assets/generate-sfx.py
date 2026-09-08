@@ -29,7 +29,7 @@ for name,freqs,dur,amp,decay in SOUNDS:
     with wave.open(str(wav),"wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(b"".join(frames))
     ogg=OUT/f"{name}.ogg"
-    subprocess.run(["ffmpeg","-y","-loglevel","error","-i",str(wav),"-c:a","libvorbis","-q:a","4",str(ogg)],check=True)
+    subprocess.run(["ffmpeg","-y","-loglevel","error","-i",str(wav),"-fflags","+bitexact","-flags:a","+bitexact","-map_metadata","-1","-serial_offset","0","-c:a","libvorbis","-q:a","4",str(ogg)],check=True)
     manifest["sounds"].append({"id":name,"wav":f"generated/{name}.wav","ogg":f"generated/{name}.ogg","durationMs":round(dur*1000)})
 (OUT/"manifest.json").write_text(json.dumps(manifest,indent=2)+"\n")
 print(json.dumps(manifest,indent=2))
