@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Form Controls Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/form-controls-pack/svg/checkbox-off.svg",
+      "path": "moonwitness/form-controls-pack/png/checkbox-off.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/checkbox-on.svg",
+      "path": "moonwitness/form-controls-pack/png/checkbox-on.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/combobox.svg",
+      "path": "moonwitness/form-controls-pack/png/combobox.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/date-input.svg",
+      "path": "moonwitness/form-controls-pack/png/date-input.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/file-input.svg",
+      "path": "moonwitness/form-controls-pack/png/file-input.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/input-default.svg",
+      "path": "moonwitness/form-controls-pack/png/input-default.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/input-disabled.svg",
+      "path": "moonwitness/form-controls-pack/png/input-disabled.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/input-error.svg",
+      "path": "moonwitness/form-controls-pack/png/input-error.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/input-focus.svg",
+      "path": "moonwitness/form-controls-pack/png/input-focus.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/input-success.svg",
+      "path": "moonwitness/form-controls-pack/png/input-success.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/radio-off.svg",
+      "path": "moonwitness/form-controls-pack/png/radio-off.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/radio-on.svg",
+      "path": "moonwitness/form-controls-pack/png/radio-on.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/readonly.svg",
+      "path": "moonwitness/form-controls-pack/png/readonly.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/search-input.svg",
+      "path": "moonwitness/form-controls-pack/png/search-input.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/select.svg",
+      "path": "moonwitness/form-controls-pack/png/select.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/slider.svg",
+      "path": "moonwitness/form-controls-pack/png/slider.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/textarea.svg",
+      "path": "moonwitness/form-controls-pack/png/textarea.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/toggle-off.svg",
+      "path": "moonwitness/form-controls-pack/png/toggle-off.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/toggle-on.svg",
+      "path": "moonwitness/form-controls-pack/png/toggle-on.png"
+    },
+    {
+      "source": "moonwitness/form-controls-pack/svg/validation-inline.svg",
+      "path": "moonwitness/form-controls-pack/png/validation-inline.png"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Authorization & Security Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/security-pack/svg/access-approved.svg",
+      "path": "moonwitness/security-pack/png/access-approved.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/access-rejected.svg",
+      "path": "moonwitness/security-pack/png/access-rejected.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/access-request.svg",
+      "path": "moonwitness/security-pack/png/access-request.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/api-key.svg",
+      "path": "moonwitness/security-pack/png/api-key.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/audit-lock.svg",
+      "path": "moonwitness/security-pack/png/audit-lock.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/device-trusted.svg",
+      "path": "moonwitness/security-pack/png/device-trusted.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/device-untrusted.svg",
+      "path": "moonwitness/security-pack/png/device-untrusted.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/mfa.svg",
+      "path": "moonwitness/security-pack/png/mfa.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/passkey.svg",
+      "path": "moonwitness/security-pack/png/passkey.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/permission-denied.svg",
+      "path": "moonwitness/security-pack/png/permission-denied.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/permission-granted.svg",
+      "path": "moonwitness/security-pack/png/permission-granted.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/recovery-code.svg",
+      "path": "moonwitness/security-pack/png/recovery-code.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/role-admin.svg",
+      "path": "moonwitness/security-pack/png/role-admin.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/role-researcher.svg",
+      "path": "moonwitness/security-pack/png/role-researcher.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/role-reviewer.svg",
+      "path": "moonwitness/security-pack/png/role-reviewer.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/security-alert.svg",
+      "path": "moonwitness/security-pack/png/security-alert.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/session-active.svg",
+      "path": "moonwitness/security-pack/png/session-active.png"
+    },
+    {
+      "source": "moonwitness/security-pack/svg/session-expired.svg",
+      "path": "moonwitness/security-pack/png/session-expired.png"
+    }
+  ]
+}

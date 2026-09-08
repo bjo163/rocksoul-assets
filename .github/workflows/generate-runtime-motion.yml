@@ -1,0 +1,41 @@
+name: Generate Runtime Motion
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, feat/complete-visual-language-v1.3]
+    paths:
+      - "moonwitness/runtime-motion-pack/**"
+      - "tools/assets/generate-runtime-motion.py"
+      - ".github/workflows/generate-runtime-motion.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --disable-pip-version-check pillow==10.4.0
+      - name: Generate APNG + WebM + Lottie
+        run: python tools/assets/generate-runtime-motion.py
+      - name: Commit runtime derivatives
+        run: |
+          git config user.name "moonwitness-motion-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add moonwitness/runtime-motion-pack/png moonwitness/runtime-motion-pack/webm moonwitness/runtime-motion-pack/lottie moonwitness/runtime-motion-pack/generated-manifest.json
+          if git diff --cached --quiet; then
+            echo "No runtime motion changes."
+          else
+            git commit -m "build(motion): generate APNG WebM and Lottie derivatives"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push
+          fi

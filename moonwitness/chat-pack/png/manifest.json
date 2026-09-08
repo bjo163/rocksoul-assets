@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Chat & Collaboration Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/chat-pack/svg/attachment-audio.svg",
+      "path": "moonwitness/chat-pack/png/attachment-audio.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/attachment-file.svg",
+      "path": "moonwitness/chat-pack/png/attachment-file.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/attachment-image.svg",
+      "path": "moonwitness/chat-pack/png/attachment-image.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/attachment-link.svg",
+      "path": "moonwitness/chat-pack/png/attachment-link.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/channel-header.svg",
+      "path": "moonwitness/chat-pack/png/channel-header.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/composer-default.svg",
+      "path": "moonwitness/chat-pack/png/composer-default.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/composer-disabled.svg",
+      "path": "moonwitness/chat-pack/png/composer-disabled.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/delivery-delivered.svg",
+      "path": "moonwitness/chat-pack/png/delivery-delivered.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/delivery-read.svg",
+      "path": "moonwitness/chat-pack/png/delivery-read.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/delivery-sent.svg",
+      "path": "moonwitness/chat-pack/png/delivery-sent.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/encrypted-message.svg",
+      "path": "moonwitness/chat-pack/png/encrypted-message.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/mention.svg",
+      "path": "moonwitness/chat-pack/png/mention.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/message-other.svg",
+      "path": "moonwitness/chat-pack/png/message-other.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/message-self.svg",
+      "path": "moonwitness/chat-pack/png/message-self.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/message-system.svg",
+      "path": "moonwitness/chat-pack/png/message-system.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/moderator-note.svg",
+      "path": "moonwitness/chat-pack/png/moderator-note.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/presence-away.svg",
+      "path": "moonwitness/chat-pack/png/presence-away.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/presence-offline.svg",
+      "path": "moonwitness/chat-pack/png/presence-offline.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/presence-online.svg",
+      "path": "moonwitness/chat-pack/png/presence-online.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/quote-reply.svg",
+      "path": "moonwitness/chat-pack/png/quote-reply.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/reaction.svg",
+      "path": "moonwitness/chat-pack/png/reaction.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/thread-reply.svg",
+      "path": "moonwitness/chat-pack/png/thread-reply.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/typing-indicator.svg",
+      "path": "moonwitness/chat-pack/png/typing-indicator.png"
+    },
+    {
+      "source": "moonwitness/chat-pack/svg/unread-divider.svg",
+      "path": "moonwitness/chat-pack/png/unread-divider.png"
+    }
+  ]
+}

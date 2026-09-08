@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.2.0",
+  "version": "1.3.0",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "packs": [
@@ -98,6 +98,116 @@
       "id": "editorial",
       "manifest": "moonwitness/editorial-pack/manifest.json",
       "count": 6
+    },
+    {
+      "id": "evidence-media",
+      "manifest": "moonwitness/evidence-media-pack/manifest.json",
+      "count": 24
+    },
+    {
+      "id": "correlation-semantics",
+      "manifest": "moonwitness/correlation-semantics-pack/manifest.json",
+      "count": 24
+    },
+    {
+      "id": "kanban-workflow",
+      "manifest": "moonwitness/kanban-pack/manifest.json",
+      "count": 18
+    },
+    {
+      "id": "calendar-temporal",
+      "manifest": "moonwitness/calendar-pack/manifest.json",
+      "count": 16
+    },
+    {
+      "id": "chat-collaboration",
+      "manifest": "moonwitness/chat-pack/manifest.json",
+      "count": 24
+    },
+    {
+      "id": "ai-workspace",
+      "manifest": "moonwitness/ai-workspace-pack/manifest.json",
+      "count": 18
+    },
+    {
+      "id": "authorization-security",
+      "manifest": "moonwitness/security-pack/manifest.json",
+      "count": 18
+    },
+    {
+      "id": "data-grid",
+      "manifest": "moonwitness/data-grid-pack/manifest.json",
+      "count": 16
+    },
+    {
+      "id": "form-controls",
+      "manifest": "moonwitness/form-controls-pack/manifest.json",
+      "count": 20
+    },
+    {
+      "id": "theme-accessibility",
+      "manifest": "moonwitness/theme-accessibility-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "privacy-redaction",
+      "manifest": "moonwitness/privacy-redaction-pack/manifest.json",
+      "count": 16
+    },
+    {
+      "id": "evidence-integrity",
+      "manifest": "moonwitness/integrity-pack/manifest.json",
+      "count": 16
+    },
+    {
+      "id": "export-seal",
+      "manifest": "moonwitness/export-seal-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "rocksoul-character",
+      "manifest": "moonwitness/rocksoul-character-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "command-keyboard",
+      "manifest": "moonwitness/command-keyboard-pack/manifest.json",
+      "count": 14
+    },
+    {
+      "id": "texture-material",
+      "manifest": "moonwitness/texture-material-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "architecture-diagram",
+      "manifest": "moonwitness/architecture-diagram-pack/manifest.json",
+      "count": 16
+    },
+    {
+      "id": "device-mockup",
+      "manifest": "moonwitness/device-mockup-pack/manifest.json",
+      "count": 8
+    },
+    {
+      "id": "jurisdiction-locale",
+      "manifest": "moonwitness/jurisdiction-locale-pack/manifest.json",
+      "count": 16
+    },
+    {
+      "id": "cinematic-hero",
+      "manifest": "moonwitness/cinematic-hero-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "runtime-motion",
+      "manifest": "moonwitness/runtime-motion-pack/manifest.json",
+      "count": 12
+    },
+    {
+      "id": "developer-distribution",
+      "manifest": "moonwitness/developer-pack/manifest.json",
+      "count": 4
     }
   ]
 }

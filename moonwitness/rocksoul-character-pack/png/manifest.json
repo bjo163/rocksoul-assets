@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Rocksoul Character Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/ai-companion.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/ai-companion.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/ai-companion.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/ai-companion.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/ai-companion.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/ai-companion.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/community.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/community.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/community.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/community.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/community.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/community.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/connecting.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/connecting.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/connecting.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/connecting.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/connecting.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/connecting.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/empty.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/empty.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/empty.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/empty.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/empty.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/empty.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/investigating.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/investigating.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/investigating.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/investigating.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/investigating.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/investigating.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/legal-boundary.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/legal-boundary.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/legal-boundary.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/legal-boundary.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/legal-boundary.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/legal-boundary.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/observing.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/observing.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/observing.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/observing.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/observing.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/observing.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/offline.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/offline.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/offline.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/offline.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/offline.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/offline.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/reading.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/reading.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/reading.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/reading.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/reading.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/reading.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/success.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/success.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/success.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/success.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/success.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/success.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/thinking.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/thinking.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/thinking.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/thinking.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/thinking.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/thinking.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/warning.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/128/warning.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/warning.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/256/warning.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "moonwitness/rocksoul-character-pack/svg/warning.svg",
+      "path": "moonwitness/rocksoul-character-pack/png/512/warning.png",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

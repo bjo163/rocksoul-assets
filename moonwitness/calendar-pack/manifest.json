@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Calendar & Temporal Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 16,
+  "root": "svg",
+  "assets": [
+    "event-default",
+    "event-investigation",
+    "event-review",
+    "event-legal",
+    "event-community",
+    "deadline",
+    "recurrence",
+    "timezone",
+    "duration",
+    "conflict",
+    "date-range",
+    "all-day",
+    "today-marker",
+    "availability",
+    "month-cell",
+    "agenda-row"
+  ]
+}

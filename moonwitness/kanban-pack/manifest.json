@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Kanban Workflow Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 18,
+  "root": "svg",
+  "assets": [
+    "card-default",
+    "card-priority",
+    "card-blocked",
+    "card-review",
+    "card-complete",
+    "wip-limit",
+    "column-todo",
+    "column-progress",
+    "column-review",
+    "column-done",
+    "drag-placeholder",
+    "drop-target",
+    "assignee-chip",
+    "due-date-chip",
+    "sla-chip",
+    "blocker-chip",
+    "priority-chip",
+    "progress-meter"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Data Grid & Table Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 16,
+  "root": "svg",
+  "assets": [
+    "table-default",
+    "table-compact",
+    "row-selected",
+    "row-hover",
+    "row-disabled",
+    "sort-asc",
+    "sort-desc",
+    "filter-active",
+    "column-resize",
+    "column-pin",
+    "column-hidden",
+    "pagination",
+    "bulk-select",
+    "density",
+    "inline-edit",
+    "table-empty"
+  ]
+}

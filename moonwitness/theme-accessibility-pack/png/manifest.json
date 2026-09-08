@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Theme & Accessibility Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/color-safe-error.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/color-safe-error.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/color-safe-success.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/color-safe-success.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/color-safe-warning.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/color-safe-warning.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/contrast-check.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/contrast-check.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/focus-ring.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/focus-ring.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/keyboard-mode.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/keyboard-mode.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/large-text.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/large-text.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/reduced-motion.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/reduced-motion.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/screen-reader.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/screen-reader.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/theme-dark.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/theme-dark.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/theme-high-contrast.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/theme-high-contrast.png"
+    },
+    {
+      "source": "moonwitness/theme-accessibility-pack/svg/theme-light.svg",
+      "path": "moonwitness/theme-accessibility-pack/png/theme-light.png"
+    }
+  ]
+}

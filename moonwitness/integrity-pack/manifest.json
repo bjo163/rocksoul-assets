@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Evidence Integrity & Chain-of-Custody Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 16,
+  "root": "svg",
+  "assets": [
+    "sha256",
+    "checksum-ok",
+    "checksum-fail",
+    "timestamp-seal",
+    "digital-signature",
+    "custody-entry",
+    "custody-transfer",
+    "immutable-record",
+    "provenance-verified",
+    "provenance-broken",
+    "source-authentic",
+    "source-unverified",
+    "tamper-alert",
+    "version-history",
+    "evidence-seal",
+    "integrity-score"
+  ]
+}

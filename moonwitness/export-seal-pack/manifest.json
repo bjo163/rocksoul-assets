@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Export & Evidence Seal Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 12,
+  "root": "svg",
+  "assets": [
+    "qr-citation",
+    "verified-stamp",
+    "reviewed-stamp",
+    "legal-stamp",
+    "watermark-public",
+    "watermark-confidential",
+    "print-crop-marks",
+    "signed-export",
+    "pdf-export",
+    "json-export",
+    "bundle-export",
+    "share-card"
+  ]
+}

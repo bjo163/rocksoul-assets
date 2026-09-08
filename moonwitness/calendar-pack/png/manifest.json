@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Calendar & Temporal Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/calendar-pack/svg/agenda-row.svg",
+      "path": "moonwitness/calendar-pack/png/agenda-row.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/all-day.svg",
+      "path": "moonwitness/calendar-pack/png/all-day.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/availability.svg",
+      "path": "moonwitness/calendar-pack/png/availability.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/conflict.svg",
+      "path": "moonwitness/calendar-pack/png/conflict.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/date-range.svg",
+      "path": "moonwitness/calendar-pack/png/date-range.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/deadline.svg",
+      "path": "moonwitness/calendar-pack/png/deadline.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/duration.svg",
+      "path": "moonwitness/calendar-pack/png/duration.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/event-community.svg",
+      "path": "moonwitness/calendar-pack/png/event-community.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/event-default.svg",
+      "path": "moonwitness/calendar-pack/png/event-default.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/event-investigation.svg",
+      "path": "moonwitness/calendar-pack/png/event-investigation.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/event-legal.svg",
+      "path": "moonwitness/calendar-pack/png/event-legal.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/event-review.svg",
+      "path": "moonwitness/calendar-pack/png/event-review.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/month-cell.svg",
+      "path": "moonwitness/calendar-pack/png/month-cell.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/recurrence.svg",
+      "path": "moonwitness/calendar-pack/png/recurrence.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/timezone.svg",
+      "path": "moonwitness/calendar-pack/png/timezone.png"
+    },
+    {
+      "source": "moonwitness/calendar-pack/svg/today-marker.svg",
+      "path": "moonwitness/calendar-pack/png/today-marker.png"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness AI Workspace Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 18,
+  "root": "svg",
+  "assets": [
+    "ai-idle",
+    "ai-thinking",
+    "ai-streaming",
+    "ai-complete",
+    "ai-error",
+    "tool-call",
+    "tool-success",
+    "tool-failure",
+    "source-citation",
+    "retrieval-result",
+    "context-chip",
+    "confidence-chip",
+    "agent-chip",
+    "prompt-template",
+    "guardrail",
+    "human-review",
+    "token-meter",
+    "model-selector"
+  ]
+}

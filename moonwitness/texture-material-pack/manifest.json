@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Texture & Material Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 12,
+  "root": "svg",
+  "assets": [
+    "archive-paper",
+    "microfilm",
+    "scanner-lines",
+    "signal-noise",
+    "map-grid",
+    "glass-panel",
+    "carbon-grid",
+    "star-field",
+    "legal-paper",
+    "red-thread",
+    "data-matrix",
+    "lunar-grain"
+  ]
+}

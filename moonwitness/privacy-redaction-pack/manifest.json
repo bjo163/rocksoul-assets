@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Privacy & Redaction Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 16,
+  "root": "svg",
+  "assets": [
+    "redact-text",
+    "redact-image",
+    "blur-face",
+    "mask-identity",
+    "pii-email",
+    "pii-phone",
+    "pii-address",
+    "protected-witness",
+    "sealed-evidence",
+    "confidential",
+    "restricted",
+    "public-safe",
+    "redaction-review",
+    "reveal-authorized",
+    "privacy-warning",
+    "privacy-scope"
+  ]
+}

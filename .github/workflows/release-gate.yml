@@ -21,19 +21,9 @@ on:
       - "moonwitness/state-illustrations/**"
       - "moonwitness/motion/**"
       - "moonwitness/sfx/**"
-      - "moonwitness/graph-pack/**"
-      - "moonwitness/badge-pack/**"
-      - "moonwitness/source-file-pack/**"
-      - "moonwitness/geospatial-pack/**"
-      - "moonwitness/cursor-pack/**"
-      - "moonwitness/persona-pack/**"
-      - "moonwitness/social-campaign-pack/**"
-      - "moonwitness/platform-delivery-pack/**"
-      - "moonwitness/onboarding-pack/**"
-      - "moonwitness/document-report-pack/**"
-      - "moonwitness/notification-pack/**"
-      - "moonwitness/editorial-pack/**"
+      - "moonwitness/*-pack/**"
       - "moonwitness/asset-packs.json"
+      - "dist/**"
       - "tools/assets/**"
       - ".github/workflows/generate-sfx.yml"
   push:
@@ -56,19 +46,9 @@ on:
       - "moonwitness/state-illustrations/**"
       - "moonwitness/motion/**"
       - "moonwitness/sfx/**"
-      - "moonwitness/graph-pack/**"
-      - "moonwitness/badge-pack/**"
-      - "moonwitness/source-file-pack/**"
-      - "moonwitness/geospatial-pack/**"
-      - "moonwitness/cursor-pack/**"
-      - "moonwitness/persona-pack/**"
-      - "moonwitness/social-campaign-pack/**"
-      - "moonwitness/platform-delivery-pack/**"
-      - "moonwitness/onboarding-pack/**"
-      - "moonwitness/document-report-pack/**"
-      - "moonwitness/notification-pack/**"
-      - "moonwitness/editorial-pack/**"
+      - "moonwitness/*-pack/**"
       - "moonwitness/asset-packs.json"
+      - "dist/**"
       - "tools/assets/**"
       - ".github/workflows/generate-sfx.yml"
 
@@ -119,6 +99,28 @@ jobs:
         run: |
           python tools/assets/render-packs.py
           git diff --exit-code -- moonwitness
+
+      - name: Verify developer distribution
+        run: |
+          node tools/assets/build-dist.mjs
+          git diff --exit-code -- dist
+
+      - name: Verify runtime motion derivatives
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --disable-pip-version-check pillow==10.4.0
+          python tools/assets/generate-runtime-motion.py
+          git diff --exit-code -- moonwitness/runtime-motion-pack/png moonwitness/runtime-motion-pack/lottie moonwitness/runtime-motion-pack/generated-manifest.json
+          for file in moonwitness/runtime-motion-pack/webm/*.webm; do
+            codec="$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nw=1:nk=1 "$file")"
+            width="$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=nw=1:nk=1 "$file")"
+            height="$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=nw=1:nk=1 "$file")"
+            test "$codec" = "vp9"
+            test "$width" = "256"
+            test "$height" = "256"
+          done
+          git checkout -- moonwitness/runtime-motion-pack/webm
 
       - name: Verify generated SFX derivatives
         run: |

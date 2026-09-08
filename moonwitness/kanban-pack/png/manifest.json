@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Kanban Workflow Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/kanban-pack/svg/assignee-chip.svg",
+      "path": "moonwitness/kanban-pack/png/assignee-chip.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/blocker-chip.svg",
+      "path": "moonwitness/kanban-pack/png/blocker-chip.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/card-blocked.svg",
+      "path": "moonwitness/kanban-pack/png/card-blocked.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/card-complete.svg",
+      "path": "moonwitness/kanban-pack/png/card-complete.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/card-default.svg",
+      "path": "moonwitness/kanban-pack/png/card-default.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/card-priority.svg",
+      "path": "moonwitness/kanban-pack/png/card-priority.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/card-review.svg",
+      "path": "moonwitness/kanban-pack/png/card-review.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/column-done.svg",
+      "path": "moonwitness/kanban-pack/png/column-done.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/column-progress.svg",
+      "path": "moonwitness/kanban-pack/png/column-progress.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/column-review.svg",
+      "path": "moonwitness/kanban-pack/png/column-review.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/column-todo.svg",
+      "path": "moonwitness/kanban-pack/png/column-todo.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/drag-placeholder.svg",
+      "path": "moonwitness/kanban-pack/png/drag-placeholder.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/drop-target.svg",
+      "path": "moonwitness/kanban-pack/png/drop-target.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/due-date-chip.svg",
+      "path": "moonwitness/kanban-pack/png/due-date-chip.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/priority-chip.svg",
+      "path": "moonwitness/kanban-pack/png/priority-chip.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/progress-meter.svg",
+      "path": "moonwitness/kanban-pack/png/progress-meter.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/sla-chip.svg",
+      "path": "moonwitness/kanban-pack/png/sla-chip.png"
+    },
+    {
+      "source": "moonwitness/kanban-pack/svg/wip-limit.svg",
+      "path": "moonwitness/kanban-pack/png/wip-limit.png"
+    }
+  ]
+}

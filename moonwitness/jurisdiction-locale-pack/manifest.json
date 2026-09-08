@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Jurisdiction & Locale Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 16,
+  "root": "svg",
+  "assets": [
+    "jurisdiction-global",
+    "jurisdiction-national",
+    "jurisdiction-state",
+    "jurisdiction-local",
+    "jurisdiction-disputed",
+    "jurisdiction-cross-border",
+    "timezone-utc",
+    "timezone-local",
+    "locale-language",
+    "locale-region",
+    "legal-basis",
+    "governance-zone",
+    "data-residency",
+    "retention-policy",
+    "consent-region",
+    "cross-border-transfer"
+  ],
+  "dataDriven": true,
+  "flagIconsAvoided": true
+}

@@ -5,20 +5,9 @@ on:
   push:
     branches:
       - main
-      - feat/secondary-asset-packs-v1.1
+      - feat/complete-visual-language-v1.3
     paths:
-      - "moonwitness/graph-pack/**"
-      - "moonwitness/badge-pack/**"
-      - "moonwitness/source-file-pack/**"
-      - "moonwitness/geospatial-pack/**"
-      - "moonwitness/cursor-pack/**"
-      - "moonwitness/persona-pack/**"
-      - "moonwitness/social-campaign-pack/**"
-      - "moonwitness/platform-delivery-pack/**"
-      - "moonwitness/onboarding-pack/**"
-      - "moonwitness/document-report-pack/**"
-      - "moonwitness/notification-pack/**"
-      - "moonwitness/editorial-pack/**"
+      - "moonwitness/*-pack/**"
       - "tools/assets/render-packs.py"
       - ".github/workflows/generate-secondary-pack-raster.yml"
 

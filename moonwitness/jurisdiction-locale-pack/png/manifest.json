@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Jurisdiction & Locale Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/consent-region.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/consent-region.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/cross-border-transfer.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/cross-border-transfer.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/data-residency.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/data-residency.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/governance-zone.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/governance-zone.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-cross-border.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/jurisdiction-cross-border.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-disputed.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/jurisdiction-disputed.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-global.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/jurisdiction-global.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-local.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/jurisdiction-local.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-national.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/jurisdiction-national.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-state.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/jurisdiction-state.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/legal-basis.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/legal-basis.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/locale-language.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/locale-language.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/locale-region.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/locale-region.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/retention-policy.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/retention-policy.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/timezone-local.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/timezone-local.png"
+    },
+    {
+      "source": "moonwitness/jurisdiction-locale-pack/svg/timezone-utc.svg",
+      "path": "moonwitness/jurisdiction-locale-pack/png/timezone-utc.png"
+    }
+  ]
+}

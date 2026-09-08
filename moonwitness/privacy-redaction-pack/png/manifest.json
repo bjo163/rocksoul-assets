@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Privacy & Redaction Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/blur-face.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/blur-face.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/confidential.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/confidential.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/mask-identity.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/mask-identity.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/pii-address.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/pii-address.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/pii-email.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/pii-email.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/pii-phone.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/pii-phone.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/privacy-scope.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/privacy-scope.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/privacy-warning.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/privacy-warning.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/protected-witness.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/protected-witness.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/public-safe.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/public-safe.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/redact-image.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/redact-image.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/redact-text.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/redact-text.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/redaction-review.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/redaction-review.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/restricted.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/restricted.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/reveal-authorized.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/reveal-authorized.png"
+    },
+    {
+      "source": "moonwitness/privacy-redaction-pack/svg/sealed-evidence.svg",
+      "path": "moonwitness/privacy-redaction-pack/png/sealed-evidence.png"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Architecture & Diagram Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/api-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/api-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/arrow-dashed.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/arrow-dashed.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/arrow-error.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/arrow-error.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/arrow-event.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/arrow-event.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/arrow-solid.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/arrow-solid.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/boundary-box.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/boundary-box.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/database-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/database-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/decision-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/decision-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/external-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/external-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/queue-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/queue-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/repository-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/repository-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/sequence-lifeline.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/sequence-lifeline.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/service-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/service-node.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/system-cluster.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/system-cluster.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/trust-zone.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/trust-zone.png"
+    },
+    {
+      "source": "moonwitness/architecture-diagram-pack/svg/user-node.svg",
+      "path": "moonwitness/architecture-diagram-pack/png/user-node.png"
+    }
+  ]
+}

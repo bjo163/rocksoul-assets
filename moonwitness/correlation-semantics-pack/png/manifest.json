@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Correlation Semantics Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-contradicts.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-contradicts.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-derived-from.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-derived-from.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-inferred.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-inferred.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-legal-basis.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-legal-basis.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-located-at.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-located-at.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-references.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-references.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-reviewed-by.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-reviewed-by.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-same-identity.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-same-identity.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-submitted-by.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-submitted-by.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-supports.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-supports.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-temporal-after.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-temporal-after.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-temporal-before.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-temporal-before.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-uncertain.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-uncertain.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/edge-unresolved.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/edge-unresolved.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-case.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-case.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-claim.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-claim.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-event.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-event.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-evidence.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-evidence.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-law.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-law.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-location.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-location.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-person.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-person.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-source.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-source.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-story.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-story.png"
+    },
+    {
+      "source": "moonwitness/correlation-semantics-pack/svg/node-text.svg",
+      "path": "moonwitness/correlation-semantics-pack/png/node-text.png"
+    }
+  ]
+}

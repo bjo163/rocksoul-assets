@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Authorization & Security Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 18,
+  "root": "svg",
+  "assets": [
+    "role-admin",
+    "role-reviewer",
+    "role-researcher",
+    "permission-granted",
+    "permission-denied",
+    "mfa",
+    "passkey",
+    "api-key",
+    "device-trusted",
+    "device-untrusted",
+    "session-active",
+    "session-expired",
+    "access-request",
+    "access-approved",
+    "access-rejected",
+    "audit-lock",
+    "security-alert",
+    "recovery-code"
+  ]
+}
