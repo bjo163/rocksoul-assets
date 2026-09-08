@@ -10,6 +10,8 @@ const version=(await read("VERSION")).trim();
 const dist=JSON.parse(await read("dist/assets.json"));
 const catalog=JSON.parse(await read("showcase/catalog.json"));
 
+const deliveryFilesLabel=Number(dist.coverage.deliveryFiles).toLocaleString("en-US");
+
 const checks=[
   ["README current release","README.md",`v${version}`],
   ["Docs home current release","docs/README.md",`v${version}`],
@@ -17,8 +19,8 @@ const checks=[
   ["Pack catalog current release","docs/ASSET-PACK-CATALOG.md",`v${version}`],
   ["Design readiness current release","docs/DESIGN-SYSTEM-READINESS.md",`v${version}`],
   ["Release checklist current version","docs/RELEASE-CHECKLIST.md",`VERSION = ${version}`],
-  ["Showcase coverage count","docs/SHOWCASE-COVERAGE.md",String(dist.coverage.deliveryFiles)],
-  ["README showcase coverage count","README.md",String(dist.coverage.deliveryFiles)],
+  ["Showcase coverage count","docs/SHOWCASE-COVERAGE.md",deliveryFilesLabel],
+  ["README showcase coverage count","README.md",deliveryFilesLabel],
 ];
 
 for(const [label,file,needle] of checks){
