@@ -64,6 +64,9 @@ jobs:
       - name: Validate raster/vector pairing and asset contracts
         run: node tools/assets/validate.mjs
 
+      - name: Validate research-domain ownership visual
+        run: node tools/assets/generate-domain-ownership-visual.mjs --check
+
       - name: Validate showcase JavaScript syntax
         run: node --check showcase/showcase.js
 
