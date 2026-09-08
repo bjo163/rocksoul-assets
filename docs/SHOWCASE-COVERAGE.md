@@ -8,14 +8,14 @@ The Vercel showcase is required to expose every MoonWitness delivery asset, not 
 
 | Delivery format | Indexed |
 |---|---:|
-| SVG | 634 |
-| PNG / APNG | 777 |
+| SVG | 636 |
+| PNG / APNG | 781 |
 | ICO | 1 |
 | WebM | 12 |
 | WAV | 14 |
 | OGG | 14 |
 | Lottie JSON | 12 |
-| **Total** | **1,464** |
+| **Total** | **1,470** |
 
 ## Collections
 
@@ -49,4 +49,4 @@ This is the operational closure condition for the showcase.
 
 Deployment architecture, production acceptance, rollback, security headers, and SEO requirements are documented in [SHOWCASE-OPERATIONS.md](SHOWCASE-OPERATIONS.md).
 
-Current indexed delivery files: **1,464**.
+Current indexed delivery files: **1,470**.
