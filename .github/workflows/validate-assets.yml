@@ -10,6 +10,10 @@ on:
       - "penpot/screens/screens-v2.json"
       - "penpot/golden-cases/mw-0042/visuals/mobile/**"
       - "tools/assets/**"
+      - "dist/**"
+      - "showcase/**"
+      - "index.html"
+      - "vercel.json"
       - ".github/workflows/validate-assets.yml"
   push:
     branches: [main]
@@ -20,6 +24,10 @@ on:
       - "penpot/screens/screens-v2.json"
       - "penpot/golden-cases/mw-0042/visuals/mobile/**"
       - "tools/assets/**"
+      - "dist/**"
+      - "showcase/**"
+      - "index.html"
+      - "vercel.json"
       - ".github/workflows/validate-assets.yml"
 
 permissions:
@@ -47,3 +55,9 @@ jobs:
 
       - name: Validate raster/vector pairing and asset contracts
         run: node tools/assets/validate.mjs
+
+      - name: Validate showcase JavaScript syntax
+        run: node --check showcase/showcase.js
+
+      - name: Validate showcase delivery coverage
+        run: node tools/assets/validate-showcase-coverage.mjs

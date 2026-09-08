@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.1",
+  "entries": {
+    "brand-system": {
+      "label": "Brand System",
+      "category": "Foundations",
+      "description": "Canonical MoonWitness brand marks plus every generated PNG/ICO delivery variant."
+    },
+    "baseline-v1": {
+      "label": "V1 Baseline Screens",
+      "category": "Foundations",
+      "description": "The complete 16-screen baseline reference set in matched SVG and PNG pairs."
+    },
+    "product-icons": {
+      "label": "Product Icons",
+      "category": "Core",
+      "description": "Core navigation, action, domain and status icons."
+    },
+    "dashboard": {
+      "label": "Dashboard",
+      "category": "Core",
+      "description": "Modular dashboard widgets for operator and research surfaces."
+    },
+    "data-viz": {
+      "label": "Data Viz",
+      "category": "Core",
+      "description": "Reusable charts, matrices, timelines and provenance visuals."
+    },
+    "hero-backgrounds": {
+      "label": "Hero Backgrounds",
+      "category": "Media",
+      "description": "Large vector background fields for editorial and product heroes."
+    },
+    "state-illustrations": {
+      "label": "State Illustrations",
+      "category": "Core",
+      "description": "Empty, error, loading, offline and completion illustrations."
+    },
+    "motion": {
+      "label": "Motion References",
+      "category": "System",
+      "description": "Canonical animated SVG motion references with static PNG fallback previews."
+    },
+    "application-screens": {
+      "label": "Application Screens",
+      "category": "Workflow",
+      "description": "All 12 V2 application surfaces as canonical SVG plus PNG previews."
+    },
+    "sfx": {
+      "label": "SFX",
+      "category": "System",
+      "description": "All procedural interface and product sound cues in WAV and OGG."
+    },
+    "graph-vector": {
+      "label": "Graph Vector",
+      "category": "Core",
+      "description": "Graph and chart components for data-heavy surfaces."
+    },
+    "badge-status": {
+      "label": "Badge & Status",
+      "category": "Core",
+      "description": "Evidence, review and system status badges."
+    },
+    "source-file": {
+      "label": "Source & File Type",
+      "category": "Investigation",
+      "description": "Source, document and media type vocabulary."
+    },
+    "geospatial": {
+      "label": "Geospatial",
+      "category": "Investigation",
+      "description": "Pins, clusters, routes, boundaries and map overlays."
+    },
+    "cursor-interaction": {
+      "label": "Cursor & Interaction",
+      "category": "Identity",
+      "description": "Graph, map, timeline and annotation interaction cursors."
+    },
+    "persona-avatar": {
+      "label": "Persona & Avatar",
+      "category": "Identity",
+      "description": "Reusable user and system personas in multiple raster sizes."
+    },
+    "social-campaign": {
+      "label": "Social Campaign",
+      "category": "Media",
+      "description": "Platform-native campaign and social templates."
+    },
+    "platform-delivery": {
+      "label": "Platform Delivery",
+      "category": "Media",
+      "description": "Store, launcher, splash and install delivery assets."
+    },
+    "onboarding": {
+      "label": "Onboarding",
+      "category": "Media",
+      "description": "Reusable tutorial and onboarding illustrations."
+    },
+    "document-report": {
+      "label": "Document & Report",
+      "category": "Media",
+      "description": "Report covers, citations and document modules."
+    },
+    "notification": {
+      "label": "Notification",
+      "category": "Media",
+      "description": "Email, push, inbox and system notice templates."
+    },
+    "editorial": {
+      "label": "Editorial",
+      "category": "Media",
+      "description": "Vector editorial imagery for articles and campaigns."
+    },
+    "evidence-media": {
+      "label": "Evidence Media",
+      "category": "Investigation",
+      "description": "Annotation and evidence-inspection overlays."
+    },
+    "correlation-semantics": {
+      "label": "Correlation Semantics",
+      "category": "Investigation",
+      "description": "Canonical evidence graph node and edge semantics."
+    },
+    "kanban-workflow": {
+      "label": "Kanban Workflow",
+      "category": "Workflow",
+      "description": "Cards, columns, WIP, SLA and drag/drop workflow states."
+    },
+    "calendar-temporal": {
+      "label": "Calendar & Temporal",
+      "category": "Workflow",
+      "description": "Event, recurrence, timezone, range and deadline assets."
+    },
+    "chat-collaboration": {
+      "label": "Chat & Collaboration",
+      "category": "Workflow",
+      "description": "Messages, threads, presence, delivery and attachment states."
+    },
+    "ai-workspace": {
+      "label": "AI Workspace",
+      "category": "Workflow",
+      "description": "AI state, tool-call, retrieval, citation and confidence assets."
+    },
+    "authorization-security": {
+      "label": "Authorization & Security",
+      "category": "Workflow",
+      "description": "Roles, permissions, MFA, passkeys, sessions and access states."
+    },
+    "data-grid": {
+      "label": "Data Grid",
+      "category": "Workflow",
+      "description": "Tables, rows, sorting, filtering and pagination states."
+    },
+    "form-controls": {
+      "label": "Form Controls",
+      "category": "Workflow",
+      "description": "Inputs, selects, toggles, validation and search controls."
+    },
+    "theme-accessibility": {
+      "label": "Theme & Accessibility",
+      "category": "Identity",
+      "description": "Theme, contrast, focus, keyboard and reduced-motion assets."
+    },
+    "privacy-redaction": {
+      "label": "Privacy & Redaction",
+      "category": "Investigation",
+      "description": "PII, redaction, protected witness and confidentiality semantics."
+    },
+    "evidence-integrity": {
+      "label": "Evidence Integrity",
+      "category": "Investigation",
+      "description": "Hash, signature, provenance and chain-of-custody assets."
+    },
+    "export-seal": {
+      "label": "Export & Seal",
+      "category": "Investigation",
+      "description": "QR, watermark, evidence seal and export vocabulary."
+    },
+    "rocksoul-character": {
+      "label": "Rocksoul Character",
+      "category": "Identity",
+      "description": "Rocksoul character poses and product-state scenes."
+    },
+    "command-keyboard": {
+      "label": "Command & Keyboard",
+      "category": "Workflow",
+      "description": "Keycaps, command palette and keyboard navigation hints."
+    },
+    "texture-material": {
+      "label": "Texture & Material",
+      "category": "Media",
+      "description": "Vector-safe material treatments and background texture fields."
+    },
+    "architecture-diagram": {
+      "label": "Architecture & Diagram",
+      "category": "System",
+      "description": "System nodes, arrows, trust zones and architecture primitives."
+    },
+    "device-mockup": {
+      "label": "Device Mockup",
+      "category": "Media",
+      "description": "Browser, phone, tablet and desktop presentation frames."
+    },
+    "jurisdiction-locale": {
+      "label": "Jurisdiction & Locale",
+      "category": "Investigation",
+      "description": "Data-driven legal, timezone, governance and locale markers."
+    },
+    "cinematic-hero": {
+      "label": "Cinematic Hero",
+      "category": "Media",
+      "description": "Large-format cinematic vector scenes."
+    },
+    "runtime-motion": {
+      "label": "Runtime Motion",
+      "category": "System",
+      "description": "Every animated SVG, APNG, WebM and Lottie runtime motion delivery."
+    },
+    "developer-distribution": {
+      "label": "Developer Distribution",
+      "category": "System",
+      "description": "Generated JSON, TypeScript, CSS and SVG sprite registries."
+    }
+  }
+}

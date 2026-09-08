@@ -17,6 +17,9 @@ on:
       - "moonwitness/**"
       - "dist/**"
       - "tools/assets/**"
+      - "showcase/**"
+      - "index.html"
+      - "vercel.json"
       - ".github/workflows/generate-sfx.yml"
   push:
     branches: [main]
@@ -34,6 +37,9 @@ on:
       - "moonwitness/**"
       - "dist/**"
       - "tools/assets/**"
+      - "showcase/**"
+      - "index.html"
+      - "vercel.json"
       - ".github/workflows/generate-sfx.yml"
 
 permissions:
@@ -91,6 +97,12 @@ jobs:
         run: |
           node tools/assets/build-dist.mjs
           git diff --exit-code -- dist
+
+      - name: Verify showcase JavaScript syntax
+        run: node --check showcase/showcase.js
+
+      - name: Verify showcase delivery coverage
+        run: node tools/assets/validate-showcase-coverage.mjs
 
       - name: Verify runtime motion derivatives
         run: |
