@@ -13,7 +13,16 @@ on:
       - "docs/PENPOT-LIVE-VERIFICATION.md"
       - "docs/DESIGN-SYSTEM-READINESS.md"
       - ".github/workflows/release-gate.yml"
-      - ".github/workflows/publish-release.yml"\n      - "moonwitness/icons/**"\n      - "moonwitness/dashboard-pack/**"\n      - "moonwitness/data-viz/**"\n      - "moonwitness/hero-backgrounds/**"\n      - "moonwitness/state-illustrations/**"\n      - "moonwitness/motion/**"\n      - "moonwitness/sfx/**"\n      - "tools/assets/generate-sfx.py"\n      - ".github/workflows/generate-sfx.yml"
+      - ".github/workflows/publish-release.yml"
+      - "moonwitness/icons/**"
+      - "moonwitness/dashboard-pack/**"
+      - "moonwitness/data-viz/**"
+      - "moonwitness/hero-backgrounds/**"
+      - "moonwitness/state-illustrations/**"
+      - "moonwitness/motion/**"
+      - "moonwitness/sfx/**"
+      - "tools/assets/**"
+      - ".github/workflows/generate-sfx.yml"
   push:
     branches: [main]
     paths:
@@ -26,6 +35,16 @@ on:
       - "docs/PENPOT-LIVE-VERIFICATION.md"
       - "docs/DESIGN-SYSTEM-READINESS.md"
       - ".github/workflows/release-gate.yml"
+      - ".github/workflows/publish-release.yml"
+      - "moonwitness/icons/**"
+      - "moonwitness/dashboard-pack/**"
+      - "moonwitness/data-viz/**"
+      - "moonwitness/hero-backgrounds/**"
+      - "moonwitness/state-illustrations/**"
+      - "moonwitness/motion/**"
+      - "moonwitness/sfx/**"
+      - "tools/assets/**"
+      - ".github/workflows/generate-sfx.yml"
 
 permissions:
   contents: read
@@ -54,7 +73,7 @@ jobs:
           const version = fs.readFileSync('VERSION', 'utf8').trim();
           const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
           const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
-          if (!/^\\d+\\.\\d+\\.\\d+$/.test(version)) throw new Error('VERSION must be semver');
+          if (!/^\d+\.\d+\.\d+$/.test(version)) throw new Error('VERSION must be semver');
           if (manifest.release?.version !== version) throw new Error('manifest release version mismatch');
           if (manifest.release?.status !== 'released') throw new Error('manifest release status must be released');
           if (!changelog.includes(`## [${version}]`)) throw new Error(`CHANGELOG missing ${version} entry`);
@@ -72,7 +91,8 @@ jobs:
 
       - name: Verify generated SFX derivatives
         run: |
-          sudo apt-get update && sudo apt-get install -y ffmpeg
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
           python tools/assets/generate-sfx.py
           git diff --exit-code -- moonwitness/sfx/generated
 
