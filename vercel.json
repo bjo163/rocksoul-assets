@@ -1,32 +1,37 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/moonwitness/(.*)\\.svg",
+      "source": "/dist/assets.json",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300, stale-while-revalidate=86400" },
         { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
     },
     {
-      "source": "/moonwitness/(.*)\\.(png|webm|wav|ogg)",
+      "source": "/showcase/catalog.json",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300, stale-while-revalidate=86400" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
     },
     {
-      "source": "/dist/(.*)",
+      "source": "/showcase/(.*)\\.(js|css)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" }
+        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; img-src 'self' data: https://raw.githubusercontent.com; media-src 'self' https://raw.githubusercontent.com; connect-src 'self' https://raw.githubusercontent.com; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests" }
       ]
     }
   ]
