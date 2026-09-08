@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "domain": "LAW",
+  "repository": "rocksoul-aws",
+  "principle": "LEGAL TEXT ≠ APPLICABLE LAW",
+  "legalResultStates": [
+    {
+      "id": "permitted",
+      "label": "PERMITTED",
+      "meaning": "The reviewed rule permits the conduct within the established scope."
+    },
+    {
+      "id": "restricted",
+      "label": "RESTRICTED",
+      "meaning": "The reviewed rule permits the conduct only subject to conditions or limits."
+    },
+    {
+      "id": "prohibited",
+      "label": "PROHIBITED",
+      "meaning": "The reviewed rule prohibits the conduct within the established scope."
+    },
+    {
+      "id": "disputed",
+      "label": "DISPUTED",
+      "meaning": "Competing legal positions remain materially unresolved."
+    },
+    {
+      "id": "unresolved",
+      "label": "UNRESOLVED",
+      "meaning": "The record is insufficient for a reviewed legal result."
+    }
+  ],
+  "applicabilityAxes": [
+    {
+      "id": "temporal",
+      "label": "Temporal",
+      "question": "Was the instrument or rule in force at the relevant time?"
+    },
+    {
+      "id": "territorial",
+      "label": "Territorial",
+      "question": "Did the rule extend to the relevant place, conduct, forum, or effects?"
+    },
+    {
+      "id": "personal",
+      "label": "Personal",
+      "question": "Was the actor, entity, State, organization, vessel, or protected class within scope?"
+    },
+    {
+      "id": "subject-matter",
+      "label": "Subject-matter",
+      "question": "Did the rule govern the type of conduct, object, offense, right, or obligation at issue?"
+    }
+  ],
+  "reviewPipeline": [
+    {
+      "id": "source",
+      "label": "SOURCE",
+      "description": "Acquire official or attributable legal text with provenance."
+    },
+    {
+      "id": "authority",
+      "label": "AUTHORITY",
+      "description": "Establish hierarchy, status, jurisdiction, and binding or persuasive weight."
+    },
+    {
+      "id": "applicability",
+      "label": "APPLICABILITY",
+      "description": "Evaluate temporal, territorial, personal, and subject-matter scope."
+    },
+    {
+      "id": "claims",
+      "label": "COMPETING CLAIMS",
+      "description": "Preserve exceptions, defenses, conflicts, interpretations, and uncertainty."
+    },
+    {
+      "id": "review",
+      "label": "HUMAN REVIEW",
+      "description": "Approve an explainable result without bypassing evidence or provenance."
+    }
+  ],
+  "guardrails": [
+    "legal text presence does not establish applicability",
+    "authority does not imply universal scope",
+    "source discovery does not produce an automatic verdict",
+    "observability is operational metadata, not legal evidence",
+    "reviewed legal analysis remains distinct from Mizan and evidence reconstruction"
+  ]
+}
