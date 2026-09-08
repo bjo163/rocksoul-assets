@@ -27,7 +27,7 @@
     {
       "id": "state-illustrations",
       "manifest": "moonwitness/state-illustrations/states.json",
-      "count": 12
+      "count": 13
     },
     {
       "id": "motion",
@@ -62,7 +62,7 @@
     {
       "id": "geospatial",
       "manifest": "moonwitness/geospatial-pack/manifest.json",
-      "count": 15
+      "count": 16
     },
     {
       "id": "cursor-interaction",
@@ -102,7 +102,7 @@
     {
       "id": "editorial",
       "manifest": "moonwitness/editorial-pack/manifest.json",
-      "count": 6
+      "count": 7
     },
     {
       "id": "evidence-media",
@@ -182,7 +182,7 @@
     {
       "id": "texture-material",
       "manifest": "moonwitness/texture-material-pack/manifest.json",
-      "count": 12
+      "count": 13
     },
     {
       "id": "architecture-diagram",
@@ -202,7 +202,7 @@
     {
       "id": "cinematic-hero",
       "manifest": "moonwitness/cinematic-hero-pack/manifest.json",
-      "count": 12
+      "count": 13
     },
     {
       "id": "runtime-motion",
@@ -217,8 +217,8 @@
   ],
   "coverage": {
     "policy": "Every MoonWitness delivery SVG has at least one PNG derivative; every PNG/JPEG maps to canonical SVG.",
-    "svgSources": 614,
-    "pngDerivatives": 757,
+    "svgSources": 619,
+    "pngDerivatives": 762,
     "vectorWithoutRaster": 0,
     "rasterWithoutVector": 0,
     "packFamilies": 42,
