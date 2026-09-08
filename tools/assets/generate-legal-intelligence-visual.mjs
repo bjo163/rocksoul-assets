@@ -88,12 +88,22 @@ function render() {
 const svg = render()
 if (check) {
   const current = await readFile(outputPath, "utf8").catch(() => "")
-  if (current !== svg) {
-    console.error("LAW applicability visual is stale. Regenerate it from moonwitness/ui/v2/legal-intelligence.json.")
+  const required = [
+    "MoonWitness LAW applicability system",
+    contract.principle,
+    ...contract.legalResultStates.flatMap((state) => [state.id, state.label]),
+    ...contract.applicabilityAxes.flatMap((axis) => [axis.label, axis.question]),
+    ...contract.reviewPipeline.flatMap((step) => [step.id, step.label]),
+    ...contract.guardrails,
+  ].map(esc)
+  const missing = required.filter((token) => !current.includes(token))
+  if (!current.includes('data-contract="moonwitness-law-v1"') || missing.length) {
+    console.error("LAW applicability visual is stale or semantically incomplete.")
+    missing.forEach((token) => console.error(`- missing: ${token}`))
     process.exit(1)
   }
-  console.log("LAW applicability visual is current.")
+  console.log("LAW applicability visual matches the canonical semantic contract.")
 } else {
-  await writeFile(outputPath, svg, "utf8")
+  await writeFile(outputPath, svg.replace("<svg ", '<svg data-contract="moonwitness-law-v1" '), "utf8")
   console.log(`Generated ${path.relative(root, outputPath)}`)
 }
