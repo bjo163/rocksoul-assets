@@ -49,12 +49,14 @@ async function collectRasterSourceMappings() {
 
   const manifestPaths = allFiles.filter((name) =>
     name === "moonwitness/brand/generated/manifest.json" ||
-    name.endsWith("/png/manifest.json")
+    name.endsWith("/png/manifest.json") ||
+    name.endsWith("/runtime-motion-pack/generated-manifest.json")
   );
   for (const manifestPath of manifestPaths) {
     const data = await readJson(manifestPath);
     for (const item of data.outputs ?? []) {
       if (/\.(png|jpe?g)$/i.test(item.path ?? "") && item.source) mappings.set(item.path, item.source);
+      if (/\.png$/i.test(item.apng ?? "") && item.source) mappings.set(item.apng, item.source);
     }
   }
 
