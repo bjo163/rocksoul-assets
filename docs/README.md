@@ -36,10 +36,11 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 ### I maintain the repository
 
 1. [Governance](GOVERNANCE.md)
-2. [Versioning](VERSIONING.md)
-3. [Release Checklist](RELEASE-CHECKLIST.md)
-4. [Showcase Operations](SHOWCASE-OPERATIONS.md)
-5. [Asset Closure Audit](ASSET-CLOSURE-AUDIT.md)
+2. [Branching Policy](BRANCHING.md)
+3. [Versioning](VERSIONING.md)
+4. [Release Checklist](RELEASE-CHECKLIST.md)
+5. [Showcase Operations](SHOWCASE-OPERATIONS.md)
+6. [Asset Closure Audit](ASSET-CLOSURE-AUDIT.md)
 
 ### I am reviewing completeness or quality
 
@@ -61,6 +62,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
 | [Accessibility](ACCESSIBILITY.md) | non-negotiable product accessibility rules |
 | [Governance](GOVERNANCE.md) | ownership, change classes, definition of done |
+| [Branching Policy](BRANCHING.md) | single-main workflow and temporary PR branch lifecycle |
 | [Versioning](VERSIONING.md) | visual and release version rules |
 | [Showcase Operations](SHOWCASE-OPERATIONS.md) | production showcase architecture and deployment |
 | [Showcase Coverage](SHOWCASE-COVERAGE.md) | 100% delivery-index guarantee |
