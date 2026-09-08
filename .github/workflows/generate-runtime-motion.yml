@@ -3,7 +3,7 @@ name: Generate Runtime Motion
 on:
   workflow_dispatch:
   push:
-    branches: [main, feat/complete-visual-language-v1.3]
+    branches: [main]
     paths:
       - "moonwitness/runtime-motion-pack/**"
       - "tools/assets/generate-runtime-motion.py"
@@ -36,6 +36,12 @@ jobs:
             echo "No runtime motion changes."
           else
             git commit -m "build(motion): generate APNG WebM and Lottie derivatives"
-            git pull --rebase origin "$GITHUB_REF_NAME"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin "$GITHUB_REF_NAME"
+              if git push; then
+                break
+              fi
+              test "$attempt" -lt 3
+              sleep 2
+            done
           fi
