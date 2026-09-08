@@ -161,9 +161,9 @@
     "version": "1.2.0",
     "name": "MoonWitness Complete Asset Packs v1.2.0",
     "date": "2026-09-08",
-    "status": "release-candidate",
+    "status": "released",
     "branch": "main",
-    "repositoryAcceptance": "pending",
+    "repositoryAcceptance": "pending-ci",
     "livePenpotVerification": "manual-follow-up"
   },
   "assetPacks": {
