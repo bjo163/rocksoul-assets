@@ -30,28 +30,28 @@
       "slug": "landing-hero",
       "surface": "web",
       "path": "moonwitness/ui/v1/screens/01-landing-hero.png",
-      "vector": "moonwitness/ui/v1/screens/01-landing-hero.png"
+      "vector": "moonwitness/ui/v1/screens/01-landing-hero.svg"
     },
     {
       "id": "02",
       "slug": "manifesto",
       "surface": "web",
       "path": "moonwitness/ui/v1/screens/02-manifesto.png",
-      "vector": "moonwitness/ui/v1/screens/02-manifesto.png"
+      "vector": "moonwitness/ui/v1/screens/02-manifesto.svg"
     },
     {
       "id": "03",
       "slug": "rocksoul-character",
       "surface": "web",
       "path": "moonwitness/ui/v1/screens/03-rocksoul-character.png",
-      "vector": "moonwitness/ui/v1/screens/03-rocksoul-character.png"
+      "vector": "moonwitness/ui/v1/screens/03-rocksoul-character.svg"
     },
     {
       "id": "04",
       "slug": "repositories-overview",
       "surface": "web",
       "path": "moonwitness/ui/v1/screens/04-repositories-overview.png",
-      "vector": "moonwitness/ui/v1/screens/04-repositories-overview.png"
+      "vector": "moonwitness/ui/v1/screens/04-repositories-overview.svg"
     },
     {
       "id": "05",
@@ -59,7 +59,7 @@
       "surface": "web",
       "domain": "STORY",
       "path": "moonwitness/ui/v1/screens/05-story.png",
-      "vector": "moonwitness/ui/v1/screens/05-story.png"
+      "vector": "moonwitness/ui/v1/screens/05-story.svg"
     },
     {
       "id": "06",
@@ -67,7 +67,7 @@
       "surface": "web",
       "domain": "EVENT",
       "path": "moonwitness/ui/v1/screens/06-event.png",
-      "vector": "moonwitness/ui/v1/screens/06-event.png"
+      "vector": "moonwitness/ui/v1/screens/06-event.svg"
     },
     {
       "id": "07",
@@ -75,7 +75,7 @@
       "surface": "web",
       "domain": "PERSON",
       "path": "moonwitness/ui/v1/screens/07-person.png",
-      "vector": "moonwitness/ui/v1/screens/07-person.png"
+      "vector": "moonwitness/ui/v1/screens/07-person.svg"
     },
     {
       "id": "08",
@@ -83,7 +83,7 @@
       "surface": "web",
       "domain": "RGBL",
       "path": "moonwitness/ui/v1/screens/08-rgbl.png",
-      "vector": "moonwitness/ui/v1/screens/08-rgbl.png"
+      "vector": "moonwitness/ui/v1/screens/08-rgbl.svg"
     },
     {
       "id": "09",
@@ -91,21 +91,21 @@
       "surface": "web",
       "domain": "AWS",
       "path": "moonwitness/ui/v1/screens/09-aws.png",
-      "vector": "moonwitness/ui/v1/screens/09-aws.png"
+      "vector": "moonwitness/ui/v1/screens/09-aws.svg"
     },
     {
       "id": "10",
       "slug": "case-public",
       "surface": "web",
       "path": "moonwitness/ui/v1/screens/10-case-public.png",
-      "vector": "moonwitness/ui/v1/screens/10-case-public.png"
+      "vector": "moonwitness/ui/v1/screens/10-case-public.svg"
     },
     {
       "id": "11",
       "slug": "correlation",
       "surface": "web",
       "path": "moonwitness/ui/v1/screens/11-correlation.png",
-      "vector": "moonwitness/ui/v1/screens/11-correlation.png"
+      "vector": "moonwitness/ui/v1/screens/11-correlation.svg"
     },
     {
       "id": "12",
@@ -113,35 +113,35 @@
       "surface": "web",
       "domain": "AWS",
       "path": "moonwitness/ui/v1/screens/12-aws-legal.png",
-      "vector": "moonwitness/ui/v1/screens/12-aws-legal.png"
+      "vector": "moonwitness/ui/v1/screens/12-aws-legal.svg"
     },
     {
       "id": "13",
       "slug": "community",
       "surface": "community",
       "path": "moonwitness/ui/v1/screens/13-community.png",
-      "vector": "moonwitness/ui/v1/screens/13-community.png"
+      "vector": "moonwitness/ui/v1/screens/13-community.svg"
     },
     {
       "id": "14",
       "slug": "auth",
       "surface": "community",
       "path": "moonwitness/ui/v1/screens/14-auth.png",
-      "vector": "moonwitness/ui/v1/screens/14-auth.png"
+      "vector": "moonwitness/ui/v1/screens/14-auth.svg"
     },
     {
       "id": "15",
       "slug": "platform-admin",
       "surface": "platform",
       "path": "moonwitness/ui/v1/screens/15-platform-admin.png",
-      "vector": "moonwitness/ui/v1/screens/15-platform-admin.png"
+      "vector": "moonwitness/ui/v1/screens/15-platform-admin.svg"
     },
     {
       "id": "16",
       "slug": "design-system",
       "surface": "design-system",
       "path": "moonwitness/ui/v1/screens/16-design-system.png",
-      "vector": "moonwitness/ui/v1/screens/16-design-system.png"
+      "vector": "moonwitness/ui/v1/screens/16-design-system.svg"
     }
   ],
   "rasterVectorContract": {
