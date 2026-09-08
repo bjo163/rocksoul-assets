@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Cursor & Interaction Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/cursor-pack/svg/annotate.svg",
+      "path": "moonwitness/cursor-pack/png/annotate.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/connect.svg",
+      "path": "moonwitness/cursor-pack/png/connect.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/crosshair.svg",
+      "path": "moonwitness/cursor-pack/png/crosshair.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/default.svg",
+      "path": "moonwitness/cursor-pack/png/default.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/evidence-link.svg",
+      "path": "moonwitness/cursor-pack/png/evidence-link.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/grab.svg",
+      "path": "moonwitness/cursor-pack/png/grab.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/grabbing.svg",
+      "path": "moonwitness/cursor-pack/png/grabbing.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/inspect.svg",
+      "path": "moonwitness/cursor-pack/png/inspect.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/pan.svg",
+      "path": "moonwitness/cursor-pack/png/pan.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/pointer.svg",
+      "path": "moonwitness/cursor-pack/png/pointer.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/region-select.svg",
+      "path": "moonwitness/cursor-pack/png/region-select.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/resize-all.svg",
+      "path": "moonwitness/cursor-pack/png/resize-all.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/resize-horizontal.svg",
+      "path": "moonwitness/cursor-pack/png/resize-horizontal.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/resize-vertical.svg",
+      "path": "moonwitness/cursor-pack/png/resize-vertical.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/timeline-scrub.svg",
+      "path": "moonwitness/cursor-pack/png/timeline-scrub.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/zoom-in.svg",
+      "path": "moonwitness/cursor-pack/png/zoom-in.png"
+    },
+    {
+      "source": "moonwitness/cursor-pack/svg/zoom-out.svg",
+      "path": "moonwitness/cursor-pack/png/zoom-out.png"
+    }
+  ]
+}

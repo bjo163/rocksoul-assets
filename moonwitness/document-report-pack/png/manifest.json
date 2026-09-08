@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Document & Report Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/document-report-pack/svg/appendix-separator.svg",
+      "path": "moonwitness/document-report-pack/png/appendix-separator.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/case-report.svg",
+      "path": "moonwitness/document-report-pack/png/case-report.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/citation-card.svg",
+      "path": "moonwitness/document-report-pack/png/citation-card.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/community-recap.svg",
+      "path": "moonwitness/document-report-pack/png/community-recap.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/evidence-dossier.svg",
+      "path": "moonwitness/document-report-pack/png/evidence-dossier.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/header-footer.svg",
+      "path": "moonwitness/document-report-pack/png/header-footer.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/investigation-export.svg",
+      "path": "moonwitness/document-report-pack/png/investigation-export.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/legal-review.svg",
+      "path": "moonwitness/document-report-pack/png/legal-review.png"
+    },
+    {
+      "source": "moonwitness/document-report-pack/svg/table-of-contents.svg",
+      "path": "moonwitness/document-report-pack/png/table-of-contents.png"
+    }
+  ]
+}

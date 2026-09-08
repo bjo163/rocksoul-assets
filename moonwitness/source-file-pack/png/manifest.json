@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Source & File-Type Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/source-file-pack/svg/archive.svg",
+      "path": "moonwitness/source-file-pack/png/archive.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/audio.svg",
+      "path": "moonwitness/source-file-pack/png/audio.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/bundle.svg",
+      "path": "moonwitness/source-file-pack/png/bundle.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/dataset.svg",
+      "path": "moonwitness/source-file-pack/png/dataset.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/email.svg",
+      "path": "moonwitness/source-file-pack/png/email.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/image.svg",
+      "path": "moonwitness/source-file-pack/png/image.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/legal-doc.svg",
+      "path": "moonwitness/source-file-pack/png/legal-doc.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/location.svg",
+      "path": "moonwitness/source-file-pack/png/location.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/note.svg",
+      "path": "moonwitness/source-file-pack/png/note.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/pdf.svg",
+      "path": "moonwitness/source-file-pack/png/pdf.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/repository.svg",
+      "path": "moonwitness/source-file-pack/png/repository.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/testimony.svg",
+      "path": "moonwitness/source-file-pack/png/testimony.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/transcript.svg",
+      "path": "moonwitness/source-file-pack/png/transcript.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/video.svg",
+      "path": "moonwitness/source-file-pack/png/video.png"
+    },
+    {
+      "source": "moonwitness/source-file-pack/svg/webpage.svg",
+      "path": "moonwitness/source-file-pack/png/webpage.png"
+    }
+  ]
+}

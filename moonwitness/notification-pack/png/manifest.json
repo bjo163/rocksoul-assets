@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Notification & Email Visual Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/notification-pack/svg/case-update-banner.svg",
+      "path": "moonwitness/notification-pack/png/case-update-banner.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/critical-alert-email.svg",
+      "path": "moonwitness/notification-pack/png/critical-alert-email.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/digest-email.svg",
+      "path": "moonwitness/notification-pack/png/digest-email.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/evidence-linked-email.svg",
+      "path": "moonwitness/notification-pack/png/evidence-linked-email.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/inbox-card.svg",
+      "path": "moonwitness/notification-pack/png/inbox-card.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/push-notification.svg",
+      "path": "moonwitness/notification-pack/png/push-notification.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/review-request-email.svg",
+      "path": "moonwitness/notification-pack/png/review-request-email.png"
+    },
+    {
+      "source": "moonwitness/notification-pack/svg/system-notice-strip.svg",
+      "path": "moonwitness/notification-pack/png/system-notice-strip.png"
+    }
+  ]
+}

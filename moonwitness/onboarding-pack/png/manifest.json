@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Onboarding & Tutorial Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/onboarding-pack/svg/ai-workspace.svg",
+      "path": "moonwitness/onboarding-pack/png/ai-workspace.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/connect-sources.svg",
+      "path": "moonwitness/onboarding-pack/png/connect-sources.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/correlate-evidence.svg",
+      "path": "moonwitness/onboarding-pack/png/correlate-evidence.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/create-case.svg",
+      "path": "moonwitness/onboarding-pack/png/create-case.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/join-community.svg",
+      "path": "moonwitness/onboarding-pack/png/join-community.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/responsible-investigation.svg",
+      "path": "moonwitness/onboarding-pack/png/responsible-investigation.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/review-findings.svg",
+      "path": "moonwitness/onboarding-pack/png/review-findings.png"
+    },
+    {
+      "source": "moonwitness/onboarding-pack/svg/welcome.svg",
+      "path": "moonwitness/onboarding-pack/png/welcome.png"
+    }
+  ]
+}

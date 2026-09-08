@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Badge & Status Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/badge-pack/svg/archived.svg",
+      "path": "moonwitness/badge-pack/png/archived.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/blocked.svg",
+      "path": "moonwitness/badge-pack/png/blocked.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/degraded.svg",
+      "path": "moonwitness/badge-pack/png/degraded.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/disputed.svg",
+      "path": "moonwitness/badge-pack/png/disputed.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/legal-review.svg",
+      "path": "moonwitness/badge-pack/png/legal-review.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/needs-context.svg",
+      "path": "moonwitness/badge-pack/png/needs-context.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/offline.svg",
+      "path": "moonwitness/badge-pack/png/offline.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/partial.svg",
+      "path": "moonwitness/badge-pack/png/partial.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/source-linked.svg",
+      "path": "moonwitness/badge-pack/png/source-linked.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/supported.svg",
+      "path": "moonwitness/badge-pack/png/supported.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/unresolved.svg",
+      "path": "moonwitness/badge-pack/png/unresolved.png"
+    },
+    {
+      "source": "moonwitness/badge-pack/svg/verified.svg",
+      "path": "moonwitness/badge-pack/png/verified.png"
+    }
+  ]
+}

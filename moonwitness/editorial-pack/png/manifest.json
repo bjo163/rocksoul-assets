@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Editorial Image Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/editorial-pack/svg/archive-dossier.svg",
+      "path": "moonwitness/editorial-pack/png/archive-dossier.png"
+    },
+    {
+      "source": "moonwitness/editorial-pack/svg/case-map.svg",
+      "path": "moonwitness/editorial-pack/png/case-map.png"
+    },
+    {
+      "source": "moonwitness/editorial-pack/svg/field-witness.svg",
+      "path": "moonwitness/editorial-pack/png/field-witness.png"
+    },
+    {
+      "source": "moonwitness/editorial-pack/svg/legal-boundary.svg",
+      "path": "moonwitness/editorial-pack/png/legal-boundary.png"
+    },
+    {
+      "source": "moonwitness/editorial-pack/svg/lunar-observatory.svg",
+      "path": "moonwitness/editorial-pack/png/lunar-observatory.png"
+    },
+    {
+      "source": "moonwitness/editorial-pack/svg/source-signal.svg",
+      "path": "moonwitness/editorial-pack/png/source-signal.png"
+    }
+  ]
+}

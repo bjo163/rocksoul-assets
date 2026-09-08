@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Platform Delivery Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "outputs": [
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/adaptive-background.svg",
+      "path": "moonwitness/platform-delivery-pack/png/adaptive-background.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/adaptive-foreground.svg",
+      "path": "moonwitness/platform-delivery-pack/png/adaptive-foreground.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/app-store-banner.svg",
+      "path": "moonwitness/platform-delivery-pack/png/app-store-banner.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/launcher-tile.svg",
+      "path": "moonwitness/platform-delivery-pack/png/launcher-tile.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/loading-splash.svg",
+      "path": "moonwitness/platform-delivery-pack/png/loading-splash.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/pwa-install-card.svg",
+      "path": "moonwitness/platform-delivery-pack/png/pwa-install-card.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/splash-screen.svg",
+      "path": "moonwitness/platform-delivery-pack/png/splash-screen.png"
+    },
+    {
+      "source": "moonwitness/platform-delivery-pack/svg/windows-tile.svg",
+      "path": "moonwitness/platform-delivery-pack/png/windows-tile.png"
+    }
+  ]
+}
