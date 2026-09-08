@@ -22,7 +22,7 @@ Canonical brand, product-shell, UI, component, token, data-viz, motion, and desi
 
 ---
 
-> **MoonWitness watches. Rocksoul follows. The record connects. The law draws the line. The legend stays open.**
+> **MoonWitness watches. Rocksoul follows. The record connects. The law draws the line. The trail stays inspectable.**
 
 `rocksoul-assets` defines **how the ecosystem looks and communicates**. Application source code does not belong here.
 
@@ -40,6 +40,13 @@ flowchart TD
     R --> H["SUPERHERO\nPERSON"]
     R --> T["RGBL\nTEXT"]
     R --> L["AWS\nLAW"]
+    S --> Q["CORRELATION\nPUBLIC EVIDENCE GRAPH"]
+    E --> Q
+    H --> Q
+    T --> Q
+    L --> Q
+    Q --> W
+    Q --> R
 ```
 
 ### Product and experience layers
@@ -62,23 +69,25 @@ flowchart TD
 | **PERSON** | [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | Who was involved? |
 | **TEXT** | [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | What does the exact text say? |
 | **LAW** | [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | Was it allowed? |
+| **CORRELATION** | [`rocksoul-correlation`](https://github.com/bjo163/rocksoul-correlation) | How do reviewed records relate? |
 
 ```text
-DESIGN  → ASSETS
-CODE UI → UI
-PUBLIC  → WEB
-PEOPLE  → COMMUNITY
-ADMIN   → PLATFORM
-OPS     → CRAYON
+DESIGN      → ASSETS
+CODE UI     → UI
+PUBLIC      → WEB
+PEOPLE      → COMMUNITY
+ADMIN       → PLATFORM
+OPS         → CRAYON
 
-STORY   → MFTL
-EVENT   → LEGEND
-PERSON  → SUPERHERO
-TEXT    → RGBL
-LAW     → AWS
+STORY       → MFTL
+EVENT       → LEGEND
+PERSON      → SUPERHERO
+TEXT        → RGBL
+LAW         → AWS
+CORRELATION → CORRELATION
 ```
 
-No experience-layer repository silently becomes canonical ownership for STORY, EVENT, PERSON, TEXT, or LAW.
+Correlation owns cross-domain edges and explainability metadata only. It does not duplicate canonical STORY, EVENT, PERSON, TEXT, or LAW records and it does not become a Mizan verdict layer.
 
 ## Design source of truth
 
@@ -117,7 +126,7 @@ Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome 
 | Data-Viz Pack | `moonwitness/data-viz/` | 16 SVG components |
 | Hero Backgrounds | `moonwitness/hero-backgrounds/` | 8 vector backgrounds |
 | State Illustrations | `moonwitness/state-illustrations/` | 12 SVG illustrations |
-| Motion Pack | `moonwitness/motion/` | 6 animated SVG references |
+| Motion Pack | `moonwitness/motion/` | 12 animated SVG references |
 | SFX Pack | `moonwitness/sfx/` | 14 procedural cues + WAV/OGG |
 | Graph Vector Pack | `moonwitness/graph-pack/` | 10 graph SVGs + PNG |
 | Badge / Status Pack | `moonwitness/badge-pack/` | 12 badge SVGs + PNG |
@@ -131,6 +140,8 @@ Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome 
 | Document / Report Pack | `moonwitness/document-report-pack/` | 9 report assets |
 | Notification Pack | `moonwitness/notification-pack/` | 8 email/in-app templates |
 | Editorial Pack | `moonwitness/editorial-pack/` | 6 editorial vector images |
+
+Correlation visualizations should preferentially use the existing **node-link, provenance, evidence-matrix, timeline, repository-health, metric, annotation, and edge-style** assets in `moonwitness/data-viz/`.
 
 ## Surface ownership
 
@@ -163,6 +174,7 @@ Across every Rocksoul repository:
 - status is never color-only;
 - graphs require a text equivalent;
 - uncertainty is represented, not hidden;
+- correlation must never visually imply causation by default;
 - application code consumes `@rocksoul/ui` rather than recreating the design system;
 - changes to brand grammar start here before propagating downstream.
 
@@ -178,6 +190,7 @@ flowchart TD
     F --> U["@ROCKSOUL/UI"]
     U --> X["WEB · COMMUNITY · PLATFORM · CRAYON"]
     X --> I["STORY · EVENT · PERSON · TEXT · LAW"]
+    I --> Q["CORRELATION"]
 ```
 
 ## Asset contract
@@ -189,7 +202,7 @@ flowchart TD
 - Resource navigation remains AutoMenu-driven where applicable.
 - Do not place application source code in this repository.
 
-Start with `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
+Start with `moonwitness/asset-packs.json`, `docs/ASSET-CONSUMPTION.md`, `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
 
 ---
 
@@ -197,7 +210,7 @@ Start with `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/R
 
 ## **DESIGN ONCE · TRACE EVERYWHERE**
 
-### **ONE LANGUAGE · ELEVEN REPOSITORIES · FIVE INTELLIGENCE DOMAINS**
+### **ONE LANGUAGE · TWELVE REPOSITORIES · FIVE SOURCE DOMAINS · ONE PUBLIC CORRELATION LAYER**
 
 `ASSETS / MoonWitness × Rocksoul`
 
