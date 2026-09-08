@@ -836,7 +836,7 @@ export const assets = {
     },
     "application-screens": {
       "manifest": "moonwitness/ui/v2/manifest.json",
-      "count": 12,
+      "count": 20,
       "canonicalFormat": "svg",
       "svg": {
         "17-dashboard": "moonwitness/ui/v2/17-dashboard.svg",
@@ -850,6 +850,13 @@ export const assets = {
         "25-profile-settings": "moonwitness/ui/v2/25-profile-settings.svg",
         "26-authorization": "moonwitness/ui/v2/26-authorization.svg",
         "27-system-states": "moonwitness/ui/v2/27-system-states.svg",
+        "28-platform-dashboard": "moonwitness/ui/v2/28-platform-dashboard.svg",
+        "29-platform-users": "moonwitness/ui/v2/29-platform-users.svg",
+        "30-platform-authorization": "moonwitness/ui/v2/30-platform-authorization.svg",
+        "31-platform-moderation": "moonwitness/ui/v2/31-platform-moderation.svg",
+        "32-platform-service-status": "moonwitness/ui/v2/32-platform-service-status.svg",
+        "33-platform-audit": "moonwitness/ui/v2/33-platform-audit.svg",
+        "34-platform-settings": "moonwitness/ui/v2/34-platform-settings.svg",
         "application-shell": "moonwitness/ui/v2/application-shell.svg"
       },
       "png": {
@@ -884,6 +891,13 @@ export const assets = {
         "moonwitness/ui/v2/25-profile-settings.svg",
         "moonwitness/ui/v2/26-authorization.svg",
         "moonwitness/ui/v2/27-system-states.svg",
+        "moonwitness/ui/v2/28-platform-dashboard.svg",
+        "moonwitness/ui/v2/29-platform-users.svg",
+        "moonwitness/ui/v2/30-platform-authorization.svg",
+        "moonwitness/ui/v2/31-platform-moderation.svg",
+        "moonwitness/ui/v2/32-platform-service-status.svg",
+        "moonwitness/ui/v2/33-platform-audit.svg",
+        "moonwitness/ui/v2/34-platform-settings.svg",
         "moonwitness/ui/v2/application-shell.svg",
         "moonwitness/ui/v2/png/17-dashboard.png",
         "moonwitness/ui/v2/png/18-command-palette.png",
@@ -3589,6 +3603,38 @@ export const assets = {
         "sprite.svg": "dist/sprite.svg"
       },
       "files": []
+    },
+    "community-participation": {
+      "manifest": "moonwitness/community-participation-pack/manifest.json",
+      "count": 8,
+      "canonicalFormat": "svg",
+      "svg": {
+        "attributed-reply": "moonwitness/community-participation-pack/svg/attributed-reply.svg",
+        "discussion-thread": "moonwitness/community-participation-pack/svg/discussion-thread.svg",
+        "identity-bridge": "moonwitness/community-participation-pack/svg/identity-bridge.svg",
+        "moderation-history": "moonwitness/community-participation-pack/svg/moderation-history.svg",
+        "notification": "moonwitness/community-participation-pack/svg/notification.svg",
+        "proposal-review": "moonwitness/community-participation-pack/svg/proposal-review.svg",
+        "saved-case": "moonwitness/community-participation-pack/svg/saved-case.svg",
+        "source-linked": "moonwitness/community-participation-pack/svg/source-linked.svg"
+      },
+      "png": {},
+      "webm": {},
+      "lottie": {},
+      "wav": {},
+      "ogg": {},
+      "ico": {},
+      "artifacts": {},
+      "files": [
+        "moonwitness/community-participation-pack/svg/attributed-reply.svg",
+        "moonwitness/community-participation-pack/svg/discussion-thread.svg",
+        "moonwitness/community-participation-pack/svg/identity-bridge.svg",
+        "moonwitness/community-participation-pack/svg/moderation-history.svg",
+        "moonwitness/community-participation-pack/svg/notification.svg",
+        "moonwitness/community-participation-pack/svg/proposal-review.svg",
+        "moonwitness/community-participation-pack/svg/saved-case.svg",
+        "moonwitness/community-participation-pack/svg/source-linked.svg"
+      ]
     }
   },
   "collections": {
@@ -3755,15 +3801,15 @@ export const assets = {
     }
   },
   "coverage": {
-    "packFamilies": 42,
+    "packFamilies": 43,
     "foundationCollections": 2,
-    "showcaseCollections": 44,
-    "deliveryFiles": 1432,
-    "indexedDeliveryFiles": 1432,
+    "showcaseCollections": 45,
+    "deliveryFiles": 1447,
+    "indexedDeliveryFiles": 1447,
     "missingDeliveryFiles": 0,
     "coveragePercent": 100,
     "extensions": {
-      "svg": 618,
+      "svg": 633,
       "png": 761,
       "ico": 1,
       "webm": 12,

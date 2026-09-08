@@ -127,6 +127,13 @@
   --mw-application-screens-25-profile-settings: url("/moonwitness/ui/v2/25-profile-settings.svg");
   --mw-application-screens-26-authorization: url("/moonwitness/ui/v2/26-authorization.svg");
   --mw-application-screens-27-system-states: url("/moonwitness/ui/v2/27-system-states.svg");
+  --mw-application-screens-28-platform-dashboard: url("/moonwitness/ui/v2/28-platform-dashboard.svg");
+  --mw-application-screens-29-platform-users: url("/moonwitness/ui/v2/29-platform-users.svg");
+  --mw-application-screens-30-platform-authorization: url("/moonwitness/ui/v2/30-platform-authorization.svg");
+  --mw-application-screens-31-platform-moderation: url("/moonwitness/ui/v2/31-platform-moderation.svg");
+  --mw-application-screens-32-platform-service-status: url("/moonwitness/ui/v2/32-platform-service-status.svg");
+  --mw-application-screens-33-platform-audit: url("/moonwitness/ui/v2/33-platform-audit.svg");
+  --mw-application-screens-34-platform-settings: url("/moonwitness/ui/v2/34-platform-settings.svg");
   --mw-application-screens-application-shell: url("/moonwitness/ui/v2/application-shell.svg");
   --mw-graph-vector-area-chart: url("/moonwitness/graph-pack/svg/area-chart.svg");
   --mw-graph-vector-bar-chart: url("/moonwitness/graph-pack/svg/bar-chart.svg");
@@ -589,6 +596,14 @@
   --mw-runtime-motion-pulse-alert: url("/moonwitness/runtime-motion-pack/svg/pulse-alert.svg");
   --mw-runtime-motion-sync-spin: url("/moonwitness/runtime-motion-pack/svg/sync-spin.svg");
   --mw-runtime-motion-upload-rise: url("/moonwitness/runtime-motion-pack/svg/upload-rise.svg");
+  --mw-community-participation-attributed-reply: url("/moonwitness/community-participation-pack/svg/attributed-reply.svg");
+  --mw-community-participation-discussion-thread: url("/moonwitness/community-participation-pack/svg/discussion-thread.svg");
+  --mw-community-participation-identity-bridge: url("/moonwitness/community-participation-pack/svg/identity-bridge.svg");
+  --mw-community-participation-moderation-history: url("/moonwitness/community-participation-pack/svg/moderation-history.svg");
+  --mw-community-participation-notification: url("/moonwitness/community-participation-pack/svg/notification.svg");
+  --mw-community-participation-proposal-review: url("/moonwitness/community-participation-pack/svg/proposal-review.svg");
+  --mw-community-participation-saved-case: url("/moonwitness/community-participation-pack/svg/saved-case.svg");
+  --mw-community-participation-source-linked: url("/moonwitness/community-participation-pack/svg/source-linked.svg");
   --mw-brand-system-app-icon-maskable: url("/moonwitness/brand/app-icon-maskable.svg");
   --mw-brand-system-app-icon: url("/moonwitness/brand/app-icon.svg");
   --mw-brand-system-apple-touch-icon: url("/moonwitness/brand/apple-touch-icon.svg");
