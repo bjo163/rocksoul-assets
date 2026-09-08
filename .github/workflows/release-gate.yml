@@ -111,7 +111,16 @@ jobs:
           sudo apt-get install -y ffmpeg
           python -m pip install --disable-pip-version-check pillow==10.4.0
           python tools/assets/generate-runtime-motion.py
-          git diff --exit-code -- moonwitness/runtime-motion-pack/png moonwitness/runtime-motion-pack/webm moonwitness/runtime-motion-pack/lottie moonwitness/runtime-motion-pack/generated-manifest.json
+          git diff --exit-code -- moonwitness/runtime-motion-pack/png moonwitness/runtime-motion-pack/lottie moonwitness/runtime-motion-pack/generated-manifest.json
+          for file in moonwitness/runtime-motion-pack/webm/*.webm; do
+            codec="$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nw=1:nk=1 "$file")"
+            width="$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=nw=1:nk=1 "$file")"
+            height="$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=nw=1:nk=1 "$file")"
+            test "$codec" = "vp9"
+            test "$width" = "256"
+            test "$height" = "256"
+          done
+          git checkout -- moonwitness/runtime-motion-pack/webm
 
       - name: Verify generated SFX derivatives
         run: |
