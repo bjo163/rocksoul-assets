@@ -3,10 +3,11 @@ name: Generate Developer Distribution
 on:
   workflow_dispatch:
   push:
-    branches: [main, fix/final-asset-closure-v1.3.1]
+    branches: [main, feat/showcase-full-coverage]
     paths:
       - "moonwitness/**"
       - "tools/assets/build-dist.mjs"
+      - "showcase/catalog.json"
       - ".github/workflows/generate-developer-dist.yml"
 
 permissions:
