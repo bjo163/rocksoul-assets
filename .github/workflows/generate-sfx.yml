@@ -3,7 +3,7 @@ name: Generate SFX Pack
 on:
   workflow_dispatch:
   push:
-    branches: [main, feat/asset-packs-v1.1]
+    branches: [main, feat/secondary-asset-packs-v1.1]
     paths:
       - "tools/assets/generate-sfx.py"
       - "moonwitness/sfx/sounds.json"
