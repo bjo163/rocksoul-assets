@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Device Mockup Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 8,
+  "root": "svg",
+  "assets": [
+    "browser-desktop",
+    "browser-dark",
+    "phone-portrait",
+    "phone-landscape",
+    "tablet",
+    "desktop-monitor",
+    "laptop",
+    "multi-device"
+  ]
+}

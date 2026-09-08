@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Cinematic Hero Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 12,
+  "root": "svg",
+  "assets": [
+    "observatory-night",
+    "lunar-horizon",
+    "satellite-orbit",
+    "archive-room",
+    "evidence-desk",
+    "map-room",
+    "field-investigation",
+    "legal-archive",
+    "community-lab",
+    "data-observatory",
+    "source-trace",
+    "correlation-sky"
+  ]
+}

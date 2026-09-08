@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Runtime Motion Delivery Pack",
+  "version": "1.3",
+  "canonicalFormat": "animated-svg",
+  "generatedFormats": [
+    "apng",
+    "webm",
+    "lottie"
+  ],
+  "renderPng": false,
+  "count": 12,
+  "root": "svg",
+  "motions": [
+    {
+      "id": "pulse-alert",
+      "color": "#FF2A3D",
+      "kind": "pulse"
+    },
+    {
+      "id": "evidence-linked",
+      "color": "#21D1C2",
+      "kind": "link"
+    },
+    {
+      "id": "case-resolved",
+      "color": "#10B981",
+      "kind": "check"
+    },
+    {
+      "id": "ai-orbit",
+      "color": "#3B82F6",
+      "kind": "orbit"
+    },
+    {
+      "id": "loading-trace",
+      "color": "#FF2A3D",
+      "kind": "trace"
+    },
+    {
+      "id": "notification-in",
+      "color": "#F59E0B",
+      "kind": "slide"
+    },
+    {
+      "id": "drawer-open",
+      "color": "#3B82F6",
+      "kind": "slide"
+    },
+    {
+      "id": "sync-spin",
+      "color": "#21D1C2",
+      "kind": "spin"
+    },
+    {
+      "id": "focus-ring",
+      "color": "#3B82F6",
+      "kind": "pulse"
+    },
+    {
+      "id": "upload-rise",
+      "color": "#10B981",
+      "kind": "rise"
+    },
+    {
+      "id": "graph-connect",
+      "color": "#8B5CF6",
+      "kind": "link"
+    },
+    {
+      "id": "backend-reconnect",
+      "color": "#10B981",
+      "kind": "reconnect"
+    }
+  ]
+}
