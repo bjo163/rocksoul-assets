@@ -221,6 +221,11 @@
       "label": "Developer Distribution",
       "category": "System",
       "description": "Generated JSON, TypeScript, CSS and SVG sprite registries."
+    },
+    "community-participation": {
+      "label": "Community Participation",
+      "category": "Workflow",
+      "description": "Source-linked discussion, proposal review, identity bridge, saved case, notification, moderation history and attributed reply visuals."
     }
   }
 }
