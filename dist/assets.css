@@ -17,6 +17,7 @@
   --mw-product-icons-evidence: url("/moonwitness/icons/svg/domain/evidence.svg");
   --mw-product-icons-graph-node: url("/moonwitness/icons/svg/domain/graph-node.svg");
   --mw-product-icons-legal: url("/moonwitness/icons/svg/domain/legal.svg");
+  --mw-product-icons-perspective: url("/moonwitness/icons/svg/domain/perspective.svg");
   --mw-product-icons-source: url("/moonwitness/icons/svg/domain/source.svg");
   --mw-product-icons-timeline: url("/moonwitness/icons/svg/domain/timeline.svg");
   --mw-product-icons-trace: url("/moonwitness/icons/svg/domain/trace.svg");
@@ -306,6 +307,7 @@
   --mw-correlation-semantics-node-law: url("/moonwitness/correlation-semantics-pack/svg/node-law.svg");
   --mw-correlation-semantics-node-location: url("/moonwitness/correlation-semantics-pack/svg/node-location.svg");
   --mw-correlation-semantics-node-person: url("/moonwitness/correlation-semantics-pack/svg/node-person.svg");
+  --mw-correlation-semantics-node-perspective: url("/moonwitness/correlation-semantics-pack/svg/node-perspective.svg");
   --mw-correlation-semantics-node-source: url("/moonwitness/correlation-semantics-pack/svg/node-source.svg");
   --mw-correlation-semantics-node-story: url("/moonwitness/correlation-semantics-pack/svg/node-story.svg");
   --mw-correlation-semantics-node-text: url("/moonwitness/correlation-semantics-pack/svg/node-text.svg");
