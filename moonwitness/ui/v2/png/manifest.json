@@ -4,7 +4,7 @@
   "pack": "MoonWitness Application Screen Preview Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
-  "sourceCount": 12,
+  "sourceCount": 20,
   "outputs": [
     {
       "source": "moonwitness/ui/v2/17-dashboard.svg",
@@ -49,6 +49,38 @@
     {
       "source": "moonwitness/ui/v2/27-system-states.svg",
       "path": "moonwitness/ui/v2/png/27-system-states.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/28-platform-dashboard.svg",
+      "path": "moonwitness/ui/v2/png/28-platform-dashboard.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/29-platform-users.svg",
+      "path": "moonwitness/ui/v2/png/29-platform-users.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/30-platform-authorization.svg",
+      "path": "moonwitness/ui/v2/png/30-platform-authorization.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/31-platform-moderation.svg",
+      "path": "moonwitness/ui/v2/png/31-platform-moderation.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/32-platform-service-status.svg",
+      "path": "moonwitness/ui/v2/png/32-platform-service-status.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/33-platform-audit.svg",
+      "path": "moonwitness/ui/v2/png/33-platform-audit.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/34-platform-settings.svg",
+      "path": "moonwitness/ui/v2/png/34-platform-settings.png"
+    },
+    {
+      "source": "moonwitness/ui/v2/35-platform-system-states.svg",
+      "path": "moonwitness/ui/v2/png/35-platform-system-states.png"
     },
     {
       "source": "moonwitness/ui/v2/application-shell.svg",
