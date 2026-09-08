@@ -67,6 +67,9 @@ jobs:
       - name: Validate research-domain ownership visual
         run: node tools/assets/generate-domain-ownership-visual.mjs --check
 
+      - name: Validate LAW applicability visual
+        run: node tools/assets/generate-legal-intelligence-visual.mjs --check
+
       - name: Validate showcase JavaScript syntax
         run: node --check showcase/showcase.js
 

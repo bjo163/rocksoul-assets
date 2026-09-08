@@ -60,6 +60,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Asset Structure](ASSET-STRUCTURE.md) | repository paths and raster/vector contracts |
 | [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
+| [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
 | [Accessibility](ACCESSIBILITY.md) | non-negotiable product accessibility rules |
 | [Governance](GOVERNANCE.md) | ownership, change classes, definition of done |
 | [Branching Policy](BRANCHING.md) | single-main workflow and temporary PR branch lifecycle |
@@ -90,3 +91,4 @@ If a change alters a consumer contract, visual semantic, release rule, generator
 Documentation is part of the asset system, not post-release commentary.
 
 - [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) — canonical TEXT/RGBL visual ownership and consumer guidance.
+- [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) — canonical LAW applicability semantics and generated boundary visualization.

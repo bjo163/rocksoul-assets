@@ -141,6 +141,7 @@ async function validateApplicationV2() {
   const screenContract = await readJson("moonwitness/ui/v2/screens.json");
   const navigation = await readJson("moonwitness/ui/v2/navigation.json");
   const states = await readJson("moonwitness/ui/v2/states.json");
+  const legal = await readJson("moonwitness/ui/v2/legal-intelligence.json");
 
   await assertNativeSvg("moonwitness/ui/v2/application-shell.svg");
 
@@ -157,6 +158,14 @@ async function validateApplicationV2() {
   for (const name of ["loading", "empty", "error", "offline", "forbidden"]) {
     invariant(states.states?.[name], `Missing system state contract: ${name}`);
   }
+
+  invariant(legal.domain === "LAW", "Legal visual contract must own the LAW domain");
+  invariant(legal.repository === "rocksoul-aws", "Legal visual contract must resolve to rocksoul-aws");
+  invariant(legal.principle === "LEGAL TEXT ≠ APPLICABLE LAW", "Legal applicability principle drift");
+  invariant((legal.legalResultStates ?? []).length === 5, "Legal result vocabulary must define five reviewed states");
+  invariant((legal.applicabilityAxes ?? []).length === 4, "Legal applicability must preserve four independent axes");
+  invariant((legal.reviewPipeline ?? []).length === 5, "Legal review pipeline must define five inspectable stages");
+  invariant((legal.guardrails ?? []).length >= 5, "Legal visual contract guardrails are incomplete");
 
   const delivery = await readJson("moonwitness/ui/v2/manifest.json");
   invariant(delivery.count === screenContract.screens.length + 1, "V2 preview manifest must include shell + all screens");

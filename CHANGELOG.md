@@ -2,6 +2,11 @@
 
 ## [1.3.1] — 2026-09-08
 
+### AWS legal applicability visual grammar
+- Added a canonical LAW contract for five reviewed result states, four independent applicability axes, a five-stage review pipeline, and explicit non-verdict guardrails.
+- Added a generated accessible LAW applicability reference vector under `docs/visuals/` without creating a duplicate runtime asset pack.
+- Added validation and release gates so the visual cannot drift from `moonwitness/ui/v2/legal-intelligence.json`.
+
 ### LEGEND event-intelligence visual grammar
 - Added four reusable EVENT visuals: event topology, historicity/uncertainty band, place/material context, and qualified cross-domain relationship map.
 - Kept association, confidence, and uncertainty semantically separate; no asset implies causation or narrative origin by default.
