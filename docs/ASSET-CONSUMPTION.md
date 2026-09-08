@@ -58,3 +58,26 @@ Generated files are reproducible via `tools/assets/render-packs.py`, `tools/asse
 The showcase is not a curated subset: `tools/assets/validate-showcase-coverage.mjs` requires **100% delivery-file coverage**.
 
 See [Getting Started](GETTING-STARTED.md) for the shortest implementation path.
+
+
+## PERSON identity vs persona roles
+
+Canonical historical or research-domain **PERSON records must use the generic PERSON product icon**:
+
+```text
+moonwitness/icons/svg/navigation/person.svg
+```
+
+Persona avatars such as `researcher`, `analyst`, `moderator`, `admin`, or `protected-witness` describe **application/user roles**. They must not be assigned to historical people merely because a record is attested, anonymous, disputed, or under review.
+
+Consumer rule:
+
+```text
+historical PERSON / unknown identity / archaeological remains
+  → product-icons/person + textual identity-status badge
+
+application actor / current workspace role
+  → persona-avatar/<role>
+```
+
+Status and uncertainty remain textual/semantic and must never be inferred from the avatar artwork.
