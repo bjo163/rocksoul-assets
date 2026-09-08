@@ -4,7 +4,7 @@
   "pack": "MoonWitness Product Icons",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
-  "sourceCount": 44,
+  "sourceCount": 45,
   "outputs": [
     {
       "source": "moonwitness/icons/svg/actions/add.svg",
@@ -309,6 +309,24 @@
     {
       "source": "moonwitness/icons/svg/domain/legal.svg",
       "path": "moonwitness/icons/png/96/domain/legal.png",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/perspective.svg",
+      "path": "moonwitness/icons/png/24/domain/perspective.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/perspective.svg",
+      "path": "moonwitness/icons/png/48/domain/perspective.png",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/perspective.svg",
+      "path": "moonwitness/icons/png/96/domain/perspective.png",
       "width": 96,
       "height": 96
     },
