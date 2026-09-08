@@ -98,6 +98,9 @@ jobs:
           node tools/assets/build-dist.mjs
           git diff --exit-code -- dist
 
+      - name: Verify showcase JavaScript syntax
+        run: node --check showcase/showcase.js
+
       - name: Verify showcase delivery coverage
         run: node tools/assets/validate-showcase-coverage.mjs
 
