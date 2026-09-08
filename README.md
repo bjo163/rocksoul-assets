@@ -1,22 +1,19 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/brand/logo-horizontal.svg" alt="MoonWitness" width="420" />
+<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/brand/logo-horizontal.svg" alt="MoonWitness" width="440" />
 
-# ROCKSOUL ASSETS
+# Rocksoul Assets
 
-## **VISUAL SOURCE OF TRUTH**
+### **The visual source of truth for MoonWitness × Rocksoul**
 
-### **DESIGN ONCE · TRACE EVERYWHERE**
+Canonical brand, UI surfaces, evidence semantics, data visualization, motion, sound, delivery registries, and Penpot handoff assets.
 
-Canonical brand, product-shell, UI, component, token, data-viz, motion, and design-handoff assets for the **MoonWitness × Rocksoul** ecosystem.
+[![Release](https://img.shields.io/badge/release-v1.3.1-111111)](https://github.com/bjo163/rocksoul-assets/releases/tag/v1.3.1)
+[![Asset Validation](https://github.com/bjo163/rocksoul-assets/actions/workflows/validate-assets.yml/badge.svg?branch=main)](https://github.com/bjo163/rocksoul-assets/actions/workflows/validate-assets.yml)
+[![Release Gate](https://github.com/bjo163/rocksoul-assets/actions/workflows/release-gate.yml/badge.svg?branch=main)](https://github.com/bjo163/rocksoul-assets/actions/workflows/release-gate.yml)
+[![Showcase](https://img.shields.io/badge/showcase-100%25%20coverage-10B981)](https://rocksoul-assets-showcase.vercel.app)
 
-![Release](https://img.shields.io/badge/release-v1.3.1-111111)
-![Design](https://img.shields.io/badge/design-Penpot-6C63FF)
-![Source](https://img.shields.io/badge/source-SVG-2E8B57)
-![Surfaces](https://img.shields.io/badge/UI-v1%20%2B%20v2-B43A32)
-![Role](https://img.shields.io/badge/role-DESIGN-6F6F6F)
-
-[Brand](moonwitness/brand/README.md) · [Application Shell](docs/APPLICATION-SHELL.md) · [Penpot](penpot/README.md) · [Handoff](docs/PENPOT-HANDOFF.md) · [Release](RELEASE.md)
+**[Live Showcase](https://rocksoul-assets-showcase.vercel.app)** · **[Docs Hub](docs/README.md)** · **[Quick Start](docs/GETTING-STARTED.md)** · **[Asset Catalog](docs/ASSET-PACK-CATALOG.md)** · **[Release](RELEASE.md)**
 
 </div>
 
@@ -24,207 +21,236 @@ Canonical brand, product-shell, UI, component, token, data-viz, motion, and desi
 
 > **MoonWitness watches. Rocksoul follows. The record connects. The law draws the line. The trail stays inspectable.**
 
-`rocksoul-assets` defines **how the ecosystem looks and communicates**. Application source code does not belong here.
+This repository defines **how the MoonWitness × Rocksoul ecosystem looks and communicates**. It is a source-first asset system, not an application repository.
 
-## Canonical ecosystem
+## Current state
+
+| Signal | Current |
+|---|---:|
+| Release | **v1.3.1** |
+| Asset-pack families | **42** |
+| Showcase collections | **44** |
+| Delivery files indexed in showcase | **1,424 / 1,424** |
+| Showcase coverage | **100%** |
+| Canonical MoonWitness SVG sources | **614** |
+| PNG / APNG delivery files | **757** |
+| Runtime motion | **12 SVG + 12 APNG + 12 WebM + 12 Lottie** |
+| Product SFX | **14 WAV + 14 OGG** |
+| Raster files without vector source | **0** |
+| MoonWitness delivery vectors without PNG | **0** |
+
+The current asset-generation scope is **closed and release-complete**. Future visual additions are new scope and must satisfy the same source, delivery, registry, and showcase contracts.
+
+## Start here
+
+Choose the path that matches what you are doing:
+
+| You are… | Start with |
+|---|---|
+| **Frontend / product engineer** | [Getting Started](docs/GETTING-STARTED.md) → [Asset Consumption](docs/ASSET-CONSUMPTION.md) → `dist/assets.ts` |
+| **Designer** | [Visual Language](docs/VISUAL-LANGUAGE-V1.3.md) → [Asset Structure](docs/ASSET-STRUCTURE.md) → [Penpot Handoff](docs/PENPOT-HANDOFF.md) |
+| **Maintainer** | [Governance](docs/GOVERNANCE.md) → [Versioning](docs/VERSIONING.md) → [Release Checklist](docs/RELEASE-CHECKLIST.md) |
+| **Reviewer / auditor** | [Asset Closure Audit](docs/ASSET-CLOSURE-AUDIT.md) → [Showcase Coverage](docs/SHOWCASE-COVERAGE.md) → [Accessibility](docs/ACCESSIBILITY.md) |
+| **Explorer** | [Live Showcase](https://rocksoul-assets-showcase.vercel.app) |
+
+## Use an asset in under a minute
+
+The generated registry is the preferred developer entry point:
+
+```ts
+import { assets } from "./dist/assets";
+
+const evidenceBox =
+  assets.packs["evidence-media"].svg["bounding-box"];
+
+const supportsEdge =
+  assets.packs["correlation-semantics"].svg["edge-supports"];
+
+const verifiedBadge =
+  assets.packs["badge-status"].svg.verified;
+
+const researcher64 =
+  assets.packs["persona-avatar"].png.researcher["64"];
+```
+
+Product icons can also be consumed from the generated SVG sprite:
+
+```html
+<svg aria-label="Search">
+  <use href="/dist/sprite.svg#mw-search"></use>
+</svg>
+```
+
+For discovery, use:
+
+- `moonwitness/asset-packs.json` — canonical pack index;
+- `dist/assets.json` — complete delivery + showcase registry;
+- `dist/assets.ts` — generated TypeScript registry;
+- `dist/assets.css` — generated CSS path variables;
+- `dist/sprite.svg` — product-icon sprite;
+- [Live Showcase](https://rocksoul-assets-showcase.vercel.app) — human exploration of every delivery file.
+
+## Source-of-truth model
+
+```mermaid
+flowchart LR
+  A["CANONICAL SOURCES<br/>SVG · JSON · TOKENS"] --> B["GENERATORS"]
+  B --> C["DELIVERY<br/>PNG · APNG · WebM · Lottie · WAV · OGG"]
+  A --> D["PENPOT<br/>DESIGN HANDOFF"]
+  C --> E["DIST REGISTRY"]
+  E --> F["SHOWCASE"]
+  E --> G["PRODUCT CONSUMERS"]
+```
+
+| Concern | Canonical source |
+|---|---|
+| Brand | `moonwitness/brand/` |
+| Immutable public visual baseline | `moonwitness/ui/v1/` |
+| Authenticated application surfaces | `moonwitness/ui/v2/` |
+| Pack discovery | `moonwitness/asset-packs.json` |
+| Modular asset packs | `moonwitness/*-pack/` + legacy first-class pack roots |
+| Developer distribution | `dist/` — generated, never hand-maintained |
+| Penpot design system | `penpot/` |
+| Showcase presentation metadata | `showcase/catalog.json` |
+
+**Rule:** canonical design decisions live in source files. Generated delivery files must never become the only source of a visual decision.
+
+## What lives here
+
+The 42 pack families cover:
+
+- **Foundations & core UI** — product icons, dashboard widgets, states, badges, file/source types;
+- **Evidence & investigation** — annotation, correlation semantics, geospatial, privacy/redaction, integrity, jurisdiction, export/seals;
+- **Workflow** — Kanban, calendar, chat, AI workspace, authorization/security, data grid, forms, commands;
+- **Identity & character** — personas, Rocksoul character, theme/accessibility, cursors;
+- **Media & communication** — hero backgrounds, cinematic hero, editorial, social, onboarding, notifications, reports, device mockups, texture/material;
+- **System delivery** — architecture diagrams, motion, runtime motion, SFX, developer distribution.
+
+See the full machine-readable index at `moonwitness/asset-packs.json` and the human catalog at [docs/ASSET-PACK-CATALOG.md](docs/ASSET-PACK-CATALOG.md).
+
+## Repository map
+
+```text
+rocksoul-assets/
+├── moonwitness/
+│   ├── brand/                 # identity sources + generated delivery
+│   ├── ui/v1/                 # immutable baseline SVG/PNG pairs
+│   ├── ui/v2/                 # application surfaces + PNG previews
+│   ├── icons/                 # product icon system
+│   ├── *-pack/                # modular production packs
+│   ├── motion/                # animated SVG motion references
+│   └── sfx/                   # sound contract + generated audio
+├── penpot/                    # design-system and golden-slice sources
+├── dist/                      # generated developer registry
+├── showcase/                  # public catalog metadata + UI
+├── docs/                      # canonical documentation / wiki source
+├── tools/                     # generators and validators
+└── .github/workflows/         # CI, generation, release gates
+```
+
+## Ecosystem boundary
+
+`rocksoul-assets` owns **visual source and delivery contracts**. It does not own application source code or domain intelligence.
 
 ```mermaid
 flowchart TD
-    A["ROCKSOUL-ASSETS\nDESIGN"] --> U["ROCKSOUL-UI\nUI SYSTEM"]
-    U --> W["ROCKSOUL-WEB\nPUBLIC"]
-    U --> C["ROCKSOUL-COMMUNITY\nPARTICIPATION"]
-    U --> P["ROCKSOUL-PLATFORM\nADMIN"]
-    U --> R["ROCKSOUL-CRAYON\nCONSOLE"]
-    R --> S["MFTL\nSTORY"]
-    R --> E["LEGEND\nEVENT"]
-    R --> H["SUPERHERO\nPERSON"]
-    R --> T["RGBL\nTEXT"]
-    R --> L["AWS\nLAW"]
-    S --> Q["CORRELATION\nPUBLIC EVIDENCE GRAPH"]
+    A["ROCKSOUL-ASSETS<br/>VISUAL SOURCE"] --> U["ROCKSOUL-UI<br/>IMPLEMENTATION SYSTEM"]
+    U --> W["ROCKSOUL-WEB"]
+    U --> C["ROCKSOUL-COMMUNITY"]
+    U --> P["ROCKSOUL-PLATFORM"]
+    U --> R["ROCKSOUL-CRAYON"]
+    R --> S["MFTL · STORY"]
+    R --> E["LEGEND · EVENT"]
+    R --> H["SUPERHERO · PERSON"]
+    R --> T["RGBL · TEXT"]
+    R --> L["AWS · LAW"]
+    S --> Q["CORRELATION"]
     E --> Q
     H --> Q
     T --> Q
     L --> Q
-    Q --> W
-    Q --> R
 ```
 
-### Product and experience layers
+Correlation owns cross-domain relationship semantics and explainability metadata. It does **not** duplicate canonical STORY, EVENT, PERSON, TEXT, or LAW records, and correlation must never visually imply causation by default.
 
-| Layer | Repository | Responsibility |
-|---|---|---|
-| **DESIGN** | [`rocksoul-assets`](https://github.com/bjo163/rocksoul-assets) | brand · tokens · screens · icons · data-viz · motion |
-| **UI SYSTEM** | [`rocksoul-ui`](https://github.com/bjo163/rocksoul-ui) | reusable production components · patterns · application shell |
-| **PUBLIC WEB** | [`rocksoul-web`](https://github.com/bjo163/rocksoul-web) | landing · observatory · repositories · public cases |
-| **COMMUNITY** | [`rocksoul-community`](https://github.com/bjo163/rocksoul-community) | participation · identity · discussion · proposals |
-| **PLATFORM** | [`rocksoul-platform`](https://github.com/bjo163/rocksoul-platform) | administration · authorization · moderation operations |
-| **CONSOLE** | [`rocksoul-crayon`](https://github.com/bjo163/rocksoul-crayon) | operator workspace · AutoMenu · cross-domain research operations |
+## Delivery guarantees
 
-### Intelligence ownership
+The repository enforces these invariants in CI:
 
-| Domain | Repository | Core question |
-|---|---|---|
-| **STORY** | [`rocksoul-mftl`](https://github.com/bjo163/rocksoul-mftl) | What was told? |
-| **EVENT** | [`rocksoul-legend`](https://github.com/bjo163/rocksoul-legend) | What happened? |
-| **PERSON** | [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | Who was involved? |
-| **TEXT** | [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | What does the exact text say? |
-| **LAW** | [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | Was it allowed? |
-| **CORRELATION** | [`rocksoul-correlation`](https://github.com/bjo163/rocksoul-correlation) | How do reviewed records relate? |
+1. every tracked SVG parses as valid XML;
+2. canonical SVGs do not embed raster payloads;
+3. every MoonWitness PNG/JPEG maps to a canonical SVG;
+4. every MoonWitness delivery SVG has at least one PNG derivative;
+5. pack manifests and the global index stay in sync;
+6. generated brand, raster, SFX, runtime-motion, and `dist/` output reproduces from source;
+7. **1,424 / 1,424 delivery files remain reachable from the showcase registry**;
+8. Penpot source/package/golden-slice checks remain valid.
 
-```text
-DESIGN      → ASSETS
-CODE UI     → UI
-PUBLIC      → WEB
-PEOPLE      → COMMUNITY
-ADMIN       → PLATFORM
-OPS         → CRAYON
+See [Asset Closure Audit](docs/ASSET-CLOSURE-AUDIT.md) and [Showcase Coverage](docs/SHOWCASE-COVERAGE.md).
 
-STORY       → MFTL
-EVENT       → LEGEND
-PERSON      → SUPERHERO
-TEXT        → RGBL
-LAW         → AWS
-CORRELATION → CORRELATION
-```
+## Visual-language principles
 
-Correlation owns cross-domain edges and explainability metadata only. It does not duplicate canonical STORY, EVENT, PERSON, TEXT, or LAW records and it does not become a Mizan verdict layer.
+- evidence and status are never color-only;
+- uncertainty stays visible;
+- community submission ≠ verified evidence;
+- correlation ≠ causation;
+- legal analysis ≠ court judgment;
+- graphs require semantic text/data equivalents;
+- motion requires reduced-motion behavior;
+- redaction/privacy assets carry semantic meaning;
+- generated files are outputs, not hand-edited sources.
 
-## Design source of truth
+See [Accessibility](docs/ACCESSIBILITY.md) and [Visual Language](docs/VISUAL-LANGUAGE-V1.3.md).
 
-| Concern | Canonical source |
-|---|---|
-| Design tool | **Penpot** |
-| Brand | `moonwitness/brand/` |
-| Immutable visual baseline | `moonwitness/ui/v1/` |
-| Application vector surfaces | `moonwitness/ui/v2/` |
-| Product icons | `moonwitness/icons/` |
-| Dashboard widgets | `moonwitness/dashboard-pack/` |
-| Data visualization | `moonwitness/data-viz/` |
-| Hero backgrounds | `moonwitness/hero-backgrounds/` |
-| System illustrations | `moonwitness/state-illustrations/` |
-| Motion references | `moonwitness/motion/` |
-| Design-system source | `penpot/` |
+## Penpot boundary
 
-The earlier Figma file remains prototype/reference only.
+Repository-side sources, contracts, generated Penpot package, and golden-slice validation are complete.
 
-## Brand system
+The following remain intentionally **live-workspace checks**, not missing repository assets:
 
-<div align="center">
+- final font availability/licensing in the live Penpot workspace;
+- native reusable Penpot component reconstruction;
+- interaction prototype walkthrough;
+- keyboard/focus inspection;
+- final live contrast/accessibility review.
 
-<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/brand/rocksoul-lockup.svg" alt="MoonWitness Rocksoul lockup" width="560" />
+See [Live Penpot Verification](docs/PENPOT-LIVE-VERIFICATION.md).
 
-</div>
+## Documentation
 
-Canonical SVG sources cover the primary mark, horizontal / stacked / monochrome logos, wordmark, ecosystem lockup, favicon, pinned-tab icon, app icons, social avatar, and Open Graph card. Raster delivery assets are derivatives generated from canonical vectors.
+The canonical documentation hub is **[docs/README.md](docs/README.md)**. It is intentionally maintained inside the repository so design decisions remain reviewable in Git.
 
-## Asset packs
+Key references:
 
-| Pack | Path | Canonical assets |
-|---|---|---:|
-| Product Icons | `moonwitness/icons/` | 44 SVG + PNG at 24/48/96 |
-| Dashboard Pack | `moonwitness/dashboard-pack/` | 20 SVG + PNG widgets |
-| Data-Viz Pack | `moonwitness/data-viz/` | 16 SVG + PNG components |
-| Hero Backgrounds | `moonwitness/hero-backgrounds/` | 8 SVG + PNG backgrounds |
-| State Illustrations | `moonwitness/state-illustrations/` | 12 SVG + PNG illustrations |
-| Motion Pack | `moonwitness/motion/` | 12 animated SVG + PNG fallback previews |
-| SFX Pack | `moonwitness/sfx/` | 14 procedural cues + WAV/OGG |
-| Application Screen Previews | `moonwitness/ui/v2/` | 12 SVG + PNG surfaces |
-| Graph Vector Pack | `moonwitness/graph-pack/` | 10 graph SVGs + PNG |
-| Badge / Status Pack | `moonwitness/badge-pack/` | 12 badge SVGs + PNG |
-| Source / File-Type Pack | `moonwitness/source-file-pack/` | 15 source icons + PNG |
-| Geospatial Pack | `moonwitness/geospatial-pack/` | 15 map assets + PNG |
-| Cursor / Interaction Pack | `moonwitness/cursor-pack/` | 17 cursor assets + PNG |
-| Persona / Avatar Pack | `moonwitness/persona-pack/` | 9 personas × 4 PNG sizes |
-| Social Campaign Pack | `moonwitness/social-campaign-pack/` | 8 platform templates |
-| Platform Delivery Pack | `moonwitness/platform-delivery-pack/` | 8 install/store assets |
-| Onboarding Pack | `moonwitness/onboarding-pack/` | 8 tutorial illustrations |
-| Document / Report Pack | `moonwitness/document-report-pack/` | 9 report assets |
-| Notification Pack | `moonwitness/notification-pack/` | 8 email/in-app templates |
-| Editorial Pack | `moonwitness/editorial-pack/` | 6 editorial vector images |
+- [Getting Started](docs/GETTING-STARTED.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Asset Consumption](docs/ASSET-CONSUMPTION.md)
+- [Asset Pack Catalog](docs/ASSET-PACK-CATALOG.md)
+- [Governance](docs/GOVERNANCE.md)
+- [Versioning](docs/VERSIONING.md)
+- [Showcase Operations](docs/SHOWCASE-OPERATIONS.md)
+- [Accessibility](docs/ACCESSIBILITY.md)
+- [Penpot Handoff](docs/PENPOT-HANDOFF.md)
+- [FAQ](docs/FAQ.md)
 
-Correlation visualizations should preferentially use the existing **node-link, provenance, evidence-matrix, timeline, repository-health, metric, annotation, and edge-style** assets in `moonwitness/data-viz/`.
+## Contributing
 
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before adding or changing assets.
 
-### v1.3 investigation + runtime expansion
+A new visual is not complete when the SVG exists. It is complete when its canonical source, required derivatives, manifest/index entries, developer registry, showcase metadata, documentation, and CI all agree.
 
-v1.3 adds **22 delivery families** spanning evidence annotation, correlation semantics, workflow modules, AI/security, tables/forms, privacy/integrity/export, Rocksoul character scenes, cinematic heroes, runtime motion and generated developer distribution. The canonical global index now contains **42 pack families**.
+## Licensing
 
-Direct developer entry points: `moonwitness/asset-packs.json` and `dist/assets.ts`.
-
-
-### v1.3.1 asset closure
-
-Final two-way audit confirms **614 MoonWitness SVG sources → 757 PNG derivatives**, with **0 raster-without-vector** and **0 delivery-vector-without-raster**. All 13 canonical brand SVGs and all 12 V2 application surfaces have raster delivery. Penpot-only design sources remain intentionally exempt.
-
-## Surface ownership
-
-| Range | Canonical surface | Primary repository |
-|---|---|---|
-| **01–12** | Public observatory, repositories, cases, correlation, legal | `rocksoul-web` |
-| **13–14** | Community + authentication | `rocksoul-community` |
-| **15** | Internal platform/admin | `rocksoul-platform` |
-| **16** | Design-system reference | `rocksoul-ui` |
-| **17–27** | Authenticated shell + workspaces | `rocksoul-crayon` / shared UI |
-
-V2 defines Dashboard, Command Palette, Notifications, Kanban, Calendar, Chat, AI Workspace, Resources/AutoMenu, Profile/Settings, Authorization UX, system states, and the shared application shell.
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/ui/v2/17-dashboard.svg" alt="Rocksoul dashboard reference" width="900" />
-
-</div>
-
-## Visual language contract
-
-Across every Rocksoul repository:
-
-- **MoonWitness** is the product umbrella;
-- **Rocksoul** is the connective character/thread;
-- repository landing pages use the canonical MoonWitness logo and Rocksoul lockup;
-- headings are short, declarative, and domain-specific;
-- badges communicate role, not decoration;
-- evidence/status must remain readable in expressive surfaces;
-- status is never color-only;
-- graphs require a text equivalent;
-- uncertainty is represented, not hidden;
-- correlation must never visually imply causation by default;
-- application code consumes `@rocksoul/ui` rather than recreating the design system;
-- changes to brand grammar start here before propagating downstream.
-
-## Design pipeline
-
-```mermaid
-flowchart TD
-    A["BRAND + V1 + V2 + ASSET PACKS"] --> B["TOKENS"]
-    B --> C["PRIMITIVES"]
-    C --> D["COMPONENTS"]
-    D --> E["PATTERNS"]
-    E --> F["PENPOT"]
-    F --> U["@ROCKSOUL/UI"]
-    U --> X["WEB · COMMUNITY · PLATFORM · CRAYON"]
-    X --> I["STORY · EVENT · PERSON · TEXT · LAW"]
-    I --> Q["CORRELATION"]
-```
-
-## Asset contract
-
-- Existing `v1` PNG images remain immutable visual references.
-- Canonical editable graphics are SVG; raster delivery files are derivatives.
-- Material visual expansion goes to a new version layer rather than rewriting the baseline.
-- Penpot is the canonical interactive design layer.
-- Resource navigation remains AutoMenu-driven where applicable.
-- Do not place application source code in this repository.
-
-Start with `moonwitness/asset-packs.json`, `docs/ASSET-CONSUMPTION.md`, `moonwitness/brand/README.md`, `docs/APPLICATION-SHELL.md`, `penpot/README.md`, and `docs/PENPOT-HANDOFF.md`.
+This public repository currently has **no repository-wide license file**. Public visibility does not by itself grant reuse rights. See [docs/LICENSING.md](docs/LICENSING.md) before redistributing assets outside the Rocksoul ecosystem.
 
 ---
 
 <div align="center">
 
-## **DESIGN ONCE · TRACE EVERYWHERE**
+### **DESIGN ONCE · TRACE EVERYWHERE**
 
-### **ONE LANGUAGE · TWELVE REPOSITORIES · FIVE SOURCE DOMAINS · ONE PUBLIC CORRELATION LAYER**
+**Source-first. Evidence-aware. Inspectable by default.**
 
-`ASSETS / MoonWitness × Rocksoul`
+[Showcase](https://rocksoul-assets-showcase.vercel.app) · [Docs](docs/README.md) · [Release v1.3.1](https://github.com/bjo163/rocksoul-assets/releases/tag/v1.3.1)
 
 </div>
