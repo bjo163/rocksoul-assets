@@ -1,6 +1,11 @@
 {
   "schemaVersion": 1,
   "version": "1.3",
+  "reproducibility": {
+    "apng": "byte-stable",
+    "lottie": "byte-stable",
+    "webm": "semantic-ffprobe"
+  },
   "outputs": [
     {
       "id": "pulse-alert",
