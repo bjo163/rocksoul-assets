@@ -4,7 +4,7 @@
   "rule": "Resource navigation is generated from descriptors and permissions. Do not duplicate resource routes in hand-maintained navigation.",
   "items": [
     {"id":"dashboard","label":"Dashboard","path":"/","kind":"system","permission":"authenticated"},
-    {"id":"cases","label":"Cases","path":"/cases","kind":"resource","resource":"case","permission":"case:read"},
+    {"id":"cases","label":"Cases","path":"/cases","kind":"resource","resource":"story","permission":"case:read"},
     {"id":"kanban","label":"Kanban","path":"/work/kanban","kind":"workspace","permission":"review:read"},
     {"id":"calendar","label":"Calendar","path":"/work/calendar","kind":"workspace","permission":"review:read"},
     {"id":"chat","label":"Chat","path":"/chat","kind":"workspace","permission":"community:read"},
@@ -14,10 +14,10 @@
     {"id":"settings","label":"Settings","path":"/settings","kind":"account","permission":"authenticated"}
   ],
   "resourceDescriptors": [
-    {"resource":"case","label":"Cases","path":"/cases","repo":"moonwitness"},
-    {"resource":"event","label":"Events","path":"/events","repo":"rocksoul-event"},
+    {"resource":"story","label":"Stories / Cases","path":"/cases","repo":"rocksoul-mftl"},
+    {"resource":"event","label":"Events","path":"/events","repo":"rocksoul-legend"},
     {"resource":"person","label":"People","path":"/people","repo":"rocksoul-superhero"},
-    {"resource":"rgbl","label":"RGBL Sources","path":"/sources","repo":"rocksoul-rgbl"},
-    {"resource":"aws","label":"AWS Legal","path":"/aws","repo":"rocksoul-aws"}
+    {"resource":"text","label":"Texts / RGBL","path":"/sources","repo":"rocksoul-rgbl"},
+    {"resource":"law","label":"Law / AWS","path":"/aws","repo":"rocksoul-aws"}
   ]
 }
