@@ -5,7 +5,7 @@
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "renderPng": true,
-  "count": 6,
+  "count": 7,
   "root": "svg",
   "assets": [
     "lunar-observatory",
@@ -13,6 +13,7 @@
     "archive-dossier",
     "case-map",
     "legal-boundary",
-    "source-signal"
+    "source-signal",
+    "story-dossier-header"
   ]
 }
