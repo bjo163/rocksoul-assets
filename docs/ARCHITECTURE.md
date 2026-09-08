@@ -60,7 +60,7 @@ Generated files must be reproducible and must not be hand-maintained.
 
 It includes:
 
-- 42 pack families;
+- 43 pack families;
 - Brand System foundation collection;
 - V1 Baseline foundation collection;
 - format-specific paths;
