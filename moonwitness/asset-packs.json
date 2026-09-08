@@ -213,15 +213,20 @@
       "id": "developer-distribution",
       "manifest": "moonwitness/developer-pack/manifest.json",
       "count": 4
+    },
+    {
+      "id": "community-participation",
+      "manifest": "moonwitness/community-participation-pack/manifest.json",
+      "count": 8
     }
   ],
   "coverage": {
     "policy": "Every MoonWitness delivery SVG has at least one PNG derivative; every PNG/JPEG maps to canonical SVG.",
-    "svgSources": 618,
-    "pngDerivatives": 761,
+    "svgSources": 622,
+    "pngDerivatives": 765,
     "vectorWithoutRaster": 0,
     "rasterWithoutVector": 0,
-    "packFamilies": 42,
+    "packFamilies": 43,
     "status": "complete"
   }
 }
