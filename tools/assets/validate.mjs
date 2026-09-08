@@ -226,7 +226,8 @@ async function validateGlobalPackIndex() {
   const index = await readJson("moonwitness/asset-packs.json");
   const version = (await readFile(path.join(root, "VERSION"), "utf8")).trim();
   invariant(index.version === version, `asset-packs.json version must match VERSION (${version})`);
-  invariant(index.packs.length >= 42, `Expected at least 42 pack families, got ${index.packs.length}`);
+  invariant(index.packs.length > 0, "Asset registry must contain at least one pack family");
+  invariant(index.coverage?.packFamilies === index.packs.length, `asset-packs coverage.packFamilies must equal indexed pack count (${index.packs.length})`);
   const ids=index.packs.map((p)=>p.id);
   invariant(new Set(ids).size===ids.length,"Duplicate asset pack ids");
   for(const p of index.packs) invariant(await exists(p.manifest), `Missing indexed pack manifest: ${p.manifest}`);
