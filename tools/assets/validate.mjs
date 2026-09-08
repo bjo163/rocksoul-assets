@@ -175,20 +175,65 @@ async function validateAssetPacks() {
 }
 
 async function validateSecondaryAssetPacks() {
-  const manifestFiles = (await walk("moonwitness")).filter((name) => name.endsWith("/manifest.json") && !name.includes("/generated/") && !name.includes("/png/"));
+  const manifestFiles = (await walk("moonwitness")).filter((name) =>
+    name.endsWith("/manifest.json") &&
+    name.includes("-pack/") &&
+    !name.includes("/generated/") &&
+    !name.includes("/png/")
+  );
   const packs = {};
   for (const manifestPath of manifestFiles) {
     const data = await readJson(manifestPath);
-    if (!data.renderPng) continue;
     const packRoot = path.posix.dirname(manifestPath);
-    const svgRoot = path.posix.join(packRoot, data.root ?? "svg");
-    const svgs = (await walk(svgRoot)).filter((name) => name.endsWith(".svg"));
-    invariant(svgs.length === data.count, `${data.pack}: manifest count ${data.count} != SVG count ${svgs.length}`);
-    for (const file of svgs) await assertNativeSvg(file);
-    packs[data.pack] = svgs.length;
+    if (data.root) {
+      const svgRoot = path.posix.join(packRoot, data.root);
+      const svgs = (await walk(svgRoot)).filter((name) => name.endsWith(".svg"));
+      invariant(svgs.length === data.count, `${data.pack}: manifest count ${data.count} != SVG count ${svgs.length}`);
+      for (const file of svgs) await assertNativeSvg(file);
+      packs[data.pack] = svgs.length;
+    } else if (data.canonicalFormat === "generated-registry") {
+      invariant(Array.isArray(data.artifacts) && data.artifacts.length === data.count, `${data.pack}: artifact count mismatch`);
+      packs[data.pack] = data.count;
+    }
   }
-  invariant(Object.keys(packs).length >= 12, `Expected at least 12 secondary asset packs, got ${Object.keys(packs).length}`);
+  invariant(Object.keys(packs).length >= 33, `Expected at least 33 modular asset packs, got ${Object.keys(packs).length}`);
   return packs;
+}
+
+async function validateGlobalPackIndex() {
+  const index = await readJson("moonwitness/asset-packs.json");
+  invariant(index.version === "1.3.0", "asset-packs.json must be v1.3.0");
+  invariant(index.packs.length >= 40, `Expected at least 40 pack families, got ${index.packs.length}`);
+  const ids=index.packs.map((p)=>p.id);
+  invariant(new Set(ids).size===ids.length,"Duplicate asset pack ids");
+  for(const p of index.packs) invariant(await exists(p.manifest), `Missing indexed pack manifest: ${p.manifest}`);
+  return index.packs.length;
+}
+
+async function validateDeveloperDist() {
+  for (const file of ["dist/assets.json","dist/assets.ts","dist/assets.css","dist/sprite.svg"]) {
+    invariant(await exists(file), `Missing developer distribution artifact: ${file}`);
+  }
+  const dist=await readJson("dist/assets.json");
+  invariant(dist.version==="1.3.0","Developer dist version mismatch");
+  invariant(Object.keys(dist.packs??{}).length>=40,"Developer dist missing pack families");
+  return Object.keys(dist.packs).length;
+}
+
+async function validateRuntimeMotion() {
+  const m=await readJson("moonwitness/runtime-motion-pack/manifest.json");
+  invariant(m.count===12,"Runtime motion pack must define 12 motions");
+  for(const motion of m.motions??[]) await assertNativeSvg(`moonwitness/runtime-motion-pack/svg/${motion.id}.svg`);
+  if(await exists("moonwitness/runtime-motion-pack/generated-manifest.json")){
+    const generated=await readJson("moonwitness/runtime-motion-pack/generated-manifest.json");
+    invariant((generated.outputs??[]).length===12,"Runtime generated manifest must contain 12 motions");
+    for(const item of generated.outputs){
+      invariant(await exists(item.apng),`Missing APNG: ${item.apng}`);
+      invariant(await exists(item.webm),`Missing WebM: ${item.webm}`);
+      invariant(await exists(item.lottie),`Missing Lottie: ${item.lottie}`);
+    }
+  }
+  return m.count;
 }
 
 function numeric(value) {
@@ -248,6 +293,9 @@ const applicationScreens = await validateApplicationV2();
 const mobileGoldenScreens = await validateGoldenMobileBounds();
 const assetPacks = await validateAssetPacks();
 const secondaryAssetPacks = await validateSecondaryAssetPacks();
+const globalPackCount = await validateGlobalPackIndex();
+const developerDistPacks = await validateDeveloperDist();
+const runtimeMotions = await validateRuntimeMotion();
 
 console.log(JSON.stringify({
   validAssets: true,
@@ -257,5 +305,8 @@ console.log(JSON.stringify({
   mobileGoldenScreens,
   assetPacks,
   secondaryAssetPacks,
+  globalPackCount,
+  developerDistPacks,
+  runtimeMotions,
   manifestVersion: manifest.schemaVersion
 }, null, 2));

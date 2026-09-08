@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Developer Distribution Pack",
+  "version": "1.3",
+  "canonicalFormat": "generated-registry",
+  "count": 4,
+  "artifacts": [
+    "dist/assets.json",
+    "dist/assets.ts",
+    "dist/assets.css",
+    "dist/sprite.svg"
+  ],
+  "generator": "tools/assets/build-dist.mjs"
+}
