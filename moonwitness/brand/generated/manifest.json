@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "moonwitness/brand/*.svg",
+  "canonicalFormat": "svg",
+  "outputs": [
+    {
+      "path": "moonwitness/brand/generated/favicon-16.png",
+      "source": "moonwitness/brand/favicon.svg",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "path": "moonwitness/brand/generated/favicon-32.png",
+      "source": "moonwitness/brand/favicon.svg",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "moonwitness/brand/generated/favicon-48.png",
+      "source": "moonwitness/brand/favicon.svg",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "path": "moonwitness/brand/generated/apple-touch-icon-180.png",
+      "source": "moonwitness/brand/apple-touch-icon.svg",
+      "width": 180,
+      "height": 180
+    },
+    {
+      "path": "moonwitness/brand/generated/app-icon-192.png",
+      "source": "moonwitness/brand/app-icon.svg",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "path": "moonwitness/brand/generated/app-icon-512.png",
+      "source": "moonwitness/brand/app-icon.svg",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "moonwitness/brand/generated/app-icon-maskable-192.png",
+      "source": "moonwitness/brand/app-icon-maskable.svg",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "path": "moonwitness/brand/generated/app-icon-maskable-512.png",
+      "source": "moonwitness/brand/app-icon-maskable.svg",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "moonwitness/brand/generated/social-avatar-512.png",
+      "source": "moonwitness/brand/social-avatar.svg",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "moonwitness/brand/generated/og-card-1200x630.png",
+      "source": "moonwitness/brand/og-card.svg",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "moonwitness/brand/generated/favicon.ico",
+      "source": "moonwitness/brand/favicon.svg",
+      "sizes": [
+        16,
+        32,
+        48
+      ]
+    }
+  ]
+}
