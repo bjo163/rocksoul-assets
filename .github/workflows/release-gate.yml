@@ -90,6 +90,9 @@ jobs:
       - name: Validate asset system
         run: node tools/assets/validate.mjs
 
+      - name: Verify research-domain ownership visual
+        run: node tools/assets/generate-domain-ownership-visual.mjs --check
+
       - name: Verify generated brand derivatives
         run: |
           python -m pip install --disable-pip-version-check cairosvg==2.7.1 pillow==10.4.0
