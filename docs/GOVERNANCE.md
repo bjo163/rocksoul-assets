@@ -100,6 +100,16 @@ A new MoonWitness delivery asset is done when:
 - [ ] release/change documentation is updated;
 - [ ] CI and release gate pass.
 
+## Branch lifecycle
+
+`main` is the only long-lived branch.
+
+Feature, fix, docs, chore, and release-preparation branches are temporary and should be deleted after their pull request is merged.
+
+Generator workflows must not depend on temporary branch names.
+
+See [Branching Policy](BRANCHING.md).
+
 ## Pull-request rule
 
 Keep canonical source and the contract changes that make it consumable in the **same pull request**.

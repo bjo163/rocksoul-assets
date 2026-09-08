@@ -3,7 +3,7 @@ name: Generate SFX Pack
 on:
   workflow_dispatch:
   push:
-    branches: [main, feat/secondary-asset-packs-v1.1]
+    branches: [main]
     paths:
       - "tools/assets/generate-sfx.py"
       - "moonwitness/sfx/sounds.json"
@@ -36,5 +36,12 @@ jobs:
             echo "No SFX changes."
           else
             git commit -m "build(sfx): generate product sound pack"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin "$GITHUB_REF_NAME"
+              if git push; then
+                break
+              fi
+              test "$attempt" -lt 3
+              sleep 2
+            done
           fi

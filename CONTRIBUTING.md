@@ -12,6 +12,7 @@ Read:
 2. [docs/ASSET-STRUCTURE.md](docs/ASSET-STRUCTURE.md)
 3. [docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md)
 4. [docs/VERSIONING.md](docs/VERSIONING.md)
+5. [docs/BRANCHING.md](docs/BRANCHING.md)
 
 ## Asset contribution workflow
 
@@ -38,6 +39,12 @@ Read:
 - hide a breaking rename behind a “cleanup” PR;
 - imply verification/causation/legal judgment with decorative styling;
 - treat screenshots/posters as runtime spritesheets.
+
+## Branches
+
+Create work from current `main` on a short-lived branch. Do not treat `dev`, release branches, or feature branches as permanent environments.
+
+After a PR is merged, its head branch should be deleted.
 
 ## Pull requests
 
