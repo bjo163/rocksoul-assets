@@ -165,7 +165,7 @@
     "date": "2026-09-08",
     "status": "released",
     "branch": "main",
-    "repositoryAcceptance": "pending-ci",
+    "repositoryAcceptance": "passed",
     "livePenpotVerification": "manual-follow-up"
   },
   "assetPacks": {
@@ -363,6 +363,7 @@
     }
   },
   "assetClosureAudit": {
-    "conclusion": "complete-pending-ci"
+    "conclusion": "complete",
+    "ci": "passed"
   }
 }
