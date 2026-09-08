@@ -28,12 +28,12 @@ This repository defines **how the MoonWitness × Rocksoul ecosystem looks and co
 | Signal | Current |
 |---|---:|
 | Release | **v1.3.1** |
-| Asset-pack families | **42** |
-| Showcase collections | **44** |
-| Delivery files indexed in showcase | **1,424 / 1,424** |
+| Asset-pack families | **43** |
+| Showcase collections | **45** |
+| Delivery files indexed in showcase | **1,464 / 1,464** |
 | Showcase coverage | **100%** |
-| Canonical MoonWitness SVG sources | **614** |
-| PNG / APNG delivery files | **757** |
+| Canonical MoonWitness SVG sources | **634** |
+| PNG / APNG delivery files | **777** |
 | Runtime motion | **12 SVG + 12 APNG + 12 WebM + 12 Lottie** |
 | Product SFX | **14 WAV + 14 OGG** |
 | Raster files without vector source | **0** |
@@ -117,7 +117,7 @@ flowchart LR
 
 ## What lives here
 
-The 42 pack families cover:
+The 43 pack families cover:
 
 - **Foundations & core UI** — product icons, dashboard widgets, states, badges, file/source types;
 - **Evidence & investigation** — annotation, correlation semantics, geospatial, privacy/redaction, integrity, jurisdiction, export/seals;
@@ -185,7 +185,7 @@ The repository enforces these invariants in CI:
 4. every MoonWitness delivery SVG has at least one PNG derivative;
 5. pack manifests and the global index stay in sync;
 6. generated brand, raster, SFX, runtime-motion, and `dist/` output reproduces from source;
-7. **1,424 / 1,424 delivery files remain reachable from the showcase registry**;
+7. **1,464 / 1,464 delivery files remain reachable from the showcase registry**;
 8. Penpot source/package/golden-slice checks remain valid.
 
 See [Asset Closure Audit](docs/ASSET-CLOSURE-AUDIT.md) and [Showcase Coverage](docs/SHOWCASE-COVERAGE.md).

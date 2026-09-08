@@ -10,9 +10,9 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 |---|---:|
 | Release | **v1.3.1** |
 | Asset scope | **closed / delivery complete** |
-| Asset-pack families | **42** |
-| Showcase collections | **44** |
-| Delivery files | **1,424** |
+| Asset-pack families | **43** |
+| Showcase collections | **45** |
+| Delivery files | **1,464** |
 | Showcase coverage | **100%** |
 | Live showcase | https://rocksoul-assets-showcase.vercel.app |
 
@@ -88,3 +88,5 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 If a change alters a consumer contract, visual semantic, release rule, generator, or showcase behavior, the related documentation must change in the **same pull request**.
 
 Documentation is part of the asset system, not post-release commentary.
+
+- [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) — canonical TEXT/RGBL visual ownership and consumer guidance.

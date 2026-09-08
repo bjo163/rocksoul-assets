@@ -4,7 +4,7 @@
   "pack": "MoonWitness Data-Viz Pack",
   "canonicalFormat": "svg",
   "generatedFormat": "png",
-  "sourceCount": 16,
+  "sourceCount": 20,
   "outputs": [
     {
       "source": "moonwitness/data-viz/charts/activity-sparkline.svg",
@@ -19,12 +19,20 @@
       "path": "moonwitness/data-viz/png/confidence-trend.png"
     },
     {
+      "source": "moonwitness/data-viz/charts/cross-domain-relations.svg",
+      "path": "moonwitness/data-viz/png/cross-domain-relations.png"
+    },
+    {
       "source": "moonwitness/data-viz/charts/edge-styles.svg",
       "path": "moonwitness/data-viz/png/edge-styles.png"
     },
     {
       "source": "moonwitness/data-viz/charts/event-frequency.svg",
       "path": "moonwitness/data-viz/png/event-frequency.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/event-topology.svg",
+      "path": "moonwitness/data-viz/png/event-topology.png"
     },
     {
       "source": "moonwitness/data-viz/charts/event-type-distribution.svg",
@@ -47,6 +55,10 @@
       "path": "moonwitness/data-viz/png/graph-nodes.png"
     },
     {
+      "source": "moonwitness/data-viz/charts/historicity-band.svg",
+      "path": "moonwitness/data-viz/png/historicity-band.png"
+    },
+    {
       "source": "moonwitness/data-viz/charts/legend-styles.svg",
       "path": "moonwitness/data-viz/png/legend-styles.png"
     },
@@ -57,6 +69,10 @@
     {
       "source": "moonwitness/data-viz/charts/node-link-correlation.svg",
       "path": "moonwitness/data-viz/png/node-link-correlation.png"
+    },
+    {
+      "source": "moonwitness/data-viz/charts/place-material-context.svg",
+      "path": "moonwitness/data-viz/png/place-material-context.png"
     },
     {
       "source": "moonwitness/data-viz/charts/provenance-chain.svg",

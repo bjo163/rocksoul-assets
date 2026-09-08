@@ -20,15 +20,15 @@ The delivery contract is now **bidirectional**:
 
 | Audit item | Result |
 |---|---:|
-| MoonWitness SVG sources | 614 |
-| MoonWitness PNG derivatives | 757 |
+| MoonWitness SVG sources | 634 |
+| MoonWitness PNG derivatives | 777 |
 | PNG/JPEG without SVG | **0** |
 | MoonWitness SVG without PNG | **0** |
 | Canonical brand SVGs | 13 |
 | Brand SVGs with raster delivery | **13 / 13** |
 | V2 application SVG surfaces | 12 |
 | V2 application PNG previews | **12 / 12** |
-| Indexed asset-pack families | **42** |
+| Indexed asset-pack families | **43** |
 | WebM runtime motions | 12 |
 | Lottie runtime motions | 12 |
 | WAV SFX | 14 |

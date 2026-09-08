@@ -5,7 +5,7 @@
   "canonicalFormat": "svg",
   "generatedFormat": "png",
   "renderPng": true,
-  "count": 12,
+  "count": 20,
   "root": ".",
   "pngPurpose": "design-reference preview for application surfaces",
   "assets": [
@@ -20,6 +20,14 @@
     "24-resources",
     "25-profile-settings",
     "26-authorization",
-    "27-system-states"
+    "27-system-states",
+    "28-platform-dashboard",
+    "29-platform-users",
+    "30-platform-authorization",
+    "31-platform-moderation",
+    "32-platform-service-status",
+    "33-platform-audit",
+    "34-platform-settings",
+    "35-platform-system-states"
   ]
 }

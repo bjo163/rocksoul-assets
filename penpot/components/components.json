@@ -416,6 +416,123 @@
         "delta",
         "context"
       ]
+    },
+    {
+      "name": "Textual Hierarchy Trace",
+      "surface": [
+        "web",
+        "platform"
+      ],
+      "variants": [
+        "compact",
+        "detailed"
+      ],
+      "states": [
+        "complete",
+        "partial",
+        "missing"
+      ],
+      "parts": [
+        "work",
+        "expression",
+        "edition",
+        "artifact",
+        "passage",
+        "content"
+      ],
+      "accessibility": {
+        "orderedTextEquivalentRequired": true,
+        "keyboardNavigation": false
+      },
+      "rule": "Each level is a distinct identity. Translation or edition must never be rendered as the canonical work."
+    },
+    {
+      "name": "Parallel Text Lanes",
+      "surface": [
+        "web",
+        "platform"
+      ],
+      "variants": [
+        "source-first",
+        "comparison"
+      ],
+      "states": [
+        "available",
+        "partial",
+        "unavailable"
+      ],
+      "parts": [
+        "language",
+        "script",
+        "representation",
+        "exact-text",
+        "content-id",
+        "artifact",
+        "provenance"
+      ],
+      "accessibility": {
+        "langAttributeRequired": true,
+        "directionMetadataRequired": true
+      },
+      "rule": "Missing content is rendered as unavailable and is never synthesized."
+    },
+    {
+      "name": "Source Rights Summary",
+      "surface": [
+        "web",
+        "platform"
+      ],
+      "variants": [
+        "dataset",
+        "artifact"
+      ],
+      "states": [
+        "declared",
+        "partial",
+        "unknown",
+        "restricted"
+      ],
+      "parts": [
+        "dataset-id",
+        "artifact-id",
+        "revision",
+        "sha256",
+        "rights-status",
+        "license-expression",
+        "availability"
+      ],
+      "rule": "Corpus presence does not establish redistribution rights."
+    },
+    {
+      "name": "Textual Relation Trace",
+      "surface": [
+        "web",
+        "platform"
+      ],
+      "variants": [
+        "alignment",
+        "variant",
+        "translation",
+        "evidence"
+      ],
+      "states": [
+        "asserted",
+        "candidate",
+        "unresolved"
+      ],
+      "parts": [
+        "subject",
+        "relation",
+        "object",
+        "method",
+        "evidence",
+        "provenance",
+        "review-state"
+      ],
+      "accessibility": {
+        "textEquivalentRequired": true
+      },
+      "rule": "Similarity, alignment, translation and identity are distinct relation types."
     }
   ]
 }

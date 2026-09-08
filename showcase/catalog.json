@@ -45,7 +45,7 @@
     "application-screens": {
       "label": "Application Screens",
       "category": "Workflow",
-      "description": "All 12 V2 application surfaces as canonical SVG plus PNG previews."
+      "description": "All 20 V2 application surfaces, including dedicated Platform Admin and IAM states, as canonical SVG plus PNG previews."
     },
     "sfx": {
       "label": "SFX",
@@ -221,6 +221,11 @@
       "label": "Developer Distribution",
       "category": "System",
       "description": "Generated JSON, TypeScript, CSS and SVG sprite registries."
+    },
+    "community-participation": {
+      "label": "Community Participation",
+      "category": "Workflow",
+      "description": "Source-linked discussion, proposal review, identity bridge, saved case, notification, moderation history and attributed reply visuals."
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Community Participation Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 8,
+  "root": "svg",
+  "assets": [
+    "source-linked",
+    "discussion-thread",
+    "proposal-review",
+    "identity-bridge",
+    "saved-case",
+    "notification",
+    "moderation-history",
+    "attributed-reply"
+  ],
+  "usage": "community-participation",
+  "semanticBoundary": "Participation visuals never imply canonical research validity or IAM ownership."
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "packId": "community-participation",
+  "pack": "MoonWitness Community Participation Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 8,
+  "outputs": [
+    {
+      "source": "moonwitness/community-participation-pack/svg/attributed-reply.svg",
+      "path": "moonwitness/community-participation-pack/png/attributed-reply.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/discussion-thread.svg",
+      "path": "moonwitness/community-participation-pack/png/discussion-thread.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/identity-bridge.svg",
+      "path": "moonwitness/community-participation-pack/png/identity-bridge.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/moderation-history.svg",
+      "path": "moonwitness/community-participation-pack/png/moderation-history.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/notification.svg",
+      "path": "moonwitness/community-participation-pack/png/notification.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/proposal-review.svg",
+      "path": "moonwitness/community-participation-pack/png/proposal-review.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/saved-case.svg",
+      "path": "moonwitness/community-participation-pack/png/saved-case.png"
+    },
+    {
+      "source": "moonwitness/community-participation-pack/svg/source-linked.svg",
+      "path": "moonwitness/community-participation-pack/png/source-linked.png"
+    }
+  ]
+}

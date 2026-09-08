@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "surface": "platform",
+  "owner": "rocksoul-platform",
+  "visualSource": "rocksoul-assets",
+  "implementation": "@rocksoul/ui",
+  "rule": "Platform owns product administration and IAM. Research workspace actions remain outside this surface.",
+  "navigation": [
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "path": "/",
+      "group": "System",
+      "permission": "authenticated",
+      "screen": "28"
+    },
+    {
+      "id": "users",
+      "label": "Users & Roles",
+      "path": "/users",
+      "group": "Resource",
+      "permission": "iam:read",
+      "screen": "29"
+    },
+    {
+      "id": "authorization",
+      "label": "Authorization",
+      "path": "/authorization",
+      "group": "Resource",
+      "permission": "authorization:read",
+      "screen": "30"
+    },
+    {
+      "id": "moderation",
+      "label": "Moderation",
+      "path": "/moderation",
+      "group": "Resource",
+      "permission": "moderation:read",
+      "screen": "31"
+    },
+    {
+      "id": "service-status",
+      "label": "Service Status",
+      "path": "/service-status",
+      "group": "System",
+      "permission": "service:read",
+      "screen": "32"
+    },
+    {
+      "id": "audit",
+      "label": "Audit Log",
+      "path": "/audit",
+      "group": "System",
+      "permission": "audit:read",
+      "screen": "33"
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "path": "/settings",
+      "group": "Account",
+      "permission": "settings:read",
+      "screen": "34"
+    },
+    {
+      "id": "system-states",
+      "label": "System States",
+      "path": "/system-states",
+      "group": "System",
+      "permission": "service:read",
+      "screen": "35"
+    }
+  ],
+  "commands": [
+    {
+      "id": "invite-user",
+      "label": "Invite a platform user",
+      "path": "/users",
+      "shortcut": "U",
+      "permission": "iam:write"
+    },
+    {
+      "id": "review-moderation",
+      "label": "Review moderation queue",
+      "path": "/moderation",
+      "shortcut": "M",
+      "permission": "moderation:read"
+    },
+    {
+      "id": "inspect-service",
+      "label": "Inspect service status",
+      "path": "/service-status",
+      "shortcut": "H",
+      "permission": "service:read"
+    }
+  ],
+  "roles": [
+    {
+      "id": "admin",
+      "label": "Admin",
+      "description": "Platform-wide administration and configuration."
+    },
+    {
+      "id": "moderator",
+      "label": "Moderator",
+      "description": "Moderation authority without system configuration."
+    },
+    {
+      "id": "researcher",
+      "label": "Researcher",
+      "description": "Authenticated consumer of Platform-owned authorization context."
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "iam.users.read",
+      "label": "Inspect platform users",
+      "admin": "allow",
+      "moderator": "allow",
+      "researcher": "read"
+    },
+    {
+      "id": "iam.users.write",
+      "label": "Manage user state",
+      "admin": "allow",
+      "moderator": "limited",
+      "researcher": "deny"
+    },
+    {
+      "id": "moderation.write",
+      "label": "Moderate submissions",
+      "admin": "allow",
+      "moderator": "allow",
+      "researcher": "deny"
+    },
+    {
+      "id": "settings.write",
+      "label": "Change system configuration",
+      "admin": "allow",
+      "moderator": "deny",
+      "researcher": "deny"
+    },
+    {
+      "id": "research.publish",
+      "label": "Publish research conclusion",
+      "admin": "deny",
+      "moderator": "deny",
+      "researcher": "deny"
+    }
+  ],
+  "runtime": {
+    "source": "/api/platform/bootstrap",
+    "mutationMode": "server-authoritative",
+    "failClosed": true,
+    "requiredResources": [
+      "organization",
+      "users",
+      "roles",
+      "moderation",
+      "settings",
+      "audit",
+      "services"
+    ],
+    "unconfiguredState": "read-only"
+  },
+  "serviceRegistry": [
+    {
+      "id": "assets",
+      "label": "Visual source",
+      "repository": "rocksoul-assets",
+      "kind": "design"
+    },
+    {
+      "id": "ui",
+      "label": "UI implementation",
+      "repository": "rocksoul-ui",
+      "kind": "ui"
+    },
+    {
+      "id": "platform",
+      "label": "Admin application",
+      "repository": "rocksoul-platform",
+      "kind": "application"
+    },
+    {
+      "id": "iam-api",
+      "label": "IAM data plane",
+      "repository": null,
+      "kind": "backend"
+    }
+  ],
+  "systemStates": [
+    "loading",
+    "empty",
+    "error",
+    "offline",
+    "forbidden",
+    "unconfigured"
+  ]
+}

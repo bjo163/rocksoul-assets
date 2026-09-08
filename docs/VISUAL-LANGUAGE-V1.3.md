@@ -16,8 +16,8 @@ Evidence inspection → correlation → workflow → collaboration → AI → au
 
 ## Delivery completion
 
-The current v1.3.1 closure provides bidirectional SVG/PNG coverage for MoonWitness delivery assets and 100% showcase indexing across 1,424 delivery files.
+The current v1.3.1 closure provides bidirectional SVG/PNG coverage for MoonWitness delivery assets and 100% showcase indexing across 1,464 delivery files.
 
 ## Canonical index
 
-`moonwitness/asset-packs.json` → **42 pack families**.
+`moonwitness/asset-packs.json` → **43 pack families**.
