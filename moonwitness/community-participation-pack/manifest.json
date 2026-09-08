@@ -16,5 +16,7 @@
     "notification",
     "moderation-history",
     "attributed-reply"
-  ]
+  ],
+  "usage": "community-participation",
+  "semanticBoundary": "Participation visuals never imply canonical research validity or IAM ownership."
 }
