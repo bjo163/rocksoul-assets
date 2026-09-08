@@ -35,6 +35,7 @@ function deliveryFile(pathname) {
   return pathname.startsWith("moonwitness/runtime-motion-pack/lottie/") && pathname.endsWith(".json");
 }
 
+// Rebuild after raster generation so the registry indexes newly generated PNG derivatives.
 const index = JSON.parse(await readFile(path.join(root, "moonwitness/asset-packs.json"), "utf8"));
 const allMoonwitness = await walk("moonwitness");
 const packs = {};
