@@ -24,7 +24,6 @@ on:
       - "moonwitness/ui/v2/*.svg"
       - "moonwitness/ui/v2/manifest.json"
       - "tools/assets/render-packs.py"
-      - ".github/workflows/generate-secondary-pack-raster.yml"
 
 permissions:
   contents: write
