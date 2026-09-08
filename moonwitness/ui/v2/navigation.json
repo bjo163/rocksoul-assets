@@ -107,7 +107,7 @@
     },
     {
       "resource": "correlation",
-      "label": "CORRELATION / Evidence Graph",
+      "label": "RELATIONSHIP / Correlation",
       "path": "/correlation",
       "repo": "rocksoul-correlation"
     }
