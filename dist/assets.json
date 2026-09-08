@@ -5,7 +5,7 @@
   "packs": {
     "product-icons": {
       "manifest": "moonwitness/icons/icons.json",
-      "count": 44,
+      "count": 45,
       "canonicalFormat": "svg",
       "svg": {
         "add": "moonwitness/icons/svg/actions/add.svg",
@@ -25,6 +25,7 @@
         "evidence": "moonwitness/icons/svg/domain/evidence.svg",
         "graph-node": "moonwitness/icons/svg/domain/graph-node.svg",
         "legal": "moonwitness/icons/svg/domain/legal.svg",
+        "perspective": "moonwitness/icons/svg/domain/perspective.svg",
         "source": "moonwitness/icons/svg/domain/source.svg",
         "timeline": "moonwitness/icons/svg/domain/timeline.svg",
         "trace": "moonwitness/icons/svg/domain/trace.svg",
@@ -431,6 +432,7 @@
         "moonwitness/icons/svg/domain/evidence.svg",
         "moonwitness/icons/svg/domain/graph-node.svg",
         "moonwitness/icons/svg/domain/legal.svg",
+        "moonwitness/icons/svg/domain/perspective.svg",
         "moonwitness/icons/svg/domain/source.svg",
         "moonwitness/icons/svg/domain/timeline.svg",
         "moonwitness/icons/svg/domain/trace.svg",
@@ -1894,7 +1896,7 @@
     },
     "correlation-semantics": {
       "manifest": "moonwitness/correlation-semantics-pack/manifest.json",
-      "count": 24,
+      "count": 25,
       "canonicalFormat": "svg",
       "svg": {
         "edge-contradicts": "moonwitness/correlation-semantics-pack/svg/edge-contradicts.svg",
@@ -1918,6 +1920,7 @@
         "node-law": "moonwitness/correlation-semantics-pack/svg/node-law.svg",
         "node-location": "moonwitness/correlation-semantics-pack/svg/node-location.svg",
         "node-person": "moonwitness/correlation-semantics-pack/svg/node-person.svg",
+        "node-perspective": "moonwitness/correlation-semantics-pack/svg/node-perspective.svg",
         "node-source": "moonwitness/correlation-semantics-pack/svg/node-source.svg",
         "node-story": "moonwitness/correlation-semantics-pack/svg/node-story.svg",
         "node-text": "moonwitness/correlation-semantics-pack/svg/node-text.svg"
@@ -2000,6 +2003,7 @@
         "moonwitness/correlation-semantics-pack/svg/node-law.svg",
         "moonwitness/correlation-semantics-pack/svg/node-location.svg",
         "moonwitness/correlation-semantics-pack/svg/node-person.svg",
+        "moonwitness/correlation-semantics-pack/svg/node-perspective.svg",
         "moonwitness/correlation-semantics-pack/svg/node-source.svg",
         "moonwitness/correlation-semantics-pack/svg/node-story.svg",
         "moonwitness/correlation-semantics-pack/svg/node-text.svg"
@@ -3669,6 +3673,38 @@
         "moonwitness/community-participation-pack/svg/saved-case.svg",
         "moonwitness/community-participation-pack/svg/source-linked.svg"
       ]
+    },
+    "perspective-intelligence": {
+      "manifest": "moonwitness/perspective-intelligence-pack/manifest.json",
+      "count": 8,
+      "canonicalFormat": "svg",
+      "svg": {
+        "actor-framing-matrix": "moonwitness/perspective-intelligence-pack/svg/actor-framing-matrix.svg",
+        "coverage-radar": "moonwitness/perspective-intelligence-pack/svg/coverage-radar.svg",
+        "divergence-compass": "moonwitness/perspective-intelligence-pack/svg/divergence-compass.svg",
+        "perspective-constellation": "moonwitness/perspective-intelligence-pack/svg/perspective-constellation.svg",
+        "provenance-flow": "moonwitness/perspective-intelligence-pack/svg/provenance-flow.svg",
+        "reaction-spectrum": "moonwitness/perspective-intelligence-pack/svg/reaction-spectrum.svg",
+        "world-perspective-field": "moonwitness/perspective-intelligence-pack/svg/world-perspective-field.svg",
+        "zigzag-signal-timeline": "moonwitness/perspective-intelligence-pack/svg/zigzag-signal-timeline.svg"
+      },
+      "png": {},
+      "webm": {},
+      "lottie": {},
+      "wav": {},
+      "ogg": {},
+      "ico": {},
+      "artifacts": {},
+      "files": [
+        "moonwitness/perspective-intelligence-pack/svg/actor-framing-matrix.svg",
+        "moonwitness/perspective-intelligence-pack/svg/coverage-radar.svg",
+        "moonwitness/perspective-intelligence-pack/svg/divergence-compass.svg",
+        "moonwitness/perspective-intelligence-pack/svg/perspective-constellation.svg",
+        "moonwitness/perspective-intelligence-pack/svg/provenance-flow.svg",
+        "moonwitness/perspective-intelligence-pack/svg/reaction-spectrum.svg",
+        "moonwitness/perspective-intelligence-pack/svg/world-perspective-field.svg",
+        "moonwitness/perspective-intelligence-pack/svg/zigzag-signal-timeline.svg"
+      ]
     }
   },
   "collections": {
@@ -3835,15 +3871,15 @@
     }
   },
   "coverage": {
-    "packFamilies": 43,
+    "packFamilies": 44,
     "foundationCollections": 2,
-    "showcaseCollections": 45,
-    "deliveryFiles": 1464,
-    "indexedDeliveryFiles": 1464,
+    "showcaseCollections": 46,
+    "deliveryFiles": 1474,
+    "indexedDeliveryFiles": 1474,
     "missingDeliveryFiles": 0,
     "coveragePercent": 100,
     "extensions": {
-      "svg": 634,
+      "svg": 644,
       "png": 777,
       "ico": 1,
       "webm": 12,

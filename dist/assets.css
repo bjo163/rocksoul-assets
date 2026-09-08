@@ -17,6 +17,7 @@
   --mw-product-icons-evidence: url("/moonwitness/icons/svg/domain/evidence.svg");
   --mw-product-icons-graph-node: url("/moonwitness/icons/svg/domain/graph-node.svg");
   --mw-product-icons-legal: url("/moonwitness/icons/svg/domain/legal.svg");
+  --mw-product-icons-perspective: url("/moonwitness/icons/svg/domain/perspective.svg");
   --mw-product-icons-source: url("/moonwitness/icons/svg/domain/source.svg");
   --mw-product-icons-timeline: url("/moonwitness/icons/svg/domain/timeline.svg");
   --mw-product-icons-trace: url("/moonwitness/icons/svg/domain/trace.svg");
@@ -306,6 +307,7 @@
   --mw-correlation-semantics-node-law: url("/moonwitness/correlation-semantics-pack/svg/node-law.svg");
   --mw-correlation-semantics-node-location: url("/moonwitness/correlation-semantics-pack/svg/node-location.svg");
   --mw-correlation-semantics-node-person: url("/moonwitness/correlation-semantics-pack/svg/node-person.svg");
+  --mw-correlation-semantics-node-perspective: url("/moonwitness/correlation-semantics-pack/svg/node-perspective.svg");
   --mw-correlation-semantics-node-source: url("/moonwitness/correlation-semantics-pack/svg/node-source.svg");
   --mw-correlation-semantics-node-story: url("/moonwitness/correlation-semantics-pack/svg/node-story.svg");
   --mw-correlation-semantics-node-text: url("/moonwitness/correlation-semantics-pack/svg/node-text.svg");
@@ -605,6 +607,14 @@
   --mw-community-participation-proposal-review: url("/moonwitness/community-participation-pack/svg/proposal-review.svg");
   --mw-community-participation-saved-case: url("/moonwitness/community-participation-pack/svg/saved-case.svg");
   --mw-community-participation-source-linked: url("/moonwitness/community-participation-pack/svg/source-linked.svg");
+  --mw-perspective-intelligence-actor-framing-matrix: url("/moonwitness/perspective-intelligence-pack/svg/actor-framing-matrix.svg");
+  --mw-perspective-intelligence-coverage-radar: url("/moonwitness/perspective-intelligence-pack/svg/coverage-radar.svg");
+  --mw-perspective-intelligence-divergence-compass: url("/moonwitness/perspective-intelligence-pack/svg/divergence-compass.svg");
+  --mw-perspective-intelligence-perspective-constellation: url("/moonwitness/perspective-intelligence-pack/svg/perspective-constellation.svg");
+  --mw-perspective-intelligence-provenance-flow: url("/moonwitness/perspective-intelligence-pack/svg/provenance-flow.svg");
+  --mw-perspective-intelligence-reaction-spectrum: url("/moonwitness/perspective-intelligence-pack/svg/reaction-spectrum.svg");
+  --mw-perspective-intelligence-world-perspective-field: url("/moonwitness/perspective-intelligence-pack/svg/world-perspective-field.svg");
+  --mw-perspective-intelligence-zigzag-signal-timeline: url("/moonwitness/perspective-intelligence-pack/svg/zigzag-signal-timeline.svg");
   --mw-brand-system-app-icon-maskable: url("/moonwitness/brand/app-icon-maskable.svg");
   --mw-brand-system-app-icon: url("/moonwitness/brand/app-icon.svg");
   --mw-brand-system-apple-touch-icon: url("/moonwitness/brand/apple-touch-icon.svg");
