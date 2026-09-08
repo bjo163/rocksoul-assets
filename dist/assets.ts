@@ -857,6 +857,7 @@ export const assets = {
         "32-platform-service-status": "moonwitness/ui/v2/32-platform-service-status.svg",
         "33-platform-audit": "moonwitness/ui/v2/33-platform-audit.svg",
         "34-platform-settings": "moonwitness/ui/v2/34-platform-settings.svg",
+        "35-platform-system-states": "moonwitness/ui/v2/35-platform-system-states.svg",
         "application-shell": "moonwitness/ui/v2/application-shell.svg"
       },
       "png": {
@@ -898,6 +899,7 @@ export const assets = {
         "moonwitness/ui/v2/32-platform-service-status.svg",
         "moonwitness/ui/v2/33-platform-audit.svg",
         "moonwitness/ui/v2/34-platform-settings.svg",
+        "moonwitness/ui/v2/35-platform-system-states.svg",
         "moonwitness/ui/v2/application-shell.svg",
         "moonwitness/ui/v2/png/17-dashboard.png",
         "moonwitness/ui/v2/png/18-command-palette.png",
@@ -3804,12 +3806,12 @@ export const assets = {
     "packFamilies": 43,
     "foundationCollections": 2,
     "showcaseCollections": 45,
-    "deliveryFiles": 1447,
-    "indexedDeliveryFiles": 1447,
+    "deliveryFiles": 1448,
+    "indexedDeliveryFiles": 1448,
     "missingDeliveryFiles": 0,
     "coveragePercent": 100,
     "extensions": {
-      "svg": 633,
+      "svg": 634,
       "png": 761,
       "ico": 1,
       "webm": 12,
