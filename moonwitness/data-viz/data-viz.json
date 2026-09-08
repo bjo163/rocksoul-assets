@@ -3,7 +3,7 @@
   "pack": "MoonWitness Data-Viz Pack",
   "version": "1.3.1",
   "canonicalFormat": "svg",
-  "count": 16,
+  "count": 20,
   "root": "charts",
   "charts": [
     "event-frequency",
@@ -21,7 +21,11 @@
     "metric-counters",
     "graph-nodes",
     "edge-styles",
-    "annotation-tools"
+    "annotation-tools",
+    "event-topology",
+    "historicity-band",
+    "place-material-context",
+    "cross-domain-relations"
   ],
   "generatedFormat": "png",
   "renderPng": true
