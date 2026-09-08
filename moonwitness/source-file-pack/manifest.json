@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Source & File-Type Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 15,
+  "root": "svg",
+  "assets": [
+    "pdf",
+    "image",
+    "video",
+    "audio",
+    "dataset",
+    "email",
+    "webpage",
+    "testimony",
+    "legal-doc",
+    "repository",
+    "archive",
+    "location",
+    "note",
+    "transcript",
+    "bundle"
+  ]
+}

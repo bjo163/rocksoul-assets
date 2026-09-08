@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Geospatial & Map Pack",
+  "version": "1.0",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 15,
+  "root": "svg",
+  "assets": [
+    "pin-primary",
+    "pin-verified",
+    "pin-alert",
+    "cluster-small",
+    "cluster-large",
+    "route-solid",
+    "route-dashed",
+    "uncertainty-high",
+    "uncertainty-low",
+    "boundary-zone",
+    "jurisdiction-disputed",
+    "checkpoint",
+    "crosshair",
+    "heat-cell",
+    "map-grid"
+  ]
+}
