@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rocksoul-assets.vercel.app/sitemap.xml
