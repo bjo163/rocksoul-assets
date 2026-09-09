@@ -79,4 +79,12 @@
     "webm": "semantic-ffprobe"
   },
   "reducedMotionRequired": true
+  ,"policy": {
+    "meaningByKind": {"pulse":"attention state","link":"relationship transition","check":"completion state","orbit":"AI activity","trace":"loading progress","slide":"panel transition","spin":"synchronization","rise":"upload progress","reconnect":"connection recovery"},
+    "durationMs": 1200,
+    "loop": "continuous-when-active",
+    "reducedMotionFallback": "static-first-frame",
+    "criticality": "non-blocking",
+    "maxBytes": 200000
+  }
 }
