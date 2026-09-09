@@ -15,8 +15,9 @@
       "body": "Inter",
       "mono": "IBM Plex Mono"
     },
-    "status": "direction-not-font-freeze",
-    "note": "Confirm actual Penpot availability and licensing before code freeze."
+      "status": "frozen",
+      "fallbacks": {"display": "Arial, sans-serif", "body": "Arial, sans-serif", "mono": "ui-monospace, monospace"},
+      "licensing": "Inter/Inter Tight (OFL-1.1); IBM Plex Mono (OFL-1.1)"
   },
   "components": [
     {
