@@ -11,6 +11,144 @@
       "scope": "repository",
       "status": "VERIFIED",
       "title": "Maintain repository control contract and local TODO"
+    },
+    {
+      "id": "ASSETS-002",
+      "title": "Classify production primitives, illustrations, specimens, and screen references",
+      "status": "NOT_STARTED",
+      "scope": "repository",
+      "owner": "rocksoul-assets",
+      "phase": "VISUAL-SYSTEM",
+      "priority": "CRITICAL",
+      "risk": "Specimen cards can be consumed as production primitives, producing unreadable, fixed-theme UI.",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Every registered visual asset declares assetKind, intendedUsage, themeBehavior, minimumDisplaySize, containsText, and accessibility role.",
+        "The registry and showcase visibly distinguish production primitives from specimens and immutable screen references.",
+        "Validation rejects missing or incompatible classification metadata."
+      ],
+      "evidence_required": [
+        "updated manifests and generated registry",
+        "classification validator output",
+        "showcase inspection for representative packs"
+      ],
+      "affected_paths": [
+        "moonwitness/asset-packs.json",
+        "moonwitness/*/manifest.json",
+        "dist/assets.json",
+        "showcase/catalog.json",
+        "tools/assets"
+      ]
+    },
+    {
+      "id": "ASSETS-003",
+      "title": "Extract theme-aware atomic semantic vectors and expand the production sprite",
+      "status": "NOT_STARTED",
+      "scope": "repository",
+      "owner": "rocksoul-assets",
+      "phase": "VISUAL-SYSTEM",
+      "priority": "CRITICAL",
+      "risk": "Semantic graph, status, evidence, privacy, integrity, and legal assets currently contain fixed backgrounds or text and cannot safely scale or theme.",
+      "dependencies": ["ASSETS-002"],
+      "acceptance_criteria": [
+        "Production graph nodes, edges, status marks, evidence controls, privacy, integrity, and jurisdiction marks are transparent atomic vectors without embedded labels.",
+        "Themeable primitives use currentColor or documented semantic token hooks; specimens remain separate.",
+        "The generated sprite contains all approved production primitives and excludes specimens."
+      ],
+      "evidence_required": [
+        "SVG structural audit before and after",
+        "sprite symbol inventory",
+        "16/20/24/32 pixel light and dark contact sheets",
+        "asset validation and derivative regeneration"
+      ],
+      "affected_paths": [
+        "moonwitness/*/svg",
+        "dist/sprite.svg",
+        "tools/assets/build-dist.mjs"
+      ]
+    },
+    {
+      "id": "ASSETS-004",
+      "title": "Enforce SVG color, typography, accessibility, and optical-size policy",
+      "status": "NOT_STARTED",
+      "scope": "repository",
+      "owner": "rocksoul-assets",
+      "phase": "VISUAL-SYSTEM",
+      "priority": "HIGH",
+      "risk": "Hard-coded colors, embedded text, incomplete descriptions, and untested optical weight create theme, localization, accessibility, and rendering drift.",
+      "dependencies": ["ASSETS-002"],
+      "acceptance_criteria": [
+        "Asset-kind-specific rules define when fixed colors and embedded text are permitted.",
+        "Informative assets have required accessible metadata while decorative assets are explicitly classified.",
+        "Primitive icons pass optical-size review at 16, 20, 24, and 32 pixels in light and dark themes.",
+        "Font-dependent artwork has a documented rendering and licensing contract."
+      ],
+      "evidence_required": [
+        "SVG policy document",
+        "automated structural audit results",
+        "accessibility metadata coverage report",
+        "optical-size contact-sheet review"
+      ],
+      "affected_paths": [
+        "docs",
+        "moonwitness",
+        "tools/assets"
+      ]
+    },
+    {
+      "id": "ASSETS-005",
+      "title": "Complete native Penpot library and freeze typography and density contracts",
+      "status": "NOT_STARTED",
+      "scope": "repository",
+      "owner": "rocksoul-assets",
+      "phase": "DESIGN-HANDOFF",
+      "priority": "HIGH",
+      "risk": "The current Penpot package is a bootstrap reference, leaving component variants and visual decisions distributed across JSON, SVG, CSS, and React.",
+      "dependencies": ["ASSETS-003", "ASSETS-004"],
+      "acceptance_criteria": [
+        "A native Penpot library defines critical primitives and components with variants, states, and responsive behavior.",
+        "Display, body, and mono typography are frozen with licensing, loading, and fallback decisions.",
+        "Editorial, comfortable, and compact density modes are tokenized and documented.",
+        "Generated reference boards remain separate from editable design-system components."
+      ],
+      "evidence_required": [
+        "validated Penpot export",
+        "component and variant inventory",
+        "typography decision record",
+        "density token comparison"
+      ],
+      "affected_paths": [
+        "penpot",
+        "docs/PENPOT-HANDOFF.md"
+      ]
+    },
+    {
+      "id": "ASSETS-006",
+      "title": "Add semantic motion contracts and improve visual asset discovery",
+      "status": "NOT_STARTED",
+      "scope": "repository",
+      "owner": "rocksoul-assets",
+      "phase": "VISUAL-DELIVERY",
+      "priority": "MEDIUM",
+      "risk": "Motion files and dark or transparent vectors can be present and indexed while remaining ambiguous, inaccessible, or hard to inspect.",
+      "dependencies": ["ASSETS-002"],
+      "acceptance_criteria": [
+        "Every motion asset declares meaning, duration, loop policy, reduced-motion fallback, criticality, and file-size budget.",
+        "Explorer previews use an adaptive neutral/checkerboard surface for dark and transparent vectors.",
+        "Loading, failure, and fallback preview states are visible and keyboard-accessible.",
+        "Compact discovery mode preserves searchable metadata without the full specimen density."
+      ],
+      "evidence_required": [
+        "motion manifest validation",
+        "reduced-motion browser inspection",
+        "light and dark explorer screenshots",
+        "preview failure-state test"
+      ],
+      "affected_paths": [
+        "moonwitness/runtime-motion-pack",
+        "showcase",
+        "tools/assets"
+      ]
     }
   ]
 }
