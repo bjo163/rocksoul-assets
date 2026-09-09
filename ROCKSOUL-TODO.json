@@ -150,6 +150,9 @@
       "dependencies": [
         "ASSETS-002"
       ],
+      "evidence": [
+        "commit d781038 pushed to origin/main; runtime motion manifest now defines meaning, duration, loop policy, reduced-motion fallback, criticality, and 200KB budget; motion-policy validator passes 12 motions; discovery contract documents checkerboard, keyboard failure/fallback, compact metadata mode; generated artifacts remain static-first-frame for reduced motion."
+      ],
       "evidence_required": [
         "motion manifest validation",
         "reduced-motion browser inspection",
@@ -162,7 +165,7 @@
       "priority": "MEDIUM",
       "risk": "Motion files and dark or transparent vectors can be present and indexed while remaining ambiguous, inaccessible, or hard to inspect.",
       "scope": "repository",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "title": "Add semantic motion contracts and improve visual asset discovery"
     }
   ]
