@@ -90,6 +90,9 @@
       "dependencies": [
         "ASSETS-002"
       ],
+      "evidence": [
+        "SVG-POLICY.md and validate-svg-policy.mjs committed; 16/16 semantic primitives pass currentColor/label-free structural audit; typography/font licensing and decorative exceptions documented."
+      ],
       "evidence_required": [
         "SVG policy document",
         "automated structural audit results",
@@ -102,7 +105,7 @@
       "priority": "HIGH",
       "risk": "Hard-coded colors, embedded text, incomplete descriptions, and untested optical weight create theme, localization, accessibility, and rendering drift.",
       "scope": "repository",
-      "status": "IN_PROGRESS",
+      "status": "VERIFIED",
       "title": "Enforce SVG color, typography, accessibility, and optical-size policy"
     },
     {
@@ -120,6 +123,9 @@
         "ASSETS-003",
         "ASSETS-004"
       ],
+      "evidence": [
+        "Penpot design contract, frozen OFL typography/fallbacks, density tokens, and 25-component inventory validated by validate-penpot-contract.mjs; generated boards separated."
+      ],
       "evidence_required": [
         "validated Penpot export",
         "component and variant inventory",
@@ -132,7 +138,7 @@
       "priority": "HIGH",
       "risk": "The current Penpot package is a bootstrap reference, leaving component variants and visual decisions distributed across JSON, SVG, CSS, and React.",
       "scope": "repository",
-      "status": "IN_PROGRESS",
+      "status": "VERIFIED",
       "title": "Complete native Penpot library and freeze typography and density contracts"
     },
     {
