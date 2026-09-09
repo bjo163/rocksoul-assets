@@ -11,6 +11,7 @@ It must:
 - explain the MoonWitness × Rocksoul visual system;
 - expose the capability map before forcing users into folder-oriented browsing;
 - index **100% of delivery files**;
+- distinguish production primitives, illustrations, specimens, screen references, and non-visual delivery;
 - preview every supported delivery format appropriately;
 - provide direct source paths and raw-source access;
 - link users into canonical repository documentation;

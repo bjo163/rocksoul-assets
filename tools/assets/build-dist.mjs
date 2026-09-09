@@ -36,8 +36,67 @@ function deliveryFile(pathname) {
 }
 
 const index = JSON.parse(await readFile(path.join(root, "moonwitness/asset-packs.json"), "utf8"));
+const classification = JSON.parse(await readFile(path.join(root, "moonwitness/asset-classification.json"), "utf8"));
 const allMoonwitness = await walk("moonwitness");
 const packs = {};
+
+function classificationFor(collectionId) {
+  const matches = classification.rules.filter((rule) => rule.collectionIds.includes(collectionId));
+  if (matches.length !== 1) throw new Error(`Expected exactly one classification rule for ${collectionId}; found ${matches.length}`);
+  const rule = matches[0];
+  return {
+    ruleId: rule.id,
+    assetKind: rule.assetKind,
+    intendedUsage: rule.intendedUsage,
+    minimumDisplaySize: rule.minimumDisplaySize,
+    accessibilityRole: rule.accessibilityRole,
+  };
+}
+
+function isVisualDelivery(file) {
+  return /\.(svg|png|ico|webm)$/i.test(file) || (file.includes("/lottie/") && file.endsWith(".json"));
+}
+
+async function inspectVisualFile(file, entry, policy) {
+  const extension = file.includes("/lottie/") && file.endsWith(".json") ? "lottie" : path.extname(file).slice(1).toLowerCase();
+  let source = file.endsWith(".svg") ? file : null;
+  if (!source) {
+    const basename = path.basename(file, path.extname(file));
+    const sourceId = Object.keys(entry.svg ?? {}).sort((a, b) => b.length - a.length)
+      .find((id) => basename === id || basename.startsWith(id + "-"));
+    source = sourceId ? entry.svg[sourceId] : null;
+  }
+  let containsText = false;
+  let themeBehavior = "fixed";
+  if (source) {
+    const raw = await readFile(path.join(root, source), "utf8");
+    containsText = /<text\b/i.test(raw);
+    if (file.endsWith(".svg")) {
+      if (/currentColor/i.test(raw)) themeBehavior = "currentColor";
+      else if (/var\(--[a-z0-9-]+/i.test(raw)) themeBehavior = "semantic-token";
+    }
+  }
+  return {
+    assetKind: policy.assetKind,
+    intendedUsage: policy.intendedUsage,
+    themeBehavior,
+    minimumDisplaySize: policy.minimumDisplaySize,
+    containsText,
+    accessibilityRole: policy.accessibilityRole,
+    format: extension,
+    ...(source && source !== file ? { canonicalSource: source } : {}),
+  };
+}
+
+async function classifyEntry(collectionId, entry) {
+  const policy = classificationFor(collectionId);
+  entry.classification = policy;
+  entry.visualAssets = {};
+  if (policy.assetKind === null) return;
+  for (const file of entry.files.filter(isVisualDelivery)) {
+    entry.visualAssets[file] = await inspectVisualFile(file, entry, policy);
+  }
+}
 
 for (const pack of index.packs) {
   const manifest = JSON.parse(await readFile(path.join(root, pack.manifest), "utf8"));
@@ -152,6 +211,9 @@ const collections = {
   "baseline-v1": collectionEntry("baseline-v1", baselineFiles, "moonwitness/ui/v1/screens/screens.json"),
 };
 
+for (const [id, entry] of Object.entries(packs)) await classifyEntry(id, entry);
+for (const [id, entry] of Object.entries(collections)) await classifyEntry(id, entry);
+
 // Repository-wide delivery coverage: every actual MoonWitness delivery file must be reachable from showcase registry.
 const actualDelivery = allMoonwitness.filter(deliveryFile).sort();
 const indexedDelivery = new Set();
@@ -173,9 +235,10 @@ if (missing.length || extra.length) {
 }
 
 const dist = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   version: index.version,
   canonicalFormat: "svg",
+  classificationSchemaVersion: classification.schemaVersion,
   packs,
   collections,
   coverage: {
@@ -184,6 +247,8 @@ const dist = {
     showcaseCollections: Object.keys(packs).length + Object.keys(collections).length,
     deliveryFiles: actualDelivery.length,
     indexedDeliveryFiles: indexedDelivery.size,
+    classifiedVisualFiles: [...Object.values(packs), ...Object.values(collections)]
+      .reduce((sum, entry) => sum + Object.keys(entry.visualAssets ?? {}).length, 0),
     missingDeliveryFiles: 0,
     coveragePercent: 100,
     extensions: {

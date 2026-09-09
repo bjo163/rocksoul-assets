@@ -29,9 +29,10 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 1. [Visual Language](VISUAL-LANGUAGE-V1.3.md)
 2. [Asset Structure](ASSET-STRUCTURE.md)
-3. [Accessibility](ACCESSIBILITY.md)
-4. [Penpot Handoff](PENPOT-HANDOFF.md)
-5. [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md)
+3. [Asset Classification](ASSET-CLASSIFICATION.md)
+4. [Accessibility](ACCESSIBILITY.md)
+5. [Penpot Handoff](PENPOT-HANDOFF.md)
+6. [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md)
 
 ### I maintain the repository
 
@@ -58,6 +59,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Asset Consumption](ASSET-CONSUMPTION.md) | runtime format and usage rules |
 | [Asset Pack Catalog](ASSET-PACK-CATALOG.md) | complete human-readable pack index |
 | [Asset Structure](ASSET-STRUCTURE.md) | repository paths and raster/vector contracts |
+| [Asset Classification](ASSET-CLASSIFICATION.md) | production primitive, illustration, specimen, and screen-reference boundaries |
 | [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
 | [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
@@ -79,6 +81,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 ## Canonical machine-readable entry points
 
 - `moonwitness/asset-packs.json`
+- `moonwitness/asset-classification.json`
 - `dist/assets.json`
 - `showcase/catalog.json`
 - `manifest.json`

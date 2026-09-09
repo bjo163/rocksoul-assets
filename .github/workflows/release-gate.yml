@@ -118,6 +118,9 @@ jobs:
       - name: Verify showcase delivery coverage
         run: node tools/assets/validate-showcase-coverage.mjs
 
+      - name: Verify visual asset classification
+        run: node tools/assets/validate-classification.mjs
+
       - name: Verify documentation state
         run: node tools/docs/validate-docs.mjs
 

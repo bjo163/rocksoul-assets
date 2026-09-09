@@ -8,14 +8,27 @@ Use `dist/assets.ts` or `dist/assets.json` when application code can consume gen
 
 ## Registry model
 
-`dist/assets.json` schema v2 exposes:
+`dist/assets.json` schema v3 exposes:
 
 - 43 indexed asset-pack families;
 - 2 foundation collections: Brand System + V1 Baseline Screens;
 - per-format paths for SVG, PNG/APNG, ICO, WebM, WAV, OGG, and Lottie;
 - coverage metadata proving every delivery file is indexed.
+- collection-level classification plus per-file `visualAssets` usage metadata.
 
 Foundation collections are available under `assets.collections`; indexed packs remain under `assets.packs`.
+
+## Classification gate
+
+Consumers must read the per-file `visualAssets` metadata before placing a
+visual asset in production. `primitive` assets may be composed directly into
+product UI, while `illustration` assets require their declared minimum display
+size and theme behavior to be respected. `specimen` and `screen-reference`
+assets are references only: do not crop or extract their internal shapes as
+product primitives.
+
+The canonical vocabulary, compatibility rules, and ownership boundaries are
+defined in [Asset Classification](ASSET-CLASSIFICATION.md).
 
 ## Format priority
 

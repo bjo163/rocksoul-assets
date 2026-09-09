@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "visualExtensions": ["svg", "png", "ico", "webm", "lottie"],
+  "assetKinds": ["primitive", "illustration", "specimen", "screen-reference"],
+  "themeBehaviors": ["currentColor", "semantic-token", "fixed"],
+  "accessibilityRoles": ["decorative", "informative", "interactive-support"],
+  "rules": [
+    {
+      "id": "atomic-product-primitives",
+      "collectionIds": ["product-icons", "source-file", "geospatial", "cursor-interaction"],
+      "assetKind": "primitive",
+      "intendedUsage": ["product-ui", "compact-control", "semantic-marker"],
+      "minimumDisplaySize": 16,
+      "accessibilityRole": "interactive-support"
+    },
+    {
+      "id": "brand-and-editorial-illustration",
+      "collectionIds": ["brand-system", "hero-backgrounds", "state-illustrations", "persona-avatar", "social-campaign", "platform-delivery", "onboarding", "document-report", "notification", "editorial", "rocksoul-character", "texture-material", "device-mockup", "cinematic-hero"],
+      "assetKind": "illustration",
+      "intendedUsage": ["editorial-surface", "identity", "supporting-visual"],
+      "minimumDisplaySize": 96,
+      "accessibilityRole": "informative"
+    },
+    {
+      "id": "data-and-investigation-specimens",
+      "collectionIds": ["dashboard", "data-viz", "graph-vector", "badge-status", "evidence-media", "correlation-semantics", "privacy-redaction", "evidence-integrity", "export-seal", "jurisdiction-locale", "architecture-diagram"],
+      "assetKind": "specimen",
+      "intendedUsage": ["design-reference", "pattern-preview", "implementation-guidance"],
+      "minimumDisplaySize": 160,
+      "accessibilityRole": "informative"
+    },
+    {
+      "id": "workflow-specimens",
+      "collectionIds": ["kanban-workflow", "calendar-temporal", "chat-collaboration", "ai-workspace", "authorization-security", "data-grid", "form-controls", "theme-accessibility", "command-keyboard", "community-participation"],
+      "assetKind": "specimen",
+      "intendedUsage": ["workflow-reference", "state-preview", "implementation-guidance"],
+      "minimumDisplaySize": 160,
+      "accessibilityRole": "informative"
+    },
+    {
+      "id": "motion-reference-illustrations",
+      "collectionIds": ["motion", "runtime-motion"],
+      "assetKind": "illustration",
+      "intendedUsage": ["motion-reference", "runtime-feedback", "supporting-visual"],
+      "minimumDisplaySize": 96,
+      "accessibilityRole": "informative"
+    },
+    {
+      "id": "immutable-screen-references",
+      "collectionIds": ["application-screens", "baseline-v1"],
+      "assetKind": "screen-reference",
+      "intendedUsage": ["visual-baseline", "design-acceptance", "non-runtime-reference"],
+      "minimumDisplaySize": 320,
+      "accessibilityRole": "informative"
+    },
+    {
+      "id": "non-visual-audio-delivery",
+      "collectionIds": ["sfx"],
+      "assetKind": null,
+      "intendedUsage": ["audio-feedback"],
+      "minimumDisplaySize": null,
+      "accessibilityRole": null
+    },
+    {
+      "id": "non-visual-developer-delivery",
+      "collectionIds": ["developer-distribution"],
+      "assetKind": null,
+      "intendedUsage": ["developer-integration"],
+      "minimumDisplaySize": null,
+      "accessibilityRole": null
+    }
+  ]
+}

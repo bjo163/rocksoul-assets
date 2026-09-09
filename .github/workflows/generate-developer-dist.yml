@@ -7,6 +7,7 @@ on:
     paths:
       - "moonwitness/**"
       - "tools/assets/build-dist.mjs"
+      - "tools/assets/validate-classification.mjs"
       - "showcase/catalog.json"
 
 permissions:
