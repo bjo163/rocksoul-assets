@@ -1,14 +1,16 @@
 {
-  "schema": "rocksoul.todo.v1",
   "repository_id": "rocksoul-assets",
+  "schema": "rocksoul.todo.v1",
   "tasks": [
     {
-      "id": "ASSETS-001",
-      "title": "Maintain repository control contract and local TODO",
-      "status": "NOT_STARTED",
-      "scope": "repository",
+      "evidence": [
+        "2026-09-09: node scripts/validate-rocksoul-contract.mjs PASS; node tools/assets/validate.mjs PASS (777 raster/vector pairs, 634/634 vector coverage, 43 packs); node tools/penpot/validate.mjs PASS; validate-sources PASS; branch policy PASS (violations=0)."
+      ],
       "github_issue": "https://github.com/bjo163/rocksoul-assets/issues/27",
-      "evidence": []
+      "id": "ASSETS-001",
+      "scope": "repository",
+      "status": "VERIFIED",
+      "title": "Maintain repository control contract and local TODO"
     }
   ]
 }

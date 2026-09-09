@@ -2,6 +2,18 @@ name: ROCKSOUL Repository Contract
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "ROCKSOUL-REPO.json"
+      - "ROCKSOUL-TODO.json"
+      - "scripts/validate-rocksoul-contract.mjs"
+      - ".github/workflows/rocksoul-contract.yml"
+  pull_request:
+    paths:
+      - "ROCKSOUL-REPO.json"
+      - "ROCKSOUL-TODO.json"
+      - "scripts/validate-rocksoul-contract.mjs"
+      - ".github/workflows/rocksoul-contract.yml"
 
 permissions:
   contents: read
