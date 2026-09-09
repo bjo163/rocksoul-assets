@@ -26,6 +26,9 @@
         "tools/assets"
       ],
       "dependencies": [],
+      "evidence": [
+        "commit 36fac36 pushed to origin/main; build-dist PASS (43 packs, 45 collections, 1464 delivery files, 100% coverage); classification validator PASS (1436 visual files: primitive 270, illustration 394, specimen 700, screen-reference 72); negative tests rejected missing metadata and incompatible assetKind; validate-svg-xml=666, validate assets PASS, showcase coverage 1464/1464, docs and branch policy PASS; browser inspection confirmed 45 classified cards, all five labels, Product Icons dialog 'Core / primitive / Asset pack', and no horizontal overflow."
+      ],
       "evidence_required": [
         "updated manifests and generated registry",
         "classification validator output",
@@ -37,7 +40,7 @@
       "priority": "CRITICAL",
       "risk": "Specimen cards can be consumed as production primitives, producing unreadable, fixed-theme UI.",
       "scope": "repository",
-      "status": "IN_PROGRESS",
+      "status": "VERIFIED",
       "title": "Classify production primitives, illustrations, specimens, and screen references"
     },
     {
