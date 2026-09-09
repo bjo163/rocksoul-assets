@@ -132,7 +132,7 @@
       "priority": "HIGH",
       "risk": "The current Penpot package is a bootstrap reference, leaving component variants and visual decisions distributed across JSON, SVG, CSS, and React.",
       "scope": "repository",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "title": "Complete native Penpot library and freeze typography and density contracts"
     },
     {
