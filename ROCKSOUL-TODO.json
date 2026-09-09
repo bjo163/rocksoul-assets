@@ -102,7 +102,7 @@
       "priority": "HIGH",
       "risk": "Hard-coded colors, embedded text, incomplete descriptions, and untested optical weight create theme, localization, accessibility, and rendering drift.",
       "scope": "repository",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "title": "Enforce SVG color, typography, accessibility, and optical-size policy"
     },
     {
