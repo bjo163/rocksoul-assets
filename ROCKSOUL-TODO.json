@@ -217,6 +217,9 @@
         "ASSETS-004",
         "ASSETS-006"
       ],
+      "evidence": [
+        "commit 5df7345 pushed; validate-freshness-contract.mjs passes and confirms fail-closed git diff gates for brand, secondary packs, runtime motion, SFX, and dist derivatives."
+      ],
       "evidence_required": [
         "freshness audit pass",
         "intentional stale-fixture failure",
@@ -228,7 +231,7 @@
       "priority": "MEDIUM",
       "risk": "Stale derivatives can ship visual behavior different from canonical sources.",
       "scope": "repository",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "title": "Enforce generated asset freshness gates"
     },
     {
