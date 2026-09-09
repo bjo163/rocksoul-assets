@@ -121,6 +121,9 @@ jobs:
       - name: Verify visual asset classification
         run: node tools/assets/validate-classification.mjs
 
+      - name: Verify semantic primitive contract
+        run: node tools/assets/validate-primitives.mjs
+
       - name: Verify documentation state
         run: node tools/docs/validate-docs.mjs
 

@@ -79,6 +79,9 @@ jobs:
       - name: Validate visual asset classification
         run: node tools/assets/validate-classification.mjs
 
+      - name: Validate semantic primitive contract
+        run: node tools/assets/validate-primitives.mjs
+
       - name: Validate documentation state
         run: node tools/docs/validate-docs.mjs
 

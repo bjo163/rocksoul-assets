@@ -10,7 +10,7 @@ Use `dist/assets.ts` or `dist/assets.json` when application code can consume gen
 
 `dist/assets.json` schema v3 exposes:
 
-- 43 indexed asset-pack families;
+- 44 indexed asset-pack families;
 - 2 foundation collections: Brand System + V1 Baseline Screens;
 - per-format paths for SVG, PNG/APNG, ICO, WebM, WAV, OGG, and Lottie;
 - coverage metadata proving every delivery file is indexed.

@@ -50,8 +50,8 @@ for pack in INDEX.get("packs", []):
                     output_height=int(size),
                 )
                 outputs.append({
-                    "source": str(svg_path.relative_to(ROOT)),
-                    "path": str(out.relative_to(ROOT)),
+                    "source": svg_path.relative_to(ROOT).as_posix(),
+                    "path": out.relative_to(ROOT).as_posix(),
                     "width": int(size),
                     "height": int(size),
                 })
@@ -60,8 +60,8 @@ for pack in INDEX.get("packs", []):
             out.parent.mkdir(parents=True, exist_ok=True)
             cairosvg.svg2png(url=str(svg_path), write_to=str(out))
             outputs.append({
-                "source": str(svg_path.relative_to(ROOT)),
-                "path": str(out.relative_to(ROOT)),
+                "source": svg_path.relative_to(ROOT).as_posix(),
+                "path": out.relative_to(ROOT).as_posix(),
             })
 
     (png_dir / "manifest.json").write_text(

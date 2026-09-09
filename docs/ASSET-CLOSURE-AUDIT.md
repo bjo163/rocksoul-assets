@@ -8,8 +8,8 @@ Date: 2026-09-08
 
 ### Bidirectional coverage
 
-- MoonWitness SVG delivery sources: **634**
-- PNG delivery derivatives: **777**
+- MoonWitness SVG delivery sources: **650**
+- PNG delivery derivatives: **841**
 - PNG/JPEG without canonical SVG: **0**
 - MoonWitness SVG without PNG derivative: **0**
 - JPEG: **0**

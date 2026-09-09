@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "pack": "MoonWitness Semantic Primitives Pack",
+  "version": "1.3",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "renderPng": true,
+  "count": 16,
+  "root": "svg",
+  "sizes": [16, 20, 24, 32],
+  "assets": [
+    "graph-node", "edge-supports", "edge-contradicts", "status-verified",
+    "status-contested", "evidence-bounds", "evidence-source", "privacy-redacted",
+    "privacy-confidential", "integrity-hash", "provenance-chain", "legal-basis",
+    "jurisdiction-zone", "law-node", "person-node", "event-node"
+  ]
+}

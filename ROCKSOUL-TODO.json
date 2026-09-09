@@ -69,7 +69,7 @@
       "priority": "CRITICAL",
       "risk": "Semantic graph, status, evidence, privacy, integrity, and legal assets currently contain fixed backgrounds or text and cannot safely scale or theme.",
       "scope": "repository",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "title": "Extract theme-aware atomic semantic vectors and expand the production sprite"
     },
     {

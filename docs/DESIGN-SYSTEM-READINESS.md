@@ -17,12 +17,12 @@
 
 ## Asset-system closure
 
-- [x] 43 pack families indexed
+- [x] 44 pack families indexed
 - [x] 634 MoonWitness SVG delivery sources
 - [x] 777 PNG/APNG derivatives
 - [x] 0 raster-without-vector delivery gaps
 - [x] 0 MoonWitness delivery-vector-without-raster gaps
-- [x] 1,464 / 1,464 delivery files indexed in showcase
+- [x] 1,544 / 1,544 delivery files indexed in showcase
 - [x] 100% showcase coverage enforced in CI
 - [x] runtime SVG/APNG/WebM/Lottie delivery validated
 - [x] SFX WAV/OGG delivery validated

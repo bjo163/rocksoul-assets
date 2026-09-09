@@ -21,10 +21,10 @@ It is therefore part documentation, part operational acceptance surface.
 
 Current production coverage:
 
-- 43 asset-pack families;
+- 44 asset-pack families;
 - 2 foundation collections;
-- 45 showcase collections;
-- 1,464 / 1,464 delivery files;
+- 46 showcase collections;
+- 1,544 / 1,544 delivery files;
 - 100% coverage.
 
 The two foundation collections are:

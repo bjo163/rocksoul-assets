@@ -7,7 +7,7 @@
   "rules": [
     {
       "id": "atomic-product-primitives",
-      "collectionIds": ["product-icons", "source-file", "geospatial", "cursor-interaction"],
+      "collectionIds": ["product-icons", "semantic-primitives"],
       "assetKind": "primitive",
       "intendedUsage": ["product-ui", "compact-control", "semantic-marker"],
       "minimumDisplaySize": 16,
@@ -23,7 +23,7 @@
     },
     {
       "id": "data-and-investigation-specimens",
-      "collectionIds": ["dashboard", "data-viz", "graph-vector", "badge-status", "evidence-media", "correlation-semantics", "privacy-redaction", "evidence-integrity", "export-seal", "jurisdiction-locale", "architecture-diagram"],
+      "collectionIds": ["dashboard", "data-viz", "graph-vector", "badge-status", "source-file", "geospatial", "cursor-interaction", "evidence-media", "correlation-semantics", "privacy-redaction", "evidence-integrity", "export-seal", "jurisdiction-locale", "architecture-diagram"],
       "assetKind": "specimen",
       "intendedUsage": ["design-reference", "pattern-preview", "implementation-guidance"],
       "minimumDisplaySize": 160,

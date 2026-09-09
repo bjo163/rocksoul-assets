@@ -6828,420 +6828,420 @@
         "moonwitness/source-file-pack/svg/webpage.svg"
       ],
       "classification": {
-        "ruleId": "atomic-product-primitives",
-        "assetKind": "primitive",
+        "ruleId": "data-and-investigation-specimens",
+        "assetKind": "specimen",
         "intendedUsage": [
-          "product-ui",
-          "compact-control",
-          "semantic-marker"
+          "design-reference",
+          "pattern-preview",
+          "implementation-guidance"
         ],
-        "minimumDisplaySize": 16,
-        "accessibilityRole": "interactive-support"
+        "minimumDisplaySize": 160,
+        "accessibilityRole": "informative"
       },
       "visualAssets": {
         "moonwitness/source-file-pack/png/archive.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/archive.svg"
         },
         "moonwitness/source-file-pack/png/audio.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/audio.svg"
         },
         "moonwitness/source-file-pack/png/bundle.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/bundle.svg"
         },
         "moonwitness/source-file-pack/png/dataset.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/dataset.svg"
         },
         "moonwitness/source-file-pack/png/email.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/email.svg"
         },
         "moonwitness/source-file-pack/png/image.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/image.svg"
         },
         "moonwitness/source-file-pack/png/legal-doc.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/legal-doc.svg"
         },
         "moonwitness/source-file-pack/png/location.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/location.svg"
         },
         "moonwitness/source-file-pack/png/note.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/note.svg"
         },
         "moonwitness/source-file-pack/png/pdf.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/pdf.svg"
         },
         "moonwitness/source-file-pack/png/repository.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/repository.svg"
         },
         "moonwitness/source-file-pack/png/testimony.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/testimony.svg"
         },
         "moonwitness/source-file-pack/png/transcript.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/transcript.svg"
         },
         "moonwitness/source-file-pack/png/video.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/video.svg"
         },
         "moonwitness/source-file-pack/png/webpage.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/source-file-pack/svg/webpage.svg"
         },
         "moonwitness/source-file-pack/svg/archive.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/audio.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/bundle.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/dataset.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/email.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/image.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/legal-doc.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/location.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/note.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/pdf.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/repository.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/testimony.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/transcript.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/video.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/source-file-pack/svg/webpage.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         }
       }
@@ -7323,420 +7323,420 @@
         "moonwitness/geospatial-pack/svg/uncertainty-low.svg"
       ],
       "classification": {
-        "ruleId": "atomic-product-primitives",
-        "assetKind": "primitive",
+        "ruleId": "data-and-investigation-specimens",
+        "assetKind": "specimen",
         "intendedUsage": [
-          "product-ui",
-          "compact-control",
-          "semantic-marker"
+          "design-reference",
+          "pattern-preview",
+          "implementation-guidance"
         ],
-        "minimumDisplaySize": 16,
-        "accessibilityRole": "interactive-support"
+        "minimumDisplaySize": 160,
+        "accessibilityRole": "informative"
       },
       "visualAssets": {
         "moonwitness/geospatial-pack/png/boundary-zone.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/boundary-zone.svg"
         },
         "moonwitness/geospatial-pack/png/checkpoint.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/checkpoint.svg"
         },
         "moonwitness/geospatial-pack/png/cluster-large.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/cluster-large.svg"
         },
         "moonwitness/geospatial-pack/png/cluster-small.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/cluster-small.svg"
         },
         "moonwitness/geospatial-pack/png/crosshair.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/crosshair.svg"
         },
         "moonwitness/geospatial-pack/png/heat-cell.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/heat-cell.svg"
         },
         "moonwitness/geospatial-pack/png/jurisdiction-disputed.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/jurisdiction-disputed.svg"
         },
         "moonwitness/geospatial-pack/png/map-grid.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/map-grid.svg"
         },
         "moonwitness/geospatial-pack/png/pin-alert.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/pin-alert.svg"
         },
         "moonwitness/geospatial-pack/png/pin-primary.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/pin-primary.svg"
         },
         "moonwitness/geospatial-pack/png/pin-verified.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/pin-verified.svg"
         },
         "moonwitness/geospatial-pack/png/route-dashed.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/route-dashed.svg"
         },
         "moonwitness/geospatial-pack/png/route-solid.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/route-solid.svg"
         },
         "moonwitness/geospatial-pack/png/uncertainty-high.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/uncertainty-high.svg"
         },
         "moonwitness/geospatial-pack/png/uncertainty-low.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/geospatial-pack/svg/uncertainty-low.svg"
         },
         "moonwitness/geospatial-pack/svg/boundary-zone.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/checkpoint.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/cluster-large.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/cluster-small.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/crosshair.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/heat-cell.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/jurisdiction-disputed.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/map-grid.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/pin-alert.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/pin-primary.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/pin-verified.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/route-dashed.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/route-solid.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/uncertainty-high.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/geospatial-pack/svg/uncertainty-low.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         }
       }
@@ -7826,474 +7826,474 @@
         "moonwitness/cursor-pack/svg/zoom-out.svg"
       ],
       "classification": {
-        "ruleId": "atomic-product-primitives",
-        "assetKind": "primitive",
+        "ruleId": "data-and-investigation-specimens",
+        "assetKind": "specimen",
         "intendedUsage": [
-          "product-ui",
-          "compact-control",
-          "semantic-marker"
+          "design-reference",
+          "pattern-preview",
+          "implementation-guidance"
         ],
-        "minimumDisplaySize": 16,
-        "accessibilityRole": "interactive-support"
+        "minimumDisplaySize": 160,
+        "accessibilityRole": "informative"
       },
       "visualAssets": {
         "moonwitness/cursor-pack/png/annotate.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/annotate.svg"
         },
         "moonwitness/cursor-pack/png/connect.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/connect.svg"
         },
         "moonwitness/cursor-pack/png/crosshair.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/crosshair.svg"
         },
         "moonwitness/cursor-pack/png/default.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/default.svg"
         },
         "moonwitness/cursor-pack/png/evidence-link.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/evidence-link.svg"
         },
         "moonwitness/cursor-pack/png/grab.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/grab.svg"
         },
         "moonwitness/cursor-pack/png/grabbing.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/grabbing.svg"
         },
         "moonwitness/cursor-pack/png/inspect.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/inspect.svg"
         },
         "moonwitness/cursor-pack/png/pan.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/pan.svg"
         },
         "moonwitness/cursor-pack/png/pointer.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/pointer.svg"
         },
         "moonwitness/cursor-pack/png/region-select.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/region-select.svg"
         },
         "moonwitness/cursor-pack/png/resize-all.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/resize-all.svg"
         },
         "moonwitness/cursor-pack/png/resize-horizontal.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/resize-horizontal.svg"
         },
         "moonwitness/cursor-pack/png/resize-vertical.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/resize-vertical.svg"
         },
         "moonwitness/cursor-pack/png/timeline-scrub.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/timeline-scrub.svg"
         },
         "moonwitness/cursor-pack/png/zoom-in.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/zoom-in.svg"
         },
         "moonwitness/cursor-pack/png/zoom-out.png": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "png",
           "canonicalSource": "moonwitness/cursor-pack/svg/zoom-out.svg"
         },
         "moonwitness/cursor-pack/svg/annotate.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/connect.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/crosshair.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/default.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/evidence-link.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/grab.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/grabbing.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/inspect.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/pan.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/pointer.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/region-select.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/resize-all.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/resize-horizontal.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/resize-vertical.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/timeline-scrub.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/zoom-in.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         },
         "moonwitness/cursor-pack/svg/zoom-out.svg": {
-          "assetKind": "primitive",
+          "assetKind": "specimen",
           "intendedUsage": [
-            "product-ui",
-            "compact-control",
-            "semantic-marker"
+            "design-reference",
+            "pattern-preview",
+            "implementation-guidance"
           ],
           "themeBehavior": "fixed",
-          "minimumDisplaySize": 16,
+          "minimumDisplaySize": 160,
           "containsText": false,
-          "accessibilityRole": "interactive-support",
+          "accessibilityRole": "informative",
           "format": "svg"
         }
       }
@@ -22534,6 +22534,1332 @@
         }
       }
     },
+    "semantic-primitives": {
+      "manifest": "moonwitness/semantic-primitives-pack/manifest.json",
+      "count": 16,
+      "canonicalFormat": "svg",
+      "svg": {
+        "edge-contradicts": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+        "edge-supports": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+        "event-node": "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+        "evidence-bounds": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+        "evidence-source": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+        "graph-node": "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+        "integrity-hash": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+        "jurisdiction-zone": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+        "law-node": "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+        "legal-basis": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+        "person-node": "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+        "privacy-confidential": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+        "privacy-redacted": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+        "provenance-chain": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+        "status-contested": "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+        "status-verified": "moonwitness/semantic-primitives-pack/svg/status-verified.svg"
+      },
+      "png": {
+        "edge-contradicts": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/edge-contradicts.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/edge-contradicts.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/edge-contradicts.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/edge-contradicts.png"
+        },
+        "edge-supports": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/edge-supports.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/edge-supports.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/edge-supports.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/edge-supports.png"
+        },
+        "event-node": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/event-node.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/event-node.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/event-node.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/event-node.png"
+        },
+        "evidence-bounds": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/evidence-bounds.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/evidence-bounds.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/evidence-bounds.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/evidence-bounds.png"
+        },
+        "evidence-source": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/evidence-source.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/evidence-source.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/evidence-source.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/evidence-source.png"
+        },
+        "graph-node": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/graph-node.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/graph-node.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/graph-node.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/graph-node.png"
+        },
+        "integrity-hash": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/integrity-hash.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/integrity-hash.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/integrity-hash.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/integrity-hash.png"
+        },
+        "jurisdiction-zone": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/jurisdiction-zone.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/jurisdiction-zone.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/jurisdiction-zone.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/jurisdiction-zone.png"
+        },
+        "law-node": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/law-node.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/law-node.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/law-node.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/law-node.png"
+        },
+        "legal-basis": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/legal-basis.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/legal-basis.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/legal-basis.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/legal-basis.png"
+        },
+        "person-node": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/person-node.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/person-node.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/person-node.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/person-node.png"
+        },
+        "privacy-confidential": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/privacy-confidential.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/privacy-confidential.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/privacy-confidential.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/privacy-confidential.png"
+        },
+        "privacy-redacted": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/privacy-redacted.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/privacy-redacted.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/privacy-redacted.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/privacy-redacted.png"
+        },
+        "provenance-chain": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/provenance-chain.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/provenance-chain.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/provenance-chain.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/provenance-chain.png"
+        },
+        "status-contested": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/status-contested.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/status-contested.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/status-contested.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/status-contested.png"
+        },
+        "status-verified": {
+          "16": "moonwitness/semantic-primitives-pack/png/16/status-verified.png",
+          "20": "moonwitness/semantic-primitives-pack/png/20/status-verified.png",
+          "24": "moonwitness/semantic-primitives-pack/png/24/status-verified.png",
+          "32": "moonwitness/semantic-primitives-pack/png/32/status-verified.png"
+        }
+      },
+      "webm": {},
+      "lottie": {},
+      "wav": {},
+      "ogg": {},
+      "ico": {},
+      "artifacts": {},
+      "files": [
+        "moonwitness/semantic-primitives-pack/png/16/edge-contradicts.png",
+        "moonwitness/semantic-primitives-pack/png/16/edge-supports.png",
+        "moonwitness/semantic-primitives-pack/png/16/event-node.png",
+        "moonwitness/semantic-primitives-pack/png/16/evidence-bounds.png",
+        "moonwitness/semantic-primitives-pack/png/16/evidence-source.png",
+        "moonwitness/semantic-primitives-pack/png/16/graph-node.png",
+        "moonwitness/semantic-primitives-pack/png/16/integrity-hash.png",
+        "moonwitness/semantic-primitives-pack/png/16/jurisdiction-zone.png",
+        "moonwitness/semantic-primitives-pack/png/16/law-node.png",
+        "moonwitness/semantic-primitives-pack/png/16/legal-basis.png",
+        "moonwitness/semantic-primitives-pack/png/16/person-node.png",
+        "moonwitness/semantic-primitives-pack/png/16/privacy-confidential.png",
+        "moonwitness/semantic-primitives-pack/png/16/privacy-redacted.png",
+        "moonwitness/semantic-primitives-pack/png/16/provenance-chain.png",
+        "moonwitness/semantic-primitives-pack/png/16/status-contested.png",
+        "moonwitness/semantic-primitives-pack/png/16/status-verified.png",
+        "moonwitness/semantic-primitives-pack/png/20/edge-contradicts.png",
+        "moonwitness/semantic-primitives-pack/png/20/edge-supports.png",
+        "moonwitness/semantic-primitives-pack/png/20/event-node.png",
+        "moonwitness/semantic-primitives-pack/png/20/evidence-bounds.png",
+        "moonwitness/semantic-primitives-pack/png/20/evidence-source.png",
+        "moonwitness/semantic-primitives-pack/png/20/graph-node.png",
+        "moonwitness/semantic-primitives-pack/png/20/integrity-hash.png",
+        "moonwitness/semantic-primitives-pack/png/20/jurisdiction-zone.png",
+        "moonwitness/semantic-primitives-pack/png/20/law-node.png",
+        "moonwitness/semantic-primitives-pack/png/20/legal-basis.png",
+        "moonwitness/semantic-primitives-pack/png/20/person-node.png",
+        "moonwitness/semantic-primitives-pack/png/20/privacy-confidential.png",
+        "moonwitness/semantic-primitives-pack/png/20/privacy-redacted.png",
+        "moonwitness/semantic-primitives-pack/png/20/provenance-chain.png",
+        "moonwitness/semantic-primitives-pack/png/20/status-contested.png",
+        "moonwitness/semantic-primitives-pack/png/20/status-verified.png",
+        "moonwitness/semantic-primitives-pack/png/24/edge-contradicts.png",
+        "moonwitness/semantic-primitives-pack/png/24/edge-supports.png",
+        "moonwitness/semantic-primitives-pack/png/24/event-node.png",
+        "moonwitness/semantic-primitives-pack/png/24/evidence-bounds.png",
+        "moonwitness/semantic-primitives-pack/png/24/evidence-source.png",
+        "moonwitness/semantic-primitives-pack/png/24/graph-node.png",
+        "moonwitness/semantic-primitives-pack/png/24/integrity-hash.png",
+        "moonwitness/semantic-primitives-pack/png/24/jurisdiction-zone.png",
+        "moonwitness/semantic-primitives-pack/png/24/law-node.png",
+        "moonwitness/semantic-primitives-pack/png/24/legal-basis.png",
+        "moonwitness/semantic-primitives-pack/png/24/person-node.png",
+        "moonwitness/semantic-primitives-pack/png/24/privacy-confidential.png",
+        "moonwitness/semantic-primitives-pack/png/24/privacy-redacted.png",
+        "moonwitness/semantic-primitives-pack/png/24/provenance-chain.png",
+        "moonwitness/semantic-primitives-pack/png/24/status-contested.png",
+        "moonwitness/semantic-primitives-pack/png/24/status-verified.png",
+        "moonwitness/semantic-primitives-pack/png/32/edge-contradicts.png",
+        "moonwitness/semantic-primitives-pack/png/32/edge-supports.png",
+        "moonwitness/semantic-primitives-pack/png/32/event-node.png",
+        "moonwitness/semantic-primitives-pack/png/32/evidence-bounds.png",
+        "moonwitness/semantic-primitives-pack/png/32/evidence-source.png",
+        "moonwitness/semantic-primitives-pack/png/32/graph-node.png",
+        "moonwitness/semantic-primitives-pack/png/32/integrity-hash.png",
+        "moonwitness/semantic-primitives-pack/png/32/jurisdiction-zone.png",
+        "moonwitness/semantic-primitives-pack/png/32/law-node.png",
+        "moonwitness/semantic-primitives-pack/png/32/legal-basis.png",
+        "moonwitness/semantic-primitives-pack/png/32/person-node.png",
+        "moonwitness/semantic-primitives-pack/png/32/privacy-confidential.png",
+        "moonwitness/semantic-primitives-pack/png/32/privacy-redacted.png",
+        "moonwitness/semantic-primitives-pack/png/32/provenance-chain.png",
+        "moonwitness/semantic-primitives-pack/png/32/status-contested.png",
+        "moonwitness/semantic-primitives-pack/png/32/status-verified.png",
+        "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+        "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+        "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+        "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+        "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+        "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+        "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+        "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+        "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+        "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+        "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+        "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+        "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+        "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+        "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+        "moonwitness/semantic-primitives-pack/svg/status-verified.svg"
+      ],
+      "classification": {
+        "ruleId": "atomic-product-primitives",
+        "assetKind": "primitive",
+        "intendedUsage": [
+          "product-ui",
+          "compact-control",
+          "semantic-marker"
+        ],
+        "minimumDisplaySize": 16,
+        "accessibilityRole": "interactive-support"
+      },
+      "visualAssets": {
+        "moonwitness/semantic-primitives-pack/png/16/edge-contradicts.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/edge-supports.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/event-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/event-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/evidence-bounds.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/evidence-source.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/graph-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/graph-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/integrity-hash.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/jurisdiction-zone.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/law-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/law-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/legal-basis.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/person-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/person-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/privacy-confidential.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/privacy-redacted.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/provenance-chain.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/status-contested.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-contested.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/16/status-verified.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-verified.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/edge-contradicts.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/edge-supports.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/event-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/event-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/evidence-bounds.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/evidence-source.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/graph-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/graph-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/integrity-hash.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/jurisdiction-zone.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/law-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/law-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/legal-basis.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/person-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/person-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/privacy-confidential.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/privacy-redacted.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/provenance-chain.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/status-contested.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-contested.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/20/status-verified.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-verified.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/edge-contradicts.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/edge-supports.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/event-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/event-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/evidence-bounds.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/evidence-source.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/graph-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/graph-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/integrity-hash.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/jurisdiction-zone.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/law-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/law-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/legal-basis.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/person-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/person-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/privacy-confidential.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/privacy-redacted.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/provenance-chain.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/status-contested.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-contested.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/24/status-verified.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-verified.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/edge-contradicts.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/edge-supports.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/event-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/event-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/evidence-bounds.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/evidence-source.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/graph-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/graph-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/integrity-hash.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/jurisdiction-zone.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/law-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/law-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/legal-basis.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/person-node.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/person-node.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/privacy-confidential.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/privacy-redacted.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/provenance-chain.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/status-contested.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-contested.svg"
+        },
+        "moonwitness/semantic-primitives-pack/png/32/status-verified.png": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "fixed",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "png",
+          "canonicalSource": "moonwitness/semantic-primitives-pack/svg/status-verified.svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/edge-supports.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/event-node.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/evidence-source.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/graph-node.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/law-node.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/legal-basis.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/person-node.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/status-contested.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        },
+        "moonwitness/semantic-primitives-pack/svg/status-verified.svg": {
+          "assetKind": "primitive",
+          "intendedUsage": [
+            "product-ui",
+            "compact-control",
+            "semantic-marker"
+          ],
+          "themeBehavior": "currentColor",
+          "minimumDisplaySize": 16,
+          "containsText": false,
+          "accessibilityRole": "interactive-support",
+          "format": "svg"
+        }
+      }
+    },
     "developer-distribution": {
       "manifest": "moonwitness/developer-pack/manifest.json",
       "count": 4,
@@ -23885,17 +25211,17 @@
     }
   },
   "coverage": {
-    "packFamilies": 43,
+    "packFamilies": 44,
     "foundationCollections": 2,
-    "showcaseCollections": 45,
-    "deliveryFiles": 1464,
-    "indexedDeliveryFiles": 1464,
-    "classifiedVisualFiles": 1436,
+    "showcaseCollections": 46,
+    "deliveryFiles": 1544,
+    "indexedDeliveryFiles": 1544,
+    "classifiedVisualFiles": 1516,
     "missingDeliveryFiles": 0,
     "coveragePercent": 100,
     "extensions": {
-      "svg": 634,
-      "png": 777,
+      "svg": 650,
+      "png": 841,
       "ico": 1,
       "webm": 12,
       "wav": 14,

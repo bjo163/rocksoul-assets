@@ -217,6 +217,11 @@
       "category": "System",
       "description": "Every animated SVG, APNG, WebM and Lottie runtime motion delivery."
     },
+    "semantic-primitives": {
+      "label": "Semantic Primitives",
+      "category": "Investigation",
+      "description": "Transparent, label-free, theme-aware graph, status, evidence, privacy, integrity, and legal primitives."
+    },
     "developer-distribution": {
       "label": "Developer Distribution",
       "category": "System",

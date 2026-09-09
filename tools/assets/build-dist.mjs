@@ -284,8 +284,9 @@ for (const [collectionId, collection] of Object.entries(collections)) {
 css += "}\n";
 await writeFile(path.join(root, "dist/assets.css"), css);
 
-// Product icon sprite only: reliable same-grid symbols.
+// Production primitive sprite only: reliable same-grid, classification-approved symbols.
 const iconFiles = (await walk("moonwitness/icons/svg")).filter((p) => p.endsWith(".svg")).sort();
+const semanticPrimitiveFiles = (await walk("moonwitness/semantic-primitives-pack/svg")).filter((p) => p.endsWith(".svg")).sort();
 let symbols = "";
 for (const p of iconFiles) {
   const raw = await readFile(path.join(root, p), "utf8");
@@ -293,6 +294,13 @@ for (const p of iconFiles) {
   const inner = raw.replace(/^.*?<svg[^>]*>/s, "").replace(/<\/svg>\s*$/s, "");
   const id = path.basename(p, ".svg");
   symbols += `<symbol id="mw-${id}" viewBox="${vb}">${inner}</symbol>`;
+}
+for (const p of semanticPrimitiveFiles) {
+  const raw = await readFile(path.join(root, p), "utf8");
+  const vb = raw.match(/viewBox="([^"]+)"/)?.[1] ?? "0 0 24 24";
+  const inner = raw.replace(/^.*?<svg[^>]*>/s, "").replace(/<\/svg>\s*$/s, "");
+  const id = path.basename(p, ".svg");
+  symbols += `<symbol id="mw-semantic-${id}" viewBox="${vb}">${inner}</symbol>`;
 }
 await writeFile(
   path.join(root, "dist/sprite.svg"),
@@ -306,4 +314,6 @@ console.log(JSON.stringify({
   deliveryFiles: actualDelivery.length,
   showcaseCoverage: "100%",
   icons: iconFiles.length,
+  semanticPrimitives: semanticPrimitiveFiles.length,
+  spriteSymbols: iconFiles.length + semanticPrimitiveFiles.length,
 }, null, 2));

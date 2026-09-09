@@ -30,9 +30,9 @@
 
 ## Showcase and documentation
 
-- [x] 43 asset-pack families represented in registry
+- [x] 44 asset-pack families represented in registry
 - [x] Brand System + V1 Baseline foundation collections represented
-- [x] 1,464 / 1,464 delivery files indexed
+- [x] 1,544 / 1,544 delivery files indexed
 - [x] showcase JavaScript syntax validation
 - [x] showcase catalog/registry version validation
 - [x] documentation current-version validation
@@ -75,7 +75,7 @@ They do not indicate missing release assets; they are post-source design-workspa
 - [x] 12/12 V2 application surfaces have PNG previews
 - [x] product icons have 24/48/96 PNG delivery
 - [x] dashboard, data-viz, hero, states and motion preview PNGs generated
-- [x] 43 asset-pack families indexed
+- [x] 44 asset-pack families indexed
 - [x] malformed mini-kanban SVG repaired
 - [x] all tracked SVG files validated as XML in CI
 - [x] stale raster cleanup is part of generation

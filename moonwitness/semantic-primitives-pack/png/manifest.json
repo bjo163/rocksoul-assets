@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "packId": "semantic-primitives",
+  "pack": "MoonWitness Semantic Primitives Pack",
+  "canonicalFormat": "svg",
+  "generatedFormat": "png",
+  "sourceCount": 16,
+  "outputs": [
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/edge-contradicts.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/edge-contradicts.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/edge-contradicts.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/edge-contradicts.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/edge-supports.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/edge-supports.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/edge-supports.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/edge-supports.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/event-node.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/event-node.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/event-node.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/event-node.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/evidence-bounds.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/evidence-bounds.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/evidence-bounds.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/evidence-bounds.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/evidence-source.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/evidence-source.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/evidence-source.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/evidence-source.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/graph-node.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/graph-node.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/graph-node.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/graph-node.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/integrity-hash.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/integrity-hash.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/integrity-hash.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/integrity-hash.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/jurisdiction-zone.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/jurisdiction-zone.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/jurisdiction-zone.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/jurisdiction-zone.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/law-node.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/law-node.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/law-node.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/law-node.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/legal-basis.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/legal-basis.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/legal-basis.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/legal-basis.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/person-node.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/person-node.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/person-node.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/person-node.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/privacy-confidential.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/privacy-confidential.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/privacy-confidential.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/privacy-confidential.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/privacy-redacted.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/privacy-redacted.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/privacy-redacted.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/privacy-redacted.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/provenance-chain.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/provenance-chain.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/provenance-chain.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/provenance-chain.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/status-contested.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/status-contested.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/status-contested.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/status-contested.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-verified.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/16/status-verified.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-verified.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/20/status-verified.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-verified.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/24/status-verified.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "moonwitness/semantic-primitives-pack/svg/status-verified.svg",
+      "path": "moonwitness/semantic-primitives-pack/png/32/status-verified.png",
+      "width": 32,
+      "height": 32
+    }
+  ]
+}
