@@ -173,6 +173,27 @@
       "scope": "repository",
       "status": "VERIFIED",
       "title": "Add semantic motion contracts and improve visual asset discovery"
+    },
+    {
+      "acceptance_criteria": ["Asset Explorer loading, failure, keyboard, checkerboard, compact metadata, and reduced-motion states are covered end-to-end."],
+      "affected_paths": ["showcase", "tools/assets", "moonwitness/runtime-motion-pack"],
+      "dependencies": ["ASSETS-006"],
+      "evidence_required": ["light/dark explorer screenshots", "keyboard test report", "preview failure-state test"],
+      "id": "ASSET-NEXT-001", "owner": "rocksoul-assets", "phase": "EXPLORER-VERIFICATION", "priority": "MEDIUM", "risk": "Indexed assets may remain difficult or inaccessible to inspect.", "scope": "repository", "status": "NOT_STARTED", "title": "Audit Asset Explorer interaction and preview states"
+    },
+    {
+      "acceptance_criteria": ["CI detects stale generated derivatives after source SVG, motion, or Penpot changes.", "Freshness failures provide actionable source-to-output paths."],
+      "affected_paths": ["tools/assets", ".github/workflows", "dist"],
+      "dependencies": ["ASSETS-004", "ASSETS-006"],
+      "evidence_required": ["freshness audit pass", "intentional stale-fixture failure", "CI log"],
+      "id": "ASSET-NEXT-002", "owner": "rocksoul-assets", "phase": "ASSET-INTEGRITY", "priority": "MEDIUM", "risk": "Stale derivatives can ship visual behavior different from canonical sources.", "scope": "repository", "status": "NOT_STARTED", "title": "Enforce generated asset freshness gates"
+    },
+    {
+      "acceptance_criteria": ["Informative SVGs report accessible metadata coverage.", "Decorative and specimen exceptions are explicit and machine-readable."],
+      "affected_paths": ["tools/assets", "docs/SVG-POLICY.md", "moonwitness"],
+      "dependencies": ["ASSETS-004"],
+      "evidence_required": ["metadata coverage report", "decorative exception inventory", "validator output"],
+      "id": "ASSET-NEXT-003", "owner": "rocksoul-assets", "phase": "ACCESSIBILITY-VERIFICATION", "priority": "MEDIUM", "risk": "Missing labels or color-only semantics reduce accessibility and localization quality.", "scope": "repository", "status": "NOT_STARTED", "title": "Generate accessibility metadata coverage report"
     }
   ]
 }
