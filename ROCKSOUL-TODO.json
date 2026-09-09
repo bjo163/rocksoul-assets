@@ -247,6 +247,9 @@
       "dependencies": [
         "ASSETS-004"
       ],
+      "evidence": [
+        "commit 7b2520f pushed; generated docs/generated/accessibility-metadata-report.json and generator report 16/16 semantic primitives covered, zero missing metadata, decorative exceptions explicit; deterministic output validated."
+      ],
       "evidence_required": [
         "metadata coverage report",
         "decorative exception inventory",
@@ -258,7 +261,7 @@
       "priority": "MEDIUM",
       "risk": "Missing labels or color-only semantics reduce accessibility and localization quality.",
       "scope": "repository",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "title": "Generate accessibility metadata coverage report"
     }
   ]
