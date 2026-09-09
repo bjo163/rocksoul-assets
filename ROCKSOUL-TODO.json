@@ -57,6 +57,9 @@
       "dependencies": [
         "ASSETS-002"
       ],
+      "evidence": [
+        "commit d577fbd pushed to origin/main; added 16 transparent label-free semantic primitives with currentColor and 16/20/24/32 PNG derivatives; corrected primitive classification so source-file/geospatial/cursor specimens remain separate; production sprite now contains exactly 60 approved symbols (44 product + 16 semantic) and excludes specimens; validate-primitives PASS, validate-classification PASS (1516 visual files: primitive 256, illustration 394, specimen 794, screen-reference 72), validate.mjs PASS (650 SVG/841 raster), showcase coverage PASS (1544/1544), docs validation PASS; generated light/dark optical-size contact sheet at docs/generated/semantic-primitives-contact-sheet.svg."
+      ],
       "evidence_required": [
         "SVG structural audit before and after",
         "sprite symbol inventory",
@@ -69,7 +72,7 @@
       "priority": "CRITICAL",
       "risk": "Semantic graph, status, evidence, privacy, integrity, and legal assets currently contain fixed backgrounds or text and cannot safely scale or theme.",
       "scope": "repository",
-      "status": "IN_PROGRESS",
+      "status": "VERIFIED",
       "title": "Extract theme-aware atomic semantic vectors and expand the production sprite"
     },
     {
