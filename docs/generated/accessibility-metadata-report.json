@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "SVG-POLICY.md + manifest.json",
+  "informative": {
+    "semanticPrimitives": 16,
+    "accessibleContract": 16,
+    "missingMetadata": 0
+  },
+  "decorative": {
+    "classificationRequired": true,
+    "explicitExceptions": true
+  },
+  "coverage": {
+    "classifiedVisualFiles": 0,
+    "sourceRegistry": "manifest.json"
+  }
+}
