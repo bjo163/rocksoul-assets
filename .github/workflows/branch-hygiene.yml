@@ -8,6 +8,10 @@ on:
         required: true
         default: true
         type: boolean
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/branch-hygiene.yml"
   schedule:
     - cron: "19 3 * * 0"
 
@@ -26,12 +30,27 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
     steps:
-      - name: Delete only proven merged historical branches
+      - name: Delete merged and explicitly retired branches
         shell: bash
         run: |
           set -euo pipefail
 
-          cutoff="$(( $(date -u +%s) - 3 * 24 * 60 * 60 ))"
+          retired=(
+            "dev"
+            "ecosystem/perspective-first-class"
+            "feat/perspective-first-class-visual"
+            "fix/main-only-generator-policy"
+          )
+
+          is_retired() {
+            local candidate="$1"
+            local item
+            for item in "${retired[@]}"; do
+              [ "$item" = "$candidate" ] && return 0
+            done
+            return 1
+          }
+
           mapfile -t open_heads < <(
             gh pr list --repo "$GITHUB_REPOSITORY" --state open --limit 200 \
               --json headRefName --jq '.[].headRefName'
@@ -52,8 +71,8 @@ jobs:
 
           for branch in "${branches[@]}"; do
             case "$branch" in
-              main|dev|archive/*|feat/mftl-observatory-assets|feat/mftl-observatory-assets-v2)
-                echo "KEEP ${branch}"
+              main|archive/*|feat/mftl-observatory-assets|feat/mftl-observatory-assets-v2)
+                echo "KEEP ${branch}: protected"
                 continue
                 ;;
             esac
@@ -63,25 +82,27 @@ jobs:
               continue
             fi
 
-            merged_count="$(gh pr list --repo "$GITHUB_REPOSITORY" --state merged \
-              --head "$branch" --limit 1 --json number --jq 'length')"
-            if [ "$merged_count" = "0" ]; then
-              echo "KEEP ${branch}: no merged PR provenance"
-              continue
+            delete_reason=""
+            if is_retired "$branch"; then
+              delete_reason="explicitly retired"
+            else
+              merged_count="$(gh pr list --repo "$GITHUB_REPOSITORY" --state merged \
+                --head "$branch" --limit 1 --json number --jq 'length')"
+              if [ "$merged_count" != "0" ]; then
+                delete_reason="merged PR provenance"
+              fi
             fi
 
-            committed_at="$(gh api "repos/${GITHUB_REPOSITORY}/commits/${branch}" --jq '.commit.committer.date')"
-            committed_epoch="$(date -u -d "$committed_at" +%s)"
-            if [ "$committed_epoch" -gt "$cutoff" ]; then
-              echo "KEEP ${branch}: younger than 3 days"
+            if [ -z "$delete_reason" ]; then
+              echo "KEEP ${branch}: no safe deletion evidence"
               continue
             fi
 
             if [ "$DRY_RUN" = "true" ]; then
-              echo "DRY-RUN DELETE ${branch}"
+              echo "DRY-RUN DELETE ${branch}: ${delete_reason}"
               continue
             fi
 
-            echo "DELETE ${branch}"
+            echo "DELETE ${branch}: ${delete_reason}"
             gh api --method DELETE "repos/${GITHUB_REPOSITORY}/git/refs/heads/${branch}"
           done
