@@ -8,7 +8,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 | Signal | State |
 |---|---:|
-| Release | **v1.4.2** |
+| Release | **v1.5.0** |
 | Asset scope | **closed / delivery complete** |
 | Asset inventory | `dist/assets.json` → `coverage` |
 | Pack index | `moonwitness/asset-packs.json` |
