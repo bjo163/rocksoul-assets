@@ -1,16 +1,16 @@
 {
   "repository_id": "rocksoul-assets",
-  "schema": "rocksoul.todo.v1",
+  "schema": "rocksoul.todo.v2",
   "tasks": [
     {
-      "evidence": [
-        "2026-09-09: node scripts/validate-rocksoul-contract.mjs PASS; node tools/assets/validate.mjs PASS (777 raster/vector pairs, 634/634 vector coverage, 43 packs); node tools/penpot/validate.mjs PASS; validate-sources PASS; branch policy PASS (violations=0)."
-      ],
       "github_issue": "https://github.com/bjo163/rocksoul-assets/issues/27",
       "id": "ASSETS-001",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Maintain repository control contract and local TODO"
+      "status": "NEEDS_REVERIFY",
+      "title": "Maintain repository control contract and local TODO",
+      "legacy_evidence": [
+        "2026-09-09: node scripts/validate-rocksoul-contract.mjs PASS; node tools/assets/validate.mjs PASS (777 raster/vector pairs, 634/634 vector coverage, 43 packs); node tools/penpot/validate.mjs PASS; validate-sources PASS; branch policy PASS (violations=0)."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -26,9 +26,6 @@
         "tools/assets"
       ],
       "dependencies": [],
-      "evidence": [
-        "commit 36fac36 pushed to origin/main; build-dist PASS (43 packs, 45 collections, 1464 delivery files, 100% coverage); classification validator PASS (1436 visual files: primitive 270, illustration 394, specimen 700, screen-reference 72); negative tests rejected missing metadata and incompatible assetKind; validate-svg-xml=666, validate assets PASS, showcase coverage 1464/1464, docs and branch policy PASS; browser inspection confirmed 45 classified cards, all five labels, Product Icons dialog 'Core / primitive / Asset pack', and no horizontal overflow."
-      ],
       "evidence_required": [
         "updated manifests and generated registry",
         "classification validator output",
@@ -40,8 +37,11 @@
       "priority": "CRITICAL",
       "risk": "Specimen cards can be consumed as production primitives, producing unreadable, fixed-theme UI.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Classify production primitives, illustrations, specimens, and screen references"
+      "status": "NEEDS_REVERIFY",
+      "title": "Classify production primitives, illustrations, specimens, and screen references",
+      "legacy_evidence": [
+        "commit 36fac36 pushed to origin/main; build-dist PASS (43 packs, 45 collections, 1464 delivery files, 100% coverage); classification validator PASS (1436 visual files: primitive 270, illustration 394, specimen 700, screen-reference 72); negative tests rejected missing metadata and incompatible assetKind; validate-svg-xml=666, validate assets PASS, showcase coverage 1464/1464, docs and branch policy PASS; browser inspection confirmed 45 classified cards, all five labels, Product Icons dialog 'Core / primitive / Asset pack', and no horizontal overflow."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -57,9 +57,6 @@
       "dependencies": [
         "ASSETS-002"
       ],
-      "evidence": [
-        "commit d577fbd pushed to origin/main; added 16 transparent label-free semantic primitives with currentColor and 16/20/24/32 PNG derivatives; corrected primitive classification so source-file/geospatial/cursor specimens remain separate; production sprite now contains exactly 60 approved symbols (44 product + 16 semantic) and excludes specimens; validate-primitives PASS, validate-classification PASS (1516 visual files: primitive 256, illustration 394, specimen 794, screen-reference 72), validate.mjs PASS (650 SVG/841 raster), showcase coverage PASS (1544/1544), docs validation PASS; generated light/dark optical-size contact sheet at docs/generated/semantic-primitives-contact-sheet.svg."
-      ],
       "evidence_required": [
         "SVG structural audit before and after",
         "sprite symbol inventory",
@@ -72,8 +69,11 @@
       "priority": "CRITICAL",
       "risk": "Semantic graph, status, evidence, privacy, integrity, and legal assets currently contain fixed backgrounds or text and cannot safely scale or theme.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Extract theme-aware atomic semantic vectors and expand the production sprite"
+      "status": "NEEDS_REVERIFY",
+      "title": "Extract theme-aware atomic semantic vectors and expand the production sprite",
+      "legacy_evidence": [
+        "commit d577fbd pushed to origin/main; added 16 transparent label-free semantic primitives with currentColor and 16/20/24/32 PNG derivatives; corrected primitive classification so source-file/geospatial/cursor specimens remain separate; production sprite now contains exactly 60 approved symbols (44 product + 16 semantic) and excludes specimens; validate-primitives PASS, validate-classification PASS (1516 visual files: primitive 256, illustration 394, specimen 794, screen-reference 72), validate.mjs PASS (650 SVG/841 raster), showcase coverage PASS (1544/1544), docs validation PASS; generated light/dark optical-size contact sheet at docs/generated/semantic-primitives-contact-sheet.svg."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -90,9 +90,6 @@
       "dependencies": [
         "ASSETS-002"
       ],
-      "evidence": [
-        "SVG-POLICY.md and validate-svg-policy.mjs committed; 16/16 semantic primitives pass currentColor/label-free structural audit; typography/font licensing and decorative exceptions documented."
-      ],
       "evidence_required": [
         "SVG policy document",
         "automated structural audit results",
@@ -105,8 +102,11 @@
       "priority": "HIGH",
       "risk": "Hard-coded colors, embedded text, incomplete descriptions, and untested optical weight create theme, localization, accessibility, and rendering drift.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Enforce SVG color, typography, accessibility, and optical-size policy"
+      "status": "NEEDS_REVERIFY",
+      "title": "Enforce SVG color, typography, accessibility, and optical-size policy",
+      "legacy_evidence": [
+        "SVG-POLICY.md and validate-svg-policy.mjs committed; 16/16 semantic primitives pass currentColor/label-free structural audit; typography/font licensing and decorative exceptions documented."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -123,9 +123,6 @@
         "ASSETS-003",
         "ASSETS-004"
       ],
-      "evidence": [
-        "Penpot design contract, frozen OFL typography/fallbacks, density tokens, and 25-component inventory validated by validate-penpot-contract.mjs; generated boards separated."
-      ],
       "evidence_required": [
         "validated Penpot export",
         "component and variant inventory",
@@ -138,8 +135,11 @@
       "priority": "HIGH",
       "risk": "The current Penpot package is a bootstrap reference, leaving component variants and visual decisions distributed across JSON, SVG, CSS, and React.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Complete native Penpot library and freeze typography and density contracts"
+      "status": "NEEDS_REVERIFY",
+      "title": "Complete native Penpot library and freeze typography and density contracts",
+      "legacy_evidence": [
+        "Penpot design contract, frozen OFL typography/fallbacks, density tokens, and 25-component inventory validated by validate-penpot-contract.mjs; generated boards separated."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -156,9 +156,6 @@
       "dependencies": [
         "ASSETS-002"
       ],
-      "evidence": [
-        "commit d781038 pushed to origin/main; runtime motion manifest now defines meaning, duration, loop policy, reduced-motion fallback, criticality, and 200KB budget; motion-policy validator passes 12 motions; discovery contract documents checkerboard, keyboard failure/fallback, compact metadata mode; generated artifacts remain static-first-frame for reduced motion."
-      ],
       "evidence_required": [
         "motion manifest validation",
         "reduced-motion browser inspection",
@@ -171,8 +168,11 @@
       "priority": "MEDIUM",
       "risk": "Motion files and dark or transparent vectors can be present and indexed while remaining ambiguous, inaccessible, or hard to inspect.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Add semantic motion contracts and improve visual asset discovery"
+      "status": "NEEDS_REVERIFY",
+      "title": "Add semantic motion contracts and improve visual asset discovery",
+      "legacy_evidence": [
+        "commit d781038 pushed to origin/main; runtime motion manifest now defines meaning, duration, loop policy, reduced-motion fallback, criticality, and 200KB budget; motion-policy validator passes 12 motions; discovery contract documents checkerboard, keyboard failure/fallback, compact metadata mode; generated artifacts remain static-first-frame for reduced motion."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -186,9 +186,6 @@
       "dependencies": [
         "ASSETS-006"
       ],
-      "evidence": [
-        "commit 2532427 pushed; validate-explorer-contract.mjs passes and confirms reduced-motion, failure fallback, lazy previews, compact mode, checkerboard surface, and focus-visible styling from showcase implementation."
-      ],
       "evidence_required": [
         "light/dark explorer screenshots",
         "keyboard test report",
@@ -200,8 +197,11 @@
       "priority": "MEDIUM",
       "risk": "Indexed assets may remain difficult or inaccessible to inspect.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Audit Asset Explorer interaction and preview states"
+      "status": "NEEDS_REVERIFY",
+      "title": "Audit Asset Explorer interaction and preview states",
+      "legacy_evidence": [
+        "commit 2532427 pushed; validate-explorer-contract.mjs passes and confirms reduced-motion, failure fallback, lazy previews, compact mode, checkerboard surface, and focus-visible styling from showcase implementation."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -217,9 +217,6 @@
         "ASSETS-004",
         "ASSETS-006"
       ],
-      "evidence": [
-        "commit 5df7345 pushed; validate-freshness-contract.mjs passes and confirms fail-closed git diff gates for brand, secondary packs, runtime motion, SFX, and dist derivatives."
-      ],
       "evidence_required": [
         "freshness audit pass",
         "intentional stale-fixture failure",
@@ -231,8 +228,11 @@
       "priority": "MEDIUM",
       "risk": "Stale derivatives can ship visual behavior different from canonical sources.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Enforce generated asset freshness gates"
+      "status": "NEEDS_REVERIFY",
+      "title": "Enforce generated asset freshness gates",
+      "legacy_evidence": [
+        "commit 5df7345 pushed; validate-freshness-contract.mjs passes and confirms fail-closed git diff gates for brand, secondary packs, runtime motion, SFX, and dist derivatives."
+      ]
     },
     {
       "acceptance_criteria": [
@@ -247,9 +247,6 @@
       "dependencies": [
         "ASSETS-004"
       ],
-      "evidence": [
-        "commit 7b2520f pushed; generated docs/generated/accessibility-metadata-report.json and generator report 16/16 semantic primitives covered, zero missing metadata, decorative exceptions explicit; deterministic output validated."
-      ],
       "evidence_required": [
         "metadata coverage report",
         "decorative exception inventory",
@@ -261,8 +258,11 @@
       "priority": "MEDIUM",
       "risk": "Missing labels or color-only semantics reduce accessibility and localization quality.",
       "scope": "repository",
-      "status": "VERIFIED",
-      "title": "Generate accessibility metadata coverage report"
+      "status": "NEEDS_REVERIFY",
+      "title": "Generate accessibility metadata coverage report",
+      "legacy_evidence": [
+        "commit 7b2520f pushed; generated docs/generated/accessibility-metadata-report.json and generator report 16/16 semantic primitives covered, zero missing metadata, decorative exceptions explicit; deterministic output validated."
+      ]
     }
   ]
 }
