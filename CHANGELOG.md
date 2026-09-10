@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.4.2] - 2026-09-10
+
+### Changed
+- Automated release candidate generated from deterministic repository impact.
+
 ## [1.4.1] - 2026-09-10
 
 ### Changed
