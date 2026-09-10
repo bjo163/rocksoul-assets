@@ -16,10 +16,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout canonical main
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           ref: main
+          fetch-depth: 0
       - name: Install image tooling
         run: |
           sudo apt-get update
@@ -36,4 +37,11 @@ jobs:
             exit 0
           fi
           git commit -m "assets: build photographic hero masters"
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            test "$attempt" -lt 3
+            sleep 2
+          done
