@@ -66,8 +66,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
+      - name: Checkout canonical main
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+          fetch-depth: 0
       - name: Download generated Penpot artifact
         uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6
         with:
@@ -80,7 +83,14 @@ jobs:
           git add penpot/generated/moonwitness-mw-0042.penpot
           if git diff --cached --quiet; then
             echo "No generated changes."
-          else
-            git commit -m "build: generate MW-0042 Penpot file"
-            git push
+            exit 0
           fi
+          git commit -m "build: generate MW-0042 Penpot file"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            test "$attempt" -lt 3
+            sleep 2
+          done
