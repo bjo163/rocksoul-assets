@@ -1,0 +1,12 @@
+{
+  "schema": "rocksoul.release-policy.v1",
+  "canonicalBranch": "main",
+  "tagPrefix": "v",
+  "fullGateWorkflow": "Release Gate",
+  "fullGateProofJob": "FULL_RELEASE_GATE_PASS",
+  "versionSource": "VERSION",
+  "releaseRelevantManifest": "tools/release/release-relevant.json",
+  "tagPolicy": "immutable-never-force-move",
+  "artifactPolicy": "bundle-checksum-inventory-release-metadata",
+  "states": ["DRAFT", "VALIDATING", "VALIDATED", "VERSIONED", "SEALED", "TAGGED", "PUBLISHED", "INVALID"]
+}

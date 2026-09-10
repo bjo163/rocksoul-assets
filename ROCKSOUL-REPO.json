@@ -1,14 +1,15 @@
 {
-  "schema": "rocksoul.repository.v1",
+  "schema": "rocksoul.repository.v2",
   "repository_id": "rocksoul-assets",
   "role": "DESIGN",
   "provider": "github",
-  "github_repository": "rocksoul-assets",
+  "github_repository": "bjo163/rocksoul-assets",
   "tracking": {
-    "master_todo": "../../../MASTER-TODO.json"
+    "master_todo": "ROCKSOUL-TODO.json"
   },
   "automation": {
     "sync_enabled": true,
+    "sync_command": "node tools/todo/sync-evidence.mjs",
     "release_mode": "repository-controlled"
   }
 }

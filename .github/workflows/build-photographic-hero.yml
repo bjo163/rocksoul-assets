@@ -17,18 +17,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           ref: main
-
       - name: Install image tooling
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick webp
-
       - name: Build masters
         run: bash tools/assets/build-photographic-hero.sh
-
       - name: Commit generated masters
         run: |
           git config user.name "github-actions[bot]"
@@ -38,5 +35,5 @@ jobs:
             echo "Photographic hero masters are already current."
             exit 0
           fi
-          git commit -m "assets: build photographic hero masters [skip ci]"
+          git commit -m "assets: build photographic hero masters"
           git push origin HEAD:main

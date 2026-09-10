@@ -8,65 +8,108 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: write
+
+concurrency:
+  group: rocksoul-publish-release
+  cancel-in-progress: false
 
 jobs:
   publish:
-    if: >
-      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
-      (github.event_name == 'workflow_run' &&
-       github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.head_branch == 'main')
+    if: >-
+      (github.event_name == 'workflow_dispatch') ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     steps:
-      - name: Resolve release commit
-        id: release
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          WORKFLOW_SHA: ${{ github.event.workflow_run.head_sha }}
-          CURRENT_SHA: ${{ github.sha }}
-        run: |
-          if [ "$EVENT_NAME" = "workflow_run" ]; then
-            echo "sha=$WORKFLOW_SHA" >> "$GITHUB_OUTPUT"
-          else
-            echo "sha=$CURRENT_SHA" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Checkout release source
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-        with:
-          ref: ${{ steps.release.outputs.sha }}
-          fetch-depth: 0
-
-      - name: Read version
-        id: version
-        run: |
-          version="$(tr -d '[:space:]' < VERSION)"
-          test -n "$version"
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-          echo "tag=v$version" >> "$GITHUB_OUTPUT"
-
-      - name: Verify release metadata
-        env:
-          VERSION: ${{ steps.version.outputs.version }}
-        run: |
-          node - <<'NODE'
-          const fs = require('fs');
-          const expected = process.env.VERSION;
-          const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
-          if (manifest.release?.version !== expected) throw new Error('manifest release version mismatch');
-          if (manifest.release?.status !== 'released') throw new Error('release is not marked released');
-          NODE
-
-      - name: Publish GitHub Release
+      - name: Resolve verified SHA and gate run
+        id: verified
+        shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ steps.version.outputs.tag }}
-          VERSION: ${{ steps.version.outputs.version }}
-          TARGET_SHA: ${{ steps.release.outputs.sha }}
         run: |
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            echo "$TAG already exists; leaving existing release unchanged."
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            sha="${{ github.event.workflow_run.head_sha }}"
+            run_id="${{ github.event.workflow_run.id }}"
+            proof_count="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${run_id}/jobs?per_page=100" --jq '[.jobs[] | select(.name=="FULL_RELEASE_GATE_PASS" and .conclusion=="success")] | length')"
+            test "$proof_count" = "1"
           else
-            gh release create "$TAG"               --target "$TARGET_SHA"               --title "MoonWitness Asset System v$VERSION"               --notes-file RELEASE.md               --latest
+            sha="$(gh api "repos/${GITHUB_REPOSITORY}/git/ref/heads/main" --jq .object.sha)"
+            run_id="${GITHUB_RUN_ID}"
           fi
+          main_sha="$(gh api "repos/${GITHUB_REPOSITORY}/git/ref/heads/main" --jq .object.sha)"
+          if [ "$sha" != "$main_sha" ]; then
+            echo "Candidate $sha is stale; current main is $main_sha. Skipping publication."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+      - name: Checkout exact verified SHA
+        if: steps.verified.outputs.skip != 'true'
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: ${{ steps.verified.outputs.sha }}
+          fetch-depth: 0
+      - name: Setup Node
+        if: steps.verified.outputs.skip != 'true'
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: "22"
+      - name: Preflight immutable version
+        if: steps.verified.outputs.skip != 'true'
+        id: preflight
+        shell: bash
+        run: |
+          git fetch --force --tags origin
+          version="$(tr -d '[:space:]' < VERSION)"
+          tag="v$version"
+          if git rev-parse "refs/tags/$tag" >/dev/null 2>&1; then
+            existing="$(git rev-parse "refs/tags/$tag^{}")"
+            echo "$tag already exists at $existing; historical tag will not be moved."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          node tools/release/validate-release.mjs --mode publish --sha "${{ steps.verified.outputs.sha }}" --branch main
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+      - name: Validate release state progression
+        if: steps.verified.outputs.skip != 'true' && steps.preflight.outputs.skip != 'true'
+        run: |
+          node tools/release/validate-state.mjs --from DRAFT --to VALIDATING
+          node tools/release/validate-state.mjs --from VALIDATING --to VALIDATED
+          node tools/release/validate-state.mjs --from VALIDATED --to VERSIONED
+          node tools/release/validate-state.mjs --from VERSIONED --to SEALED --version "${{ steps.preflight.outputs.version }}" --sha "${{ steps.verified.outputs.sha }}" --tag "${{ steps.preflight.outputs.tag }}" --gateRunId "${{ steps.verified.outputs.run_id }}"
+      - name: Seal and snapshot exact candidate
+        if: steps.verified.outputs.skip != 'true' && steps.preflight.outputs.skip != 'true'
+        run: |
+          node tools/release/seal.mjs --sha "${{ steps.verified.outputs.sha }}" --gate-run-id "${{ steps.verified.outputs.run_id }}"
+          node tools/release/snapshot.mjs --sha "${{ steps.verified.outputs.sha }}"
+          python tools/release/build_bundle.py
+          node tools/release/verify-artifacts.mjs --file ".release/out/rocksoul-assets-v${{ steps.preflight.outputs.version }}.zip"
+      - name: Publish immutable release artifacts
+        if: steps.verified.outputs.skip != 'true' && steps.preflight.outputs.skip != 'true'
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.preflight.outputs.tag }}
+          VERSION: ${{ steps.preflight.outputs.version }}
+          SHA: ${{ steps.verified.outputs.sha }}
+        shell: bash
+        run: |
+          bundle=".release/out/rocksoul-assets-v${VERSION}.zip"
+          checksum="${bundle}.sha256"
+          gh release create "$TAG" \
+            --target "$SHA" \
+            --title "MoonWitness Asset System v$VERSION" \
+            --notes "Automated Rocksoul release v$VERSION\n\nExact commit: $SHA\nFull Release Gate run: ${{ steps.verified.outputs.run_id }}\n\nArtifacts include deterministic bundle, SHA-256 checksum, immutable inventory snapshot, and sealed release metadata." \
+            "$bundle" "$checksum" ".release/out/inventory.json" ".release/out/release.json" \
+            --latest
+          release_id="$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/$TAG" --jq .id)"
+          bundle_sha="$(cut -d' ' -f1 "$checksum")"
+          inventory_sha="$(sha256sum .release/out/inventory.json | cut -d' ' -f1)"
+          node tools/release/validate-state.mjs --from SEALED --to TAGGED
+          node tools/release/validate-state.mjs --from TAGGED --to PUBLISHED --version "$VERSION" --sha "$SHA" --tag "$TAG" --releaseId "$release_id" --inventorySha256 "$inventory_sha" --bundleSha256 "$bundle_sha"
+          echo "release_id=$release_id" >> "$GITHUB_OUTPUT"

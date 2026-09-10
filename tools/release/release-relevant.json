@@ -1,0 +1,44 @@
+{
+  "schema": "rocksoul.release-relevant.v1",
+  "include": [
+    "VERSION",
+    "CHANGELOG.md",
+    "RELEASE.md",
+    "README.md",
+    "manifest.json",
+    "ROCKSOUL-REPO.json",
+    "ROCKSOUL-TODO.json",
+    ".release/**",
+    ".releases/**",
+    ".github/workflows/**",
+    "moonwitness/**",
+    "dist/**",
+    "showcase/**",
+    "docs/**",
+    "penpot/**",
+    "scripts/**",
+    "tools/assets/**",
+    "tools/docs/**",
+    "tools/ci/**",
+    "tools/generation/**",
+    "tools/release/**",
+    "tools/todo/**"
+  ],
+  "publicContractRoots": [
+    "moonwitness/**",
+    "dist/**",
+    "manifest.json",
+    "README.md",
+    "docs/ASSET-CONSUMPTION.md",
+    "docs/ASSET-PACK-CATALOG.md"
+  ],
+  "metadataOnly": [
+    ".github/**",
+    "tools/**",
+    "scripts/**",
+    "docs/**",
+    "README.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ]
+}
