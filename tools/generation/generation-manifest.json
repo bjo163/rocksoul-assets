@@ -1,0 +1,11 @@
+{
+  "schema": "rocksoul.generation.v1",
+  "entries": [
+    {"id":"brand-raster","generator":"tools/assets/render-brand.py","sources":["moonwitness/brand"],"outputs":["moonwitness/brand/generated"]},
+    {"id":"secondary-raster","generator":"tools/assets/render-packs.py","sources":["moonwitness"],"outputs":["moonwitness"]},
+    {"id":"developer-dist","generator":"tools/assets/build-dist.mjs","sources":["moonwitness/asset-packs.json","moonwitness/asset-classification.json"],"outputs":["dist"]},
+    {"id":"runtime-motion","generator":"tools/assets/generate-runtime-motion.py","sources":["moonwitness/runtime-motion-pack/svg"],"outputs":["moonwitness/runtime-motion-pack/png","moonwitness/runtime-motion-pack/lottie","moonwitness/runtime-motion-pack/generated-manifest.json"]},
+    {"id":"sfx","generator":"tools/assets/generate-sfx.py","sources":["moonwitness/sfx"],"outputs":["moonwitness/sfx/generated"]},
+    {"id":"penpot","generator":"tools/penpot/package.json","sources":["penpot"],"outputs":["penpot/generated"]}
+  ]
+}

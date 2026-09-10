@@ -1,0 +1,79 @@
+name: Auto Version
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rocksoul-auto-version-main
+  cancel-in-progress: false
+
+jobs:
+  version:
+    if: github.event_name == 'workflow_dispatch' || github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout canonical main
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: "22"
+      - name: Resolve deterministic candidate
+        id: candidate
+        shell: bash
+        run: |
+          git fetch --force --tags origin
+          latest_tag="$(git describe --tags --abbrev=0 --match 'v[0-9]*' 2>/dev/null || true)"
+          if [ -z "$latest_tag" ]; then
+            echo "No semantic release tag exists; leaving bootstrap version unchanged."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          tag_sha="$(git rev-parse "${latest_tag}^{}")"
+          head_sha="$(git rev-parse HEAD)"
+          if [ "$tag_sha" = "$head_sha" ]; then
+            echo "main already equals latest release $latest_tag"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          impact_json="$(node tools/release/detect-release-impact.mjs --base "$latest_tag" --head HEAD)"
+          impact="$(printf '%s' "$impact_json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).impact))')"
+          published="${latest_tag#v}"
+          next_json="$(node tools/release/next-version.mjs --current "$published" --impact "$impact")"
+          next="$(printf '%s' "$next_json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).next))')"
+          echo "latest_tag=$latest_tag" >> "$GITHUB_OUTPUT"
+          echo "impact=$impact" >> "$GITHUB_OUTPUT"
+          echo "version=$next" >> "$GITHUB_OUTPUT"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+          echo "candidate=v$next impact=$impact from=$latest_tag"
+      - name: Apply version and migrate evidence contract
+        if: steps.candidate.outputs.skip != 'true'
+        run: |
+          node tools/release/apply-version.mjs --version "${{ steps.candidate.outputs.version }}"
+          node tools/todo/migrate-evidence.mjs
+          node tools/assets/build-dist.mjs
+          node tools/release/validate-release.mjs --mode working
+          node scripts/validate-rocksoul-contract.mjs
+          node tools/todo/validate-evidence.mjs
+      - name: Commit atomic release candidate
+        if: steps.candidate.outputs.skip != 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add VERSION manifest.json moonwitness/asset-packs.json dist showcase/catalog.json CHANGELOG.md docs/README.md ROCKSOUL-TODO.json
+          if git diff --cached --quiet; then
+            echo "Candidate already materialized."
+            exit 0
+          fi
+          git commit -m "chore(release): prepare v${{ steps.candidate.outputs.version }}"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,11 @@
+{
+  "schema": "rocksoul.github-metadata.v1",
+  "description": "MoonWitness × Rocksoul visual asset system, semantic primitives, Penpot design sources, and developer distribution.",
+  "homepage": "https://rocksoul-assets-showcase.vercel.app",
+  "topics": ["rocksoul", "moonwitness", "assets", "design-system", "penpot", "svg", "ui"],
+  "wiki": {
+    "enabled": true,
+    "policy": "optional-mirror",
+    "canonicalSource": "docs/README.md"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "rocksoul-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:release": "node --test tests/release/*.test.mjs",
+    "validate:release": "node tools/release/validate-release.mjs",
+    "validate:registry": "node tools/assets/validate-registry-integrity.mjs",
+    "validate:generation": "node tools/generation/validate-freshness.mjs",
+    "validate:todo": "node tools/todo/validate-evidence.mjs",
+    "validate:contract": "node scripts/validate-rocksoul-contract.mjs"
+  }
+}

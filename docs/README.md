@@ -10,10 +10,9 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 |---|---:|
 | Release | **v1.3.1** |
 | Asset scope | **closed / delivery complete** |
-| Asset-pack families | **44** |
-| Showcase collections | **45** |
-| Delivery files | **1,544** |
-| Showcase coverage | **100%** |
+| Asset inventory | `dist/assets.json` → `coverage` |
+| Pack index | `moonwitness/asset-packs.json` |
+| Showcase coverage | **machine-validated** |
 | Live showcase | https://rocksoul-assets-showcase.vercel.app |
 
 ## Choose a path
@@ -32,24 +31,29 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 3. [Asset Classification](ASSET-CLASSIFICATION.md)
 4. [Semantic Primitives](SEMANTIC-PRIMITIVES.md)
 5. [Accessibility](ACCESSIBILITY.md)
-6. [Penpot Handoff](PENPOT-HANDOFF.md)
-7. [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md)
+6. [SVG Policy](SVG-POLICY.md)
+7. [Penpot Design Contract](PENPOT-DESIGN-CONTRACT.md)
+8. [Penpot Handoff](PENPOT-HANDOFF.md)
+9. [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md)
 
 ### I maintain the repository
 
 1. [Governance](GOVERNANCE.md)
 2. [Branching Policy](BRANCHING.md)
 3. [Versioning](VERSIONING.md)
-4. [Release Checklist](RELEASE-CHECKLIST.md)
-5. [Showcase Operations](SHOWCASE-OPERATIONS.md)
-6. [Asset Closure Audit](ASSET-CLOSURE-AUDIT.md)
+4. [Release Automation](RELEASE-AUTOMATION.md)
+5. [Release Checklist](RELEASE-CHECKLIST.md)
+6. [Showcase Operations](SHOWCASE-OPERATIONS.md)
+7. [GitHub Administration](GITHUB-ADMIN.md)
+8. [Asset Closure Audit](ASSET-CLOSURE-AUDIT.md)
 
 ### I am reviewing completeness or quality
 
 1. [Asset Closure Audit](ASSET-CLOSURE-AUDIT.md)
 2. [Showcase Coverage](SHOWCASE-COVERAGE.md)
 3. [Design System Readiness](DESIGN-SYSTEM-READINESS.md)
-4. [Live Penpot Verification](PENPOT-LIVE-VERIFICATION.md)
+4. [Motion Discovery](MOTION-DISCOVERY.md)
+5. [Live Penpot Verification](PENPOT-LIVE-VERIFICATION.md)
 
 ## Documentation map
 
@@ -64,19 +68,25 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Semantic Primitives](SEMANTIC-PRIMITIVES.md) | atomic theme-aware vectors, sprite membership, and optical-size contact sheet |
 | [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
+| [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) | canonical TEXT/RGBL visual ownership and consumer guidance |
 | [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
 | [Accessibility](ACCESSIBILITY.md) | non-negotiable product accessibility rules |
+| [SVG Policy](SVG-POLICY.md) | color, text, accessibility, font, and optical-size SVG rules |
+| [Motion Discovery](MOTION-DISCOVERY.md) | runtime motion semantics, fallback, reduced-motion, and discovery rules |
 | [Governance](GOVERNANCE.md) | ownership, change classes, definition of done |
 | [Branching Policy](BRANCHING.md) | single-main workflow and temporary PR branch lifecycle |
 | [Versioning](VERSIONING.md) | visual and release version rules |
+| [Release Automation](RELEASE-AUTOMATION.md) | release truth, automatic versioning, state machine, sealing, artifacts, and recovery |
 | [Showcase Operations](SHOWCASE-OPERATIONS.md) | production showcase architecture and deployment |
 | [Showcase Coverage](SHOWCASE-COVERAGE.md) | 100% delivery-index guarantee |
 | [Design System Readiness](DESIGN-SYSTEM-READINESS.md) | repository vs live-Penpot readiness |
+| [Penpot Design Contract](PENPOT-DESIGN-CONTRACT.md) | typography, density, component, and native design-system contract |
 | [Penpot Handoff](PENPOT-HANDOFF.md) | design-system reconstruction flow |
 | [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md) | generated Penpot package contract |
 | [Live Penpot Verification](PENPOT-LIVE-VERIFICATION.md) | manual workspace-only checks |
 | [Release Checklist](RELEASE-CHECKLIST.md) | release acceptance gates |
 | [Asset Closure Audit](ASSET-CLOSURE-AUDIT.md) | v1.3.1 closure evidence |
+| [GitHub Administration](GITHUB-ADMIN.md) | repository metadata and Wiki source-of-truth policy |
 | [Licensing](LICENSING.md) | current reuse-rights boundary |
 | [FAQ](FAQ.md) | common implementation and governance questions |
 
@@ -88,12 +98,11 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 - `showcase/catalog.json`
 - `manifest.json`
 - `VERSION`
+- `tools/release/release-relevant.json`
+- `.release/policy.json`
 
 ## Documentation rule
 
 If a change alters a consumer contract, visual semantic, release rule, generator, or showcase behavior, the related documentation must change in the **same pull request**.
 
 Documentation is part of the asset system, not post-release commentary.
-
-- [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) — canonical TEXT/RGBL visual ownership and consumer guidance.
-- [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) — canonical LAW applicability semantics and generated boundary visualization.

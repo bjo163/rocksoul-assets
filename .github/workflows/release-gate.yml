@@ -3,161 +3,168 @@ name: Release Gate
 on:
   workflow_dispatch:
   pull_request:
-    paths:
-      - "VERSION"
-      - "CHANGELOG.md"
-      - "RELEASE.md"
-      - "README.md"
-      - "manifest.json"
-      - "docs/RELEASE-CHECKLIST.md"
-      - "docs/PENPOT-LIVE-VERIFICATION.md"
-      - "docs/DESIGN-SYSTEM-READINESS.md"
-      - ".github/workflows/release-gate.yml"
-      - ".github/workflows/publish-release.yml"
-      - "moonwitness/**"
-      - "dist/**"
-      - "tools/assets/**"
-      - "showcase/**"
-      - "docs/**"
-      - "CONTRIBUTING.md"
-      - "SECURITY.md"
-      - "index.html"
-      - "vercel.json"
-      - ".github/workflows/**"
-      - ".github/workflows/generate-sfx.yml"
   push:
     branches: [main]
-    paths:
-      - "VERSION"
-      - "CHANGELOG.md"
-      - "RELEASE.md"
-      - "README.md"
-      - "manifest.json"
-      - "docs/RELEASE-CHECKLIST.md"
-      - "docs/PENPOT-LIVE-VERIFICATION.md"
-      - "docs/DESIGN-SYSTEM-READINESS.md"
-      - ".github/workflows/release-gate.yml"
-      - ".github/workflows/publish-release.yml"
-      - "moonwitness/**"
-      - "dist/**"
-      - "tools/assets/**"
-      - "showcase/**"
-      - "docs/**"
-      - "CONTRIBUTING.md"
-      - "SECURITY.md"
-      - "index.html"
-      - "vercel.json"
-      - ".github/workflows/**"
-      - ".github/workflows/generate-sfx.yml"
+  workflow_run:
+    workflows:
+      - "Auto Version"
+      - "Build Penpot Golden Slice"
+      - "Build Photographic Hero Masters"
+      - "Generate Brand Raster Assets"
+      - "Generate Developer Distribution"
+      - "Generate Runtime Motion"
+      - "Generate Secondary Pack Raster"
+      - "Generate SFX Pack"
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
 
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+concurrency:
+  group: release-gate-${{ github.ref }}
+  cancel-in-progress: true
 
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    outputs:
+      release_relevant: ${{ steps.changes.outputs.release_relevant }}
+      changed_count: ${{ steps.changes.outputs.changed_count }}
+    steps:
+      - name: Checkout exact candidate
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
       - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: "22"
+      - name: Resolve change range
+        id: range
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "base=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+            echo "head=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            base="${{ github.event.before }}"
+            if [ -z "$base" ] || [ "$base" = "0000000000000000000000000000000000000000" ]; then
+              base="$(git rev-parse HEAD^ 2>/dev/null || git rev-parse HEAD)"
+            fi
+            echo "base=$base" >> "$GITHUB_OUTPUT"
+            echo "head=${{ github.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=$(git rev-parse HEAD^ 2>/dev/null || git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Classify release impact paths
+        id: changes
+        env:
+          BASE_SHA: ${{ steps.range.outputs.base }}
+          HEAD_SHA: ${{ steps.range.outputs.head }}
+        run: node tools/release/classify-changes.mjs
 
+  full-release-validation:
+    name: Full release validation
+    needs: classify
+    if: needs.classify.outputs.release_relevant == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact candidate
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: "22"
       - name: Setup Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
-
-      - name: Verify release metadata
+      - name: Fetch release tags
+        run: git fetch --force --tags origin
+      - name: Validate release contract and tests
         run: |
-          node - <<'NODE'
-          const fs = require('fs');
-          const version = fs.readFileSync('VERSION', 'utf8').trim();
-          const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
-          const changelog = fs.readFileSync('CHANGELOG.md', 'utf8');
-          if (!/^\d+\.\d+\.\d+$/.test(version)) throw new Error('VERSION must be semver');
-          if (manifest.release?.version !== version) throw new Error('manifest release version mismatch');
-          if (manifest.release?.status !== 'released') throw new Error('manifest release status must be released');
-          if (!changelog.includes(`## [${version}]`)) throw new Error(`CHANGELOG missing ${version} entry`);
-          console.log({version, status: manifest.release.status});
-          NODE
-
-      - name: Validate all SVG documents as XML
-        run: python tools/assets/validate-svg-xml.py
-
-      - name: Validate asset system
-        run: node tools/assets/validate.mjs
-
-      - name: Verify research-domain ownership visual
-        run: node tools/assets/generate-domain-ownership-visual.mjs --check
-
-      - name: Verify LAW applicability visual
-        run: node tools/assets/generate-legal-intelligence-visual.mjs --check
-
+          node tools/release/validate-release.mjs --mode working
+          node --test tests/release/*.test.mjs
+          node tools/release/recover.mjs
+      - name: Validate repository and TODO evidence contracts
+        run: |
+          node scripts/validate-rocksoul-contract.mjs
+          node tools/todo/validate-evidence.mjs
+      - name: Validate action runtime policy
+        run: node tools/ci/validate-action-runtimes.mjs
+      - name: Validate SVG and asset system
+        run: |
+          python tools/assets/validate-svg-xml.py
+          node tools/assets/validate.mjs
+          node tools/assets/validate-registry-integrity.mjs
+          node tools/assets/validate-classification.mjs
+          node tools/assets/validate-primitives.mjs
+          node tools/assets/validate-showcase-coverage.mjs
+      - name: Validate generated semantic visuals
+        run: |
+          node tools/assets/generate-domain-ownership-visual.mjs --check
+          node tools/assets/generate-legal-intelligence-visual.mjs --check
+      - name: Validate documentation and branch contracts
+        run: |
+          node tools/docs/validate-docs.mjs
+          node tools/ci/validate-branch-policy.mjs
+      - name: Install raster renderer
+        run: python -m pip install --disable-pip-version-check cairosvg==2.7.1 pillow==10.4.0
       - name: Verify generated brand derivatives
         run: |
-          python -m pip install --disable-pip-version-check cairosvg==2.7.1 pillow==10.4.0
           python tools/assets/render-brand.py
           git diff --exit-code -- moonwitness/brand/generated
-
-      - name: Verify generated secondary pack derivatives
+      - name: Verify generated pack derivatives
         run: |
           python tools/assets/render-packs.py
           git diff --exit-code -- moonwitness
-
       - name: Verify developer distribution
         run: |
           node tools/assets/build-dist.mjs
           git diff --exit-code -- dist
-
-      - name: Verify showcase JavaScript syntax
+      - name: Verify showcase runtime
         run: node --check showcase/showcase.js
-
-      - name: Verify showcase delivery coverage
-        run: node tools/assets/validate-showcase-coverage.mjs
-
-      - name: Verify visual asset classification
-        run: node tools/assets/validate-classification.mjs
-
-      - name: Verify semantic primitive contract
-        run: node tools/assets/validate-primitives.mjs
-
-      - name: Verify documentation state
-        run: node tools/docs/validate-docs.mjs
-
-      - name: Verify workflow branch policy
-        run: node tools/ci/validate-branch-policy.mjs
-
       - name: Verify runtime motion derivatives
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-          python -m pip install --disable-pip-version-check pillow==10.4.0
           python tools/assets/generate-runtime-motion.py
           git diff --exit-code -- moonwitness/runtime-motion-pack/png moonwitness/runtime-motion-pack/lottie moonwitness/runtime-motion-pack/generated-manifest.json
           for file in moonwitness/runtime-motion-pack/webm/*.webm; do
             codec="$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nw=1:nk=1 "$file")"
             width="$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=nw=1:nk=1 "$file")"
             height="$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=nw=1:nk=1 "$file")"
-            test "$codec" = "vp9"
-            test "$width" = "256"
-            test "$height" = "256"
+            test "$codec" = "vp9" && test "$width" = "256" && test "$height" = "256"
           done
           git checkout -- moonwitness/runtime-motion-pack/webm
-
       - name: Verify generated SFX derivatives
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
           python tools/assets/generate-sfx.py
           git diff --exit-code -- moonwitness/sfx/generated
-
+      - name: Verify generation ownership and clean tree
+        run: node tools/generation/validate-freshness.mjs --assert-clean
       - name: Install locked Penpot builder
         working-directory: tools/penpot
         run: npm ci --no-audit --no-fund
-
       - name: Validate and generate Penpot package
         working-directory: tools/penpot
         run: npm run check
+
+  proof:
+    name: FULL_RELEASE_GATE_PASS
+    needs: [classify, full-release-validation]
+    if: >-
+      always() &&
+      (needs.classify.outputs.release_relevant == 'true' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require complete validation
+        shell: bash
+        run: |
+          test "${{ needs.classify.result }}" = "success"
+          test "${{ needs.full-release-validation.result }}" = "success"
+          echo "Full release proof accepted for ${{ github.sha }}"

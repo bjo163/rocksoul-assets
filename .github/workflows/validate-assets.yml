@@ -6,36 +6,28 @@ on:
     paths:
       - "manifest.json"
       - "moonwitness/**"
-      - "penpot/application-shell/**"
-      - "penpot/screens/screens-v2.json"
-      - "penpot/golden-cases/mw-0042/visuals/mobile/**"
+      - "penpot/**"
       - "tools/assets/**"
+      - "tools/docs/**"
+      - "tools/generation/**"
       - "dist/**"
       - "showcase/**"
       - "docs/**"
       - "README.md"
-      - "CONTRIBUTING.md"
-      - "SECURITY.md"
-      - "index.html"
-      - "vercel.json"
       - ".github/workflows/**"
   push:
     branches: [main]
     paths:
       - "manifest.json"
       - "moonwitness/**"
-      - "penpot/application-shell/**"
-      - "penpot/screens/screens-v2.json"
-      - "penpot/golden-cases/mw-0042/visuals/mobile/**"
+      - "penpot/**"
       - "tools/assets/**"
+      - "tools/docs/**"
+      - "tools/generation/**"
       - "dist/**"
       - "showcase/**"
       - "docs/**"
       - "README.md"
-      - "CONTRIBUTING.md"
-      - "SECURITY.md"
-      - "index.html"
-      - "vercel.json"
       - ".github/workflows/**"
 
 permissions:
@@ -46,44 +38,38 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
       - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: "22"
-
       - name: Setup Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
-
       - name: Validate all SVG documents as XML
         run: python tools/assets/validate-svg-xml.py
-
       - name: Validate raster/vector pairing and asset contracts
         run: node tools/assets/validate.mjs
-
+      - name: Validate registry integrity
+        run: node tools/assets/validate-registry-integrity.mjs
       - name: Validate research-domain ownership visual
         run: node tools/assets/generate-domain-ownership-visual.mjs --check
-
       - name: Validate LAW applicability visual
         run: node tools/assets/generate-legal-intelligence-visual.mjs --check
-
       - name: Validate showcase JavaScript syntax
         run: node --check showcase/showcase.js
-
       - name: Validate showcase delivery coverage
         run: node tools/assets/validate-showcase-coverage.mjs
-
       - name: Validate visual asset classification
         run: node tools/assets/validate-classification.mjs
-
       - name: Validate semantic primitive contract
         run: node tools/assets/validate-primitives.mjs
-
       - name: Validate documentation state
         run: node tools/docs/validate-docs.mjs
-
-      - name: Validate workflow branch policy
-        run: node tools/ci/validate-branch-policy.mjs
+      - name: Validate workflow branch and runtime policy
+        run: |
+          node tools/ci/validate-branch-policy.mjs
+          node tools/ci/validate-action-runtimes.mjs
+      - name: Validate generation ownership
+        run: node tools/generation/validate-freshness.mjs

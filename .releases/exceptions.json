@@ -1,0 +1,11 @@
+{
+  "schema": "rocksoul.release-exceptions.v1",
+  "exceptions": [
+    {
+      "version": "1.3.1",
+      "tag": "v1.3.1",
+      "reason": "Published before ADR-010/ADR-011 immutable inventory and release-artifact contract was adopted; historical tag remains untouched.",
+      "policy": "legacy-only-no-rewrite"
+    }
+  ]
+}

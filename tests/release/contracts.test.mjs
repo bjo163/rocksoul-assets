@@ -1,0 +1,13 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"../..");
+const run=(file,args=[])=>spawnSync(process.execPath,[path.join(root,file),...args],{cwd:root,encoding:"utf8"});
+test("README-only is PATCH",()=>{const r=run("tools/release/detect-release-impact.mjs",["--changes","M:README.md"]);assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout).impact,"patch");});
+test("new pack is MINOR",()=>{const r=run("tools/release/detect-release-impact.mjs",["--changes","A:moonwitness/new-pack/manifest.json"]);assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout).impact,"minor");});
+test("public removal is MAJOR",()=>{const r=run("tools/release/detect-release-impact.mjs",["--changes","D:moonwitness/icons/svg/domain/legal.svg"]);assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout).impact,"major");});
+test("version resolver is deterministic",()=>{const a=run("tools/release/next-version.mjs",["--current","1.3.1","--impact","minor"]);const b=run("tools/release/next-version.mjs",["--current","1.3.1","--impact","minor"]);assert.equal(a.status,0,a.stderr);assert.equal(b.status,0,b.stderr);assert.equal(a.stdout,b.stdout);assert.equal(JSON.parse(a.stdout).next,"1.4.0");});
+test("invalid direct publish transition fails",()=>{const r=run("tools/release/validate-state.mjs",["--from","DRAFT","--to","PUBLISHED"]);assert.notEqual(r.status,0);});
+test("valid linear transition passes",()=>{const r=run("tools/release/validate-state.mjs",["--from","VALIDATING","--to","VALIDATED"]);assert.equal(r.status,0,r.stderr);});

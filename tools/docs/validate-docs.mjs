@@ -1,67 +1,33 @@
-import { readFile, readdir } from "node:fs/promises";
+import { readFile, readdir, access } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-
-const here=path.dirname(fileURLToPath(import.meta.url));
-const root=path.resolve(here,"../..");
-
-const read=(p)=>readFile(path.join(root,p),"utf8");
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"../..");
+const docsRoot=path.join(root,"docs");
+const read=p=>readFile(path.join(root,p),"utf8");
 const version=(await read("VERSION")).trim();
-const dist=JSON.parse(await read("dist/assets.json"));
-const catalog=JSON.parse(await read("showcase/catalog.json"));
-const packIndex=JSON.parse(await read("moonwitness/asset-packs.json"));
-
-const deliveryFilesLabel=Number(dist.coverage.deliveryFiles).toLocaleString("en-US");
-
-const checks=[
-  ["README current release","README.md",`v${version}`],
-  ["Docs home current release","docs/README.md",`v${version}`],
-  ["Consumption current release","docs/ASSET-CONSUMPTION.md",`v${version}`],
-  ["Pack catalog current release","docs/ASSET-PACK-CATALOG.md",`v${version}`],
-  ["Design readiness current release","docs/DESIGN-SYSTEM-READINESS.md",`v${version}`],
-  ["Release checklist current version","docs/RELEASE-CHECKLIST.md",`VERSION = ${version}`],
-  ["Showcase coverage count","docs/SHOWCASE-COVERAGE.md",deliveryFilesLabel],
-  ["README showcase coverage count","README.md",deliveryFilesLabel],
-];
-
-for(const [label,file,needle] of checks){
-  const content=await read(file);
-  if(!content.includes(needle)) throw new Error(`${label}: ${file} missing "${needle}"`);
-}
-
-if(catalog.version!==version) throw new Error("showcase/catalog.json version mismatch");
-if(dist.version!==version) throw new Error("dist/assets.json version mismatch");
-if(dist.coverage.packFamilies!==packIndex.packs.length) throw new Error(`dist pack family count ${dist.coverage.packFamilies} does not match source registry ${packIndex.packs.length}`);
-if(dist.coverage.coveragePercent!==100||dist.coverage.missingDeliveryFiles!==0){
-  throw new Error("showcase coverage must be 100%");
-}
-
-const docs=await readdir(path.join(root,"docs"));
-const markdown=docs.filter((name)=>name.endsWith(".md")&&name!=="README.md").sort();
-const docsHome=await read("docs/README.md");
-const missingFromHome=markdown.filter((name)=>!docsHome.includes(name));
-if(missingFromHome.length){
-  throw new Error(`docs/README.md does not index: ${missingFromHome.join(", ")}`);
-}
-
-const activeDocs=[
-  "docs/ASSET-CONSUMPTION.md",
-  "docs/DESIGN-SYSTEM-READINESS.md",
-  "docs/PENPOT-LIVE-VERIFICATION.md",
-  "docs/VISUAL-LANGUAGE-V1.3.md",
-];
-for(const file of activeDocs){
-  const content=await read(file);
-  if(content.includes("41 pack families")) throw new Error(`${file} still says 41 pack families`);
-  if(content.includes("repository release does not fabricate") && content.includes("v1.0.0")){
-    throw new Error(`${file} contains stale v1.0.0 release language`);
+const markdown=(await readdir(docsRoot)).filter(x=>x.endsWith(".md")).sort();
+const home=await read("docs/README.md");
+const errors=[];
+for(const name of markdown.filter(x=>x!=="README.md")) if(!home.includes(`(${name})`)&&!home.includes(`/${name})`)) errors.push(`docs/README.md does not index ${name}`);
+const linkRe=/\[[^\]]*\]\(([^)]+\.md(?:#[^)\s]+)?)\)/g;
+for(const name of markdown){
+  const content=await read(`docs/${name}`);
+  for(const match of content.matchAll(linkRe)){
+    const raw=match[1].split("#")[0];
+    if(/^https?:/i.test(raw)) continue;
+    const target=path.resolve(docsRoot,raw);
+    if(!target.startsWith(root+path.sep)){errors.push(`${name}: link escapes repository: ${raw}`);continue;}
+    try{await access(target);}catch{errors.push(`${name}: broken markdown link ${raw}`);}
+  }
+  for(const match of content.matchAll(/(?:current\s+release|\|\s*Release\s*\|)[^\n]*?v(\d+\.\d+\.\d+)/gi)){
+    if(match[1]!==version) errors.push(`${name}: stale current-release claim v${match[1]} (VERSION=${version})`);
   }
 }
-
-console.log(JSON.stringify({
-  version,
-  docsIndexed:markdown.length,
-  packFamilies:dist.coverage.packFamilies,
-  deliveryFiles:dist.coverage.deliveryFiles,
-  showcaseCoverage:dist.coverage.coveragePercent,
-},null,2));
+if(!home.includes(`| Release | **v${version}** |`)) errors.push(`docs/README.md current release row must be v${version}`);
+const dist=JSON.parse(await read("dist/assets.json"));
+const packs=JSON.parse(await read("moonwitness/asset-packs.json"));
+if(dist.version!==version) errors.push(`dist/assets.json version ${dist.version} != ${version}`);
+if(packs.version!==version) errors.push(`asset-packs version ${packs.version} != ${version}`);
+if(Number(dist.coverage?.packFamilies)!==packs.packs.length) errors.push("document/runtime pack count source is inconsistent");
+if(errors.length){console.error(JSON.stringify({ok:false,version,docs:markdown.length,errors},null,2));process.exit(1);}
+console.log(JSON.stringify({ok:true,version,docs:markdown.length,indexed:markdown.length-1,brokenLinks:0,staleCurrentClaims:0,packFamilies:packs.packs.length,deliveryFiles:dist.coverage?.deliveryFiles,showcaseCoverage:dist.coverage?.coveragePercent},null,2));
