@@ -1,0 +1,74 @@
+name: Safe Dependabot Auto Merge
+
+on:
+  workflow_run:
+    workflows: ["Release Gate"]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: safe-dependabot-auto-merge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge only fully validated Dependabot PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_RUN_ID: ${{ github.event.workflow_run.id }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          proof_count="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${SOURCE_RUN_ID}/jobs?per_page=100" \
+            --jq '[.jobs[] | select(.name=="FULL_RELEASE_GATE_PASS" and .conclusion=="success")] | length')"
+
+          if [ "$proof_count" != "1" ]; then
+            echo "No terminal full-release proof on source run; nothing will be merged."
+            exit 0
+          fi
+
+          mapfile -t prs < <(
+            gh api \
+              -H "Accept: application/vnd.github+json" \
+              "repos/${GITHUB_REPOSITORY}/commits/${SOURCE_SHA}/pulls?per_page=100" \
+              --jq '.[] | select(.state=="open" and .draft==false and .base.ref=="main" and .user.login=="dependabot[bot]") | .number'
+          )
+
+          if [ "${#prs[@]}" -eq 0 ]; then
+            echo "No open Dependabot PR matches validated SHA ${SOURCE_SHA}."
+            exit 0
+          fi
+
+          for pr in "${prs[@]}"; do
+            data="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${pr}")"
+            head_sha="$(jq -r '.head.sha' <<<"$data")"
+            head_repo="$(jq -r '.head.repo.full_name // ""' <<<"$data")"
+            mergeable="$(jq -r '.mergeable' <<<"$data")"
+            merge_state="$(jq -r '.mergeable_state' <<<"$data")"
+
+            if [ "$head_sha" != "$SOURCE_SHA" ]; then
+              echo "PR #${pr} moved after validation; skipping."
+              continue
+            fi
+
+            if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
+              echo "PR #${pr} is not from this repository; skipping."
+              continue
+            fi
+
+            if [ "$mergeable" != "true" ] || [ "$merge_state" != "clean" ]; then
+              echo "PR #${pr} is not cleanly mergeable; skipping."
+              continue
+            fi
+
+            gh pr merge "$pr" --repo "$GITHUB_REPOSITORY" --squash
+          done

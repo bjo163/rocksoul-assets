@@ -1,0 +1,84 @@
+name: Post Release Integrity Audit
+
+on:
+  workflow_run:
+    workflows: ["Publish Release"]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: rocksoul-post-release-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE_RUN_ID: ${{ github.event.workflow_run.id }}
+      RELEASE_SHA: ${{ github.event.workflow_run.head_sha }}
+    steps:
+      - name: Verify immutable published release
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          published_step="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${SOURCE_RUN_ID}/jobs?per_page=100" \
+            --jq '[.jobs[].steps[]? | select(.name=="Publish immutable release artifacts" and .conclusion=="success")] | length')"
+          if [ "$published_step" != "1" ]; then
+            echo "Source Publish Release run did not create a new release; audit skipped."
+            exit 0
+          fi
+
+          release_json="$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest")"
+          tag="$(jq -r '.tag_name' <<<"$release_json")"
+          target="$(jq -r '.target_commitish' <<<"$release_json")"
+          version="${tag#v}"
+
+          if [ "$target" != "$RELEASE_SHA" ]; then
+            echo "Latest release target ${target} does not match publish SHA ${RELEASE_SHA}."
+            exit 1
+          fi
+
+          tag_sha="$(gh api "repos/${GITHUB_REPOSITORY}/git/ref/tags/${tag}" --jq '.object.sha')"
+          if [ "$tag_sha" != "$RELEASE_SHA" ]; then
+            echo "Tag ${tag} points to ${tag_sha}, expected ${RELEASE_SHA}."
+            exit 1
+          fi
+
+          required=(
+            "inventory.json"
+            "release.json"
+            "rocksoul-assets-v${version}.zip"
+            "rocksoul-assets-v${version}.zip.sha256"
+          )
+
+          mapfile -t assets < <(jq -r '.assets[].name' <<<"$release_json")
+          for name in "${required[@]}"; do
+            if ! printf '%s\n' "${assets[@]}" | grep -Fxq "$name"; then
+              echo "Missing release asset: ${name}"
+              exit 1
+            fi
+          done
+
+          out="${RUNNER_TEMP}/rocksoul-release-audit"
+          mkdir -p "$out"
+          gh release download "$tag" --repo "$GITHUB_REPOSITORY" \
+            --pattern "inventory.json" \
+            --pattern "release.json" \
+            --pattern "rocksoul-assets-v${version}.zip" \
+            --pattern "rocksoul-assets-v${version}.zip.sha256" \
+            --dir "$out"
+
+          expected="$(awk 'NR==1 {print $1}' "$out/rocksoul-assets-v${version}.zip.sha256")"
+          actual="$(sha256sum "$out/rocksoul-assets-v${version}.zip" | awk '{print $1}')"
+          test -n "$expected"
+          test "$expected" = "$actual"
+          jq -e 'type == "object"' "$out/inventory.json" >/dev/null
+          jq -e 'type == "object"' "$out/release.json" >/dev/null
+
+          echo "Release ${tag} verified at ${RELEASE_SHA} with checksum ${actual}."
