@@ -54,11 +54,16 @@ jobs:
           echo "version=$next" >> "$GITHUB_OUTPUT"
           echo "skip=false" >> "$GITHUB_OUTPUT"
           echo "candidate=v$next impact=$impact from=$latest_tag"
-      - name: Apply version and migrate evidence contract
+      - name: Apply version and reconcile evidence contract
         if: steps.candidate.outputs.skip != 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           node tools/release/apply-version.mjs --version "${{ steps.candidate.outputs.version }}"
           node tools/todo/migrate-evidence.mjs
+          node tools/todo/reconcile-evidence.mjs --head "$(git rev-parse HEAD)"
           node tools/assets/build-dist.mjs
           node tools/release/validate-release.mjs --mode working
           node scripts/validate-rocksoul-contract.mjs
