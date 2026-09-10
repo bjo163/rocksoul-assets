@@ -2,6 +2,8 @@ name: Release Gate
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "41 2 * * 1"
   pull_request:
   push:
     branches: [main]
@@ -68,7 +70,7 @@ jobs:
   full-release-validation:
     name: Full release validation
     needs: classify
-    if: needs.classify.outputs.release_relevant == 'true' || github.event_name == 'workflow_dispatch'
+    if: needs.classify.outputs.release_relevant == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact candidate
@@ -159,7 +161,7 @@ jobs:
     needs: [classify, full-release-validation]
     if: >-
       always() &&
-      (needs.classify.outputs.release_relevant == 'true' || github.event_name == 'workflow_dispatch')
+      (needs.classify.outputs.release_relevant == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
     runs-on: ubuntu-latest
     steps:
       - name: Require complete validation

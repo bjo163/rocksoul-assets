@@ -1,0 +1,87 @@
+name: Branch Hygiene
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview deletions without changing refs"
+        required: true
+        default: true
+        type: boolean
+  schedule:
+    - cron: "19 3 * * 0"
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: rocksoul-branch-hygiene
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+    steps:
+      - name: Delete only proven merged historical branches
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cutoff="$(( $(date -u +%s) - 3 * 24 * 60 * 60 ))"
+          mapfile -t open_heads < <(
+            gh pr list --repo "$GITHUB_REPOSITORY" --state open --limit 200 \
+              --json headRefName --jq '.[].headRefName'
+          )
+
+          is_open_head() {
+            local candidate="$1"
+            local head
+            for head in "${open_heads[@]}"; do
+              [ "$head" = "$candidate" ] && return 0
+            done
+            return 1
+          }
+
+          mapfile -t branches < <(
+            gh api --paginate "repos/${GITHUB_REPOSITORY}/branches?per_page=100" --jq '.[].name'
+          )
+
+          for branch in "${branches[@]}"; do
+            case "$branch" in
+              main|dev|archive/*|feat/mftl-observatory-assets|feat/mftl-observatory-assets-v2)
+                echo "KEEP ${branch}"
+                continue
+                ;;
+            esac
+
+            if is_open_head "$branch"; then
+              echo "KEEP ${branch}: open PR"
+              continue
+            fi
+
+            merged_count="$(gh pr list --repo "$GITHUB_REPOSITORY" --state merged \
+              --head "$branch" --limit 1 --json number --jq 'length')"
+            if [ "$merged_count" = "0" ]; then
+              echo "KEEP ${branch}: no merged PR provenance"
+              continue
+            fi
+
+            committed_at="$(gh api "repos/${GITHUB_REPOSITORY}/commits/${branch}" --jq '.commit.committer.date')"
+            committed_epoch="$(date -u -d "$committed_at" +%s)"
+            if [ "$committed_epoch" -gt "$cutoff" ]; then
+              echo "KEEP ${branch}: younger than 3 days"
+              continue
+            fi
+
+            if [ "$DRY_RUN" = "true" ]; then
+              echo "DRY-RUN DELETE ${branch}"
+              continue
+            fi
+
+            echo "DELETE ${branch}"
+            gh api --method DELETE "repos/${GITHUB_REPOSITORY}/git/refs/heads/${branch}"
+          done
