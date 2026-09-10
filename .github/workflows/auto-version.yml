@@ -74,7 +74,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add VERSION manifest.json moonwitness/asset-packs.json dist showcase/catalog.json CHANGELOG.md docs/README.md ROCKSOUL-TODO.json
+          git add VERSION manifest.json moonwitness/asset-packs.json dist showcase/catalog.json CHANGELOG.md docs/README.md ROCKSOUL-TODO.json tools/todo/reconcile-evidence.mjs
           if git diff --cached --quiet; then
             echo "Candidate already materialized."
             exit 0
