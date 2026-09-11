@@ -59,6 +59,24 @@
     },
     "provenanceEntries": {
       "type": "array"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "sourceContracts": {
+      "type": "array"
+    },
+    "debtImpact": {
+      "type": "string"
+    },
+    "approvalState": {
+      "type": "string"
+    },
+    "hiddenReasoningStored": {
+      "type": "boolean"
     }
   }
 }
