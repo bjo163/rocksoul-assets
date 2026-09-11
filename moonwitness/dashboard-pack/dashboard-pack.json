@@ -28,5 +28,18 @@
     "empty-widget"
   ],
   "generatedFormat": "png",
-  "renderPng": true
+  "renderPng": true,
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "operator",
+    "forensic"
+  ],
+  "grammarFamily": "operator-v2",
+  "semanticRole": "operator-dashboard",
+  "typographyRoles": [
+    "body",
+    "mono"
+  ],
+  "paletteBehavior": "neutral-first"
 }

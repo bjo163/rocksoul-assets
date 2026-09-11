@@ -15,9 +15,13 @@
       "body": "Inter",
       "mono": "IBM Plex Mono"
     },
-      "status": "frozen",
-      "fallbacks": {"display": "Arial, sans-serif", "body": "Arial, sans-serif", "mono": "ui-monospace, monospace"},
-      "licensing": "Inter/Inter Tight (OFL-1.1); IBM Plex Mono (OFL-1.1)"
+    "status": "frozen",
+    "fallbacks": {
+      "display": "Arial, sans-serif",
+      "body": "Arial, sans-serif",
+      "mono": "ui-monospace, monospace"
+    },
+    "licensing": "Inter/Inter Tight (OFL-1.1); IBM Plex Mono (OFL-1.1)"
   },
   "components": [
     {
@@ -221,16 +225,22 @@
     {
       "name": "Graph Node",
       "variants": [
-        "story",
-        "event",
+        "canonical-record",
+        "evidence",
+        "source",
         "person",
-        "rgbl",
-        "aws",
-        "case"
+        "event",
+        "story",
+        "rgbl-text",
+        "legal-state",
+        "external-reference",
+        "unresolved-record",
+        "inferred-candidate-record",
+        "missing-record",
+        "system-provider-resource"
       ],
       "states": [
         "default",
-        "hover",
         "selected",
         "dimmed",
         "unresolved"
@@ -244,7 +254,9 @@
       "accessibility": {
         "keyboardSelectable": true,
         "textEquivalentRequired": true
-      }
+      },
+      "visualSystemVersion": 2,
+      "grammarFamily": "graph-v2"
     },
     {
       "name": "Graph Edge",
@@ -254,7 +266,11 @@
         "references",
         "temporal",
         "identity",
-        "legal"
+        "legal",
+        "provenance",
+        "dependency",
+        "routes-to",
+        "unresolved-candidate"
       ],
       "states": [
         "default",
@@ -263,7 +279,9 @@
       ],
       "accessibility": {
         "legendRequired": true
-      }
+      },
+      "visualSystemVersion": 2,
+      "grammarFamily": "graph-v2"
     },
     {
       "name": "Timeline Entry",
@@ -534,6 +552,36 @@
         "textEquivalentRequired": true
       },
       "rule": "Similarity, alignment, translation and identity are distinct relation types."
+    },
+    {
+      "name": "ROCKSOUL Intervention Overlay",
+      "variants": [
+        "annotation",
+        "tape",
+        "xerox",
+        "redaction",
+        "film-scratch"
+      ],
+      "surface": [
+        "editorial",
+        "archive",
+        "cinematic",
+        "community"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality Frame",
+      "variants": [
+        "operator",
+        "forensic",
+        "editorial",
+        "archive",
+        "cinematic",
+        "community"
+      ],
+      "visualSystemVersion": 2
     }
-  ]
+  ],
+  "visualSystemVersion": 2
 }

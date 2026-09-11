@@ -20,5 +20,25 @@
     "data-observatory",
     "source-trace",
     "correlation-sky"
+  ],
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "cinematic",
+    "editorial"
+  ],
+  "grammarFamily": "cinematic-v2",
+  "semanticRole": "cinematic-composition",
+  "typographyRoles": [
+    "display",
+    "mono",
+    "archive-serif"
+  ],
+  "paletteBehavior": "canonical-neutral-plus-semantic-crimson",
+  "compositionFamilies": [
+    "observatory-grid",
+    "archive-dossier",
+    "trace-map",
+    "film-negative-space"
   ]
 }

@@ -28,17 +28,22 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 1. [Visual System V2 Baseline Audit](VISUAL-AUDIT-V2.md)
 2. [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md)
-2. [Graph Grammar V2](GRAPH-GRAMMAR-V2.md)
-3. [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md)
-4. [Visual Language v1.3](VISUAL-LANGUAGE-V1.3.md)
-5. [Asset Structure](ASSET-STRUCTURE.md)
-3. [Asset Classification](ASSET-CLASSIFICATION.md)
-4. [Semantic Primitives](SEMANTIC-PRIMITIVES.md)
-5. [Accessibility](ACCESSIBILITY.md)
-6. [SVG Policy](SVG-POLICY.md)
-7. [Penpot Design Contract](PENPOT-DESIGN-CONTRACT.md)
-8. [Penpot Handoff](PENPOT-HANDOFF.md)
-9. [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md)
+3. [Graph Grammar V2](GRAPH-GRAMMAR-V2.md)
+4. [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md)
+5. [Visual System V2 Migration](VISUAL-SYSTEM-V2-MIGRATION.md)
+6. [Visual System V2 Acceptance](VISUAL-SYSTEM-V2-ACCEPTANCE.md)
+6. [Primitive Optical Review](generated/visual-system-v2/primitive-optical-review.html)
+7. [Visual Language v1.3](VISUAL-LANGUAGE-V1.3.md)
+8. [Asset Structure](ASSET-STRUCTURE.md)
+9. [Asset Classification](ASSET-CLASSIFICATION.md)
+10. [Semantic Primitives](SEMANTIC-PRIMITIVES.md)
+11. [Accessibility](ACCESSIBILITY.md)
+12. [SVG Policy](SVG-POLICY.md)
+13. [Penpot Design Contract](PENPOT-DESIGN-CONTRACT.md)
+14. [Penpot Handoff](PENPOT-HANDOFF.md)
+15. [Penpot Import Contract](PENPOT-IMPORT-CONTRACT.md)
+
+Visual System 2.0 galleries are served from `/showcase/v2/` and cover graph grammar, data-viz, typography, color, personalities, cinematic/editorial, and semantic primitives.
 
 ### I maintain the repository
 
@@ -75,6 +80,8 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md) | MoonWitness/ROCKSOUL layers, personalities, density, typography, palette and geometry |
 | [Graph Grammar V2](GRAPH-GRAMMAR-V2.md) | canonical node/edge semantics and grayscale-safe relationship grammar |
 | [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md) | chart-specific semantics, uncertainty and forced-color rules |
+| [Visual System V2 Migration](VISUAL-SYSTEM-V2-MIGRATION.md) | canonical replacement, lifecycle, deprecation and regeneration plan |
+| [Visual System V2 Acceptance](VISUAL-SYSTEM-V2-ACCEPTANCE.md) | Phase 5–12 acceptance matrix and quantitative migration evidence |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | legacy v1.3 semantic visual grammar |
 | [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) | canonical TEXT/RGBL visual ownership and consumer guidance |
 | [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
@@ -102,6 +109,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 - `moonwitness/asset-packs.json`
 - `moonwitness/asset-classification.json`
+- `moonwitness/asset-lifecycle.json`
 - `moonwitness/visual-system-v2.json`
 - `dist/assets.json`
 - `showcase/catalog.json`

@@ -9,17 +9,17 @@ This file is generated from canonical SVG sources by `tools/assets/generate-visu
 | Canonical pack families | 44 |
 | Canonical SVG files | 621 |
 | Unique font-family declarations | 6 |
-| Unique fixed palette colors | 69 |
-| Unique crimson/red values | 8 |
-| Unique stroke widths | 19 |
-| Unique radius values | 35 |
-| Graph geometry signatures | 46 |
+| Unique fixed palette colors | 67 |
+| Unique crimson/red values | 7 |
+| Unique stroke widths | 16 |
+| Unique radius values | 32 |
+| Graph geometry signatures | 39 |
 | Theme-aware SVG assets | 60 |
 | Fixed-theme SVG assets | 561 |
 | SVG files containing text | 476 |
 | SVG files embedding raster media | 0 |
-| Exact duplicate candidate groups | 0 |
-| Structural near-duplicate candidate groups | 1 |
+| Exact duplicate candidate groups | 1 |
+| Structural near-duplicate candidate groups | 2 |
 | Production primitive violations | 0 |
 
 ## Contact sheets
@@ -39,78 +39,74 @@ Every contact sheet renders light and dark comparison boards.
 
 ## Typography inventory
 
-- `Inter,Arial` — 965 declarations
-- `Inter,Arial,sans-serif` — 429 declarations
-- `IBM Plex Mono,monospace` — 323 declarations
-- `Georgia,serif` — 43 declarations
-- `Inter Tight,Inter,Arial,sans-serif` — 26 declarations
+- `Inter,Arial` — 799 declarations
+- `IBM Plex Mono,monospace` — 560 declarations
+- `Inter,Arial,sans-serif` — 430 declarations
+- `Inter Tight,Inter,Arial,sans-serif` — 74 declarations
 - `Arial` — 13 declarations
+- `Georgia,Times New Roman,serif` — 3 declarations
 
 ## Crimson/red inventory
 
-- `#FF2A3D` — 441 uses
-- `#D1132A` — 267 uses
-- `#FF2A3D22` — 41 uses
-- `#FF2A3D14` — 4 uses
-- `#FF2A3D18` — 2 uses
-- `#FF2A3D10` — 1 uses
-- `#FF2A3D12` — 1 uses
-- `#FF2A3D16` — 1 uses
+- `#D1132A` — 590 uses
+- `#D1132A22` — 41 uses
+- `#9F1022` — 18 uses
+- `#D1132A14` — 4 uses
+- `#D1132A18` — 2 uses
+- `#D1132A12` — 1 uses
+- `#D1132A16` — 1 uses
 
 ## Observed stroke widths
 
-- `0` — 401 uses
-- `4` — 352 uses
-- `3` — 229 uses
-- `5` — 117 uses
-- `2` — 111 uses
-- `1` — 108 uses
-- `1.75` — 60 uses
-- `7` — 41 uses
-- `6` — 40 uses
+- `2` — 381 uses
+- `4` — 262 uses
+- `3` — 165 uses
+- `1` — 142 uses
+- `0` — 113 uses
+- `5` — 102 uses
+- `6` — 55 uses
 - `8` — 38 uses
+- `7` — 35 uses
 - `10` — 11 uses
 - `12` — 6 uses
 - `9` — 5 uses
+- `24` — 4 uses
 - `26` — 4 uses
-- `34` — 4 uses
-- `44` — 4 uses
-- `30` — 2 uses
 - `1.5` — 1 uses
 - `11` — 1 uses
 
 ## Observed radii
 
-- `18` — 313 uses
-- `13.2` — 300 uses
-- `8` — 246 uses
-- `12` — 110 uses
-- `10` — 108 uses
-- `5` — 81 uses
-- `2` — 77 uses
-- `7` — 44 uses
+- `2` — 304 uses
+- `18` — 263 uses
+- `13.2` — 260 uses
+- `8` — 215 uses
+- `12` — 153 uses
+- `10` — 105 uses
 - `0` — 39 uses
 - `16` — 29 uses
-- `4` — 27 uses
-- `14` — 25 uses
-- `6` — 23 uses
-- `3` — 17 uses
+- `4` — 29 uses
+- `14` — 20 uses
+- `7` — 17 uses
 - `31` — 16 uses
+- `6` — 16 uses
 - `15` — 13 uses
 - `14.399999999999999` — 12 uses
 - `15.36` — 12 uses
-- `40.5` — 12 uses
-- `24` — 10 uses
 - `128` — 9 uses
+- `5` — 9 uses
 - `22` — 8 uses
 - `32` — 6 uses
-- `20` — 5 uses
+- `20` — 4 uses
 - `42` — 4 uses
 - `1` — 3 uses
 - `28` — 3 uses
-- `13` — 2 uses
 - `9` — 2 uses
 - `110` — 1 uses
+- `13` — 1 uses
+- `160` — 1 uses
+- `17` — 1 uses
+- `170` — 1 uses
 
 ## Pack classification
 
@@ -163,7 +159,7 @@ Every contact sheet renders light and dark comparison boards.
 
 ## Duplicate candidates
 
-Exact duplicate groups: **0**. Structural near-duplicate groups: **1**. Full evidence and file lists live in `docs/generated/visual-system-audit.json`.
+Exact duplicate groups: **1**. Structural near-duplicate groups: **2**. Full evidence and file lists live in `docs/generated/visual-system-audit.json`.
 
 ## Phase-0 interpretation
 

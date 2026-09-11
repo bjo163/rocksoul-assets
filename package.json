@@ -10,6 +10,8 @@
     "validate:todo": "node tools/todo/validate-evidence.mjs",
     "validate:contract": "node scripts/validate-rocksoul-contract.mjs",
     "audit:visual-v2": "node tools/assets/generate-visual-system-v2-audit.mjs --write",
-    "validate:visual-v2": "node tools/assets/validate-visual-system.mjs"
+    "validate:visual-v2": "node tools/assets/validate-visual-system.mjs",
+    "migrate:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py",
+    "validate:migration:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py --check"
   }
 }

@@ -18,5 +18,19 @@
     "correlation-network",
     "heat-strip",
     "kpi-cards"
-  ]
+  ],
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "operator",
+    "forensic",
+    "editorial"
+  ],
+  "grammarFamily": "graph-v2",
+  "semanticRole": "relationship",
+  "typographyRoles": [
+    "body",
+    "mono"
+  ],
+  "paletteBehavior": "semantic-boundary-plus-neutral"
 }

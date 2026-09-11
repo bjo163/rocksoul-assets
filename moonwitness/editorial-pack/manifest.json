@@ -14,5 +14,20 @@
     "case-map",
     "legal-boundary",
     "source-signal"
-  ]
+  ],
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "editorial",
+    "archive"
+  ],
+  "grammarFamily": "editorial-v2",
+  "semanticRole": "editorial-document",
+  "typographyRoles": [
+    "display",
+    "body",
+    "mono",
+    "archive-serif"
+  ],
+  "paletteBehavior": "canonical-neutral-plus-semantic-crimson"
 }

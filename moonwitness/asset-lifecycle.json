@@ -1,0 +1,848 @@
+{
+  "schemaVersion": 1,
+  "visualSystemVersion": 2,
+  "statuses": [
+    "canonical",
+    "active",
+    "legacy",
+    "frozen-reference",
+    "deprecated",
+    "experimental"
+  ],
+  "defaultLifecycle": "canonical",
+  "replacementRequiredFor": [
+    "deprecated"
+  ],
+  "packs": {
+    "product-icons": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "community"
+      ],
+      "semanticRole": "production-primitive",
+      "grammarFamily": "primitive-v2",
+      "allowedUsage": [
+        "compact-control",
+        "semantic-marker",
+        "product-ui"
+      ],
+      "prohibitedUsage": [
+        "decorative-background",
+        "text-replacement"
+      ]
+    },
+    "dashboard": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "semanticRole": "measurement",
+      "grammarFamily": "data-viz-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "data-viz": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "semanticRole": "measurement",
+      "grammarFamily": "data-viz-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "hero-backgrounds": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "cinematic",
+        "editorial"
+      ],
+      "semanticRole": "cinematic-composition",
+      "grammarFamily": "cinematic-v2",
+      "allowedUsage": [
+        "cinematic",
+        "editorial",
+        "hero"
+      ],
+      "prohibitedUsage": [
+        "operator-background",
+        "forensic-decoration"
+      ]
+    },
+    "state-illustrations": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "motion": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "community",
+        "cinematic"
+      ],
+      "semanticRole": "motion-feedback",
+      "grammarFamily": "motion-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "application-screens": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "sfx": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "graph-vector": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "semanticRole": "relationship",
+      "grammarFamily": "graph-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ],
+      "assetOverrides": {
+        "evidence-timeline": {
+          "lifecycle": "deprecated",
+          "replacement": "data-viz/evidence-timeline",
+          "reason": "Exact/structural duplicate after V2 grammar normalization; data-viz owns the canonical temporal measurement specimen."
+        }
+      }
+    },
+    "badge-status": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "forensic",
+        "operator",
+        "archive"
+      ],
+      "semanticRole": "evidence-semantic",
+      "grammarFamily": "forensic-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "source-file": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "editorial",
+        "archive",
+        "forensic"
+      ],
+      "semanticRole": "editorial-document",
+      "grammarFamily": "editorial-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "geospatial": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "cursor-interaction": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ],
+      "assetOverrides": {
+        "crosshair": {
+          "lifecycle": "deprecated",
+          "replacement": "geospatial/crosshair",
+          "reason": "Structural near-duplicate; geospatial crosshair is the canonical production choice."
+        }
+      }
+    },
+    "persona-avatar": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "community",
+        "editorial",
+        "cinematic"
+      ],
+      "semanticRole": "human-layer",
+      "grammarFamily": "rocksoul-intervention-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "social-campaign": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "platform-delivery": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "onboarding": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "document-report": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "editorial",
+        "archive",
+        "forensic"
+      ],
+      "semanticRole": "editorial-document",
+      "grammarFamily": "editorial-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "notification": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "editorial": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "editorial",
+        "archive",
+        "forensic"
+      ],
+      "semanticRole": "editorial-document",
+      "grammarFamily": "editorial-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "evidence-media": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "forensic",
+        "operator",
+        "archive"
+      ],
+      "semanticRole": "evidence-semantic",
+      "grammarFamily": "forensic-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "correlation-semantics": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "semanticRole": "relationship",
+      "grammarFamily": "graph-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "kanban-workflow": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "calendar-temporal": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "chat-collaboration": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "ai-workspace": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "authorization-security": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "data-grid": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "form-controls": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "theme-accessibility": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "privacy-redaction": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "forensic",
+        "operator",
+        "archive"
+      ],
+      "semanticRole": "evidence-semantic",
+      "grammarFamily": "forensic-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "evidence-integrity": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "forensic",
+        "operator",
+        "archive"
+      ],
+      "semanticRole": "evidence-semantic",
+      "grammarFamily": "forensic-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "export-seal": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "forensic",
+        "operator",
+        "archive"
+      ],
+      "semanticRole": "evidence-semantic",
+      "grammarFamily": "forensic-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "rocksoul-character": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "community",
+        "editorial",
+        "cinematic"
+      ],
+      "semanticRole": "human-layer",
+      "grammarFamily": "rocksoul-intervention-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "command-keyboard": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "texture-material": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "architecture-diagram": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "semanticRole": "relationship",
+      "grammarFamily": "graph-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "device-mockup": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "jurisdiction-locale": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "cinematic-hero": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "cinematic",
+        "editorial"
+      ],
+      "semanticRole": "cinematic-composition",
+      "grammarFamily": "cinematic-v2",
+      "allowedUsage": [
+        "cinematic",
+        "editorial",
+        "hero"
+      ],
+      "prohibitedUsage": [
+        "operator-background",
+        "forensic-decoration"
+      ]
+    },
+    "runtime-motion": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "community",
+        "cinematic"
+      ],
+      "semanticRole": "motion-feedback",
+      "grammarFamily": "motion-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "semantic-primitives": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic",
+        "community"
+      ],
+      "semanticRole": "production-primitive",
+      "grammarFamily": "primitive-v2",
+      "allowedUsage": [
+        "compact-control",
+        "semantic-marker",
+        "product-ui"
+      ],
+      "prohibitedUsage": [
+        "decorative-background",
+        "text-replacement"
+      ]
+    },
+    "developer-distribution": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "forensic"
+      ],
+      "semanticRole": "system-asset",
+      "grammarFamily": "general",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    },
+    "community-participation": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "community",
+        "editorial",
+        "cinematic"
+      ],
+      "semanticRole": "human-layer",
+      "grammarFamily": "rocksoul-intervention-v2",
+      "allowedUsage": [
+        "product",
+        "reference"
+      ],
+      "prohibitedUsage": [
+        "undocumented-semantic-repurpose"
+      ]
+    }
+  },
+  "collections": {
+    "brand-system": {
+      "lifecycle": "canonical",
+      "visualSystemVersion": 2,
+      "surfacePersonalities": [
+        "operator",
+        "editorial",
+        "community",
+        "cinematic"
+      ],
+      "semanticRole": "brand-identity",
+      "grammarFamily": "brand-v2",
+      "allowedUsage": [
+        "identity",
+        "brand-mark"
+      ],
+      "prohibitedUsage": [
+        "status-encoding"
+      ]
+    },
+    "baseline-v1": {
+      "lifecycle": "frozen-reference",
+      "visualSystemVersion": 1,
+      "surfacePersonalities": [
+        "archive"
+      ],
+      "semanticRole": "historical-screen-reference",
+      "grammarFamily": "legacy-v1",
+      "allowedUsage": [
+        "visual-baseline",
+        "migration-reference"
+      ],
+      "prohibitedUsage": [
+        "runtime-ui",
+        "production-control"
+      ]
+    }
+  }
+}

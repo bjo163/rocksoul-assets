@@ -24,5 +24,17 @@
     "boundary-box",
     "trust-zone",
     "system-cluster"
-  ]
+  ],
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "operator",
+    "forensic"
+  ],
+  "grammarFamily": "graph-v2",
+  "semanticRole": "system-topology",
+  "typographyRoles": [
+    "mono"
+  ],
+  "paletteBehavior": "semantic-boundary-plus-neutral"
 }

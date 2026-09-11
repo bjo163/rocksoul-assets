@@ -7,11 +7,45 @@
   "renderPng": true,
   "count": 16,
   "root": "svg",
-  "sizes": [16, 20, 24, 32],
+  "sizes": [
+    16,
+    20,
+    24,
+    32
+  ],
   "assets": [
-    "graph-node", "edge-supports", "edge-contradicts", "status-verified",
-    "status-contested", "evidence-bounds", "evidence-source", "privacy-redacted",
-    "privacy-confidential", "integrity-hash", "provenance-chain", "legal-basis",
-    "jurisdiction-zone", "law-node", "person-node", "event-node"
-  ]
+    "graph-node",
+    "edge-supports",
+    "edge-contradicts",
+    "status-verified",
+    "status-contested",
+    "evidence-bounds",
+    "evidence-source",
+    "privacy-redacted",
+    "privacy-confidential",
+    "integrity-hash",
+    "provenance-chain",
+    "legal-basis",
+    "jurisdiction-zone",
+    "law-node",
+    "person-node",
+    "event-node"
+  ],
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "strokeWidth": 2,
+  "opticalReviewSizes": [
+    16,
+    20,
+    24,
+    32
+  ],
+  "surfacePersonalities": [
+    "operator",
+    "forensic",
+    "community"
+  ],
+  "grammarFamily": "primitive-v2",
+  "semanticRole": "semantic-mark",
+  "paletteBehavior": "currentColor"
 }

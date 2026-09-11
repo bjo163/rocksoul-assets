@@ -8,9 +8,27 @@
   "outputs": [
     {
       "source": "moonwitness/icons/svg/actions/add.svg",
+      "path": "moonwitness/icons/png/16/actions/add.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/add.svg",
+      "path": "moonwitness/icons/png/20/actions/add.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/add.svg",
       "path": "moonwitness/icons/png/24/actions/add.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/add.svg",
+      "path": "moonwitness/icons/png/32/actions/add.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/add.svg",
@@ -26,9 +44,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/bookmark.svg",
+      "path": "moonwitness/icons/png/16/actions/bookmark.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/bookmark.svg",
+      "path": "moonwitness/icons/png/20/actions/bookmark.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/bookmark.svg",
       "path": "moonwitness/icons/png/24/actions/bookmark.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/bookmark.svg",
+      "path": "moonwitness/icons/png/32/actions/bookmark.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/bookmark.svg",
@@ -44,9 +80,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/chat.svg",
+      "path": "moonwitness/icons/png/16/actions/chat.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/chat.svg",
+      "path": "moonwitness/icons/png/20/actions/chat.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/chat.svg",
       "path": "moonwitness/icons/png/24/actions/chat.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/chat.svg",
+      "path": "moonwitness/icons/png/32/actions/chat.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/chat.svg",
@@ -62,9 +116,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/command.svg",
+      "path": "moonwitness/icons/png/16/actions/command.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/command.svg",
+      "path": "moonwitness/icons/png/20/actions/command.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/command.svg",
       "path": "moonwitness/icons/png/24/actions/command.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/command.svg",
+      "path": "moonwitness/icons/png/32/actions/command.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/command.svg",
@@ -80,9 +152,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/copy.svg",
+      "path": "moonwitness/icons/png/16/actions/copy.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/copy.svg",
+      "path": "moonwitness/icons/png/20/actions/copy.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/copy.svg",
       "path": "moonwitness/icons/png/24/actions/copy.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/copy.svg",
+      "path": "moonwitness/icons/png/32/actions/copy.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/copy.svg",
@@ -98,9 +188,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/delete.svg",
+      "path": "moonwitness/icons/png/16/actions/delete.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/delete.svg",
+      "path": "moonwitness/icons/png/20/actions/delete.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/delete.svg",
       "path": "moonwitness/icons/png/24/actions/delete.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/delete.svg",
+      "path": "moonwitness/icons/png/32/actions/delete.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/delete.svg",
@@ -116,9 +224,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/download.svg",
+      "path": "moonwitness/icons/png/16/actions/download.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/download.svg",
+      "path": "moonwitness/icons/png/20/actions/download.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/download.svg",
       "path": "moonwitness/icons/png/24/actions/download.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/download.svg",
+      "path": "moonwitness/icons/png/32/actions/download.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/download.svg",
@@ -134,9 +260,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/edit.svg",
+      "path": "moonwitness/icons/png/16/actions/edit.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/edit.svg",
+      "path": "moonwitness/icons/png/20/actions/edit.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/edit.svg",
       "path": "moonwitness/icons/png/24/actions/edit.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/edit.svg",
+      "path": "moonwitness/icons/png/32/actions/edit.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/edit.svg",
@@ -152,9 +296,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/external-link.svg",
+      "path": "moonwitness/icons/png/16/actions/external-link.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/external-link.svg",
+      "path": "moonwitness/icons/png/20/actions/external-link.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/external-link.svg",
       "path": "moonwitness/icons/png/24/actions/external-link.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/external-link.svg",
+      "path": "moonwitness/icons/png/32/actions/external-link.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/external-link.svg",
@@ -170,9 +332,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/save.svg",
+      "path": "moonwitness/icons/png/16/actions/save.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/save.svg",
+      "path": "moonwitness/icons/png/20/actions/save.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/save.svg",
       "path": "moonwitness/icons/png/24/actions/save.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/save.svg",
+      "path": "moonwitness/icons/png/32/actions/save.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/save.svg",
@@ -188,9 +368,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/share.svg",
+      "path": "moonwitness/icons/png/16/actions/share.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/share.svg",
+      "path": "moonwitness/icons/png/20/actions/share.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/share.svg",
       "path": "moonwitness/icons/png/24/actions/share.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/share.svg",
+      "path": "moonwitness/icons/png/32/actions/share.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/share.svg",
@@ -206,9 +404,27 @@
     },
     {
       "source": "moonwitness/icons/svg/actions/upload.svg",
+      "path": "moonwitness/icons/png/16/actions/upload.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/upload.svg",
+      "path": "moonwitness/icons/png/20/actions/upload.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/upload.svg",
       "path": "moonwitness/icons/png/24/actions/upload.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/actions/upload.svg",
+      "path": "moonwitness/icons/png/32/actions/upload.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/actions/upload.svg",
@@ -224,9 +440,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/ai.svg",
+      "path": "moonwitness/icons/png/16/domain/ai.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/ai.svg",
+      "path": "moonwitness/icons/png/20/domain/ai.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/ai.svg",
       "path": "moonwitness/icons/png/24/domain/ai.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/ai.svg",
+      "path": "moonwitness/icons/png/32/domain/ai.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/ai.svg",
@@ -242,9 +476,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/correlation.svg",
+      "path": "moonwitness/icons/png/16/domain/correlation.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/correlation.svg",
+      "path": "moonwitness/icons/png/20/domain/correlation.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/correlation.svg",
       "path": "moonwitness/icons/png/24/domain/correlation.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/correlation.svg",
+      "path": "moonwitness/icons/png/32/domain/correlation.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/correlation.svg",
@@ -260,9 +512,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/evidence.svg",
+      "path": "moonwitness/icons/png/16/domain/evidence.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/evidence.svg",
+      "path": "moonwitness/icons/png/20/domain/evidence.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/evidence.svg",
       "path": "moonwitness/icons/png/24/domain/evidence.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/evidence.svg",
+      "path": "moonwitness/icons/png/32/domain/evidence.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/evidence.svg",
@@ -278,9 +548,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/graph-node.svg",
+      "path": "moonwitness/icons/png/16/domain/graph-node.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/graph-node.svg",
+      "path": "moonwitness/icons/png/20/domain/graph-node.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/graph-node.svg",
       "path": "moonwitness/icons/png/24/domain/graph-node.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/graph-node.svg",
+      "path": "moonwitness/icons/png/32/domain/graph-node.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/graph-node.svg",
@@ -296,9 +584,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/legal.svg",
+      "path": "moonwitness/icons/png/16/domain/legal.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/legal.svg",
+      "path": "moonwitness/icons/png/20/domain/legal.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/legal.svg",
       "path": "moonwitness/icons/png/24/domain/legal.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/legal.svg",
+      "path": "moonwitness/icons/png/32/domain/legal.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/legal.svg",
@@ -314,9 +620,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/source.svg",
+      "path": "moonwitness/icons/png/16/domain/source.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/source.svg",
+      "path": "moonwitness/icons/png/20/domain/source.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/source.svg",
       "path": "moonwitness/icons/png/24/domain/source.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/source.svg",
+      "path": "moonwitness/icons/png/32/domain/source.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/source.svg",
@@ -332,9 +656,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/timeline.svg",
+      "path": "moonwitness/icons/png/16/domain/timeline.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/timeline.svg",
+      "path": "moonwitness/icons/png/20/domain/timeline.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/timeline.svg",
       "path": "moonwitness/icons/png/24/domain/timeline.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/timeline.svg",
+      "path": "moonwitness/icons/png/32/domain/timeline.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/timeline.svg",
@@ -350,9 +692,27 @@
     },
     {
       "source": "moonwitness/icons/svg/domain/trace.svg",
+      "path": "moonwitness/icons/png/16/domain/trace.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/trace.svg",
+      "path": "moonwitness/icons/png/20/domain/trace.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/trace.svg",
       "path": "moonwitness/icons/png/24/domain/trace.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/domain/trace.svg",
+      "path": "moonwitness/icons/png/32/domain/trace.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/domain/trace.svg",
@@ -368,9 +728,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/case.svg",
+      "path": "moonwitness/icons/png/16/navigation/case.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/case.svg",
+      "path": "moonwitness/icons/png/20/navigation/case.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/case.svg",
       "path": "moonwitness/icons/png/24/navigation/case.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/case.svg",
+      "path": "moonwitness/icons/png/32/navigation/case.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/case.svg",
@@ -386,9 +764,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/dashboard.svg",
+      "path": "moonwitness/icons/png/16/navigation/dashboard.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/dashboard.svg",
+      "path": "moonwitness/icons/png/20/navigation/dashboard.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/dashboard.svg",
       "path": "moonwitness/icons/png/24/navigation/dashboard.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/dashboard.svg",
+      "path": "moonwitness/icons/png/32/navigation/dashboard.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/dashboard.svg",
@@ -404,9 +800,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/event.svg",
+      "path": "moonwitness/icons/png/16/navigation/event.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/event.svg",
+      "path": "moonwitness/icons/png/20/navigation/event.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/event.svg",
       "path": "moonwitness/icons/png/24/navigation/event.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/event.svg",
+      "path": "moonwitness/icons/png/32/navigation/event.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/event.svg",
@@ -422,9 +836,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/explore.svg",
+      "path": "moonwitness/icons/png/16/navigation/explore.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/explore.svg",
+      "path": "moonwitness/icons/png/20/navigation/explore.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/explore.svg",
       "path": "moonwitness/icons/png/24/navigation/explore.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/explore.svg",
+      "path": "moonwitness/icons/png/32/navigation/explore.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/explore.svg",
@@ -440,9 +872,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/filter.svg",
+      "path": "moonwitness/icons/png/16/navigation/filter.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/filter.svg",
+      "path": "moonwitness/icons/png/20/navigation/filter.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/filter.svg",
       "path": "moonwitness/icons/png/24/navigation/filter.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/filter.svg",
+      "path": "moonwitness/icons/png/32/navigation/filter.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/filter.svg",
@@ -458,9 +908,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/globe.svg",
+      "path": "moonwitness/icons/png/16/navigation/globe.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/globe.svg",
+      "path": "moonwitness/icons/png/20/navigation/globe.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/globe.svg",
       "path": "moonwitness/icons/png/24/navigation/globe.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/globe.svg",
+      "path": "moonwitness/icons/png/32/navigation/globe.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/globe.svg",
@@ -476,9 +944,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/kanban.svg",
+      "path": "moonwitness/icons/png/16/navigation/kanban.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/kanban.svg",
+      "path": "moonwitness/icons/png/20/navigation/kanban.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/kanban.svg",
       "path": "moonwitness/icons/png/24/navigation/kanban.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/kanban.svg",
+      "path": "moonwitness/icons/png/32/navigation/kanban.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/kanban.svg",
@@ -494,9 +980,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/map-pin.svg",
+      "path": "moonwitness/icons/png/16/navigation/map-pin.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/map-pin.svg",
+      "path": "moonwitness/icons/png/20/navigation/map-pin.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/map-pin.svg",
       "path": "moonwitness/icons/png/24/navigation/map-pin.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/map-pin.svg",
+      "path": "moonwitness/icons/png/32/navigation/map-pin.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/map-pin.svg",
@@ -512,9 +1016,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/person.svg",
+      "path": "moonwitness/icons/png/16/navigation/person.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/person.svg",
+      "path": "moonwitness/icons/png/20/navigation/person.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/person.svg",
       "path": "moonwitness/icons/png/24/navigation/person.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/person.svg",
+      "path": "moonwitness/icons/png/32/navigation/person.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/person.svg",
@@ -530,9 +1052,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/search.svg",
+      "path": "moonwitness/icons/png/16/navigation/search.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/search.svg",
+      "path": "moonwitness/icons/png/20/navigation/search.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/search.svg",
       "path": "moonwitness/icons/png/24/navigation/search.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/search.svg",
+      "path": "moonwitness/icons/png/32/navigation/search.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/search.svg",
@@ -548,9 +1088,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/story.svg",
+      "path": "moonwitness/icons/png/16/navigation/story.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/story.svg",
+      "path": "moonwitness/icons/png/20/navigation/story.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/story.svg",
       "path": "moonwitness/icons/png/24/navigation/story.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/story.svg",
+      "path": "moonwitness/icons/png/32/navigation/story.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/story.svg",
@@ -566,9 +1124,27 @@
     },
     {
       "source": "moonwitness/icons/svg/navigation/users.svg",
+      "path": "moonwitness/icons/png/16/navigation/users.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/users.svg",
+      "path": "moonwitness/icons/png/20/navigation/users.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/users.svg",
       "path": "moonwitness/icons/png/24/navigation/users.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/navigation/users.svg",
+      "path": "moonwitness/icons/png/32/navigation/users.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/navigation/users.svg",
@@ -584,9 +1160,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/check.svg",
+      "path": "moonwitness/icons/png/16/status/check.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/check.svg",
+      "path": "moonwitness/icons/png/20/status/check.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/check.svg",
       "path": "moonwitness/icons/png/24/status/check.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/check.svg",
+      "path": "moonwitness/icons/png/32/status/check.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/check.svg",
@@ -602,9 +1196,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/error.svg",
+      "path": "moonwitness/icons/png/16/status/error.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/error.svg",
+      "path": "moonwitness/icons/png/20/status/error.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/error.svg",
       "path": "moonwitness/icons/png/24/status/error.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/error.svg",
+      "path": "moonwitness/icons/png/32/status/error.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/error.svg",
@@ -620,9 +1232,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/eye-off.svg",
+      "path": "moonwitness/icons/png/16/status/eye-off.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/eye-off.svg",
+      "path": "moonwitness/icons/png/20/status/eye-off.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/eye-off.svg",
       "path": "moonwitness/icons/png/24/status/eye-off.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/eye-off.svg",
+      "path": "moonwitness/icons/png/32/status/eye-off.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/eye-off.svg",
@@ -638,9 +1268,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/eye.svg",
+      "path": "moonwitness/icons/png/16/status/eye.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/eye.svg",
+      "path": "moonwitness/icons/png/20/status/eye.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/eye.svg",
       "path": "moonwitness/icons/png/24/status/eye.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/eye.svg",
+      "path": "moonwitness/icons/png/32/status/eye.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/eye.svg",
@@ -656,9 +1304,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/info.svg",
+      "path": "moonwitness/icons/png/16/status/info.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/info.svg",
+      "path": "moonwitness/icons/png/20/status/info.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/info.svg",
       "path": "moonwitness/icons/png/24/status/info.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/info.svg",
+      "path": "moonwitness/icons/png/32/status/info.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/info.svg",
@@ -674,9 +1340,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/loading.svg",
+      "path": "moonwitness/icons/png/16/status/loading.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/loading.svg",
+      "path": "moonwitness/icons/png/20/status/loading.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/loading.svg",
       "path": "moonwitness/icons/png/24/status/loading.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/loading.svg",
+      "path": "moonwitness/icons/png/32/status/loading.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/loading.svg",
@@ -692,9 +1376,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/lock.svg",
+      "path": "moonwitness/icons/png/16/status/lock.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/lock.svg",
+      "path": "moonwitness/icons/png/20/status/lock.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/lock.svg",
       "path": "moonwitness/icons/png/24/status/lock.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/lock.svg",
+      "path": "moonwitness/icons/png/32/status/lock.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/lock.svg",
@@ -710,9 +1412,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/offline.svg",
+      "path": "moonwitness/icons/png/16/status/offline.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/offline.svg",
+      "path": "moonwitness/icons/png/20/status/offline.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/offline.svg",
       "path": "moonwitness/icons/png/24/status/offline.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/offline.svg",
+      "path": "moonwitness/icons/png/32/status/offline.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/offline.svg",
@@ -728,9 +1448,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/online.svg",
+      "path": "moonwitness/icons/png/16/status/online.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/online.svg",
+      "path": "moonwitness/icons/png/20/status/online.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/online.svg",
       "path": "moonwitness/icons/png/24/status/online.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/online.svg",
+      "path": "moonwitness/icons/png/32/status/online.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/online.svg",
@@ -746,9 +1484,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/sync.svg",
+      "path": "moonwitness/icons/png/16/status/sync.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/sync.svg",
+      "path": "moonwitness/icons/png/20/status/sync.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/sync.svg",
       "path": "moonwitness/icons/png/24/status/sync.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/sync.svg",
+      "path": "moonwitness/icons/png/32/status/sync.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/sync.svg",
@@ -764,9 +1520,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/unlock.svg",
+      "path": "moonwitness/icons/png/16/status/unlock.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/unlock.svg",
+      "path": "moonwitness/icons/png/20/status/unlock.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/unlock.svg",
       "path": "moonwitness/icons/png/24/status/unlock.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/unlock.svg",
+      "path": "moonwitness/icons/png/32/status/unlock.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/unlock.svg",
@@ -782,9 +1556,27 @@
     },
     {
       "source": "moonwitness/icons/svg/status/warning.svg",
+      "path": "moonwitness/icons/png/16/status/warning.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "moonwitness/icons/svg/status/warning.svg",
+      "path": "moonwitness/icons/png/20/status/warning.png",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "moonwitness/icons/svg/status/warning.svg",
       "path": "moonwitness/icons/png/24/status/warning.png",
       "width": 24,
       "height": 24
+    },
+    {
+      "source": "moonwitness/icons/svg/status/warning.svg",
+      "path": "moonwitness/icons/png/32/status/warning.png",
+      "width": 32,
+      "height": 32
     },
     {
       "source": "moonwitness/icons/svg/status/warning.svg",

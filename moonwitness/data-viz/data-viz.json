@@ -28,5 +28,19 @@
     "cross-domain-relations"
   ],
   "generatedFormat": "png",
-  "renderPng": true
+  "renderPng": true,
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "operator",
+    "forensic",
+    "editorial"
+  ],
+  "grammarFamily": "data-viz-v2",
+  "semanticRole": "measurement",
+  "typographyRoles": [
+    "body",
+    "mono"
+  ],
+  "paletteBehavior": "semantic-status-plus-neutral"
 }

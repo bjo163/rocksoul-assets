@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "sizes": [
+    16,
+    20,
+    24,
+    32
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "assets": [
+    {
+      "file": "moonwitness/icons/svg/actions/add.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/bookmark.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/chat.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/command.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/copy.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/delete.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/download.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/edit.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/external-link.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/save.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/share.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/actions/upload.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/ai.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/correlation.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/evidence.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/graph-node.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/legal.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/source.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/timeline.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/domain/trace.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/case.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/dashboard.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/event.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/explore.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/filter.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/globe.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/kanban.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/map-pin.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/person.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/search.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/story.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/navigation/users.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/check.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/error.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/eye-off.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/eye.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/info.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/loading.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/lock.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/offline.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/online.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/sync.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/unlock.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/icons/svg/status/warning.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/edge-contradicts.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/edge-supports.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/event-node.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/evidence-bounds.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/evidence-source.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/graph-node.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/integrity-hash.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/jurisdiction-zone.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/law-node.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/legal-basis.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/person-node.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/privacy-confidential.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/privacy-redacted.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/provenance-chain.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/status-contested.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    },
+    {
+      "file": "moonwitness/semantic-primitives-pack/svg/status-verified.svg",
+      "viewBox24": true,
+      "currentColor": true,
+      "containsText": false,
+      "strokeWidths": [
+        "2"
+      ]
+    }
+  ]
+}
