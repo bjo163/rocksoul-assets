@@ -324,7 +324,8 @@ galleries=[
  ("color","Color Semantics V2","Neutral-first system with Brand, Signal and Critical Crimson.",["moonwitness/data-viz/charts/repository-health.svg","moonwitness/data-viz/charts/status-ring.svg"]),
  ("personalities","Surface Personalities V2","Operator, forensic, editorial, archive, cinematic and community personalities.",["moonwitness/dashboard-pack/widgets/kpi-stat.svg","moonwitness/editorial-pack/svg/source-signal.svg","moonwitness/cinematic-hero-pack/svg/observatory-night.svg"]),
  ("cinematic-editorial","Cinematic & Editorial V2","Rigorous MoonWitness composition with selective ROCKSOUL intervention.",["moonwitness/cinematic-hero-pack/svg/evidence-desk.svg","moonwitness/cinematic-hero-pack/svg/correlation-sky.svg","moonwitness/editorial-pack/svg/legal-boundary.svg"]),
- ("semantic-primitives","Semantic Primitives V2","Optically reviewed currentColor production marks.",["moonwitness/semantic-primitives-pack/svg/graph-node.svg","moonwitness/semantic-primitives-pack/svg/edge-supports.svg","moonwitness/icons/svg/domain/evidence.svg"])
+ ("semantic-primitives","Semantic Primitives V2","Optically reviewed currentColor production marks.",["moonwitness/semantic-primitives-pack/svg/graph-node.svg","moonwitness/semantic-primitives-pack/svg/edge-supports.svg","moonwitness/icons/svg/domain/evidence.svg"]),
+ ("brand-signature","Operator Brand Signature","Logo-free operator proof separating brand, signal, critical, info, verified and partial semantics.",["showcase/v2/operator-brand-signature.svg","showcase/v2/operator-brand-signature-grayscale.svg","showcase/v2/operator-brand-signature-low-saturation.svg","showcase/v2/operator-brand-signature-thumbnail.svg","showcase/v2/operator-generic-blue-control.svg"])
 ]
 def page(title,copy,assets):
     entries=''.join('<article><img src="/%s" alt=""><code>%s</code></article>'%(a,a) for a in assets)
