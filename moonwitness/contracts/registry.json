@@ -287,6 +287,12 @@
       "schemaId": "generated-or-nested-catalog",
       "owner": "generator-or-pack-owner",
       "stability": "generated"
+    },
+    {
+      "pattern": "moonwitness/*/*/png/manifest.json",
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
     }
   ]
 }
