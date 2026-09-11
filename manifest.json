@@ -162,8 +162,8 @@
     "legalIntelligence": "moonwitness/ui/v2/legal-intelligence.json"
   },
   "release": {
-    "version": "1.5.2",
-    "name": "MoonWitness Final Asset Closure v1.5.2",
+    "version": "1.6.0",
+    "name": "MoonWitness Final Asset Closure v1.6.0",
     "date": "2026-09-08",
     "status": "managed",
     "branch": "main",
