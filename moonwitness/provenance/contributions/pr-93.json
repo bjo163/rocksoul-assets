@@ -95,5 +95,7 @@
     "moonwitness/provenance/design-provenance.json"
   ],
   "approvalState": "objective-checks-required; subjective Visual Signature issue remains independently manual where applicable",
-  "hiddenReasoningStored": false
+  "hiddenReasoningStored": false,
+  "$schema": "../../../schemas/ai-contribution-manifest.schema.json",
+  "schemaVersion": 1
 }
