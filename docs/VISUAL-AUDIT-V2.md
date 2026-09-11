@@ -57,7 +57,7 @@ Every contact sheet renders light and dark comparison boards.
 - `#FF2A3D12` — 1 uses
 - `#FF2A3D16` — 1 uses
 
-## Canonical stroke widths
+## Observed stroke widths
 
 - `0` — 401 uses
 - `4` — 352 uses
@@ -79,7 +79,7 @@ Every contact sheet renders light and dark comparison boards.
 - `1.5` — 1 uses
 - `11` — 1 uses
 
-## Canonical radii
+## Observed radii
 
 - `18` — 313 uses
 - `13.2` — 300 uses
@@ -111,6 +111,55 @@ Every contact sheet renders light and dark comparison boards.
 - `13` — 2 uses
 - `9` — 2 uses
 - `110` — 1 uses
+
+## Pack classification
+
+| Pack | Classification |
+| --- | --- |
+| `product-icons` | `primitive` |
+| `dashboard` | `specimen` |
+| `data-viz` | `specimen` |
+| `hero-backgrounds` | `illustration` |
+| `state-illustrations` | `illustration` |
+| `motion` | `illustration` |
+| `application-screens` | `screen-reference` |
+| `sfx` | `non-visual` |
+| `graph-vector` | `specimen` |
+| `badge-status` | `specimen` |
+| `source-file` | `specimen` |
+| `geospatial` | `specimen` |
+| `cursor-interaction` | `specimen` |
+| `persona-avatar` | `illustration` |
+| `social-campaign` | `illustration` |
+| `platform-delivery` | `illustration` |
+| `onboarding` | `illustration` |
+| `document-report` | `illustration` |
+| `notification` | `illustration` |
+| `editorial` | `illustration` |
+| `evidence-media` | `specimen` |
+| `correlation-semantics` | `specimen` |
+| `kanban-workflow` | `specimen` |
+| `calendar-temporal` | `specimen` |
+| `chat-collaboration` | `specimen` |
+| `ai-workspace` | `specimen` |
+| `authorization-security` | `specimen` |
+| `data-grid` | `specimen` |
+| `form-controls` | `specimen` |
+| `theme-accessibility` | `specimen` |
+| `privacy-redaction` | `specimen` |
+| `evidence-integrity` | `specimen` |
+| `export-seal` | `specimen` |
+| `rocksoul-character` | `illustration` |
+| `command-keyboard` | `specimen` |
+| `texture-material` | `illustration` |
+| `architecture-diagram` | `specimen` |
+| `device-mockup` | `illustration` |
+| `jurisdiction-locale` | `specimen` |
+| `cinematic-hero` | `illustration` |
+| `runtime-motion` | `illustration` |
+| `semantic-primitives` | `primitive` |
+| `developer-distribution` | `non-visual` |
+| `community-participation` | `specimen` |
 
 ## Duplicate candidates
 

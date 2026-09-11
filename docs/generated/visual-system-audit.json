@@ -1054,6 +1054,184 @@
     ]
   },
   "productionPrimitiveViolations": [],
+  "packClassifications": [
+    {
+      "id": "product-icons",
+      "assetKind": "primitive"
+    },
+    {
+      "id": "dashboard",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "data-viz",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "hero-backgrounds",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "state-illustrations",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "motion",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "application-screens",
+      "assetKind": "screen-reference"
+    },
+    {
+      "id": "sfx",
+      "assetKind": "non-visual"
+    },
+    {
+      "id": "graph-vector",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "badge-status",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "source-file",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "geospatial",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "cursor-interaction",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "persona-avatar",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "social-campaign",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "platform-delivery",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "onboarding",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "document-report",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "notification",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "editorial",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "evidence-media",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "correlation-semantics",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "kanban-workflow",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "calendar-temporal",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "chat-collaboration",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "ai-workspace",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "authorization-security",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "data-grid",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "form-controls",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "theme-accessibility",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "privacy-redaction",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "evidence-integrity",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "export-seal",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "rocksoul-character",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "command-keyboard",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "texture-material",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "architecture-diagram",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "device-mockup",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "jurisdiction-locale",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "cinematic-hero",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "runtime-motion",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "semantic-primitives",
+      "assetKind": "primitive"
+    },
+    {
+      "id": "developer-distribution",
+      "assetKind": "non-visual"
+    },
+    {
+      "id": "community-participation",
+      "assetKind": "specimen"
+    }
+  ],
   "categories": {
     "primitives": 16,
     "product-icons": 44,
