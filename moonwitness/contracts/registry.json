@@ -176,6 +176,62 @@
         "rocksoul-ui"
       ],
       "stability": "stable"
+    },
+    {
+      "contractId": "asset-packs",
+      "path": "moonwitness/asset-packs.json",
+      "schemaId": "asset-pack-index",
+      "schemaVersion": 1,
+      "owner": "asset-governance",
+      "consumers": [
+        "dist",
+        "showcase"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "contract-registry",
+      "path": "moonwitness/contracts/registry.json",
+      "schemaId": "contract-registry",
+      "schemaVersion": 1,
+      "owner": "contracts",
+      "consumers": [
+        "validators"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "contract-migrations",
+      "path": "moonwitness/contracts/migrations.json",
+      "schemaId": "contract-migrations",
+      "schemaVersion": 1,
+      "owner": "contracts",
+      "consumers": [
+        "validators"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "conformance-policy",
+      "path": "moonwitness/governance/conformance-policy.json",
+      "schemaId": "conformance-policy",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "release"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "manual-attestations",
+      "path": "moonwitness/governance/manual-attestations.json",
+      "schemaId": "manual-attestations",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "release"
+      ],
+      "stability": "stable"
     }
   ],
   "patternRegistrations": [
@@ -190,6 +246,36 @@
       "schemaId": "asset-manifest",
       "owner": "pack-owner",
       "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/png/manifest.json",
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "pattern": "moonwitness/*/generated/manifest.json",
+      "schemaId": "generated-asset-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "pattern": "moonwitness/ui/v2/*.json",
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/*.json",
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/*/*.json",
+      "schemaId": "generated-or-nested-catalog",
+      "owner": "generator-or-pack-owner",
+      "stability": "generated"
     }
   ]
 }
