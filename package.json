@@ -12,6 +12,10 @@
     "audit:visual-v2": "node tools/assets/generate-visual-system-v2-audit.mjs --write",
     "validate:visual-v2": "node tools/assets/validate-visual-system.mjs",
     "migrate:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py",
-    "validate:migration:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py --check"
+    "validate:migration:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py --check",
+    "governance:generate": "python tools/governance/generate_governance.py",
+    "governance:check": "python tools/governance/generate_governance.py --check",
+    "governance:validate": "node tools/governance/validate-governance.mjs",
+    "impact:visual": "node tools/contracts/analyze-impact.mjs"
   }
 }
