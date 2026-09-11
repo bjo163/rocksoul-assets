@@ -63,6 +63,8 @@ jobs:
         run: node tools/assets/validate-showcase-coverage.mjs
       - name: Validate visual asset classification
         run: node tools/assets/validate-classification.mjs
+      - name: Validate Visual System V2 migration freshness
+        run: python tools/assets/generate_visual_system_v2_migration.py --check
       - name: Validate Visual System V2 audit freshness
         run: |
           node tools/assets/generate-visual-system-v2-audit.mjs --check
