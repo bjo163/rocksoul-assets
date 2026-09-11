@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schemas/visual-debt-policy.schema.json",
+  "contractId": "governance.visual-debt.v1",
+  "schemaVersion": 1,
+  "ratchet": "decrease-or-hold-never-increase-without-valid-waiver",
+  "metrics": {
+    "undocumentedFonts": {
+      "severity": "DEBT",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "typography",
+      "remediationIssue": 75
+    },
+    "undocumentedCrimson": {
+      "severity": "ERROR",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "palette",
+      "remediationIssue": 75
+    },
+    "productionPrimitiveViolations": {
+      "severity": "BLOCKER",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "primitive",
+      "remediationIssue": 75
+    },
+    "missingLifecycle": {
+      "severity": "BLOCKER",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "asset-governance",
+      "remediationIssue": 81
+    },
+    "missingSemanticRole": {
+      "severity": "ERROR",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "asset-governance",
+      "remediationIssue": 75
+    },
+    "deprecatedProductionFiles": {
+      "severity": "BLOCKER",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "asset-governance",
+      "remediationIssue": 81
+    },
+    "unresolvedDuplicateGroups": {
+      "severity": "DEBT",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "asset-governance",
+      "remediationIssue": 75
+    },
+    "fixedThemeWhereThemingRequired": {
+      "severity": "ERROR",
+      "ceiling": 0,
+      "target": 0,
+      "owner": "art-direction",
+      "remediationIssue": 75
+    }
+  },
+  "changedFileStrictness": {
+    "enabled": true,
+    "rule": "new-or-materially-modified-production-assets-must-meet-current-v2-rules"
+  }
+}
