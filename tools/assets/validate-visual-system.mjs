@@ -158,9 +158,21 @@ for(const font of audit.fontFamilies??[]){
   const n=font.value.toLowerCase();
   if(!fontNeedles.some(needle=>n.includes(needle))&&!n.includes("arial"))warnings.push(`unclassified font-family declaration: ${font.value} (${font.count} uses)`);
 }
-for(const dup of audit.duplicateCandidates?.structural??[]){
-  const known=dup.files?.some(file=>file.includes("cursor-pack/svg/crosshair.svg"))&&dup.files?.some(file=>file.includes("geospatial-pack/svg/crosshair.svg"));
-  if(!known)warnings.push(`new structural near-duplicate candidate: ${dup.files?.join(", ")}`);
+function lifecycleOverrideForFile(file){
+  for(const [packId,entry] of Object.entries(registry.packs??{})){
+    const assetId=Object.entries(entry.svg??{}).find(([,pathname])=>pathname===file)?.[0];
+    if(assetId){
+      const override=lifecycle.packs?.[packId]?.assetOverrides?.[assetId];
+      if(override)return {packId,assetId,...override};
+    }
+  }
+  return null;
+}
+for(const group of [...(audit.duplicateCandidates?.exact??[]),...(audit.duplicateCandidates?.structural??[])]){
+  const resolutions=(group.files??[]).map(lifecycleOverrideForFile).filter(Boolean);
+  if(!resolutions.some(x=>["deprecated","frozen-reference","legacy"].includes(x.lifecycle)&&x.replacement)){
+    errors.push(`duplicate candidate lacks lifecycle resolution: ${group.files?.join(", ")}`);
+  }
 }
 
 const sprite=await read("dist/sprite.svg");
