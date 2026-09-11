@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/waiver-ledger.schema.json",
+  "contractId": "governance.waivers.v1",
+  "schemaVersion": 1,
+  "policy": {
+    "wildcardsForbidden": true,
+    "expiryRequired": true,
+    "ownerRequired": true,
+    "blockerWaiversForbidden": true
+  },
+  "waivers": []
+}
