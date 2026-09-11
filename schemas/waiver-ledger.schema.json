@@ -38,6 +38,12 @@
           "status"
         ]
       }
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
     }
   }
 }
