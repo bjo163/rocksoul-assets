@@ -175,7 +175,14 @@
       ],
       "prohibitedUsage": [
         "undocumented-semantic-repurpose"
-      ]
+      ],
+      "assetOverrides": {
+        "evidence-timeline": {
+          "lifecycle": "deprecated",
+          "replacement": "data-viz/evidence-timeline",
+          "reason": "Exact/structural duplicate after V2 grammar normalization; data-viz owns the canonical temporal measurement specimen."
+        }
+      }
     },
     "badge-status": {
       "lifecycle": "canonical",
