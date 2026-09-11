@@ -81,6 +81,7 @@ jobs:
         run: |
           python tools/governance/generate_governance.py --check
           node tools/contracts/validate-schemas.mjs
+          node tools/contracts/validate-design-contract.mjs
           node tools/governance/validate-negative-fixtures.mjs
           node tools/governance/validate-visual-debt.mjs
           node tools/governance/validate-governance.mjs
