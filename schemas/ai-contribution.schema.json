@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rocksoul.dev/schemas/ai-contribution/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractId",
+    "schemaVersion",
+    "invariant",
+    "modes",
+    "requiredManifestFields",
+    "prohibitedAutonomousActions",
+    "preflight",
+    "evidence",
+    "hiddenReasoningPolicy"
+  ],
+  "properties": {
+    "contractId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "invariant": {
+      "type": "string"
+    },
+    "modes": {
+      "type": "array"
+    },
+    "contributionManifestRequiredForCanonicalChanges": {
+      "type": "boolean"
+    },
+    "requiredManifestFields": {
+      "type": "array"
+    },
+    "prohibitedAutonomousActions": {
+      "type": "array"
+    },
+    "preflight": {
+      "type": "array"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "hiddenReasoningPolicy": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
+    }
+  }
+}

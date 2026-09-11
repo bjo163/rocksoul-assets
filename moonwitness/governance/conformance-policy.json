@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/conformance-policy.schema.json",
+  "contractId": "governance.conformance.v1",
+  "schemaVersion": 1,
+  "profiles": {
+    "FULL": {
+      "releaseAllowed": true,
+      "criteria": [
+        "zero-blocker",
+        "zero-error",
+        "debt-within-ceiling",
+        "no-expired-waiver",
+        "rule-error-blocker-traceability-100",
+        "schema-valid",
+        "provenance-complete-for-current-v2",
+        "generated-fresh"
+      ]
+    },
+    "QUALIFIED": {
+      "releaseAllowed": true,
+      "criteria": [
+        "zero-blocker",
+        "explicit-error-waiver-only",
+        "debt-within-ceiling",
+        "exceptions-listed"
+      ]
+    },
+    "EXPERIMENTAL": {
+      "releaseAllowed": true,
+      "criteria": [
+        "explicit-experimental-scope"
+      ]
+    },
+    "NONCONFORMANT": {
+      "releaseAllowed": false,
+      "criteria": [
+        "mandatory-release-rule-failed"
+      ]
+    }
+  },
+  "manualGatePolicy": {
+    "automationCannotCompleteManualGate": true,
+    "untriggeredManualRulesDoNotBlock": true,
+    "triggeredManualRuleRequiresAttestation": true
+  },
+  "exactShaRequired": true
+}

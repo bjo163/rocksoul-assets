@@ -116,6 +116,16 @@ jobs:
         run: |
           node tools/assets/generate-domain-ownership-visual.mjs --check
           node tools/assets/generate-legal-intelligence-visual.mjs --check
+      - name: Validate visual governance and conformance
+        run: |
+          python tools/governance/generate_governance.py --check
+          node tools/contracts/validate-schemas.mjs
+          node tools/contracts/validate-design-contract.mjs
+          node tools/governance/validate-negative-fixtures.mjs
+          node tools/governance/validate-visual-debt.mjs
+          node tools/governance/validate-governance.mjs
+          node tools/release/generate-visual-conformance.mjs --sha "${{ github.sha }}"
+          rm -f .release/out/visual-conformance.json .release/out/visual-conformance.md
       - name: Validate documentation and branch contracts
         run: |
           node tools/docs/validate-docs.mjs

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rocksoul.dev/schemas/waiver-ledger/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractId",
+    "schemaVersion",
+    "policy",
+    "waivers"
+  ],
+  "properties": {
+    "contractId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "policy": {
+      "type": "object"
+    },
+    "waivers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "waiverId",
+          "ruleIds",
+          "scope",
+          "reason",
+          "owner",
+          "approver",
+          "createdAt",
+          "expiresAt",
+          "remediationIssue",
+          "severity",
+          "evidence",
+          "status"
+        ]
+      }
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rocksoul.dev/schemas/contract-registry/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractId",
+    "schemaVersion",
+    "compatibility",
+    "entries",
+    "patternRegistrations"
+  ],
+  "properties": {
+    "contractId": {
+      "const": "contracts.registry.v1"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "compatibility": {
+      "type": "object"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "contractId",
+          "path",
+          "schemaId",
+          "schemaVersion",
+          "owner",
+          "consumers",
+          "stability"
+        ],
+        "properties": {
+          "contractId": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "schemaId": {
+            "type": "string"
+          },
+          "schemaVersion": {
+            "type": "integer"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "consumers": {
+            "type": "array"
+          },
+          "stability": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "patternRegistrations": {
+      "type": "array"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
+    }
+  }
+}

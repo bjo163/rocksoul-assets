@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schemas/ai-contribution.schema.json",
+  "contractId": "governance.ai-contribution.v1",
+  "schemaVersion": 1,
+  "invariant": "AI may propose, implement, and validate objective checks; automation may not self-approve subjective or governance gates.",
+  "modes": [
+    "local-ai",
+    "0dev",
+    "agent",
+    "generator",
+    "mixed"
+  ],
+  "contributionManifestRequiredForCanonicalChanges": true,
+  "requiredManifestFields": [
+    "taskIssueId",
+    "contributorMode",
+    "changedCanonicalPaths",
+    "generatedPaths",
+    "changedSemanticIds",
+    "changedRuleIds",
+    "impactReport",
+    "validationCommands",
+    "visualBaselinesAffected",
+    "waiversChanged",
+    "manualGatesRequired",
+    "provenanceEntries"
+  ],
+  "prohibitedAutonomousActions": [
+    "self-approve-waiver",
+    "lower-rule-severity",
+    "increase-debt-ceiling",
+    "accept-visual-baseline-without-review-reason",
+    "delete-released-id-without-migration",
+    "complete-manual-review",
+    "create-pack-with-existing-owner",
+    "introduce-raw-value-when-semantic-token-exists",
+    "self-approve-subjective-art-direction"
+  ],
+  "preflight": [
+    "semanticOwner",
+    "applicableGrammars",
+    "ruleIds",
+    "schemaVersions",
+    "lifecycle",
+    "blastRadius",
+    "fixtures"
+  ],
+  "evidence": [
+    "automatedChecks",
+    "visualDiffIfApplicable",
+    "ruleCoverage",
+    "debtDelta",
+    "waiverImpact",
+    "generationFreshness",
+    "manualReviewRequestIfApplicable"
+  ],
+  "hiddenReasoningPolicy": "forbidden; record observable operational inputs/outputs only"
+}

@@ -1,0 +1,115 @@
+{
+  "contractId": "contracts.dependencies.v1",
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "contract.tokens",
+      "type": "contract",
+      "path": "moonwitness/tokens/visual-system-v2.json"
+    },
+    {
+      "id": "contract.visual-system",
+      "type": "contract",
+      "path": "moonwitness/visual-system-v2.json"
+    },
+    {
+      "id": "contract.lifecycle",
+      "type": "contract",
+      "path": "moonwitness/asset-lifecycle.json"
+    },
+    {
+      "id": "contract.rules",
+      "type": "contract",
+      "path": "moonwitness/governance/rule-registry.json"
+    },
+    {
+      "id": "contract.waivers",
+      "type": "contract",
+      "path": "moonwitness/governance/waivers.json"
+    },
+    {
+      "id": "contract.debt",
+      "type": "contract",
+      "path": "moonwitness/governance/visual-debt-policy.json"
+    },
+    {
+      "id": "contract.ai",
+      "type": "contract",
+      "path": "moonwitness/ai/contribution-policy.json"
+    },
+    {
+      "id": "consumer.dist",
+      "type": "consumer-contract",
+      "path": "dist/contracts/visual-system.json"
+    },
+    {
+      "id": "consumer.ui",
+      "type": "downstream-consumer",
+      "path": "bjo163/rocksoul-ui"
+    }
+  ],
+  "edges": [
+    {
+      "from": "contract.tokens",
+      "to": "contract.visual-system",
+      "type": "REFERENCED_BY"
+    },
+    {
+      "from": "contract.tokens",
+      "to": "consumer.dist",
+      "type": "GENERATES"
+    },
+    {
+      "from": "contract.visual-system",
+      "to": "consumer.dist",
+      "type": "GENERATES"
+    },
+    {
+      "from": "contract.lifecycle",
+      "to": "consumer.dist",
+      "type": "GENERATES"
+    },
+    {
+      "from": "contract.rules",
+      "to": "consumer.dist",
+      "type": "GENERATES"
+    },
+    {
+      "from": "contract.waivers",
+      "to": "consumer.dist",
+      "type": "GENERATES"
+    },
+    {
+      "from": "contract.debt",
+      "to": "consumer.dist",
+      "type": "GENERATES"
+    },
+    {
+      "from": "consumer.dist",
+      "to": "consumer.ui",
+      "type": "CONSUMED_BY"
+    },
+    {
+      "from": "contract.ai",
+      "to": "contract.rules",
+      "type": "GOVERNED_BY_RULE"
+    }
+  ],
+  "allowedEdgeTypes": [
+    "USES_TOKEN",
+    "IMPLEMENTS_SEMANTIC",
+    "GOVERNED_BY_RULE",
+    "GENERATES",
+    "REPLACES",
+    "DEPRECATED_BY",
+    "TESTED_BY",
+    "REFERENCED_BY",
+    "CONSUMED_BY",
+    "MIGRATES_TO",
+    "DERIVED_FROM",
+    "GENERATED_BY",
+    "AUTHORIZED_BY",
+    "SUPERSEDES",
+    "IMPLEMENTS_DECISION"
+  ]
+}

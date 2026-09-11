@@ -87,6 +87,7 @@ jobs:
         run: |
           node tools/release/seal.mjs --sha "${{ steps.verified.outputs.sha }}" --gate-run-id "${{ steps.verified.outputs.run_id }}"
           node tools/release/snapshot.mjs --sha "${{ steps.verified.outputs.sha }}"
+          node tools/release/generate-visual-conformance.mjs --sha "${{ steps.verified.outputs.sha }}"
           python tools/release/build_bundle.py
           node tools/release/verify-artifacts.mjs --file ".release/out/rocksoul-assets-v${{ steps.preflight.outputs.version }}.zip"
       - name: Publish immutable release artifacts
@@ -104,8 +105,8 @@ jobs:
           gh release create "$TAG" \
             --target "$SHA" \
             --title "MoonWitness Asset System v$VERSION" \
-            --notes "Automated Rocksoul release v$VERSION\n\nExact commit: $SHA\nFull Release Gate run: ${{ steps.verified.outputs.run_id }}\n\nArtifacts include deterministic bundle, SHA-256 checksum, immutable inventory snapshot, and sealed release metadata." \
-            "$bundle" "$checksum" ".release/out/inventory.json" ".release/out/release.json" \
+            --notes "Automated Rocksoul release v$VERSION\n\nExact commit: $SHA\nFull Release Gate run: ${{ steps.verified.outputs.run_id }}\n\nArtifacts include deterministic bundle, SHA-256 checksum, immutable inventory snapshot, sealed release metadata, and exact-SHA Visual System conformance certificate." \
+            "$bundle" "$checksum" ".release/out/inventory.json" ".release/out/release.json" ".release/out/visual-conformance.json" ".release/out/visual-conformance.md" \
             --latest
           release_id="$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/$TAG" --jq .id)"
           bundle_sha="$(cut -d' ' -f1 "$checksum")"

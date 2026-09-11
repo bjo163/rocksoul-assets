@@ -1,0 +1,1078 @@
+{
+  "schemaVersion": 1,
+  "registry": "moonwitness/contracts/registry.json",
+  "contracts": [
+    {
+      "path": "moonwitness/ai/contribution-policy.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.ai-contribution.v1",
+      "schemaId": "ai-contribution",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ai-workspace-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ai-workspace-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/architecture-diagram-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/architecture-diagram-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/asset-classification.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "asset-classification",
+      "schemaId": "classification",
+      "owner": "asset-governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/asset-lifecycle.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "asset-lifecycle",
+      "schemaId": "lifecycle",
+      "owner": "asset-governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/asset-packs.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "asset-packs",
+      "schemaId": "asset-pack-index",
+      "owner": "asset-governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/badge-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/badge-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/brand/brand-assets.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/brand/generated/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-asset-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/calendar-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/calendar-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/chat-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/chat-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/cinematic-hero-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/cinematic-hero-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/cinematic-hero-pack/webp/photographic-masters.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-or-nested-catalog",
+      "owner": "generator-or-pack-owner",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/cinematic-web-hero/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/command-keyboard-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/command-keyboard-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/community-participation-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/community-participation-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/contracts/dependencies.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "contracts.dependencies.v1",
+      "schemaId": "impact-graph-source",
+      "owner": "contracts",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/contracts/migrations.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "contracts.migrations.v1",
+      "schemaId": "contract-migrations",
+      "owner": "contracts",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/contracts/registry.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "contracts.registry.v1",
+      "schemaId": "contract-registry",
+      "owner": "contracts",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/contracts/semantic-ids.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "contracts.semantic-ids.v1",
+      "schemaId": "semantic-ids",
+      "owner": "contracts",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/correlation-semantics-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/correlation-semantics-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/cursor-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/cursor-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/dashboard-pack/dashboard-pack.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/dashboard-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/data-grid-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/data-grid-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/data-viz/data-viz.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/data-viz/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/developer-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/device-mockup-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/device-mockup-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/document-report-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/document-report-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/editorial-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/editorial-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/evidence-media-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/evidence-media-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/export-seal-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/export-seal-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/fixtures/visual-golden-corpus/corpus.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "fixtures.visual-golden-corpus.v1",
+      "schemaId": "golden-corpus",
+      "owner": "qa",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/fixtures/visual-governance-negative.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "fixtures.visual-governance-negative.v1",
+      "schemaId": "governance-negative-fixtures",
+      "owner": "qa",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/form-controls-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/form-controls-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/geospatial-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/geospatial-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/governance/conformance-policy.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.conformance.v1",
+      "schemaId": "conformance-policy",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/governance/manual-attestations.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.manual-attestations.v1",
+      "schemaId": "manual-attestations",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/governance/rule-registry.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.rules.v1",
+      "schemaId": "rules",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/governance/severity-model.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.severity.v1",
+      "schemaId": "severity",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/governance/visual-debt-policy.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.visual-debt.v1",
+      "schemaId": "debt",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/governance/visual-freeze.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.visual-freeze.v2",
+      "schemaId": "freeze",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/governance/waivers.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "governance.waivers.v1",
+      "schemaId": "waivers",
+      "owner": "governance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/graph-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/graph-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/hero-backgrounds/backgrounds.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/hero-backgrounds/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/icons/icons.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/icons/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/integrity-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/integrity-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/jurisdiction-locale-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/jurisdiction-locale-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/kanban-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/kanban-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/motion/motion.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/motion/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/notification-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/notification-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/onboarding-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/onboarding-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/persona-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/persona-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/platform-delivery-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/platform-delivery-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/privacy-redaction-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/privacy-redaction-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/provenance/contributions/pr-93.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-or-nested-catalog",
+      "owner": "generator-or-pack-owner",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/provenance/design-decisions.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "provenance.design-decisions.v1",
+      "schemaId": "provenance-decisions",
+      "owner": "provenance",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/rocksoul-character-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/rocksoul-character-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/runtime-motion-pack/generated-manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/runtime-motion-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/security-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/security-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/semantic-primitives-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/semantic-primitives-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/sfx/generated/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-asset-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/sfx/sounds.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/social-campaign-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/social-campaign-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/source-file-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/source-file-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/state-illustrations/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/state-illustrations/states.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/texture-material-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/texture-material-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/theme-accessibility-pack/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/theme-accessibility-pack/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/tokens/visual-system-v2.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "visual.tokens.v2",
+      "schemaId": "tokens",
+      "owner": "design-contract",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/legal-intelligence.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/navigation.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/platform-admin.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/png/manifest.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "path": "moonwitness/ui/v2/research-domains.json",
+      "schemaVersion": 2,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/screens.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/states.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/ui/v2/status-semantics.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": null,
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "path": "moonwitness/visual-system-v2.json",
+      "schemaVersion": 1,
+      "registered": true,
+      "contractId": "visual-system",
+      "schemaId": "visual-system",
+      "owner": "art-direction",
+      "stability": "stable"
+    }
+  ],
+  "unregistered": []
+}

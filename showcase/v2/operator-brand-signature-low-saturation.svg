@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d"><title id="t">Operator Brand Signature low</title><desc id="d">Logo-free operator composition separating brand, signal, critical, informational, verified and partial semantics through trace, resource rail and inspector structure.</desc>
+<rect width="1200" height="800" fill="#111213"/>
+<rect x="24" y="24" width="1152" height="752" rx="10" fill="#1B1C1D" stroke="#525456"/>
+<text x="52" y="62" fill="#9B9D9F" font-family="IBM Plex Mono,monospace" font-size="12" letter-spacing="3">OPERATOR / COMPACT / TRACE-FIRST</text>
+<text x="52" y="104" fill="#EDEDEB" font-family="Inter Tight,Inter,Arial,sans-serif" font-size="32">Deployment evidence workspace</text>
+<path d="M260 132V742M904 132V742" stroke="#525456"/>
+<text x="52" y="158" fill="#9B9D9F" font-family="IBM Plex Mono,monospace" font-size="10">RESOURCE RAIL</text>
+<g font-family="IBM Plex Mono,monospace" font-size="11">
+<rect x="48" y="178" width="188" height="42" rx="3" fill="#111213" stroke="#9D6268" stroke-width="2"/><text x="64" y="204" fill="#EDEDEB">cluster / atlas-01</text>
+<rect x="48" y="232" width="188" height="42" rx="3" fill="#111213" stroke="#525456"/><text x="64" y="258" fill="#9B9D9F">service / api</text>
+<rect x="48" y="286" width="188" height="42" rx="3" fill="#111213" stroke="#525456"/><text x="64" y="312" fill="#9B9D9F">db / primary</text>
+<rect x="48" y="340" width="188" height="42" rx="3" fill="#111213" stroke="#525456"/><text x="64" y="366" fill="#9B9D9F">queue / events</text>
+</g>
+<text x="292" y="158" fill="#9B9D9F" font-family="IBM Plex Mono,monospace" font-size="10">PROVENANCE TRACE</text>
+<path d="M332 254H490L548 322H700L762 390H842" fill="none" stroke="#EDEDEB" stroke-width="2"/>
+<path d="M490 254V210H642" fill="none" stroke="#744D52" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+<path d="M548 322V482H716" fill="none" stroke="#6E8198" stroke-width="2"/>
+<circle cx="332" cy="254" r="22" fill="#111213" stroke="#738E82" stroke-width="2"/>
+<path d="M474 232H506V276H474Z" fill="#111213" stroke="#9D6268" stroke-width="2"/>
+<path d="M532 298L548 282L564 298L548 314Z" fill="#111213" stroke="#EDEDEB" stroke-width="2"/>
+<path d="M684 300H716L728 322L716 344H684L672 322Z" fill="#111213" stroke="#9B8968" stroke-width="2"/>
+<circle cx="762" cy="390" r="24" fill="#111213" stroke="#A35E64" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="308" y="292" fill="#9B9D9F" font-family="IBM Plex Mono,monospace" font-size="9">VERIFIED SOURCE</text>
+<text x="452" y="198" fill="#744D52" font-family="IBM Plex Mono,monospace" font-size="9">INTERVENTION TRACE</text>
+<text x="522" y="510" fill="#6E8198" font-family="IBM Plex Mono,monospace" font-size="9">INFO / NOT BRAND</text>
+<text x="716" y="430" fill="#A35E64" font-family="IBM Plex Mono,monospace" font-size="9">CRITICAL / UNRESOLVED</text>
+<text x="932" y="158" fill="#9B9D9F" font-family="IBM Plex Mono,monospace" font-size="10">INSPECTOR</text>
+<g font-family="IBM Plex Mono,monospace" font-size="10">
+<text x="932" y="196" fill="#9B9D9F">state</text><text x="1084" y="196" fill="#738E82">verified</text>
+<text x="932" y="226" fill="#9B9D9F">health</text><text x="1084" y="226" fill="#9B8968">partial</text>
+<text x="932" y="256" fill="#9B9D9F">info</text><text x="1084" y="256" fill="#6E8198">2 notes</text>
+<text x="932" y="286" fill="#9B9D9F">risk</text><text x="1084" y="286" fill="#A35E64">critical</text>
+</g>
+<path d="M930 330H1148" stroke="#525456"/>
+<text x="932" y="366" fill="#EDEDEB" font-family="Inter,Arial,sans-serif" font-size="13">Selection remains neutral.</text>
+<rect x="932" y="390" width="216" height="44" rx="3" fill="#111213" stroke="#EDEDEB" stroke-width="2"/><text x="950" y="418" fill="#EDEDEB" font-family="IBM Plex Mono,monospace" font-size="10">FOCUS / SELECTED</text>
+<path d="M48 680H1148" stroke="#525456"/>
+<g font-family="IBM Plex Mono,monospace" font-size="9">
+<circle cx="64" cy="714" r="5" fill="#9D6268"/><text x="78" y="718" fill="#9B9D9F">BRAND</text>
+<circle cx="164" cy="714" r="5" fill="#744D52"/><text x="178" y="718" fill="#9B9D9F">SIGNAL</text>
+<circle cx="276" cy="714" r="5" fill="#A35E64"/><text x="290" y="718" fill="#9B9D9F">CRITICAL</text>
+<circle cx="402" cy="714" r="5" fill="#6E8198"/><text x="416" y="718" fill="#9B9D9F">INFO</text>
+<circle cx="496" cy="714" r="5" fill="#738E82"/><text x="510" y="718" fill="#9B9D9F">VERIFIED</text>
+<circle cx="622" cy="714" r="5" fill="#9B8968"/><text x="636" y="718" fill="#9B9D9F">PARTIAL</text>
+</g></svg>

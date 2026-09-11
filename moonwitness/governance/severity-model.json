@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/severity-model.schema.json",
+  "contractId": "governance.severity.v1",
+  "schemaVersion": 1,
+  "levels": {
+    "BLOCKER": {
+      "releaseBlocking": true,
+      "waivable": false,
+      "meaning": "semantic/accessibility/security deception or invalid contract"
+    },
+    "ERROR": {
+      "releaseBlocking": true,
+      "waivable": true,
+      "meaning": "new non-canonical production drift"
+    },
+    "DEBT": {
+      "releaseBlocking": false,
+      "waivable": true,
+      "meaning": "legacy accepted temporarily under ratchet"
+    },
+    "WARNING": {
+      "releaseBlocking": false,
+      "waivable": false,
+      "meaning": "non-release-blocking actionable observation"
+    },
+    "INFO": {
+      "releaseBlocking": false,
+      "waivable": false,
+      "meaning": "metric only"
+    }
+  }
+}

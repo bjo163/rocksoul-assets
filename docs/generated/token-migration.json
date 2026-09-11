@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "contractId": "tokens.migration-report.v1",
+  "active": [
+    {
+      "id": "semantic.brand.crimson",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.signal.crimson",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.critical.crimson",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.legal.boundary",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.supported",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.verified",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.partial",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.unresolved",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.restricted",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.prohibited",
+      "kind": "semantic"
+    },
+    {
+      "id": "semantic.status.info",
+      "kind": "semantic"
+    },
+    {
+      "id": "presentation.brand.crimsonUi.dark",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.brand.crimson"
+    },
+    {
+      "id": "presentation.brand.crimsonUi.light",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.brand.crimson"
+    },
+    {
+      "id": "presentation.signal.intervention.dark",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.signal.crimson"
+    },
+    {
+      "id": "presentation.status.info",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.status.info"
+    },
+    {
+      "id": "presentation.status.verified",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.status.verified"
+    },
+    {
+      "id": "presentation.status.partial",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.status.partial"
+    },
+    {
+      "id": "presentation.status.critical",
+      "kind": "presentation-alias",
+      "semanticSource": "semantic.critical.crimson"
+    }
+  ],
+  "deprecated": [],
+  "removed": []
+}

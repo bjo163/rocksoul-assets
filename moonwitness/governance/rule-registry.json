@@ -1,0 +1,515 @@
+{
+  "$schema": "../../schemas/rule-registry.schema.json",
+  "contractId": "governance.rules.v1",
+  "schemaVersion": 1,
+  "rules": [
+    {
+      "ruleId": "VS2.COLOR.001",
+      "source": "docs/ART-DIRECTION-V2.md",
+      "normativeText": "Production crimson must map to a canonical semantic role.",
+      "owner": "palette",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.color.unapproved-crimson"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.COLOR.002",
+      "source": "moonwitness/tokens/visual-system-v2.json",
+      "normativeText": "Informational blue must not become brand semantic source.",
+      "owner": "tokens",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.alias.info-as-brand"
+      ],
+      "affectedPacks": [
+        "product-icons",
+        "dashboard"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.COLOR.003",
+      "source": "moonwitness/tokens/visual-system-v2.json",
+      "normativeText": "Presentation aliases must preserve canonical semanticSource provenance.",
+      "owner": "tokens",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.alias.semantic-promotion"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.TYPE.001",
+      "source": "docs/ART-DIRECTION-V2.md",
+      "normativeText": "Archive Serif is limited to archive/editorial/cinematic contexts.",
+      "owner": "typography",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.type.archive-serif-operator"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic",
+        "community"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.PRIMITIVE.001",
+      "source": "moonwitness/visual-system-v2.json",
+      "normativeText": "Production primitives must contain no text or embedded raster.",
+      "owner": "primitive",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-primitives.mjs",
+      "fixtures": [
+        "fixture.primitive.text"
+      ],
+      "affectedPacks": [
+        "semantic-primitives",
+        "product-icons"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic",
+        "community"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.PRIMITIVE.002",
+      "source": "moonwitness/visual-system-v2.json",
+      "normativeText": "Production primitive canonical stroke is 2px where the primitive contract applies.",
+      "owner": "primitive",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.primitive.stroke"
+      ],
+      "affectedPacks": [
+        "semantic-primitives",
+        "product-icons"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic",
+        "community"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.GRAPH.001",
+      "source": "docs/GRAPH-GRAMMAR-V2.md",
+      "normativeText": "Graph meaning must survive grayscale and not depend only on color.",
+      "owner": "graph",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.graph.grayscale"
+      ],
+      "affectedPacks": [
+        "graph-vector",
+        "correlation-semantics",
+        "architecture-diagram"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.GRAPH.002",
+      "source": "docs/GRAPH-GRAMMAR-V2.md",
+      "normativeText": "Unresolved graph relations use canonical fragmented/ghost semantics.",
+      "owner": "graph",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.graph.unresolved"
+      ],
+      "affectedPacks": [
+        "graph-vector",
+        "correlation-semantics"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.DATA.001",
+      "source": "docs/DATA-VIZ-GRAMMAR-V2.md",
+      "normativeText": "Confidence and uncertainty must use separate encodings.",
+      "owner": "data-viz",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.data.confidence-uncertainty"
+      ],
+      "affectedPacks": [
+        "data-viz",
+        "graph-vector"
+      ],
+      "affectedSurfaces": [
+        "operator",
+        "forensic",
+        "editorial"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.LIFECYCLE.001",
+      "source": "moonwitness/asset-lifecycle.json",
+      "normativeText": "Deprecated assets require explicit replacement metadata.",
+      "owner": "asset-governance",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.lifecycle.deprecated-no-replacement"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.LIFECYCLE.002",
+      "source": "moonwitness/asset-lifecycle.json",
+      "normativeText": "Deprecated assets must not enter production distribution.",
+      "owner": "asset-governance",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/assets/validate-visual-system.mjs",
+      "fixtures": [
+        "fixture.lifecycle.deprecated-production"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.DEBT.001",
+      "source": "moonwitness/governance/visual-debt-policy.json",
+      "normativeText": "Visual debt ceilings may decrease or hold but may not silently increase.",
+      "owner": "governance",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.debt.ceiling-increase"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.WAIVER.001",
+      "source": "moonwitness/governance/waivers.json",
+      "normativeText": "Every waiver must be narrow, owned, expiring and rule-bound.",
+      "owner": "governance",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.waiver.wildcard",
+        "fixture.waiver.expired"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.WAIVER.002",
+      "source": "moonwitness/governance/waivers.json",
+      "normativeText": "BLOCKER rules are not self-waivable.",
+      "owner": "governance",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.waiver.blocker"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.AI.001",
+      "source": "moonwitness/ai/contribution-policy.json",
+      "normativeText": "Automation may not mark a MANUAL governance gate complete.",
+      "owner": "ai-governance",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.ai.self-approve-manual"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.AI.002",
+      "source": "moonwitness/ai/contribution-policy.json",
+      "normativeText": "AI contribution cannot raise debt ceilings or create wildcard waivers.",
+      "owner": "ai-governance",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.ai.raise-debt",
+        "fixture.ai.wildcard-waiver"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.PROVENANCE.001",
+      "source": "moonwitness/provenance/design-provenance.json",
+      "normativeText": "Canonical V2 artifacts must have observable provenance lineage.",
+      "owner": "provenance",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.provenance.missing"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.CONFORMANCE.001",
+      "source": "moonwitness/governance/conformance-policy.json",
+      "normativeText": "FULL conformance requires zero BLOCKER/ERROR findings and valid evidence hashes.",
+      "owner": "release",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/release/generate-visual-conformance.mjs --check",
+      "fixtures": [
+        "fixture.conformance.fake-full"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.SIGNATURE.001",
+      "source": "docs/VISUAL-FINGERPRINT.md",
+      "normativeText": "Distinctiveness review cannot be reduced to logo or crimson usage alone.",
+      "owner": "art-direction",
+      "severity": "ERROR",
+      "enforcementType": "MANUAL",
+      "validator": "manual:visual-signature-review",
+      "fixtures": [
+        "fixture.signature.operator-blind"
+      ],
+      "affectedPacks": [
+        "dashboard",
+        "ui-v2"
+      ],
+      "affectedSurfaces": [
+        "operator"
+      ],
+      "exceptionEligible": true,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.FREEZE.001",
+      "source": "moonwitness/governance/visual-freeze.json",
+      "normativeText": "Frozen top-level semantic model changes require explicit freeze-break evidence.",
+      "owner": "governance",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/governance/validate-governance.mjs",
+      "fixtures": [
+        "fixture.freeze.unapproved-top-level-change"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.TOKEN.001",
+      "source": "moonwitness/tokens/visual-system-v2.json",
+      "normativeText": "Token aliases must resolve to canonical semantic tokens and may not form cycles.",
+      "owner": "design-contract",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-design-contract.mjs",
+      "fixtures": [
+        "fixture.token.cyclic-alias",
+        "fixture.token.missing-target"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.TOKEN.002",
+      "source": "moonwitness/tokens/visual-system-v2.json",
+      "normativeText": "Removed tokens are not emitted; deprecated tokens require an explicit replacement.",
+      "owner": "design-contract",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-design-contract.mjs",
+      "fixtures": [
+        "fixture.token.removed-emitted",
+        "fixture.token.deprecated-no-replacement"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.SCHEMA.001",
+      "source": "moonwitness/contracts/migrations.json",
+      "normativeText": "Released semantic IDs may not be silently renamed or deleted without migration metadata.",
+      "owner": "contracts",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-schemas.mjs",
+      "fixtures": [
+        "fixture.schema.silent-rename",
+        "fixture.schema.deleted-released-id"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.SCHEMA.002",
+      "source": "moonwitness/contracts/registry.json",
+      "normativeText": "Canonical contracts require schema version, registered ownership and valid cross-contract references.",
+      "owner": "contracts",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-schemas.mjs",
+      "fixtures": [
+        "fixture.schema.missing-version",
+        "fixture.schema.unknown-personality",
+        "fixture.schema.invalid-lifecycle",
+        "fixture.schema.missing-token"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    }
+  ]
+}

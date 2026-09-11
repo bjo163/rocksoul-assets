@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "active": 0,
+  "expired": 0,
+  "bySeverity": {
+    "BLOCKER": 0,
+    "ERROR": 0,
+    "DEBT": 0,
+    "WARNING": 0,
+    "INFO": 0
+  },
+  "oldestCreatedAt": null
+}

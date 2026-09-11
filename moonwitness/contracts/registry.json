@@ -1,0 +1,298 @@
+{
+  "$schema": "../../schemas/contract-registry.schema.json",
+  "contractId": "contracts.registry.v1",
+  "schemaVersion": 1,
+  "compatibility": {
+    "PATCH": "descriptive or additive metadata only",
+    "MINOR": "additive semantic IDs or backwards-compatible fields",
+    "MAJOR": "removed meaning, incompatible shape, semantic reinterpretation"
+  },
+  "entries": [
+    {
+      "contractId": "visual-system",
+      "path": "moonwitness/visual-system-v2.json",
+      "schemaId": "visual-system",
+      "schemaVersion": 1,
+      "owner": "art-direction",
+      "consumers": [
+        "assets",
+        "penpot",
+        "rocksoul-ui"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "tokens",
+      "path": "moonwitness/tokens/visual-system-v2.json",
+      "schemaId": "tokens",
+      "schemaVersion": 1,
+      "owner": "design-contract",
+      "consumers": [
+        "penpot",
+        "dist",
+        "rocksoul-ui"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "asset-lifecycle",
+      "path": "moonwitness/asset-lifecycle.json",
+      "schemaId": "lifecycle",
+      "schemaVersion": 1,
+      "owner": "asset-governance",
+      "consumers": [
+        "dist",
+        "showcase"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "asset-classification",
+      "path": "moonwitness/asset-classification.json",
+      "schemaId": "classification",
+      "schemaVersion": 1,
+      "owner": "asset-governance",
+      "consumers": [
+        "dist",
+        "validators"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "semantic-ids",
+      "path": "moonwitness/contracts/semantic-ids.json",
+      "schemaId": "semantic-ids",
+      "schemaVersion": 1,
+      "owner": "contracts",
+      "consumers": [
+        "validators",
+        "rocksoul-ui"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "dependencies",
+      "path": "moonwitness/contracts/dependencies.json",
+      "schemaId": "impact-graph-source",
+      "schemaVersion": 1,
+      "owner": "contracts",
+      "consumers": [
+        "impact-analysis",
+        "rocksoul-ui"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "severity",
+      "path": "moonwitness/governance/severity-model.json",
+      "schemaId": "severity",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "validators",
+        "certificate"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "debt-policy",
+      "path": "moonwitness/governance/visual-debt-policy.json",
+      "schemaId": "debt",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "validators",
+        "certificate"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "waivers",
+      "path": "moonwitness/governance/waivers.json",
+      "schemaId": "waivers",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "validators",
+        "certificate"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "rules",
+      "path": "moonwitness/governance/rule-registry.json",
+      "schemaId": "rules",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "validators",
+        "certificate"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "freeze",
+      "path": "moonwitness/governance/visual-freeze.json",
+      "schemaId": "freeze",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "validators",
+        "contributors"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "ai-contribution",
+      "path": "moonwitness/ai/contribution-policy.json",
+      "schemaId": "ai-contribution",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "contributors",
+        "validators"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "design-decisions",
+      "path": "moonwitness/provenance/design-decisions.json",
+      "schemaId": "provenance-decisions",
+      "schemaVersion": 1,
+      "owner": "provenance",
+      "consumers": [
+        "provenance-generator"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "golden-corpus",
+      "path": "moonwitness/fixtures/visual-golden-corpus/corpus.json",
+      "schemaId": "golden-corpus",
+      "schemaVersion": 1,
+      "owner": "qa",
+      "consumers": [
+        "validators",
+        "rocksoul-ui"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "asset-packs",
+      "path": "moonwitness/asset-packs.json",
+      "schemaId": "asset-pack-index",
+      "schemaVersion": 1,
+      "owner": "asset-governance",
+      "consumers": [
+        "dist",
+        "showcase"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "contract-registry",
+      "path": "moonwitness/contracts/registry.json",
+      "schemaId": "contract-registry",
+      "schemaVersion": 1,
+      "owner": "contracts",
+      "consumers": [
+        "validators"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "contract-migrations",
+      "path": "moonwitness/contracts/migrations.json",
+      "schemaId": "contract-migrations",
+      "schemaVersion": 1,
+      "owner": "contracts",
+      "consumers": [
+        "validators"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "conformance-policy",
+      "path": "moonwitness/governance/conformance-policy.json",
+      "schemaId": "conformance-policy",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "release"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "manual-attestations",
+      "path": "moonwitness/governance/manual-attestations.json",
+      "schemaId": "manual-attestations",
+      "schemaVersion": 1,
+      "owner": "governance",
+      "consumers": [
+        "release"
+      ],
+      "stability": "stable"
+    },
+    {
+      "contractId": "governance-negative-fixtures",
+      "path": "moonwitness/fixtures/visual-governance-negative.json",
+      "schemaId": "governance-negative-fixtures",
+      "schemaVersion": 1,
+      "owner": "qa",
+      "consumers": [
+        "validators"
+      ],
+      "stability": "stable"
+    }
+  ],
+  "patternRegistrations": [
+    {
+      "pattern": "moonwitness/*/manifest.json",
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/*-pack.json",
+      "schemaId": "asset-manifest",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/png/manifest.json",
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "pattern": "moonwitness/*/generated/manifest.json",
+      "schemaId": "generated-asset-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    },
+    {
+      "pattern": "moonwitness/ui/v2/*.json",
+      "schemaId": "ui-v2-contract",
+      "owner": "ui-reference",
+      "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/*.json",
+      "schemaId": "asset-catalog",
+      "owner": "pack-owner",
+      "stability": "stable"
+    },
+    {
+      "pattern": "moonwitness/*/*/*.json",
+      "schemaId": "generated-or-nested-catalog",
+      "owner": "generator-or-pack-owner",
+      "stability": "generated"
+    },
+    {
+      "pattern": "moonwitness/*/*/png/manifest.json",
+      "schemaId": "generated-raster-manifest",
+      "owner": "generator",
+      "stability": "generated"
+    }
+  ]
+}

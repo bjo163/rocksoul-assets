@@ -1,0 +1,101 @@
+{
+  "taskIssueId": "governance-cluster:#49,#75,#76,#77,#78,#79,#86,#87,#88,#89,#90,#92",
+  "contributorMode": "agent",
+  "sourceContracts": [
+    "moonwitness/visual-system-v2.json",
+    "moonwitness/asset-lifecycle.json",
+    "penpot/tokens/moonwitness.tokens.json",
+    "docs/generated/visual-system-audit.json",
+    "dist/assets.json"
+  ],
+  "changedCanonicalPaths": [
+    "moonwitness/tokens/visual-system-v2.json",
+    "moonwitness/contracts/registry.json",
+    "moonwitness/contracts/semantic-ids.json",
+    "moonwitness/contracts/migrations.json",
+    "moonwitness/contracts/dependencies.json",
+    "moonwitness/governance/severity-model.json",
+    "moonwitness/governance/visual-debt-policy.json",
+    "moonwitness/governance/waivers.json",
+    "moonwitness/governance/rule-registry.json",
+    "moonwitness/governance/conformance-policy.json",
+    "moonwitness/governance/manual-attestations.json",
+    "moonwitness/governance/visual-freeze.json",
+    "moonwitness/ai/contribution-policy.json",
+    "moonwitness/fixtures/visual-golden-corpus/corpus.json",
+    "moonwitness/fixtures/visual-governance-negative.json",
+    "moonwitness/provenance/design-decisions.json",
+    "docs/VISUAL-FINGERPRINT.md",
+    "docs/VISUAL-GOVERNANCE.md",
+    "showcase/v2/operator-brand-signature.svg"
+  ],
+  "generatedPaths": [
+    "docs/generated/token-inventory.json",
+    "docs/generated/token-migration.json",
+    "docs/generated/visual-debt.json",
+    "docs/generated/visual-debt-history.json",
+    "docs/generated/rule-coverage.json",
+    "docs/generated/waiver-metrics.json",
+    "docs/generated/contract-inventory.json",
+    "docs/generated/visual-impact-graph.json",
+    "moonwitness/provenance/design-provenance.json",
+    "dist/contracts/tokens.css",
+    "dist/contracts/tokens.ts",
+    "dist/contracts/visual-system.json",
+    "dist/contracts/visual-impact.json",
+    "dist/contracts/golden-corpus.json",
+    "penpot/generated/visual-system.tokens.json"
+  ],
+  "changedSemanticIds": [
+    "semantic.brand.crimson",
+    "semantic.signal.crimson",
+    "semantic.critical.crimson",
+    "semantic.status.info",
+    "semantic.status.verified",
+    "semantic.status.partial"
+  ],
+  "changedRuleIds": [
+    "VS2.COLOR.002",
+    "VS2.COLOR.003",
+    "VS2.DEBT.001",
+    "VS2.WAIVER.001",
+    "VS2.WAIVER.002",
+    "VS2.AI.001",
+    "VS2.AI.002",
+    "VS2.PROVENANCE.001",
+    "VS2.CONFORMANCE.001",
+    "VS2.FREEZE.001",
+    "VS2.TOKEN.001",
+    "VS2.TOKEN.002",
+    "VS2.SCHEMA.001",
+    "VS2.SCHEMA.002"
+  ],
+  "impactReport": "node tools/contracts/analyze-impact.mjs --base <base> --head <head>",
+  "validationCommands": [
+    "python tools/governance/generate_governance.py --check",
+    "node tools/contracts/validate-schemas.mjs",
+    "node tools/contracts/validate-design-contract.mjs",
+    "node tools/governance/validate-negative-fixtures.mjs",
+    "node tools/governance/validate-visual-debt.mjs",
+    "node tools/governance/validate-governance.mjs",
+    "node tools/release/generate-visual-conformance.mjs --sha <exact-sha>"
+  ],
+  "visualBaselinesAffected": [
+    "showcase/v2/operator-brand-signature.svg",
+    "showcase/v2/operator-brand-signature-grayscale.svg",
+    "showcase/v2/operator-brand-signature-low-saturation.svg",
+    "showcase/v2/operator-brand-signature-thumbnail.svg",
+    "showcase/v2/operator-generic-blue-control.svg"
+  ],
+  "waiversChanged": [],
+  "debtImpact": "no ceiling increase permitted; generated debt must remain within zero ceilings for strict metrics",
+  "manualGatesRequired": [],
+  "provenanceEntries": [
+    "moonwitness/provenance/design-decisions.json",
+    "moonwitness/provenance/design-provenance.json"
+  ],
+  "approvalState": "objective-checks-required; subjective Visual Signature issue remains independently manual where applicable",
+  "hiddenReasoningStored": false,
+  "$schema": "../../../schemas/ai-contribution-manifest.schema.json",
+  "schemaVersion": 1
+}

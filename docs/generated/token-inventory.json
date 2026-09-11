@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "canonicalContract": "moonwitness/tokens/visual-system-v2.json",
+  "legacyPenpotSource": "penpot/tokens/moonwitness.tokens.json",
+  "counts": {
+    "penpotLeaves": 131,
+    "canonicalPrimitiveLeaves": 73,
+    "semanticTokens": 11,
+    "presentationAliases": 7,
+    "sameNameDifferentValueGroups": 19,
+    "sameValueAliasGroups": 27
+  },
+  "sameNameDifferentValueGroups": [
+    {
+      "name": "strong",
+      "values": [
+        {
+          "id": "Global.stroke.strong",
+          "value": "2px"
+        },
+        {
+          "id": "Mode/Dark.border.strong",
+          "value": "#4A4A4A"
+        },
+        {
+          "id": "Mode/Light.border.strong",
+          "value": "#A6A197"
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "values": [
+        {
+          "id": "Global.stroke.focus",
+          "value": "3px"
+        },
+        {
+          "id": "Mode/Dark.focus",
+          "value": "#F7F4EC"
+        },
+        {
+          "id": "Mode/Light.focus",
+          "value": "#0B0B0B"
+        }
+      ]
+    },
+    {
+      "name": "display",
+      "values": [
+        {
+          "id": "Typography.font.display",
+          "value": "Inter Tight"
+        },
+        {
+          "id": "Typography.size.display",
+          "value": "96px"
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "values": [
+        {
+          "id": "Typography.font.body",
+          "value": "Inter"
+        },
+        {
+          "id": "Typography.size.body",
+          "value": "16px"
+        },
+        {
+          "id": "Typography.line-height.body",
+          "value": "1.55"
+        }
+      ]
+    },
+    {
+      "name": "headline",
+      "values": [
+        {
+          "id": "Typography.size.headline",
+          "value": "48px"
+        },
+        {
+          "id": "Typography.line-height.headline",
+          "value": "1.05"
+        }
+      ]
+    },
+    {
+      "name": "tight",
+      "values": [
+        {
+          "id": "Typography.line-height.tight",
+          "value": "1.0"
+        },
+        {
+          "id": "Typography.tracking.tight",
+          "value": "-0.03em"
+        }
+      ]
+    },
+    {
+      "name": "wide",
+      "values": [
+        {
+          "id": "Typography.tracking.wide",
+          "value": "0.08em"
+        },
+        {
+          "id": "Layout.breakpoint.wide",
+          "value": "1440px"
+        }
+      ]
+    },
+    {
+      "name": "archive",
+      "values": [
+        {
+          "id": "Typography.tracking.archive",
+          "value": "0.16em"
+        },
+        {
+          "id": "VisualSystemV2.personality.archive",
+          "value": "archive"
+        }
+      ]
+    },
+    {
+      "name": "cinematic",
+      "values": [
+        {
+          "id": "Motion.duration.cinematic",
+          "value": "900ms"
+        },
+        {
+          "id": "VisualSystemV2.personality.cinematic",
+          "value": "cinematic"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "values": [
+        {
+          "id": "Mode/Dark.surface.page",
+          "value": "#0B0B0B"
+        },
+        {
+          "id": "Mode/Light.surface.page",
+          "value": "#F7F4EC"
+        }
+      ]
+    },
+    {
+      "name": "raised",
+      "values": [
+        {
+          "id": "Mode/Dark.surface.raised",
+          "value": "#151515"
+        },
+        {
+          "id": "Mode/Light.surface.raised",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "panel",
+      "values": [
+        {
+          "id": "Mode/Dark.surface.panel",
+          "value": "#1B1B1B"
+        },
+        {
+          "id": "Mode/Light.surface.panel",
+          "value": "#EEEAE0"
+        }
+      ]
+    },
+    {
+      "name": "overlay",
+      "values": [
+        {
+          "id": "Mode/Dark.surface.overlay",
+          "value": "#242424"
+        },
+        {
+          "id": "Mode/Light.surface.overlay",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "primary",
+      "values": [
+        {
+          "id": "Mode/Dark.text.primary",
+          "value": "#F7F4EC"
+        },
+        {
+          "id": "Mode/Light.text.primary",
+          "value": "#0B0B0B"
+        }
+      ]
+    },
+    {
+      "name": "secondary",
+      "values": [
+        {
+          "id": "Mode/Dark.text.secondary",
+          "value": "#A3A3A3"
+        },
+        {
+          "id": "Mode/Light.text.secondary",
+          "value": "#4A4A4A"
+        }
+      ]
+    },
+    {
+      "name": "muted",
+      "values": [
+        {
+          "id": "Mode/Dark.text.muted",
+          "value": "#666666"
+        },
+        {
+          "id": "Mode/Light.text.muted",
+          "value": "#737373"
+        }
+      ]
+    },
+    {
+      "name": "inverse",
+      "values": [
+        {
+          "id": "Mode/Dark.text.inverse",
+          "value": "#0B0B0B"
+        },
+        {
+          "id": "Mode/Light.text.inverse",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "default",
+      "values": [
+        {
+          "id": "Mode/Dark.border.default",
+          "value": "#2E2E2E"
+        },
+        {
+          "id": "Mode/Light.border.default",
+          "value": "#D9D6CE"
+        }
+      ]
+    },
+    {
+      "name": "editorial",
+      "values": [
+        {
+          "id": "VisualSystemV2.density.editorial",
+          "value": "16/24/32/48/64/80"
+        },
+        {
+          "id": "VisualSystemV2.personality.editorial",
+          "value": "editorial"
+        }
+      ]
+    }
+  ],
+  "sameValueAliasGroups": [
+    {
+      "value": "#EEEAE0",
+      "ids": [
+        "Global.color.neutral.100",
+        "Mode/Light.surface.panel"
+      ]
+    },
+    {
+      "value": "#D9D6CE",
+      "ids": [
+        "Global.color.neutral.200",
+        "Mode/Light.border.default"
+      ]
+    },
+    {
+      "value": "#A3A3A3",
+      "ids": [
+        "Global.color.neutral.400",
+        "Mode/Dark.text.secondary"
+      ]
+    },
+    {
+      "value": "#666666",
+      "ids": [
+        "Global.color.neutral.600",
+        "Mode/Dark.text.muted"
+      ]
+    },
+    {
+      "value": "#4A4A4A",
+      "ids": [
+        "Global.color.neutral.700",
+        "Mode/Dark.border.strong",
+        "Mode/Light.text.secondary"
+      ]
+    },
+    {
+      "value": "#242424",
+      "ids": [
+        "Global.color.neutral.800",
+        "Mode/Dark.surface.overlay"
+      ]
+    },
+    {
+      "value": "#151515",
+      "ids": [
+        "Global.color.neutral.900",
+        "Mode/Dark.surface.raised"
+      ]
+    },
+    {
+      "value": "#0B0B0B",
+      "ids": [
+        "Global.color.neutral.950",
+        "Mode/Dark.surface.page",
+        "Mode/Dark.text.inverse",
+        "Mode/Light.text.primary",
+        "Mode/Light.focus"
+      ]
+    },
+    {
+      "value": "#FFFFFF",
+      "ids": [
+        "Global.color.neutral.000",
+        "Mode/Light.surface.raised",
+        "Mode/Light.surface.overlay",
+        "Mode/Light.text.inverse"
+      ]
+    },
+    {
+      "value": "#F7F4EC",
+      "ids": [
+        "Global.color.neutral.050",
+        "Mode/Dark.text.primary",
+        "Mode/Dark.focus",
+        "Mode/Light.surface.page"
+      ]
+    },
+    {
+      "value": "#D1132A",
+      "ids": [
+        "Global.color.brand.crimson",
+        "Semantic/Status.contested",
+        "Domain/AWS.boundary",
+        "VisualSystemV2.paletteRoles.brand-crimson"
+      ]
+    },
+    {
+      "value": "#9F1022",
+      "ids": [
+        "Global.color.brand.crimson-dark",
+        "VisualSystemV2.paletteRoles.signal-crimson"
+      ]
+    },
+    {
+      "value": "4px",
+      "ids": [
+        "Global.space.4",
+        "Global.radius.sm"
+      ]
+    },
+    {
+      "value": "8px",
+      "ids": [
+        "Global.space.8",
+        "Global.radius.md"
+      ]
+    },
+    {
+      "value": "12px",
+      "ids": [
+        "Global.space.12",
+        "Global.radius.lg",
+        "Typography.size.caption"
+      ]
+    },
+    {
+      "value": "16px",
+      "ids": [
+        "Global.space.16",
+        "Typography.size.body",
+        "Layout.grid.mobile-gutter"
+      ]
+    },
+    {
+      "value": "24px",
+      "ids": [
+        "Global.space.24",
+        "Typography.size.title-sm",
+        "Layout.grid.desktop-gutter"
+      ]
+    },
+    {
+      "value": "32px",
+      "ids": [
+        "Global.space.32",
+        "Global.size.control-sm",
+        "Typography.size.title"
+      ]
+    },
+    {
+      "value": "40px",
+      "ids": [
+        "Global.space.40",
+        "Global.size.control-md"
+      ]
+    },
+    {
+      "value": "48px",
+      "ids": [
+        "Global.space.48",
+        "Global.size.control-lg",
+        "Typography.size.headline"
+      ]
+    },
+    {
+      "value": "64px",
+      "ids": [
+        "Global.space.64",
+        "Typography.size.display-sm"
+      ]
+    },
+    {
+      "value": "96px",
+      "ids": [
+        "Global.space.96",
+        "Typography.size.display"
+      ]
+    },
+    {
+      "value": "128px",
+      "ids": [
+        "Global.space.128",
+        "Typography.size.display-xl"
+      ]
+    },
+    {
+      "value": "2px",
+      "ids": [
+        "Global.radius.xs",
+        "Global.stroke.strong"
+      ]
+    },
+    {
+      "value": "#C46C17",
+      "ids": [
+        "Semantic/Status.restricted",
+        "Domain/AWS.warning"
+      ]
+    },
+    {
+      "value": "#B20F23",
+      "ids": [
+        "Semantic/Status.prohibited",
+        "VisualSystemV2.paletteRoles.critical-crimson"
+      ]
+    },
+    {
+      "value": "#3B82F6",
+      "ids": [
+        "Semantic/Status.info",
+        "Domain/RGBL.blue"
+      ]
+    }
+  ],
+  "canonicalSemanticIds": [
+    "semantic.brand.crimson",
+    "semantic.critical.crimson",
+    "semantic.legal.boundary",
+    "semantic.signal.crimson",
+    "semantic.status.info",
+    "semantic.status.partial",
+    "semantic.status.prohibited",
+    "semantic.status.restricted",
+    "semantic.status.supported",
+    "semantic.status.unresolved",
+    "semantic.status.verified"
+  ],
+  "presentationAliasIds": [
+    "presentation.brand.crimsonUi.dark",
+    "presentation.brand.crimsonUi.light",
+    "presentation.signal.intervention.dark",
+    "presentation.status.critical",
+    "presentation.status.info",
+    "presentation.status.partial",
+    "presentation.status.verified"
+  ]
+}

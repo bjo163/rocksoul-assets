@@ -10,6 +10,10 @@ on:
       - "tools/assets/**"
       - "tools/docs/**"
       - "tools/generation/**"
+      - "tools/governance/**"
+      - "tools/contracts/**"
+      - "tools/release/**"
+      - "schemas/**"
       - "dist/**"
       - "showcase/**"
       - "docs/**"
@@ -24,6 +28,10 @@ on:
       - "tools/assets/**"
       - "tools/docs/**"
       - "tools/generation/**"
+      - "tools/governance/**"
+      - "tools/contracts/**"
+      - "tools/release/**"
+      - "schemas/**"
       - "dist/**"
       - "showcase/**"
       - "docs/**"
@@ -69,6 +77,14 @@ jobs:
         run: |
           node tools/assets/generate-visual-system-v2-audit.mjs --check
           node tools/assets/validate-visual-system.mjs
+      - name: Validate visual governance freshness
+        run: |
+          python tools/governance/generate_governance.py --check
+          node tools/contracts/validate-schemas.mjs
+          node tools/contracts/validate-design-contract.mjs
+          node tools/governance/validate-negative-fixtures.mjs
+          node tools/governance/validate-visual-debt.mjs
+          node tools/governance/validate-governance.mjs
       - name: Validate semantic primitive contract
         run: node tools/assets/validate-primitives.mjs
       - name: Validate documentation state

@@ -1,0 +1,72 @@
+{
+  "contractId": "contracts.semantic-ids.v1",
+  "schemaVersion": 1,
+  "namespaces": {
+    "token": [
+      "semantic.brand.crimson",
+      "semantic.signal.crimson",
+      "semantic.critical.crimson",
+      "semantic.legal.boundary",
+      "semantic.status.supported",
+      "semantic.status.verified",
+      "semantic.status.partial",
+      "semantic.status.unresolved",
+      "semantic.status.restricted",
+      "semantic.status.prohibited",
+      "semantic.status.info"
+    ],
+    "graphNode": [
+      "graph.node.canonical-record",
+      "graph.node.evidence",
+      "graph.node.source",
+      "graph.node.person",
+      "graph.node.event",
+      "graph.node.story",
+      "graph.node.rgbl-text",
+      "graph.node.legal-state",
+      "graph.node.external-reference",
+      "graph.node.unresolved-record",
+      "graph.node.inferred-candidate-record",
+      "graph.node.missing-record",
+      "graph.node.system-provider-resource"
+    ],
+    "graphEdge": [
+      "graph.edge.supports",
+      "graph.edge.contradicts",
+      "graph.edge.references",
+      "graph.edge.temporal",
+      "graph.edge.identity",
+      "graph.edge.legal",
+      "graph.edge.provenance",
+      "graph.edge.dependency",
+      "graph.edge.routes-to",
+      "graph.edge.unresolved-candidate"
+    ],
+    "lifecycle": [
+      "lifecycle.canonical",
+      "lifecycle.active",
+      "lifecycle.legacy",
+      "lifecycle.frozen-reference",
+      "lifecycle.deprecated",
+      "lifecycle.experimental"
+    ],
+    "personality": [
+      "surface.operator",
+      "surface.forensic",
+      "surface.editorial",
+      "surface.archive",
+      "surface.cinematic",
+      "surface.community"
+    ],
+    "density": [
+      "density.compact",
+      "density.comfortable",
+      "density.editorial"
+    ]
+  },
+  "policy": {
+    "immutableReleasedIds": true,
+    "renameViaAliasOrDeprecation": true,
+    "duplicateMeaningForbidden": true
+  }
+}
