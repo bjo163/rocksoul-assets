@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ROCKSOUL Visual System 2.0 — evidence-correlation</title>
+<style>body{font:14px/1.45 system-ui,sans-serif;margin:0;background:#151515;color:#f7f4ec}main{padding:24px}h1{margin:0 0 8px}p{color:#a3a3a3}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.card{border:1px solid #4a4a4a;border-radius:8px;overflow:hidden;background:#242424}.card header{padding:10px 12px;display:grid;gap:4px}.card code{font-size:10px;overflow-wrap:anywhere;color:#d9d6ce}.previews{display:grid;grid-template-columns:1fr 1fr;min-height:140px}.preview{display:grid;place-items:center;padding:12px}.preview img{max-width:100%;max-height:160px}.light{background:#f7f4ec}.dark{background:#0b0b0b}@media(max-width:600px){.previews{grid-template-columns:1fr}}</style></head>
+<body><main><h1>ROCKSOUL Visual System 2.0 — evidence-correlation</h1><p id="summary">Loading canonical registry…</p><section class="grid" id="grid"></section></main>
+<script>
+const selectedCategory="evidence-correlation";
+const categoryFor=(packId,file)=>{
+  if(packId==="semantic-primitives"||file.includes("/primitives/"))return"primitives";
+  if(packId==="product-icons")return"product-icons";
+  if(["graph-vector","data-viz","architecture-diagram"].includes(packId))return"graph-data-viz";
+  if(packId==="dashboard")return"dashboard-widgets";
+  if(["evidence-media","correlation-semantics","evidence-integrity","privacy-redaction","export-seal"].includes(packId))return"evidence-correlation";
+  if(["editorial","document-report","source-file"].includes(packId))return"editorial-document";
+  if(["cinematic-hero","hero-backgrounds"].includes(packId))return"cinematic-heroes";
+  if(["motion","runtime-motion"].includes(packId))return"motion-first-frames";
+  if(["rocksoul-character","persona-avatar"].includes(packId))return"rocksoul-character-persona";
+  return"other";
+};
+const esc=(v)=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const collectSvg=(value,out)=>{
+  if(typeof value==="string"&&value.endsWith(".svg"))out.add(value);
+  else if(Array.isArray(value))for(const item of value)collectSvg(item,out);
+  else if(value&&typeof value==="object")for(const item of Object.values(value))collectSvg(item,out);
+};
+fetch("../../../dist/assets.json").then(r=>r.json()).then(registry=>{
+  const items=[];
+  for(const source of [registry.packs??{},registry.collections??{}]){
+    for(const [packId,data] of Object.entries(source)){
+      const files=new Set(); collectSvg(data,files);
+      for(const file of files)items.push({packId,file,category:categoryFor(packId,file)});
+    }
+  }
+  const unique=[...new Map(items.map(x=>[x.file,x])).values()].sort((a,b)=>a.file.localeCompare(b.file));
+  const filtered=selectedCategory?unique.filter(x=>x.category===selectedCategory):unique;
+  document.getElementById("summary").textContent=filtered.length+" canonical SVG assets from dist/assets.json. Every asset is shown on light and dark surfaces.";
+  document.getElementById("grid").innerHTML=filtered.map(item=>{
+    const src="../../../"+item.file;
+    return '<article class="card"><header><strong>'+esc(item.packId)+'</strong><code>'+esc(item.file)+'</code></header><div class="previews"><div class="preview light"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(item.file)+' on light background"></div><div class="preview dark"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(item.file)+' on dark background"></div></div></article>';
+  }).join("");
+});
+</script></body></html>

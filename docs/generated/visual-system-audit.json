@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "tools/assets/generate-visual-system-v2-audit.mjs",
+  "generatedForVersion": "1.5.2",
+  "canonicalPackFamilies": 44,
+  "canonicalSvgFiles": 621,
+  "counts": {
+    "uniqueFontFamilyDeclarations": 6,
+    "uniqueFixedPaletteColors": 69,
+    "uniqueCrimsonRedValues": 8,
+    "uniqueStrokeWidths": 19,
+    "uniqueRadiusValues": 35,
+    "graphGeometrySignatures": 46,
+    "themeAwareAssets": 60,
+    "fixedThemeAssets": 561,
+    "filesWithText": 476,
+    "filesWithEmbeddedRaster": 0,
+    "exactDuplicateCandidateGroups": 0,
+    "structuralNearDuplicateCandidateGroups": 1,
+    "productionPrimitiveViolations": 0
+  },
+  "fontFamilies": [
+    {
+      "value": "Inter,Arial",
+      "count": 965,
+      "files": [
+        "moonwitness/ai-workspace-pack/svg/agent-chip.svg",
+        "moonwitness/ai-workspace-pack/svg/ai-complete.svg",
+        "moonwitness/ai-workspace-pack/svg/ai-error.svg",
+        "moonwitness/ai-workspace-pack/svg/ai-idle.svg",
+        "moonwitness/ai-workspace-pack/svg/ai-streaming.svg",
+        "moonwitness/ai-workspace-pack/svg/ai-thinking.svg",
+        "moonwitness/ai-workspace-pack/svg/confidence-chip.svg",
+        "moonwitness/ai-workspace-pack/svg/context-chip.svg",
+        "moonwitness/ai-workspace-pack/svg/guardrail.svg",
+        "moonwitness/ai-workspace-pack/svg/human-review.svg"
+      ]
+    },
+    {
+      "value": "Inter,Arial,sans-serif",
+      "count": 429,
+      "files": [
+        "moonwitness/ui/v2/17-dashboard.svg",
+        "moonwitness/ui/v2/18-command-palette.svg",
+        "moonwitness/ui/v2/19-notifications.svg",
+        "moonwitness/ui/v2/20-kanban.svg",
+        "moonwitness/ui/v2/21-calendar.svg",
+        "moonwitness/ui/v2/22-chat.svg",
+        "moonwitness/ui/v2/23-ai-workspace.svg",
+        "moonwitness/ui/v2/24-resources.svg",
+        "moonwitness/ui/v2/25-profile-settings.svg",
+        "moonwitness/ui/v2/26-authorization.svg"
+      ]
+    },
+    {
+      "value": "IBM Plex Mono,monospace",
+      "count": 323,
+      "files": [
+        "moonwitness/dashboard-pack/widgets/ai-summary.svg",
+        "moonwitness/dashboard-pack/widgets/audit-log.svg",
+        "moonwitness/dashboard-pack/widgets/backend-status.svg",
+        "moonwitness/dashboard-pack/widgets/bar-chart.svg",
+        "moonwitness/dashboard-pack/widgets/case-progress.svg",
+        "moonwitness/dashboard-pack/widgets/correlation-insight.svg",
+        "moonwitness/dashboard-pack/widgets/donut-chart.svg",
+        "moonwitness/dashboard-pack/widgets/empty-widget.svg",
+        "moonwitness/dashboard-pack/widgets/evidence-timeline.svg",
+        "moonwitness/dashboard-pack/widgets/kpi-stat.svg"
+      ]
+    },
+    {
+      "value": "Georgia,serif",
+      "count": 43,
+      "files": [
+        "moonwitness/cinematic-hero-pack/svg/archive-room.svg",
+        "moonwitness/cinematic-hero-pack/svg/community-lab.svg",
+        "moonwitness/cinematic-hero-pack/svg/correlation-sky.svg",
+        "moonwitness/cinematic-hero-pack/svg/data-observatory.svg",
+        "moonwitness/cinematic-hero-pack/svg/evidence-desk.svg",
+        "moonwitness/cinematic-hero-pack/svg/field-investigation.svg",
+        "moonwitness/cinematic-hero-pack/svg/legal-archive.svg",
+        "moonwitness/cinematic-hero-pack/svg/lunar-horizon.svg",
+        "moonwitness/cinematic-hero-pack/svg/map-room.svg",
+        "moonwitness/cinematic-hero-pack/svg/observatory-night.svg"
+      ]
+    },
+    {
+      "value": "Inter Tight,Inter,Arial,sans-serif",
+      "count": 26,
+      "files": [
+        "moonwitness/ui/v2/17-dashboard.svg",
+        "moonwitness/ui/v2/18-command-palette.svg",
+        "moonwitness/ui/v2/19-notifications.svg",
+        "moonwitness/ui/v2/20-kanban.svg",
+        "moonwitness/ui/v2/21-calendar.svg",
+        "moonwitness/ui/v2/22-chat.svg",
+        "moonwitness/ui/v2/23-ai-workspace.svg",
+        "moonwitness/ui/v2/24-resources.svg",
+        "moonwitness/ui/v2/25-profile-settings.svg",
+        "moonwitness/ui/v2/26-authorization.svg"
+      ]
+    },
+    {
+      "value": "Arial",
+      "count": 13,
+      "files": [
+        "moonwitness/badge-pack/svg/archived.svg",
+        "moonwitness/badge-pack/svg/blocked.svg",
+        "moonwitness/badge-pack/svg/degraded.svg",
+        "moonwitness/badge-pack/svg/disputed.svg",
+        "moonwitness/badge-pack/svg/legal-review.svg",
+        "moonwitness/badge-pack/svg/needs-context.svg",
+        "moonwitness/badge-pack/svg/offline.svg",
+        "moonwitness/badge-pack/svg/partial.svg",
+        "moonwitness/badge-pack/svg/source-linked.svg",
+        "moonwitness/badge-pack/svg/supported.svg"
+      ]
+    }
+  ],
+  "paletteColors": [
+    {
+      "value": "#F7F4EC",
+      "count": 2347
+    },
+    {
+      "value": "#A3A3A3",
+      "count": 970
+    },
+    {
+      "value": "#0B0B0B",
+      "count": 838
+    },
+    {
+      "value": "#151515",
+      "count": 674
+    },
+    {
+      "value": "#2E2E2E",
+      "count": 470
+    },
+    {
+      "value": "#303030",
+      "count": 445
+    },
+    {
+      "value": "#FF2A3D",
+      "count": 441
+    },
+    {
+      "value": "#D1132A",
+      "count": 267
+    },
+    {
+      "value": "#1B1B1B",
+      "count": 251
+    },
+    {
+      "value": "#3B82F6",
+      "count": 227
+    },
+    {
+      "value": "#21D1C2",
+      "count": 222
+    },
+    {
+      "value": "#10B981",
+      "count": 173
+    },
+    {
+      "value": "#F59E0B",
+      "count": 111
+    },
+    {
+      "value": "#9CA3AF",
+      "count": 97
+    },
+    {
+      "value": "#D4A15A",
+      "count": 95
+    },
+    {
+      "value": "#8B5CF6",
+      "count": 55
+    },
+    {
+      "value": "#F7F4EC22",
+      "count": 51
+    },
+    {
+      "value": "#9CA3AF22",
+      "count": 50
+    },
+    {
+      "value": "#666666",
+      "count": 49
+    },
+    {
+      "value": "#FF2A3D22",
+      "count": 41
+    },
+    {
+      "value": "#D89B17",
+      "count": 39
+    },
+    {
+      "value": "#D4A15A22",
+      "count": 27
+    },
+    {
+      "value": "#16A36A",
+      "count": 17
+    },
+    {
+      "value": "#10B98122",
+      "count": 14
+    },
+    {
+      "value": "#FFAADDEE",
+      "count": 13
+    },
+    {
+      "value": "#F59E0B22",
+      "count": 10
+    },
+    {
+      "value": "#14B8A6",
+      "count": 9
+    },
+    {
+      "value": "#080909",
+      "count": 8
+    },
+    {
+      "value": "#767676",
+      "count": 8
+    },
+    {
+      "value": "#21D1C222",
+      "count": 7
+    },
+    {
+      "value": "#8B5CF620",
+      "count": 7
+    },
+    {
+      "value": "#8B5CF630",
+      "count": 7
+    },
+    {
+      "value": "#3B82F622",
+      "count": 5
+    },
+    {
+      "value": "#10B98114",
+      "count": 4
+    },
+    {
+      "value": "#3B82F618",
+      "count": 4
+    },
+    {
+      "value": "#FF2A3D14",
+      "count": 4
+    },
+    {
+      "value": "#FFFFFF",
+      "count": 4
+    },
+    {
+      "value": "#4A4A4A",
+      "count": 3
+    },
+    {
+      "value": "#10B98118",
+      "count": 2
+    },
+    {
+      "value": "#111111",
+      "count": 2
+    },
+    {
+      "value": "#21D1C212",
+      "count": 2
+    },
+    {
+      "value": "#8B5CF612",
+      "count": 2
+    },
+    {
+      "value": "#8B5CF622",
+      "count": 2
+    },
+    {
+      "value": "#D4A15A12",
+      "count": 2
+    },
+    {
+      "value": "#D4A15A18",
+      "count": 2
+    },
+    {
+      "value": "#F59E0B18",
+      "count": 2
+    },
+    {
+      "value": "#FF2A3D18",
+      "count": 2
+    },
+    {
+      "value": "#000000",
+      "count": 1
+    },
+    {
+      "value": "#10B98110",
+      "count": 1
+    },
+    {
+      "value": "#21D1C214",
+      "count": 1
+    },
+    {
+      "value": "#21D1C218",
+      "count": 1
+    },
+    {
+      "value": "#3B82F612",
+      "count": 1
+    },
+    {
+      "value": "#3B82F614",
+      "count": 1
+    },
+    {
+      "value": "#3B82F616",
+      "count": 1
+    },
+    {
+      "value": "#3B82F620",
+      "count": 1
+    },
+    {
+      "value": "#3B82F628",
+      "count": 1
+    },
+    {
+      "value": "#8B5CF610",
+      "count": 1
+    },
+    {
+      "value": "#8B5CF618",
+      "count": 1
+    },
+    {
+      "value": "#9CA3AF14",
+      "count": 1
+    },
+    {
+      "value": "#9CA3AF18",
+      "count": 1
+    },
+    {
+      "value": "#F59E0B12",
+      "count": 1
+    },
+    {
+      "value": "#F59E0B14",
+      "count": 1
+    },
+    {
+      "value": "#F59E0B16",
+      "count": 1
+    },
+    {
+      "value": "#F7F4EC12",
+      "count": 1
+    },
+    {
+      "value": "#F7F4EC14",
+      "count": 1
+    },
+    {
+      "value": "#F7F4EC18",
+      "count": 1
+    },
+    {
+      "value": "#FF2A3D10",
+      "count": 1
+    },
+    {
+      "value": "#FF2A3D12",
+      "count": 1
+    },
+    {
+      "value": "#FF2A3D16",
+      "count": 1
+    }
+  ],
+  "crimsonRedValues": [
+    {
+      "value": "#FF2A3D",
+      "count": 441,
+      "files": [
+        "moonwitness/ai-workspace-pack/svg/ai-error.svg",
+        "moonwitness/ai-workspace-pack/svg/guardrail.svg",
+        "moonwitness/ai-workspace-pack/svg/tool-failure.svg",
+        "moonwitness/architecture-diagram-pack/svg/arrow-error.svg",
+        "moonwitness/architecture-diagram-pack/svg/boundary-box.svg",
+        "moonwitness/architecture-diagram-pack/svg/decision-node.svg",
+        "moonwitness/badge-pack/svg/blocked.svg",
+        "moonwitness/badge-pack/svg/disputed.svg",
+        "moonwitness/badge-pack/svg/legal-review.svg",
+        "moonwitness/calendar-pack/svg/conflict.svg"
+      ]
+    },
+    {
+      "value": "#D1132A",
+      "count": 267,
+      "files": [
+        "moonwitness/community-participation-pack/svg/moderation-history.svg",
+        "moonwitness/community-participation-pack/svg/notification.svg",
+        "moonwitness/community-participation-pack/svg/proposal-review.svg",
+        "moonwitness/community-participation-pack/svg/saved-case.svg",
+        "moonwitness/dashboard-pack/widgets/ai-summary.svg",
+        "moonwitness/dashboard-pack/widgets/audit-log.svg",
+        "moonwitness/dashboard-pack/widgets/backend-status.svg",
+        "moonwitness/dashboard-pack/widgets/bar-chart.svg",
+        "moonwitness/dashboard-pack/widgets/case-progress.svg",
+        "moonwitness/dashboard-pack/widgets/correlation-insight.svg"
+      ]
+    },
+    {
+      "value": "#FF2A3D22",
+      "count": 41,
+      "files": [
+        "moonwitness/ai-workspace-pack/svg/ai-error.svg",
+        "moonwitness/ai-workspace-pack/svg/guardrail.svg",
+        "moonwitness/ai-workspace-pack/svg/tool-failure.svg",
+        "moonwitness/evidence-media-pack/svg/disputed-region.svg",
+        "moonwitness/integrity-pack/svg/checksum-fail.svg",
+        "moonwitness/integrity-pack/svg/provenance-broken.svg",
+        "moonwitness/integrity-pack/svg/tamper-alert.svg",
+        "moonwitness/jurisdiction-locale-pack/svg/cross-border-transfer.svg",
+        "moonwitness/jurisdiction-locale-pack/svg/legal-basis.svg",
+        "moonwitness/kanban-pack/svg/blocker-chip.svg"
+      ]
+    },
+    {
+      "value": "#FF2A3D14",
+      "count": 4,
+      "files": [
+        "moonwitness/security-pack/svg/access-rejected.svg",
+        "moonwitness/security-pack/svg/device-untrusted.svg",
+        "moonwitness/security-pack/svg/permission-denied.svg",
+        "moonwitness/security-pack/svg/security-alert.svg"
+      ]
+    },
+    {
+      "value": "#FF2A3D18",
+      "count": 2,
+      "files": [
+        "moonwitness/chat-pack/svg/message-system.svg",
+        "moonwitness/chat-pack/svg/unread-divider.svg"
+      ]
+    },
+    {
+      "value": "#FF2A3D10",
+      "count": 1,
+      "files": [
+        "moonwitness/architecture-diagram-pack/svg/boundary-box.svg"
+      ]
+    },
+    {
+      "value": "#FF2A3D12",
+      "count": 1,
+      "files": [
+        "moonwitness/jurisdiction-locale-pack/svg/jurisdiction-disputed.svg"
+      ]
+    },
+    {
+      "value": "#FF2A3D16",
+      "count": 1,
+      "files": [
+        "moonwitness/security-pack/svg/role-admin.svg"
+      ]
+    }
+  ],
+  "strokeWidths": [
+    {
+      "value": "0",
+      "count": 401
+    },
+    {
+      "value": "4",
+      "count": 352
+    },
+    {
+      "value": "3",
+      "count": 229
+    },
+    {
+      "value": "5",
+      "count": 117
+    },
+    {
+      "value": "2",
+      "count": 111
+    },
+    {
+      "value": "1",
+      "count": 108
+    },
+    {
+      "value": "1.75",
+      "count": 60
+    },
+    {
+      "value": "7",
+      "count": 41
+    },
+    {
+      "value": "6",
+      "count": 40
+    },
+    {
+      "value": "8",
+      "count": 38
+    },
+    {
+      "value": "10",
+      "count": 11
+    },
+    {
+      "value": "12",
+      "count": 6
+    },
+    {
+      "value": "9",
+      "count": 5
+    },
+    {
+      "value": "26",
+      "count": 4
+    },
+    {
+      "value": "34",
+      "count": 4
+    },
+    {
+      "value": "44",
+      "count": 4
+    },
+    {
+      "value": "30",
+      "count": 2
+    },
+    {
+      "value": "1.5",
+      "count": 1
+    },
+    {
+      "value": "11",
+      "count": 1
+    }
+  ],
+  "radiusValues": [
+    {
+      "value": "18",
+      "count": 313
+    },
+    {
+      "value": "13.2",
+      "count": 300
+    },
+    {
+      "value": "8",
+      "count": 246
+    },
+    {
+      "value": "12",
+      "count": 110
+    },
+    {
+      "value": "10",
+      "count": 108
+    },
+    {
+      "value": "5",
+      "count": 81
+    },
+    {
+      "value": "2",
+      "count": 77
+    },
+    {
+      "value": "7",
+      "count": 44
+    },
+    {
+      "value": "0",
+      "count": 39
+    },
+    {
+      "value": "16",
+      "count": 29
+    },
+    {
+      "value": "4",
+      "count": 27
+    },
+    {
+      "value": "14",
+      "count": 25
+    },
+    {
+      "value": "6",
+      "count": 23
+    },
+    {
+      "value": "3",
+      "count": 17
+    },
+    {
+      "value": "31",
+      "count": 16
+    },
+    {
+      "value": "15",
+      "count": 13
+    },
+    {
+      "value": "14.399999999999999",
+      "count": 12
+    },
+    {
+      "value": "15.36",
+      "count": 12
+    },
+    {
+      "value": "40.5",
+      "count": 12
+    },
+    {
+      "value": "24",
+      "count": 10
+    },
+    {
+      "value": "128",
+      "count": 9
+    },
+    {
+      "value": "22",
+      "count": 8
+    },
+    {
+      "value": "32",
+      "count": 6
+    },
+    {
+      "value": "20",
+      "count": 5
+    },
+    {
+      "value": "42",
+      "count": 4
+    },
+    {
+      "value": "1",
+      "count": 3
+    },
+    {
+      "value": "28",
+      "count": 3
+    },
+    {
+      "value": "13",
+      "count": 2
+    },
+    {
+      "value": "9",
+      "count": 2
+    },
+    {
+      "value": "110",
+      "count": 1
+    },
+    {
+      "value": "160",
+      "count": 1
+    },
+    {
+      "value": "17",
+      "count": 1
+    },
+    {
+      "value": "170",
+      "count": 1
+    },
+    {
+      "value": "58",
+      "count": 1
+    },
+    {
+      "value": "78",
+      "count": 1
+    }
+  ],
+  "graphGeometrySignatures": [
+    {
+      "value": "circle:2|ellipse:0|rect:2|polygon:0|polyline:0|line:1|path:1",
+      "count": 14,
+      "files": [
+        "moonwitness/correlation-semantics-pack/svg/edge-contradicts.svg",
+        "moonwitness/correlation-semantics-pack/svg/edge-derived-from.svg",
+        "moonwitness/correlation-semantics-pack/svg/edge-inferred.svg"
+      ]
+    },
+    {
+      "value": "circle:2|ellipse:0|rect:2|polygon:0|polyline:0|line:0|path:0",
+      "count": 10,
+      "files": [
+        "moonwitness/correlation-semantics-pack/svg/node-case.svg",
+        "moonwitness/correlation-semantics-pack/svg/node-claim.svg",
+        "moonwitness/correlation-semantics-pack/svg/node-event.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:3|polygon:0|polyline:0|line:0|path:0",
+      "count": 8,
+      "files": [
+        "moonwitness/architecture-diagram-pack/svg/api-node.svg",
+        "moonwitness/architecture-diagram-pack/svg/decision-node.svg",
+        "moonwitness/architecture-diagram-pack/svg/external-node.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:2|polygon:0|polyline:0|line:1|path:1",
+      "count": 4,
+      "files": [
+        "moonwitness/architecture-diagram-pack/svg/arrow-dashed.svg",
+        "moonwitness/architecture-diagram-pack/svg/arrow-error.svg",
+        "moonwitness/architecture-diagram-pack/svg/arrow-event.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:5|polygon:0|polyline:0|line:0|path:0",
+      "count": 4,
+      "files": [
+        "moonwitness/architecture-diagram-pack/svg/boundary-box.svg",
+        "moonwitness/architecture-diagram-pack/svg/system-cluster.svg",
+        "moonwitness/architecture-diagram-pack/svg/trust-zone.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:1",
+      "count": 2,
+      "files": [
+        "moonwitness/data-viz/charts/activity-sparkline.svg",
+        "moonwitness/semantic-primitives-pack/svg/event-node.svg"
+      ]
+    },
+    {
+      "value": "circle:5|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:1",
+      "count": 2,
+      "files": [
+        "moonwitness/data-viz/charts/evidence-timeline.svg",
+        "moonwitness/data-viz/charts/provenance-chain.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:0|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/semantic-primitives-pack/svg/law-node.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:6",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/edge-styles.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:10|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/bar-chart.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:10|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/event-topology.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:13|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/repository-health.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:17|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/stacked-bar-chart.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:2|polygon:0|polyline:0|line:0|path:2",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/area-chart.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:3|polygon:0|polyline:0|line:1|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/architecture-diagram-pack/svg/sequence-lifeline.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:6|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/historicity-band.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:6|polygon:0|polyline:0|line:0|path:4",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/kpi-cards.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:7|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/event-frequency.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:0|rect:74|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/heat-strip.svg"
+      ]
+    },
+    {
+      "value": "circle:0|ellipse:1|rect:2|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/architecture-diagram-pack/svg/database-node.svg"
+      ]
+    },
+    {
+      "value": "circle:1|ellipse:0|rect:0|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/semantic-primitives-pack/svg/person-node.svg"
+      ]
+    },
+    {
+      "value": "circle:1|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:2",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/confidence-trend.svg"
+      ]
+    },
+    {
+      "value": "circle:1|ellipse:0|rect:3|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/annotation-tools.svg"
+      ]
+    },
+    {
+      "value": "circle:1|ellipse:0|rect:4|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/place-material-context.svg"
+      ]
+    },
+    {
+      "value": "circle:1|ellipse:0|rect:5|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/cross-domain-relations.svg"
+      ]
+    },
+    {
+      "value": "circle:10|ellipse:0|rect:2|polygon:0|polyline:0|line:5|path:2",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/line-chart.svg"
+      ]
+    },
+    {
+      "value": "circle:12|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/geographic-heatmap.svg"
+      ]
+    },
+    {
+      "value": "circle:14|ellipse:0|rect:2|polygon:0|polyline:0|line:8|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/correlation-network.svg"
+      ]
+    },
+    {
+      "value": "circle:2|ellipse:0|rect:0|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/icons/svg/domain/correlation.svg"
+      ]
+    },
+    {
+      "value": "circle:2|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/status-ring.svg"
+      ]
+    },
+    {
+      "value": "circle:2|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/motion/svg/correlation-edge-draw.svg"
+      ]
+    },
+    {
+      "value": "circle:2|ellipse:0|rect:1|polygon:0|polyline:0|line:1|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/runtime-motion-pack/svg/graph-connect.svg"
+      ]
+    },
+    {
+      "value": "circle:27|ellipse:0|rect:3|polygon:0|polyline:0|line:2|path:2",
+      "count": 1,
+      "files": [
+        "moonwitness/cinematic-hero-pack/svg/correlation-sky.svg"
+      ]
+    },
+    {
+      "value": "circle:3|ellipse:0|rect:0|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/icons/svg/domain/graph-node.svg"
+      ]
+    },
+    {
+      "value": "circle:3|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/motion/svg/trace-node-pulse.svg"
+      ]
+    },
+    {
+      "value": "circle:4|ellipse:0|rect:0|polygon:0|polyline:0|line:0|path:1",
+      "count": 1,
+      "files": [
+        "moonwitness/semantic-primitives-pack/svg/graph-node.svg"
+      ]
+    },
+    {
+      "value": "circle:4|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/event-type-distribution.svg"
+      ]
+    },
+    {
+      "value": "circle:4|ellipse:0|rect:6|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/donut-chart.svg"
+      ]
+    },
+    {
+      "value": "circle:5|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:5",
+      "count": 1,
+      "files": [
+        "moonwitness/dashboard-pack/widgets/correlation-insight.svg"
+      ]
+    },
+    {
+      "value": "circle:6|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/graph-nodes.svg"
+      ]
+    },
+    {
+      "value": "circle:6|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:5",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/node-link-correlation.svg"
+      ]
+    },
+    {
+      "value": "circle:6|ellipse:0|rect:2|polygon:0|polyline:0|line:7|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/evidence-timeline.svg"
+      ]
+    },
+    {
+      "value": "circle:6|ellipse:0|rect:2|polygon:6|polyline:0|line:6|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/graph-pack/svg/radar-chart.svg"
+      ]
+    },
+    {
+      "value": "circle:8|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:2",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/evidence-matrix.svg"
+      ]
+    },
+    {
+      "value": "circle:81|ellipse:0|rect:1|polygon:0|polyline:0|line:0|path:22",
+      "count": 1,
+      "files": [
+        "moonwitness/hero-backgrounds/svg/correlation-web.svg"
+      ]
+    },
+    {
+      "value": "circle:9|ellipse:0|rect:2|polygon:0|polyline:0|line:0|path:0",
+      "count": 1,
+      "files": [
+        "moonwitness/data-viz/charts/legend-styles.svg"
+      ]
+    }
+  ],
+  "duplicateCandidates": {
+    "exact": [],
+    "structural": [
+      {
+        "signature": "21ef105ede0123dbef67003ef0e146f0d861f7dcdfbf6301b01ac0078f26bd88",
+        "count": 2,
+        "files": [
+          "moonwitness/cursor-pack/svg/crosshair.svg",
+          "moonwitness/geospatial-pack/svg/crosshair.svg"
+        ]
+      }
+    ]
+  },
+  "productionPrimitiveViolations": [],
+  "packClassifications": [
+    {
+      "id": "product-icons",
+      "assetKind": "primitive"
+    },
+    {
+      "id": "dashboard",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "data-viz",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "hero-backgrounds",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "state-illustrations",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "motion",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "application-screens",
+      "assetKind": "screen-reference"
+    },
+    {
+      "id": "sfx",
+      "assetKind": "non-visual"
+    },
+    {
+      "id": "graph-vector",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "badge-status",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "source-file",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "geospatial",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "cursor-interaction",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "persona-avatar",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "social-campaign",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "platform-delivery",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "onboarding",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "document-report",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "notification",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "editorial",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "evidence-media",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "correlation-semantics",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "kanban-workflow",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "calendar-temporal",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "chat-collaboration",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "ai-workspace",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "authorization-security",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "data-grid",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "form-controls",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "theme-accessibility",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "privacy-redaction",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "evidence-integrity",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "export-seal",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "rocksoul-character",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "command-keyboard",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "texture-material",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "architecture-diagram",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "device-mockup",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "jurisdiction-locale",
+      "assetKind": "specimen"
+    },
+    {
+      "id": "cinematic-hero",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "runtime-motion",
+      "assetKind": "illustration"
+    },
+    {
+      "id": "semantic-primitives",
+      "assetKind": "primitive"
+    },
+    {
+      "id": "developer-distribution",
+      "assetKind": "non-visual"
+    },
+    {
+      "id": "community-participation",
+      "assetKind": "specimen"
+    }
+  ],
+  "categories": {
+    "primitives": 16,
+    "product-icons": 44,
+    "graph-data-viz": 46,
+    "dashboard-widgets": 20,
+    "evidence-correlation": 92,
+    "editorial-document": 30,
+    "cinematic-heroes": 20,
+    "motion-first-frames": 24,
+    "rocksoul-character-persona": 21
+  }
+}

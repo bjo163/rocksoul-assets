@@ -8,6 +8,8 @@
     "validate:registry": "node tools/assets/validate-registry-integrity.mjs",
     "validate:generation": "node tools/generation/validate-freshness.mjs",
     "validate:todo": "node tools/todo/validate-evidence.mjs",
-    "validate:contract": "node scripts/validate-rocksoul-contract.mjs"
+    "validate:contract": "node scripts/validate-rocksoul-contract.mjs",
+    "audit:visual-v2": "node tools/assets/generate-visual-system-v2-audit.mjs --write",
+    "validate:visual-v2": "node tools/assets/validate-visual-system.mjs"
   }
 }

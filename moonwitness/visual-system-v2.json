@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "status": "foundation",
+  "tokenSource": "penpot/tokens/moonwitness.tokens.json",
+  "layers": {
+    "moonwitness": {
+      "role": "rigorous-system",
+      "character": ["observatory", "evidence", "provenance", "scientific-rigor", "archive", "research", "law", "verification", "structure"],
+      "defaultInterventionLevel": "none"
+    },
+    "rocksoul": {
+      "role": "human-intervention",
+      "character": ["annotation", "physical-media", "interruption", "editorial-energy", "character", "crimson-signal"],
+      "defaultInterventionLevel": "deliberate"
+    }
+  },
+  "typography": {
+    "roles": [
+      {"id":"display","family":"Inter Tight","fallbacks":["Inter","sans-serif"],"productionPrimitive":false},
+      {"id":"body","family":"Inter","fallbacks":["sans-serif"],"productionPrimitive":false},
+      {"id":"mono","family":"IBM Plex Mono","fallbacks":["monospace"],"productionPrimitive":false},
+      {"id":"archive-serif","family":"Georgia","fallbacks":["Times New Roman","serif"],"productionPrimitive":false,"allowedPersonalities":["archive","editorial","cinematic"],"allowedAssetKinds":["illustration","specimen","screen-reference"]}
+    ],
+    "primitiveTextPolicy": "forbidden",
+    "fontDependentArtworkPolicy": "manifest-role-or-convert-to-path"
+  },
+  "palette": {
+    "crimsonRoles": [
+      {"id":"brand-crimson","token":"Global.color.brand.crimson","value":"#D1132A","usage":"brand emphasis and legal boundary; never generic decoration"},
+      {"id":"signal-crimson","token":"Global.color.brand.crimson-dark","value":"#9F1022","usage":"ROCKSOUL intervention, annotation, and signal emphasis"},
+      {"id":"critical-crimson","token":"Semantic/Status.prohibited","value":"#B20F23","usage":"critical/prohibited state only"}
+    ],
+    "softCrimsonToken": {"token":"Global.color.brand.crimson-soft","value":"#F7DDE2","usage":"supporting tint only"},
+    "selectedStatePolicy": "selected/active UI must not rely on crimson unless the semantic state itself is crimson-coded"
+  },
+  "geometry": {
+    "strokeWidths": [1,2,3],
+    "radii": [0,2,4,8,12,999],
+    "rule": "production components use canonical token geometry; non-canonical values require specimen/reference classification"
+  },
+  "densityModes": {
+    "compact": {"spacingRhythm":[4,8,12,16],"target":"operator and high-density investigation surfaces"},
+    "comfortable": {"spacingRhythm":[8,12,16,24,32],"target":"default product and forensic surfaces"},
+    "editorial": {"spacingRhythm":[16,24,32,48,64,80],"target":"reading, archive, editorial and cinematic compositions"}
+  },
+  "surfacePersonalities": {
+    "operator": {"density":"compact","typography":"body+mono","panelGeometry":"orthogonal","radius":"xs-sm","border":"high-information","material":"clean","dataViz":"dense-neutral","graph":"compact-semantic","motion":"fast-functional","illustration":"minimal","rocksoulIntervention":"none-low","accessibility":"maximum-legibility"},
+    "forensic": {"density":"comfortable","typography":"body+mono","panelGeometry":"structured","radius":"xs-md","border":"evidence-boundary","material":"clean-archival","dataViz":"uncertainty-explicit","graph":"provenance-first","motion":"restrained","illustration":"evidence-only","rocksoulIntervention":"low","accessibility":"grayscale-and-text-equivalent"},
+    "editorial": {"density":"editorial","typography":"display+body+optional-archive-serif","panelGeometry":"asymmetric-reading","radius":"none-md","border":"selective","material":"paper-xerox-selective","dataViz":"annotated","graph":"narrative-semantic","motion":"measured","illustration":"editorial","rocksoulIntervention":"medium","accessibility":"reading-first"},
+    "archive": {"density":"editorial","typography":"body+mono+archive-serif","panelGeometry":"document-led","radius":"none-xs","border":"archival-rule","material":"paper-document","dataViz":"historical-neutral","graph":"provenance-led","motion":"minimal","illustration":"archive-document","rocksoulIntervention":"low-medium","accessibility":"document-structure"},
+    "cinematic": {"density":"editorial","typography":"display+mono+optional-archive-serif","panelGeometry":"negative-space-led","radius":"none-sm","border":"selective","material":"film-paper-photographic","dataViz":"supporting-only","graph":"compositional","motion":"cinematic","illustration":"cinematic-hero","rocksoulIntervention":"medium-high","accessibility":"live-text-over-art"},
+    "community": {"density":"comfortable","typography":"display+body","panelGeometry":"human-friendly","radius":"sm-lg","border":"soft-structured","material":"clean-with-selective-physical-mark","dataViz":"simple","graph":"relationship-readable","motion":"friendly-reduced-motion-safe","illustration":"character-community","rocksoulIntervention":"medium","accessibility":"plain-language-and-focus-visible"}
+  },
+  "graphGrammar": {
+    "grayscaleRequired": true,
+    "compactLegibilityRequired": true,
+    "textEquivalentRequired": true,
+    "nodes": [
+      {"id":"canonical-record","geometry":"rect","weight":"strong","treatment":"solid-anchor"},
+      {"id":"evidence","geometry":"diamond","weight":"strong","treatment":"evidence-notch"},
+      {"id":"source","geometry":"document-tab","weight":"hairline","treatment":"source-fold"},
+      {"id":"person","geometry":"circle","weight":"strong","treatment":"identity-ring"},
+      {"id":"event","geometry":"hexagon","weight":"strong","treatment":"time-index"},
+      {"id":"story","geometry":"rounded-rect","weight":"hairline","treatment":"narrative-band"},
+      {"id":"rgbl-text","geometry":"bracketed-rect","weight":"hairline","treatment":"text-frame"},
+      {"id":"legal-state","geometry":"cut-corner-rect","weight":"focus","treatment":"legal-boundary"},
+      {"id":"external-reference","geometry":"open-square","weight":"hairline","treatment":"outbound-marker"},
+      {"id":"unresolved-record","geometry":"ghost-anchor","weight":"hairline","treatment":"fragmented"},
+      {"id":"inferred-candidate-record","geometry":"dashed-circle","weight":"hairline","treatment":"candidate-halo"},
+      {"id":"missing-record","geometry":"broken-diamond","weight":"hairline","treatment":"negative-space"},
+      {"id":"system-provider-resource","geometry":"stacked-rect","weight":"strong","treatment":"infrastructure-stack"}
+    ],
+    "edges": [
+      {"id":"supports","line":"solid","marker":"forward","rhythm":"continuous"},
+      {"id":"contradicts","line":"double-interrupt","marker":"opposed","rhythm":"cut"},
+      {"id":"references","line":"hairline","marker":"open-arrow","rhythm":"continuous"},
+      {"id":"temporal","line":"ribbon","marker":"time-chevron","rhythm":"directional"},
+      {"id":"identity","line":"paired","marker":"identity-link","rhythm":"continuous"},
+      {"id":"legal","line":"boundary","marker":"legal-cut","rhythm":"continuous"},
+      {"id":"provenance","line":"trace","marker":"trace-dot","rhythm":"path"},
+      {"id":"dependency","line":"stepped","marker":"dependency-arrow","rhythm":"orthogonal"},
+      {"id":"routes-to","line":"directed","marker":"filled-arrow","rhythm":"continuous"},
+      {"id":"unresolved-candidate","line":"fragmented","marker":"ghost-end","rhythm":"broken"}
+    ],
+    "strengthEncoding": ["line-weight", "density", "halo"],
+    "uncertaintyEncoding": ["fragmentation", "ghosting", "dash-rhythm", "negative-space"],
+    "colorPolicy": "color may reinforce semantics but never be the only carrier"
+  },
+  "dataVizGrammar": {
+    "forcedColorFallback": true,
+    "grayscaleRequired": true,
+    "annotationTypography":"mono",
+    "charts": [
+      {"id":"line","rule":"consistent optical line weight; direct labels preferred"},
+      {"id":"area","rule":"low-opacity fill never hides uncertainty band"},
+      {"id":"bar","rule":"baseline explicit; crimson reserved for semantic exception"},
+      {"id":"stacked-bar","rule":"segment order stable across views"},
+      {"id":"heat-strip","rule":"texture/labels backstop hue"},
+      {"id":"donut","rule":"limited categories; textual totals required"},
+      {"id":"time-series","rule":"temporal axis and event annotations explicit"},
+      {"id":"threshold-boundary","rule":"boundary distinct from value series"},
+      {"id":"confidence-uncertainty","rule":"confidence and uncertainty use separate encodings"}
+    ],
+    "gridlinePolicy":"hairline and optically subordinate",
+    "uncertaintyPolicy":"band, hatch, interval, or fragmentation; never confidence-color inversion"
+  },
+  "lifecycle": {
+    "statuses": ["canonical","active","legacy","frozen-reference","deprecated","experimental"],
+    "currentPackDefault":"canonical",
+    "deprecatedDistributionPolicy":"excluded-from-production-distribution",
+    "migrationPointerRequiredForDeprecated":true
+  }
+}
