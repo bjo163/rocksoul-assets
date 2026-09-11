@@ -189,6 +189,7 @@ const audit={
   graphGeometrySignatures:grouped(geometryMap).map(({value,count,files})=>({value,count,files:files.slice(0,3)})),
   duplicateCandidates:{exact:exactDuplicates,structural:structuralDuplicates},
   productionPrimitiveViolations:primitiveViolations,
+  packClassifications:packIndex.packs.map(pack=>({id:pack.id,assetKind:kindByPack.get(pack.id)??"non-visual"})),
   categories:Object.fromEntries(categories.map(name=>[name,canonical.filter(x=>x.category===name).length]))
 };
 const report=`# ROCKSOUL Visual System 2.0 — Baseline Audit
@@ -230,13 +231,19 @@ ${audit.fontFamilies.length?audit.fontFamilies.map(x=>`- \`${x.value}\` — ${x.
 
 ${audit.crimsonRedValues.length?audit.crimsonRedValues.map(x=>`- \`${x.value}\` — ${x.count} uses`).join("\n"):"- No crimson/red fixed values found."}
 
-## Canonical stroke widths
+## Observed stroke widths
 
 ${audit.strokeWidths.slice(0,30).map(x=>`- \`${x.value}\` — ${x.count} uses`).join("\n")||"- None found."}
 
-## Canonical radii
+## Observed radii
 
 ${audit.radiusValues.slice(0,30).map(x=>`- \`${x.value}\` — ${x.count} uses`).join("\n")||"- None found."}
+
+## Pack classification
+
+| Pack | Classification |
+| --- | --- |
+${audit.packClassifications.map(x=>`| \`${x.id}\` | \`${x.assetKind}\` |`).join("\n")}
 
 ## Duplicate candidates
 
