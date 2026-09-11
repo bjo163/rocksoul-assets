@@ -247,11 +247,9 @@ Exact duplicate groups: **${audit.counts.exactDuplicateCandidateGroups}**. Struc
 This baseline is descriptive evidence, not permission to preserve drift. Visual System 2.0 contracts in \`docs/ART-DIRECTION-V2.md\`, \`docs/GRAPH-GRAMMAR-V2.md\`, and \`docs/DATA-VIZ-GRAMMAR-V2.md\` define the target. Existing undocumented fonts, crimson variants, geometry signatures, and near-duplicates are migration input for later phases.
 `;
 
-const contactData=canonical.map(({file,packId,assetKind,category,themeAware,containsText})=>({file,packId,assetKind,category,themeAware,containsText}));
 const out=new Map([
   ["docs/generated/visual-system-audit.json",JSON.stringify(audit,null,2)+"\n"],
   ["docs/VISUAL-AUDIT-V2.md",report],
-  ["docs/generated/visual-system-v2/contact-sheet-data.json",JSON.stringify(contactData,null,2)+"\n"],
   ["docs/generated/visual-system-v2/contact-sheet-master.html",contactSheet("ROCKSOUL Visual System 2.0 — Master Contact Sheet")]
 ]);
 for(const category of categories)out.set(`docs/generated/visual-system-v2/contact-sheet-${category}.html`,contactSheet(`ROCKSOUL Visual System 2.0 — ${category}`,category));
