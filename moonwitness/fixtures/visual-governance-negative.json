@@ -190,6 +190,90 @@
         "newSurfacePersonality": "experimental-new"
       },
       "expected": "FAIL"
+    },
+    {
+      "id": "fixture.token.cyclic-alias",
+      "ruleId": "VS2.TOKEN.001",
+      "mutation": {
+        "aliasCycle": true
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.token.missing-target",
+      "ruleId": "VS2.TOKEN.001",
+      "mutation": {
+        "aliasTarget": "semantic.missing"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.token.removed-emitted",
+      "ruleId": "VS2.TOKEN.002",
+      "mutation": {
+        "tokenLifecycle": "removed",
+        "emitted": true
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.token.deprecated-no-replacement",
+      "ruleId": "VS2.TOKEN.002",
+      "mutation": {
+        "tokenLifecycle": "deprecated",
+        "replacement": null
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.schema.silent-rename",
+      "ruleId": "VS2.SCHEMA.001",
+      "mutation": {
+        "releasedIdRenamed": true,
+        "migration": false
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.schema.deleted-released-id",
+      "ruleId": "VS2.SCHEMA.001",
+      "mutation": {
+        "releasedIdDeleted": true,
+        "migration": false
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.schema.missing-version",
+      "ruleId": "VS2.SCHEMA.002",
+      "mutation": {
+        "schemaVersion": null
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.schema.unknown-personality",
+      "ruleId": "VS2.SCHEMA.002",
+      "mutation": {
+        "surfacePersonality": "unknown-new"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.schema.invalid-lifecycle",
+      "ruleId": "VS2.SCHEMA.002",
+      "mutation": {
+        "lifecycle": "forever"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.schema.missing-token",
+      "ruleId": "VS2.SCHEMA.002",
+      "mutation": {
+        "tokenRef": "semantic.missing"
+      },
+      "expected": "FAIL"
     }
   ]
 }
