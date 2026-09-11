@@ -63,6 +63,10 @@ jobs:
         run: node tools/assets/validate-showcase-coverage.mjs
       - name: Validate visual asset classification
         run: node tools/assets/validate-classification.mjs
+      - name: Validate Visual System V2 audit freshness
+        run: |
+          node tools/assets/generate-visual-system-v2-audit.mjs --check
+          node tools/assets/validate-visual-system.mjs
       - name: Validate semantic primitive contract
         run: node tools/assets/validate-primitives.mjs
       - name: Validate documentation state
