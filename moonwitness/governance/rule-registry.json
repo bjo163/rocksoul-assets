@@ -424,6 +424,92 @@
       ],
       "exceptionEligible": false,
       "status": "active"
+    },
+    {
+      "ruleId": "VS2.TOKEN.001",
+      "source": "moonwitness/tokens/visual-system-v2.json",
+      "normativeText": "Token aliases must resolve to canonical semantic tokens and may not form cycles.",
+      "owner": "design-contract",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-design-contract.mjs",
+      "fixtures": [
+        "fixture.token.cyclic-alias",
+        "fixture.token.missing-target"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.TOKEN.002",
+      "source": "moonwitness/tokens/visual-system-v2.json",
+      "normativeText": "Removed tokens are not emitted; deprecated tokens require an explicit replacement.",
+      "owner": "design-contract",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-design-contract.mjs",
+      "fixtures": [
+        "fixture.token.removed-emitted",
+        "fixture.token.deprecated-no-replacement"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.SCHEMA.001",
+      "source": "moonwitness/contracts/migrations.json",
+      "normativeText": "Released semantic IDs may not be silently renamed or deleted without migration metadata.",
+      "owner": "contracts",
+      "severity": "BLOCKER",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-schemas.mjs",
+      "fixtures": [
+        "fixture.schema.silent-rename",
+        "fixture.schema.deleted-released-id"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
+    },
+    {
+      "ruleId": "VS2.SCHEMA.002",
+      "source": "moonwitness/contracts/registry.json",
+      "normativeText": "Canonical contracts require schema version, registered ownership and valid cross-contract references.",
+      "owner": "contracts",
+      "severity": "ERROR",
+      "enforcementType": "AUTOMATED",
+      "validator": "node tools/contracts/validate-schemas.mjs",
+      "fixtures": [
+        "fixture.schema.missing-version",
+        "fixture.schema.unknown-personality",
+        "fixture.schema.invalid-lifecycle",
+        "fixture.schema.missing-token"
+      ],
+      "affectedPacks": [
+        "all"
+      ],
+      "affectedSurfaces": [
+        "all"
+      ],
+      "exceptionEligible": false,
+      "status": "active"
     }
   ]
 }
