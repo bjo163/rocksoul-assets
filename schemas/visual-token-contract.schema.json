@@ -58,6 +58,9 @@
     },
     "$id": {
       "type": "string"
+    },
+    "lifecyclePolicy": {
+      "type": "object"
     }
   }
 }
