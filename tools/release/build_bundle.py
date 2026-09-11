@@ -7,7 +7,7 @@ inventory=out/"inventory.json"
 if not inventory.exists():
     raise SystemExit("inventory.json missing; run snapshot.mjs first")
 bundle=out/f"rocksoul-assets-v{version}.zip"
-paths=[ROOT/"VERSION",ROOT/"manifest.json",ROOT/"moonwitness"/"asset-packs.json",inventory,out/"release.json"]
+paths=[ROOT/"VERSION",ROOT/"manifest.json",ROOT/"moonwitness"/"asset-packs.json",inventory,out/"release.json",out/"visual-conformance.json",out/"visual-conformance.md"]
 paths += sorted((ROOT/"dist").rglob("*"))
 paths=[p for p in paths if p.is_file()]
 with zipfile.ZipFile(bundle,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
