@@ -53,6 +53,8 @@ jobs:
           required=(
             "inventory.json"
             "release.json"
+            "visual-conformance.json"
+            "visual-conformance.md"
             "rocksoul-assets-v${version}.zip"
             "rocksoul-assets-v${version}.zip.sha256"
           )
@@ -70,6 +72,8 @@ jobs:
           gh release download "$tag" --repo "$GITHUB_REPOSITORY" \
             --pattern "inventory.json" \
             --pattern "release.json" \
+            --pattern "visual-conformance.json" \
+            --pattern "visual-conformance.md" \
             --pattern "rocksoul-assets-v${version}.zip" \
             --pattern "rocksoul-assets-v${version}.zip.sha256" \
             --dir "$out"
@@ -80,5 +84,8 @@ jobs:
           test "$expected" = "$actual"
           jq -e 'type == "object"' "$out/inventory.json" >/dev/null
           jq -e 'type == "object"' "$out/release.json" >/dev/null
+          jq -e --arg sha "$RELEASE_SHA" '.commit == $sha and .profile == "FULL" and .releaseAllowed == true' "$out/visual-conformance.json" >/dev/null
+          unzip -p "$out/rocksoul-assets-v${version}.zip" .release/out/visual-conformance.json > "$out/bundle-visual-conformance.json"
+          cmp "$out/visual-conformance.json" "$out/bundle-visual-conformance.json"
 
-          echo "Release ${tag} verified at ${RELEASE_SHA} with checksum ${actual}."
+          echo "Release ${tag} verified at ${RELEASE_SHA} with checksum ${actual} and FULL visual conformance."
