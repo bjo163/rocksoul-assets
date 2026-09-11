@@ -14,14 +14,17 @@ on:
       - ".github/workflows/visual-system-v2-audit.yml"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout exact PR head
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
@@ -30,6 +33,20 @@ jobs:
         run: node tools/assets/generate-visual-system-v2-audit.mjs --write
       - name: Validate Visual System V2 foundation
         run: node tools/assets/validate-visual-system.mjs
+      - name: Materialize generated evidence on internal PR
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/VISUAL-AUDIT-V2.md docs/generated/visual-system-audit.json docs/generated/visual-system-v2
+          if git diff --cached --quiet; then
+            echo "Visual audit evidence already current."
+          else
+            git commit -m "docs(visual-v2): materialize quantitative audit evidence"
+            git push origin "HEAD:${HEAD_REF}"
+          fi
       - name: Print audit summary
         run: |
           cat docs/generated/visual-system-audit.json
