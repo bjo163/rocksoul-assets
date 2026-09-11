@@ -61,6 +61,12 @@
     },
     "patternRegistrations": {
       "type": "array"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
     }
   }
 }
