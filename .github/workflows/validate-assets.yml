@@ -80,6 +80,9 @@ jobs:
       - name: Validate visual governance freshness
         run: |
           python tools/governance/generate_governance.py --check
+          node tools/contracts/validate-schemas.mjs
+          node tools/governance/validate-negative-fixtures.mjs
+          node tools/governance/validate-visual-debt.mjs
           node tools/governance/validate-governance.mjs
       - name: Validate semantic primitive contract
         run: node tools/assets/validate-primitives.mjs
