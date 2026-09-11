@@ -37,6 +37,7 @@ function deliveryFile(pathname) {
 
 const index = JSON.parse(await readFile(path.join(root, "moonwitness/asset-packs.json"), "utf8"));
 const classification = JSON.parse(await readFile(path.join(root, "moonwitness/asset-classification.json"), "utf8"));
+const lifecycle = JSON.parse(await readFile(path.join(root, "moonwitness/asset-lifecycle.json"), "utf8"));
 const allMoonwitness = await walk("moonwitness");
 const packs = {};
 
@@ -53,17 +54,26 @@ function classificationFor(collectionId) {
   };
 }
 
+function lifecycleFor(collectionId) {
+  const policy = lifecycle.packs?.[collectionId] ?? lifecycle.collections?.[collectionId];
+  if (!policy) throw new Error(`Missing lifecycle policy for ${collectionId}`);
+  return policy;
+}
+
 function isVisualDelivery(file) {
   return /\.(svg|png|ico|webm)$/i.test(file) || (file.includes("/lottie/") && file.endsWith(".json"));
 }
 
-async function inspectVisualFile(file, entry, policy) {
+async function inspectVisualFile(file, entry, policy, lifecyclePolicy) {
   const extension = file.includes("/lottie/") && file.endsWith(".json") ? "lottie" : path.extname(file).slice(1).toLowerCase();
   let source = file.endsWith(".svg") ? file : null;
+  let sourceId = source
+    ? Object.entries(entry.svg ?? {}).find(([, pathname]) => pathname === source)?.[0] ?? path.basename(file, ".svg")
+    : null;
   if (!source) {
     const basename = path.basename(file, path.extname(file));
-    const sourceId = Object.keys(entry.svg ?? {}).sort((a, b) => b.length - a.length)
-      .find((id) => basename === id || basename.startsWith(id + "-"));
+    sourceId = Object.keys(entry.svg ?? {}).sort((a, b) => b.length - a.length)
+      .find((id) => basename === id || basename.startsWith(id + "-")) ?? null;
     source = sourceId ? entry.svg[sourceId] : null;
   }
   let containsText = false;
@@ -76,6 +86,13 @@ async function inspectVisualFile(file, entry, policy) {
       else if (/var\(--[a-z0-9-]+/i.test(raw)) themeBehavior = "semantic-token";
     }
   }
+
+  const override = sourceId ? lifecyclePolicy.assetOverrides?.[sourceId] ?? null : null;
+  const assetLifecycle = override?.lifecycle ?? lifecyclePolicy.lifecycle;
+  const productionEligible =
+    policy.assetKind === "primitive" &&
+    ["canonical", "active"].includes(assetLifecycle);
+
   return {
     assetKind: policy.assetKind,
     intendedUsage: policy.intendedUsage,
@@ -84,17 +101,39 @@ async function inspectVisualFile(file, entry, policy) {
     containsText,
     accessibilityRole: policy.accessibilityRole,
     format: extension,
+    lifecycle: assetLifecycle,
+    visualSystemVersion: lifecyclePolicy.visualSystemVersion,
+    surfacePersonalities: lifecyclePolicy.surfacePersonalities ?? [],
+    semanticRole: lifecyclePolicy.semanticRole,
+    grammarFamily: lifecyclePolicy.grammarFamily,
+    allowedUsage: lifecyclePolicy.allowedUsage ?? [],
+    prohibitedUsage: lifecyclePolicy.prohibitedUsage ?? [],
+    productionEligible,
+    ...(override?.replacement ? { replacement: override.replacement } : {}),
+    ...(override?.reason ? { lifecycleReason: override.reason } : {}),
     ...(source && source !== file ? { canonicalSource: source } : {}),
   };
 }
 
 async function classifyEntry(collectionId, entry) {
   const policy = classificationFor(collectionId);
+  const lifecyclePolicy = lifecycleFor(collectionId);
   entry.classification = policy;
+  entry.lifecycle = lifecyclePolicy.lifecycle;
+  entry.visualSystemVersion = lifecyclePolicy.visualSystemVersion;
+  entry.surfacePersonalities = lifecyclePolicy.surfacePersonalities ?? [];
+  entry.semanticRole = lifecyclePolicy.semanticRole;
+  entry.grammarFamily = lifecyclePolicy.grammarFamily;
+  entry.allowedUsage = lifecyclePolicy.allowedUsage ?? [];
+  entry.prohibitedUsage = lifecyclePolicy.prohibitedUsage ?? [];
+  entry.assetOverrides = lifecyclePolicy.assetOverrides ?? {};
   entry.visualAssets = {};
+  entry.productionFiles = [];
   if (policy.assetKind === null) return;
   for (const file of entry.files.filter(isVisualDelivery)) {
-    entry.visualAssets[file] = await inspectVisualFile(file, entry, policy);
+    const metadata = await inspectVisualFile(file, entry, policy, lifecyclePolicy);
+    entry.visualAssets[file] = metadata;
+    if (metadata.productionEligible) entry.productionFiles.push(file);
   }
 }
 
@@ -239,6 +278,8 @@ const dist = {
   version: index.version,
   canonicalFormat: "svg",
   classificationSchemaVersion: classification.schemaVersion,
+  lifecycleSchemaVersion: lifecycle.schemaVersion,
+  visualSystemVersion: lifecycle.visualSystemVersion,
   packs,
   collections,
   coverage: {
@@ -249,6 +290,10 @@ const dist = {
     indexedDeliveryFiles: indexedDelivery.size,
     classifiedVisualFiles: [...Object.values(packs), ...Object.values(collections)]
       .reduce((sum, entry) => sum + Object.keys(entry.visualAssets ?? {}).length, 0),
+    productionEligibleFiles: [...Object.values(packs), ...Object.values(collections)]
+      .reduce((sum, entry) => sum + (entry.productionFiles?.length ?? 0), 0),
+    deprecatedVisualFiles: [...Object.values(packs), ...Object.values(collections)]
+      .reduce((sum, entry) => sum + Object.values(entry.visualAssets ?? {}).filter((asset) => asset.lifecycle === "deprecated").length, 0),
     missingDeliveryFiles: 0,
     coveragePercent: 100,
     extensions: {
