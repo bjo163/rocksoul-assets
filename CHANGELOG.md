@@ -1,15 +1,5 @@
 # Changelog
 
-## [1.7.0] - 2026-09-11
-
-### Changed
-- Automated release candidate generated from deterministic repository impact.
-
-## [1.6.1] - 2026-09-11
-
-### Changed
-- Automated release candidate generated from deterministic repository impact.
-
 ## [1.6.0] - 2026-09-11
 
 ### Changed
