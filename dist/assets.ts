@@ -17617,7 +17617,13 @@ export const assets = {
       "prohibitedUsage": [
         "undocumented-semantic-repurpose"
       ],
-      "assetOverrides": {},
+      "assetOverrides": {
+        "evidence-timeline": {
+          "lifecycle": "deprecated",
+          "replacement": "data-viz/evidence-timeline",
+          "reason": "Exact/structural duplicate after V2 grammar normalization; data-viz owns the canonical temporal measurement specimen."
+        }
+      },
       "visualAssets": {
         "moonwitness/graph-pack/png/area-chart.png": {
           "assetKind": "specimen",
@@ -17755,7 +17761,7 @@ export const assets = {
           "containsText": true,
           "accessibilityRole": "informative",
           "format": "png",
-          "lifecycle": "canonical",
+          "lifecycle": "deprecated",
           "visualSystemVersion": 2,
           "surfacePersonalities": [
             "operator",
@@ -17772,6 +17778,8 @@ export const assets = {
             "undocumented-semantic-repurpose"
           ],
           "productionEligible": false,
+          "replacement": "data-viz/evidence-timeline",
+          "lifecycleReason": "Exact/structural duplicate after V2 grammar normalization; data-viz owns the canonical temporal measurement specimen.",
           "canonicalSource": "moonwitness/graph-pack/svg/evidence-timeline.svg"
         },
         "moonwitness/graph-pack/png/heat-strip.png": {
@@ -18061,7 +18069,7 @@ export const assets = {
           "containsText": true,
           "accessibilityRole": "informative",
           "format": "svg",
-          "lifecycle": "canonical",
+          "lifecycle": "deprecated",
           "visualSystemVersion": 2,
           "surfacePersonalities": [
             "operator",
@@ -18077,7 +18085,9 @@ export const assets = {
           "prohibitedUsage": [
             "undocumented-semantic-repurpose"
           ],
-          "productionEligible": false
+          "productionEligible": false,
+          "replacement": "data-viz/evidence-timeline",
+          "lifecycleReason": "Exact/structural duplicate after V2 grammar normalization; data-viz owns the canonical temporal measurement specimen."
         },
         "moonwitness/graph-pack/svg/heat-strip.svg": {
           "assetKind": "specimen",
@@ -56874,7 +56884,7 @@ export const assets = {
     "indexedDeliveryFiles": 1676,
     "classifiedVisualFiles": 1648,
     "productionEligibleFiles": 388,
-    "deprecatedVisualFiles": 2,
+    "deprecatedVisualFiles": 4,
     "missingDeliveryFiles": 0,
     "coveragePercent": 100,
     "extensions": {
