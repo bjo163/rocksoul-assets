@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "visualSystemVersion": 2,
+  "tokenSchemaVersion": 1,
+  "minimumCompatibleUiContract": 2,
+  "tokenHash": "60a1c9fc4a91e780a131b8eb0a9c3c34a6b349b20aa96ab291c35d5ac1420282",
+  "semanticRoleInventory": [
+    "semantic.brand.crimson",
+    "semantic.critical.crimson",
+    "semantic.legal.boundary",
+    "semantic.signal.crimson",
+    "semantic.status.info",
+    "semantic.status.partial",
+    "semantic.status.prohibited",
+    "semantic.status.restricted",
+    "semantic.status.supported",
+    "semantic.status.unresolved",
+    "semantic.status.verified"
+  ],
+  "presentationAliases": {
+    "presentation.brand.crimsonUi.dark": {
+      "semanticSource": "semantic.brand.crimson",
+      "theme": "dark",
+      "value": "#D1132A",
+      "reason": "theme-safe brand presentation",
+      "allowedChannels": [
+        "brand-emphasis"
+      ],
+      "prohibitedReinterpretations": [
+        "info",
+        "critical",
+        "selection"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.brand.crimsonUi.light": {
+      "semanticSource": "semantic.brand.crimson",
+      "theme": "light",
+      "value": "#D1132A",
+      "reason": "theme-safe brand presentation",
+      "allowedChannels": [
+        "brand-emphasis"
+      ],
+      "prohibitedReinterpretations": [
+        "info",
+        "critical",
+        "selection"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.signal.intervention.dark": {
+      "semanticSource": "semantic.signal.crimson",
+      "theme": "dark",
+      "value": "#9F1022",
+      "reason": "ROCKSOUL intervention signal",
+      "allowedChannels": [
+        "annotation",
+        "intervention"
+      ],
+      "prohibitedReinterpretations": [
+        "brand",
+        "critical"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.info": {
+      "semanticSource": "semantic.status.info",
+      "theme": "any",
+      "value": "#3B82F6",
+      "reason": "informational state",
+      "allowedChannels": [
+        "info"
+      ],
+      "prohibitedReinterpretations": [
+        "brand"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.verified": {
+      "semanticSource": "semantic.status.verified",
+      "theme": "any",
+      "value": "#17A673",
+      "reason": "verified state",
+      "allowedChannels": [
+        "verification"
+      ],
+      "prohibitedReinterpretations": [
+        "brand"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.partial": {
+      "semanticSource": "semantic.status.partial",
+      "theme": "any",
+      "value": "#D89B17",
+      "reason": "partial/warning state",
+      "allowedChannels": [
+        "warning",
+        "partial"
+      ],
+      "prohibitedReinterpretations": [
+        "brand"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.critical": {
+      "semanticSource": "semantic.critical.crimson",
+      "theme": "any",
+      "value": "#B20F23",
+      "reason": "critical/prohibited state",
+      "allowedChannels": [
+        "critical",
+        "prohibited"
+      ],
+      "prohibitedReinterpretations": [
+        "brand",
+        "selection"
+      ],
+      "lifecycle": "active"
+    }
+  },
+  "surfacePersonalities": [
+    "operator",
+    "forensic",
+    "editorial",
+    "archive",
+    "cinematic",
+    "community"
+  ],
+  "densityModes": [
+    "comfortable",
+    "compact",
+    "editorial"
+  ],
+  "graphNodes": [
+    "canonical-record",
+    "evidence",
+    "source",
+    "person",
+    "event",
+    "story",
+    "rgbl-text",
+    "legal-state",
+    "external-reference",
+    "unresolved-record",
+    "inferred-candidate-record",
+    "missing-record",
+    "system-provider-resource"
+  ],
+  "graphEdges": [
+    "supports",
+    "contradicts",
+    "references",
+    "temporal",
+    "identity",
+    "legal",
+    "provenance",
+    "dependency",
+    "routes-to",
+    "unresolved-candidate"
+  ],
+  "ruleCoverage": {
+    "total": 24,
+    "blockerErrorCoveragePercent": 100.0,
+    "evidenceCoveragePercent": 100.0
+  },
+  "debt": {
+    "violations": 0,
+    "metrics": [
+      {
+        "id": "undocumentedFonts",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "DEBT"
+      },
+      {
+        "id": "undocumentedCrimson",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "ERROR"
+      },
+      {
+        "id": "productionPrimitiveViolations",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "BLOCKER"
+      },
+      {
+        "id": "missingLifecycle",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "BLOCKER"
+      },
+      {
+        "id": "missingSemanticRole",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "ERROR"
+      },
+      {
+        "id": "deprecatedProductionFiles",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "BLOCKER"
+      },
+      {
+        "id": "unresolvedDuplicateGroups",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "DEBT"
+      },
+      {
+        "id": "fixedThemeWhereThemingRequired",
+        "current": 0,
+        "ceiling": 0,
+        "severity": "ERROR"
+      }
+    ]
+  },
+  "activeWaivers": [],
+  "provenanceCoverage": {
+    "canonicalArtifacts": 641,
+    "withProvenance": 641,
+    "missingProvenance": 0,
+    "migrated": 168,
+    "legacyEstablished": 453,
+    "contracts": 20
+  },
+  "goldenCorpus": {
+    "contractId": "fixtures.visual-golden-corpus.v1",
+    "schemaVersion": 1,
+    "scenarioCount": 20,
+    "invalidFixtureCount": 5,
+    "seed": 163
+  },
+  "freeze": {
+    "status": "FROZEN",
+    "baseline": {
+      "release": "v1.7.0",
+      "sha": "fd6a545160312bfe4b3419d846961abbcd7bfabd",
+      "visualSystemVersion": 2
+    }
+  },
+  "criticalHashes": {
+    "moonwitness/tokens/visual-system-v2.json": "60a1c9fc4a91e780a131b8eb0a9c3c34a6b349b20aa96ab291c35d5ac1420282",
+    "moonwitness/visual-system-v2.json": "4b70c6457d19b1db6806b803a166aa66f870305fae7bb64e5626907d73701f14",
+    "moonwitness/asset-lifecycle.json": "dd9693efb7a0c20d0ec793d2dc2ef84ebd985f83e8c970322df3c7ef385a1b75",
+    "moonwitness/governance/rule-registry.json": "b856c30228608d8bb75b07b56fbb15d3f5fe12e76209e51a6b21beb67d2e0451",
+    "moonwitness/governance/visual-debt-policy.json": "6365f69db939dd0e0a7fb85e375f23563c565c1b9b6195f4ee74dbca1365bf04",
+    "moonwitness/governance/waivers.json": "d5de8f351c87d62f4d3c31fadb12acaba19bb118ba4a46036c9d5c45505ade27",
+    "moonwitness/contracts/semantic-ids.json": "09562b0d7f7f6ffc8486eb683f245ff988660e47add4f5ae9ef8d0abec052c9b",
+    "moonwitness/fixtures/visual-golden-corpus/corpus.json": "1b77dddb27984099f035db2a567ab581cb6a03c3c884a365f8332c9a4647e69d"
+  }
+}

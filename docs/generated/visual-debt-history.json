@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "trackingMode": "release-evidence-without-semver-in-audit-fingerprint",
+  "entries": [
+    {
+      "id": "foundation-v1.6.0",
+      "source": "docs/VISUAL-AUDIT-V2.md",
+      "metrics": {
+        "fixedPaletteColors": 69,
+        "crimsonRedValues": 8,
+        "strokeWidths": 19,
+        "radiusValues": 35,
+        "graphGeometrySignatures": 46,
+        "productionPrimitiveViolations": 0
+      }
+    },
+    {
+      "id": "migration-v1.7.0",
+      "source": "docs/generated/visual-system-audit.json",
+      "metrics": {
+        "fixedPaletteColors": 67,
+        "crimsonRedValues": 7,
+        "strokeWidths": 16,
+        "radiusValues": 32,
+        "graphGeometrySignatures": 39,
+        "productionPrimitiveViolations": 0
+      }
+    }
+  ]
+}

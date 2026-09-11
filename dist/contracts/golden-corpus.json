@@ -1,0 +1,1006 @@
+{
+  "$schema": "../../../schemas/golden-corpus.schema.json",
+  "contractId": "fixtures.visual-golden-corpus.v1",
+  "schemaVersion": 1,
+  "seed": 163,
+  "dimensions": {
+    "origin": [
+      "observed",
+      "reported",
+      "inferred",
+      "derived"
+    ],
+    "verification": [
+      "unverified",
+      "verified",
+      "corroborated",
+      "disputed",
+      "contradicted"
+    ],
+    "completeness": [
+      "complete",
+      "partial",
+      "missing",
+      "unknown",
+      "withheld"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "health": [
+      "healthy",
+      "degraded",
+      "failed",
+      "unknown"
+    ],
+    "process": [
+      "idle",
+      "waiting",
+      "blocked",
+      "retrying",
+      "waiting-review",
+      "completed",
+      "rolled-back",
+      "acknowledged"
+    ],
+    "change": [
+      "unchanged",
+      "added",
+      "removed",
+      "modified",
+      "moved",
+      "mixed"
+    ],
+    "provenance": [
+      "human",
+      "ai-assisted",
+      "tool",
+      "mixed"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "fixture.verified-complete",
+      "version": 1,
+      "entity": {
+        "id": "entity-01",
+        "type": "evidence",
+        "label": "Synthetic evidence 1"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "timeline",
+        "inspector",
+        "document",
+        "print"
+      ]
+    },
+    {
+      "id": "fixture.reported-disputed",
+      "version": 1,
+      "entity": {
+        "id": "entity-02",
+        "type": "evidence",
+        "label": "Synthetic evidence 2"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "disputed",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "timeline",
+        "inspector",
+        "document"
+      ]
+    },
+    {
+      "id": "fixture.inferred-medium",
+      "version": 1,
+      "entity": {
+        "id": "entity-03",
+        "type": "relation",
+        "label": "Synthetic relation 3"
+      },
+      "epistemic": {
+        "origin": "inferred",
+        "verification": "unverified",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "ai-assisted",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "graph",
+        "timeline",
+        "inspector"
+      ]
+    },
+    {
+      "id": "fixture.unresolved-identity",
+      "version": 1,
+      "entity": {
+        "id": "entity-04",
+        "type": "entity",
+        "label": "Synthetic entity 4"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "unverified",
+        "completeness": "partial",
+        "confidence": "low"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "waiting",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "mixed",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "inspector"
+      ]
+    },
+    {
+      "id": "fixture.missing-source",
+      "version": 1,
+      "entity": {
+        "id": "entity-05",
+        "type": "evidence",
+        "label": "Synthetic evidence 5"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "unverified",
+        "completeness": "missing",
+        "confidence": "low"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "blocked",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "timeline",
+        "inspector",
+        "document"
+      ]
+    },
+    {
+      "id": "fixture.stale-healthy",
+      "version": 1,
+      "entity": {
+        "id": "entity-06",
+        "type": "resource",
+        "label": "Synthetic resource 6"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "tool",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.degraded-retrying",
+      "version": 1,
+      "entity": {
+        "id": "entity-07",
+        "type": "resource",
+        "label": "Synthetic resource 7"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "degraded",
+      "process": {
+        "state": "retrying",
+        "attempt": 1
+      },
+      "change": "modified",
+      "provenance": {
+        "mode": "tool",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.cross-border-restricted",
+      "version": 1,
+      "entity": {
+        "id": "entity-08",
+        "type": "record",
+        "label": "Synthetic record 8"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "verified",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "restricted",
+        "jurisdiction": "cross-border"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "blocked",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "map",
+        "inspector",
+        "document",
+        "print"
+      ]
+    },
+    {
+      "id": "fixture.protected-witness",
+      "version": 1,
+      "entity": {
+        "id": "entity-09",
+        "type": "person",
+        "label": "Synthetic person 9"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "corroborated",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "protected",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "map",
+        "inspector",
+        "document"
+      ]
+    },
+    {
+      "id": "fixture.time-exact-approx-unknown",
+      "version": 1,
+      "entity": {
+        "id": "entity-10",
+        "type": "event",
+        "label": "Synthetic event 10"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "mixed",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "timeline",
+        "table",
+        "graph"
+      ]
+    },
+    {
+      "id": "fixture.map-verified-disputed",
+      "version": 1,
+      "entity": {
+        "id": "entity-11",
+        "type": "location",
+        "label": "Synthetic location 11"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "disputed",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "human",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": {
+        "kind": "disputed",
+        "lat": -6.2,
+        "long": 106.8
+      },
+      "attention": "normal",
+      "representations": [
+        "map",
+        "table",
+        "inspector"
+      ]
+    },
+    {
+      "id": "fixture.route-observed-inferred",
+      "version": 1,
+      "entity": {
+        "id": "entity-12",
+        "type": "route",
+        "label": "Synthetic route 12"
+      },
+      "epistemic": {
+        "origin": "inferred",
+        "verification": "unverified",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "idle",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "mixed",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": {
+        "kind": "inferred",
+        "lat": -6.2,
+        "long": 106.8
+      },
+      "attention": "normal",
+      "representations": [
+        "map",
+        "graph",
+        "timeline"
+      ]
+    },
+    {
+      "id": "fixture.ai-summary-sourced",
+      "version": 1,
+      "entity": {
+        "id": "entity-13",
+        "type": "document",
+        "label": "Synthetic document 13"
+      },
+      "epistemic": {
+        "origin": "derived",
+        "verification": "corroborated",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "completed",
+        "attempt": 1
+      },
+      "change": "modified",
+      "provenance": {
+        "mode": "ai-assisted",
+        "sources": [
+          "source-a",
+          "source-b"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "document",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.ai-inference-review",
+      "version": 1,
+      "entity": {
+        "id": "entity-14",
+        "type": "relation",
+        "label": "Synthetic relation 14"
+      },
+      "epistemic": {
+        "origin": "inferred",
+        "verification": "unverified",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "waiting-review",
+        "attempt": 1
+      },
+      "change": "modified",
+      "provenance": {
+        "mode": "ai-assisted",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "graph",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.tool-success-unverified",
+      "version": 1,
+      "entity": {
+        "id": "entity-15",
+        "type": "evidence",
+        "label": "Synthetic evidence 15"
+      },
+      "epistemic": {
+        "origin": "derived",
+        "verification": "unverified",
+        "completeness": "complete",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "completed",
+        "attempt": 1
+      },
+      "change": "added",
+      "provenance": {
+        "mode": "tool",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.deploy-success-health-degraded",
+      "version": 1,
+      "entity": {
+        "id": "entity-16",
+        "type": "resource",
+        "label": "Synthetic resource 16"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "degraded",
+      "process": {
+        "state": "completed",
+        "attempt": 1
+      },
+      "change": "modified",
+      "provenance": {
+        "mode": "tool",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.rollback-history",
+      "version": 1,
+      "entity": {
+        "id": "entity-17",
+        "type": "process",
+        "label": "Synthetic process 17"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "rolled-back",
+        "attempt": 3
+      },
+      "change": "modified",
+      "provenance": {
+        "mode": "tool",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "timeline",
+        "table",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.change-set",
+      "version": 1,
+      "entity": {
+        "id": "entity-18",
+        "type": "change",
+        "label": "Synthetic change 18"
+      },
+      "epistemic": {
+        "origin": "observed",
+        "verification": "verified",
+        "completeness": "complete",
+        "confidence": "high"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "healthy",
+      "process": {
+        "state": "completed",
+        "attempt": 1
+      },
+      "change": "mixed",
+      "provenance": {
+        "mode": "tool",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "document",
+        "console",
+        "print"
+      ]
+    },
+    {
+      "id": "fixture.critical-ack-unresolved",
+      "version": 1,
+      "entity": {
+        "id": "entity-19",
+        "type": "incident",
+        "label": "Synthetic incident 19"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "corroborated",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "degraded",
+      "process": {
+        "state": "acknowledged",
+        "attempt": 1
+      },
+      "change": "unchanged",
+      "provenance": {
+        "mode": "mixed",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "critical",
+      "representations": [
+        "table",
+        "graph",
+        "timeline",
+        "inspector",
+        "console"
+      ]
+    },
+    {
+      "id": "fixture.dense-composite",
+      "version": 1,
+      "entity": {
+        "id": "entity-20",
+        "type": "composite",
+        "label": "ملف Composite / Long-Identifier-Ω-2026"
+      },
+      "epistemic": {
+        "origin": "reported",
+        "verification": "disputed",
+        "completeness": "partial",
+        "confidence": "medium"
+      },
+      "trust": {
+        "privacy": "internal",
+        "jurisdiction": "local"
+      },
+      "health": "degraded",
+      "process": {
+        "state": "retrying",
+        "attempt": 1
+      },
+      "change": "modified",
+      "provenance": {
+        "mode": "mixed",
+        "sources": [
+          "source-a"
+        ]
+      },
+      "time": {
+        "kind": "exact",
+        "timezone": "Asia/Jakarta"
+      },
+      "location": null,
+      "attention": "normal",
+      "representations": [
+        "table",
+        "graph",
+        "map",
+        "timeline",
+        "inspector",
+        "document",
+        "console",
+        "print"
+      ]
+    }
+  ],
+  "invalid": [
+    {
+      "id": "invalid.verification-conflict",
+      "reason": "same verification dimension cannot be verified and unverified",
+      "payload": {
+        "verification": [
+          "verified",
+          "unverified"
+        ]
+      }
+    },
+    {
+      "id": "invalid.privacy-conflict",
+      "reason": "exclusive privacy states conflict",
+      "payload": {
+        "privacy": [
+          "public",
+          "confidential"
+        ]
+      }
+    },
+    {
+      "id": "invalid.interaction-conflict",
+      "reason": "disabled entity cannot be draggable",
+      "payload": {
+        "disabled": true,
+        "draggable": true
+      }
+    },
+    {
+      "id": "invalid.completeness-conflict",
+      "reason": "complete and missing conflict",
+      "payload": {
+        "completeness": [
+          "complete",
+          "missing"
+        ]
+      }
+    },
+    {
+      "id": "invalid.process-conflict",
+      "reason": "terminal succeeded process cannot also be running",
+      "payload": {
+        "process": [
+          "completed",
+          "running"
+        ]
+      }
+    }
+  ],
+  "scaleVariants": {
+    "small": {
+      "entities": 1
+    },
+    "medium": {
+      "entities": 20
+    },
+    "stress": {
+      "entities": 1000,
+      "seed": 163
+    }
+  },
+  "i18nStress": {
+    "rtl": "مرحبا بالعالم",
+    "latin": "Evidence record",
+    "longIdentifier": "MW-TRACE-2026-09-11-000000000000000000000001",
+    "longPlace": "Synthetic Very Long Administrative Region Name for Layout Stress",
+    "timezone": "Asia/Jakarta"
+  }
+}

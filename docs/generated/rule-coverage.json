@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "total": 24,
+  "automated": 23,
+  "visual": 0,
+  "manual": 1,
+  "informational": 0,
+  "uncovered": 0,
+  "blockerErrorTraceable": 24,
+  "blockerErrorTotal": 24,
+  "automationCoveragePercent": 95.83,
+  "evidenceCoveragePercent": 100.0,
+  "blockerErrorCoveragePercent": 100.0
+}

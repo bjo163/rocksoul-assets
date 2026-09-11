@@ -1,0 +1,336 @@
+export const tokens = {
+  "visualSystemVersion": 2,
+  "primitives": {
+    "color": {
+      "neutral": {
+        "100": "#EEEAE0",
+        "200": "#D9D6CE",
+        "400": "#A3A3A3",
+        "600": "#666666",
+        "700": "#4A4A4A",
+        "800": "#242424",
+        "900": "#151515",
+        "950": "#0B0B0B",
+        "000": "#FFFFFF",
+        "050": "#F7F4EC"
+      },
+      "crimson": {
+        "500": "#D1132A",
+        "700": "#9F1022",
+        "soft": "#F7DDE2"
+      },
+      "status": {
+        "supported": "#16A36A",
+        "verified": "#17A673",
+        "partial": "#D89B17",
+        "unresolved": "#767676",
+        "restricted": "#C46C17",
+        "prohibited": "#B20F23",
+        "info": "#3B82F6"
+      },
+      "rgbl": {
+        "red": "#E51735",
+        "green": "#10B981",
+        "blue": "#3B82F6",
+        "light": "#F4C542"
+      }
+    },
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      96,
+      128
+    ],
+    "radius": {
+      "none": 0,
+      "xs": 2,
+      "sm": 4,
+      "md": 8,
+      "lg": 12,
+      "pill": 999
+    },
+    "stroke": {
+      "hairline": 1,
+      "strong": 2,
+      "focus": 3
+    },
+    "control": {
+      "sm": 32,
+      "md": 40,
+      "lg": 48,
+      "touchMin": 44
+    },
+    "typography": {
+      "families": {
+        "display": "Inter Tight",
+        "body": "Inter",
+        "mono": "IBM Plex Mono",
+        "archiveSerif": "Georgia"
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "sizes": {
+        "meta": 11,
+        "caption": 12,
+        "bodySm": 14,
+        "body": 16,
+        "bodyLg": 18,
+        "titleSm": 24,
+        "title": 32,
+        "headline": 48,
+        "displaySm": 64,
+        "display": 96,
+        "displayXl": 128
+      },
+      "lineHeight": {
+        "tight": 1,
+        "headline": 1.05,
+        "body": 1.55,
+        "relaxed": 1.7
+      },
+      "tracking": {
+        "tight": "-0.03em",
+        "normal": "0em",
+        "wide": "0.08em",
+        "archive": "0.16em"
+      }
+    },
+    "motion": {
+      "duration": {
+        "instant": 0,
+        "fast": 120,
+        "base": 220,
+        "slow": 420,
+        "cinematic": 900
+      },
+      "easing": {
+        "standard": "cubic-bezier(0.2, 0, 0, 1)",
+        "enter": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "exit": "cubic-bezier(0.7, 0, 0.84, 0)"
+      }
+    }
+  },
+  "semantics": {
+    "semantic.brand.crimson": {
+      "primitive": "primitives.color.crimson.500",
+      "role": "brand",
+      "value": "#D1132A",
+      "lifecycle": "active"
+    },
+    "semantic.signal.crimson": {
+      "primitive": "primitives.color.crimson.700",
+      "role": "human-intervention-signal",
+      "value": "#9F1022",
+      "lifecycle": "active"
+    },
+    "semantic.critical.crimson": {
+      "primitive": "primitives.color.status.prohibited",
+      "role": "critical-prohibited",
+      "value": "#B20F23",
+      "lifecycle": "active"
+    },
+    "semantic.legal.boundary": {
+      "primitive": "primitives.color.crimson.500",
+      "role": "legal-boundary",
+      "value": "#D1132A",
+      "lifecycle": "active"
+    },
+    "semantic.status.supported": {
+      "primitive": "primitives.color.status.supported",
+      "role": "supported",
+      "value": "#16A36A",
+      "lifecycle": "active"
+    },
+    "semantic.status.verified": {
+      "primitive": "primitives.color.status.verified",
+      "role": "verified",
+      "value": "#17A673",
+      "lifecycle": "active"
+    },
+    "semantic.status.partial": {
+      "primitive": "primitives.color.status.partial",
+      "role": "partial-warning",
+      "value": "#D89B17",
+      "lifecycle": "active"
+    },
+    "semantic.status.unresolved": {
+      "primitive": "primitives.color.status.unresolved",
+      "role": "unresolved",
+      "value": "#767676",
+      "lifecycle": "active"
+    },
+    "semantic.status.restricted": {
+      "primitive": "primitives.color.status.restricted",
+      "role": "restricted",
+      "value": "#C46C17",
+      "lifecycle": "active"
+    },
+    "semantic.status.prohibited": {
+      "primitive": "primitives.color.status.prohibited",
+      "role": "prohibited",
+      "value": "#B20F23",
+      "lifecycle": "active"
+    },
+    "semantic.status.info": {
+      "primitive": "primitives.color.status.info",
+      "role": "informational",
+      "value": "#3B82F6",
+      "lifecycle": "active"
+    }
+  },
+  "presentationAliases": {
+    "presentation.brand.crimsonUi.dark": {
+      "semanticSource": "semantic.brand.crimson",
+      "theme": "dark",
+      "value": "#D1132A",
+      "reason": "theme-safe brand presentation",
+      "allowedChannels": [
+        "brand-emphasis"
+      ],
+      "prohibitedReinterpretations": [
+        "info",
+        "critical",
+        "selection"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.brand.crimsonUi.light": {
+      "semanticSource": "semantic.brand.crimson",
+      "theme": "light",
+      "value": "#D1132A",
+      "reason": "theme-safe brand presentation",
+      "allowedChannels": [
+        "brand-emphasis"
+      ],
+      "prohibitedReinterpretations": [
+        "info",
+        "critical",
+        "selection"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.signal.intervention.dark": {
+      "semanticSource": "semantic.signal.crimson",
+      "theme": "dark",
+      "value": "#9F1022",
+      "reason": "ROCKSOUL intervention signal",
+      "allowedChannels": [
+        "annotation",
+        "intervention"
+      ],
+      "prohibitedReinterpretations": [
+        "brand",
+        "critical"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.info": {
+      "semanticSource": "semantic.status.info",
+      "theme": "any",
+      "value": "#3B82F6",
+      "reason": "informational state",
+      "allowedChannels": [
+        "info"
+      ],
+      "prohibitedReinterpretations": [
+        "brand"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.verified": {
+      "semanticSource": "semantic.status.verified",
+      "theme": "any",
+      "value": "#17A673",
+      "reason": "verified state",
+      "allowedChannels": [
+        "verification"
+      ],
+      "prohibitedReinterpretations": [
+        "brand"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.partial": {
+      "semanticSource": "semantic.status.partial",
+      "theme": "any",
+      "value": "#D89B17",
+      "reason": "partial/warning state",
+      "allowedChannels": [
+        "warning",
+        "partial"
+      ],
+      "prohibitedReinterpretations": [
+        "brand"
+      ],
+      "lifecycle": "active"
+    },
+    "presentation.status.critical": {
+      "semanticSource": "semantic.critical.crimson",
+      "theme": "any",
+      "value": "#B20F23",
+      "reason": "critical/prohibited state",
+      "allowedChannels": [
+        "critical",
+        "prohibited"
+      ],
+      "prohibitedReinterpretations": [
+        "brand",
+        "selection"
+      ],
+      "lifecycle": "active"
+    }
+  },
+  "density": {
+    "compact": {
+      "spacing": [
+        4,
+        8,
+        12,
+        16
+      ]
+    },
+    "comfortable": {
+      "spacing": [
+        8,
+        12,
+        16,
+        24,
+        32
+      ]
+    },
+    "editorial": {
+      "spacing": [
+        16,
+        24,
+        32,
+        48,
+        64,
+        80
+      ]
+    }
+  },
+  "surfacePersonalities": [
+    "operator",
+    "forensic",
+    "editorial",
+    "archive",
+    "cinematic",
+    "community"
+  ]
+} as const;
+export type SemanticTokenId = keyof typeof tokens.semantics;
+export type PresentationAliasId = keyof typeof tokens.presentationAliases;
+export type SurfacePersonality = typeof tokens.surfacePersonalities[number];

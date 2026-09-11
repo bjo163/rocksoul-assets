@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "policy": "moonwitness/governance/visual-debt-policy.json",
+  "ratchet": "decrease-or-hold-never-increase-without-valid-waiver",
+  "metrics": [
+    {
+      "id": "undocumentedFonts",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "DEBT",
+      "owner": "typography",
+      "remediationIssue": 75,
+      "withinCeiling": true
+    },
+    {
+      "id": "undocumentedCrimson",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "ERROR",
+      "owner": "palette",
+      "remediationIssue": 75,
+      "withinCeiling": true
+    },
+    {
+      "id": "productionPrimitiveViolations",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "BLOCKER",
+      "owner": "primitive",
+      "remediationIssue": 75,
+      "withinCeiling": true
+    },
+    {
+      "id": "missingLifecycle",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "BLOCKER",
+      "owner": "asset-governance",
+      "remediationIssue": 81,
+      "withinCeiling": true
+    },
+    {
+      "id": "missingSemanticRole",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "ERROR",
+      "owner": "asset-governance",
+      "remediationIssue": 75,
+      "withinCeiling": true
+    },
+    {
+      "id": "deprecatedProductionFiles",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "BLOCKER",
+      "owner": "asset-governance",
+      "remediationIssue": 81,
+      "withinCeiling": true
+    },
+    {
+      "id": "unresolvedDuplicateGroups",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "DEBT",
+      "owner": "asset-governance",
+      "remediationIssue": 75,
+      "withinCeiling": true
+    },
+    {
+      "id": "fixedThemeWhereThemingRequired",
+      "current": 0,
+      "ceiling": 0,
+      "target": 0,
+      "severity": "ERROR",
+      "owner": "art-direction",
+      "remediationIssue": 75,
+      "withinCeiling": true
+    }
+  ],
+  "totals": {
+    "violations": 0,
+    "blocker": 0,
+    "error": 0,
+    "debt": 0
+  }
+}

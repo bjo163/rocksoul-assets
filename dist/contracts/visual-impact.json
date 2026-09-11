@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "nodeCount": 772,
+  "edgeCount": 1896,
+  "source": "docs/generated/visual-impact-graph.json",
+  "consumer": "bjo163/rocksoul-ui"
+}
