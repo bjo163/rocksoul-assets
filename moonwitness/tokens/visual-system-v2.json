@@ -213,7 +213,8 @@
         "info",
         "critical",
         "selection"
-      ]
+      ],
+      "lifecycle": "active"
     },
     "presentation.brand.crimsonUi.light": {
       "semanticSource": "semantic.brand.crimson",
@@ -227,7 +228,8 @@
         "info",
         "critical",
         "selection"
-      ]
+      ],
+      "lifecycle": "active"
     },
     "presentation.signal.intervention.dark": {
       "semanticSource": "semantic.signal.crimson",
@@ -241,7 +243,8 @@
       "prohibitedReinterpretations": [
         "brand",
         "critical"
-      ]
+      ],
+      "lifecycle": "active"
     },
     "presentation.status.info": {
       "semanticSource": "semantic.status.info",
@@ -253,7 +256,8 @@
       ],
       "prohibitedReinterpretations": [
         "brand"
-      ]
+      ],
+      "lifecycle": "active"
     },
     "presentation.status.verified": {
       "semanticSource": "semantic.status.verified",
@@ -265,7 +269,8 @@
       ],
       "prohibitedReinterpretations": [
         "brand"
-      ]
+      ],
+      "lifecycle": "active"
     },
     "presentation.status.partial": {
       "semanticSource": "semantic.status.partial",
@@ -278,7 +283,8 @@
       ],
       "prohibitedReinterpretations": [
         "brand"
-      ]
+      ],
+      "lifecycle": "active"
     },
     "presentation.status.critical": {
       "semanticSource": "semantic.critical.crimson",
@@ -292,7 +298,8 @@
       "prohibitedReinterpretations": [
         "brand",
         "selection"
-      ]
+      ],
+      "lifecycle": "active"
     }
   },
   "typographyRoles": {
@@ -402,5 +409,14 @@
       "routes-to",
       "unresolved-candidate"
     ]
+  },
+  "lifecyclePolicy": {
+    "statuses": [
+      "active",
+      "deprecated",
+      "removed"
+    ],
+    "deprecatedRequiresReplacement": true,
+    "removedNotEmitted": true
   }
 }
