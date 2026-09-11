@@ -31,6 +31,12 @@
     },
     "exactShaRequired": {
       "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
     }
   }
 }
