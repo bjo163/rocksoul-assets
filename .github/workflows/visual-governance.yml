@@ -45,7 +45,11 @@ jobs:
       - name: Generate governance evidence
         run: python tools/governance/generate_governance.py
       - name: Validate governance
-        run: node tools/governance/validate-governance.mjs
+        run: |
+          node tools/contracts/validate-schemas.mjs
+          node tools/governance/validate-negative-fixtures.mjs
+          node tools/governance/validate-visual-debt.mjs --base "${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.sha }}"
+          node tools/governance/validate-governance.mjs
       - name: Validate deterministic regeneration
         run: python tools/governance/generate_governance.py --check
       - name: Analyze PR contract impact
