@@ -26,7 +26,8 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 ### I want to design or extend the visual system
 
-1. [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md)
+1. [Visual System V2 Baseline Audit](VISUAL-AUDIT-V2.md)
+2. [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md)
 2. [Graph Grammar V2](GRAPH-GRAMMAR-V2.md)
 3. [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md)
 4. [Visual Language v1.3](VISUAL-LANGUAGE-V1.3.md)
@@ -70,6 +71,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Asset Classification](ASSET-CLASSIFICATION.md) | production primitive, illustration, specimen, and screen-reference boundaries |
 | [Semantic Primitives](SEMANTIC-PRIMITIVES.md) | atomic theme-aware vectors, sprite membership, and optical-size contact sheet |
 | [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
+| [Visual System V2 Baseline Audit](VISUAL-AUDIT-V2.md) | quantitative font/palette/geometry/duplicate baseline and light/dark contact sheets |
 | [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md) | MoonWitness/ROCKSOUL layers, personalities, density, typography, palette and geometry |
 | [Graph Grammar V2](GRAPH-GRAMMAR-V2.md) | canonical node/edge semantics and grayscale-safe relationship grammar |
 | [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md) | chart-specific semantics, uncertainty and forced-color rules |
