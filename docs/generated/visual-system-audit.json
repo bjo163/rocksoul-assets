@@ -1,7 +1,6 @@
 {
   "schemaVersion": 1,
   "generatedBy": "tools/assets/generate-visual-system-v2-audit.mjs",
-  "generatedForVersion": "1.5.2",
   "canonicalPackFamilies": 44,
   "canonicalSvgFiles": 621,
   "counts": {

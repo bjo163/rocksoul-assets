@@ -74,3 +74,7 @@ MoonWitness base material is clean, controlled, archival, and legible. ROCKSOUL 
 ## Ownership
 
 `rocksoul-assets` owns visual truth, semantic grammar, assets, manifests, and generated distribution. `rocksoul-ui` owns runtime components and application implementation. UI consumers must not invent replacement visual semantics outside this repository.
+
+## Audit/version boundary
+
+Visual audit fingerprints are derived from visual source, classification, and Visual System contracts. Release/SemVer metadata is deliberately excluded so an automatic version bump cannot make otherwise-identical visual evidence stale or create a release loop.

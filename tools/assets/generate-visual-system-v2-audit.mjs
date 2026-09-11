@@ -172,7 +172,7 @@ const colors=grouped(colorMap),crimsonRedValues=colors.filter(x=>isCrimsonLike(x
 const categories=["primitives","product-icons","graph-data-viz","dashboard-widgets","evidence-correlation","editorial-document","cinematic-heroes","motion-first-frames","rocksoul-character-persona"];
 const exactDuplicates=groupDuplicates(canonical,"exactHash"),structuralDuplicates=groupDuplicates(canonical,"structuralHash");
 const audit={
-  schemaVersion:1,generatedBy:"tools/assets/generate-visual-system-v2-audit.mjs",generatedForVersion:packIndex.version,
+  schemaVersion:1,generatedBy:"tools/assets/generate-visual-system-v2-audit.mjs",
   canonicalPackFamilies:packIndex.packs.length,canonicalSvgFiles:canonical.length,
   counts:{
     uniqueFontFamilyDeclarations:fontMap.size,uniqueFixedPaletteColors:colorMap.size,uniqueCrimsonRedValues:crimsonRedValues.length,
@@ -270,4 +270,4 @@ if(checkMode){
 }else{
   for(const [rel,value] of out){await mkdir(path.dirname(path.join(root,rel)),{recursive:true});await writeFile(path.join(root,rel),value)}
 }
-console.log(JSON.stringify({generatedForVersion:audit.generatedForVersion,canonicalPackFamilies:audit.canonicalPackFamilies,canonicalSvgFiles:audit.canonicalSvgFiles,counts:audit.counts,categories:audit.categories},null,2));
+console.log(JSON.stringify({canonicalPackFamilies:audit.canonicalPackFamilies,canonicalSvgFiles:audit.canonicalSvgFiles,counts:audit.counts,categories:audit.categories},null,2));
