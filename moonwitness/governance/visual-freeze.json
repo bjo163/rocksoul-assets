@@ -1,0 +1,67 @@
+{
+  "contractId": "governance.visual-freeze.v2",
+  "schemaVersion": 1,
+  "status": "FROZEN",
+  "baseline": {
+    "release": "v1.7.0",
+    "sha": "fd6a545160312bfe4b3419d846961abbcd7bfabd",
+    "visualSystemVersion": 2
+  },
+  "frozen": {
+    "typographyRoles": [
+      "display",
+      "body",
+      "mono",
+      "archiveSerif"
+    ],
+    "crimsonSemantics": [
+      "semantic.brand.crimson",
+      "semantic.signal.crimson",
+      "semantic.critical.crimson",
+      "semantic.legal.boundary"
+    ],
+    "densityModes": [
+      "compact",
+      "comfortable",
+      "editorial"
+    ],
+    "surfacePersonalities": [
+      "operator",
+      "forensic",
+      "editorial",
+      "archive",
+      "cinematic",
+      "community"
+    ],
+    "layerRoles": {
+      "moonwitness": "rigorous-system",
+      "rocksoul": "human-intervention"
+    }
+  },
+  "breakRequiredFor": [
+    "new-top-level-font-role",
+    "new-core-crimson-semantic",
+    "new-surface-personality",
+    "new-density-mode",
+    "new-semantic-dimension",
+    "new-top-level-grammar-family",
+    "new-asset-pack-family",
+    "released-semantic-id-reinterpretation",
+    "released-id-deletion-without-migration",
+    "breaking-schema-change",
+    "cross-grammar-channel-reallocation",
+    "layer-role-change"
+  ],
+  "requiredEvidence": [
+    "problem",
+    "affectedStableIds",
+    "impactReport",
+    "compatibilityMigrationPlan",
+    "beforeAfterSpecimens",
+    "themeAndContrastImpact",
+    "accessibilityImpact",
+    "debtWaiverImpact",
+    "rocksoulUiImpact",
+    "manualGovernanceApproval"
+  ]
+}
