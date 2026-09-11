@@ -128,6 +128,102 @@
         "Evidence Matrix"
       ],
       "rule": "All corpus facts must be data-backed; presentational graphics never substitute for canonical record identity or provenance."
+    },
+    {
+      "name": "Visual System V2 Graph Grammar",
+      "composition": [
+        "Graph Node[]",
+        "Graph Edge[]",
+        "accessible legend",
+        "grayscale proof"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Visual System V2 Data Viz",
+      "composition": [
+        "line",
+        "area",
+        "bar",
+        "stacked-bar",
+        "heat-strip",
+        "donut",
+        "time-series",
+        "threshold-boundary",
+        "confidence-uncertainty"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality / operator",
+      "composition": [
+        "Surface Personality Frame",
+        "typography roles",
+        "density rhythm",
+        "allowed visual grammar"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality / forensic",
+      "composition": [
+        "Surface Personality Frame",
+        "typography roles",
+        "density rhythm",
+        "allowed visual grammar"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality / editorial",
+      "composition": [
+        "Surface Personality Frame",
+        "typography roles",
+        "density rhythm",
+        "allowed visual grammar"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality / archive",
+      "composition": [
+        "Surface Personality Frame",
+        "typography roles",
+        "density rhythm",
+        "allowed visual grammar"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality / cinematic",
+      "composition": [
+        "Surface Personality Frame",
+        "typography roles",
+        "density rhythm",
+        "allowed visual grammar"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Surface Personality / community",
+      "composition": [
+        "Surface Personality Frame",
+        "typography roles",
+        "density rhythm",
+        "allowed visual grammar"
+      ],
+      "visualSystemVersion": 2
+    },
+    {
+      "name": "Cinematic Editorial Composition",
+      "composition": [
+        "MoonWitness rigorous base",
+        "ROCKSOUL Intervention Overlay",
+        "live-text boundary",
+        "negative-space composition"
+      ],
+      "visualSystemVersion": 2
     }
-  ]
+  ],
+  "visualSystemVersion": 2
 }

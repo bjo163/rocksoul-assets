@@ -4,7 +4,7 @@
   "version": "1.3.1",
   "canonicalFormat": "svg",
   "grid": 24,
-  "strokeWidth": 1.75,
+  "strokeWidth": 2,
   "categories": {
     "navigation": 12,
     "actions": 12,
@@ -16,9 +16,28 @@
   "generatedFormat": "png",
   "renderPng": true,
   "sizes": [
+    16,
+    20,
     24,
+    32,
     48,
     96
   ],
-  "pngPurpose": "raster delivery at 1x/2x/4x grid"
+  "pngPurpose": "raster delivery at 1x/2x/4x grid",
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "opticalReviewSizes": [
+    16,
+    20,
+    24,
+    32
+  ],
+  "surfacePersonalities": [
+    "operator",
+    "forensic",
+    "community"
+  ],
+  "grammarFamily": "primitive-v2",
+  "semanticRole": "product-icon",
+  "paletteBehavior": "currentColor"
 }

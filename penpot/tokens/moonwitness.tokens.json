@@ -538,5 +538,61 @@
       "$value": "#141414",
       "$type": "color"
     }
+  },
+  "VisualSystemV2": {
+    "paletteRoles": {
+      "brand-crimson": {
+        "$value": "#D1132A",
+        "$type": "color"
+      },
+      "signal-crimson": {
+        "$value": "#9F1022",
+        "$type": "color"
+      },
+      "critical-crimson": {
+        "$value": "#B20F23",
+        "$type": "color"
+      }
+    },
+    "density": {
+      "compact": {
+        "$value": "4/8/12/16",
+        "$type": "string"
+      },
+      "comfortable": {
+        "$value": "8/12/16/24/32",
+        "$type": "string"
+      },
+      "editorial": {
+        "$value": "16/24/32/48/64/80",
+        "$type": "string"
+      }
+    },
+    "personality": {
+      "operator": {
+        "$value": "operator",
+        "$type": "string"
+      },
+      "forensic": {
+        "$value": "forensic",
+        "$type": "string"
+      },
+      "editorial": {
+        "$value": "editorial",
+        "$type": "string"
+      },
+      "archive": {
+        "$value": "archive",
+        "$type": "string"
+      },
+      "cinematic": {
+        "$value": "cinematic",
+        "$type": "string"
+      },
+      "community": {
+        "$value": "community",
+        "$type": "string"
+      }
+    }
   }
 }

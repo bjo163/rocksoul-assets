@@ -32,5 +32,17 @@
     "edge-inferred",
     "edge-uncertain",
     "edge-unresolved"
-  ]
+  ],
+  "visualSystemVersion": 2,
+  "lifecycle": "canonical",
+  "surfacePersonalities": [
+    "operator",
+    "forensic"
+  ],
+  "grammarFamily": "graph-v2",
+  "semanticRole": "relationship-semantic",
+  "typographyRoles": [
+    "mono"
+  ],
+  "paletteBehavior": "semantic-boundary-plus-neutral"
 }
