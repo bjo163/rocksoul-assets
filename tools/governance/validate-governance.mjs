@@ -8,7 +8,7 @@ const load=async rel=>JSON.parse(await read(rel));
 const exists=async rel=>{try{await access(path.join(root,rel));return true}catch{return false}};
 const errors=[],warnings=[];
 
-const [tokens,severity,debtPolicy,waivers,rules,registry,migrations,semanticIds,corpus,deps,ai,freeze,conformance,attest,debt,coverage,waiverMetrics,contractInventory,provenance,impact,consumer]=await Promise.all([
+const [tokens,severity,debtPolicy,waivers,rules,registry,migrations,semanticIds,corpus,negativeFixtures,deps,ai,freeze,conformance,attest,debt,coverage,waiverMetrics,contractInventory,provenance,impact,consumer]=await Promise.all([
   load("moonwitness/tokens/visual-system-v2.json"),
   load("moonwitness/governance/severity-model.json"),
   load("moonwitness/governance/visual-debt-policy.json"),
@@ -18,6 +18,7 @@ const [tokens,severity,debtPolicy,waivers,rules,registry,migrations,semanticIds,
   load("moonwitness/contracts/migrations.json"),
   load("moonwitness/contracts/semantic-ids.json"),
   load("moonwitness/fixtures/visual-golden-corpus/corpus.json"),
+  load("moonwitness/fixtures/visual-governance-negative.json"),
   load("moonwitness/contracts/dependencies.json"),
   load("moonwitness/ai/contribution-policy.json"),
   load("moonwitness/governance/visual-freeze.json"),
@@ -62,12 +63,14 @@ if(debt.totals?.violations!==0)errors.push("visual debt exceeds frozen ceiling: 
 for(const m of debt.metrics??[])if(!m.withinCeiling)errors.push("debt regression: "+m.id+" current="+m.current+" ceiling="+m.ceiling);
 
 const ruleIds=uniq((rules.rules??[]).map(x=>x.ruleId),"rule");
+const fixtureIds=uniq([...(corpus.scenarios??[]).map(x=>x.id),...(corpus.invalid??[]).map(x=>x.id),...(negativeFixtures.fixtures??[]).map(x=>x.id)],"fixture");
 for(const rule of rules.rules??[]){
   if(!severityIds.includes(rule.severity))errors.push(rule.ruleId+": invalid severity");
   if(!["AUTOMATED","VISUAL","MANUAL","INFORMATIONAL"].includes(rule.enforcementType))errors.push(rule.ruleId+": invalid enforcement type");
   if(!rule.owner||!rule.normativeText||!rule.source)errors.push(rule.ruleId+": incomplete rule metadata");
   if(!(await exists(rule.source)))errors.push(rule.ruleId+": missing source "+rule.source);
   if(["BLOCKER","ERROR"].includes(rule.severity)&&(!rule.validator||!(rule.fixtures??[]).length))errors.push(rule.ruleId+": BLOCKER/ERROR requires validator and fixture");
+  for(const fixture of rule.fixtures??[])if(!fixtureIds.has(fixture))errors.push(rule.ruleId+": missing registered fixture "+fixture);
 }
 if(coverage.uncovered!==0)errors.push("rule registry has uncovered rules: "+coverage.uncovered);
 if(coverage.blockerErrorCoveragePercent!==100)errors.push("BLOCKER/ERROR traceability must be 100%");
@@ -100,6 +103,7 @@ if((corpus.scenarios??[]).length<20)errors.push("golden corpus needs at least 20
 if((corpus.invalid??[]).length<5)errors.push("golden corpus needs at least 5 invalid fixtures");
 uniq((corpus.scenarios??[]).map(x=>x.id),"golden scenario");
 uniq((corpus.invalid??[]).map(x=>x.id),"invalid golden fixture");
+for(const f of negativeFixtures.fixtures??[]){if(!ruleIds.has(f.ruleId))errors.push(f.id+": fixture references unknown rule "+f.ruleId);if(!["FAIL","MANUAL_REVIEW"].includes(f.expected))errors.push(f.id+": invalid expected outcome");}
 for(const s of corpus.scenarios??[]){
   if(!(s.representations??[]).length)errors.push(s.id+": no cross-surface representation");
   for(const [dimension,value] of Object.entries(s.epistemic??{})){
