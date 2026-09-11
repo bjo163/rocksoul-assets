@@ -106,6 +106,10 @@ jobs:
           node tools/assets/validate-classification.mjs
           node tools/assets/validate-primitives.mjs
           node tools/assets/validate-showcase-coverage.mjs
+      - name: Validate Visual System V2 audit freshness
+        run: |
+          node tools/assets/generate-visual-system-v2-audit.mjs --check
+          node tools/assets/validate-visual-system.mjs
       - name: Validate generated semantic visuals
         run: |
           node tools/assets/generate-domain-ownership-visual.mjs --check
