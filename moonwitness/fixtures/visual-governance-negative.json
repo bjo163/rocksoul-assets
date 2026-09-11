@@ -1,0 +1,195 @@
+{
+  "contractId": "fixtures.visual-governance-negative.v1",
+  "schemaVersion": 1,
+  "fixtures": [
+    {
+      "id": "fixture.color.unapproved-crimson",
+      "ruleId": "VS2.COLOR.001",
+      "mutation": {
+        "rawColor": "#FF2344"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.alias.info-as-brand",
+      "ruleId": "VS2.COLOR.002",
+      "mutation": {
+        "semanticSource": "semantic.status.info",
+        "allowedChannels": [
+          "brand-emphasis"
+        ]
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.alias.semantic-promotion",
+      "ruleId": "VS2.COLOR.003",
+      "mutation": {
+        "aliasBecomesSemantic": true
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.type.archive-serif-operator",
+      "ruleId": "VS2.TYPE.001",
+      "mutation": {
+        "font": "Georgia",
+        "surface": "operator"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.primitive.text",
+      "ruleId": "VS2.PRIMITIVE.001",
+      "mutation": {
+        "primitiveContainsText": true
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.primitive.stroke",
+      "ruleId": "VS2.PRIMITIVE.002",
+      "mutation": {
+        "strokeWidth": 1.75
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.graph.grayscale",
+      "ruleId": "VS2.GRAPH.001",
+      "mutation": {
+        "meaningCarrier": "color-only"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.graph.unresolved",
+      "ruleId": "VS2.GRAPH.002",
+      "mutation": {
+        "unresolvedEdge": "solid"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.data.confidence-uncertainty",
+      "ruleId": "VS2.DATA.001",
+      "mutation": {
+        "confidenceEncoding": "same-as-uncertainty"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.lifecycle.deprecated-no-replacement",
+      "ruleId": "VS2.LIFECYCLE.001",
+      "mutation": {
+        "lifecycle": "deprecated",
+        "replacement": null
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.lifecycle.deprecated-production",
+      "ruleId": "VS2.LIFECYCLE.002",
+      "mutation": {
+        "lifecycle": "deprecated",
+        "productionEligible": true
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.debt.ceiling-increase",
+      "ruleId": "VS2.DEBT.001",
+      "mutation": {
+        "ceilingDelta": 1
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.waiver.wildcard",
+      "ruleId": "VS2.WAIVER.001",
+      "mutation": {
+        "scope": "*"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.waiver.expired",
+      "ruleId": "VS2.WAIVER.001",
+      "mutation": {
+        "status": "active",
+        "expiresAt": "2000-01-01"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.waiver.blocker",
+      "ruleId": "VS2.WAIVER.002",
+      "mutation": {
+        "severity": "BLOCKER"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.ai.self-approve-manual",
+      "ruleId": "VS2.AI.001",
+      "mutation": {
+        "actor": "automation",
+        "manualGate": "completed"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.ai.raise-debt",
+      "ruleId": "VS2.AI.002",
+      "mutation": {
+        "actor": "ai",
+        "debtCeilingDelta": 1
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.ai.wildcard-waiver",
+      "ruleId": "VS2.AI.002",
+      "mutation": {
+        "actor": "ai",
+        "waiverScope": "*"
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.provenance.missing",
+      "ruleId": "VS2.PROVENANCE.001",
+      "mutation": {
+        "canonical": true,
+        "provenance": null
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.conformance.fake-full",
+      "ruleId": "VS2.CONFORMANCE.001",
+      "mutation": {
+        "profile": "FULL",
+        "debtViolations": 1
+      },
+      "expected": "FAIL"
+    },
+    {
+      "id": "fixture.signature.operator-blind",
+      "ruleId": "VS2.SIGNATURE.001",
+      "mutation": {
+        "logoRemoved": true,
+        "brandTextRemoved": true
+      },
+      "expected": "MANUAL_REVIEW"
+    },
+    {
+      "id": "fixture.freeze.unapproved-top-level-change",
+      "ruleId": "VS2.FREEZE.001",
+      "mutation": {
+        "newSurfacePersonality": "experimental-new"
+      },
+      "expected": "FAIL"
+    }
+  ]
+}
