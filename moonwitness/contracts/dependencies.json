@@ -92,7 +92,7 @@
     {
       "from": "contract.ai",
       "to": "contract.rules",
-      "type": "GOVERNED_BY"
+      "type": "GOVERNED_BY_RULE"
     }
   ],
   "allowedEdgeTypes": [
