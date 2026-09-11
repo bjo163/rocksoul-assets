@@ -250,14 +250,17 @@ for folder in ["moonwitness/icons/svg","moonwitness/semantic-primitives-pack/svg
         save(rel,src)
         primitive_files.append(rel)
 
-# Normalize the historical bright signal red across mutable V2 sources.
+# Normalize historical production drift across mutable V2 sources.
 # Immutable baseline-v1 screen references remain untouched.
 for file in sorted((ROOT / "moonwitness").rglob("*.svg")):
     rel=file.relative_to(ROOT).as_posix()
     if rel.startswith("moonwitness/ui/v1/screens/"):
         continue
     src=WRITES.get(rel, read(rel))
-    normalized=re.sub(r"#FF2A3D(?=([0-9A-Fa-f]{2})?\\b)", "#D1132A", src, flags=re.I)
+    normalized=re.sub(r"#FF2A3D", "#D1132A", src, flags=re.I)
+    if not (rel.startswith("moonwitness/cinematic-hero-pack/") or rel.startswith("moonwitness/editorial-pack/")):
+        normalized=re.sub(r'font-family="Georgia,[^"]*"', 'font-family="Inter Tight,Inter,Arial,sans-serif"', normalized, flags=re.I)
+        normalized=re.sub(r'font-family\s*:\s*Georgia\s*,\s*[^;"\']+', 'font-family:Inter Tight,Inter,Arial,sans-serif', normalized, flags=re.I)
     if normalized != src:
         save(rel, normalized)
 
