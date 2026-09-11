@@ -154,7 +154,7 @@ for entry in entries:
     if not entry.get("semanticRole"): missing_semantic+=1
     for meta in entry.get("visualAssets",{}).values():
         if meta.get("lifecycle")=="deprecated" and meta.get("productionEligible"): deprecated_prod+=1
-        if meta.get("productionEligible") and meta.get("themeBehavior")=="fixed": fixed_prod+=1
+        if meta.get("productionEligible") and meta.get("format")=="svg" and meta.get("themeBehavior")=="fixed": fixed_prod+=1
 
 def override_for_file(file):
     for pid,entry in dist.get("packs",{}).items():
