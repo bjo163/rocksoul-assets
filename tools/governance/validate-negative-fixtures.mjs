@@ -26,6 +26,15 @@ function detects(f){
   if(m.canonical===true&&m.provenance==null)return true;
   if(m.profile==="FULL"&&(m.debtViolations??0)>0)return true;
   if(m.newSurfacePersonality)return true;
+  if(m.aliasCycle===true)return true;
+  if(m.aliasTarget==="semantic.missing")return true;
+  if(m.tokenLifecycle==="removed"&&m.emitted===true)return true;
+  if(m.tokenLifecycle==="deprecated"&&m.replacement==null)return true;
+  if((m.releasedIdRenamed===true||m.releasedIdDeleted===true)&&m.migration===false)return true;
+  if(m.schemaVersion===null)return true;
+  if(m.surfacePersonality==="unknown-new")return true;
+  if(m.lifecycle==="forever")return true;
+  if(m.tokenRef==="semantic.missing")return true;
   if(m.logoRemoved===true&&m.brandTextRemoved===true)return "MANUAL_REVIEW";
   return false;
 }
