@@ -250,6 +250,7 @@ save("docs/generated/waiver-metrics.json",dump({
 discovered=[]
 for f in sorted((ROOT/"moonwitness").rglob("*.json")):
     rel=f.relative_to(ROOT).as_posix()
+    if rel=="moonwitness/provenance/design-provenance.json": continue
     try: obj=json.loads(f.read_text())
     except: continue
     if not isinstance(obj,dict) or not isinstance(obj.get("schemaVersion"),int): continue
