@@ -27,6 +27,12 @@
       "additionalProperties": {
         "type": "object"
       }
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
     }
   }
 }
