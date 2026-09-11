@@ -1,0 +1,37 @@
+{
+  "contractId": "contracts.migrations.v1",
+  "schemaVersion": 1,
+  "migrations": [
+    {
+      "id": "migration.tokens.v1",
+      "contractId": "tokens",
+      "from": "penpot/tokens/moonwitness.tokens.json",
+      "to": "moonwitness/tokens/visual-system-v2.json",
+      "compatibility": "MINOR",
+      "strategy": "canonical-contract-introduced; legacy Penpot source remains compatible input during transition"
+    },
+    {
+      "id": "migration.lifecycle.crosshair",
+      "contractId": "asset-lifecycle",
+      "from": "cursor-interaction/crosshair",
+      "to": "geospatial/crosshair",
+      "compatibility": "MINOR",
+      "strategy": "deprecated alias with replacement"
+    },
+    {
+      "id": "migration.lifecycle.evidence-timeline",
+      "contractId": "asset-lifecycle",
+      "from": "graph-vector/evidence-timeline",
+      "to": "data-viz/evidence-timeline",
+      "compatibility": "MINOR",
+      "strategy": "deprecated duplicate with replacement"
+    }
+  ],
+  "breakingChangeRequirements": [
+    "migration-entry",
+    "consumer-impact",
+    "deprecatedIds",
+    "replacement",
+    "release-major-or-explicit-policy"
+  ]
+}
