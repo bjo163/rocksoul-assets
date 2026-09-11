@@ -16,6 +16,9 @@
     "governance:generate": "python tools/governance/generate_governance.py",
     "governance:check": "python tools/governance/generate_governance.py --check",
     "governance:validate": "node tools/governance/validate-governance.mjs",
-    "impact:visual": "node tools/contracts/analyze-impact.mjs"
+    "impact:visual": "node tools/contracts/analyze-impact.mjs",
+    "governance:debt": "node tools/governance/validate-visual-debt.mjs",
+    "governance:fixtures": "node tools/governance/validate-negative-fixtures.mjs",
+    "contracts:validate": "node tools/contracts/validate-schemas.mjs"
   }
 }
