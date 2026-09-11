@@ -31,6 +31,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 3. [Graph Grammar V2](GRAPH-GRAMMAR-V2.md)
 4. [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md)
 5. [Visual System V2 Migration](VISUAL-SYSTEM-V2-MIGRATION.md)
+6. [Visual System V2 Acceptance](VISUAL-SYSTEM-V2-ACCEPTANCE.md)
 6. [Primitive Optical Review](generated/visual-system-v2/primitive-optical-review.html)
 7. [Visual Language v1.3](VISUAL-LANGUAGE-V1.3.md)
 8. [Asset Structure](ASSET-STRUCTURE.md)
@@ -80,6 +81,7 @@ Visual System 2.0 galleries are served from `/showcase/v2/` and cover graph gram
 | [Graph Grammar V2](GRAPH-GRAMMAR-V2.md) | canonical node/edge semantics and grayscale-safe relationship grammar |
 | [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md) | chart-specific semantics, uncertainty and forced-color rules |
 | [Visual System V2 Migration](VISUAL-SYSTEM-V2-MIGRATION.md) | canonical replacement, lifecycle, deprecation and regeneration plan |
+| [Visual System V2 Acceptance](VISUAL-SYSTEM-V2-ACCEPTANCE.md) | Phase 5–12 acceptance matrix and quantitative migration evidence |
 | [Visual Language](VISUAL-LANGUAGE-V1.3.md) | legacy v1.3 semantic visual grammar |
 | [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) | canonical TEXT/RGBL visual ownership and consumer guidance |
 | [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
