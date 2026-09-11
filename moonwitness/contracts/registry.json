@@ -232,6 +232,17 @@
         "release"
       ],
       "stability": "stable"
+    },
+    {
+      "contractId": "governance-negative-fixtures",
+      "path": "moonwitness/fixtures/visual-governance-negative.json",
+      "schemaId": "governance-negative-fixtures",
+      "schemaVersion": 1,
+      "owner": "qa",
+      "consumers": [
+        "validators"
+      ],
+      "stability": "stable"
     }
   ],
   "patternRegistrations": [
