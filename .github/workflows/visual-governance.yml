@@ -1,0 +1,90 @@
+name: Visual Governance
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "moonwitness/**"
+      - "schemas/**"
+      - "penpot/**"
+      - "dist/contracts/**"
+      - "docs/**"
+      - "tools/governance/**"
+      - "tools/contracts/**"
+      - "tools/release/**"
+      - ".github/workflows/visual-governance.yml"
+      - ".github/workflows/validate-assets.yml"
+      - ".github/workflows/release-gate.yml"
+      - ".github/workflows/publish-release.yml"
+      - ".github/workflows/post-release-audit.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visual-governance-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact candidate
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: "22"
+      - name: Setup Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Generate governance evidence
+        run: python tools/governance/generate_governance.py
+      - name: Validate governance
+        run: node tools/governance/validate-governance.mjs
+      - name: Validate deterministic regeneration
+        run: python tools/governance/generate_governance.py --check
+      - name: Analyze PR contract impact
+        if: github.event_name == 'pull_request'
+        run: node tools/contracts/analyze-impact.mjs --base "${{ github.event.pull_request.base.sha }}" --head "${{ github.event.pull_request.head.sha }}"
+      - name: Validate exact-SHA conformance derivation
+        run: node tools/release/generate-visual-conformance.mjs --sha "${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}"
+      - name: Materialize generated governance evidence
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add docs/generated docs/DESIGN-TOKEN-AUDIT.md docs/VISUAL-GOVERNANCE-EVIDENCE.md dist/contracts penpot/generated moonwitness/provenance/design-provenance.json
+          if git diff --cached --quiet; then
+            echo "Governance evidence already materialized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "build(governance): materialize visual contract evidence"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "$HEAD_REF"
+            if git push origin "HEAD:$HEAD_REF"; then exit 0; fi
+            test "$attempt" -lt 3
+            sleep 2
+          done
+      - name: Upload governance evidence
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
+        with:
+          name: visual-governance
+          path: |
+            docs/generated/token-inventory.json
+            docs/generated/visual-debt.json
+            docs/generated/rule-coverage.json
+            docs/generated/waiver-metrics.json
+            docs/generated/contract-inventory.json
+            docs/generated/visual-impact-graph.json
+            moonwitness/provenance/design-provenance.json
+            dist/contracts/
+            .release/out/visual-conformance.json
