@@ -132,6 +132,20 @@ for aid,item in token["presentationAliases"].items():
     pgen[aid]={"$value":item["value"],"$type":"color","$description":"presentation alias of "+item["semanticSource"]}
 save("penpot/generated/visual-system.tokens.json",dump({"VisualSystemV2":pgen}))
 
+token_migration={
+ "schemaVersion":1,
+ "contractId":"tokens.migration-report.v1",
+ "active":[{"id":sid,"kind":"semantic"} for sid,x in token["semantics"].items() if x.get("lifecycle")=="active"]+
+          [{"id":aid,"kind":"presentation-alias","semanticSource":x["semanticSource"]} for aid,x in token["presentationAliases"].items() if x.get("lifecycle")=="active"],
+ "deprecated":[{"id":sid,"replacement":x.get("replacement"),"kind":"semantic"} for sid,x in token["semantics"].items() if x.get("lifecycle")=="deprecated"]+
+              [{"id":aid,"replacement":x.get("replacement"),"kind":"presentation-alias"} for aid,x in token["presentationAliases"].items() if x.get("lifecycle")=="deprecated"],
+ "removed":[sid for sid,x in token["semantics"].items() if x.get("lifecycle")=="removed"]+
+           [aid for aid,x in token["presentationAliases"].items() if x.get("lifecycle")=="removed"]
+}
+save("docs/generated/token-migration.json",dump(token_migration))
+save("dist/contracts/golden-corpus.json",dump(corpus))
+
+
 allowed_fonts=("Inter","Inter Tight","IBM Plex Mono","Georgia","Arial","Times New Roman","sans-serif","monospace","serif")
 undoc_fonts=[x for x in audit.get("fontFamilies",[]) if not any(f in x["value"] for f in allowed_fonts)]
 allowed_colors=set()
