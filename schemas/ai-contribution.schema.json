@@ -44,6 +44,12 @@
     },
     "hiddenReasoningPolicy": {
       "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "$id": {
+      "type": "string"
     }
   }
 }
