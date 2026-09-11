@@ -1,0 +1,58 @@
+{
+  "contractId": "provenance.design-decisions.v1",
+  "schemaVersion": 1,
+  "decisions": [
+    {
+      "id": "decision.vs2.layer-model",
+      "issue": 48,
+      "summary": "MoonWitness is the rigorous system layer; ROCKSOUL is deliberate human intervention.",
+      "ruleIds": [
+        "VS2.FREEZE.001"
+      ]
+    },
+    {
+      "id": "decision.vs2.graph-grayscale",
+      "issue": 48,
+      "summary": "Graph semantics use geometry and line treatment so meaning survives grayscale.",
+      "ruleIds": [
+        "VS2.GRAPH.001",
+        "VS2.GRAPH.002"
+      ]
+    },
+    {
+      "id": "decision.vs2.palette",
+      "issue": 48,
+      "summary": "Brand, Signal and Critical Crimson remain distinct semantic roles.",
+      "ruleIds": [
+        "VS2.COLOR.001",
+        "VS2.COLOR.002",
+        "VS2.COLOR.003"
+      ]
+    },
+    {
+      "id": "decision.vs2.lifecycle",
+      "issue": 81,
+      "summary": "Deprecated assets remain discoverable but require replacements and are excluded from production eligibility.",
+      "ruleIds": [
+        "VS2.LIFECYCLE.001",
+        "VS2.LIFECYCLE.002"
+      ]
+    },
+    {
+      "id": "decision.vs2.single-writer",
+      "issue": 84,
+      "summary": "Generated migration outputs have one writer authority; audit validation is check-only.",
+      "ruleIds": [
+        "VS2.PROVENANCE.001"
+      ]
+    },
+    {
+      "id": "decision.vs2.freeze",
+      "issue": 90,
+      "summary": "Visual System 2.0 top-level doctrine is frozen after v1.7.0; exceptional changes require freeze-break evidence.",
+      "ruleIds": [
+        "VS2.FREEZE.001"
+      ]
+    }
+  ]
+}
