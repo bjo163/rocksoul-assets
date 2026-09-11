@@ -26,8 +26,11 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 ### I want to design or extend the visual system
 
-1. [Visual Language](VISUAL-LANGUAGE-V1.3.md)
-2. [Asset Structure](ASSET-STRUCTURE.md)
+1. [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md)
+2. [Graph Grammar V2](GRAPH-GRAMMAR-V2.md)
+3. [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md)
+4. [Visual Language v1.3](VISUAL-LANGUAGE-V1.3.md)
+5. [Asset Structure](ASSET-STRUCTURE.md)
 3. [Asset Classification](ASSET-CLASSIFICATION.md)
 4. [Semantic Primitives](SEMANTIC-PRIMITIVES.md)
 5. [Accessibility](ACCESSIBILITY.md)
@@ -67,7 +70,10 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 | [Asset Classification](ASSET-CLASSIFICATION.md) | production primitive, illustration, specimen, and screen-reference boundaries |
 | [Semantic Primitives](SEMANTIC-PRIMITIVES.md) | atomic theme-aware vectors, sprite membership, and optical-size contact sheet |
 | [Application Shell](APPLICATION-SHELL.md) | authenticated shell and v2 product-surface contract |
-| [Visual Language](VISUAL-LANGUAGE-V1.3.md) | semantic visual grammar |
+| [Visual System 2.0 Art Direction](ART-DIRECTION-V2.md) | MoonWitness/ROCKSOUL layers, personalities, density, typography, palette and geometry |
+| [Graph Grammar V2](GRAPH-GRAMMAR-V2.md) | canonical node/edge semantics and grayscale-safe relationship grammar |
+| [Data Visualization Grammar V2](DATA-VIZ-GRAMMAR-V2.md) | chart-specific semantics, uncertainty and forced-color rules |
+| [Visual Language](VISUAL-LANGUAGE-V1.3.md) | legacy v1.3 semantic visual grammar |
 | [RGBL / TEXT Visual Contract](RGBL_TEXT_VISUAL_CONTRACT.md) | canonical TEXT/RGBL visual ownership and consumer guidance |
 | [LAW / AWS Visual Contract](LAW_VISUAL_CONTRACT.md) | legal result vocabulary, applicability axes, review pipeline, and guardrails |
 | [Accessibility](ACCESSIBILITY.md) | non-negotiable product accessibility rules |
@@ -94,6 +100,7 @@ GitHub Wiki is enabled for the repository, but architectural and design decision
 
 - `moonwitness/asset-packs.json`
 - `moonwitness/asset-classification.json`
+- `moonwitness/visual-system-v2.json`
 - `dist/assets.json`
 - `showcase/catalog.json`
 - `manifest.json`
