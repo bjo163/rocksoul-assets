@@ -1,4 +1,4 @@
-import { readFile, access } from "node:fs/promises";
+import { readFile, access, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -121,6 +121,15 @@ const forbidden=["self-approve-waiver","lower-rule-severity","increase-debt-ceil
 for(const action of forbidden)if(!(ai.prohibitedAutonomousActions??[]).includes(action))errors.push("AI policy missing prohibited action "+action);
 if(!String(ai.hiddenReasoningPolicy??"").startsWith("forbidden"))errors.push("AI provenance policy must exclude hidden reasoning");
 if(ai.contributionManifestRequiredForCanonicalChanges!==true)errors.push("AI canonical changes must require contribution manifest");
+const contributionDir=path.join(root,"moonwitness/provenance/contributions");
+for(const file of await readdir(contributionDir)){
+  if(!file.endsWith(".json"))continue;
+  const contribution=JSON.parse(await readFile(path.join(contributionDir,file),"utf8"));
+  for(const field of ai.requiredManifestFields??[])if(contribution[field]===undefined)errors.push(file+": missing contribution field "+field);
+  if(!(ai.modes??[]).includes(contribution.contributorMode))errors.push(file+": invalid contributor mode");
+  if(contribution.hiddenReasoningStored!==false)errors.push(file+": hidden reasoning must not be stored");
+  if(contribution.approvalState?.toLowerCase().includes("manual approved by automation"))errors.push(file+": automation cannot self-approve manual gate");
+}
 
 if(provenance.coverage?.missingProvenance!==0)errors.push("provenance coverage has missing entries");
 if(provenance.coverage?.canonicalArtifacts!==provenance.coverage?.withProvenance)errors.push("provenance coverage incomplete");
