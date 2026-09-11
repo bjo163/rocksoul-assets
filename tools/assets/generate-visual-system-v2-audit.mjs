@@ -80,15 +80,24 @@ function categoryFor(packId,file){
   return"other";
 }
 const esc=(v)=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
-function contactSheet(title,items){
-  const cards=items.map(item=>{
-    const src="../../../"+item.file;
-    return `<article class="card"><header><strong>${esc(item.packId)}</strong><code>${esc(item.file)}</code></header><div class="previews"><div class="preview light"><img loading="lazy" src="${esc(src)}" alt="${esc(item.file)} on light background"></div><div class="preview dark"><img loading="lazy" src="${esc(src)}" alt="${esc(item.file)} on dark background"></div></div></article>`;
-  }).join("\n");
+function contactSheet(title,category=null){
+  const categoryJson=JSON.stringify(category);
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title>
 <style>body{font:14px/1.45 system-ui,sans-serif;margin:0;background:#151515;color:#f7f4ec}main{padding:24px}h1{margin:0 0 8px}p{color:#a3a3a3}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.card{border:1px solid #4a4a4a;border-radius:8px;overflow:hidden;background:#242424}.card header{padding:10px 12px;display:grid;gap:4px}.card code{font-size:10px;overflow-wrap:anywhere;color:#d9d6ce}.previews{display:grid;grid-template-columns:1fr 1fr;min-height:140px}.preview{display:grid;place-items:center;padding:12px}.preview img{max-width:100%;max-height:160px}.light{background:#f7f4ec}.dark{background:#0b0b0b}@media(max-width:600px){.previews{grid-template-columns:1fr}}</style></head>
-<body><main><h1>${esc(title)}</h1><p>${items.length} canonical SVG assets. Every asset is shown on light and dark surfaces.</p><section class="grid">${cards}</section></main></body></html>\n`;
+<body><main><h1>${esc(title)}</h1><p id="summary">Loading canonical assets…</p><section class="grid" id="grid"></section></main>
+<script>
+const category=${categoryJson};
+const esc=(v)=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+fetch("contact-sheet-data.json").then(r=>r.json()).then(all=>{
+  const items=category?all.filter(x=>x.category===category):all;
+  document.getElementById("summary").textContent=items.length+" canonical SVG assets. Every asset is shown on light and dark surfaces.";
+  document.getElementById("grid").innerHTML=items.map(item=>{
+    const src="../../../"+item.file;
+    return '<article class="card"><header><strong>'+esc(item.packId)+'</strong><code>'+esc(item.file)+'</code></header><div class="previews"><div class="preview light"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(item.file)+' on light background"></div><div class="preview dark"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(item.file)+' on dark background"></div></div></article>';
+  }).join("");
+});
+</script></body></html>\n`;
 }
 
 const packIndex=await readJson("moonwitness/asset-packs.json");
@@ -208,12 +217,14 @@ Exact duplicate groups: **${audit.counts.exactDuplicateCandidateGroups}**. Struc
 This baseline is descriptive evidence, not permission to preserve drift. Visual System 2.0 contracts in \`docs/ART-DIRECTION-V2.md\`, \`docs/GRAPH-GRAMMAR-V2.md\`, and \`docs/DATA-VIZ-GRAMMAR-V2.md\` define the target. Existing undocumented fonts, crimson variants, geometry signatures, and near-duplicates are migration input for later phases.
 `;
 
+const contactData=canonical.map(({file,packId,assetKind,category,themeAware,containsText})=>({file,packId,assetKind,category,themeAware,containsText}));
 const out=new Map([
-  ["docs/generated/visual-system-audit.json",JSON.stringify(audit,null,2)+"\n"],
+  ["docs/generated/visual-system-audit.json",JSON.stringify(audit,null,2)+"\\n"],
   ["docs/VISUAL-AUDIT-V2.md",report],
-  ["docs/generated/visual-system-v2/contact-sheet-master.html",contactSheet("ROCKSOUL Visual System 2.0 — Master Contact Sheet",canonical)]
+  ["docs/generated/visual-system-v2/contact-sheet-data.json",JSON.stringify(contactData,null,2)+"\\n"],
+  ["docs/generated/visual-system-v2/contact-sheet-master.html",contactSheet("ROCKSOUL Visual System 2.0 — Master Contact Sheet")]
 ]);
-for(const category of categories)out.set(`docs/generated/visual-system-v2/contact-sheet-${category}.html`,contactSheet(`ROCKSOUL Visual System 2.0 — ${category}`,canonical.filter(x=>x.category===category)));
+for(const category of categories)out.set(`docs/generated/visual-system-v2/contact-sheet-${category}.html`,contactSheet(`ROCKSOUL Visual System 2.0 — ${category}`,category));
 
 if(checkMode){
   const drift=[];
