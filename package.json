@@ -11,6 +11,8 @@
     "validate:contract": "node scripts/validate-rocksoul-contract.mjs",
     "audit:visual-v2": "node tools/assets/generate-visual-system-v2-audit.mjs --write",
     "validate:visual-v2": "node tools/assets/validate-visual-system.mjs",
+    "validate:visual-constitution": "node tools/assets/validate-visual-constitution.mjs",
+    "validate:visual": "npm run validate:visual-v2 && npm run validate:visual-constitution",
     "migrate:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py",
     "validate:migration:visual-v2": "python tools/assets/generate_visual_system_v2_migration.py --check"
   }
