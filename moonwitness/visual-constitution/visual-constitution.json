@@ -1,0 +1,93 @@
+{
+  "schema": "rocksoul.visual-constitution.v1",
+  "version": 1,
+  "status": "canonical",
+  "authority": "bjo163/rocksoul-assets",
+  "visualSystemVersion": 2,
+  "principles": [
+    "permission != authenticity",
+    "trusted device != trusted evidence",
+    "human reviewed != approved",
+    "process stage != process health",
+    "change type != change importance",
+    "AI confidence != epistemic verification",
+    "tool success != factual correctness",
+    "confidential != forbidden",
+    "cross-border != critical",
+    "info color != brand color",
+    "selection != verification",
+    "focus != critical"
+  ],
+  "semanticDimensions": {
+    "epistemic_status": ["unknown", "unverified", "supported", "verified", "contradicted"],
+    "trust_status": ["unknown", "untrusted", "limited", "trusted"],
+    "process_stage": ["queued", "active", "review", "complete"],
+    "process_health": ["healthy", "degraded", "blocked", "failed"],
+    "delta_status": ["unchanged", "added", "modified", "removed"],
+    "continuity_status": ["continuous", "handoff-pending", "handoff-complete", "broken"],
+    "ai_provenance_status": ["none", "assisted", "generated", "verified-by-human"],
+    "human_review_status": ["unreviewed", "reviewed", "approved", "rejected"],
+    "temporal_state": ["past", "current", "future", "overdue"],
+    "interaction": ["idle", "hovered", "focused", "selected", "disabled"]
+  },
+  "channels": {
+    "risk": { "channel": "border", "salience": 100, "collisionGroup": "status" },
+    "epistemic": { "channel": "pattern", "salience": 95, "collisionGroup": "evidence" },
+    "trust": { "channel": "icon", "salience": 90, "collisionGroup": "evidence" },
+    "processHealth": { "channel": "badge", "salience": 85, "collisionGroup": "status" },
+    "processStage": { "channel": "label", "salience": 70, "collisionGroup": "workflow" },
+    "continuity": { "channel": "connector", "salience": 68, "collisionGroup": "workflow" },
+    "delta": { "channel": "mark", "salience": 66, "collisionGroup": "change" },
+    "aiProvenance": { "channel": "provenance-badge", "salience": 64, "collisionGroup": "provenance" },
+    "humanReview": { "channel": "review-badge", "salience": 63, "collisionGroup": "provenance" },
+    "temporal": { "channel": "temporal-label", "salience": 55, "collisionGroup": "time" },
+    "interaction": { "channel": "outline", "salience": 50, "collisionGroup": "interaction" },
+    "brand": { "channel": "brand-accent", "salience": 10, "collisionGroup": "brand" }
+  },
+  "precedence": [
+    "risk",
+    "epistemic",
+    "processHealth",
+    "trust",
+    "processStage",
+    "continuity",
+    "delta",
+    "aiProvenance",
+    "humanReview",
+    "temporal",
+    "interaction",
+    "brand"
+  ],
+  "resolver": {
+    "deterministic": true,
+    "preserveDifferentChannels": true,
+    "sameChannelRule": "higher-salience-wins-lower-salience-remains-inspectable",
+    "sameSemanticCategoryRule": "use-precedence-then-stable-input-order",
+    "neverInfer": [
+      ["interaction:selected", "epistemic_status:verified"],
+      ["interaction:focused", "process_health:failed"],
+      ["trust_status:trusted", "epistemic_status:verified"],
+      ["human_review_status:reviewed", "human_review_status:approved"]
+    ]
+  },
+  "compression": {
+    "expanded": { "visibleSlots": 12, "rule": "preserve-all-signals" },
+    "standard": { "visibleSlots": 7, "rule": "preserve-highest-salience-per-collision-group" },
+    "compact": { "visibleSlots": 4, "rule": "preserve-risk-and-evidence-uncertainty-first" },
+    "invariants": [
+      "compress-before-drop",
+      "omitted-semantics-remain-inspectable",
+      "risk-and-evidence-uncertainty-cannot-be-hidden-by-brand-or-interaction"
+    ]
+  },
+  "highRiskScenarios": [
+    { "id": "selected-unverified", "signals": ["interaction:selected", "epistemic_status:unverified"], "mustPreserve": ["epistemic_status:unverified"] },
+    { "id": "focused-critical", "signals": ["interaction:focused", "process_health:failed"], "mustPreserve": ["process_health:failed"] },
+    { "id": "ai-high-evidence-low", "signals": ["ai_provenance_status:generated", "epistemic_status:unverified"], "mustPreserve": ["epistemic_status:unverified", "ai_provenance_status:generated"] },
+    { "id": "trusted-device-untrusted-evidence", "signals": ["trust_status:trusted", "epistemic_status:unverified"], "mustPreserve": ["epistemic_status:unverified"] },
+    { "id": "forbidden-authentic", "signals": ["process_health:blocked", "trust_status:trusted"], "mustPreserve": ["process_health:blocked", "trust_status:trusted"] },
+    { "id": "diff-added-low-importance", "signals": ["delta_status:added", "process_health:healthy"], "mustPreserve": ["delta_status:added"] },
+    { "id": "handoff-pending-healthy", "signals": ["continuity_status:handoff-pending", "process_health:healthy"], "mustPreserve": ["continuity_status:handoff-pending"] },
+    { "id": "confidential-cross-border-critical", "signals": ["process_health:failed", "trust_status:limited", "temporal_state:current"], "mustPreserve": ["process_health:failed"] }
+  ]
+}

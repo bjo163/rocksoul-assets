@@ -1,0 +1,43 @@
+{
+  "schema": "rocksoul.visual-golden-corpus.v1",
+  "version": 1,
+  "status": "canonical",
+  "authority": "bjo163/rocksoul-assets",
+  "syntheticOnly": true,
+  "deterministicStressSeed": 5711337,
+  "surfaces": ["dashboard", "table-list", "research-trace", "evidence", "workspace", "document-editor", "graph", "timeline-calendar-gantt", "map-spatial", "operator-console", "ai-multimodal"],
+  "scenarios": [
+    {"id":"GC-001","surface":"dashboard","density":"standard","signals":["process_health:healthy"],"expected":{"primary":"processHealth"}},
+    {"id":"GC-002","surface":"dashboard","density":"compact","signals":["interaction:selected","epistemic_status:unverified"],"expected":{"primary":"epistemic","mustRemainInspectable":["interaction:selected"]}},
+    {"id":"GC-003","surface":"table-list","density":"compact","signals":["delta_status:added","process_health:healthy"],"expected":{"primary":"processHealth","mustRemainInspectable":["delta_status:added"]}},
+    {"id":"GC-004","surface":"table-list","density":"standard","signals":["human_review_status:reviewed","epistemic_status:unverified"],"expected":{"primary":"epistemic","mustRemainInspectable":["human_review_status:reviewed"]}},
+    {"id":"GC-005","surface":"research-trace","density":"expanded","signals":["ai_provenance_status:generated","epistemic_status:unverified","human_review_status:unreviewed"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-006","surface":"research-trace","density":"standard","signals":["trust_status:trusted","epistemic_status:unverified"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-007","surface":"evidence","density":"expanded","signals":["epistemic_status:verified","trust_status:trusted","human_review_status:approved"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-008","surface":"evidence","density":"compact","signals":["interaction:focused","process_health:failed"],"expected":{"primary":"processHealth"}},
+    {"id":"GC-009","surface":"workspace","density":"standard","signals":["process_stage:active","process_health:degraded","interaction:selected"],"expected":{"primary":"processHealth"}},
+    {"id":"GC-010","surface":"workspace","density":"compact","signals":["continuity_status:handoff-pending","process_health:healthy"],"expected":{"primary":"processHealth","mustRemainInspectable":["continuity_status:handoff-pending"]}},
+    {"id":"GC-011","surface":"document-editor","density":"expanded","signals":["delta_status:modified","human_review_status:reviewed","temporal_state:current"],"expected":{"primary":"delta"}},
+    {"id":"GC-012","surface":"document-editor","density":"compact","signals":["human_review_status:reviewed","human_review_status:approved"],"expected":{"primary":"humanReview"}},
+    {"id":"GC-013","surface":"graph","density":"expanded","signals":["epistemic_status:contradicted","trust_status:limited","continuity_status:broken"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-014","surface":"graph","density":"compact","signals":["interaction:selected","trust_status:trusted","epistemic_status:unverified","ai_provenance_status:generated"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-015","surface":"timeline-calendar-gantt","density":"standard","signals":["temporal_state:overdue","process_health:blocked","process_stage:review"],"expected":{"primary":"processHealth"}},
+    {"id":"GC-016","surface":"timeline-calendar-gantt","density":"compact","signals":["temporal_state:future","continuity_status:handoff-pending"],"expected":{"primary":"continuity"}},
+    {"id":"GC-017","surface":"map-spatial","density":"standard","signals":["trust_status:limited","process_health:failed","temporal_state:current"],"expected":{"primary":"processHealth"}},
+    {"id":"GC-018","surface":"map-spatial","density":"compact","signals":["interaction:hovered","epistemic_status:supported"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-019","surface":"operator-console","density":"compact","signals":["process_health:failed","interaction:focused","continuity_status:broken","epistemic_status:unverified"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-020","surface":"operator-console","density":"expanded","signals":["process_stage:active","process_health:healthy","ai_provenance_status:assisted","human_review_status:reviewed"],"expected":{"primary":"processHealth"}},
+    {"id":"GC-021","surface":"ai-multimodal","density":"standard","signals":["ai_provenance_status:generated","epistemic_status:unknown","human_review_status:unreviewed"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-022","surface":"ai-multimodal","density":"compact","signals":["ai_provenance_status:verified-by-human","epistemic_status:supported","interaction:selected"],"expected":{"primary":"epistemic"}},
+    {"id":"GC-023","surface":"dashboard","density":"compact","signals":["process_health:failed","epistemic_status:unverified","trust_status:untrusted","continuity_status:broken","delta_status:modified","ai_provenance_status:generated","human_review_status:unreviewed","temporal_state:overdue","interaction:selected"],"expected":{"primary":"epistemic","stress":true}},
+    {"id":"GC-024","surface":"operator-console","density":"expanded","signals":["process_health:blocked","epistemic_status:contradicted","trust_status:limited","continuity_status:handoff-pending","delta_status:added","ai_provenance_status:generated","human_review_status:reviewed","temporal_state:current","interaction:focused"],"expected":{"primary":"epistemic","stress":true}}
+  ],
+  "invalidFixtures": [
+    {"id":"INV-001","reason":"selection cannot imply verification","signals":["interaction:selected"],"forbiddenInference":"epistemic_status:verified"},
+    {"id":"INV-002","reason":"trusted device/equivalent trust signal cannot imply verified evidence","signals":["trust_status:trusted"],"forbiddenInference":"epistemic_status:verified"},
+    {"id":"INV-003","reason":"reviewed cannot imply approved","signals":["human_review_status:reviewed"],"forbiddenInference":"human_review_status:approved"},
+    {"id":"INV-004","reason":"process stage cannot imply health","signals":["process_stage:complete"],"forbiddenInference":"process_health:healthy"},
+    {"id":"INV-005","reason":"AI provenance cannot imply epistemic verification","signals":["ai_provenance_status:verified-by-human"],"forbiddenInference":"epistemic_status:verified"},
+    {"id":"INV-006","reason":"focus cannot imply critical failure","signals":["interaction:focused"],"forbiddenInference":"process_health:failed"}
+  ]
+}

@@ -69,6 +69,8 @@ jobs:
         run: |
           node tools/assets/generate-visual-system-v2-audit.mjs --check
           node tools/assets/validate-visual-system.mjs
+      - name: Validate Visual Constitution and Golden Corpus
+        run: node tools/assets/validate-visual-constitution.mjs
       - name: Validate semantic primitive contract
         run: node tools/assets/validate-primitives.mjs
       - name: Validate documentation state
