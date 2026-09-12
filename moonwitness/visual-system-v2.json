@@ -2,6 +2,11 @@
   "schemaVersion": 1,
   "status": "foundation",
   "tokenSource": "penpot/tokens/moonwitness.tokens.json",
+  "semanticContracts": {
+    "visualConstitution": "moonwitness/visual-constitution/visual-constitution.json",
+    "goldenCorpus": "moonwitness/visual-golden-corpus.json",
+    "consumerPolicy": "pin-exact-assets-commit-and-verify-contract-blobs"
+  },
   "layers": {
     "moonwitness": {
       "role": "rigorous-system",
