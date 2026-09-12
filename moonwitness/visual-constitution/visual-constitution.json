@@ -47,8 +47,8 @@
   "precedence": [
     "risk",
     "epistemic",
-    "trust",
     "processHealth",
+    "trust",
     "processStage",
     "continuity",
     "delta",
