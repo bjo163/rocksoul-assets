@@ -12,6 +12,6 @@
     "check": "npm run validate:sources && npm run generate && npm run validate"
   },
   "dependencies": {
-    "@penpot/library": "1.2.0-RC2"
+    "@penpot/library": "1.2.0"
   }
 }
